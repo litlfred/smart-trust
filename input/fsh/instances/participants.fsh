@@ -331,21 +331,11 @@ Usage: #definition
 Instance: GDHCNParticipant-TUR
 InstanceOf: IHE.mCSD.Organization
 Usage: #definition
-* name = "Türkiye"
+* name = "TÃ¼rkiye"
 * type = $orgType#govt
 * endpoint[+] = Reference(GDHCNParticipantDID-TUR-All)
 * endpoint[+] = Reference(GDHCNParticipantDID-TUR-DSC)
 * endpoint[+] = Reference(GDHCNParticipantDID-TUR-SCA)
-
-
-Instance: GDHCNParticipant-UKR
-InstanceOf: IHE.mCSD.Organization
-Usage: #definition
-* name = "Ukraine"
-* type = $orgType#govt
-* endpoint[+] = Reference(GDHCNParticipantDID-UKR-All)
-* endpoint[+] = Reference(GDHCNParticipantDID-UKR-DSC)
-* endpoint[+] = Reference(GDHCNParticipantDID-UKR-SCA)
 
 
 
