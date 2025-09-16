@@ -1,0 +1,25 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "1a43e3c8-c131-475f-93b1-a6868a75c6d3-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1a43e3c8-c131-475f-93b1-a6868a75c6d3-6",
+  "name" : "IntersectionConnectionTypesAndConnectionTypes",
+  "title" : "Intersection of WHO GDHCN Connection Types And WHO GDHCN Connection Types",
+  "status" : "active",
+  "date" : "2025-09-16T15:56:28+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "http-get",
+    "display" : "http-get",
+    "definition" : "http(s) GET request"
+  },
+  {
+    "code" : "mtls",
+    "display" : "mTLS",
+    "definition" : "mutual TLS (mTLS)"
+  }]
+}
