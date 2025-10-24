@@ -14,7 +14,7 @@ Description:  "ValueSet of GDHCN Trust Network Participants for Development envi
 //
 // Current composition:
 //   - RefMart codes (participants found in RefMart): 30
-//   - Participants-DEV codes (participants NOT in RefMart): 22
+//   - Participants-DEV codes (participants NOT in RefMart): 20
 //
 // To regenerate, execute on tng-participants-dev repo:
 //     gfind . -maxdepth 1 -type d -name '[A-Z][A-Z][A-Z](-[A-Z]+)*'
@@ -36,7 +36,6 @@ Description:  "ValueSet of GDHCN Trust Network Participants for Development envi
 * $RefMartCountryList#GTM
 * $RefMartCountryList#HND
 * $RefMartCountryList#IDN
-* $Participants-DEV#IOM
 * $RefMartCountryList#LVA
 * $RefMartCountryList#OMN
 * $RefMartCountryList#PAN
@@ -64,7 +63,6 @@ Description:  "ValueSet of GDHCN Trust Network Participants for Development envi
 * $Participants-DEV#XXI
 * $Participants-DEV#XXJ
 * $Participants-DEV#XXK
-* $Participants-DEV#XXN
 * $Participants-DEV#XXO
 * $Participants-DEV#XXP
 * $Participants-DEV#XXU
