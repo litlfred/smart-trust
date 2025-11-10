@@ -421,7 +421,7 @@ Usage: #definition
 Instance: GDHCNParticipant-XXS-UAT
 InstanceOf: IHE.mCSD.Organization
 Usage: #definition
-* name = "TEST"
+* name = "UAT Participant XXS"
 * type = $orgType#govt
 * endpoint[+] = Reference(GDHCNParticipantDID-XXS-UAT-All)
 * endpoint[+] = Reference(GDHCNParticipantDID-XXS-UAT-DSC)
