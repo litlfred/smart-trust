@@ -1530,9 +1530,9 @@ Usage: #definition
 
 Instance: GDHCNParticipantDID-XXV-UAT-All
 InstanceOf: IHE.mCSD.Endpoint
-Description: "UAT Participant XXV Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json"
+Description: "TEST Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json"
 Usage: #definition
-* name = "UAT Participant XXV Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json"
+* name = "TEST Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json"
 * managingOrganization = Reference(Organization/GDHCNParticipant-XXV-UAT)
 * status = #active
 * connectionType = $ConnectionTypes#http-get
@@ -1543,7 +1543,7 @@ Usage: #definition
 Instance: GDHCNParticipantDID-XXV-UAT-DSC
 InstanceOf: IHE.mCSD.Endpoint
 Usage: #definition
-* name = "UAT Participant XXV Trustlist (DID v2) - UAT - Document Signing Certificates\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV:DSC\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/DSC/did.json"
+* name = "TEST Trustlist (DID v2) - UAT - Document Signing Certificates\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV:DSC\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/DSC/did.json"
 * managingOrganization = Reference(Organization/GDHCNParticipant-XXV-UAT)
 * status = #active
 * connectionType = $ConnectionTypes#http-get
@@ -1554,7 +1554,7 @@ Usage: #definition
 Instance: GDHCNParticipantDID-XXV-UAT-SCA
 InstanceOf: IHE.mCSD.Endpoint
 Usage: #definition
-* name = "UAT Participant XXV Trustlist (DID v2) - UAT - Certificate Signing Authority\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV:SCA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/SCA/did.json"
+* name = "TEST Trustlist (DID v2) - UAT - Certificate Signing Authority\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV:SCA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/SCA/did.json"
 * managingOrganization = Reference(Organization/GDHCNParticipant-XXV-UAT)
 * status = #active
 * connectionType = $ConnectionTypes#http-get
