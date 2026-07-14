@@ -236,6 +236,40 @@ Usage: #definition
 * payloadType = $PayloadTypes#urn:who:trust:trustlist:v2
 * address = "did:web:tng-cdn.who.int:v2:trustlist:-:CAN:SCA"
 
+Instance: GDHCNParticipantDID-CHL-UAT-All
+InstanceOf: IHE.mCSD.Endpoint
+Description: "Chile Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json"
+Usage: #definition
+* name = "Chile Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json"
+* managingOrganization = Reference(Organization/GDHCNParticipant-CHL-UAT)
+* status = #active
+* connectionType = $ConnectionTypes#http-get
+* payloadMimeType = #application/did
+* payloadType = $PayloadTypes#urn:who:trust:trustlist:v2
+* address = "did:web:tng-cdn.who.int:v2:trustlist:-:CHL"
+
+Instance: GDHCNParticipantDID-CHL-UAT-DSC
+InstanceOf: IHE.mCSD.Endpoint
+Usage: #definition
+* name = "Chile Trustlist (DID v2) - UAT - Document Signing Certificates\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL:DSC\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/DSC/did.json"
+* managingOrganization = Reference(Organization/GDHCNParticipant-CHL-UAT)
+* status = #active
+* connectionType = $ConnectionTypes#http-get
+* payloadMimeType = #application/did
+* payloadType = $PayloadTypes#urn:who:trust:trustlist:v2
+* address = "did:web:tng-cdn.who.int:v2:trustlist:-:CHL:DSC"
+
+Instance: GDHCNParticipantDID-CHL-UAT-SCA
+InstanceOf: IHE.mCSD.Endpoint
+Usage: #definition
+* name = "Chile Trustlist (DID v2) - UAT - Certificate Signing Authority\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL:SCA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/SCA/did.json"
+* managingOrganization = Reference(Organization/GDHCNParticipant-CHL-UAT)
+* status = #active
+* connectionType = $ConnectionTypes#http-get
+* payloadMimeType = #application/did
+* payloadType = $PayloadTypes#urn:who:trust:trustlist:v2
+* address = "did:web:tng-cdn.who.int:v2:trustlist:-:CHL:SCA"
+
 Instance: GDHCNParticipantDID-CYP-UAT-All
 InstanceOf: IHE.mCSD.Endpoint
 Description: "Cyprus Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CYP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CYP/did.json"

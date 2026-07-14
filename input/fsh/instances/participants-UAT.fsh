@@ -68,6 +68,16 @@ Usage: #definition
 * endpoint[+] = Reference(GDHCNParticipantDID-CAN-UAT-SCA)
 
 
+Instance: GDHCNParticipant-CHL-UAT
+InstanceOf: IHE.mCSD.Organization
+Usage: #definition
+* name = "Chile"
+* type = $orgType#govt
+* endpoint[+] = Reference(GDHCNParticipantDID-CHL-UAT-All)
+* endpoint[+] = Reference(GDHCNParticipantDID-CHL-UAT-DSC)
+* endpoint[+] = Reference(GDHCNParticipantDID-CHL-UAT-SCA)
+
+
 Instance: GDHCNParticipant-CYP-UAT
 InstanceOf: IHE.mCSD.Organization
 Usage: #definition
