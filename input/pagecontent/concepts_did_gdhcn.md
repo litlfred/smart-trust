@@ -58,7 +58,7 @@ The following examples outline the expected behavior of embedded trustlist:
 * tng-cdn.who.int/v2/trustlist/**$domain**/**$participant**/did.json matches all key **$usage** types for a specific **$domain** AND **$participant**.
 * tng-cdn.who.int/v2/trustlist/-/**$participant**/did.json matches all key **$usage** types across all **$domain**s for a specific **$participant**.
 * tng-cdn.who.int/v2/trustlist/**$domain**/**$participant**/**$usage**/did.json matches all keys for a specific key **$usage** type for a given **$domain** AND **$participant**.
-* tng-cdn.who.int/v2/trustlist/-/{{PARTICIPANT_CODE}}/did.json matches key material or references for all **$domain**s for a specific **$participant** without filtering the key usage types.
+* tng-cdn.who.int/v2/trustlist/-/**$participant**/did.json matches key material or references for all **$domain**s for a specific **$participant** without filtering the key usage types.
 * tng-cdn.who.int/v2/trustlist/-/**$participant**/**$usage**/did.json matches keys or references in all **$domain**s for a specific **$participant** and specific key **$usage** type.
 * tng-cdn.who.int/v2/trustlist/**$domain**/-/**$usage**/did.json matches keys for all **$participant**s of a specific **$domain** filtered by there key **$usage** type.
 * tng-cdn-who.int/v2/trustlist/-/- matches key material for all **$domain**s and all **$participant**s without filtering a specific **$usage** type so the did.json may contain SCA and DSC keys.
