@@ -1,8 +1,7 @@
 ---
-title: "Deployment — WHO SMART Trust"
-description: "The 7 page(s) the WHO SMART Trust IG publishes under Deployment."
-parent: "WHO SMART Trust — artefact index"
-nav_order: 4
+title: "Use Cases — WHO SMART Trust"
+description: "Use Cases: a narrative page of the WHO SMART Trust IG, rendered from its source."
+nav_exclude: true
 ---
 <style>
 .st-tag{display:inline-block;padding:.05rem .4rem;border-radius:3px;font-size:.75rem;
@@ -92,15 +91,49 @@ nav_order: 4
   <p id="publish-box">This page mirrors a published WHO Implementation Guide. The authoritative version is at <a href="http://smart.who.int/trust">http://smart.who.int/trust</a>.</p>
 </div>
 
-[← all 5 sections](../)
+# Use Cases
 
-- [Onboarding Checklist](../pages/concepts_onboarding_checklist.html)
-- [Security and Privacy Considerations](../pages/security_privacy.html)
-- [Testing](../pages/testing.html)
-- [Reference Implementations](../pages/reference_implementation.html)
-- [Downloads](../pages/downloads.html)
-- [Changes](../pages/changes.html)
-- [Endpoints](../pages/endpoints.html)
+{% raw %}
+### Use Cases
 
-Published by the IG at `http://smart.who.int/trust`. A link above stays on this site when the page's
-source was snapshotted (`ig-pages/pages.json`); anything else leaves for the canonical copy.
+#### Federated PKD Aggregation
+
+Keys from Local PKDs are aggregated in a federated PKD for use by verification
+applications.
+
+**ACTORS:**
+* Local PKD – acts as a node within a trust network​
+* Aggregating/Federated PKD – trusted aggregation of public keys and trusted services from nodes
+
+**TRANSACTION:** Mirror Local PKD
+
+#### Federated Verification
+
+Verifications can cryptographically verify health credentials using keys retrieved from
+the Federated PKD.
+
+**ACTORS:**
+* Universal Verification Application –  verifies health documents using Public Key Infrastructure (PKI)​
+* Local PKD – acts as a node within a trust network​
+* Aggregating/Federated PKD – trusted aggregation of public keys and trusted services from nodes
+
+**TRANSACTION:** Request PKD
+
+#### Dynamic Business Rule Validation​
+
+Validate one or more verified COVID credential against a dynamic business rule.​
+
+**ACTORS:**
+* Universal Verification Application – executes business rules against verified health documents​
+* Business Rules Library – trusted service, provided by a node within a trust network, to share business rules using Clinical Quality Language (CQL) specification​
+
+**PRE-CONDITION:** Verification Application has passed Verification Workflow​
+
+**TRANSACTIONS:** Request Business Rule Updates, Execute Business Rule​  
+
+**OUT OF SCOPE:** consolidating business rules across trust network members​
+{% endraw %}
+
+---
+
+<small>Source: [`input/pagecontent/use_cases.md`](https://github.com/litlfred/smart-trust/blob/30d55b3630ac8a8937e1d98f7c060a4ae5a78ef0/input/pagecontent/use_cases.md) at `30d55b36` · licence CC-BY-SA-3.0-IGO. Rendered from the IG's source by this site, not by the IG Publisher.</small>

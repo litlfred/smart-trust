@@ -1,8 +1,7 @@
 ---
-title: "Deployment — WHO SMART Trust"
-description: "The 7 page(s) the WHO SMART Trust IG publishes under Deployment."
-parent: "WHO SMART Trust — artefact index"
-nav_order: 4
+title: "Deployment Support — WHO SMART Trust"
+description: "Deployment Support: a narrative page of the WHO SMART Trust IG, rendered from its source."
+nav_exclude: true
 ---
 <style>
 .st-tag{display:inline-block;padding:.05rem .4rem;border-radius:3px;font-size:.75rem;
@@ -92,15 +91,22 @@ nav_order: 4
   <p id="publish-box">This page mirrors a published WHO Implementation Guide. The authoritative version is at <a href="http://smart.who.int/trust">http://smart.who.int/trust</a>.</p>
 </div>
 
-[← all 5 sections](../)
+# Deployment Support
 
-- [Onboarding Checklist](../pages/concepts_onboarding_checklist.html)
-- [Security and Privacy Considerations](../pages/security_privacy.html)
-- [Testing](../pages/testing.html)
-- [Reference Implementations](../pages/reference_implementation.html)
-- [Downloads](../pages/downloads.html)
-- [Changes](../pages/changes.html)
-- [Endpoints](../pages/endpoints.html)
+{% raw %}
+### Deployment Support
 
-Published by the IG at `http://smart.who.int/trust`. A link above stays on this site when the page's
-source was snapshotted (`ig-pages/pages.json`); anything else leaves for the canonical copy.
+    This Implementation Guide contains the following deployment support guidance:
+    
+<ul>
+      <li><a href="security_privacy.html">API</a></li>
+      <li><a href="https://worldhealthorganization.github.io/smart-trust/qa.html">Quality Assurance</a></li>
+      <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+      <li><a href="testing.html">Testing</a></li>
+      <li><a href="downloads.html">Downloads</a></li>      
+    </ul>
+{% endraw %}
+
+---
+
+<small>Source: [`input/pagecontent/support.md`](https://github.com/litlfred/smart-trust/blob/30d55b3630ac8a8937e1d98f7c060a4ae5a78ef0/input/pagecontent/support.md) at `30d55b36` · licence CC-BY-SA-3.0-IGO. Rendered from the IG's source by this site, not by the IG Publisher.</small>

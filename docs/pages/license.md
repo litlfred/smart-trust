@@ -1,8 +1,7 @@
 ---
-title: "Deployment — WHO SMART Trust"
-description: "The 7 page(s) the WHO SMART Trust IG publishes under Deployment."
-parent: "WHO SMART Trust — artefact index"
-nav_order: 4
+title: "License — WHO SMART Trust"
+description: "License: a narrative page of the WHO SMART Trust IG, rendered from its source."
+nav_exclude: true
 ---
 <style>
 .st-tag{display:inline-block;padding:.05rem .4rem;border-radius:3px;font-size:.75rem;
@@ -92,15 +91,37 @@ nav_order: 4
   <p id="publish-box">This page mirrors a published WHO Implementation Guide. The authoritative version is at <a href="http://smart.who.int/trust">http://smart.who.int/trust</a>.</p>
 </div>
 
-[← all 5 sections](../)
+# License
 
-- [Onboarding Checklist](../pages/concepts_onboarding_checklist.html)
-- [Security and Privacy Considerations](../pages/security_privacy.html)
-- [Testing](../pages/testing.html)
-- [Reference Implementations](../pages/reference_implementation.html)
-- [Downloads](../pages/downloads.html)
-- [Changes](../pages/changes.html)
-- [Endpoints](../pages/endpoints.html)
+{% raw %}
+### License
 
-Published by the IG at `http://smart.who.int/trust`. A link above stays on this site when the page's
-source was snapshotted (`ig-pages/pages.json`); anything else leaves for the canonical copy.
+Creative Commons Attribution 3.0 IGO (CC-BY-3.0-IGO)
+
+#### Summary
+
+This is a human-readable summary of the [Creative Commons Attribution 3.0 IGO (CC-BY-3.0-IGO) License](https://creativecommons.org/licenses/by/3.0/igo/). This summary is not a substitute for the full license text.
+
+Under this license, you are free to:
+
+- Share: Copy and redistribute the material in any medium or format.
+- Adapt: Remix, transform, and build upon the material for any purpose, even commercially.
+
+Under the following conditions:
+
+- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+- No Additional Restrictions: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+- International Government Organizations (IGOs): This license is specifically designed for works created by International Government Organizations.
+
+#### License Text
+
+This work is licensed under the [Creative Commons Attribution 3.0 IGO (CC-BY-3.0-IGO) License](https://creativecommons.org/licenses/by/3.0/igo/).
+
+To view a copy of this license, visit [https://creativecommons.org/licenses/by/3.0/igo/](https://creativecommons.org/licenses/by/3.0/igo/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+{% endraw %}
+
+---
+
+<small>Source: [`input/pagecontent/license.md`](https://github.com/litlfred/smart-trust/blob/30d55b3630ac8a8937e1d98f7c060a4ae5a78ef0/input/pagecontent/license.md) at `30d55b36` · licence CC-BY-SA-3.0-IGO. Rendered from the IG's source by this site, not by the IG Publisher.</small>

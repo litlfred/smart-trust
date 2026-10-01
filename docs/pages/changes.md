@@ -1,8 +1,7 @@
 ---
-title: "Deployment — WHO SMART Trust"
-description: "The 7 page(s) the WHO SMART Trust IG publishes under Deployment."
-parent: "WHO SMART Trust — artefact index"
-nav_order: 4
+title: "Changes — WHO SMART Trust"
+description: "Changes: a narrative page of the WHO SMART Trust IG, rendered from its source."
+nav_exclude: true
 ---
 <style>
 .st-tag{display:inline-block;padding:.05rem .4rem;border-radius:3px;font-size:.75rem;
@@ -92,15 +91,84 @@ nav_order: 4
   <p id="publish-box">This page mirrors a published WHO Implementation Guide. The authoritative version is at <a href="http://smart.who.int/trust">http://smart.who.int/trust</a>.</p>
 </div>
 
-[← all 5 sections](../)
+# Changes
 
-- [Onboarding Checklist](../pages/concepts_onboarding_checklist.html)
-- [Security and Privacy Considerations](../pages/security_privacy.html)
-- [Testing](../pages/testing.html)
-- [Reference Implementations](../pages/reference_implementation.html)
-- [Downloads](../pages/downloads.html)
-- [Changes](../pages/changes.html)
-- [Endpoints](../pages/endpoints.html)
+{% raw %}
+### Changes
 
-Published by the IG at `http://smart.who.int/trust`. A link above stays on this site when the page's
-source was snapshotted (`ig-pages/pages.json`); anything else leaves for the canonical copy.
+This provides a list of changes to the SMART Trust IG.
+
+### 2024-01-29 v1.0.0 - First stable release
+- First stable release
+
+### 2024-02-01 v1.1.0
+- Hcert specifications added
+
+### 2024-02-21 v1.1.1
+- video tutorials added
+
+### 2024-03-22 v1.1.2 - release
+- HCert Logical Model and specification updated with subclaim details and notes
+- Rapid assessment template for proposing new trust domains added
+- Content Profiles include details about Trust Domain
+- FAQ page added
+- Link to country participation dashboard added
+
+### 2024-10-28 v1.1.4 - release
+- HCert Logical Model updated with subclaim for DVC
+- Onboarding Checklist updated
+- Onboarding process revised to remove Transitive processes
+- Latest country participation status updated
+
+### 2024-12-19 v1.1.5 - release
+- Onboarding Checklist updated
+
+### 2025-04-02 v1.2.0 - release
+- Upgraded to FHIR 5.0.0
+- IPS Pilgrimage trust domain added
+- PH4H Letters of Application added (English and Spanish)
+- DAK API Documentation Hub added
+- TNG Endpoints page added covering DEV, UAT, and PROD environments
+- Participant ValueSets for DEV, UAT, and PROD environments introduced with automated nightly generation
+- DID Trustlist v2 added (multiple DID files per key type); DID Trustlist v1 deprecated
+
+### 2025-10-27 v1.3.0 - release
+- Trust Network Gateway additional context JSON-LD file added
+- DID context extension links updated to reference FHIR specifications
+- Participant lists updated
+
+### 2026-02-11 v1.4.0 - release
+- Onboarding Checklist updated with detailed curl command validation instructions
+- Windows-specific curl instructions added (OpenSSL-based build required)
+- IOM country mapping added
+- Participant lists updated
+
+### 2026-04-27 v1.5.0 - release
+- C.L.38.2023 (Global Digital Health Certification Network) circular letter references added to Overview (Arabic, Chinese, English, French, Russian)
+- Trust Network Gateway Letters of Application added for all languages (English, Arabic, French, Mandarin, Russian, Spanish) and PH4H
+- Updated Participant onboarding list
+
+### 2026-07-23 v1.6.0 - release
+- Nightly participant generation fixes:
+  - Fixed GitHub API rate limiting in the nightly participant generation workflow
+  - Fixed missing Participants CodeSystem updates
+- Additional updates:
+  - Clarified that the HCERT CWT must include the signature for validation
+  - Updated FSH model definitions for cardinality on CWT, and HCERT configuration
+
+### 2026-07-29 v1.7.0 - release
+- Nightly participant generation fixes:
+  - Fixed GitHub API rate limiting in the nightly participant generation workflow
+  - Fixed missing Participants 
+- Added MedicationOverviewMin as a new payload type in HCERT
+
+### 2026-08-27 v1.7.1 - release
+- updated GDHCN Participants onboarding status
+
+### 2026-09-03 v1.7.2 - release
+- updated GDHCN Administrative and Operational Framework letter
+{% endraw %}
+
+---
+
+<small>Source: [`input/pagecontent/changes.md`](https://github.com/litlfred/smart-trust/blob/30d55b3630ac8a8937e1d98f7c060a4ae5a78ef0/input/pagecontent/changes.md) at `30d55b36` · licence CC-BY-SA-3.0-IGO. Rendered from the IG's source by this site, not by the IG Publisher.</small>

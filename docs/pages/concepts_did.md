@@ -1,8 +1,7 @@
 ---
-title: "Deployment — WHO SMART Trust"
-description: "The 7 page(s) the WHO SMART Trust IG publishes under Deployment."
-parent: "WHO SMART Trust — artefact index"
-nav_order: 4
+title: "DID Trustlist Specification — WHO SMART Trust"
+description: "DID Trustlist Specification: a narrative page of the WHO SMART Trust IG, rendered from its source."
+nav_exclude: true
 ---
 <style>
 .st-tag{display:inline-block;padding:.05rem .4rem;border-radius:3px;font-size:.75rem;
@@ -92,15 +91,27 @@ nav_order: 4
   <p id="publish-box">This page mirrors a published WHO Implementation Guide. The authoritative version is at <a href="http://smart.who.int/trust">http://smart.who.int/trust</a>.</p>
 </div>
 
-[← all 5 sections](../)
+# DID Trustlist Specification
 
-- [Onboarding Checklist](../pages/concepts_onboarding_checklist.html)
-- [Security and Privacy Considerations](../pages/security_privacy.html)
-- [Testing](../pages/testing.html)
-- [Reference Implementations](../pages/reference_implementation.html)
-- [Downloads](../pages/downloads.html)
-- [Changes](../pages/changes.html)
-- [Endpoints](../pages/endpoints.html)
+{% raw %}
+### DID Specifications
 
-Published by the IG at `http://smart.who.int/trust`. A link above stays on this site when the page's
-source was snapshotted (`ig-pages/pages.json`); anything else leaves for the canonical copy.
+The common trust list specification defines the lowest common denominator format that can interoperate between all included specifications and can support the minimal required features from each specification. This includes considering the minimum security requirements that satisfy each of the specifications. It was designed taking into account the following tenets:
+1. SHALL be convertible from each existing trust network's formats
+2. SHALL describe a key-to-trust-anchor path for all specifications
+3. SHALL be cacheable
+4. SHALL be mergeable (trust list operators can integrate each other's entries)
+5. SHALL be usable by all stakeholders required to verify health credentials in their operations
+
+
+#### DID Document v2.0
+In [version 2.0 of the WHO GDHCN DID](concepts_did_gdhcn.html) publication specification, multiple DID files are created depending on your key needs.  
+
+
+#### DID Document v1.0 (deprecated)
+In [version 1.0 of the WHO GDHCN DID](concepts_did_v1.html) publication specification a single DID file containing all keys.
+{% endraw %}
+
+---
+
+<small>Source: [`input/pagecontent/concepts_did.md`](https://github.com/litlfred/smart-trust/blob/30d55b3630ac8a8937e1d98f7c060a4ae5a78ef0/input/pagecontent/concepts_did.md) at `30d55b36` · licence CC-BY-SA-3.0-IGO. Rendered from the IG's source by this site, not by the IG Publisher.</small>
