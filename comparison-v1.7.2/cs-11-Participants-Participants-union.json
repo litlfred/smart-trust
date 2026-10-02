@@ -1,0 +1,20 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "c822e884-1a02-4da2-9d7a-b7d5dfc0d993-32",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/c822e884-1a02-4da2-9d7a-b7d5dfc0d993-32",
+  "name" : "UnionParticipantsAndParticipants",
+  "title" : "Union of WHO GDHCN Trust Network Participants CodeSystem And WHO GDHCN Trust Network Participants CodeSystem",
+  "status" : "active",
+  "date" : "2026-10-01T11:50:52+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "WHO",
+    "display" : "WHO",
+    "definition" : "World Health Organization"
+  }]
+}

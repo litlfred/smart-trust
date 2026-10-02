@@ -1,0 +1,24 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "8876c65b-ee37-4a00-b6da-72f1110f2961-42",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8876c65b-ee37-4a00-b6da-72f1110f2961-42",
+  "name" : "IntersectionTransactionsAndTransactions",
+  "title" : "Intersection of WHO GDHCN Transactions CodeSystem And WHO GDHCN Transactions CodeSystem",
+  "status" : "active",
+  "date" : "2026-10-02T08:13:37+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "concept" : [{
+    "code" : "keys-get-api"
+  },
+  {
+    "code" : "keys-get-did"
+  },
+  {
+    "code" : "keys-put-api"
+  }]
+}
