@@ -23,7 +23,6 @@ fhir-harness/scripts/gen-ig-pages.ts
 fhir-harness/scripts/resource-views.ts
 folio-assistant-core/schemas/fhir-artifact-index.ts
 folio-assistant-core/schemas/materialization.ts
-smart-base/smart-base.json
-smart-base/fhir-artifact-index/chrome.json
+# round 2: chrome.json is the instance's own copy (smart-base/fhir-artifact-index/chrome.json); smart-base's declaration is no longer needed
 fhir-harness/scripts/templates/ (directory)
 fhir-harness/scripts/ingest-ig-menu.ts

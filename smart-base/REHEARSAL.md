@@ -13,10 +13,13 @@ tools package first."* This rehearsal measures that risk.
 
 ## What is on this branch
 
-- `smart-trust/`: the instance directory from folio-assistant at `52a35ddf`
-  (PR litlfred/folio-assistant#1766), copied unchanged. It holds the artefact
-  index, the menu, 2,158 generated pages, the QA results and the themes.
-- `smart-trust/PLATFORM-FILES.txt`: the folio-assistant files the gates
+- `smart-base/`: smart-trust's instance data from folio-assistant at `52a35ddf`
+  (PR litlfred/folio-assistant#1766). This is the plan's layout, which the
+  owner chose on 2026-10-02 ("2"): every IG repository keeps its data under
+  `smart-base/`. The declaration stays `smart-trust.json`, so the instance is
+  still `smart-trust`. Since round 2 it also holds `chrome.json`, a copy of
+  smart-base's (see finding 3).
+- `smart-base/PLATFORM-FILES.txt`: the folio-assistant files the gates
   needed (see below).
 
 No folio-assistant code is copied onto this branch. The platform files were
@@ -28,7 +31,8 @@ placed only in a scratch copy, to measure what the gates need.
 |---|---|---|
 | `gen-ig-pages --instance smart-trust --check` | 23 code and data files from folio-assistant, the page templates, plus smart-base's `smart-base.json` and `chrome.json` | **pass**: 2,158 pages byte-identical |
 | `ingest-ig-menu --source . --check` | 2 files | **pass**: 5 groups, 29 items. The IG source *is* this repository, so the check runs here. folio-assistant's CI cannot run it, because it cannot reach the source (bean `0818`). |
-| the same page check with the directory renamed `smart-base/`, as the plan's layout has it | same | **fail**: all 2,153 artefact pages change |
+| round 1: the same page check with the directory renamed `smart-base/` | same | **fail**: all 2,153 artefact pages change |
+| round 2, after litlfred/folio-assistant `853f9532`: `gen-ig-pages --instance smart-base --chrome-owner smart-trust --check` on this branch's layout | 23 files, the templates, and the instance's own `chrome.json` | **pass**: 2,158 pages byte-identical |
 
 ## Findings
 
@@ -42,7 +46,7 @@ placed only in a scratch copy, to measure what the gates need.
    - A static import scan found 20 of the 23. Run-time loading supplied the
      other 3, including a JSON code list read by URL. So the package's file
      list must be built by running the gates, not by reading imports.
-2. **The instance's identity is its directory name.**
+2. **Round 1: the instance's identity came from its directory name. Fixed in round 2.**
    - Page URLs are built from it: `/smart-trust/assets/...` becomes
      `/smart-base/...`.
    - The chrome is found through the directory too. It is
@@ -50,13 +54,16 @@ placed only in a scratch copy, to measure what the gates need.
    - The plan has every IG repository keep its data under `smart-base/`.
      Under that layout, every IG would publish under `/smart-base/` and
      collide once folio-assistant subscribes to several forks.
-   - Before the rename, the generators need an instance id separate from
-     the directory. The declaration's `name` is the obvious candidate.
+   - **Fix** (folio-assistant `853f9532`):
+     - `gen-ig-pages` now takes the declaration's `name`.
+     - Two helpers had composed `<directory>.json` to find the declaration.
+       They now find it the way the platform defines a declaration: the
+       file whose stem equals its own `name`.
 3. **The chrome belongs to the harness, not to one instance.**
    smart-trust's pages read `smart-base/fhir-artifact-index/chrome.json`.
    This is plan question Q4: re-key it to the template and ship it with the
-   harness. It must be settled before this repository can build its own
-   pages in the target layout.
+   harness. Until Q4 lands, this branch carries a copy and passes
+   `--chrome-owner smart-trust`.
 4. **The menu gate gets better in the fork.** It needs the IG's
    `sushi-config.yaml` at a commit, and here that is the working tree. A gate
    that folio-assistant cannot run becomes an ordinary one.
