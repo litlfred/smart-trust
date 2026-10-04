@@ -34,6 +34,12 @@ const DOCS = join(INSTANCE, "docs");
 const ARTIFACTS = join(DOCS, "artifact");
 const CATEGORIES = join(DOCS, "category");
 
+// In this fork the pages are generated, not committed (smart-trust.json, `smart-trust-docs`).
+// No pages must FAIL, never pass vacuously over empty lists.
+if (!existsSync(ARTIFACTS)) {
+  throw new Error(`${DOCS} holds no generated pages: run gen-ig-pages first (see smart-base/smart-trust.json, smart-trust-docs)`);
+}
+
 /** Category pages — one per category over `INLINE_LIMIT`; today that is `Other`. */
 const categoryFiles = existsSync(CATEGORIES)
   ? readdirSync(CATEGORIES)
