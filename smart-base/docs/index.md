@@ -3,7 +3,7 @@ title: "WHO SMART Trust — artefact index"
 description: "All 678 artefacts of the WHO SMART Trust IG 1.8.0, reconstructed from its published output."
 has_children: true
 renders:
-  - smart-trust/fhir-artifact-index
+  - smart-base/fhir-artifact-index
 rendered-by: ig-pages
 ---
 <link rel="stylesheet" href="{{ '/smart-trust/assets/ig-pages.css' | relative_url }}">
