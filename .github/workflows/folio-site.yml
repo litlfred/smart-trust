@@ -3,23 +3,21 @@
 # fhir-harness/templates/ig-repo-site/folio-site.yml (#2235, #2237; bean mftp,
 # 48a6) with INSTANCE=smart-trust and LABEL="WHO SMART Trust".
 #
-# It runs on `claude/seed-smart-base`, the branch carrying the folio-assistant
-# submodule, as smart-immunizations does.
+# It is run by hand on `claude/seed-smart-base`, the branch carrying the
+# folio-assistant submodule.
 #
-# Deploy differs from the template ON PURPOSE. This repository's gh-pages also
-# holds the IG Publisher's per-branch previews under branches/<name>/ (ghbuild
-# deploys them with clean: false). So the deploy replaces the site root but
-# EXCLUDES branches/**, and keeps gh-pages history (no single-commit), so the
-# previews survive and the previous site can be recovered.
-#
-# Not run on `main`: ghbuild publishes the default branch to the root, and two
-# workflows writing the root would overwrite each other.
+# Deploy differs from the template ON PURPOSE. This repository's gh-pages still
+# holds the IG Publisher's old per-branch previews under branches/<name>/. The
+# workflow that made them (ghbuild.yml) was removed 2026-10-06, but deleting
+# the previews is a separate decision nobody has taken. So the deploy replaces
+# the site root but EXCLUDES branches/**, and keeps gh-pages history (no
+# single-commit), so the previous site can be recovered.
 
 name: folio site
 
+# Manual trigger only (owner decision, 2026-10-06): no build runs on push.
+# Run it from the Actions tab, on `claude/seed-smart-base`, to publish.
 on:
-  push:
-    branches: [claude/seed-smart-base]
   workflow_dispatch:
 
 permissions:
