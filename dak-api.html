@@ -576,33 +576,33 @@
   them: those are versioned in their own URLs already.
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
-<link rel="stylesheet" href="/smart-trust/assets/css/navbar-row.css?v=1791302975">
-<link rel="stylesheet" href="/smart-trust/assets/css/docs-ui.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/navbar-row.css?v=1791312356">
+<link rel="stylesheet" href="/smart-trust/assets/css/docs-ui.css?v=1791312356">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/narrow-viewport.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/narrow-viewport.css?v=1791312356">
 
 <!--
   The work-plan dashboard's styles, split from docs-ui.css so that
   `state-visualizer.ts` can inline exactly these bytes into the generated
   `<base>/<stub>/state-visualizer/` pages. One rule, two surfaces.
 -->
-<link rel="stylesheet" href="/smart-trust/assets/css/work-plan.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/work-plan.css?v=1791312356">
 <!-- Sticky themes. GENERATED from the theme nodes in `schemas/themes.ts` by
      `bun run themes:css`; `themes:css:check` fails the build when it is stale.
      Loaded AFTER docs-ui.css deliberately: it supplies the `--fa-sticky-*`
      roles that docs-ui.css consumes, and a custom property has to be set on a
      matching element before the rule reading it takes effect. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/themes.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/themes.css?v=1791312356">
 <!-- UML overview colours: one class per graph typology, set on the Mermaid nodes
      that `scripts/gen-uml-overview.ts` writes into docs/uml/overview/. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/uml.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/uml.css?v=1791312356">
 <!-- Kind avatars. GENERATED from `schemas/avatars.ts` by `bun run avatars:css`;
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/avatars.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/avatars.css?v=1791312356">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -623,8 +623,8 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="/smart-trust/assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="/smart-trust/assets/js/navbar-row.js?v=1791302975" defer></script>
-<script src="/smart-trust/assets/js/docs-ui.js?v=1791302975" defer></script>
+<script src="/smart-trust/assets/js/navbar-row.js?v=1791312356" defer></script>
+<script src="/smart-trust/assets/js/docs-ui.js?v=1791312356" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -784,7 +784,7 @@
     <img src="/smart-trust/assets/img/harness/landing-card.webp" alt=""
          style="width: 200%; height: 200%;
                 left: 0%; top: -92%">
-  </span><span class="fa-site-title">WHO SMART Trust</span>
+  </span><span class="fa-site-title" lang="en" dir="ltr">WHO SMART Trust</span>
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
@@ -920,12 +920,13 @@ var repo=(m.blob.match(/^https:\/\/github\.com\/[^/]+\/[^/]+/)||[])[0];
 var n=function(s){return s.toLowerCase().replace(/[^a-z0-9]+/g," ").trim()};var used={};
 var link=function(h,cls,href,title,glyph){var a=document.createElement("a");a.className=cls;a.href=href;a.title=title;a.textContent=glyph;a.rel="noopener";a.target="_blank";h.appendChild(document.createTextNode(" "));h.appendChild(a)};
 document.querySelectorAll("#main-content h1,#main-content h2,#main-content h3,#main-content h4,#main-content h5,#main-content h6").forEach(function(h){
-var text=h.textContent.trim(),k=n(text),line;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;break}}
-var src=line?m.blob+"#L"+line:m.blob;
+var text=h.textContent.trim(),k=n(text),line,file;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;file=m.lines[i].b;break}}
+var src=line?(file||m.blob)+"#L"+line:m.blob;
 if(line)link(h,"ig-src",src,"This section's source, line "+line+", on GitHub","\u270E");
 if(repo){var here=location.href.split("#")[0]+(h.id?"#"+h.id:"");
-var body="**Page:** "+here+"\n**Section:** "+text+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
-link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback: "+document.title.split(" | ")[0]+" \u2014 "+text)+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();</script>
+var pt=document.title.split(" | ")[0].trim();
+var body="**Page:** "+here+"\n**Section:** "+text+(h.id?" (#"+h.id+")":"")+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
+link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback on \u201C"+text+"\u201D"+(pt&&n(pt)!==k?" (page: "+pt+")":""))+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();</script>
 
 <link rel="stylesheet" href="assets/ig-pages.css" />
 <link rel="stylesheet" href="assets/ig-chrome.css" />

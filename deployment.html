@@ -560,33 +560,33 @@
   them: those are versioned in their own URLs already.
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
-<link rel="stylesheet" href="/smart-trust/assets/css/navbar-row.css?v=1791302975">
-<link rel="stylesheet" href="/smart-trust/assets/css/docs-ui.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/navbar-row.css?v=1791312356">
+<link rel="stylesheet" href="/smart-trust/assets/css/docs-ui.css?v=1791312356">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/narrow-viewport.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/narrow-viewport.css?v=1791312356">
 
 <!--
   The work-plan dashboard's styles, split from docs-ui.css so that
   `state-visualizer.ts` can inline exactly these bytes into the generated
   `<base>/<stub>/state-visualizer/` pages. One rule, two surfaces.
 -->
-<link rel="stylesheet" href="/smart-trust/assets/css/work-plan.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/work-plan.css?v=1791312356">
 <!-- Sticky themes. GENERATED from the theme nodes in `schemas/themes.ts` by
      `bun run themes:css`; `themes:css:check` fails the build when it is stale.
      Loaded AFTER docs-ui.css deliberately: it supplies the `--fa-sticky-*`
      roles that docs-ui.css consumes, and a custom property has to be set on a
      matching element before the rule reading it takes effect. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/themes.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/themes.css?v=1791312356">
 <!-- UML overview colours: one class per graph typology, set on the Mermaid nodes
      that `scripts/gen-uml-overview.ts` writes into docs/uml/overview/. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/uml.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/uml.css?v=1791312356">
 <!-- Kind avatars. GENERATED from `schemas/avatars.ts` by `bun run avatars:css`;
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/avatars.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/avatars.css?v=1791312356">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -607,8 +607,8 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="/smart-trust/assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="/smart-trust/assets/js/navbar-row.js?v=1791302975" defer></script>
-<script src="/smart-trust/assets/js/docs-ui.js?v=1791302975" defer></script>
+<script src="/smart-trust/assets/js/navbar-row.js?v=1791312356" defer></script>
+<script src="/smart-trust/assets/js/docs-ui.js?v=1791312356" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -768,7 +768,7 @@
     <img src="/smart-trust/assets/img/harness/landing-card.webp" alt=""
          style="width: 200%; height: 200%;
                 left: 0%; top: -92%">
-  </span><span class="fa-site-title">WHO SMART Trust</span>
+  </span><span class="fa-site-title" lang="en" dir="ltr">WHO SMART Trust</span>
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
@@ -2746,19 +2746,20 @@ documented network of trust gateways, supporting all major health credential cer
 </table></div>
 
 <p class="ig-edit"><a href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/deployment.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/deployment.md", "lines": [{"t":"Deployment","l":2}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/deployment.md", "lines": [{"t":"Deployment","l":2},{"t":"Onboarding Checklist","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Git Repository","l":107,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Local Repository","l":134,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Invite tng-bot","l":146,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Generate GPG Key","l":163,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Create Certificates","l":238,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Certificate Preparation for DEV and UAT","l":240,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"If your Operating Systems is Unix/Linux/Mac","l":252,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"If your Operating Systems is Windows","l":268,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"How to Run Script :","l":294,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Prepare Folders","l":313,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Certification Preparation for Prod","l":327,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"SCA certificate (TNPSCA) generation example","l":341,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"DSC generation example","l":377,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"TNPUP generation example","l":423,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"TNPTLS generation example","l":458,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md"},{"t":"Security and Privacy Considerations","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/security_privacy.md"},{"t":"Testing","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/testing.md"},{"t":"Trust Registry Network","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/reference_implementation.md"},{"t":"Proof of Concept","l":9,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/reference_implementation.md"},{"t":"Implementation Toolkit and Technical Specification","l":13,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/reference_implementation.md"},{"t":"Trust Network Gateway","l":21,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/reference_implementation.md"},{"t":"Downloads","l":3,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/downloads.md"},{"t":"Changes","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2024-01-29 v1.0.0 - First stable release","l":6,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2024-02-01 v1.1.0","l":9,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2024-02-21 v1.1.1","l":12,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2024-03-22 v1.1.2 - release","l":15,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2024-10-28 v1.1.4 - release","l":22,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2024-12-19 v1.1.5 - release","l":28,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2025-04-02 v1.2.0 - release","l":31,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2025-10-27 v1.3.0 - release","l":40,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2026-02-11 v1.4.0 - release","l":45,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2026-04-27 v1.5.0 - release","l":51,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2026-07-23 v1.6.0 - release","l":56,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2026-07-29 v1.7.0 - release","l":64,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2026-08-27 v1.7.1 - release","l":70,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"2026-09-03 v1.7.2 - release","l":73,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/changes.md"},{"t":"Endpoints","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Operational Metadata","l":5,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Trust Domains","l":6,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Key Usage Codes","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Participants","l":16,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Trustlist Distribution Endpoints","l":22,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Trust Network Gateway","l":37,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"},{"t":"Status Monitoring Dashboards","l":51,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/endpoints.md"}]}</script>
 
 <script>(function(){var d=document.getElementById("ig-source-lines");if(!d)return;var m;try{m=JSON.parse(d.textContent)}catch(e){return}
 var repo=(m.blob.match(/^https:\/\/github\.com\/[^/]+\/[^/]+/)||[])[0];
 var n=function(s){return s.toLowerCase().replace(/[^a-z0-9]+/g," ").trim()};var used={};
 var link=function(h,cls,href,title,glyph){var a=document.createElement("a");a.className=cls;a.href=href;a.title=title;a.textContent=glyph;a.rel="noopener";a.target="_blank";h.appendChild(document.createTextNode(" "));h.appendChild(a)};
 document.querySelectorAll("#main-content h1,#main-content h2,#main-content h3,#main-content h4,#main-content h5,#main-content h6").forEach(function(h){
-var text=h.textContent.trim(),k=n(text),line;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;break}}
-var src=line?m.blob+"#L"+line:m.blob;
+var text=h.textContent.trim(),k=n(text),line,file;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;file=m.lines[i].b;break}}
+var src=line?(file||m.blob)+"#L"+line:m.blob;
 if(line)link(h,"ig-src",src,"This section's source, line "+line+", on GitHub","\u270E");
 if(repo){var here=location.href.split("#")[0]+(h.id?"#"+h.id:"");
-var body="**Page:** "+here+"\n**Section:** "+text+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
-link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback: "+document.title.split(" | ")[0]+" \u2014 "+text)+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();</script>
+var pt=document.title.split(" | ")[0].trim();
+var body="**Page:** "+here+"\n**Section:** "+text+(h.id?" (#"+h.id+")":"")+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
+link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback on \u201C"+text+"\u201D"+(pt&&n(pt)!==k?" (page: "+pt+")":""))+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();</script>
 
 <link rel="stylesheet" href="assets/ig-pages.css" />
 <link rel="stylesheet" href="assets/ig-chrome.css" />

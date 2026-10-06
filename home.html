@@ -560,33 +560,33 @@
   them: those are versioned in their own URLs already.
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
-<link rel="stylesheet" href="/smart-trust/assets/css/navbar-row.css?v=1791302975">
-<link rel="stylesheet" href="/smart-trust/assets/css/docs-ui.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/navbar-row.css?v=1791312356">
+<link rel="stylesheet" href="/smart-trust/assets/css/docs-ui.css?v=1791312356">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/narrow-viewport.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/narrow-viewport.css?v=1791312356">
 
 <!--
   The work-plan dashboard's styles, split from docs-ui.css so that
   `state-visualizer.ts` can inline exactly these bytes into the generated
   `<base>/<stub>/state-visualizer/` pages. One rule, two surfaces.
 -->
-<link rel="stylesheet" href="/smart-trust/assets/css/work-plan.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/work-plan.css?v=1791312356">
 <!-- Sticky themes. GENERATED from the theme nodes in `schemas/themes.ts` by
      `bun run themes:css`; `themes:css:check` fails the build when it is stale.
      Loaded AFTER docs-ui.css deliberately: it supplies the `--fa-sticky-*`
      roles that docs-ui.css consumes, and a custom property has to be set on a
      matching element before the rule reading it takes effect. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/themes.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/themes.css?v=1791312356">
 <!-- UML overview colours: one class per graph typology, set on the Mermaid nodes
      that `scripts/gen-uml-overview.ts` writes into docs/uml/overview/. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/uml.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/uml.css?v=1791312356">
 <!-- Kind avatars. GENERATED from `schemas/avatars.ts` by `bun run avatars:css`;
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="/smart-trust/assets/css/avatars.css?v=1791302975">
+<link rel="stylesheet" href="/smart-trust/assets/css/avatars.css?v=1791312356">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -607,8 +607,8 @@
 <!-- BEFORE docs-ui.js and work-plan.js: both read window.faRender. -->
 <script src="/smart-trust/assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
-<script src="/smart-trust/assets/js/navbar-row.js?v=1791302975" defer></script>
-<script src="/smart-trust/assets/js/docs-ui.js?v=1791302975" defer></script>
+<script src="/smart-trust/assets/js/navbar-row.js?v=1791312356" defer></script>
+<script src="/smart-trust/assets/js/docs-ui.js?v=1791312356" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -768,7 +768,7 @@
     <img src="/smart-trust/assets/img/harness/landing-card.webp" alt=""
          style="width: 200%; height: 200%;
                 left: 0%; top: -92%">
-  </span><span class="fa-site-title">WHO SMART Trust</span>
+  </span><span class="fa-site-title" lang="en" dir="ltr">WHO SMART Trust</span>
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
@@ -1542,19 +1542,20 @@ existing trust networks or potential verifiers who may participate in the federa
 Trusting the CA rather than the certificate itself may provide a solution to frequent renewals.</p>
 
 <p class="ig-edit"><a href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/home.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/home.md", "lines": [{"t":"Home","l":1}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/home.md", "lines": [{"t":"Home","l":1},{"t":"Summary","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Background &amp; Purpose","l":25,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Circular letter to Member States","l":80,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Audience","l":90,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Participants","l":112,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Available Trust Domains","l":125,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Ethical Considerations and Data Protection Principles","l":132,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Feedback","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/feedback.md"},{"t":"Community","l":146,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/overview.md"},{"t":"Disclaimer","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/disclaimer.md"},{"t":"Key ethical considerations","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"Objectives","l":7,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"Processes","l":32,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"Ethical considerations related to further potential uses of digital personal health records for public health security measures","l":44,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"Recommendations","l":62,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"Data protection principles for a Digital Solution","l":105,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"Digital personal health record design criteria","l":172,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"References","l":190,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/ethical_principles.md"},{"t":"FAQs","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Participation and Roles","l":3,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Who can serve as the Application Form Representative for GDHCN participation?","l":5,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"What is the role of the Business Owner Contact?","l":8,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Who should be the Technical Contact?","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"What does the Legal Contact do?","l":14,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Financial Information","l":17,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Are there any fees associated with participating in the GDHCN?","l":19,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Technical Requirements and Infrastructure","l":22,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"How will the transition to WHO's product catalog management tool affect vaccine codes?","l":24,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Can we continue participation in the UAT environment without moving to production?","l":27,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"How does GDHCN support open-source collaboration?","l":30,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"How is GDHCN integrating existing EU DCC technical specifications?","l":33,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"What are the plans for future developments and maintenance of the GDHCN infrastructure?","l":36,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Transition and Onboarding","l":39,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"How is the transition of technical assets from EU DCC to GDHCN managed?","l":41,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"What is the onboarding process for new applications not previously connected to EU DCC?","l":44,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Security and Compliance","l":47,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"How is the key material and exchange process managed within GDHCN?","l":49,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"How are security-related incidents managed during the transition to WHO governance?","l":52,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Certificate Management","l":55,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"What is the current policy on TLS certificate renewal for national backends?","l":57,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"Can WHO host networks use self-signed TLS certificates?","l":60,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"},{"t":"What is the process for proposing alternatives to the current TLS certificate policy?","l":63,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/faq.md"}]}</script>
 
 <script>(function(){var d=document.getElementById("ig-source-lines");if(!d)return;var m;try{m=JSON.parse(d.textContent)}catch(e){return}
 var repo=(m.blob.match(/^https:\/\/github\.com\/[^/]+\/[^/]+/)||[])[0];
 var n=function(s){return s.toLowerCase().replace(/[^a-z0-9]+/g," ").trim()};var used={};
 var link=function(h,cls,href,title,glyph){var a=document.createElement("a");a.className=cls;a.href=href;a.title=title;a.textContent=glyph;a.rel="noopener";a.target="_blank";h.appendChild(document.createTextNode(" "));h.appendChild(a)};
 document.querySelectorAll("#main-content h1,#main-content h2,#main-content h3,#main-content h4,#main-content h5,#main-content h6").forEach(function(h){
-var text=h.textContent.trim(),k=n(text),line;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;break}}
-var src=line?m.blob+"#L"+line:m.blob;
+var text=h.textContent.trim(),k=n(text),line,file;for(var i=0;i<m.lines.length;i++){if(!used[i]&&n(m.lines[i].t)===k){used[i]=1;line=m.lines[i].l;file=m.lines[i].b;break}}
+var src=line?(file||m.blob)+"#L"+line:m.blob;
 if(line)link(h,"ig-src",src,"This section's source, line "+line+", on GitHub","\u270E");
 if(repo){var here=location.href.split("#")[0]+(h.id?"#"+h.id:"");
-var body="**Page:** "+here+"\n**Section:** "+text+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
-link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback: "+document.title.split(" | ")[0]+" \u2014 "+text)+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();</script>
+var pt=document.title.split(" | ")[0].trim();
+var body="**Page:** "+here+"\n**Section:** "+text+(h.id?" (#"+h.id+")":"")+"\n**Source:** "+src+"\n\n**Feedback:**\n\n";
+link(h,"ig-feedback",repo+"/issues/new?title="+encodeURIComponent("Feedback on \u201C"+text+"\u201D"+(pt&&n(pt)!==k?" (page: "+pt+")":""))+"&body="+encodeURIComponent(body),"Give feedback on this section (opens a GitHub issue)","\uD83D\uDCE3")}})})();</script>
 
 <link rel="stylesheet" href="assets/ig-pages.css" />
 <link rel="stylesheet" href="assets/ig-chrome.css" />
