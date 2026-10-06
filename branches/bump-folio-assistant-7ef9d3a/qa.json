@@ -1,0 +1,1458 @@
+{
+  "phase": "postprocessing",
+  "timestamp": "2026-10-06T14:58:51.375918",
+  "status": "completed",
+  "summary": {
+    "total_successes": 141,
+    "total_warnings": 4,
+    "total_errors": 0,
+    "files_processed_count": 82,
+    "files_expected_count": 1,
+    "files_missing_count": 1,
+    "completion_timestamp": "2026-10-06T14:58:53.064863"
+  },
+  "details": {
+    "successes": [
+      {
+        "message": "Starting generate_dak_api_hub.py post-processing",
+        "timestamp": "2026-10-06T14:58:51.375940"
+      },
+      {
+        "message": "Configured directories - Output: output, OpenAPI: input/openapi",
+        "timestamp": "2026-10-06T14:58:51.375945"
+      },
+      {
+        "message": "Loaded existing FHIR IG publisher QA file for merging",
+        "timestamp": "2026-10-06T14:58:51.376062"
+      },
+      {
+        "message": "[preprocessing] Starting update_sushi_config.py preprocessing",
+        "timestamp": "2026-10-06T14:58:51.376292"
+      },
+      {
+        "message": "[preprocessing] Successfully loaded sushi-config.yaml",
+        "timestamp": "2026-10-06T14:58:51.376298"
+      },
+      {
+        "message": "[preprocessing] Found smart-base dependency: smart.who.int.base",
+        "timestamp": "2026-10-06T14:58:51.376302"
+      },
+      {
+        "message": "[preprocessing] dak-api.md already exists with proper content marker",
+        "timestamp": "2026-10-06T14:58:51.376304"
+      },
+      {
+        "message": "[preprocessing] Found directory: input/resources",
+        "timestamp": "2026-10-06T14:58:51.376307"
+      },
+      {
+        "message": "[preprocessing] Found 0 JSON files in input/resources",
+        "timestamp": "2026-10-06T14:58:51.376309"
+      },
+      {
+        "message": "[preprocessing] Found directory: input/fsh/models",
+        "timestamp": "2026-10-06T14:58:51.376311"
+      },
+      {
+        "message": "[preprocessing] Found 5 FSH files in input/fsh/models",
+        "timestamp": "2026-10-06T14:58:51.376313"
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: SchemeInformation",
+        "timestamp": "2026-10-06T14:58:51.376316",
+        "details": {
+          "source_file": "input/fsh/models/scheme_information.fsh",
+          "title": "Scheme Information"
+        }
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: CWTPayload",
+        "timestamp": "2026-10-06T14:58:51.376322",
+        "details": {
+          "source_file": "input/fsh/models/cwt_payload.fsh",
+          "title": "CBOR Web Token (CWT) Payload (Common)"
+        }
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: COSEHeader",
+        "timestamp": "2026-10-06T14:58:51.376325",
+        "details": {
+          "source_file": "input/fsh/models/cose_header.fsh",
+          "title": "COSE Headers (DRAFT)"
+        }
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: CWT",
+        "timestamp": "2026-10-06T14:58:51.376328",
+        "details": {
+          "source_file": "input/fsh/models/cwt.fsh",
+          "title": "CBOR Web Token (CWT) Claim"
+        }
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: HCert",
+        "timestamp": "2026-10-06T14:58:51.376331",
+        "details": {
+          "source_file": "input/fsh/models/hcert.fsh",
+          "title": "Health Certificate"
+        }
+      },
+      {
+        "message": "[preprocessing] Found directory: input/fsh/valuesets",
+        "timestamp": "2026-10-06T14:58:51.376333"
+      },
+      {
+        "message": "[preprocessing] Found 14 FSH files in input/fsh/valuesets",
+        "timestamp": "2026-10-06T14:58:51.376336"
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Actors",
+        "timestamp": "2026-10-06T14:58:51.376339",
+        "details": {
+          "source_file": "input/fsh/valuesets/Actors.fsh",
+          "title": "WHO GDHCN Actor ValueSet of actor codes"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: KeyUsage-UAT",
+        "timestamp": "2026-10-06T14:58:51.376342",
+        "details": {
+          "source_file": "input/fsh/valuesets/KeyUsage-UAT.fsh",
+          "title": "WHO GDHCN  Key Usage ValueSet - UAT"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: KeyUsage-DEV",
+        "timestamp": "2026-10-06T14:58:51.376344",
+        "details": {
+          "source_file": "input/fsh/valuesets/KeyUsage-DEV.fsh",
+          "title": "WHO GDHCN  Key Usage ValueSet - DEV"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: PayloadTypes",
+        "timestamp": "2026-10-06T14:58:51.376347",
+        "details": {
+          "source_file": "input/fsh/valuesets/PayloadTypes.fsh",
+          "title": "WHO GDHCN Payload Types"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Participants",
+        "timestamp": "2026-10-06T14:58:51.376349",
+        "details": {
+          "source_file": "input/fsh/valuesets/Participants.fsh",
+          "title": "WHO GDHCN Trust Network Participant"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Domains-UAT",
+        "timestamp": "2026-10-06T14:58:51.376350",
+        "details": {
+          "source_file": "input/fsh/valuesets/Domains-UAT.fsh",
+          "title": "WHO GDHCN Trust Domains - UAT"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: KeyUsage",
+        "timestamp": "2026-10-06T14:58:51.376351",
+        "details": {
+          "source_file": "input/fsh/valuesets/KeyUsage.fsh",
+          "title": "WHO GDHCN  Key Usage ValueSet"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: ConnectionTypes",
+        "timestamp": "2026-10-06T14:58:51.376353",
+        "details": {
+          "source_file": "input/fsh/valuesets/ConnectionTypes.fsh",
+          "title": "WHO GDHCN Connection Types"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Participants-UAT",
+        "timestamp": "2026-10-06T14:58:51.376357",
+        "details": {
+          "source_file": "input/fsh/valuesets/Participants-UAT.fsh",
+          "title": "WHO GDHCN Trust Network Participant - UAT"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Participants-DEV",
+        "timestamp": "2026-10-06T14:58:51.376359",
+        "details": {
+          "source_file": "input/fsh/valuesets/Participants-DEV.fsh",
+          "title": "WHO GDHCN Trust Network Participant - DEV"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: WHORegionalOffices",
+        "timestamp": "2026-10-06T14:58:51.376360",
+        "details": {
+          "source_file": "input/fsh/valuesets/WHORegionalOffices.fsh",
+          "title": "WHO Regional Offices"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Domains-DEV",
+        "timestamp": "2026-10-06T14:58:51.376363",
+        "details": {
+          "source_file": "input/fsh/valuesets/Domains-DEV.fsh",
+          "title": "WHO GDHCN Trust Domains - DEV"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Domains",
+        "timestamp": "2026-10-06T14:58:51.376364",
+        "details": {
+          "source_file": "input/fsh/valuesets/Domains.fsh",
+          "title": "WHO GDHCN Trust Domains"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: Transactions",
+        "timestamp": "2026-10-06T14:58:51.376366",
+        "details": {
+          "source_file": "input/fsh/valuesets/Transactions.fsh",
+          "title": "WHO GDHCN Transaction Codes"
+        }
+      },
+      {
+        "message": "[preprocessing] Ensured directory exists: input/pagecontent",
+        "timestamp": "2026-10-06T14:58:51.376367"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Actors.md",
+        "timestamp": "2026-10-06T14:58:51.376368"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-KeyUsage-UAT.md",
+        "timestamp": "2026-10-06T14:58:51.376370"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-KeyUsage-DEV.md",
+        "timestamp": "2026-10-06T14:58:51.376371"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-PayloadTypes.md",
+        "timestamp": "2026-10-06T14:58:51.376372"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Participants.md",
+        "timestamp": "2026-10-06T14:58:51.376373"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Domains-UAT.md",
+        "timestamp": "2026-10-06T14:58:51.376374"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-KeyUsage.md",
+        "timestamp": "2026-10-06T14:58:51.376375"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-ConnectionTypes.md",
+        "timestamp": "2026-10-06T14:58:51.376377"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Participants-UAT.md",
+        "timestamp": "2026-10-06T14:58:51.376378"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Participants-DEV.md",
+        "timestamp": "2026-10-06T14:58:51.376379"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-WHORegionalOffices.md",
+        "timestamp": "2026-10-06T14:58:51.376380"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Domains-DEV.md",
+        "timestamp": "2026-10-06T14:58:51.376381"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Domains.md",
+        "timestamp": "2026-10-06T14:58:51.376382"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-Transactions.md",
+        "timestamp": "2026-10-06T14:58:51.376383"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-SchemeInformation.md",
+        "timestamp": "2026-10-06T14:58:51.376385"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-CWTPayload.md",
+        "timestamp": "2026-10-06T14:58:51.376386"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-COSEHeader.md",
+        "timestamp": "2026-10-06T14:58:51.376387"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-CWT.md",
+        "timestamp": "2026-10-06T14:58:51.376388"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-HCert.md",
+        "timestamp": "2026-10-06T14:58:51.376389"
+      },
+      {
+        "message": "[preprocessing] Placeholder generation completed",
+        "timestamp": "2026-10-06T14:58:51.376390",
+        "details": {
+          "valuesets_found": 14,
+          "logical_models_found": 5,
+          "placeholder_files_created": 19
+        }
+      },
+      {
+        "message": "[preprocessing] dak-api.md already exists in pages section",
+        "timestamp": "2026-10-06T14:58:51.376392"
+      },
+      {
+        "message": "[preprocessing] DAK API already exists in menu Indices section",
+        "timestamp": "2026-10-06T14:58:51.376393"
+      },
+      {
+        "message": "[preprocessing] sushi-config.yaml already contains required DAK API entries",
+        "timestamp": "2026-10-06T14:58:51.376402"
+      },
+      {
+        "message": "Merged preprocessing QA report from input/temp/",
+        "timestamp": "2026-10-06T14:58:51.376567"
+      },
+      {
+        "message": "[valueset_schemas] Starting ValueSet schema generation",
+        "timestamp": "2026-10-06T14:58:51.376736"
+      },
+      {
+        "message": "[valueset_schemas] Configured paths - Expansions: output/expansions.json, Output: output",
+        "timestamp": "2026-10-06T14:58:51.376742"
+      },
+      {
+        "message": "[valueset_schemas] Successfully loaded expansions data from output/expansions.json",
+        "timestamp": "2026-10-06T14:58:51.376744"
+      },
+      {
+        "message": "[valueset_schemas] Successfully generated 14 ValueSet schemas",
+        "timestamp": "2026-10-06T14:58:51.376750"
+      },
+      {
+        "message": "Merged ValueSet schema generation QA report from input/temp/qa_valueset_schemas.json",
+        "timestamp": "2026-10-06T14:58:51.376761"
+      },
+      {
+        "message": "[logical_model_schemas] Script started",
+        "timestamp": "2026-10-06T14:58:51.376972",
+        "details": {
+          "input_directory": "output",
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Input directory found",
+        "timestamp": "2026-10-06T14:58:51.376978",
+        "details": {
+          "directory": "output"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Found 15 StructureDefinition files",
+        "timestamp": "2026-10-06T14:58:51.376981",
+        "details": {
+          "directory": "output",
+          "file_count": 15
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Found 5 logical models",
+        "timestamp": "2026-10-06T14:58:51.376985",
+        "details": {
+          "models_found": 5,
+          "model_names": [
+            "SchemeInformation",
+            "CWT",
+            "HCert",
+            "CWTPayload",
+            "COSEHeader"
+          ]
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model SchemeInformation",
+        "timestamp": "2026-10-06T14:58:51.376987"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model CWT",
+        "timestamp": "2026-10-06T14:58:51.376990"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model HCert",
+        "timestamp": "2026-10-06T14:58:51.376992"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model CWTPayload",
+        "timestamp": "2026-10-06T14:58:51.376994"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model COSEHeader",
+        "timestamp": "2026-10-06T14:58:51.376996"
+      },
+      {
+        "message": "[logical_model_schemas] Generated 5 Logical Model schemas",
+        "timestamp": "2026-10-06T14:58:51.376998",
+        "details": {
+          "schemas_generated": 5,
+          "schema_files": [
+            "output/StructureDefinition-SchemeInformation.schema.json",
+            "output/StructureDefinition-CWT.schema.json",
+            "output/StructureDefinition-HCert.schema.json",
+            "output/StructureDefinition-CWTPayload.schema.json",
+            "output/StructureDefinition-COSEHeader.schema.json"
+          ]
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Successfully generated 5 logical model schemas",
+        "timestamp": "2026-10-06T14:58:51.377000",
+        "details": {
+          "schemas_generated": 5
+        }
+      },
+      {
+        "message": "[logical_model_schemas] No Binary JSON files found in output directory",
+        "timestamp": "2026-10-06T14:58:51.377003"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-10-06T14:58:51.377024",
+        "details": {
+          "model_name": "SchemeInformation",
+          "schema_file": "output/StructureDefinition-SchemeInformation.schema.json",
+          "properties_count": 21,
+          "required_fields": [
+            "resourceType",
+            "versionIdentifier",
+            "sequenceNumber",
+            "type",
+            "operatorName",
+            "operatorAddress",
+            "operatorPostalAddress",
+            "name",
+            "informationURI",
+            "statusDeterminiationApproach",
+            "schemeType",
+            "territory",
+            "policy",
+            "historicalInformationPeriod",
+            "issDateTime",
+            "nextUpdate"
+          ],
+          "timestamp": "2026-10-06T14:58:50.867064",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-10-06T14:58:51.377027",
+        "details": {
+          "model_name": "CWT",
+          "schema_file": "output/StructureDefinition-CWT.schema.json",
+          "properties_count": 4,
+          "required_fields": [
+            "resourceType",
+            "header",
+            "payload",
+            "signature"
+          ],
+          "timestamp": "2026-10-06T14:58:50.867610",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-10-06T14:58:51.377030",
+        "details": {
+          "model_name": "HCert",
+          "schema_file": "output/StructureDefinition-HCert.schema.json",
+          "properties_count": 7,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-10-06T14:58:50.867993",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-10-06T14:58:51.377033",
+        "details": {
+          "model_name": "CWTPayload",
+          "schema_file": "output/StructureDefinition-CWTPayload.schema.json",
+          "properties_count": 5,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-10-06T14:58:50.868344",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-10-06T14:58:51.377035",
+        "details": {
+          "model_name": "COSEHeader",
+          "schema_file": "output/StructureDefinition-COSEHeader.schema.json",
+          "properties_count": 3,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-10-06T14:58:50.868770",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "Merged Logical Model schema generation QA report from input/temp/qa_logical_model_schemas.json",
+        "timestamp": "2026-10-06T14:58:51.377039"
+      },
+      {
+        "message": "[jsonld_vocabularies] Script started",
+        "timestamp": "2026-10-06T14:58:51.377327",
+        "details": {
+          "expansions_path": "output/expansions.json",
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Successfully loaded expansions data",
+        "timestamp": "2026-10-06T14:58:51.377332",
+        "details": {
+          "expansions_path": "output/expansions.json"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Found FHIR Bundle",
+        "timestamp": "2026-10-06T14:58:51.377335",
+        "details": {
+          "resourceType": "Bundle"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Found 14 entries in Bundle",
+        "timestamp": "2026-10-06T14:58:51.377337",
+        "details": {
+          "entry_count": 14
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Actors",
+        "timestamp": "2026-10-06T14:58:51.377339",
+        "details": {
+          "valueset_id": "Actors",
+          "entry_index": 0
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 5 codes for ValueSet Actors",
+        "timestamp": "2026-10-06T14:58:51.377341",
+        "details": {
+          "valueset_id": "Actors",
+          "codes_count": 5
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Actors",
+        "timestamp": "2026-10-06T14:58:51.377344"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet ConnectionTypes",
+        "timestamp": "2026-10-06T14:58:51.377346",
+        "details": {
+          "valueset_id": "ConnectionTypes",
+          "entry_index": 1
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 2 codes for ValueSet ConnectionTypes",
+        "timestamp": "2026-10-06T14:58:51.377348",
+        "details": {
+          "valueset_id": "ConnectionTypes",
+          "codes_count": 2
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet ConnectionTypes",
+        "timestamp": "2026-10-06T14:58:51.377350"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Domains-DEV",
+        "timestamp": "2026-10-06T14:58:51.377353",
+        "details": {
+          "valueset_id": "Domains-DEV",
+          "entry_index": 2
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet Domains-DEV",
+        "timestamp": "2026-10-06T14:58:51.377355",
+        "details": {
+          "valueset_id": "Domains-DEV",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Domains-DEV",
+        "timestamp": "2026-10-06T14:58:51.377357"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Domains-UAT",
+        "timestamp": "2026-10-06T14:58:51.377360",
+        "details": {
+          "valueset_id": "Domains-UAT",
+          "entry_index": 3
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet Domains-UAT",
+        "timestamp": "2026-10-06T14:58:51.377365",
+        "details": {
+          "valueset_id": "Domains-UAT",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Domains-UAT",
+        "timestamp": "2026-10-06T14:58:51.377367"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Domains",
+        "timestamp": "2026-10-06T14:58:51.377369",
+        "details": {
+          "valueset_id": "Domains",
+          "entry_index": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet Domains",
+        "timestamp": "2026-10-06T14:58:51.377371",
+        "details": {
+          "valueset_id": "Domains",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Domains",
+        "timestamp": "2026-10-06T14:58:51.377374"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet KeyUsage-DEV",
+        "timestamp": "2026-10-06T14:58:51.377376",
+        "details": {
+          "valueset_id": "KeyUsage-DEV",
+          "entry_index": 5
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet KeyUsage-DEV",
+        "timestamp": "2026-10-06T14:58:51.377378",
+        "details": {
+          "valueset_id": "KeyUsage-DEV",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet KeyUsage-DEV",
+        "timestamp": "2026-10-06T14:58:51.377380"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet KeyUsage-UAT",
+        "timestamp": "2026-10-06T14:58:51.377382",
+        "details": {
+          "valueset_id": "KeyUsage-UAT",
+          "entry_index": 6
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet KeyUsage-UAT",
+        "timestamp": "2026-10-06T14:58:51.377384",
+        "details": {
+          "valueset_id": "KeyUsage-UAT",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet KeyUsage-UAT",
+        "timestamp": "2026-10-06T14:58:51.377386"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet KeyUsage",
+        "timestamp": "2026-10-06T14:58:51.377389",
+        "details": {
+          "valueset_id": "KeyUsage",
+          "entry_index": 7
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet KeyUsage",
+        "timestamp": "2026-10-06T14:58:51.377391",
+        "details": {
+          "valueset_id": "KeyUsage",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet KeyUsage",
+        "timestamp": "2026-10-06T14:58:51.377393"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Participants-DEV",
+        "timestamp": "2026-10-06T14:58:51.377396",
+        "details": {
+          "valueset_id": "Participants-DEV",
+          "entry_index": 8
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 60 codes for ValueSet Participants-DEV",
+        "timestamp": "2026-10-06T14:58:51.377398",
+        "details": {
+          "valueset_id": "Participants-DEV",
+          "codes_count": 60
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Participants-DEV",
+        "timestamp": "2026-10-06T14:58:51.377400"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Participants-UAT",
+        "timestamp": "2026-10-06T14:58:51.377402",
+        "details": {
+          "valueset_id": "Participants-UAT",
+          "entry_index": 9
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 57 codes for ValueSet Participants-UAT",
+        "timestamp": "2026-10-06T14:58:51.377407",
+        "details": {
+          "valueset_id": "Participants-UAT",
+          "codes_count": 57
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Participants-UAT",
+        "timestamp": "2026-10-06T14:58:51.377410"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Participants",
+        "timestamp": "2026-10-06T14:58:51.377412",
+        "details": {
+          "valueset_id": "Participants",
+          "entry_index": 10
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 35 codes for ValueSet Participants",
+        "timestamp": "2026-10-06T14:58:51.377414",
+        "details": {
+          "valueset_id": "Participants",
+          "codes_count": 35
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Participants",
+        "timestamp": "2026-10-06T14:58:51.377416"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet PayloadTypes",
+        "timestamp": "2026-10-06T14:58:51.377419",
+        "details": {
+          "valueset_id": "PayloadTypes",
+          "entry_index": 11
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 1 codes for ValueSet PayloadTypes",
+        "timestamp": "2026-10-06T14:58:51.377421",
+        "details": {
+          "valueset_id": "PayloadTypes",
+          "codes_count": 1
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet PayloadTypes",
+        "timestamp": "2026-10-06T14:58:51.377425"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet Transactions",
+        "timestamp": "2026-10-06T14:58:51.377430",
+        "details": {
+          "valueset_id": "Transactions",
+          "entry_index": 12
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 3 codes for ValueSet Transactions",
+        "timestamp": "2026-10-06T14:58:51.377433",
+        "details": {
+          "valueset_id": "Transactions",
+          "codes_count": 3
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet Transactions",
+        "timestamp": "2026-10-06T14:58:51.377435"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet WHORegionalOffices",
+        "timestamp": "2026-10-06T14:58:51.377437",
+        "details": {
+          "valueset_id": "WHORegionalOffices",
+          "entry_index": 13
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 7 codes for ValueSet WHORegionalOffices",
+        "timestamp": "2026-10-06T14:58:51.377440",
+        "details": {
+          "valueset_id": "WHORegionalOffices",
+          "codes_count": 7
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet WHORegionalOffices",
+        "timestamp": "2026-10-06T14:58:51.377442"
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated 14 JSON-LD vocabularies",
+        "timestamp": "2026-10-06T14:58:51.377444",
+        "details": {
+          "vocabularies_generated": 14
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Successfully generated 14 JSON-LD vocabularies in output",
+        "timestamp": "2026-10-06T14:58:51.377447",
+        "details": {
+          "vocabularies_count": 14,
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "Merged JSON-LD vocabulary generation QA report from input/temp/qa_jsonld_vocabularies.json",
+        "timestamp": "2026-10-06T14:58:51.377498"
+      },
+      {
+        "message": "Output directory exists with 6989 items",
+        "timestamp": "2026-10-06T14:58:51.386730"
+      },
+      {
+        "message": "Output directory contents sampled",
+        "timestamp": "2026-10-06T14:58:51.390938",
+        "details": {
+          "sample_files": [
+            "Endpoint-GDHCNParticipantDID-XXC-UAT-SCA.json.html",
+            "Endpoint-GDHCNParticipantDID-XXQ-UAT-DSC.json",
+            "Endpoint-GDHCNParticipantDID-XXX-UAT-All.md",
+            "CodeSystem-Participants-DEV-testing.html",
+            "Organization-GDHCNParticipant-XXP-DEV.md",
+            "Organization-GDHCNParticipant-MCO-UAT.md",
+            "Endpoint-GDHCNParticipantDID-NZL-DSC.html",
+            "Endpoint-GDHCNParticipantDID-PAN-UAT-SCA.json.html",
+            "ValueSet-WHORegionalOffices.json",
+            "Endpoint-GDHCNParticipantDID-AND-UAT-DSC.xml"
+          ]
+        }
+      },
+      {
+        "message": "Initializing DAK API components",
+        "timestamp": "2026-10-06T14:58:51.391028"
+      },
+      {
+        "message": "All components initialized successfully",
+        "timestamp": "2026-10-06T14:58:51.391122"
+      },
+      {
+        "message": "Starting schema file detection phase",
+        "timestamp": "2026-10-06T14:58:51.391167"
+      },
+      {
+        "message": "Schema detection completed",
+        "timestamp": "2026-10-06T14:58:51.399085",
+        "details": {
+          "valueset_schemas": 15,
+          "logical_model_schemas": 6,
+          "other_schemas": 0
+        }
+      },
+      {
+        "message": "Documentation summary completed",
+        "timestamp": "2026-10-06T14:58:51.752340",
+        "details": {
+          "valueset_schema_docs": 15,
+          "logical_model_schema_docs": 6,
+          "enumeration_endpoints": 2,
+          "jsonld_vocabularies": 14,
+          "openapi_docs": 28
+        }
+      },
+      {
+        "message": "Total content items to include in hub: 65",
+        "timestamp": "2026-10-06T14:58:51.752433"
+      },
+      {
+        "message": "Dynamic source loading applied to 2031 HTML files",
+        "timestamp": "2026-10-06T14:58:53.051627"
+      },
+      {
+        "message": "Starting DAK API hub post-processing phase",
+        "timestamp": "2026-10-06T14:58:53.051696"
+      },
+      {
+        "message": "DAK API hub post-processing completed successfully",
+        "timestamp": "2026-10-06T14:58:53.053572",
+        "details": {
+          "total_documentation_pages": 65,
+          "valueset_pages": 15,
+          "logical_model_pages": 6,
+          "enumeration_pages": 2,
+          "jsonld_references": 14,
+          "openapi_pages": 28
+        }
+      },
+      {
+        "message": "Generated OpenAPI index: output/openapi/index.html",
+        "timestamp": "2026-10-06T14:58:53.064843"
+      }
+    ],
+    "warnings": [
+      {
+        "message": "[preprocessing] Directory not found: fsh-generated/resources",
+        "timestamp": "2026-10-06T14:58:51.376405"
+      },
+      {
+        "message": "[preprocessing] Directory not found: input/models",
+        "timestamp": "2026-10-06T14:58:51.376407"
+      },
+      {
+        "message": "[preprocessing] Directory not found: input/vocabulary",
+        "timestamp": "2026-10-06T14:58:51.376409"
+      },
+      {
+        "message": "[preprocessing] update_sushi_config completed but no changes were made",
+        "timestamp": "2026-10-06T14:58:51.376410"
+      }
+    ],
+    "errors": [],
+    "files_processed": [
+      {
+        "file": "[preprocessing] sushi-config.yaml",
+        "status": "loaded",
+        "timestamp": "2026-10-06T14:58:51.376413"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/dak-api.md",
+        "status": "exists_valid",
+        "timestamp": "2026-10-06T14:58:51.376416"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/scheme_information.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-10-06T14:58:51.376419"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/cwt_payload.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-10-06T14:58:51.376421"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/cose_header.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-10-06T14:58:51.376422"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/cwt.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-10-06T14:58:51.376423"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/hcert.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-10-06T14:58:51.376425"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Actors.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376426"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/KeyUsage-UAT.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376427"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/KeyUsage-DEV.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376428"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/PayloadTypes.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376429"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Participants.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376431"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Domains-UAT.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376432"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/KeyUsage.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376433"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/ConnectionTypes.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376434"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Participants-UAT.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376435"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Participants-DEV.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376437"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/WHORegionalOffices.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376438"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Domains-DEV.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376439"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Domains.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376442"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/Transactions.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-10-06T14:58:51.376443"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Actors.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376444"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-KeyUsage-UAT.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376446"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-KeyUsage-DEV.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376447"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-PayloadTypes.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376448"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Participants.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376449"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Domains-UAT.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376452"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-KeyUsage.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376455"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-ConnectionTypes.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376456"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Participants-UAT.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376458"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Participants-DEV.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376459"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-WHORegionalOffices.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376460"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Domains-DEV.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376534"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Domains.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376536"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-Transactions.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376537"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-SchemeInformation.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376539"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-CWTPayload.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376540"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-COSEHeader.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376541"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-CWT.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376543"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-HCert.md",
+        "status": "created",
+        "timestamp": "2026-10-06T14:58:51.376544"
+      },
+      {
+        "file": "[preprocessing] sushi-config.yaml",
+        "status": "no_changes_needed",
+        "timestamp": "2026-10-06T14:58:51.376545"
+      },
+      {
+        "file": "[valueset_schemas] output/expansions.json",
+        "status": "loaded",
+        "timestamp": "2026-10-06T14:58:51.376755"
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-SchemeInformation.schema.json",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377007",
+        "details": {
+          "model_name": "SchemeInformation",
+          "schema_size": 4239
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-CWT.schema.json",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377010",
+        "details": {
+          "model_name": "CWT",
+          "schema_size": 1074
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-HCert.schema.json",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377014",
+        "details": {
+          "model_name": "HCert",
+          "schema_size": 1450
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-CWTPayload.schema.json",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377017",
+        "details": {
+          "model_name": "CWTPayload",
+          "schema_size": 1145
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-COSEHeader.schema.json",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377019",
+        "details": {
+          "model_name": "COSEHeader",
+          "schema_size": 915
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Actors.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377451",
+        "details": {
+          "valueset_id": "Actors",
+          "codes_count": 5,
+          "vocab_size": 843
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-ConnectionTypes.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377454",
+        "details": {
+          "valueset_id": "ConnectionTypes",
+          "codes_count": 2,
+          "vocab_size": 719
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Domains-DEV.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377456",
+        "details": {
+          "valueset_id": "Domains-DEV",
+          "codes_count": 4,
+          "vocab_size": 890
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Domains-UAT.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377459",
+        "details": {
+          "valueset_id": "Domains-UAT",
+          "codes_count": 4,
+          "vocab_size": 890
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Domains.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377461",
+        "details": {
+          "valueset_id": "Domains",
+          "codes_count": 4,
+          "vocab_size": 878
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-KeyUsage-DEV.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377464",
+        "details": {
+          "valueset_id": "KeyUsage-DEV",
+          "codes_count": 4,
+          "vocab_size": 813
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-KeyUsage-UAT.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377467",
+        "details": {
+          "valueset_id": "KeyUsage-UAT",
+          "codes_count": 4,
+          "vocab_size": 813
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-KeyUsage.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377469",
+        "details": {
+          "valueset_id": "KeyUsage",
+          "codes_count": 4,
+          "vocab_size": 801
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Participants-DEV.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377472",
+        "details": {
+          "valueset_id": "Participants-DEV",
+          "codes_count": 60,
+          "vocab_size": 4503
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Participants-UAT.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377475",
+        "details": {
+          "valueset_id": "Participants-UAT",
+          "codes_count": 57,
+          "vocab_size": 4281
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Participants.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377477",
+        "details": {
+          "valueset_id": "Participants",
+          "codes_count": 35,
+          "vocab_size": 2837
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-PayloadTypes.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377480",
+        "details": {
+          "valueset_id": "PayloadTypes",
+          "codes_count": 1,
+          "vocab_size": 710
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-Transactions.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377491",
+        "details": {
+          "valueset_id": "Transactions",
+          "codes_count": 3,
+          "vocab_size": 783
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-WHORegionalOffices.jsonld",
+        "status": "success",
+        "timestamp": "2026-10-06T14:58:51.377493",
+        "details": {
+          "valueset_id": "WHORegionalOffices",
+          "codes_count": 7,
+          "vocab_size": 1104
+        }
+      },
+      {
+        "file": "output/ValueSet-KeyUsage-UAT.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399098"
+      },
+      {
+        "file": "output/ValueSet-KeyUsage.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399102"
+      },
+      {
+        "file": "output/ValueSet-WHORegionalOffices.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399105"
+      },
+      {
+        "file": "output/ValueSet-PayloadTypes.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399107"
+      },
+      {
+        "file": "output/ValueSet-Domains-DEV.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399110"
+      },
+      {
+        "file": "output/ValueSet-ConnectionTypes.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399112"
+      },
+      {
+        "file": "output/ValueSet-Domains.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399114"
+      },
+      {
+        "file": "output/ValueSet-Actors.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399116"
+      },
+      {
+        "file": "output/ValueSet-Participants-UAT.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399118"
+      },
+      {
+        "file": "output/ValueSet-Participants.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399120"
+      },
+      {
+        "file": "output/ValueSets.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399122"
+      },
+      {
+        "file": "output/ValueSet-Domains-UAT.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399124"
+      },
+      {
+        "file": "output/ValueSet-Participants-DEV.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399126"
+      },
+      {
+        "file": "output/ValueSet-Transactions.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399128"
+      },
+      {
+        "file": "output/ValueSet-KeyUsage-DEV.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399130"
+      },
+      {
+        "file": "output/StructureDefinition-COSEHeader.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399133"
+      },
+      {
+        "file": "output/StructureDefinition-SchemeInformation.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399136"
+      },
+      {
+        "file": "output/StructureDefinition-HCert.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399138"
+      },
+      {
+        "file": "output/LogicalModels.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399140"
+      },
+      {
+        "file": "output/StructureDefinition-CWTPayload.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399142"
+      },
+      {
+        "file": "output/StructureDefinition-CWT.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-10-06T14:58:51.399144"
+      }
+    ],
+    "files_expected": [
+      "output"
+    ],
+    "files_missing": [
+      "output"
+    ]
+  }
+}

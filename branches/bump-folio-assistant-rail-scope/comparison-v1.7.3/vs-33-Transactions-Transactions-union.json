@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3fef9a3c-11b0-435c-b26e-80ebc6d11759-83",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3fef9a3c-11b0-435c-b26e-80ebc6d11759-83",
+  "name" : "UnionTransactionsAndTransactions",
+  "title" : "Union of WHO GDHCN Transaction Codes And WHO GDHCN Transaction Codes",
+  "status" : "active",
+  "date" : "2026-10-06T12:04:03+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }]
+}
