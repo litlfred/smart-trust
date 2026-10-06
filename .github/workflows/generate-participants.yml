@@ -3,8 +3,10 @@ name: Generate Participants
 permissions:
   contents: write
 
+# Manual trigger only (owner decision, 2026-10-06): GitHub workflows here are
+# defined, not run automatically. Start it from the Actions tab.
+# (workflow_call, if present, is kept so other repositories can call it.)
 on:
-  # Allows manual triggering
   workflow_dispatch:
     inputs:
       environment:
@@ -18,8 +20,6 @@ on:
         - DEV
   
   # Webhook trigger from participant repositories
-  repository_dispatch:
-    types: [participant-update]
 
 jobs:
   generate:
