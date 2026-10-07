@@ -1,0 +1,28 @@
+# Platform files the smart-trust page and menu gates need (rehearsal, folio-assistant 52a35ddf)
+# Code: 20 by static import scan + 3 found at run time. Data: 2 more from the smart-base instance.
+bootstrap-tools/schemas/declared-order.ts
+bootstrap-tools/schemas/graph.ts
+cat-harness/code-lists/own-namespaces.json
+cat-harness/schemas/cat-harness.ts
+cat-harness/schemas/dependency-order.ts
+cat-harness/schemas/folio-graph-kind.ts
+cat-harness/schemas/glossary-graph-kind.ts
+cat-harness/schemas/graph-kind-registry.ts
+cat-harness/schemas/kg-node.ts
+cat-harness/schemas/namespaces.ts
+cat-harness/schemas/node-kind.ts
+cat-harness/schemas/repo-full-name.ts
+cat-harness/schemas/source-provenance.ts
+cat-harness/schemas/sticky-contribution.ts
+cat-harness/schemas/theme.ts
+cat-harness/schemas/vocabulary.ts
+fhir-harness/schemas/ig-chrome.ts
+fhir-harness/schemas/ig-menu.ts
+fhir-harness/scripts/dak-views.ts
+fhir-harness/scripts/gen-ig-pages.ts
+fhir-harness/scripts/resource-views.ts
+folio-assistant-core/schemas/fhir-artifact-index.ts
+folio-assistant-core/schemas/materialization.ts
+# round 2: chrome.json is the instance's own copy (smart-base/fhir-artifact-index/chrome.json); smart-base's declaration is no longer needed
+fhir-harness/scripts/templates/ (directory)
+fhir-harness/scripts/ingest-ig-menu.ts
