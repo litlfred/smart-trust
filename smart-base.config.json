@@ -1,0 +1,5 @@
+{
+  "_comment": "This repository INSTANTIATES the smart-base harness. The owner's rule (litlfred/folio-assistant#1767, 2026-10-01): 'every repo gets same <stub=smart-base>.config.json and smart-base/ dir ... where all the dirs live'. The IG source stays where the IG Publisher expects it (input/, sushi-config.yaml); this IG's harness data is under smart-base/: its artefact index, OpenAPI pages, generated docs and QA records, with their history carried from folio-assistant's smart-trust/ (n3ni stage E). The declaration of what those directories are is smart-base/smart-trust.json. Its `needs` (smart-ig, cat-openapi) resolve once folio-assistant subscribes to this repository (stage F, kg:subscribe #1719); until then nothing here runs standalone, and that is the expected state of a seed, not a defect.",
+  "contentType": "document",
+  "_contentType_comment": "`document`. The IG artefact index and its pages are structured prose and data; there is no Lean and no TeX."
+}
