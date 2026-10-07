@@ -118,6 +118,13 @@
       "role": "instance-readme",
       "title": "smart-trust",
       "description": "What this index is, what it was reconstructed from, and how to re-derive it."
+    },
+    {
+      "id": "checkout-scripts",
+      "src": "package.json",
+      "role": "checkout-scripts",
+      "title": "package.json — smart-trust",
+      "description": "The checkout scripts this instance's code runs, under `checkoutScripts`. Each command is relative to the downstream checkout root. A downstream that mounts this instance reads them with `bun run cat` and `check:script-placement` only while this file's sha256 matches the mount lock (owner, 2026-10-07: Option A, by reference). folio-assistant#2448 moved them here from its root manifest."
     }
   ],
   "needs": [
