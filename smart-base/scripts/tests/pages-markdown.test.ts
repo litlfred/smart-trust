@@ -32,7 +32,7 @@
  * @module smart-trust/scripts/tests/pages-markdown.test
  */
 import { describe, expect, it } from "bun:test";
-import { artifactVariables, VIEW_PAGE } from "../../platform.ts";
+import { artifactVariables, VIEW_PAGE } from "../../platform/index.js";
 import { existsSync, readFileSync, readdirSync } from "fs";
 import { join, resolve } from "path";
 

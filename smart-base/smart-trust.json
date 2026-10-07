@@ -94,6 +94,14 @@
       "graphTypologies": [
         "qa"
       ]
+    },
+    {
+      "id": "smart-trust-platform",
+      "path": "platform/",
+      "graphTypologies": [
+        "code"
+      ],
+      "description": "The import seam: `platform/index.ts` re-exports the platform symbols this instance's tests use, so re-pointing the platform is a one-file edit. It sat at `platform.ts` beside the declaration until the cutover (folio-assistant#2320, bean hupw, owner 2026-10-07: 'Forks declare it'): a remote mount brings declared directories only, so a root file the mounted code imports never arrived. Declared, it travels with the code that needs it."
     }
   ],
   "assets": [
