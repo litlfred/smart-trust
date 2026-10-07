@@ -23,5 +23,5 @@
  *
  * @module smart-trust/platform
  */
-export { VIEW_PAGE } from "../folio-assistant/fhir-harness/scripts/resource-views.ts";
-export { artifactVariables } from "../folio-assistant/fhir-harness/scripts/build-ig-site.ts";
+export { VIEW_PAGE } from "../fhir-harness/scripts/resource-views.ts";
+export { artifactVariables } from "../fhir-harness/scripts/build-ig-site.ts";
