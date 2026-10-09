@@ -3,8 +3,8 @@
   "name": "smart-trust",
   "repository": "litlfred/smart-trust",
   "livesAt": {
-    "repository": "litlfred/folio-assistant",
-    "path": "smart-trust"
+    "repository": "litlfred/smart-trust",
+    "path": "smart-base"
   },
   "version": "0.1.0",
   "description": "WHO SMART Trust (smart.who.int.trust) v1.8.0 — the published IG's artefact index, reconstructed: 674 artefacts known, 19 materialized.",
@@ -128,10 +128,9 @@
     }
   ],
   "needs": [
-    "smart-base",
-    "cat-openapi"
+    "smart-base"
   ],
-  "_needs_comment": "REPOINTED 2026-09-22 (issue #975) from `folio-assistant-core` to `smart-ig`. THIS IS WHAT MAKES `nsbb`'s RULING TRUE IN THE DECLARATIONS rather than only in prose: there is no per-IG harness, so `smart-trust` is an INSTANCE OF `smart-ig` rather than a harness of its own. `smart-immunizations`'s declaration already called its own harness status 'PROVISIONAL BY DESIGN' pending this restructure. `needs` governs the LAYER ORDER: `dependency-order.ts` topologically sorts on it and `harness-tiles.ts` builds the LHS navbar spine from it. It does NOT compose the skill or content overlay -- that is `dependencies.folioAssistant` in `<name>.config.json`, walked recursively by `resolveSkillDirs`, and the two are different mechanisms with different files. MEASURED 2026-09-22 rather than assumed, after this comment first claimed otherwise: with `needs` set correctly, `resolveSkillDirs` still returns each instance's OWN skills and nothing from the layer below. No `smart-*` instance declares config dependencies at all, so no overlay composes anywhere in this stack -- bean recorded, not fixed here. `cat-openapi` added 2026-10-03 (bean `s4ta`): owner, *\"the smart-trust repo has a smart-base harness and a openapi harness\"* — smart-ig brings smart-base, cat-openapi renders the gateway API.",
+  "_needs_comment": "REPOINTED 2026-09-22 (issue #975) from `folio-assistant-core` to `smart-ig`. THIS IS WHAT MAKES `nsbb`'s RULING TRUE IN THE DECLARATIONS rather than only in prose: there is no per-IG harness, so `smart-trust` is an INSTANCE OF `smart-ig` rather than a harness of its own. `smart-immunizations`'s declaration already called its own harness status 'PROVISIONAL BY DESIGN' pending this restructure. `needs` governs the LAYER ORDER: `dependency-order.ts` topologically sorts on it and `harness-tiles.ts` builds the LHS navbar spine from it. It does NOT compose the skill or content overlay -- that is `dependencies.folioAssistant` in `<name>.config.json`, walked recursively by `resolveSkillDirs`, and the two are different mechanisms with different files. MEASURED 2026-09-22 rather than assumed, after this comment first claimed otherwise: with `needs` set correctly, `resolveSkillDirs` still returns each instance's OWN skills and nothing from the layer below. No `smart-*` instance declares config dependencies at all, so no overlay composes anywhere in this stack -- bean recorded, not fixed here. `cat-openapi` added 2026-10-03 (bean `s4ta`): owner, *\"the smart-trust repo has a smart-base harness and a openapi harness\"* — smart-ig brings smart-base, cat-openapi renders the gateway API. `cat-openapi` REMOVED 2026-10-09: that instance was folded into `cat-harness/openapi/` and no longer exists, so the need dangled and the index hid it behind a `skip`. The openapi harness now arrives transitively — smart-base → fhir-harness → folio-assistant-core → cat-harness.",
   "_stickies_removed_comment": "NO STICKY ON PURPOSE (bean `2vpn`, owner 2026-10-04). It contributed the `operations` card, chosen 2026-09-22 when a card was the only way to give smart-trust a navbar mark. That card is the platform owner's shared art, not smart-trust's, so the navbar showed a generic cat. Offered the choice, the owner picked *\"Own WHO-blue glyph\"*: smart-trust's mark is now its `schemas/avatars.ts` entry, a shield in WHO blue (hue 199, as smart-base), and the card leaves the landing board with the sticky, as the sticky's own comment said it would.",
   "taskIo": {
     "smart-trust:pages:check": {
