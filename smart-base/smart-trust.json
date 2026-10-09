@@ -147,5 +147,19 @@
       "outputs": [],
       "because": "NO `inputs` for these five, read rather than assumed (bean `8qyc`): four — measured 2026-10-01 (bean xpcu); moved from cat-harness/scripts/task-io.ts to its owning instance 2026-10-06 (bean 0r7u)"
     }
+  },
+  "gateExemptions": {
+    "scripts": [
+      {
+        "script": "smart-trust:pages:check",
+        "kind": "covered-by",
+        "reason": "covered-by `smart:pages`, which every reader job in the index checkout runs straight after the mount (cutover 1ad43df727, bean hupw). This `:check` compared a committed copy of the generated pages; since the cutover the pages are built from the mount and never committed, so there is no copy to compare and the build itself is the gate. folio-assistant#2518."
+      },
+      {
+        "script": "smart-trust:openapi:pages:check",
+        "kind": "covered-by",
+        "reason": "covered-by `smart:pages:publish`: the OpenAPI per-operation pages are built at publish (docs-site, feature-staging), not in a gate job, because they are written into the mounted `openapi/` directory, which a gate must not edit (cutover 1ad43df727, bean hupw). There is no committed copy for this `:check` to compare. folio-assistant#2518."
+      }
+    ]
   }
 }
