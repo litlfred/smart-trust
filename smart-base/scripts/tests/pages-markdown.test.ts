@@ -268,7 +268,10 @@ describe("representation links are separated", () => {
 
     it(`${label} puts a separator between adjacent links`, () => {
       expect(b).not.toContain("</a><a ");
-      expect(b).toContain("</a> · <a ");
+      // The separator is owed only where two representations sit side by
+      // side; an artefact published in one format has nothing to separate.
+      const reps = b.match(/>(json|xml|ttl|html)<\/a>/g) ?? [];
+      if (reps.length > 1) expect(b).toContain("</a> · <a ");
     });
   }
 });
