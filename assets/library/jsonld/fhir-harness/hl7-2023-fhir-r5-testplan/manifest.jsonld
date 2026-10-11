@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/fhir-harness/hl7-2023-fhir-r5-testplan/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "FHIR R5 (5.0.0) — TestPlan resource",
   "contains": [
@@ -28,6 +28,7 @@
     "library/hl7-2023-fhir-r5-testplan/sections/s015-source-testplan-valueset-testplan-status-xml"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "license": "CC0-1.0",
   "licenceRecord": {
     "status": "stated",

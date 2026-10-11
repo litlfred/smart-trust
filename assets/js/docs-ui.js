@@ -165,7 +165,7 @@
       console.warn("docs-ui: could not read the site index at " + SITE_INDEX_SRC +
                    " (" + (failure || "no reason reported") + "); the navbar is left " +
                    "exactly as built. This is NOT a claim that the folio has no " +
-                   "translations. Run: bun run translation:index");
+                   "translations. Run: bun run cat translation:index");
     } else {
       // Read, or never asked. A document with `translations: null` lands here
       // too and belongs here: the build DETERMINED that there is no
@@ -832,11 +832,12 @@
 
   // A static glyph: three finder squares and a scatter of modules. Inline so
   // it needs no extra request and inherits the header's colour.
-  var GLYPH =
+  var QR_GLYPH =
     '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
     '<path d="M3 3h7v7H3V3zm2 2v3h3V5H5zm9-2h7v7h-7V3zm2 2v3h3V5h-3zM3 14h7v7H3v-7zm2 2v3h3v-3H5z"/>' +
     '<path d="M13 13h3v3h-3v-3zm5 0h3v2h-3v-2zm-5 5h2v3h-2v-3zm4 1h4v2h-4v-2zm2-3h2v2h-2v-2z"/>' +
     "</svg>";
+  var GLYPH = QR_GLYPH;
 
   // Ordered most specific first. just-the-docs has used `.site-title` across
   // many versions, but the theme is unpinned, so a miss here is configuration
@@ -1088,6 +1089,20 @@
       });
   }
 
+  /**
+   * Strip raw markdown code backticks, bold/heading markers from node names and
+   * descriptions so text renders cleanly (folio-assistant-oi3h).
+   */
+  function cleanMarkdownText(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/`/g, "")
+      .replace(/\*\*([^*]+)\*\*/g, "$1")
+      .replace(/#+\s*/g, "")
+      .trim();
+  }
+
   /** One node's detail: what it was, where it came from, and its text. */
   function buildDiscardedDetail(node, onBack) {
     var wrap = el("div", { class: "fa-discarded-detail" });
@@ -1098,7 +1113,7 @@
     wrap.appendChild(back);
 
     var h = el("h4", { class: "fa-discarded-title", tabindex: "-1" },
-               String(node.name || node.sourcePath || "Untitled"));
+               cleanMarkdownText(node.name || node.sourcePath || "Untitled"));
     wrap.appendChild(h);
 
     // The metadata that makes it not an orphan. `movedFrom` first: a reader
@@ -1116,7 +1131,7 @@
     if (meta.childNodes.length) wrap.appendChild(meta);
 
     if (node.description) {
-      wrap.appendChild(el("p", { class: "fa-discarded-summary" }, String(node.description)));
+      wrap.appendChild(el("p", { class: "fa-discarded-summary" }, cleanMarkdownText(node.description)));
     }
 
     // NEVER A BLANK PANE. A node with no body says so; it does not render
@@ -1133,7 +1148,11 @@
       wrap.appendChild(el("a", {
         class: "fa-discarded-source",
         href: safeHref(String(links.source).replace(/\/$/, "") + "/blob/main/" + node.sourcePath),
-      }, "View the source of this item"));
+        target: "_blank",
+        rel: "noopener noreferrer",
+        title: "View on GitHub",
+        "aria-label": "View the source of this item (opens on GitHub)",
+      }, "View the source of this item ↗"));
     }
     return wrap;
   }
@@ -1221,6 +1240,8 @@
       detail.setAttribute("hidden", "hidden");
       detail.innerHTML = "";
       list.removeAttribute("hidden");
+      var tilesBack = wrap.closest(".fa-tiles-view") ? wrap.closest(".fa-tiles-view").querySelector(".fa-tiles-back") : null;
+      if (tilesBack) tilesBack.removeAttribute("hidden");
       var first = list.querySelector("button");
       if (first) first.focus();
     }
@@ -1229,7 +1250,7 @@
       var li = el("li");
       var b = el("button", { type: "button", class: "fa-discarded-item" });
       b.appendChild(el("span", { class: "fa-discarded-item-name" },
-                       String(node.name || node.sourcePath || "Untitled")));
+                       cleanMarkdownText(node.name || node.sourcePath || "Untitled")));
       if (node.nodeKind) {
         b.appendChild(el("span", { class: "fa-discarded-item-kind" }, String(node.nodeKind)));
       }
@@ -1238,6 +1259,8 @@
         detail.innerHTML = "";
         detail.appendChild(buildDiscardedDetail(node, showList));
         detail.removeAttribute("hidden");
+        var tilesBack = wrap.closest(".fa-tiles-view") ? wrap.closest(".fa-tiles-view").querySelector(".fa-tiles-back") : null;
+        if (tilesBack) tilesBack.setAttribute("hidden", "hidden");
         // Focus the heading, not the top of the pane: the reader chose this
         // item and the first thing they should be told is which one opened.
         var h = detail.querySelector(".fa-discarded-title");
@@ -1907,7 +1930,9 @@
     var toggle = el("button", {
       type: "button",
       class: "fa-qr-toggle fa-tiles-toggle",
-      "aria-label": "Actions",
+      "aria-label": "Actions — settings, discarded items",
+      title: "Actions — settings, discarded items",
+      "data-fa-tip": "Actions — settings, discarded items",
       "aria-expanded": "false",
     });
     toggle.innerHTML = TILES_GLYPH; // static markup above, no input involved
@@ -2533,6 +2558,9 @@
       grid.appendChild(tileAction(SEARCH_GLYPH, "Search", revealSearch));
     }
     var pageSettingsTile = tileButton(GEAR_GLYPH, SETTINGS_NAMES.page, "settings");
+    pageSettingsTile.setAttribute("aria-label", SETTINGS_NAMES.page + " \u2014 " + SETTINGS_SCOPES.page);
+    pageSettingsTile.setAttribute("title", SETTINGS_NAMES.page + " \u2014 " + SETTINGS_SCOPES.page);
+    pageSettingsTile.setAttribute("data-fa-tip", SETTINGS_NAMES.page + " \u2014 " + SETTINGS_SCOPES.page);
     grid.appendChild(pageSettingsTile);
     // The glass's "Page settings →" lands HERE: the launcher opened and the
     // view shown, the same two steps a reader takes by hand (`ob3m` 12).
@@ -3212,6 +3240,12 @@
         // away exactly when it is surprising.
         if (badge.count === 0) b.setAttribute("data-fa-empty", "true");
         tile.appendChild(b);
+        // WHAT THE NUMBER COUNTS, on hover too (bean `v215`): the unit was in
+        // the accessible name only, so a sighted reader saw a bare "943" with
+        // no word saying what it counted, beside an icon-row "541" whose tip
+        // said "open". The icon row's tip names its count; so does this.
+        tile.setAttribute("title", (tile.getAttribute("title") || t.title) +
+          " — " + badge.count + " " + badge.unit);
       }
       tile.setAttribute("data-fa-tile", t.id);
       tile.setAttribute("data-fa-surface", surface);
@@ -3698,6 +3732,8 @@
       var link = el("a", {
         class: "fa-board-window-control fa-node-edit",
         "data-fa-control": control.id,
+        // The platform's one link recipe rebuilds it on pointer/focus (edit-links.js, bean v433).
+        "data-fa-link": control.id === "view" ? "source" : "edit",
         href: safeHref(control.id === "view" ? todo.viewHref : todo.editHref),
         "aria-label": control.label + " — " + todo.summary,
         title: control.label,
@@ -4442,6 +4478,7 @@
     if (todo.viewHref) {
       var v = el("a", {
         class: "fa-node-edit fa-sticky-view",
+        "data-fa-link": "source",
         href: safeHref(todo.viewHref),
         title: "View this todo's source on GitHub",
         // No visible text, so the label and the title are BOTH needed and are
@@ -4455,6 +4492,7 @@
     if (todo.editHref) {
       var e = el("a", {
         class: "fa-node-edit fa-sticky-edit",
+        "data-fa-link": "edit",
         href: safeHref(todo.editHref),
         title: "Edit this todo's markdown on GitHub",
         "aria-label": "Edit " + todo.summary,
@@ -4560,6 +4598,8 @@
         title: link.title,
         "aria-label": link.label,
       });
+      // view and edit are GitHub links the platform's one recipe rebuilds (edit-links.js, bean v433).
+      if (pair[0] !== "page") a.setAttribute("data-fa-link", pair[0] === "view" ? "source" : "edit");
       a.innerHTML = pair[1];
       row.appendChild(a);
     });
@@ -5592,7 +5632,19 @@
         if (sb.left <= 0 && sb.right < window.innerWidth / 2) {
           var main = side.nextElementSibling;
           var content = main && main.classList.contains("main") ? main.getBoundingClientRect().left : sb.right;
-          left = Math.max(0, Math.min(sb.right, content));
+          var collapsedRaw = getComputedStyle(document.documentElement).getPropertyValue("--fa-nav-collapsed");
+          var collapsedPx = 0;
+          if (collapsedRaw) {
+            var val = parseFloat(collapsedRaw);
+            if (collapsedRaw.indexOf("rem") !== -1) {
+              var rootFs = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+              collapsedPx = val * rootFs;
+            } else if (collapsedRaw.indexOf("px") !== -1) {
+              collapsedPx = val;
+            }
+          }
+          var resting = collapsedPx > 0 ? collapsedPx : Math.min(sb.right, content);
+          left = Math.max(0, Math.min(sb.right, content, resting));
         }
       }
       band.style.top = hb.top + "px";
@@ -7188,11 +7240,55 @@
       panel.appendChild(body);
       build(body);
       panel.removeAttribute("hidden");
+      fitPanel();
       // Opened on a folio already dragged away: open where the folio is.
       placePanel();
       if (panelButtons[id]) panelButtons[id].setAttribute("aria-expanded", "true");
-      h.focus();
+      // `preventScroll`: the panel is placed in view, so focusing its title
+      // has nothing to bring into view, and a scroll here would move the
+      // cards under a panel that does not move with them.
+      h.focus({ preventScroll: true });
     }
+
+    /* THE PANEL OPENS IN VIEW, CLEAR OF THE DOCK — wireframe `navbar`
+     * Findings ("seen on the build", #2295; first noted in #1810).
+     *
+     * It used to sit in the glass's FLOW, after the shelf. The shelf is at
+     * least 50vh, so at 1280×800 Glass settings opened at y = 591 with its
+     * body under the fixed tile dock, and the reader scrolled the glass to
+     * reach the controls the tile had just opened. Now the stylesheet takes it
+     * out of the flow (`position: fixed`) and this places it in the space the
+     * glass actually shows: below the handle and the zoom bar, above the
+     * dock's VISIBLE top edge. The panel's height is capped to that space and
+     * its body scrolls inside it when the content is taller (Glass settings
+     * on a phone), so the frame, its title and its × are never under the dock.
+     *
+     * The dock's top is read from its STATE, not from its box: it slides for
+     * 0.25 s when the strip is shown or hidden, and a box measured mid-slide
+     * would size the panel for neither state. Re-run when the strip toggles
+     * and when the window resizes. */
+    function fitPanel() {
+      if (panel.hasAttribute("hidden")) return;
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var top = 0;
+      [handle, zoomBar].forEach(function (n) {
+        if (!n || !n.isConnected) return;
+        var r = n.getBoundingClientRect();
+        if (r.width && r.height && r.bottom > top && r.bottom < vh / 2) top = r.bottom;
+      });
+      top += GLASS_GAP;
+      var dockTop = vh;
+      if (dock && dock.isConnected && dock.offsetHeight) {
+        var shown = dock.getAttribute("data-fa-strip") !== "hidden";
+        // Hidden, only the header row and the 2px edge stay on screen — the
+        // same sum the stylesheet's `translateY` leaves showing.
+        var showing = shown ? dock.offsetHeight : dockHead.offsetHeight + 2;
+        dockTop = vh - showing;
+      }
+      panel.style.top = Math.round(top) + "px";
+      panel.style.maxHeight = Math.max(0, Math.floor(dockTop - GLASS_GAP - top)) + "px";
+    }
+    window.addEventListener("resize", fitPanel);
 
     /* TODOS — the todo list, on the glass, each with a pull-out.
      *
@@ -7324,19 +7420,26 @@
       body.appendChild(fs);
       showOpacity();
 
+      // THE ACTIONS, in one row of their own (bean `zpso`): with the panel
+      // laid out in a grid so it fits between the zoom bar and the dock,
+      // three full-width buttons stacked one per line were a third of its
+      // height. Grouped, they wrap side by side under the settings.
+      var actions = el("div", { class: "fa-glass-settings-actions" });
+      body.appendChild(actions);
+
       // THE HARNESSES PANEL (issue #1146): each harness's properties and the
       // skill that edits each. A Settings view, as candidate H drew it.
       var hc = el("button", { type: "button", class: "fa-glass-reset fa-glass-harnesses" },
         "Harnesses — properties, and the skill that edits each");
       hc.addEventListener("click", function () { openHarnesses(null); });
-      body.appendChild(hc);
+      actions.appendChild(hc);
 
       // THE WAY BACK FROM A MESSY GLASS. Every card returns to the grid;
       // nothing leaves the folio and nothing leaves the glass.
       var tidy = el("button", { type: "button", class: "fa-glass-reset fa-glass-tidy" },
         "Tidy the glass (put every card back in the grid)");
       tidy.addEventListener("click", tidyGlass);
-      body.appendChild(tidy);
+      actions.appendChild(tidy);
 
       var reset = el("button", { type: "button", class: "fa-glass-reset fa-glass-defaults" }, "Back to the default glass");
       reset.addEventListener("click", function () {
@@ -7347,7 +7450,7 @@
         while (body.firstChild) body.removeChild(body.firstChild);
         buildSettings(body);
       });
-      body.appendChild(reset);
+      actions.appendChild(reset);
       // THE WAY BACK for the dismissed browser-only note.
       if (localNoteDismissed()) {
         var showNote = el("button", { type: "button", class: "fa-glass-reset fa-glass-note-restore" },
@@ -7357,9 +7460,9 @@
           renderShelf();
           showNote.parentNode.removeChild(showNote);
         });
-        body.appendChild(showNote);
+        actions.appendChild(showNote);
       }
-      body.appendChild(el("p", { class: "fa-glass-local-note fa-glass-settings-note" },
+      actions.appendChild(el("p", { class: "fa-glass-local-note fa-glass-settings-note" },
         "Saved in this browser only."));
     }
 
@@ -7433,6 +7536,8 @@
       if (h) strip.setAttribute("inert", ""); else strip.removeAttribute("inert");
       stripToggle.setAttribute("aria-expanded", h ? "false" : "true");
       labelStripToggle();
+      // An open panel's room changes with the dock's visible height.
+      fitPanel();
     }
     stripToggle.addEventListener("click", function () {
       var h = dock.getAttribute("data-fa-strip") !== "hidden";
@@ -7690,6 +7795,8 @@
         c.properties.forEach(function (p) { skillsFor[p.key] = p; });
         var buttons = [];
 
+        // An edit link the platform's one recipe rebuilds (edit-links.js, bean v433).
+        function editLink(a) { a.setAttribute("data-fa-link", "edit"); return a; }
         function link(href, text, label) {
           var a = el("a", { href: safeHref(href), class: "fa-hc-link" }, text);
           if (label) a.setAttribute("aria-label", label);
@@ -7744,7 +7851,7 @@
           var acts = el("p", { class: "fa-hc-actions" });
           if (kind === "associated") {
             acts.appendChild(link(item.url, "Open ↗", "Open " + item.title + " (its own site)"));
-            if (item.editHref) acts.appendChild(link(item.editHref, "✎ Its repository", "Edit " + item.title + " in its own repository"));
+            if (item.editHref) acts.appendChild(editLink(link(item.editHref, "✎ Its repository", "Edit " + item.title + " in its own repository")));
             detail.appendChild(acts);
             var rows = [
               { key: "name", value: item.name },
@@ -7763,7 +7870,7 @@
             detail.appendChild(el("p", { class: "fa-hc-note" },
               "Associated: referenced, never loaded. Nothing here builds or copies it."));
           } else {
-            if (item.editHref) acts.appendChild(link(item.editHref, "✎ Edit " + item.declaredIn, "Edit " + item.title + "'s declaration, " + item.declaredIn));
+            if (item.editHref) acts.appendChild(editLink(link(item.editHref, "✎ Edit " + item.declaredIn, "Edit " + item.title + "'s declaration, " + item.declaredIn)));
             else acts.appendChild(el("span", { class: "fa-hc-note" }, item.declaredIn));
             detail.appendChild(acts);
             var declared = {};
@@ -10157,6 +10264,78 @@
   // this page's, so nothing here could have reached into it anyway; inlining
   // it is what puts it under the one viewer. Its fallback text, the only text
   // it carries, becomes the accessible name, as `alt` does for an `<img>`.
+  // AN INLINED SVG'S STYLESHEET IS NO LONGER ITS OWN. Inside `<img>` a file's
+  // `<style>` applies to that file alone; moved into this document it applies
+  // to the whole PAGE. Visio exports (the WHO IGs' business-process figures)
+  // all name their classes `.st1`…`.st30` and their markers `mrkr…`, with a
+  // different meaning in every file, so a page holding eight of them rendered
+  // each with whichever file's rules came last: black-filled gateways, lost
+  // labels, a stray marker drawn as a large black wedge (reported 2026-10-10
+  // on smart-immunizations' business-processes page). Each inlined drawing
+  // therefore gets its own prefix on every class and id, and its `<style>`
+  // selectors, `url(#…)` references and `#…` hrefs are rewritten to match.
+  // The harness's OWN classes (`fa-…`, e.g. render-bpmn's `fa-subprocess-link`)
+  // are not the file's private names: the page's stylesheet and scripts select
+  // them, so they are left as written. Prefixing them broke every subprocess
+  // link on the processes pages (subprocess-links.e2e.ts, 2026-10-10).
+  var svgScopeSeq = 0;
+  function scopeSvg(svg) {
+    var pfx = "fa-svg" + ++svgScopeSeq + "-";
+    function scoped(c) { return /^fa-/.test(c) ? c : pfx + c; }
+    var ids = {};
+    [].forEach.call(svg.querySelectorAll("[id]"), function (el) {
+      var id = el.getAttribute("id");
+      ids[id] = pfx + id;
+      el.setAttribute("id", pfx + id);
+    });
+    function reId(text) {
+      return text.replace(/url\(\s*(['"]?)#([^'")\s]+)\1\s*\)/g, function (m, q, id) {
+        return ids[id] ? "url(" + q + "#" + ids[id] + q + ")" : m;
+      });
+    }
+    [].forEach.call(svg.querySelectorAll("*"), function (el) {
+      var cls = el.getAttribute("class");
+      if (cls) {
+        el.setAttribute("class", cls.split(/\s+/).filter(Boolean).map(scoped).join(" "));
+      }
+      [].forEach.call([].slice.call(el.attributes), function (a) {
+        if (a.value.indexOf("url(") !== -1) el.setAttribute(a.name, reId(a.value));
+        if ((a.localName === "href") && a.value.charAt(0) === "#" && ids[a.value.slice(1)]) {
+          el.setAttributeNS(a.namespaceURI, a.name, "#" + ids[a.value.slice(1)]);
+        }
+      });
+    });
+    var rootCls = svg.getAttribute("class");
+    if (rootCls) svg.setAttribute("class", rootCls.split(/\s+/).filter(Boolean).map(scoped).join(" "));
+    // Selectors are rewritten only OUTSIDE the declaration blocks, so a value
+    // such as `font-size:0.83em` is never mistaken for a class.
+    [].forEach.call(svg.querySelectorAll("style"), function (st) {
+      var css = st.textContent, out = "", depth = 0, buf = "";
+      for (var i = 0; i < css.length; i++) {
+        var ch = css.charAt(i);
+        if (ch === "{") {
+          if (depth === 0) {
+            out += buf.replace(/([.#])(-?[A-Za-z_][\w-]*)/g, function (m, sigil, name) {
+              return sigil === "." ? "." + scoped(name) : (ids[name] ? "#" + ids[name] : m);
+            });
+            buf = "";
+          }
+          depth++;
+          out += ch;
+        } else if (ch === "}") {
+          depth--;
+          out += ch;
+        } else if (depth === 0) {
+          buf += ch;
+        } else {
+          out += ch;
+        }
+      }
+      st.textContent = reId(out + buf);
+    });
+    return svg;
+  }
+
   function inlineDiagrams(done) {
     var imgs = [].slice.call(
       document.querySelectorAll(
@@ -10208,7 +10387,7 @@
             if (checked === undefined) a.removeAttribute("href");
             else a.setAttribute("href", new URL(checked, fileUrl).href);
           });
-          img.parentNode.replaceChild(document.importNode(svg, true), img);
+          img.parentNode.replaceChild(scopeSvg(document.importNode(svg, true)), img);
         })
         .catch(function (e) {
           console.warn("docs-ui: could not inline " + src + " (" + e.message + "); it stays a static image, so its links will not work.");
@@ -10374,7 +10553,7 @@
           "docs-ui: no readable translation index (#fa-translation-index, or " +
           "assets/harness/site.json). " +
           "The navbar is left exactly as built -- this is NOT a claim that " +
-          "the folio has no translations. Run: bun run translation:index"
+          "the folio has no translations. Run: bun run cat translation:index"
         );
       }
       return;

@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/arxiv-0909.4061v2/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Finding Structure with Randomness: Probabilistic Algorithms for Constructing Approximate Matrix Decompositions",
   "contains": [
@@ -87,6 +87,7 @@
     "library/arxiv-0909.4061v2/sections/page-074"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "arxiv-0909.4061v2",
     "title_source": "editorial",

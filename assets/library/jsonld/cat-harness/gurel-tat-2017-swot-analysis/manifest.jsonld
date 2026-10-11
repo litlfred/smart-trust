@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/gurel-tat-2017-swot-analysis/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "SWOT Analysis: A Theoretical Review",
   "contains": [
@@ -26,6 +26,7 @@
     "library/gurel-tat-2017-swot-analysis/sections/page-013"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "gurel-tat-2017-swot-analysis",
     "title_source": "editorial",

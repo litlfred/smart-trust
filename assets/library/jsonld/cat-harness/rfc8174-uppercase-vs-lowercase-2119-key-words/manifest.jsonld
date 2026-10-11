@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/rfc8174-uppercase-vs-lowercase-2119-key-words/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words",
   "contains": [
@@ -21,6 +21,7 @@
     "library/rfc8174-uppercase-vs-lowercase-2119-key-words/sections/page-008"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "rfc8174-uppercase-vs-lowercase-2119-key-words",
     "title_source": "editorial",

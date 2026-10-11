@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/arxiv-2504.19675v2/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Annif at SemEval-2025 Task 5: Traditional XMTC augmented by LLMs",
   "contains": [
@@ -39,6 +39,7 @@
     "library/arxiv-2504.19675v2/sections/sec-024"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "arxiv-2504.19675v2",
     "title_source": "pdf-info",

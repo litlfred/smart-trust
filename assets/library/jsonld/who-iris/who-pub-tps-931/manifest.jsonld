@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/who-iris/who-pub-tps-931/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "WHO editorial style manual",
   "contains": [
@@ -134,6 +134,7 @@
     "library/who-pub-tps-931/sections/page-121"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "who-pub-tps-931",
     "title_source": "dc-record",

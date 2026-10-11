@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/w3c-2018-odrl-model-2-2/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "ODRL Information Model 2.2",
   "contains": [
@@ -77,6 +77,7 @@
     "library/w3c-2018-odrl-model-2-2/sections/sec-062"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "license": "W3C-20150513",
   "licenceRecord": {
     "status": "stated",

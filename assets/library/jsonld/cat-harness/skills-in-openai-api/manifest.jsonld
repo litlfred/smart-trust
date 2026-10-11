@@ -7,13 +7,14 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/skills-in-openai-api/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Skills in OpenAI API",
   "contains": [
     "library/skills-in-openai-api/sections/page-001"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "skills-in-openai-api",
     "title_source": "editorial",

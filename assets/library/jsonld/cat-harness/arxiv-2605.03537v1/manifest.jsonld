@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/arxiv-2605.03537v1/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "A Skill-Based AI Agentic Pipeline for Library of Congress Subject Indexing",
   "contains": [
@@ -32,6 +32,7 @@
     "library/arxiv-2605.03537v1/sections/sec-017"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "arxiv-2605.03537v1",
     "title_source": "pdf-info",

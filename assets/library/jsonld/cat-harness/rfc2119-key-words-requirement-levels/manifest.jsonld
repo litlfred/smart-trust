@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/rfc2119-key-words-requirement-levels/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Key words for use in RFCs to Indicate Requirement Levels",
   "contains": [
@@ -19,6 +19,7 @@
     "library/rfc2119-key-words-requirement-levels/sections/page-006"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "rfc2119-key-words-requirement-levels",
     "title_source": "editorial",

@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/cat-harness/equipping-agents-for-the-real-world-with-agent-skills-anthro/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Equipping agents for the real world with Agent Skills \\ Anthropic",
   "contains": [
@@ -25,6 +25,7 @@
     "library/equipping-agents-for-the-real-world-with-agent-skills-anthro/sections/page-012"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "equipping-agents-for-the-real-world-with-agent-skills-anthro",
     "title_source": "pdf-info",

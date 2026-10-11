@@ -7,7 +7,7 @@
   ],
   "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-base/9789240120747-eng/manifest.jsonld",
   "@type": [
-    "folio-assistant-core:SourceDocument"
+    "cat-harness:SourceDocument"
   ],
   "title": "Digital transformation handbook for reporting substandard and falsified medical products",
   "contains": [
@@ -85,6 +85,7 @@
     "library/9789240120747-eng/sections/page-072"
   ],
   "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/cat-harness.jsonld#directory/library",
   "meta": {
     "doc_id": "9789240120747-eng",
     "title_source": "editorial",
