@@ -7,7 +7,7 @@
   "source": {
     "repo": "litlfred/smart-trust",
     "ref": "claude/seed-smart-base",
-    "commit": "4a87d48494e8cb6bce6386fb9db2fbeac7368175"
+    "commit": "6b5ac77967b0ed62b54ee5c70168587fee5e88be"
   },
-  "builtAt": "2026-10-11T07:12:32.569Z"
+  "builtAt": "2026-10-11T07:23:08.983Z"
 }

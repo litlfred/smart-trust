@@ -16,7 +16,7 @@
   },
   "@id": "http://smart.who.int/trust/ValueSet-KeyUsage-UAT.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-10-11T07:12:03.716108Z",
+  "generatedAt": "2026-10-11T07:22:51.519949Z",
   "@graph": [
     {
       "id": "#SCA",
