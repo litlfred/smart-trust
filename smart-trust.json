@@ -1,0 +1,11 @@
+{
+  "$schema": "cat-harness-declaration/1.0.0",
+  "name": "smart-trust",
+  "repository": "litlfred/smart-trust",
+  "title": "WHO SMART Trust",
+  "description": "The WHO SMART Trust implementation guide (FHIR IG source under input/), as a harnessed instance of smart-base. Declared with no directories yet: the IG's artefact index and L1 library are seeded later (beans n3h9, 53rv), and a declared-but-absent directory is the dh4f defect.",
+  "needs": [
+    "smart-base"
+  ],
+  "directories": []
+}
