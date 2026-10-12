@@ -50,5 +50,5 @@
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/KeyUsage-DEV",
   "fhir:version": "1.8.0",
-  "fhir:expansionTimestamp": "2026-10-11T07:21:23+00:00"
+  "fhir:expansionTimestamp": "2026-10-12T16:01:25+00:00"
 }
