@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ec1a7324-7348-43d3-b22b-997f672565a3-80",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ec1a7324-7348-43d3-b22b-997f672565a3-80",
+  "name" : "UnionPayloadTypesAndPayloadTypes",
+  "title" : "Union of WHO GDHCN Payload Types And WHO GDHCN Payload Types",
+  "status" : "active",
+  "date" : "2026-10-13T13:29:14+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }]
+}
