@@ -11,16 +11,23 @@
 #
 # Needs: index.lock.json mounting fhir-harness (as site-publish.yml does).
 #
-# Manual trigger only (owner decision, 2026-10-06): add `push` on the default
-# branch to a copy only if that repository's owner asks for every change of
-# the IG source to rebuild the cache.
-name: IG AST refresh (by hand)
+# By hand, and on every push to main that changes the IG's inputs (owner,
+# 2026-10-14: rebuild the AST automatically when the IG source changes). The
+# paths are what `ig-ast.ts validity` digests (`sushi-config.yaml`, `ig.ini`,
+# `input/`), so a push that cannot change the AST does not run the Publisher.
+name: IG AST refresh
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - sushi-config.yaml
+      - ig.ini
+      - "input/**"
   workflow_dispatch:
     inputs:
       ref:
-        description: "The ref to build (only the default branch's tip seeds the cache)"
+        description: "The ref to build (only a commit on the default branch with its inputs seeds the cache)"
         type: string
         default: main
       force:
@@ -35,5 +42,5 @@ jobs:
   refresh:
     uses: litlfred/fhir-harness/.github/workflows/ig-ast-refresh.yml@main
     with:
-      ref: ${{ inputs.ref }}
-      force: ${{ inputs.force }}
+      ref: ${{ inputs.ref || github.sha }}
+      force: ${{ inputs.force || false }}
