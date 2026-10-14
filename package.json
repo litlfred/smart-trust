@@ -1,19 +1,14 @@
 {
-  "_comment": "smart-trust's own site, as package scripts: the platform scripts fhir-harness's templates/ig-repo-site/folio-site.yml runs, with the arguments it passes, declared in order by smart-trust.config.json site.build and run by build-instance-site.ts (the one agent publish path, stage-local). The build's own values arrive in the environment (SITE_INSTANCE, SITE_TITLE, SITE_BASEURL, SITE_WORK, SITE_DIR, SITE_REPOSITORY, SITE_COMMIT, SITE_REF); a source or site step is given the site source or the built site as its last argument. site:ast refuses an AST cache that does not match this checkout, as the workflow rebuilds one; SITE_ACCEPT_STALE_AST=1 accepts it, for a preview only.",
+  "_comment": "No site recipe: smart-trust takes the smart-hiv shape (owner, 2026-10-14) \u2014 index.config.json names smart-base as the site's landing, and the mounted layers supply the steps from the cached AST. Only the workspaces remain.",
   "name": "@litlfred/smart-trust-site",
   "private": true,
   "type": "module",
-  "scripts": {
-    "site:ast": "bash fhir-harness/scripts/ig-cache.sh restore --ig-root . && { bun run fhir-harness/scripts/ig-ast.ts validity output-ast --ig . > \"$SITE_WORK/ast-validity.json\" || { cat \"$SITE_WORK/ast-validity.json\"; [ \"$SITE_ACCEPT_STALE_AST\" = 1 ] && echo 'site:ast: the AST cache does not match this checkout; accepted (SITE_ACCEPT_STALE_AST=1)'; }; }",
-    "site:sidecars": "bun run smart-base/scripts/dak-ast-sidecars.ts --ast output-ast --out fhir-artifact-index/sidecars",
-    "site:index": "bun run fhir-harness/scripts/ast-to-artifact-index.ts --ast output-ast --instance-id \"$SITE_INSTANCE\" --compare fhir-artifact-index/index.json --keep-published-grouping --sidecars fhir-artifact-index/sidecars --sidecars-local fhir-artifact-index/sidecars --out \"$SITE_WORK/ast-index.json\" --report \"$SITE_WORK/ast-parity.json\"",
-    "site:pages": "bun run fhir-harness/scripts/gen-ig-pages.ts --instance . --publish-note \"This page mirrors a published WHO Implementation Guide.\" --sidecar-label \"DAK API\" --label \"WHO SMART Trust\" --chrome-owner smart-base --index \"$SITE_WORK/ast-index.json\" --compiled-data ast-data --full-pages",
-    "site:openapi-pages": "bun run cat-harness-tools/openapi/scripts/gen-openapi-pages.ts --instance .",
-    "site:plantuml": "J=\"${PLANTUML_JAR:-$HOME/.cache/plantuml/plantuml-1.2024.7.jar}\"; [ -s \"$J\" ] || { mkdir -p \"$(dirname \"$J\")\" && curl -sSfL --retry 5 --retry-delay 15 --retry-all-errors -o \"$J\" https://repo1.maven.org/maven2/net/sourceforge/plantuml/plantuml/1.2024.7/plantuml-1.2024.7.jar; } && cp \"$J\" \"$SITE_WORK/plantuml.jar\"",
-    "site:compose-ig": "bun run fhir-harness/scripts/stage-ig-sites.ts --work \"$SITE_WORK/ig\" --baseurl \"$SITE_BASEURL\" --only \"$SITE_INSTANCE\" --source . --plantuml-jar \"$SITE_WORK/plantuml.jar\" --compose-at-root --full-pages --compose-into",
-    "site:dedupe-ids": "bun run fhir-harness/scripts/build-ig-site.ts --dedupe-ids",
-    "site:ast-data": "mkdir -p \"$SITE_DIR/ast-data\" && cp -a output-ast/resources \"$SITE_DIR/ast-data/resources\" && echo 'ast-data: the AST resources, served' #",
-    "site:served": "bun run fhir-harness/scripts/publish-served.ts --instance \"$SITE_INSTANCE\" --site",
-    "site:stamp": "GITHUB_REPOSITORY=\"$SITE_REPOSITORY\" GITHUB_REF_NAME=\"$SITE_REF\" GITHUB_SHA=\"$SITE_COMMIT\" bun run fhir-harness/scripts/site-build-stamp.ts stamp --instance \"$SITE_INSTANCE\" --platform cat-harness-tools --site"
-  }
+  "_workspaces_comment": "The mounted code layers, as workspaces, as folio-assistant's root package.json lists them: they import each other by package name (@litlfred/cat-harness, ...), and nothing publishes those packages, so a bare `bun install` in a mount fails with a 404. Owner, 2026-10-14: \"Repo declares workspaces\". The mounts are laid down from index.lock.json and gitignored; smart-base and bootstrap carry no dependencies and are not listed.",
+  "workspaces": [
+    "bootstrap-tools",
+    "cat-harness",
+    "cat-harness-tools",
+    "folio-assistant-core",
+    "fhir-harness"
+  ]
 }
