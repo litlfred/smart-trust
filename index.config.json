@@ -35,6 +35,8 @@
                 "smart-base-findings",
                 "smart-base-external-schemas",
                 "smart-base-platform",
+                "smart-base-validators",
+                "smart-base-typologies",
                 "smart-base-schemas",
                 "smart-base-content",
                 "smart-base-scripts",
@@ -60,7 +62,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "eb78679de92b32032c0f6c11da2cad85ccf46e11",
+          "ref": "04447ca584d97450950e02102681ed107aa07713",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -70,8 +72,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "eb78679de92b32032c0f6c11da2cad85ccf46e11",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "ref": "04447ca584d97450950e02102681ed107aa07713",
+              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust'"
             }
           }
         }
@@ -138,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "0ca5a58a6cbfdc137e3f4a846d086502847ae549",
+          "ref": "25987e70fb094021cd44141be193c3a09a851fa3",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -151,8 +153,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "0ca5a58a6cbfdc137e3f4a846d086502847ae549",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "ref": "25987e70fb094021cd44141be193c3a09a851fa3",
+              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust'"
             }
           }
         }
