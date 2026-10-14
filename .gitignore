@@ -67,3 +67,5 @@ __pycache__/
 /openapi/index.html
 /openapi/*.jsonld
 /openapi/gateway.json
+
+node_modules/
