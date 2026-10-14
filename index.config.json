@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "b300102d133bece66998c17fba633f6545ac3880",
+          "ref": "d62caea53904f7edf017a2331a82827192aa79a4",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "b300102d133bece66998c17fba633f6545ac3880",
-              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
+              "ref": "d62caea53904f7edf017a2331a82827192aa79a4",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust'; fhir-harness#79 (questionnaire edit-links own path)"
             }
           }
         }
