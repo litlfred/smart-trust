@@ -1,0 +1,29 @@
+{
+  "_comment": "smart-trust's site, declared: the steps of fhir-harness's templates/ig-repo-site/folio-site.yml as this repository's package scripts (package.json), in that workflow's order. build-instance-site runs compose-docs --shell, gen-navbar-include, Jekyll and the rail itself; keep holds the IG Publisher's per-branch previews, which a root publish never deletes. profile ig-repo-site: only the platform steps folio-site.yml runs. links report: folio-site.yml checked none, and the IG source links video_tutorial.html, which it does not have (live root, 2026-10-12, the same).",
+  "site": {
+    "build": {
+      "pre": [
+        "site:ast",
+        "site:sidecars",
+        "site:index",
+        "site:pages",
+        "site:openapi-pages",
+        "site:plantuml"
+      ],
+      "sourceSteps": [
+        "site:compose-ig"
+      ],
+      "siteSteps": [
+        "site:dedupe-ids",
+        "site:ast-data",
+        "site:served",
+        "site:stamp"
+      ],
+      "keep": [
+        "branches"
+      ],
+      "profile": "ig-repo-site",
+      "links": "report"
+    }
+  }
+}
