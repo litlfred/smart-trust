@@ -35,6 +35,8 @@
                 "smart-base-findings",
                 "smart-base-external-schemas",
                 "smart-base-platform",
+                "smart-base-validators",
+                "smart-base-typologies",
                 "smart-base-schemas",
                 "smart-base-content",
                 "smart-base-scripts",
