@@ -2,14 +2,6 @@
   "$schema": "folio-index-config/v1",
   "instances": [
     {
-      "name": "smart-trust",
-      "source": {
-        "local": {
-          "at": "."
-        }
-      }
-    },
-    {
       "name": "smart-base",
       "source": {
         "remote": {
@@ -60,7 +52,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "346ecd0bc7eb69e608bd0185a58ecb25acf2642e",
+          "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -69,9 +61,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-10",
-              "ref": "346ecd0bc7eb69e608bd0185a58ecb25acf2642e",
-              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
+              "on": "2026-10-14",
+              "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
             }
           }
         }
@@ -82,7 +74,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "fd8ea8d87710b843d2abc0a1cd3d8fe7a6fcbb32",
+          "ref": "d024a57e99e6215a83d5866ed06a22b4c7d6b6bf",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -97,9 +89,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-12",
-              "ref": "fd8ea8d87710b843d2abc0a1cd3d8fe7a6fcbb32",
-              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
+              "on": "2026-10-14",
+              "ref": "d024a57e99e6215a83d5866ed06a22b4c7d6b6bf",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
             }
           }
         }
@@ -110,7 +102,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "525ce6034f23f5f8b51898a2f4b0bbce4e0cc3a2",
+          "ref": "c065dee00694191b7f0f96a130df363aeb48bab1",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -125,9 +117,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-12",
-              "ref": "525ce6034f23f5f8b51898a2f4b0bbce4e0cc3a2",
-              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
+              "on": "2026-10-14",
+              "ref": "c065dee00694191b7f0f96a130df363aeb48bab1",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
             }
           }
         }
@@ -138,7 +130,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "c4efa71e1d756b5986c5c7f45894da35652a0ac0",
+          "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -150,9 +142,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-12",
-              "ref": "c4efa71e1d756b5986c5c7f45894da35652a0ac0",
-              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
+              "on": "2026-10-14",
+              "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
             }
           }
         }
@@ -205,5 +197,8 @@
         }
       }
     }
-  ]
+  ],
+  "site": {
+    "landing": "smart-base"
+  }
 }

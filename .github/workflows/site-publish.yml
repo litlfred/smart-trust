@@ -1,14 +1,47 @@
+# TEMPLATE — an IG repository's OWN site: the platform's just-the-docs folio
+# site with the IG composed at its root, published to that repository's
+# gh-pages. Copy to `.github/workflows/site-publish.yml` unchanged: it has no
+# placeholders.
+#
+# What the repository needs, and nothing else from the platform (owner,
+# 2026-10-14: an IG repository "doesn't need its own harness. It can just
+# define index.config.json and reference [its base harness] as a dependency"):
+#
+#   index.config.json   mounts the harness the IG is built on (and its
+#                       closure), and names it as the site's landing:
+#                         "site": { "landing": "<that harness>" }
+#                       The landing scopes the site's chrome (tiles, navbar,
+#                       rail); the site's TITLE is the IG's own, from
+#                       sushi-config.yaml `title`.
+#   index.lock.json     written by the platform's `remote-mount.ts` from it.
+#   a workflow that calls the base harness's IG build (`ghbuild.yml`, or a
+#                       `fhirbuild.yml` beside one): the IG build recipe the
+#                       publish mirrors.
+#
+# No instance declaration (`<repo>.json`), no `package.json`, no committed
+# menu: the menu is read from sushi-config.yaml at build time.
+#
+# What a run does — the agent's own command, `stage-local.ts`, on a runner:
+#   1. mounts the layers index.lock.json pins (cat-harness-tools first, from
+#      the lock, then everything else through it);
+#   2. builds the IG with the steps of the workflow the repository calls (the
+#      IG Publisher in its Docker image, into output/);
+#   3. builds the folio site around it (`build-instance-site.ts`): the chrome
+#      of the landing harness, the IG's pages composed at the root
+#      (`ig-site:compose`), Jekyll, then every Publisher page the site lacks
+#      (`ig-site:publisher-pages`) so artefact links land, and the link check
+#      (a dead link in the chrome refuses the publish; one in the IG's own
+#      content is reported);
+#   4. on the default branch publishes the gh-pages ROOT, keeping STAGING/,
+#      _render-log/ and branches/; on any other branch the preview at
+#      STAGING/<branch>/.
+# `plan` prints what would run and publishes nothing. An agent runs the same
+# command from its checkout, with --plan or --dry-run to look first.
+#
+# Manual trigger only (owner decision, 2026-10-06): add a `push` trigger to a
+# copy only if that repository's owner asks for every push published.
 name: Site publish (by hand)
 
-# The site is agent-run: an agent builds and publishes it with the platform's
-# `stage-local.ts`. This workflow runs that SAME command on a GitHub runner,
-# for a session whose container cannot reach rubygems.org and so cannot
-# install Jekyll (owner, 2026-10-13: "github egress?"). It is the agent's
-# command, not a second recipe.
-#
-# Dispatch only. On the default branch it publishes the gh-pages root
-# (keeping STAGING/ and _render-log/); on any other branch, the preview at
-# STAGING/<branch>/. `plan` prints what would run and publishes nothing.
 on:
   workflow_dispatch:
     inputs:
