@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "f1bcb146b214896156bce63c15e92003c78f3368",
+          "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -33,15 +33,16 @@
                 "smart-base-skills",
                 "smart-base-scenarios",
                 "smart-base-code-lists"
-              ]
+              ],
+              "whole": true
             }
           },
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-10",
-              "ref": "f1bcb146b214896156bce63c15e92003c78f3368",
-              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
+              "on": "2026-10-14",
+              "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
             }
           }
         }
@@ -52,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
+          "ref": "b300102d133bece66998c17fba633f6545ac3880",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -62,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "39e3caf74262d6b98f7ffbbeaf49fc30891b33c6",
-              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
+              "ref": "b300102d133bece66998c17fba633f6545ac3880",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
             }
           }
         }
@@ -130,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
+          "ref": "d18472378fbbf910aff9ea21b19ae91e40559147",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -143,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "2d97ef4c4c6f6c1704140dd4313d7d00735ea742",
-              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
+              "ref": "d18472378fbbf910aff9ea21b19ae91e40559147",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
             }
           }
         }
