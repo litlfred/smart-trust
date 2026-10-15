@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "2aa1f8be1a6e2edfca99afdf4b82b954c7cc1d62",
+          "ref": "f38b2b0be99cff30cc7816850a74fdd0d0fe9f18",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "2aa1f8be1a6e2edfca99afdf4b82b954c7cc1d62",
-              "evidence": "Owner litlfred, 2026-10-15 05:55 UTC session chat: 'merge and repin open 3 hrs' — re-pin cat-harness (>= 44c27fd, cat-harness#240), cat-harness-tools (>= #247) and fhir-harness (#77) to current mains so index.config.json may declare site.agentRun (smart-trust#40)"
+              "ref": "f38b2b0be99cff30cc7816850a74fdd0d0fe9f18",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h), layout C with search and the language picker approved; 'Merge + publish' for fhir-harness#86"
             }
           }
         }
@@ -103,7 +103,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "e93233245d8293fb8dba7003e4ede0c60a3c0b91",
+          "ref": "e41b0af3a4b8537837c0854709283fc5b4170a2f",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -119,8 +119,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "e93233245d8293fb8dba7003e4ede0c60a3c0b91",
-              "evidence": "Owner litlfred, 2026-10-15 05:55 UTC session chat: 'merge and repin open 3 hrs' — re-pin cat-harness (>= 44c27fd, cat-harness#240), cat-harness-tools (>= #247) and fhir-harness (#77) to current mains so index.config.json may declare site.agentRun (smart-trust#40)"
+              "ref": "e41b0af3a4b8537837c0854709283fc5b4170a2f",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h), layout C with search and the language picker approved; 'Merge + publish' for fhir-harness#86"
             }
           }
         }
@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "77946b72df364e63fc1608fb353c3cc18cfd06db",
+          "ref": "d884f1404a072a162c3e49ffe11f0946ada3a934",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "77946b72df364e63fc1608fb353c3cc18cfd06db",
-              "evidence": "Owner litlfred, 2026-10-15 05:55 UTC session chat: 'merge and repin open 3 hrs' — re-pin cat-harness (>= 44c27fd, cat-harness#240), cat-harness-tools (>= #247) and fhir-harness (#77) to current mains so index.config.json may declare site.agentRun (smart-trust#40)"
+              "ref": "d884f1404a072a162c3e49ffe11f0946ada3a934",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h), layout C with search and the language picker approved; 'Merge + publish' for fhir-harness#86"
             }
           }
         }
