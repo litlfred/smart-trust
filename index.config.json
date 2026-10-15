@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
+          "ref": "96e43858f0e190380a571469ced640957f2916e6",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -40,9 +40,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
-              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
+              "on": "2026-10-15",
+              "ref": "96e43858f0e190380a571469ced640957f2916e6",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h to ~11:15 UTC); consolidation 'Merge + publish' and 'Merge + publish anyway' for fhir-harness#91 and smart-base#74"
             }
           }
         }
@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "f38b2b0be99cff30cc7816850a74fdd0d0fe9f18",
+          "ref": "9da809b0bc6ad75223b3b5b539cbdaad951e8625",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "f38b2b0be99cff30cc7816850a74fdd0d0fe9f18",
-              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h), layout C with search and the language picker approved; 'Merge + publish' for fhir-harness#86"
+              "ref": "9da809b0bc6ad75223b3b5b539cbdaad951e8625",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h to ~11:15 UTC); consolidation 'Merge + publish' and 'Merge + publish anyway' for fhir-harness#91 and smart-base#74"
             }
           }
         }
@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "d884f1404a072a162c3e49ffe11f0946ada3a934",
+          "ref": "4d5e5f9ffc75629e7bde3e07925fa0a96333b7ad",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "d884f1404a072a162c3e49ffe11f0946ada3a934",
-              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h), layout C with search and the language picker approved; 'Merge + publish' for fhir-harness#86"
+              "ref": "4d5e5f9ffc75629e7bde3e07925fa0a96333b7ad",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h to ~11:15 UTC); consolidation 'Merge + publish' and 'Merge + publish anyway' for fhir-harness#91 and smart-base#74"
             }
           }
         }
