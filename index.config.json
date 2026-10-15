@@ -200,6 +200,7 @@
     }
   ],
   "site": {
-    "landing": "smart-base"
+    "landing": "smart-base",
+    "agentRun": true
   }
 }
