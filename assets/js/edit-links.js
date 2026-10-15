@@ -30,6 +30,34 @@
   }
   return { edit: "https://github.com/" + repo + "/edit/" + branch + "/" + path, suggest: "https://github.com/" + repo + "/edit/" + branch + "/" + path, source: src, feedback: "https://github.com/" + c.repo + "/issues/new?" + q };
 }
+  function faSuggestTokens(contributed) {
+  var re = function (s) { if (s instanceof RegExp) return s; var i = s.lastIndexOf("/"); return new RegExp(s.slice(1, i), s.slice(i + 1)); };
+  var withG = function (r) { return r.flags.indexOf("g") >= 0 ? r : new RegExp(r.source, r.flags + "g"); };
+  var own = [
+    { id: "liquid", shield: /\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}/, find: /\{\{[\s\S]*?(?:\}\}|$)|\{%[\s\S]*?(?:%\}|$)/g,
+      valid: /^\{\{\s*[A-Za-z_][\w-]*(?:\.[\w-]+|\[\d+\])*\s*(?:\|\s*[A-Za-z_]\w*(?:\s*:\s*[^|{}]+?)?\s*)*\}\}$|^\{%\s*[A-Za-z_]\w*[^%]*%\}$/ },
+    { id: "directive", shield: /:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^}\n]*\})?/, find: /:{1,2}[A-Za-z][\w-]*\[[^\n]*?(?:\](?:\{[^\n]*?\})?|$)/gm,
+      valid: /^:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^{}\n]*\})?$/ },
+  ];
+  var theirs = (contributed || []).filter(function (t) { return t && typeof t.id === "string"; }).map(function (t) {
+    return { id: t.id, shield: t.shield && re(t.shield), find: t.find && re(t.find), valid: t.valid && re(t.valid), trim: t.trim && re(t.trim) };
+  });
+  var shieldOf = function (rules) {
+    return new RegExp(rules.filter(function (r) { return r.shield; }).map(function (r) { return "(?:" + r.shield.source + ")"; }).join("|"), "g");
+  };
+  var both = own.concat(theirs), ownShield = shieldOf(own), allShield = shieldOf(both);
+  return {
+    wrap: function (md, ownOnly) { return md.replace(ownOnly ? ownShield : allShield, function (m) { return "\u27e6" + m + "\u27e7"; }); },
+    errors: function (md, ownOnly) {
+      var bad = [];
+      (ownOnly ? own : both).forEach(function (r) {
+        if (!r.find || !r.valid) return;
+        for (const m of md.matchAll(withG(r.find))) if (!r.valid.test(r.trim ? m[0].replace(r.trim, "") : m[0])) bad.push(m[0]);
+      });
+      return bad;
+    },
+  };
+}
   let cfg = null;
   const config = () => {
     if (cfg) return cfg;
@@ -77,32 +105,11 @@
   // The text is read through the block's KG node (<block>.jsonld, its text)
   // from the repository itself, and the change leaves as a GitHub issue the
   // reader submits: no OAuth, no token, no server. Variables, directives and
-  // LaTeX references are the reader's to change, add or delete; what is
-  // checked is that each is well-formed, and the panel under the editor shows
-  // each variable's current value from the site's values.jsonld. Nothing read
-  // is written as HTML.
-  const TOKENISH = /\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}|:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^}\n]*\})?|\\[A-Za-z]+\{[^}\n]*\}/g;
-  // Variables, directives and LaTeX references stay the reader's to change,
-  // add or delete. They are wrapped in \u27e6 \u27e7 only so the editor's
-  // Markdown escaping cannot corrupt them, and unwrapped on submit; what is
-  // checked is that each one is still well-formed, nothing more (owner,
-  // 2026-10-14: "I only want that the syntax is valid").
-  const wrap = (md) => md.replace(TOKENISH, (m) => "\u27e6" + m + "\u27e7");
-  // The same, less the LaTeX references: for a profile that keeps LaTeX verbatim itself.
-  const TOKENS_NO_LATEX = /\{\{[\s\S]*?\}\}|\{%[\s\S]*?%\}|:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^}\n]*\})?/g;
+  // any syntax a content profile declares are the reader's to change, add or
+  // delete; what is checked is that each is well-formed (faSuggestTokens), and
+  // the panel under the editor shows each variable's current value from the
+  // site's values.jsonld. Nothing read is written as HTML.
   const unwrap = (md) => md.replace(/\u27e6([^\u27e6\u27e7]*)\u27e7/g, (m, inner) => inner.replace(/\\([!-\/:-@\[-\u0060{-~])/g, "$1"));
-  const LIQUID = /^\{\{\s*[A-Za-z_][\w-]*(?:\.[\w-]+|\[\d+\])*\s*(?:\|\s*[A-Za-z_]\w*(?:\s*:\s*[^|{}]+?)?\s*)*\}\}$/;
-  const TAG = /^\{%\s*[A-Za-z_]\w*[^%]*%\}$/;
-  const DIRECTIVE = /^:{1,2}[A-Za-z][\w-]*\[[^\]\n]*\](?:\{[^{}\n]*\})?$/;
-  const LATEXREF = /^\\[A-Za-z]+\{[^{}\n]+\}$/;
-  // latex === false: a profile's own checker reads the LaTeX, so this coarse check does not.
-  const syntaxErrors = (md, latex) => {
-    const bad = [];
-    for (const m of md.matchAll(/\{\{[\s\S]*?(?:\}\}|$)|\{%[\s\S]*?(?:%\}|$)/g)) if (!LIQUID.test(m[0]) && !TAG.test(m[0])) bad.push(m[0]);
-    for (const m of md.matchAll(/:{1,2}[A-Za-z][\w-]*\[[^\n]*?(?:\](?:\{[^\n]*?\})?|$)/gm)) if (!DIRECTIVE.test(m[0])) bad.push(m[0]);
-    if (latex !== false) for (const m of md.matchAll(/\\(?:cite|ref|eqref|autoref|cref)\b[^\s]*/g)) if (!LATEXREF.test(m[0].replace(/[.,;:)]+$/, ""))) bad.push(m[0]);
-    return bad;
-  };
   // Variable names and, when the site published them, their current values.
   const variablesIn = (md) => Array.from(md.matchAll(/\{\{\s*([A-Za-z_][\w.\-\[\]]*)/g), (m) => m[1]);
   const lineDiff = (a, b) => {
@@ -129,8 +136,8 @@
     // (the ✍ link beside ✎ edit) a data-src adopted from its href, and the
     // block's label is the host's, not the link's.
     const h = a.parentElement && a.parentElement.closest("[data-src]");
-    if (h && h.dataset.src) return { src: h.dataset.src, label: h.dataset.block || h.dataset.src, repo: h.dataset.repo, branch: h.dataset.branch, mode: h.dataset.suggestMode };
-    if (a.dataset.src || adopt(a)) return { src: a.dataset.src, label: a.dataset.block || a.dataset.src, repo: a.dataset.repo, branch: a.dataset.branch, mode: a.dataset.suggestMode };
+    if (h && h.dataset.src) return { src: h.dataset.src, label: h.dataset.block || h.dataset.src, repo: h.dataset.repo, branch: h.dataset.branch, mode: h.dataset.suggestMode, text: h.dataset.suggestText };
+    if (a.dataset.src || adopt(a)) return { src: a.dataset.src, label: a.dataset.block || a.dataset.src, repo: a.dataset.repo, branch: a.dataset.branch, mode: a.dataset.suggestMode, text: a.dataset.suggestText };
     return null;
   };
   const el = (tag, props, kids) => { const e = Object.assign(document.createElement(tag), props || {}); for (const k of kids || []) e.append(k); return e; };
@@ -147,7 +154,7 @@
     let best = null;
     for (const e of document.querySelectorAll("script[src], link[href]")) {
       let u;
-      try { u = new URL(e.getAttribute("src") || e.getAttribute("href"), location.href); } catch (x) { continue; }
+      try { u = new URL(e.getAttribute("src") || e.getAttribute("href"), location.href); } catch { continue; }
       const i = u.pathname.indexOf("/assets/");
       if (u.origin !== location.origin || i < 0) continue;
       const root = u.pathname.slice(0, i + 1);
@@ -173,14 +180,16 @@
     kgRefs = keys.length ? { labels: labels, citeKeys: keys } : { labels: labels };
     return kgRefs;
   };
-  // A profile (an editor-checker node the site bundled, e.g. folio-assistant-sci's
-  // paper-latex) for the block's kind: its checker, and its Crepe settings.
+  // A profile (an editor-checker node a content layer declares, bundled by the
+  // site) for the block's kind: its checker, its tokens, and its Crepe settings.
   // Or a mode: a profile whose module opens its own editor (a Questionnaire
   // form builder, in the page or in another window) over a file it declares by
   // extension. A host names one with data-suggest-mode.
   const profilesOf = (c) => ((c.suggest && c.suggest.profiles) || []).filter((p) => p && p.module);
   const fileOk = (p, src) => (p.extensions && p.extensions.length ? p.extensions.some((x) => src.endsWith(x)) : /\.md$/.test(src));
-  const suggestable = (c, s) => (!s.mode && /\.md$/.test(s.src)) || profilesOf(c).some((p) => fileOk(p, s.src) && (!s.mode || p.id === s.mode));
+  // A host that names its mode is served by that profile whatever its file is
+  // (a Questionnaire written in FSH); otherwise by file type.
+  const suggestable = (c, s) => (s.mode ? profilesOf(c).some((p) => p.id === s.mode) : /\.md$/.test(s.src) || profilesOf(c).some((p) => fileOk(p, s.src)));
   const profileFor = (c, kind, s) => s.mode
     ? profilesOf(c).find((p) => p.id === s.mode)
     : profilesOf(c).find((p) => fileOk(p, s.src) && (!p.kinds || p.kinds.indexOf(kind) >= 0));
@@ -190,7 +199,7 @@
     if (template) q.template = template;
     let url = "https://github.com/" + repo + "/issues/new?" + new URLSearchParams(q);
     if (url.length > 7000) {
-      try { await navigator.clipboard.writeText(body); } catch (e) { status.textContent = "Too long for a link, and the clipboard is blocked."; return false; }
+      try { await navigator.clipboard.writeText(body); } catch { status.textContent = "Too long for a link, and the clipboard is blocked."; return false; }
       url = "https://github.com/" + repo + "/issues/new?" + new URLSearchParams({ title: title, body: "The suggested change is on the clipboard: paste it here." });
     }
     window.open(url, "_blank", "noopener");
@@ -414,7 +423,8 @@
     // The block's profile, when the site declares one for its kind. A profile
     // that fails to load leaves the generic editor and its generic checks.
     const prof = profileFor(c, kind, s);
-    let mod = null, notes = [];
+    let mod = null;
+    const notes = [];
     if (prof) {
       try { mod = await import(new URL(prof.module, location.href).href); }
       catch (e) { notes.push("The " + (prof.id || "profile") + " checks did not load (" + e.message + ")."); }
@@ -426,29 +436,77 @@
     // it is read on submit, not polled.
     if (mod && typeof mod.open === "function") {
       toolbar.hidden = true;
-      const ctx = { text: original, src: s.src, path: path, label: s.label, kind: kind, repo: repo, branch: branch, config: c, status: (m) => { status.textContent = String(m); } };
+      // The mode's text: the block's source, or, when the host names one
+      // (data-suggest-text), what the site BUILT from it, e.g. a Questionnaire
+      // compiled from FSH. The source stays the issue's subject either way.
+      let text = original;
+      if (s.text) {
+        try {
+          const r = await fetch(new URL(s.text, location.href).href);
+          if (!r.ok) throw new Error(r.status + " reading " + s.text);
+          text = await r.text();
+        } catch (e) { status.textContent = "Could not load the built text: " + e.message; return; }
+      }
+      // ctx.why is live: the reader's reason as it stands when the mode reads it.
+      const ctx = { text: text, sourceText: original, sourcePath: path, src: s.src, path: path, label: s.label, kind: kind, repo: repo, branch: branch, config: c, status: (m) => { status.textContent = String(m); }, get why() { return reason(); } };
+      const formBox = el("div"), srcBox = el("div", { hidden: true });
+      host.replaceChildren(formBox, srcBox);
       let handle;
-      try { handle = await mod.open(host, ctx); }
+      try { handle = await mod.open(formBox, ctx); }
       catch (e) { status.textContent = "The " + (prof.id || "editor") + " did not open: " + e.message; return; }
-      surface = { name: "mode", get: () => handle.get(), base: original, destroy: () => { try { if (handle && handle.dispose) handle.dispose(); } catch (e) {} } };
+      surface = { name: "mode", get: () => handle.get(), base: text, destroy: () => { try { if (handle && handle.dispose) handle.dispose(); } catch {} } };
+      // Both editors when the mode edits a built text (owner, 2026-10-14: "Both"):
+      // the mode's own, and the source itself, raw. The issue carries whichever
+      // the reader used; the mode stays open, so switching back loses nothing.
+      let onSource = false, srcArea = null;
+      if (s.text) {
+        const ext = (path.match(/\.([A-Za-z0-9]+)$/) || [])[1];
+        const formBtn = btn("Form", "Edit in the form"), srcBtn = btn(ext ? ext.toUpperCase() : "Source", "Edit the source text");
+        const sw = el("div", { className: "fa-sg-tb" }, [el("span", { className: "fa-sg-mode" }, [formBtn, srcBtn])]);
+        sw.setAttribute("role", "group");
+        sw.setAttribute("aria-label", "Editor");
+        host.before(sw);
+        const show = () => {
+          formBtn.setAttribute("aria-pressed", String(!onSource));
+          srcBtn.setAttribute("aria-pressed", String(onSource));
+          formBox.hidden = onSource;
+          srcBox.hidden = !onSource;
+        };
+        formBtn.onclick = () => { onSource = false; show(); };
+        srcBtn.onclick = () => {
+          if (!srcArea) { srcArea = el("textarea", { value: original }); srcArea.setAttribute("aria-label", "The source: " + path); srcBox.append(srcArea); }
+          onSource = true; show(); srcArea.focus();
+        };
+        show();
+      }
       status.textContent = notes.join(" ");
+      const sourceIssue = async () => {
+        const now = srcArea.value;
+        if (now === original) { status.textContent = "Nothing has changed yet."; return; }
+        const body = facts.concat(["", "**Suggested change**, made in the source (" + path + "):", "", "\u0060\u0060\u0060diff", lineDiff(original, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
+        if (await openIssue(c.repo || repo, "Suggested edit: " + s.label, body, undefined, status)) close.onclick();
+      };
       send.disabled = false;
       send.onclick = async () => {
+        if (onSource) return sourceIssue();
         let now;
         try { now = await surface.get(); } catch (e) { status.textContent = "Could not read the edit: " + e.message; return; }
-        if (typeof now !== "string" || now === original) { status.textContent = "Nothing has changed yet."; return; }
+        if (typeof now !== "string" || now === text) { status.textContent = "Nothing has changed yet."; return; }
         let found = [];
         if (typeof mod.check === "function") {
-          try { found = (await mod.check(original, now, { kg: (await kgReferences(c)) || undefined })) || []; }
+          try { found = (await mod.check(text, now, { kg: (await kgReferences(c)) || undefined })) || []; }
           catch (e) { found = [{ severity: "warning", message: "the checker failed: " + e.message }]; }
         }
         vars.replaceChildren(...found.map(findingItem));
         const errs = found.filter((f) => f.severity === "error");
         if (errs.length) { status.textContent = "Fix first: " + errs.map((f) => String(f.message).slice(0, 60)).join(" \u00b7 "); return; }
         let custom = null;
-        if (typeof mod.issue === "function") { try { custom = await mod.issue(original, now, ctx); } catch (e) { custom = null; } }
+        if (typeof mod.issue === "function") { try { custom = await mod.issue(text, now, ctx); } catch { custom = null; } }
         const title = (custom && custom.title) || "Suggested edit: " + s.label;
-        const issueBody = (custom && custom.body) || facts.concat(["", "**Suggested change**, made in the " + (prof.id || "profile") + " editor:", "", "\u0060\u0060\u0060diff", lineDiff(original, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
+        // A mode's own body keeps the reader's reason: appended when the body does not already carry it.
+        const why = reason();
+        const own = custom && custom.body ? (why && custom.body.indexOf(why) < 0 ? custom.body + "\n\n**Why:**\n" + why + "\n" : custom.body) : null;
+        const issueBody = own || facts.concat(["", "**Suggested change**, made in the " + (prof.id || "profile") + " editor:", "", "\u0060\u0060\u0060diff", lineDiff(text, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
         if (await openIssue(c.repo || repo, title, issueBody, custom && custom.template, status)) close.onclick();
       };
       return;
@@ -456,12 +514,16 @@
     const km = (c.suggest && c.suggest.katexMacros) || {};
     const macros = mod && typeof mod.macros === "function" ? mod.macros(km) : undefined;
     const kg = mod && typeof mod.check === "function" ? await kgReferences(c) : null;
-    // A profile that keeps LaTeX verbatim itself (remarkFirst) must not have it wrapped in \u27e6 \u27e7 as well.
-    const latexOwned = !!(mod && mod.remarkFirst);
-    const shield = (t) => (latexOwned ? t.replace(TOKENS_NO_LATEX, (m) => "\u27e6" + m + "\u27e7") : wrap(t));
+    // The harness's tokens and the profile's. A profile whose module keeps its
+    // own syntax verbatim (remarkFirst) must not have it wrapped in \u27e6 \u27e7
+    // as well, and one whose module loaded checks its own syntax: its tokens
+    // are shielded and checked here only when its module is not.
+    const tokens = faSuggestTokens(prof && prof.tokens);
+    const shield = (t) => tokens.wrap(t, !!(mod && mod.remarkFirst));
+    const syntaxErrors = (t) => tokens.errors(t, !!mod);
     const wrapped = shield(body);
     let katex = null, lib = null, visualBase = null;
-    // The visual surface: Crepe, with the profile's latex settings, node views
+    // The visual surface: Crepe, with the profile's feature settings, node views
     // and first remark transformer, the toolbar's commands and the change
     // marks. Its base is Crepe's round-trip of the SOURCE, kept across a
     // switch to raw and back, so escapes Crepe adds are not counted as the
@@ -483,7 +545,7 @@
       // The dialog's own toolbar replaces Crepe's selection toolbar, and
       // Crepe's block handle (the wide left gutter) is not used here.
       const opts = { root: box, defaultValue: text, features: { [Crepe.Feature.Toolbar]: false, [Crepe.Feature.BlockEdit]: false } };
-      if (mod && typeof mod.latexConfig === "function") opts.featureConfigs = { [Crepe.Feature.Latex]: mod.latexConfig(km) };
+      if (mod && typeof mod.featureConfigs === "function") opts.featureConfigs = mod.featureConfigs(Crepe.Feature, km);
       const crepe = new Crepe(opts);
       let baseBlocks = null;
       const marks = lib.Plugin && lib.DecorationSet ? changeMarks(lib, () => baseBlocks) : null;
@@ -521,14 +583,14 @@
       if (marks) view.dispatch(view.state.tr.setMeta(marks.key, true));
       return {
         name: "visual", get: get, base: visualBase, changes: () => (marks ? marks.count() : null),
-        destroy: () => { try { crepe.destroy(); } catch (e) {} },
+        destroy: () => { try { crepe.destroy(); } catch {} },
         bold: () => run(lib.toggleStrongCommand), italic: () => run(lib.toggleEmphasisCommand), strike: () => run(lib.toggleStrikethroughCommand),
         heading: () => run(lib.wrapInHeadingCommand, 3), bullets: () => run(lib.wrapInBulletListCommand), numbers: () => run(lib.wrapInOrderedListCommand),
         code: () => run(lib.toggleInlineCodeCommand), undo: () => run(lib.undoCommand), redo: () => run(lib.redoCommand),
         link: () => { const href = window.prompt("Link address"); if (href) run(lib.toggleLinkCommand, { href: href }); },
       };
     };
-    // The raw surface: the block's Markdown as it is, LaTeX and all; the toolbar types Markdown.
+    // The raw surface: the block's Markdown exactly as it is; the toolbar types Markdown.
     const rawSurface = (text) => {
       const ta = el("textarea", { value: text });
       ta.setAttribute("aria-label", "The block's Markdown");
@@ -555,7 +617,7 @@
       toolbar.append(b);
     }
     toolbar.append(el("span", { className: "fa-sg-note", textContent: "No underline: underlined text means added." }), mode);
-    const rawFirst = !!(prof && prof.rawLatexFirstFor && prof.rawLatexFirstFor.indexOf(kind) >= 0);
+    const rawFirst = !!(prof && prof.rawFirstFor && prof.rawFirstFor.indexOf(kind) >= 0);
     const show = () => {
       visualBtn.setAttribute("aria-pressed", String(surface.name === "visual"));
       rawBtn.setAttribute("aria-pressed", String(surface.name === "raw"));
@@ -568,7 +630,7 @@
       notes.push("The visual editor did not load (" + e.message + "); editing the Markdown directly.");
     }
     show();
-    const describe = () => (surface.name === "raw" ? "Editing the raw Markdown" + (mod ? " and LaTeX" : "") + "." : wrapped === body ? "" : "Variables, glossary terms and references are shown in \u27e6 \u27e7: change, add or delete them freely; their syntax is checked when you submit.");
+    const describe = () => (surface.name === "raw" ? "Editing the raw Markdown." : wrapped === body ? "" : "Variables, glossary terms and references are shown in \u27e6 \u27e7: change, add or delete them freely; their syntax is checked when you submit.");
     status.textContent = notes.concat([describe()]).filter(Boolean).join(" ");
     const switchTo = async (next) => {
       if (surface.name === next) return;
@@ -599,7 +661,7 @@
         items.push(li);
       } else if (text !== surface.base) items.push(el("li", { textContent: "Changed. Switch to Visual to see the changes marked." }));
       for (const k of variablesIn(text)) { const v = valueOf(k); items.push(el("li", { textContent: k + (v === undefined ? (values ? " \u2014 not a published variable" : " \u2014 value not published") : " = " + v) })); }
-      for (const b of syntaxErrors(text, !mod)) items.push(el("li", { className: "bad", textContent: "Not well-formed: " + b.slice(0, 80) }));
+      for (const b of syntaxErrors(text)) items.push(el("li", { className: "bad", textContent: "Not well-formed: " + b.slice(0, 80) }));
       for (const f of findings(text)) items.push(findingItem(f));
       vars.replaceChildren(...items);
     };
@@ -609,7 +671,7 @@
     send.onclick = async () => {
       const now = surface.get();
       if (now === surface.base) { status.textContent = "Nothing has changed yet."; return; }
-      const errs = syntaxErrors(now, !mod).concat(findings(now).filter((f) => f.severity === "error").map((f) => f.message));
+      const errs = syntaxErrors(now).concat(findings(now).filter((f) => f.severity === "error").map((f) => f.message));
       if (errs.length) { status.textContent = "Fix the syntax first: " + errs.map((e) => e.slice(0, 60)).join(" \u00b7 "); return; }
       const how = surface.name === "raw" ? "in the raw editor" : "in the visual editor (the diff is against the editor's rendering of the source)";
       const issue = facts.concat(["", "**Suggested change**, made " + how + ":", "", "\u0060\u0060\u0060diff", lineDiff(surface.base, now), "\u0060\u0060\u0060", "", "**Why:**", reason(), ""]).join("\n");
