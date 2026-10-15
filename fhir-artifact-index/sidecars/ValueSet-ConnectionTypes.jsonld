@@ -16,7 +16,7 @@
   },
   "@id": "http://smart.who.int/trust/ValueSet-ConnectionTypes.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-10-15T09:24:56.678669Z",
+  "generatedAt": "2026-10-15T10:57:24.362384Z",
   "@graph": [
     {
       "id": "#http-get",
