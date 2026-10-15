@@ -10,6 +10,22 @@
   "needs": [
     "smart-base"
   ],
+  "assets": [
+    {
+      "id": "agent-instructions",
+      "src": "AGENTS.md",
+      "role": "agent-instructions",
+      "title": "AGENTS.md — smart-trust",
+      "description": "Cold start for work here, and its one rule: the two mounted graphs (fhir-artifact-index/, openapi/) are generated copies of upstream, rewritten by their writers and never edited by hand."
+    },
+    {
+      "id": "instance-readme",
+      "src": "README.md",
+      "role": "instance-readme",
+      "title": "WHO SMART Trust",
+      "description": "The WHO SMART Trust implementation guide: where it is published and where its issues are managed."
+    }
+  ],
   "directories": [
     {
       "id": "smart-trust-ast",
