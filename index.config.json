@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "9da809b0bc6ad75223b3b5b539cbdaad951e8625",
+          "ref": "8a250e5fca3ff0804a8b0fdbaa398c77bd558469",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "9da809b0bc6ad75223b3b5b539cbdaad951e8625",
-              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h to ~11:15 UTC); consolidation 'Merge + publish' and 'Merge + publish anyway' for fhir-harness#91 and smart-base#74"
+              "ref": "8a250e5fca3ff0804a8b0fdbaa398c77bd558469",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'Search box on id-lookup etc.' then 'continue. merge regardless CI. deal with aftermath'"
             }
           }
         }
@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "4d5e5f9ffc75629e7bde3e07925fa0a96333b7ad",
+          "ref": "83501c0e7a1598604b6027cbb5cee444ebb24378",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "4d5e5f9ffc75629e7bde3e07925fa0a96333b7ad",
-              "evidence": "Owner litlfred, 2026-10-15 session chat: 'merge and repin open 3 hrs' (extended 3h to ~11:15 UTC); consolidation 'Merge + publish' and 'Merge + publish anyway' for fhir-harness#91 and smart-base#74"
+              "ref": "83501c0e7a1598604b6027cbb5cee444ebb24378",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'Search box on id-lookup etc.' then 'continue. merge regardless CI. deal with aftermath'"
             }
           }
         }
