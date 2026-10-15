@@ -67,20 +67,12 @@
     "count": 14,
     "schemas": [
       {
-        "filename": "ValueSet-KeyUsage-UAT.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-KeyUsage-UAT.schema.json",
-        "title": "WHO GDHCN  Key Usage ValueSet - UAT Schema",
-        "description": "JSON Schema for WHO GDHCN  Key Usage ValueSet - UAT ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-KeyUsage-UAT.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/KeyUsage-UAT"
-      },
-      {
-        "filename": "ValueSet-KeyUsage.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-KeyUsage.schema.json",
-        "title": "WHO GDHCN  Key Usage ValueSet Schema",
-        "description": "JSON Schema for WHO GDHCN  Key Usage ValueSet ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-KeyUsage.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/KeyUsage"
+        "filename": "ValueSet-Actors.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-Actors.schema.json",
+        "title": "WHO GDHCN Actor ValueSet of actor codes Schema",
+        "description": "JSON Schema for WHO GDHCN Actor ValueSet of actor codes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Actors.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Actors"
       },
       {
         "filename": "ValueSet-WHORegionalOffices.schema.json",
@@ -91,44 +83,12 @@
         "valueSetUrl": "http://smart.who.int/trust/ValueSet/WHORegionalOffices"
       },
       {
-        "filename": "ValueSet-PayloadTypes.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-PayloadTypes.schema.json",
-        "title": "WHO GDHCN Payload Types Schema",
-        "description": "JSON Schema for WHO GDHCN Payload Types ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-PayloadTypes.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/PayloadTypes"
-      },
-      {
-        "filename": "ValueSet-Domains-DEV.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-Domains-DEV.schema.json",
-        "title": "WHO GDHCN Trust Domains - DEV Schema",
-        "description": "JSON Schema for WHO GDHCN Trust Domains - DEV ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-Domains-DEV.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Domains-DEV"
-      },
-      {
         "filename": "ValueSet-ConnectionTypes.schema.json",
         "id": "http://smart.who.int/trust/ValueSet-ConnectionTypes.schema.json",
         "title": "WHO GDHCN Connection Types Schema",
         "description": "JSON Schema for WHO GDHCN Connection Types ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
         "url": "./ValueSet-ConnectionTypes.schema.json",
         "valueSetUrl": "http://smart.who.int/trust/ValueSet/ConnectionTypes"
-      },
-      {
-        "filename": "ValueSet-Domains.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-Domains.schema.json",
-        "title": "WHO GDHCN Trust Domains Schema",
-        "description": "JSON Schema for WHO GDHCN Trust Domains ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-Domains.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Domains"
-      },
-      {
-        "filename": "ValueSet-Actors.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-Actors.schema.json",
-        "title": "WHO GDHCN Actor ValueSet of actor codes Schema",
-        "description": "JSON Schema for WHO GDHCN Actor ValueSet of actor codes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-Actors.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Actors"
       },
       {
         "filename": "ValueSet-Participants-UAT.schema.json",
@@ -147,12 +107,28 @@
         "valueSetUrl": "http://smart.who.int/trust/ValueSet/Participants"
       },
       {
-        "filename": "ValueSet-Domains-UAT.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-Domains-UAT.schema.json",
-        "title": "WHO GDHCN Trust Domains - UAT Schema",
-        "description": "JSON Schema for WHO GDHCN Trust Domains - UAT ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-Domains-UAT.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Domains-UAT"
+        "filename": "ValueSet-Transactions.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-Transactions.schema.json",
+        "title": "WHO GDHCN Transaction Codes Schema",
+        "description": "JSON Schema for WHO GDHCN Transaction Codes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Transactions.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Transactions"
+      },
+      {
+        "filename": "ValueSet-KeyUsage.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-KeyUsage.schema.json",
+        "title": "WHO GDHCN  Key Usage ValueSet Schema",
+        "description": "JSON Schema for WHO GDHCN  Key Usage ValueSet ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-KeyUsage.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/KeyUsage"
+      },
+      {
+        "filename": "ValueSet-Domains-DEV.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-Domains-DEV.schema.json",
+        "title": "WHO GDHCN Trust Domains - DEV Schema",
+        "description": "JSON Schema for WHO GDHCN Trust Domains - DEV ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Domains-DEV.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Domains-DEV"
       },
       {
         "filename": "ValueSet-Participants-DEV.schema.json",
@@ -163,20 +139,44 @@
         "valueSetUrl": "http://smart.who.int/trust/ValueSet/Participants-DEV"
       },
       {
-        "filename": "ValueSet-Transactions.schema.json",
-        "id": "http://smart.who.int/trust/ValueSet-Transactions.schema.json",
-        "title": "WHO GDHCN Transaction Codes Schema",
-        "description": "JSON Schema for WHO GDHCN Transaction Codes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
-        "url": "./ValueSet-Transactions.schema.json",
-        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Transactions"
-      },
-      {
         "filename": "ValueSet-KeyUsage-DEV.schema.json",
         "id": "http://smart.who.int/trust/ValueSet-KeyUsage-DEV.schema.json",
         "title": "WHO GDHCN  Key Usage ValueSet - DEV Schema",
         "description": "JSON Schema for WHO GDHCN  Key Usage ValueSet - DEV ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
         "url": "./ValueSet-KeyUsage-DEV.schema.json",
         "valueSetUrl": "http://smart.who.int/trust/ValueSet/KeyUsage-DEV"
+      },
+      {
+        "filename": "ValueSet-PayloadTypes.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-PayloadTypes.schema.json",
+        "title": "WHO GDHCN Payload Types Schema",
+        "description": "JSON Schema for WHO GDHCN Payload Types ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-PayloadTypes.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/PayloadTypes"
+      },
+      {
+        "filename": "ValueSet-Domains.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-Domains.schema.json",
+        "title": "WHO GDHCN Trust Domains Schema",
+        "description": "JSON Schema for WHO GDHCN Trust Domains ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Domains.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Domains"
+      },
+      {
+        "filename": "ValueSet-KeyUsage-UAT.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-KeyUsage-UAT.schema.json",
+        "title": "WHO GDHCN  Key Usage ValueSet - UAT Schema",
+        "description": "JSON Schema for WHO GDHCN  Key Usage ValueSet - UAT ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-KeyUsage-UAT.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/KeyUsage-UAT"
+      },
+      {
+        "filename": "ValueSet-Domains-UAT.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-Domains-UAT.schema.json",
+        "title": "WHO GDHCN Trust Domains - UAT Schema",
+        "description": "JSON Schema for WHO GDHCN Trust Domains - UAT ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-Domains-UAT.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/Domains-UAT"
       }
     ]
   }

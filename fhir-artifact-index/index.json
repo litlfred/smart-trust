@@ -33712,12 +33712,12 @@
   "sidecarsUnbound": [
     {
       "filename": "LogicalModels-enumeration.openapi.json",
-      "enumeration": "/home/runner/work/smart-trust/smart-trust-site/ig-api/sidecars",
+      "enumeration": "/home/user/smart-trust-site/ig-api/sidecars",
       "reason": "no artefact has the stem LogicalModels-enumeration as <Type>-<id>, <Type>-<name> or <Type>-<title>"
     },
     {
       "filename": "ValueSets-enumeration.openapi.json",
-      "enumeration": "/home/runner/work/smart-trust/smart-trust-site/ig-api/sidecars",
+      "enumeration": "/home/user/smart-trust-site/ig-api/sidecars",
       "reason": "no artefact has the stem ValueSets-enumeration as <Type>-<id>, <Type>-<name> or <Type>-<title>"
     }
   ]

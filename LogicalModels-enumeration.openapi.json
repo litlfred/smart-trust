@@ -23,20 +23,20 @@
                   "count": 5,
                   "schemas": [
                     {
-                      "filename": "StructureDefinition-COSEHeader.schema.json",
-                      "id": "http://smart.who.int/base/StructureDefinition-COSEHeader.schema.json",
-                      "title": "COSE Headers (DRAFT)",
-                      "description": "Data elements for COSE Headers https://www.iana.org/assignments/cose/cose.xhtml#header-parameters",
-                      "url": "./StructureDefinition-COSEHeader.schema.json",
-                      "propertyCount": 3
-                    },
-                    {
                       "filename": "StructureDefinition-SchemeInformation.schema.json",
                       "id": "http://smart.who.int/base/StructureDefinition-SchemeInformation.schema.json",
                       "title": "Scheme Information",
                       "description": "Logical Model for Information on the trusted list and its issuing scheme",
                       "url": "./StructureDefinition-SchemeInformation.schema.json",
                       "propertyCount": 21
+                    },
+                    {
+                      "filename": "StructureDefinition-CWT.schema.json",
+                      "id": "http://smart.who.int/base/StructureDefinition-CWT.schema.json",
+                      "title": "CBOR Web Token (CWT) Claim",
+                      "description": "Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml",
+                      "url": "./StructureDefinition-CWT.schema.json",
+                      "propertyCount": 4
                     },
                     {
                       "filename": "StructureDefinition-HCert.schema.json",
@@ -47,20 +47,20 @@
                       "propertyCount": 7
                     },
                     {
+                      "filename": "StructureDefinition-COSEHeader.schema.json",
+                      "id": "http://smart.who.int/base/StructureDefinition-COSEHeader.schema.json",
+                      "title": "COSE Headers (DRAFT)",
+                      "description": "Data elements for COSE Headers https://www.iana.org/assignments/cose/cose.xhtml#header-parameters",
+                      "url": "./StructureDefinition-COSEHeader.schema.json",
+                      "propertyCount": 3
+                    },
+                    {
                       "filename": "StructureDefinition-CWTPayload.schema.json",
                       "id": "http://smart.who.int/base/StructureDefinition-CWTPayload.schema.json",
                       "title": "CBOR Web Token (CWT) Payload (Common)",
                       "description": "Logical Model for CBOR Web Token (CWT) Payload Logical Modelin CWT Payload https://www.iana.org/assignments/cwt/cwt.xhtml ",
                       "url": "./StructureDefinition-CWTPayload.schema.json",
                       "propertyCount": 5
-                    },
-                    {
-                      "filename": "StructureDefinition-CWT.schema.json",
-                      "id": "http://smart.who.int/base/StructureDefinition-CWT.schema.json",
-                      "title": "CBOR Web Token (CWT) Claim",
-                      "description": "Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml",
-                      "url": "./StructureDefinition-CWT.schema.json",
-                      "propertyCount": 4
                     }
                   ]
                 }
@@ -142,20 +142,20 @@
           "count": 5,
           "schemas": [
             {
-              "filename": "StructureDefinition-COSEHeader.schema.json",
-              "id": "http://smart.who.int/base/StructureDefinition-COSEHeader.schema.json",
-              "title": "COSE Headers (DRAFT)",
-              "description": "Data elements for COSE Headers https://www.iana.org/assignments/cose/cose.xhtml#header-parameters",
-              "url": "./StructureDefinition-COSEHeader.schema.json",
-              "propertyCount": 3
-            },
-            {
               "filename": "StructureDefinition-SchemeInformation.schema.json",
               "id": "http://smart.who.int/base/StructureDefinition-SchemeInformation.schema.json",
               "title": "Scheme Information",
               "description": "Logical Model for Information on the trusted list and its issuing scheme",
               "url": "./StructureDefinition-SchemeInformation.schema.json",
               "propertyCount": 21
+            },
+            {
+              "filename": "StructureDefinition-CWT.schema.json",
+              "id": "http://smart.who.int/base/StructureDefinition-CWT.schema.json",
+              "title": "CBOR Web Token (CWT) Claim",
+              "description": "Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml",
+              "url": "./StructureDefinition-CWT.schema.json",
+              "propertyCount": 4
             },
             {
               "filename": "StructureDefinition-HCert.schema.json",
@@ -166,20 +166,20 @@
               "propertyCount": 7
             },
             {
+              "filename": "StructureDefinition-COSEHeader.schema.json",
+              "id": "http://smart.who.int/base/StructureDefinition-COSEHeader.schema.json",
+              "title": "COSE Headers (DRAFT)",
+              "description": "Data elements for COSE Headers https://www.iana.org/assignments/cose/cose.xhtml#header-parameters",
+              "url": "./StructureDefinition-COSEHeader.schema.json",
+              "propertyCount": 3
+            },
+            {
               "filename": "StructureDefinition-CWTPayload.schema.json",
               "id": "http://smart.who.int/base/StructureDefinition-CWTPayload.schema.json",
               "title": "CBOR Web Token (CWT) Payload (Common)",
               "description": "Logical Model for CBOR Web Token (CWT) Payload Logical Modelin CWT Payload https://www.iana.org/assignments/cwt/cwt.xhtml ",
               "url": "./StructureDefinition-CWTPayload.schema.json",
               "propertyCount": 5
-            },
-            {
-              "filename": "StructureDefinition-CWT.schema.json",
-              "id": "http://smart.who.int/base/StructureDefinition-CWT.schema.json",
-              "title": "CBOR Web Token (CWT) Claim",
-              "description": "Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml",
-              "url": "./StructureDefinition-CWT.schema.json",
-              "propertyCount": 4
             }
           ]
         }
