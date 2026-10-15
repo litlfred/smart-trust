@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "83501c0e7a1598604b6027cbb5cee444ebb24378",
+          "ref": "c948d458e624ce8c696dbcd79d237616ae781529",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "83501c0e7a1598604b6027cbb5cee444ebb24378",
-              "evidence": "Owner litlfred, 2026-10-15 session chat: 'Search box on id-lookup etc.' then 'continue. merge regardless CI. deal with aftermath'"
+              "ref": "c948d458e624ce8c696dbcd79d237616ae781529",
+              "evidence": "Owner litlfred, 2026-10-15 session chat: 'continue. merge regardless CI. deal with aftermath' (smart-trust publish refused by compose-docs on the built-at-publish docs layer; fixed in cat-harness-tools#296)"
             }
           }
         }
