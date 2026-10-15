@@ -46,6 +46,11 @@
             }
           }
         }
+      },
+      "site": {
+        "build": {
+          "coverage": "report"
+        }
       }
     },
     {
@@ -53,7 +58,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "4c7fa7ba11bad9172b45cf93c7b8821efe970d60",
+          "ref": "fcbd5452447beaa5666f7c19661cae77ccf443f0",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +68,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "4c7fa7ba11bad9172b45cf93c7b8821efe970d60",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "fcbd5452447beaa5666f7c19661cae77ccf443f0",
+              "evidence": "owner litlfred, 2026-10-15: 'extend merge and repin 3 hrs' — IG coverage recipe (fhir-harness#105), first paint (cat-harness-tools#345)"
             }
           }
         }
@@ -131,7 +136,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "3c1462defcdfdea8ced956fecd6d88fa63a4fd74",
+          "ref": "d9302bdfd1c2a2c31b77344321a6318fa4b8eceb",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +149,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-15",
-              "ref": "3c1462defcdfdea8ced956fecd6d88fa63a4fd74",
-              "evidence": "Owner litlfred, 2026-10-15 (17:30Z): 'merge and repin for next 3 hrs. keep draining'"
+              "ref": "d9302bdfd1c2a2c31b77344321a6318fa4b8eceb",
+              "evidence": "owner litlfred, 2026-10-15: 'extend merge and repin 3 hrs' — IG coverage recipe (fhir-harness#105), first paint (cat-harness-tools#345)"
             }
           }
         }
