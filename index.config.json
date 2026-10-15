@@ -2,46 +2,11 @@
   "$schema": "folio-index-config/v1",
   "instances": [
     {
-      "name": "smart-trust",
-      "_comment": "smart-trust's site, declared: the steps of fhir-harness's templates/ig-repo-site/folio-site.yml as this repository's package scripts (package.json), in that workflow's order. build-instance-site runs compose-docs --shell, gen-navbar-include, Jekyll and the rail itself; keep holds the IG Publisher's per-branch previews, which a root publish never deletes. profile ig-repo-site: only the platform steps folio-site.yml runs. links report: folio-site.yml checked none, and the IG source links video_tutorial.html, which it does not have (live root, 2026-10-12, the same).",
-      "source": {
-        "local": {
-          "at": "."
-        }
-      },
-      "site": {
-        "build": {
-          "pre": [
-            "site:ast",
-            "site:sidecars",
-            "site:index",
-            "site:pages",
-            "site:openapi-pages",
-            "site:plantuml"
-          ],
-          "sourceSteps": [
-            "site:compose-ig"
-          ],
-          "siteSteps": [
-            "site:dedupe-ids",
-            "site:ast-data",
-            "site:served",
-            "site:stamp"
-          ],
-          "keep": [
-            "branches"
-          ],
-          "profile": "ig-repo-site",
-          "links": "report"
-        }
-      }
-    },
-    {
       "name": "smart-base",
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "941d35ac678d741da336b0b40f664b9a802ac483",
+          "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -62,23 +27,22 @@
                 "smart-base-findings",
                 "smart-base-external-schemas",
                 "smart-base-platform",
-                "smart-base-validators",
-                "smart-base-typologies",
                 "smart-base-schemas",
                 "smart-base-content",
                 "smart-base-scripts",
                 "smart-base-skills",
                 "smart-base-scenarios",
                 "smart-base-code-lists"
-              ]
+              ],
+              "whole": true
             }
           },
           "trust": {
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "941d35ac678d741da336b0b40f664b9a802ac483",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "ref": "ecd192c4eda6105530ab0f27951d9b36e5e70732",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
             }
           }
         }
@@ -89,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "04447ca584d97450950e02102681ed107aa07713",
+          "ref": "d62caea53904f7edf017a2331a82827192aa79a4",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -99,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "04447ca584d97450950e02102681ed107aa07713",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust'"
+              "ref": "d62caea53904f7edf017a2331a82827192aa79a4",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust'; fhir-harness#79 (questionnaire edit-links own path)"
             }
           }
         }
@@ -111,7 +75,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "448588e8ea5bef98d9962e2f0c2248c01e712893",
+          "ref": "d024a57e99e6215a83d5866ed06a22b4c7d6b6bf",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -127,8 +91,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "448588e8ea5bef98d9962e2f0c2248c01e712893",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "ref": "d024a57e99e6215a83d5866ed06a22b4c7d6b6bf",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
             }
           }
         }
@@ -139,7 +103,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "a158842f9892991f23ba5feaae3c4806ec3ebdee",
+          "ref": "c065dee00694191b7f0f96a130df363aeb48bab1",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -155,8 +119,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "a158842f9892991f23ba5feaae3c4806ec3ebdee",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "ref": "c065dee00694191b7f0f96a130df363aeb48bab1",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'Merge one green and ready and repin as necessary' and 'Smart-hiv doesn't need its own harness… This is preferred and expected behavior' — smart-trust migrated to the smart-hiv shape"
             }
           }
         }
@@ -167,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "25987e70fb094021cd44141be193c3a09a851fa3",
+          "ref": "d18472378fbbf910aff9ea21b19ae91e40559147",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -180,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-14",
-              "ref": "25987e70fb094021cd44141be193c3a09a851fa3",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust'"
+              "ref": "d18472378fbbf910aff9ea21b19ae91e40559147",
+              "evidence": "Owner litlfred, 2026-10-14 session chat: 'meanwhile re-pin smart-immunizations and smart-trust', then 'smart-hiv shape' for smart-trust; IG route from the cached AST"
             }
           }
         }
@@ -192,7 +156,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "5b10f5c5dc8f0553f38a0643b2cd144a287202ce",
+          "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -201,9 +165,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "5b10f5c5dc8f0553f38a0643b2cd144a287202ce",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "on": "2026-10-10",
+              "ref": "7d7d75411d9e022214f28ad5b04438e537d23347",
+              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
             }
           }
         }
@@ -214,7 +178,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "c97f099285d990527ac21cd16b6198867cd0a321",
+          "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -226,13 +190,16 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-14",
-              "ref": "c97f099285d990527ac21cd16b6198867cd0a321",
-              "evidence": "owner, session 2026-10-14 (session_01Pc8vSeXCwp5Ckvmz56cMDs): 'merge when green, repin and publish smart-trust' — every layer to its merged main, for the AST-cache publish (cat-harness-tools#202, fhir-harness#57)"
+              "on": "2026-10-10",
+              "ref": "18da84de86f88b32a3ce5972f2649b7c98c044a5",
+              "evidence": "owner, session_017fFnGmbJcfqqrHXz9oqxdG 2026-10-10: 'you can work on the litlfred/smart-* go ahead and harness them with index.config.json' and 'keep going. keep migrating environment'; 2026-10-12: 'repin+merge when green for next 3 hours. contineu' — smart-trust mounts smart-base's closure as smart-hiv does, every layer at its current main"
             }
           }
         }
       }
     }
-  ]
+  ],
+  "site": {
+    "landing": "smart-base"
+  }
 }
