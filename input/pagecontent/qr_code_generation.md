@@ -385,3 +385,8 @@ DEV trust list. Fetching the signing certificate from the trust list is the
 verification path the specification defines, and the only one that tells a
 verifier the key is still trusted — a certificate distributed alongside the
 certificate it signed proves nothing about that.
+
+The same two certificates, decoded live in your browser. Paste their Document
+Signing Certificate from the DEV trust list to verify them too:
+
+<div class="hcert-demo" data-demo="published"></div>
