@@ -386,14 +386,6 @@ verification path the specification defines, and the only one that tells a
 verifier the key is still trusted — a certificate distributed alongside the
 certificate it signed proves nothing about that.
 
-The payloads, sizes and full `HC1:` strings are published alongside the images as
-`dvc-qr-example-XXR.json`.
-
-
-The same two certificates, verified live in your browser:
-
-<div class="hcert-demo" data-demo="published"></div>
-
 #### 13. Reference script
 
 `input/scripts/generate_dvc_qr.py` in this guide's source repository implements
