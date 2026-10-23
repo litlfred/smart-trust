@@ -79,6 +79,9 @@ This provides a list of changes to the SMART Trust IG.
 - Updated GDHCN Participants onboarding status
 - Participant lists updated
 
+### 2026-10-09 v1.7.4 - release
+- Updated GDHCN Administrative and Operational Framework document
+
 ### v1.7.5
 - QR Code Generation page added, with step-by-step HCERT encoding, signing and
   decoding instructions, worked through with a DVC payload
