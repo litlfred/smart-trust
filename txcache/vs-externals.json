@@ -1,0 +1,15 @@
+{
+  "http://hl7.org/fhir/5.0/ValueSet/publication-status|5.0.0" : null,
+  "http://hl7.org/fhir/ValueSet/spdx-license|4.0.1" : null,
+  "http://hl7.org/fhir/5.0/ValueSet/conformance-expectation|5.0.0" : null,
+  "http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/guide-page-generation|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/defined-types" : null,
+  "http://hl7.org/fhir/ValueSet/type-derivation-rule|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/publication-status|4.0.1" : null,
+  "http://hl7.org/fhir/5.0/ValueSet/jurisdiction" : null,
+  "http://hl7.org/fhir/ValueSet/FHIR-version|4.0.1" : null,
+  "http://hl7.org/fhir/5.0/ValueSet/examplescenario-actor-type|5.0.0" : null,
+  "http://hl7.org/fhir/ValueSet/endpoint-status|4.0.1" : null,
+  "http://hl7.org/fhir/ValueSet/structure-definition-kind|4.0.1" : null
+}
