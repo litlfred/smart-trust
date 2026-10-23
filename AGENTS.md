@@ -26,7 +26,10 @@ upstream source or the writer, then re-run the writer.
 ## What an index mounts from here
 
 folio-assistant mounts two directories, `fhir-artifact-index/` and `openapi/`,
-plus this file and the README as declared assets. The IG source (`input/`) is
+plus this file and the README as declared assets. `document-kinds/` holds this
+IG's DAK coverage report, generated from `fhir-artifact-index/` by the DAK
+layer's `smart-base:document-kinds`; an index mounts it once its re-pin lists
+`smart-trust-document-kinds`. The IG source (`input/`) is
 not mounted. Neither is `docs/`, which is built at publish by
 `smart-trust:pages` (fhir-harness's `gen-ig-pages.ts`) and never committed.
 `fhir-ast/` is restored from its cache branch by `ig-cache.sh`.
