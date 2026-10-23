@@ -30,3 +30,12 @@ plus this file and the README as declared assets. The IG source (`input/`) is
 not mounted. Neither is `docs/`, which is built at publish by
 `smart-trust:pages` (fhir-harness's `gen-ig-pages.ts`) and never committed.
 `fhir-ast/` is restored from its cache branch by `ig-cache.sh`.
+
+## Before running SUSHI
+
+Read fhir-harness's [`fhir-validation`](https://github.com/litlfred/fhir-harness/blob/main/skills/content/fhir-ig-authoring/fhir-validation.md#when-a-package-host-refuses-you)
+§"When a package host refuses you" first. Where packages.fhir.org is refused,
+`fhir-cache-seed-npm` fills the package cache from npm and
+fhir-package-mirror at exact versions only. Never report "SUSHI cannot run
+here" before running the seeder, and never stand in another version for a pin;
+its `--missing-out` list is what the mirror still needs.
