@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "f7cc00b0014542cab08e456ad346d5569a5fef21",
+          "ref": "fd063bbeaaae942e5e6f345b7c4c70091f12700f",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-23",
-              "ref": "f7cc00b0014542cab08e456ad346d5569a5fef21",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "ref": "fd063bbeaaae942e5e6f345b7c4c70091f12700f",
+              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
             }
           }
         }
@@ -75,7 +75,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "7b5e54eabd840bbcd14dafcd21e5d9a0bee1daf4",
+          "ref": "e332458f2943b5d105bddec62af2a6d75dcbb768",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -91,8 +91,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-23",
-              "ref": "7b5e54eabd840bbcd14dafcd21e5d9a0bee1daf4",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "ref": "e332458f2943b5d105bddec62af2a6d75dcbb768",
+              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
             }
           }
         }
@@ -103,7 +103,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "5c541ea29d66cea0968025627562811fe184c161",
+          "ref": "764f4bdce1a186371c4643faeee65103d6e01f2a",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -119,8 +119,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-23",
-              "ref": "5c541ea29d66cea0968025627562811fe184c161",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "ref": "764f4bdce1a186371c4643faeee65103d6e01f2a",
+              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
             }
           }
         }
@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "ab33dffd2e208d1de02d1b8b72da68d3c5167943",
+          "ref": "9528fa882de523a0096677003ed65f29d9abb72e",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-23",
-              "ref": "ab33dffd2e208d1de02d1b8b72da68d3c5167943",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "ref": "9528fa882de523a0096677003ed65f29d9abb72e",
+              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
             }
           }
         }
@@ -178,7 +178,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "c39448f87ad8f665af032e50865a00343472ba5a",
+          "ref": "beabd7228a3e13244999eb59ab2df8a319c1ec7e",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -191,8 +191,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-23",
-              "ref": "c39448f87ad8f665af032e50865a00343472ba5a",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "ref": "beabd7228a3e13244999eb59ab2df8a319c1ec7e",
+              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
             }
           }
         }
