@@ -45,7 +45,7 @@
     {
       "id": "smart-trust-artifact-index",
       "path": "fhir-artifact-index/",
-      "description": "The reconstructed artefact index, and the DAK API surface it points at. ONE directory rather than two on purpose: `dak/` sits INSIDE the declared graph because a sibling would be an undeclared directory holding the very bytes the index claims to have — the `dh4f` shape, where a consumer scans nothing and reports a clean run over it. `index.json` carries a `provenance` block naming the published file every field came out of, because no IG publishes an artefact index and each row was therefore assembled rather than transcribed.",
+      "description": "The artefact index, and the DAK API surface the reconstructed one pointed at. `index.json`, `menu.json`, `releases.json` and `package.tgz` are NOT COMMITTED: fhir-harness's `ig-index:build` writes them at publish from the IG's AST (`builtAtPublish`, fhir-harness#124). `ig-identity.json`, `dak/` and the README stay committed. ONE directory rather than two on purpose: `dak/` sits INSIDE the declared graph because a sibling would be an undeclared directory holding the very bytes the index claims to have — the `dh4f` shape, where a consumer scans nothing and reports a clean run over it. `index.json` carries a `provenance` block naming the published file every field came out of, because no IG publishes an artefact index and each row was therefore assembled rather than transcribed.",
       "graphTypologies": [
         "fhir-artifact-index"
       ],
@@ -112,6 +112,38 @@
       ],
       "because": "checkout",
       "reason": "the prefixes and content-context terms its documents use, flattened with the jsonldPrefixes of the layers it needs at the checkout's pins"
+    },
+    {
+      "path": "fhir-artifact-index/index.json",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG's artefact index: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "fhir-artifact-index/menu.json",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG's menu: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "fhir-artifact-index/releases.json",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the IG's release list: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
+    },
+    {
+      "path": "fhir-artifact-index/package.tgz",
+      "writer": [
+        "ig-index:build"
+      ],
+      "because": "checkout",
+      "reason": "the Publisher-shaped package the JSON view pages read each resource from: built by fhir-harness's ig-index:build from the IG's AST (restored from the IG repository's AST cache) and its own sushi-config.yaml, so it moves when the IG's default branch or its AST cache moves, not with a commit of this instance (fhir-harness#124)"
     },
     {
       "path": "docs/",
