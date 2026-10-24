@@ -73,4 +73,9 @@ node_modules/
 # instance can hold it current.
 /docs/
 /ns/context/v1.jsonld
+/fhir-artifact-index/index.json
+/fhir-artifact-index/menu.json
+/fhir-artifact-index/releases.json
+/fhir-artifact-index/package.tgz
+/document-kinds/dak.coverage.smart-trust.json
 # END built at publish
