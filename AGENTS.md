@@ -15,8 +15,10 @@ below it, and `smart-trust.json` declares what an index may mount from here.
 ## The one rule
 
 **The two mounted graphs are generated copies of upstream, never authored.**
-`fhir-artifact-index/` is rewritten by `ingest-ig-artifacts.ts` from the IG's
-published artefacts, and `openapi/` by `ingest-openapi.ts` and
+`fhir-artifact-index/` is not committed: fhir-harness's `ig-index:build`
+writes its `index.json`, `menu.json`, `releases.json` and `package.tgz` at
+publish from the IG's AST (fhir-harness#124), so never commit, hand-edit or
+re-ingest them. `openapi/` by `ingest-openapi.ts` and
 `gen-openapi-pages.ts` from the sources `openapi/cat-openapi.config.json`
 names. Both directories are declared `readOnly`. A hand edit silently changes
 what this repository claims upstream published; `check:materialized-fixity`
