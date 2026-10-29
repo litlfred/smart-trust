@@ -1,6 +1,6 @@
 ### Onboarding Checklist
 
-This repository contains the a checklist for [onboarding](concepts_onboarding.html) the Trust Network Participants. This includes CSCAs, Auth information, signing information and other relevant files for onboarding a participant. Videos guides to the steps described here are available on this [page](video_tutorial.html).
+This repository contains the a checklist for [onboarding](concepts_onboarding.html) the Trust Network Participants. This includes CSCAs, Auth information, signing information and other relevant files for onboarding a participant. Video guides to the steps are embedded in the steps below.
 
 {% include img.html img="OnboardingProcess.drawio.png" caption="Onboarding Process" width ="60%" %}     
 **Prerequisites for Onboarding**
