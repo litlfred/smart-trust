@@ -95,3 +95,6 @@ This provides a list of changes to the SMART Trust IG.
 - DEV and UAT trust list endpoints now name their DIDs on the environment's own
   host (did:web:tng-cdn-dev.who.int, did:web:tng-cdn-uat.who.int), where they
   resolve, instead of the production host
+- Data Sharing Agreement Processes page added: registering keys with any
+  accepted trust anchor (GDHCN is one option), dispute and breach handling,
+  and a walk-through for an agreement that is only a signed PDF
