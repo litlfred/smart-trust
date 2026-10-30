@@ -60,6 +60,8 @@ pages:
       title: Certificate Governance
     concepts_onboarding.md:
       title: Onboarding Process
+    dsa_processes.md:
+      title: Data Sharing Agreement Processes
     use_cases.md:
       title: Use Cases
     decision_support.md:
@@ -127,6 +129,7 @@ menu:
     Concepts: concepts.html
     Certificate Governance: concepts_certificate_governance.html
     Onboarding Process: concepts_onboarding.html
+    Data Sharing Agreement Processes: dsa_processes.html
     Use Cases: use_cases.html
     Decision Support Logic: decision_support.html
     Functional Requirements: functional.html
