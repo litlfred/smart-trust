@@ -47,6 +47,7 @@ __pycache__/
 *$py.class
 
 # BEGIN index mounts (generated from index.config.json — do not edit)
+/who-iris/
 /smart-base/
 /fhir-harness/
 /folio-assistant-core/
