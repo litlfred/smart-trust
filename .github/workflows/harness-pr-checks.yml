@@ -37,9 +37,13 @@ on:
 permissions:
   contents: read
 
+# Only a PR's runs cancel each other (owner, 2026-10-30, "Both"): a push to
+# main is never cancelled by the next one, because each main's run stores the
+# answer that the PRs based on that commit are judged against
+# (cat-harness-tools#930).
 concurrency:
   group: harness-pr-checks-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   checks:
