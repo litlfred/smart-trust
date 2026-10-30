@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "ee94d480ec7f45278911e4c6b7247c34f9ce032c",
+          "ref": "a7f06bcbebfc9b9489425b4c06e8cc0a15003d62",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -128,8 +128,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "ee94d480ec7f45278911e4c6b7247c34f9ce032c",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip ee94d48 (BCP 47 #257, CI #267 #270, schemas move #265). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z), extended 19:21Z 'merge window + 3hrs' (to ~22:38Z)."
+              "ref": "a7f06bcbebfc9b9489425b4c06e8cc0a15003d62",
+              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (fix smart-trust broken links); standing rule 'Merge all ready and then deal with aftermath'. Re-pin to main tips after cat-harness-tools#988 #997 and folio-assistant-core#275."
             }
           }
         }
@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "97fc483d19a2fdf669ff71cc77d86287d936a4a3",
+          "ref": "d2d0ae247504f3dafbd1ba439a1967df1e833c84",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -181,8 +181,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "97fc483d19a2fdf669ff71cc77d86287d936a4a3",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 97fc483 (schemas move #952, uml/readme gates #897, direction #968, CI #951 #957 #964). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z), extended 19:21Z 'merge window + 3hrs' (to ~22:38Z)."
+              "ref": "d2d0ae247504f3dafbd1ba439a1967df1e833c84",
+              "evidence": "owner card 2026-10-30T19:41Z 'A. Yes, merge within 2 hours' (fix smart-trust broken links); standing rule 'Merge all ready and then deal with aftermath'. Re-pin to main tips after cat-harness-tools#988 #997 and folio-assistant-core#275."
             }
           }
         }
