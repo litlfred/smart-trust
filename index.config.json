@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "4065d9ecbbac1ffaa18ac1cd458d22a9fe28f665",
+          "ref": "c89c20575e904f6726fea44cfb1fd99e52a355db",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -40,9 +40,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "4065d9ecbbac1ffaa18ac1cd458d22a9fe28f665",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "on": "2026-10-30",
+              "ref": "c89c20575e904f6726fea44cfb1fd99e52a355db",
+              "evidence": "owner card 2026-10-30T12:40Z: A. ig section in index.config; merge window to 18:13Z"
             }
           }
         }
@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "fd063bbeaaae942e5e6f345b7c4c70091f12700f",
+          "ref": "d45d99170823f2bbf6cd310ab062935403175e7b",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -62,9 +62,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "fd063bbeaaae942e5e6f345b7c4c70091f12700f",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
+              "on": "2026-10-30",
+              "ref": "d45d99170823f2bbf6cd310ab062935403175e7b",
+              "evidence": "owner card 2026-10-30T12:40Z: A. ig section in index.config; merge window to 18:13Z"
             }
           }
         }
@@ -103,7 +103,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "764f4bdce1a186371c4643faeee65103d6e01f2a",
+          "ref": "ecc231a49258ae62f75f54e0d5c3258a2df8bb7c",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -118,9 +118,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "764f4bdce1a186371c4643faeee65103d6e01f2a",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
+              "on": "2026-10-30",
+              "ref": "ecc231a49258ae62f75f54e0d5c3258a2df8bb7c",
+              "evidence": "owner card 2026-10-30T12:40Z: A. ig section in index.config; merge window to 18:13Z"
             }
           }
         }
@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "9528fa882de523a0096677003ed65f29d9abb72e",
+          "ref": "9326f5d78c02761a15e3e465333f01f89251ac2b",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -143,9 +143,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "9528fa882de523a0096677003ed65f29d9abb72e",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
+              "on": "2026-10-30",
+              "ref": "9326f5d78c02761a15e3e465333f01f89251ac2b",
+              "evidence": "owner card 2026-10-30T12:40Z: A. ig section in index.config; merge window to 18:13Z"
             }
           }
         }
@@ -156,7 +156,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "c71b96a3f2e8caf143b78bcf3ab6bb80060c82c2",
+          "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -165,9 +165,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "c71b96a3f2e8caf143b78bcf3ab6bb80060c82c2",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "on": "2026-10-30",
+              "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+              "evidence": "owner card 2026-10-30T12:40Z: A. ig section in index.config; merge window to 18:13Z"
             }
           }
         }
@@ -178,7 +178,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "beabd7228a3e13244999eb59ab2df8a319c1ec7e",
+          "ref": "fdceeca33492a0bc434edc1f80c95895180ee587",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -190,9 +190,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "beabd7228a3e13244999eb59ab2df8a319c1ec7e",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
+              "on": "2026-10-30",
+              "ref": "fdceeca33492a0bc434edc1f80c95895180ee587",
+              "evidence": "owner card 2026-10-30T12:40Z: A. ig section in index.config; merge window to 18:13Z"
             }
           }
         }
@@ -210,5 +210,27 @@
   "site": {
     "landing": "smart-base",
     "agentRun": true
+  },
+  "contentTypes": {
+    "ig": {
+      "_comment": "What this repository is, per the content types its layers register (bean folio-assistant-cz17, follow-up b; owner card 2026-10-30T12:40Z, \"A. ig section in index.config\"). `ig`: fhir-harness's `ig` content type (fhir-harness#198); `include` is everything the harness reads in this repository, and nothing else is read (owner, 2026-10-30: \"harness desclares what it it pays attention to in the repo\"). It lists every `input/` entry the build used before the section existed, so nothing is dropped, and `local-template/`, the IG Publisher template `ig.ini` names (`template = #local-template`), whose `includes/` build-ig-site renders (`localTemplateIncludes`). sushi-config.yaml stays SUSHI's file. smart-immunizations#89 is the model.",
+      "include": [
+        "sushi-config.yaml",
+        "ig.ini",
+        "local-template/",
+        "input/data/",
+        "input/fsh/",
+        "input/ignoreWarnings.txt",
+        "input/images/",
+        "input/images-source/",
+        "input/includes/",
+        "input/maps-src/",
+        "input/pagecontent/",
+        "input/resources/",
+        "input/scripts/",
+        "input/tests/",
+        "fsh-generated/"
+      ]
+    }
   }
 }
