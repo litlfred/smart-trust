@@ -43,7 +43,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
+          "ref": "625ab8347493f46c32752a18dea7b02202d29727",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -78,8 +78,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 07a4c1e (who-iris mount #224, CI #227 #229, schemas move #225, sidecars #198). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z)."
+              "ref": "625ab8347493f46c32752a18dea7b02202d29727",
+              "evidence": "owner card 2026-10-30T19:41Z: A. Yes, merge within 2 hours"
             }
           }
         }
