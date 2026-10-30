@@ -53,7 +53,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "f51390f2c5d088b74d838928773b24cce2e37949",
+          "ref": "8d1c483e00661f45846d763f7555cc1101a39546",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -63,8 +63,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "f51390f2c5d088b74d838928773b24cce2e37949",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip f51390f."
+              "ref": "8d1c483e00661f45846d763f7555cc1101a39546",
+              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 8d1c483."
             }
           }
         }
@@ -75,7 +75,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "84bad7f9e31129868c192af5695136bed4d29370",
+          "ref": "2508dad0a9aa1aaa5299b1cb6bb90af6521b588b",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -91,8 +91,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "84bad7f9e31129868c192af5695136bed4d29370",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 84bad7f."
+              "ref": "2508dad0a9aa1aaa5299b1cb6bb90af6521b588b",
+              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 2508dad."
             }
           }
         }
@@ -103,7 +103,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "3ad90ab023310a64a26b8ff01b4429cba6dd8c05",
+          "ref": "adebf473c5d0ae98872edb1a7980bb95c0136151",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -119,8 +119,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "3ad90ab023310a64a26b8ff01b4429cba6dd8c05",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 3ad90ab."
+              "ref": "adebf473c5d0ae98872edb1a7980bb95c0136151",
+              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip adebf47."
             }
           }
         }
@@ -131,7 +131,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "af45ee9e99d14a67c998c0d40fd1c01239dcd505",
+          "ref": "d9ebc065f701012dfa71a51257a5a67afb01599b",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -144,8 +144,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-30",
-              "ref": "af45ee9e99d14a67c998c0d40fd1c01239dcd505",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip af45ee9."
+              "ref": "d9ebc065f701012dfa71a51257a5a67afb01599b",
+              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip d9ebc06."
             }
           }
         }
@@ -210,5 +210,27 @@
   "site": {
     "landing": "smart-base",
     "agentRun": true
+  },
+  "contentTypes": {
+    "ig": {
+      "_comment": "What this repository is, per the content types its layers register (bean folio-assistant-cz17, follow-up b; owner card 2026-10-30T12:40Z, \"A. ig section in index.config\"). `ig`: fhir-harness's `ig` content type (fhir-harness#198); `include` is everything the harness reads in this repository, and nothing else is read (owner, 2026-10-30: \"harness desclares what it it pays attention to in the repo\"). It lists every `input/` entry the build used before the section existed, so nothing is dropped, and `local-template/`, the IG Publisher template `ig.ini` names (`template = #local-template`), whose `includes/` build-ig-site renders (`localTemplateIncludes`). sushi-config.yaml stays SUSHI's file. smart-immunizations#89 is the model.",
+      "include": [
+        "sushi-config.yaml",
+        "ig.ini",
+        "local-template/",
+        "input/data/",
+        "input/fsh/",
+        "input/ignoreWarnings.txt",
+        "input/images/",
+        "input/images-source/",
+        "input/includes/",
+        "input/maps-src/",
+        "input/pagecontent/",
+        "input/resources/",
+        "input/scripts/",
+        "input/tests/",
+        "fsh-generated/"
+      ]
+    }
   }
 }
