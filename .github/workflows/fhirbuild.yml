@@ -16,5 +16,10 @@ on:
 
 jobs:
   # This workflow contains a single job called "build"
-  call_build: 
-    uses: WorldHealthOrganization/smart-base/.github/workflows/fhirbuild.yml@main
+  # litlfred/smart-base, not WorldHealthOrganization/smart-base (owner card
+  # 2026-10-30T16:56Z, "A. Do both now"; bean folio-assistant-cz17;
+  # smart-immunizations#89 is the model): this repository's DAK declaration is
+  # index.config.json contentTypes.dak, and dak.json is gone. The called
+  # workflow takes no inputs and no secrets.
+  call_build:
+    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@main

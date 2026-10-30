@@ -212,6 +212,23 @@
     "agentRun": true
   },
   "contentTypes": {
+    "dak": {
+      "resourceType": "DAK",
+      "resourceDefinition": "http://smart.who.int/base/StructureDefinition/DAK",
+      "id": "smart.who.int.trust",
+      "name": "Trust",
+      "title": "WHO SMART Trust",
+      "description": "SMART Trust Implementation Guide",
+      "version": "1.1.6",
+      "status": "draft",
+      "publicationUrl": "http://smart.who.int/trust",
+      "license": "CC-BY-SA-3.0-IGO",
+      "copyrightYear": "2023+",
+      "publisher": {
+        "name": "WHO",
+        "url": "http://who.int"
+      }
+    },
     "ig": {
       "_comment": "What this repository is, per the content types its layers register (bean folio-assistant-cz17, follow-up b; owner card 2026-10-30T12:40Z, \"A. ig section in index.config\"). `ig`: fhir-harness's `ig` content type (fhir-harness#198); `include` is everything the harness reads in this repository, and nothing else is read (owner, 2026-10-30: \"harness desclares what it it pays attention to in the repo\"). It lists every `input/` entry the build used before the section existed, so nothing is dropped, and `local-template/`, the IG Publisher template `ig.ini` names (`template = #local-template`), whose `includes/` build-ig-site renders (`localTemplateIncludes`). sushi-config.yaml stays SUSHI's file. smart-immunizations#89 is the model.",
       "include": [
