@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "4065d9ecbbac1ffaa18ac1cd458d22a9fe28f665",
+          "ref": "e61ef9c0dfdf6a14c4a8747eb049e6b9a521f211",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -40,9 +40,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "4065d9ecbbac1ffaa18ac1cd458d22a9fe28f665",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin next 3 hrs when green / ready\"; scope confirmed in structured Q&A: \"Also the harness layers\""
+              "on": "2026-10-29",
+              "ref": "e61ef9c0dfdf6a14c4a8747eb049e6b9a521f211",
+              "evidence": "litlfred, 2026-10-29T07:21Z, project chat: \"You have merge and repin permission for next 4 hrs\"; smart-base#156 merged as e61ef9c at 07:21Z (contentTypes.dak in index.config.json, bean cz17)"
             }
           }
         }
@@ -103,7 +103,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "764f4bdce1a186371c4643faeee65103d6e01f2a",
+          "ref": "6f7f10a5711f0b838cb4d9ff016f4457e85e2794",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -118,9 +118,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-23",
-              "ref": "764f4bdce1a186371c4643faeee65103d6e01f2a",
-              "evidence": "owner, 2026-10-23: \"continue. merge and repin window open for 3 hours\"; fhir-harness#120 merged green as fd063bb"
+              "on": "2026-10-26",
+              "ref": "6f7f10a5711f0b838cb4d9ff016f4457e85e2794",
+              "evidence": "litlfred, 2026-10-26 10:37Z (folio-assistant project chat): \"merge/repin window open 6 hours. drain beans/issues and merge when green\"; cat-harness#521 approved by card A on 2026-10-24"
             }
           }
         }
@@ -210,5 +210,24 @@
   "site": {
     "landing": "smart-base",
     "agentRun": true
+  },
+  "contentTypes": {
+    "dak": {
+      "resourceType": "DAK",
+      "resourceDefinition": "http://smart.who.int/base/StructureDefinition/DAK",
+      "id": "smart.who.int.trust",
+      "name": "Trust",
+      "title": "WHO SMART Trust",
+      "description": "SMART Trust Implementation Guide",
+      "version": "1.1.6",
+      "status": "draft",
+      "publicationUrl": "http://smart.who.int/trust",
+      "license": "CC-BY-SA-3.0-IGO",
+      "copyrightYear": "2023+",
+      "publisher": {
+        "name": "WHO",
+        "url": "http://who.int"
+      }
+    }
   }
 }
