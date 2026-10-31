@@ -5,7 +5,7 @@ title DSA P15: Dispute and Breach Handling
 
 start
 :Suspected breach reported\n(use beyond purpose, missed duty, leak);
-:Contain: suspend grants, clients and keys\n(P13, planned in smart-trust-server);
+:Contain: suspend grants, clients and keys\n(P13, process H in smart-trust-phw);
 :Gather evidence: audit records (P12),\nthe log's hash chain,\nthe hash of the signed agreement version (P2);
 :Follow the dispute clause\nin the legal text;
 :Notify those the law requires;
