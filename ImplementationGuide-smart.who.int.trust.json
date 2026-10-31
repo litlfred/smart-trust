@@ -9,12 +9,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name=\"smart.who.int.trust\"> </a><a name=\"hcsmart.who.int.trust\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"file://C:\\work\\ImplementationGuides\\ig-release\\who\\smart-base\\output/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust",
-  "version" : "1.7.3",
+  "version" : "1.7.5",
   "name" : "Trust",
   "title" : "WHO SMART Trust",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-14T18:19:34+00:00",
+  "date" : "2026-10-30T16:06:01+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -40,7 +40,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.4.0"
+    "version" : "7.5.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions_r5",
@@ -1749,6 +1749,17 @@
         "valueString" : "Organization"
       }],
       "reference" : {
+        "reference" : "Organization/GDHCNParticipant-XXR-DEV"
+      },
+      "name" : "GDHCNParticipant-XXR-DEV",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXS-UAT"
       },
       "name" : "GDHCNParticipant-XXS-UAT",
@@ -1918,7 +1929,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-UAT-All"
       },
       "name" : "GDHCNParticipantDID-ALB-UAT-All",
-      "description" : "Albania Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ALB\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ALB/did.json",
+      "description" : "Albania Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:ALB\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ALB/did.json",
       "isExample" : false
     },
     {
@@ -1964,7 +1975,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-AND-DEV-All"
       },
       "name" : "GDHCNParticipantDID-AND-DEV-All",
-      "description" : "Andorra Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:AND\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/AND/did.json",
+      "description" : "Andorra Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:AND\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/AND/did.json",
       "isExample" : false
     },
     {
@@ -2020,7 +2031,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-AND-UAT-All"
       },
       "name" : "GDHCNParticipantDID-AND-UAT-All",
-      "description" : "Andorra Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:AND\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/AND/did.json",
+      "description" : "Andorra Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:AND\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/AND/did.json",
       "isExample" : false
     },
     {
@@ -2054,7 +2065,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ARE-DEV-All"
       },
       "name" : "GDHCNParticipantDID-ARE-DEV-All",
-      "description" : "United Arab Emirates Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ARE\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARE/did.json",
+      "description" : "United Arab Emirates Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:ARE\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARE/did.json",
       "isExample" : false
     },
     {
@@ -2088,7 +2099,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ARG-DEV-All"
       },
       "name" : "GDHCNParticipantDID-ARG-DEV-All",
-      "description" : "Argentina Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ARG\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARG/did.json",
+      "description" : "Argentina Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:ARG\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARG/did.json",
       "isExample" : false
     },
     {
@@ -2134,7 +2145,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-DEV-All"
       },
       "name" : "GDHCNParticipantDID-ARM-DEV-All",
-      "description" : "Armenia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ARM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARM/did.json",
+      "description" : "Armenia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:ARM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARM/did.json",
       "isExample" : false
     },
     {
@@ -2190,7 +2201,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-UAT-All"
       },
       "name" : "GDHCNParticipantDID-ARM-UAT-All",
-      "description" : "Armenia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ARM\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ARM/did.json",
+      "description" : "Armenia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:ARM\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ARM/did.json",
       "isExample" : false
     },
     {
@@ -2258,7 +2269,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-UAT-All"
       },
       "name" : "GDHCNParticipantDID-BEL-UAT-All",
-      "description" : "Belgium Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BEL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/BEL/did.json",
+      "description" : "Belgium Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:BEL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/BEL/did.json",
       "isExample" : false
     },
     {
@@ -2326,7 +2337,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-BEN-UAT-All",
-      "description" : "Benin Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BEN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/BEN/did.json",
+      "description" : "Benin Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:BEN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/BEN/did.json",
       "isExample" : false
     },
     {
@@ -2360,7 +2371,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BHS-DEV-All"
       },
       "name" : "GDHCNParticipantDID-BHS-DEV-All",
-      "description" : "Bahamas Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BHS\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BHS/did.json",
+      "description" : "Bahamas Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:BHS\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BHS/did.json",
       "isExample" : false
     },
     {
@@ -2394,7 +2405,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BLZ-DEV-All"
       },
       "name" : "GDHCNParticipantDID-BLZ-DEV-All",
-      "description" : "Belize Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BLZ\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BLZ/did.json",
+      "description" : "Belize Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:BLZ\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BLZ/did.json",
       "isExample" : false
     },
     {
@@ -2428,7 +2439,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BOL-DEV-All"
       },
       "name" : "GDHCNParticipantDID-BOL-DEV-All",
-      "description" : "Bolivia (Plurinational State of) Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BOL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BOL/did.json",
+      "description" : "Bolivia (Plurinational State of) Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:BOL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BOL/did.json",
       "isExample" : false
     },
     {
@@ -2474,7 +2485,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-DEV-All"
       },
       "name" : "GDHCNParticipantDID-BRA-DEV-All",
-      "description" : "Brazil Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BRA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BRA/did.json",
+      "description" : "Brazil Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:BRA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BRA/did.json",
       "isExample" : false
     },
     {
@@ -2530,7 +2541,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-UAT-All"
       },
       "name" : "GDHCNParticipantDID-BRA-UAT-All",
-      "description" : "Brazil Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BRA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/BRA/did.json",
+      "description" : "Brazil Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:BRA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/BRA/did.json",
       "isExample" : false
     },
     {
@@ -2564,7 +2575,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-BRB-DEV-All"
       },
       "name" : "GDHCNParticipantDID-BRB-DEV-All",
-      "description" : "Barbados Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BRB\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BRB/did.json",
+      "description" : "Barbados Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:BRB\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BRB/did.json",
       "isExample" : false
     },
     {
@@ -2598,7 +2609,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CAN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-CAN-UAT-All",
-      "description" : "Canada Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CAN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CAN/did.json",
+      "description" : "Canada Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:CAN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CAN/did.json",
       "isExample" : false
     },
     {
@@ -2632,7 +2643,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CHL-DEV-All"
       },
       "name" : "GDHCNParticipantDID-CHL-DEV-All",
-      "description" : "Chile Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/CHL/did.json",
+      "description" : "Chile Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/CHL/did.json",
       "isExample" : false
     },
     {
@@ -2666,7 +2677,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-All"
       },
       "name" : "GDHCNParticipantDID-CHL-UAT-All",
-      "description" : "Chile Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json",
+      "description" : "Chile Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json",
       "isExample" : false
     },
     {
@@ -2700,7 +2711,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-COL-DEV-All"
       },
       "name" : "GDHCNParticipantDID-COL-DEV-All",
-      "description" : "Colombia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:COL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/COL/did.json",
+      "description" : "Colombia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:COL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/COL/did.json",
       "isExample" : false
     },
     {
@@ -2734,7 +2745,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CRI-DEV-All"
       },
       "name" : "GDHCNParticipantDID-CRI-DEV-All",
-      "description" : "Costa Rica Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CRI\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/CRI/did.json",
+      "description" : "Costa Rica Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:CRI\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/CRI/did.json",
       "isExample" : false
     },
     {
@@ -2780,7 +2791,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-DEV-All"
       },
       "name" : "GDHCNParticipantDID-CYP-DEV-All",
-      "description" : "Cyprus Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CYP\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/CYP/did.json",
+      "description" : "Cyprus Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:CYP\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/CYP/did.json",
       "isExample" : false
     },
     {
@@ -2836,7 +2847,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-UAT-All"
       },
       "name" : "GDHCNParticipantDID-CYP-UAT-All",
-      "description" : "Cyprus Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CYP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CYP/did.json",
+      "description" : "Cyprus Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:CYP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CYP/did.json",
       "isExample" : false
     },
     {
@@ -2904,7 +2915,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-UAT-All"
       },
       "name" : "GDHCNParticipantDID-CZE-UAT-All",
-      "description" : "Czechia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CZE\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CZE/did.json",
+      "description" : "Czechia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:CZE\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CZE/did.json",
       "isExample" : false
     },
     {
@@ -2938,7 +2949,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-DOM-DEV-All"
       },
       "name" : "GDHCNParticipantDID-DOM-DEV-All",
-      "description" : "Dominican Republic Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:DOM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/DOM/did.json",
+      "description" : "Dominican Republic Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:DOM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/DOM/did.json",
       "isExample" : false
     },
     {
@@ -2972,7 +2983,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-DEV-All"
       },
       "name" : "GDHCNParticipantDID-ECU-DEV-All",
-      "description" : "Ecuador Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ECU\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ECU/did.json",
+      "description" : "Ecuador Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:ECU\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ECU/did.json",
       "isExample" : false
     },
     {
@@ -3006,7 +3017,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-UAT-All"
       },
       "name" : "GDHCNParticipantDID-ECU-UAT-All",
-      "description" : "Ecuador Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ECU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ECU/did.json",
+      "description" : "Ecuador Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:ECU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ECU/did.json",
       "isExample" : false
     },
     {
@@ -3074,7 +3085,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-UAT-All"
       },
       "name" : "GDHCNParticipantDID-ESP-UAT-All",
-      "description" : "Spain Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ESP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ESP/did.json",
+      "description" : "Spain Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:ESP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/ESP/did.json",
       "isExample" : false
     },
     {
@@ -3120,7 +3131,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-EST-DEV-All"
       },
       "name" : "GDHCNParticipantDID-EST-DEV-All",
-      "description" : "Estonia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:EST\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/EST/did.json",
+      "description" : "Estonia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:EST\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/EST/did.json",
       "isExample" : false
     },
     {
@@ -3176,7 +3187,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-EST-UAT-All"
       },
       "name" : "GDHCNParticipantDID-EST-UAT-All",
-      "description" : "Estonia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:EST\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/EST/did.json",
+      "description" : "Estonia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:EST\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/EST/did.json",
       "isExample" : false
     },
     {
@@ -3244,7 +3255,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-FIN-UAT-All",
-      "description" : "Finland Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:FIN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/FIN/did.json",
+      "description" : "Finland Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:FIN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/FIN/did.json",
       "isExample" : false
     },
     {
@@ -3312,7 +3323,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-UAT-All"
       },
       "name" : "GDHCNParticipantDID-FRA-UAT-All",
-      "description" : "France Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:FRA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/FRA/did.json",
+      "description" : "France Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:FRA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/FRA/did.json",
       "isExample" : false
     },
     {
@@ -3380,7 +3391,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-UAT-All"
       },
       "name" : "GDHCNParticipantDID-FRO-UAT-All",
-      "description" : "Faroe Islands Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:FRO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/FRO/did.json",
+      "description" : "Faroe Islands Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:FRO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/FRO/did.json",
       "isExample" : false
     },
     {
@@ -3414,7 +3425,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-DEV-All"
       },
       "name" : "GDHCNParticipantDID-GTM-DEV-All",
-      "description" : "Guatemala Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:GTM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/GTM/did.json",
+      "description" : "Guatemala Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:GTM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/GTM/did.json",
       "isExample" : false
     },
     {
@@ -3448,7 +3459,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-UAT-All"
       },
       "name" : "GDHCNParticipantDID-GTM-UAT-All",
-      "description" : "Guatemala Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:GTM\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/GTM/did.json",
+      "description" : "Guatemala Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:GTM\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/GTM/did.json",
       "isExample" : false
     },
     {
@@ -3482,7 +3493,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-HND-DEV-All"
       },
       "name" : "GDHCNParticipantDID-HND-DEV-All",
-      "description" : "Honduras Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:HND\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/HND/did.json",
+      "description" : "Honduras Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:HND\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/HND/did.json",
       "isExample" : false
     },
     {
@@ -3516,7 +3527,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-HRV-UAT-All"
       },
       "name" : "GDHCNParticipantDID-HRV-UAT-All",
-      "description" : "Croatia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:HRV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/HRV/did.json",
+      "description" : "Croatia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:HRV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/HRV/did.json",
       "isExample" : false
     },
     {
@@ -3562,7 +3573,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-DEV-All"
       },
       "name" : "GDHCNParticipantDID-IDN-DEV-All",
-      "description" : "Indonesia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IDN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/IDN/did.json",
+      "description" : "Indonesia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:IDN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/IDN/did.json",
       "isExample" : false
     },
     {
@@ -3618,7 +3629,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-IDN-UAT-All",
-      "description" : "Indonesia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IDN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IDN/did.json",
+      "description" : "Indonesia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:IDN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IDN/did.json",
       "isExample" : false
     },
     {
@@ -3652,7 +3663,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-IOM-DEV-All"
       },
       "name" : "GDHCNParticipantDID-IOM-DEV-All",
-      "description" : "TEST Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IOM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/IOM/did.json",
+      "description" : "TEST Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:IOM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/IOM/did.json",
       "isExample" : false
     },
     {
@@ -3686,7 +3697,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-IOM-UAT-All"
       },
       "name" : "GDHCNParticipantDID-IOM-UAT-All",
-      "description" : "IOM Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IOM\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IOM/did.json",
+      "description" : "IOM Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:IOM\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IOM/did.json",
       "isExample" : false
     },
     {
@@ -3754,7 +3765,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-UAT-All"
       },
       "name" : "GDHCNParticipantDID-IRL-UAT-All",
-      "description" : "Ireland Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IRL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IRL/did.json",
+      "description" : "Ireland Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:IRL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IRL/did.json",
       "isExample" : false
     },
     {
@@ -3822,7 +3833,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-JAM-DEV-All"
       },
       "name" : "GDHCNParticipantDID-JAM-DEV-All",
-      "description" : "Jamaica Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:JAM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/JAM/did.json",
+      "description" : "Jamaica Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:JAM\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/JAM/did.json",
       "isExample" : false
     },
     {
@@ -3890,7 +3901,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-UAT-All"
       },
       "name" : "GDHCNParticipantDID-LTU-UAT-All",
-      "description" : "Lithuania Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:LTU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/LTU/did.json",
+      "description" : "Lithuania Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:LTU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/LTU/did.json",
       "isExample" : false
     },
     {
@@ -3936,7 +3947,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-DEV-All"
       },
       "name" : "GDHCNParticipantDID-LVA-DEV-All",
-      "description" : "Latvia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:LVA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/LVA/did.json",
+      "description" : "Latvia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:LVA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/LVA/did.json",
       "isExample" : false
     },
     {
@@ -3992,7 +4003,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-UAT-All"
       },
       "name" : "GDHCNParticipantDID-LVA-UAT-All",
-      "description" : "Latvia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:LVA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/LVA/did.json",
+      "description" : "Latvia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:LVA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/LVA/did.json",
       "isExample" : false
     },
     {
@@ -4060,7 +4071,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-UAT-All"
       },
       "name" : "GDHCNParticipantDID-MCO-UAT-All",
-      "description" : "Monaco Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:MCO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/MCO/did.json",
+      "description" : "Monaco Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:MCO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/MCO/did.json",
       "isExample" : false
     },
     {
@@ -4128,7 +4139,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-UAT-All"
       },
       "name" : "GDHCNParticipantDID-MLT-UAT-All",
-      "description" : "Malta Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:MLT\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/MLT/did.json",
+      "description" : "Malta Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:MLT\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/MLT/did.json",
       "isExample" : false
     },
     {
@@ -4196,7 +4207,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-UAT-All"
       },
       "name" : "GDHCNParticipantDID-MYS-UAT-All",
-      "description" : "Malaysia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:MYS\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/MYS/did.json",
+      "description" : "Malaysia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:MYS\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/MYS/did.json",
       "isExample" : false
     },
     {
@@ -4230,7 +4241,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-NIC-DEV-All"
       },
       "name" : "GDHCNParticipantDID-NIC-DEV-All",
-      "description" : "Nicaragua Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:NIC\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/NIC/did.json",
+      "description" : "Nicaragua Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:NIC\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/NIC/did.json",
       "isExample" : false
     },
     {
@@ -4298,7 +4309,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-UAT-All"
       },
       "name" : "GDHCNParticipantDID-NLD-UAT-All",
-      "description" : "Netherlands (Kingdom of the) Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:NLD\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/NLD/did.json",
+      "description" : "Netherlands (Kingdom of the) Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:NLD\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/NLD/did.json",
       "isExample" : false
     },
     {
@@ -4366,7 +4377,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-UAT-All"
       },
       "name" : "GDHCNParticipantDID-NZL-UAT-All",
-      "description" : "New Zealand Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:NZL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/NZL/did.json",
+      "description" : "New Zealand Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:NZL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/NZL/did.json",
       "isExample" : false
     },
     {
@@ -4412,7 +4423,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-DEV-All"
       },
       "name" : "GDHCNParticipantDID-OMN-DEV-All",
-      "description" : "Oman Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:OMN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/OMN/did.json",
+      "description" : "Oman Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:OMN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/OMN/did.json",
       "isExample" : false
     },
     {
@@ -4468,7 +4479,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-OMN-UAT-All",
-      "description" : "Oman Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:OMN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/OMN/did.json",
+      "description" : "Oman Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:OMN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/OMN/did.json",
       "isExample" : false
     },
     {
@@ -4502,7 +4513,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PAN-DEV-All"
       },
       "name" : "GDHCNParticipantDID-PAN-DEV-All",
-      "description" : "Panama Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PAN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/PAN/did.json",
+      "description" : "Panama Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:PAN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/PAN/did.json",
       "isExample" : false
     },
     {
@@ -4536,7 +4547,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-PAN-UAT-All",
-      "description" : "Panama Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PAN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PAN/did.json",
+      "description" : "Panama Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:PAN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PAN/did.json",
       "isExample" : false
     },
     {
@@ -4570,7 +4581,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PER-DEV-All"
       },
       "name" : "GDHCNParticipantDID-PER-DEV-All",
-      "description" : "Peru Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PER\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/PER/did.json",
+      "description" : "Peru Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:PER\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/PER/did.json",
       "isExample" : false
     },
     {
@@ -4638,7 +4649,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-POL-UAT-All"
       },
       "name" : "GDHCNParticipantDID-POL-UAT-All",
-      "description" : "Poland Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:POL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/POL/did.json",
+      "description" : "Poland Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:POL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/POL/did.json",
       "isExample" : false
     },
     {
@@ -4706,7 +4717,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-UAT-All"
       },
       "name" : "GDHCNParticipantDID-PRT-UAT-All",
-      "description" : "Portugal Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PRT\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRT/did.json",
+      "description" : "Portugal Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:PRT\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRT/did.json",
       "isExample" : false
     },
     {
@@ -4740,7 +4751,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PRY-DEV-All"
       },
       "name" : "GDHCNParticipantDID-PRY-DEV-All",
-      "description" : "Paraguay Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PRY\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/PRY/did.json",
+      "description" : "Paraguay Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:PRY\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/PRY/did.json",
       "isExample" : false
     },
     {
@@ -4774,7 +4785,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-All"
       },
       "name" : "GDHCNParticipantDID-PRY-UAT-All",
-      "description" : "Paraguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PRY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRY/did.json",
+      "description" : "Paraguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:PRY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRY/did.json",
       "isExample" : false
     },
     {
@@ -4808,7 +4819,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SAU-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SAU-UAT-All",
-      "description" : "Saudi Arabia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SAU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SAU/did.json",
+      "description" : "Saudi Arabia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SAU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SAU/did.json",
       "isExample" : false
     },
     {
@@ -4854,7 +4865,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-DEV-All"
       },
       "name" : "GDHCNParticipantDID-SGP-DEV-All",
-      "description" : "Singapore Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SGP\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SGP/did.json",
+      "description" : "Singapore Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:SGP\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SGP/did.json",
       "isExample" : false
     },
     {
@@ -4910,7 +4921,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SGP-UAT-All",
-      "description" : "Singapore Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SGP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SGP/did.json",
+      "description" : "Singapore Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SGP\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SGP/did.json",
       "isExample" : false
     },
     {
@@ -4944,7 +4955,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-DEV-All"
       },
       "name" : "GDHCNParticipantDID-SLV-DEV-All",
-      "description" : "El Salvador Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SLV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SLV/did.json",
+      "description" : "El Salvador Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:SLV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SLV/did.json",
       "isExample" : false
     },
     {
@@ -4978,7 +4989,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SLV-UAT-All",
-      "description" : "El Salvador Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SLV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SLV/did.json",
+      "description" : "El Salvador Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SLV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SLV/did.json",
       "isExample" : false
     },
     {
@@ -5024,7 +5035,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-DEV-All"
       },
       "name" : "GDHCNParticipantDID-SMR-DEV-All",
-      "description" : "San Marino Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SMR\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SMR/did.json",
+      "description" : "San Marino Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:SMR\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SMR/did.json",
       "isExample" : false
     },
     {
@@ -5080,7 +5091,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SMR-UAT-All",
-      "description" : "San Marino Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SMR\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SMR/did.json",
+      "description" : "San Marino Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SMR\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SMR/did.json",
       "isExample" : false
     },
     {
@@ -5114,7 +5125,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SUR-DEV-All"
       },
       "name" : "GDHCNParticipantDID-SUR-DEV-All",
-      "description" : "Suriname Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SUR\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SUR/did.json",
+      "description" : "Suriname Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:SUR\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SUR/did.json",
       "isExample" : false
     },
     {
@@ -5182,7 +5193,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SVK-UAT-All",
-      "description" : "Slovakia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SVK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SVK/did.json",
+      "description" : "Slovakia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SVK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SVK/did.json",
       "isExample" : false
     },
     {
@@ -5228,7 +5239,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-DEV-All"
       },
       "name" : "GDHCNParticipantDID-SVN-DEV-All",
-      "description" : "Slovenia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SVN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SVN/did.json",
+      "description" : "Slovenia Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:SVN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/SVN/did.json",
       "isExample" : false
     },
     {
@@ -5284,7 +5295,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SVN-UAT-All",
-      "description" : "Slovenia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SVN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SVN/did.json",
+      "description" : "Slovenia Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SVN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SVN/did.json",
       "isExample" : false
     },
     {
@@ -5352,7 +5363,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-UAT-All"
       },
       "name" : "GDHCNParticipantDID-SWE-UAT-All",
-      "description" : "Sweden Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:SWE\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SWE/did.json",
+      "description" : "Sweden Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:SWE\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SWE/did.json",
       "isExample" : false
     },
     {
@@ -5398,7 +5409,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-DEV-All"
       },
       "name" : "GDHCNParticipantDID-TGO-DEV-All",
-      "description" : "Togo Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:TGO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/TGO/did.json",
+      "description" : "Togo Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:TGO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/TGO/did.json",
       "isExample" : false
     },
     {
@@ -5454,7 +5465,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-UAT-All"
       },
       "name" : "GDHCNParticipantDID-TGO-UAT-All",
-      "description" : "Togo Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:TGO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/TGO/did.json",
+      "description" : "Togo Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:TGO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/TGO/did.json",
       "isExample" : false
     },
     {
@@ -5522,7 +5533,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-THA-UAT-All"
       },
       "name" : "GDHCNParticipantDID-THA-UAT-All",
-      "description" : "Thailand Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:THA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/THA/did.json",
+      "description" : "Thailand Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:THA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/THA/did.json",
       "isExample" : false
     },
     {
@@ -5556,7 +5567,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-TTO-DEV-All"
       },
       "name" : "GDHCNParticipantDID-TTO-DEV-All",
-      "description" : "Trinidad and Tobago Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:TTO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/TTO/did.json",
+      "description" : "Trinidad and Tobago Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:TTO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/TTO/did.json",
       "isExample" : false
     },
     {
@@ -5624,7 +5635,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-UAT-All"
       },
       "name" : "GDHCNParticipantDID-TUR-UAT-All",
-      "description" : "Türkiye Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:TUR\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/TUR/did.json",
+      "description" : "Türkiye Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:TUR\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/TUR/did.json",
       "isExample" : false
     },
     {
@@ -5658,7 +5669,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-URY-DEV-All"
       },
       "name" : "GDHCNParticipantDID-URY-DEV-All",
-      "description" : "Uruguay Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:URY\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/URY/did.json",
+      "description" : "Uruguay Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:URY\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/URY/did.json",
       "isExample" : false
     },
     {
@@ -5692,7 +5703,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-All"
       },
       "name" : "GDHCNParticipantDID-URY-UAT-All",
-      "description" : "Uruguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:URY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/URY/did.json",
+      "description" : "Uruguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:URY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/URY/did.json",
       "isExample" : false
     },
     {
@@ -5726,7 +5737,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-USA-DEV-All"
       },
       "name" : "GDHCNParticipantDID-USA-DEV-All",
-      "description" : "United States of America Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:USA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/USA/did.json",
+      "description" : "United States of America Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:USA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/USA/did.json",
       "isExample" : false
     },
     {
@@ -5782,7 +5793,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-DEV-All"
       },
       "name" : "GDHCNParticipantDID-WHO-DEV-All",
-      "description" : "DEV Participant WHO Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:WHO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/WHO/did.json",
+      "description" : "DEV Participant WHO Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:WHO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/WHO/did.json",
       "isExample" : false
     },
     {
@@ -5827,7 +5838,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-UAT-All"
       },
       "name" : "GDHCNParticipantDID-WHO-UAT-All",
-      "description" : "UAT Participant WHO Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:WHO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/WHO/did.json",
+      "description" : "UAT Participant WHO Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:WHO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/WHO/did.json",
       "isExample" : false
     },
     {
@@ -5861,7 +5872,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XCL-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XCL-DEV-All",
-      "description" : "California Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XCL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XCL/did.json",
+      "description" : "California Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XCL\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XCL/did.json",
       "isExample" : false
     },
     {
@@ -5895,7 +5906,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XML-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XML-DEV-All",
-      "description" : "GDHCN entomo Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XML\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XML/did.json",
+      "description" : "GDHCN entomo Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XML\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XML/did.json",
       "isExample" : false
     },
     {
@@ -5929,7 +5940,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXA-DEV-All",
-      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXA/did.json",
+      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXA\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXA/did.json",
       "isExample" : false
     },
     {
@@ -5963,7 +5974,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXA-UAT-All",
-      "description" : "Geneva Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXA/did.json",
+      "description" : "Geneva Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXA\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXA/did.json",
       "isExample" : false
     },
     {
@@ -5997,7 +6008,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXB-DEV-All",
-      "description" : "TEST Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXB\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXB/did.json",
+      "description" : "TEST Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXB\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXB/did.json",
       "isExample" : false
     },
     {
@@ -6031,7 +6042,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXB-UAT-All",
-      "description" : "UAT Participant XXB Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXB\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXB/did.json",
+      "description" : "UAT Participant XXB Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXB\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXB/did.json",
       "isExample" : false
     },
     {
@@ -6065,7 +6076,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXC-DEV-All",
-      "description" : "TEST Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXC\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXC/did.json",
+      "description" : "TEST Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXC\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXC/did.json",
       "isExample" : false
     },
     {
@@ -6099,7 +6110,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXC-UAT-All",
-      "description" : "UAT Participant XXC Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXC\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXC/did.json",
+      "description" : "UAT Participant XXC Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXC\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXC/did.json",
       "isExample" : false
     },
     {
@@ -6133,7 +6144,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXD-DEV-All",
-      "description" : "CENS XD Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXD\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXD/did.json",
+      "description" : "CENS XD Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXD\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXD/did.json",
       "isExample" : false
     },
     {
@@ -6167,7 +6178,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXD-UAT-All",
-      "description" : "UAT Participant XXD Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXD\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXD/did.json",
+      "description" : "UAT Participant XXD Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXD\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXD/did.json",
       "isExample" : false
     },
     {
@@ -6201,7 +6212,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXE-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXE-DEV-All",
-      "description" : "Geneva XE Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXE\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXE/did.json",
+      "description" : "Geneva XE Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXE\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXE/did.json",
       "isExample" : false
     },
     {
@@ -6235,7 +6246,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXF-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXF-DEV-All",
-      "description" : "Test Locality XF Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXF\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXF/did.json",
+      "description" : "Test Locality XF Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXF\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXF/did.json",
       "isExample" : false
     },
     {
@@ -6269,7 +6280,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXG-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXG-DEV-All",
-      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXG\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXG/did.json",
+      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXG\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXG/did.json",
       "isExample" : false
     },
     {
@@ -6303,7 +6314,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXH-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXH-DEV-All",
-      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXH\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXH/did.json",
+      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXH\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXH/did.json",
       "isExample" : false
     },
     {
@@ -6337,7 +6348,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXI-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXI-DEV-All",
-      "description" : "California Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXI\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXI/did.json",
+      "description" : "California Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXI\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXI/did.json",
       "isExample" : false
     },
     {
@@ -6371,7 +6382,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXJ-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXJ-DEV-All",
-      "description" : "DEV Participant XXJ Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXJ\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXJ/did.json",
+      "description" : "DEV Participant XXJ Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXJ\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXJ/did.json",
       "isExample" : false
     },
     {
@@ -6405,7 +6416,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXK-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXK-DEV-All",
-      "description" : "Rengo Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXK\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXK/did.json",
+      "description" : "Rengo Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXK\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXK/did.json",
       "isExample" : false
     },
     {
@@ -6439,7 +6450,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXN-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXN-DEV-All",
-      "description" : "DEV Participant XXN Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXN/did.json",
+      "description" : "DEV Participant XXN Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXN\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXN/did.json",
       "isExample" : false
     },
     {
@@ -6473,7 +6484,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXO-DEV-All",
-      "description" : "DEV Participant XXO Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXO/did.json",
+      "description" : "DEV Participant XXO Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXO\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXO/did.json",
       "isExample" : false
     },
     {
@@ -6507,7 +6518,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXO-UAT-All",
-      "description" : "UAT Participant XXO Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXO/did.json",
+      "description" : "UAT Participant XXO Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXO\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXO/did.json",
       "isExample" : false
     },
     {
@@ -6541,7 +6552,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXP-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXP-DEV-All",
-      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXP\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXP/did.json",
+      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXP\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXP/did.json",
       "isExample" : false
     },
     {
@@ -6575,7 +6586,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXQ-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXQ-DEV-All",
-      "description" : "Test Locality Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXQ\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXQ/did.json",
+      "description" : "Test Locality Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXQ\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXQ/did.json",
       "isExample" : false
     },
     {
@@ -6609,7 +6620,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXQ-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXQ-UAT-All",
-      "description" : "Test Locality Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXQ\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXQ/did.json",
+      "description" : "Test Locality Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXQ\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXQ/did.json",
       "isExample" : false
     },
     {
@@ -6640,10 +6651,44 @@
         "valueString" : "Endpoint"
       }],
       "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-XXR-DEV-All"
+      },
+      "name" : "GDHCNParticipantDID-XXR-DEV-All",
+      "description" : "Mumbai Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXR\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXR/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-XXR-DEV-DSC"
+      },
+      "name" : "GDHCNParticipantDID-XXR-DEV-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-XXR-DEV-SCA"
+      },
+      "name" : "GDHCNParticipantDID-XXR-DEV-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXS-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXS-UAT-All",
-      "description" : "Test Locality Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXS\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXS/did.json",
+      "description" : "Test Locality Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXS\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXS/did.json",
       "isExample" : false
     },
     {
@@ -6677,7 +6722,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXT-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXT-DEV-All",
-      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXT\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXT/did.json",
+      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXT\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXT/did.json",
       "isExample" : false
     },
     {
@@ -6711,7 +6756,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXT-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXT-UAT-All",
-      "description" : "Geneva Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXT\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXT/did.json",
+      "description" : "Geneva Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXT\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXT/did.json",
       "isExample" : false
     },
     {
@@ -6745,7 +6790,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXU-DEV-All",
-      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXU\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXU/did.json",
+      "description" : "Geneva Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXU\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXU/did.json",
       "isExample" : false
     },
     {
@@ -6779,7 +6824,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXU-UAT-All",
-      "description" : "Geneva Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXU/did.json",
+      "description" : "Geneva Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXU\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXU/did.json",
       "isExample" : false
     },
     {
@@ -6813,7 +6858,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXV-DEV-All",
-      "description" : "TEST CITY Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json",
+      "description" : "test city Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json",
       "isExample" : false
     },
     {
@@ -6847,7 +6892,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXV-UAT-All",
-      "description" : "test city Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json",
+      "description" : "test city Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json",
       "isExample" : false
     },
     {
@@ -6881,7 +6926,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXW-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXW-DEV-All",
-      "description" : "Test Locality Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXW\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXW/did.json",
+      "description" : "Test Locality Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXW\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXW/did.json",
       "isExample" : false
     },
     {
@@ -6915,7 +6960,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXX-DEV-All",
-      "description" : "Warrandyte Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXX\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXX/did.json",
+      "description" : "Warrandyte Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XXX\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXX/did.json",
       "isExample" : false
     },
     {
@@ -6949,7 +6994,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XXX-UAT-All",
-      "description" : "UAT Participant XXX Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXX\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXX/did.json",
+      "description" : "UAT Participant XXX Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XXX\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXX/did.json",
       "isExample" : false
     },
     {
@@ -6983,7 +7028,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XYK-DEV-All",
-      "description" : "Test Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XYK/did.json",
+      "description" : "Test Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn-dev.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XYK/did.json",
       "isExample" : false
     },
     {
@@ -7017,7 +7062,7 @@
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XYK-UAT-All",
-      "description" : "India Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json",
+      "description" : "India Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn-uat.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json",
       "isExample" : false
     },
     {
@@ -7809,6 +7854,12 @@
           "generation" : "markdown"
         },
         {
+          "sourceUrl" : "dsa_processes.html",
+          "name" : "dsa_processes.html",
+          "title" : "Data Sharing Agreement Processes",
+          "generation" : "markdown"
+        },
+        {
           "sourceUrl" : "use_cases.html",
           "name" : "use_cases.html",
           "title" : "Use Cases",
@@ -7878,6 +7929,12 @@
           "sourceUrl" : "hcert_spec.html",
           "name" : "hcert_spec.html",
           "title" : "HCERT Specification",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "qr_code_generation.html",
+          "name" : "qr_code_generation.html",
+          "title" : "QR Code Generation",
           "generation" : "markdown"
         },
         {

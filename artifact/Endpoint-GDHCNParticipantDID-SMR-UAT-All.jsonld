@@ -10,7 +10,7 @@
   "@type": "fhir:Endpoint",
   "dcterms:identifier": "Endpoint/GDHCNParticipantDID-SMR-UAT-All",
   "dcterms:title": "GDHCNParticipantDID-SMR-UAT-All",
-  "dcterms:description": "San Marino Trustlist (DID v2) - UAT - All keys did:web:tng-cdn.who.int:v2:trustlist:-:SMR resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SMR/did.json",
+  "dcterms:description": "San Marino Trustlist (DID v2) - UAT - All keys did:web:tng-cdn-uat.who.int:v2:trustlist:-:SMR resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/SMR/did.json",
   "dcterms:type": "Other",
   "schema:creativeWorkStatus": "materialized",
   "schema:encoding": [
@@ -26,12 +26,12 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "1c31c1ce14a2f7eb93379120aaf2a6f5995c41aa"
+    "prov:used": "016ec53221a5e2c1bf104ca4a1e888b2f42b49bc"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",
     "dcterms:identifier": "smart.who.int.trust",
-    "schema:version": "1.7.3",
+    "schema:version": "1.7.5",
     "schema:sameAs": {
       "@id": "http://smart.who.int/trust"
     }

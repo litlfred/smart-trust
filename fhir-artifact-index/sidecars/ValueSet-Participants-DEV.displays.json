@@ -92,6 +92,9 @@
     "XXQ": {
       "en": "Test Locality"
     },
+    "XXR": {
+      "en": "Mumbai"
+    },
     "XXT": {
       "en": "Geneva"
     },
@@ -99,7 +102,7 @@
       "en": "Geneva"
     },
     "XXV": {
-      "en": "TEST CITY"
+      "en": "test city"
     },
     "XXW": {
       "en": "Test Locality"
@@ -217,6 +220,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants-DEV",
-  "fhir:version": "1.7.3",
-  "fhir:expansionTimestamp": "2026-10-14T18:23:11+00:00"
+  "fhir:version": "1.7.5",
+  "fhir:expansionTimestamp": "2026-10-30T16:07:38+00:00"
 }

@@ -12,7 +12,7 @@
   "schema:name": "Receiver",
   "dcterms:title": "Receiver",
   "dcterms:description": "A Reciever is a system authorized by a Trust Network Participant to receive from a Holder a Veritifable, verify and utilize the content within.",
-  "schema:version": "1.7.3",
+  "schema:version": "1.7.5",
   "dcterms:type": "Requirements: Actor Definitions",
   "schema:sameAs": {
     "@id": "http://smart.who.int/trust/ActorDefinition/Receiver"
@@ -22,7 +22,7 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "../ast-data/resources/ActorDefinition/Receiver--9690e096.json"
+        "@id": "../ast-data/resources/ActorDefinition/Receiver--e6476cc2.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
@@ -31,12 +31,12 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "1c31c1ce14a2f7eb93379120aaf2a6f5995c41aa"
+    "prov:used": "016ec53221a5e2c1bf104ca4a1e888b2f42b49bc"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",
     "dcterms:identifier": "smart.who.int.trust",
-    "schema:version": "1.7.3",
+    "schema:version": "1.7.5",
     "schema:sameAs": {
       "@id": "http://smart.who.int/trust"
     }

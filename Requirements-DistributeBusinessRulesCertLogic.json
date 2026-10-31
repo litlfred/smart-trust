@@ -15,12 +15,12 @@
     }
   }],
   "url" : "http://smart.who.int/trust/Requirements/DistributeBusinessRulesCertLogic",
-  "version" : "1.7.3",
+  "version" : "1.7.5",
   "name" : "Distribute CertLogic Business Rules",
   "title" : "Distribute CertLogic business rules",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-14T18:19:34+00:00",
+  "date" : "2026-10-30T16:06:01+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

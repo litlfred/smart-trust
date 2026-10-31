@@ -12,7 +12,7 @@
   "schema:name": "Receive Public Keys via API",
   "dcterms:title": "Receive PKI material via API",
   "dcterms:description": "Receive trust material from a Trust Network Participant, for distribution within the Trust Network via API",
-  "schema:version": "1.7.3",
+  "schema:version": "1.7.5",
   "dcterms:type": "Requirements: Formal Requirements",
   "schema:sameAs": {
     "@id": "http://smart.who.int/trust/Requirements/ReceivePKUMaterialAPI"
@@ -22,7 +22,7 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "../ast-data/resources/Requirements/ReceivePKUMaterialAPI--f05df5c4.json"
+        "@id": "../ast-data/resources/Requirements/ReceivePKUMaterialAPI--f5c67c8b.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
@@ -31,12 +31,12 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "1c31c1ce14a2f7eb93379120aaf2a6f5995c41aa"
+    "prov:used": "016ec53221a5e2c1bf104ca4a1e888b2f42b49bc"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",
     "dcterms:identifier": "smart.who.int.trust",
-    "schema:version": "1.7.3",
+    "schema:version": "1.7.5",
     "schema:sameAs": {
       "@id": "http://smart.who.int/trust"
     }

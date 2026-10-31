@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "http://smart.who.int/base/StructureDefinition-CWTPayload.schema.json",
+  "$id": "http://smart.who.int/trust/StructureDefinition-CWTPayload.schema.json",
   "title": "CBOR Web Token (CWT) Payload (Common)",
   "description": "Logical Model for CBOR Web Token (CWT) Payload Logical Modelin CWT Payload https://www.iana.org/assignments/cwt/cwt.xhtml ",
   "type": "object",
@@ -25,12 +25,17 @@
       "description": "Issued At"
     },
     "-260": {
-      "$ref": "StructureDefinition-HCert.schema.json",
+      "type": "array",
+      "items": {
+        "$ref": "StructureDefinition-HCert.schema.json"
+      },
+      "minItems": 1,
       "description": "HCert"
     }
   },
   "required": [
-    "resourceType"
+    "resourceType",
+    "-260"
   ],
   "allOf": [
     {

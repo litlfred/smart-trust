@@ -12,7 +12,7 @@
   "schema:name": "CWT",
   "dcterms:title": "CBOR Web Token (CWT) Claim",
   "dcterms:description": "Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml",
-  "schema:version": "1.7.3",
+  "schema:version": "1.7.5",
   "dcterms:type": "Structures: Logical Models",
   "schema:sameAs": {
     "@id": "http://smart.who.int/trust/StructureDefinition/CWT"
@@ -22,7 +22,7 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "../ast-data/resources/StructureDefinition/CWT--88d8ec84.json"
+        "@id": "../ast-data/resources/StructureDefinition/CWT--24014b22.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
@@ -31,12 +31,12 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "1c31c1ce14a2f7eb93379120aaf2a6f5995c41aa"
+    "prov:used": "016ec53221a5e2c1bf104ca4a1e888b2f42b49bc"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",
     "dcterms:identifier": "smart.who.int.trust",
-    "schema:version": "1.7.3",
+    "schema:version": "1.7.5",
     "schema:sameAs": {
       "@id": "http://smart.who.int/trust"
     }
