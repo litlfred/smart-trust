@@ -71,7 +71,7 @@ jobs:
   # smart-base" — no IG repository carries a workflow of its own for it).
   ast:
     if: ${{ !inputs.plan }}
-    uses: litlfred/fhir-harness/.github/workflows/ig-ast-refresh.yml@main
+    uses: litlfred/fhir-harness/.github/workflows/ig-ast-refresh.yml@7dcd662df0169a493872882fe3372594d5ff0b50 # main
     with:
       # Always the default branch: only its build seeds the shared cache, so a
       # preview of a branch that leaves the IG's inputs as they are on it finds
@@ -105,15 +105,7 @@ jobs:
           git -C "$M" fetch -q --depth 1 https://github.com/litlfred/cat-harness-tools.git "$ref"
           git -C "$M" checkout -q FETCH_HEAD
           bun run "$M/scripts/mount-from-lock.ts" --root .
-          for d in $(python3 -c "import json;print(' '.join(sorted({i['path'] for i in json.load(open('index.lock.json'))['instances']})))"); do
-            [ -f "$d/package.json" ] || continue
-            if [ -f "$d/bun.lock" ] || [ -f "$d/bun.lockb" ]; then
-              (cd "$d" && bun install --frozen-lockfile)
-            else
-              echo "::warning::$d has no lockfile: its dependencies are resolved at install time"
-              (cd "$d" && bun install --no-save)
-            fi
-          done
+          bun install --frozen-lockfile
 
       - uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1
         with:
