@@ -8,6 +8,12 @@ permissions: {}
 # (workflow_call, if present, is kept so other repositories can call it.)
 on:
   workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag or ref to check out"
+        required: false
+        default: "main"
+        type: string
 
 jobs:
   check:
@@ -20,7 +26,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ inputs.tag || github.event.release.tag_name || 'main' }}
 
       - name: Check for publication-request.json
         id: checkfile
@@ -35,13 +41,12 @@ jobs:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
     # The called workflow publishes, so this job keeps the write scopes it
-    # had. It is another organisation's branch, not a pinned commit: whether
-    # to pin it is the owner's decision (security review 2026-10-31).
+    # had.
     permissions:
       contents: write
       pages: write
       id-token: write
       pull-requests: write
-    uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
+    uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@4191acf30bd22abb4955952c53f51bb475b1c3d7 # main
 #    with:
-#      tag_name: ${{ github.event.release.tag_name }}
+#      tag_name: ${{ inputs.tag || github.event.release.tag_name }}
