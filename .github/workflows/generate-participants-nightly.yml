@@ -21,10 +21,9 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
-      
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@7f4fc3e22c37d6ff65e88745f38bd3157c663f7c # v4
       with:
         python-version: '3.11'
         
@@ -39,19 +38,28 @@ jobs:
         
     - name: Determine environments
       id: environments
+      env:
+        INPUT: ${{ github.event.inputs.environments }}
       run: |
-        INPUT="${{ github.event.inputs.environments }}"
         if [ -z "$INPUT" ] || [ "$INPUT" = "all" ]; then
-          echo "envs=PROD,UAT,DEV" >> $GITHUB_OUTPUT
-        else
-          echo "envs=$INPUT" >> $GITHUB_OUTPUT
+          echo "envs=PROD,UAT,DEV" >> "$GITHUB_OUTPUT"
+          exit 0
         fi
+        # Refuse anything that is not a comma-separated list of known names.
+        IFS=',' read -ra REQ <<< "$INPUT"
+        for e in "${REQ[@]}"; do
+          case "$e" in
+            PROD|UAT|DEV) ;;
+            *) echo "::error::refused: environments must be PROD, UAT, DEV (comma-separated) or all"; exit 1 ;;
+          esac
+        done
+        echo "envs=$INPUT" >> "$GITHUB_OUTPUT"
         
     - name: Generate participants for all environments
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ENVIRONMENTS: ${{ steps.environments.outputs.envs }}
       run: |
-        ENVIRONMENTS="${{ steps.environments.outputs.envs }}"
         IFS=',' read -ra ENV_ARRAY <<< "$ENVIRONMENTS"
         
         OVERALL_CHANGES=false
@@ -97,7 +105,9 @@ jobs:
         fi
         
     - name: Summary
+      env:
+        ENVIRONMENTS: ${{ steps.environments.outputs.envs }}
       run: |
         echo "Nightly participant generation completed"
-        echo "Processed environments: ${{ steps.environments.outputs.envs }}"
+        echo "Processed environments: $ENVIRONMENTS"
         git log --oneline -5
