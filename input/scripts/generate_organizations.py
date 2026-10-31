@@ -106,7 +106,7 @@ def fetch_repo_tree(repo, branch=DEFAULT_BRANCH):
         url = f"{GITHUB_API_BASE}/repos/{GITHUB_ORG}/{repo}/git/trees/{candidate}?recursive=1"
         print(f"[TREE] Fetching full repo tree from: {url}")
         try:
-            response = requests.get(url, headers=get_github_headers())
+            response = requests.get(url, headers=get_github_headers(), timeout=60)
             if response.status_code == 404:
                 print(f"[TREE] Branch '{candidate}' not found, trying next candidate")
                 continue
@@ -175,7 +175,7 @@ def fetch_participant_locality_from_tree(repo, participant_code, tree, branch=DE
         pem_url = f"{GITHUB_RAW_BASE}/{GITHUB_ORG}/{repo}/{branch}/{pem_path}"
         print(f"[STEP 3] Fetching PEM file content from: {pem_url}")
         
-        pem_response = requests.get(pem_url, headers=get_github_headers())
+        pem_response = requests.get(pem_url, headers=get_github_headers(), timeout=60)
         print(f"[STEP 3] PEM file HTTP Response Status: {pem_response.status_code}")
         
         if pem_response.status_code != 200:
@@ -224,6 +224,11 @@ def fetch_participant_locality_from_tree(repo, participant_code, tree, branch=DE
         
         print(f"[STEP 5] All subject attributes: {subject_attributes}")
         
+        if locality_found and fsh_text_problem(locality_found):
+            print(f"[STEP 6] ERROR: locality for {participant_code} refused ({fsh_text_problem(locality_found)}); not used")
+            print(f"=== END LOCALITY EXTRACTION LOG for {participant_code} ===\n")
+            return None
+
         if locality_found:
             print(f"[STEP 6] SUCCESS: Extracted locality for {participant_code}: '{locality_found}'")
             print(f"=== END LOCALITY EXTRACTION LOG for {participant_code} ===\n")
@@ -263,7 +268,7 @@ def fetch_participants_from_github(environment):
         url = f"{GITHUB_API_BASE}/repos/{GITHUB_ORG}/{repo}/contents"
         print(f"Fetching participants from: {url}")
         
-        response = requests.get(url, headers=get_github_headers())
+        response = requests.get(url, headers=get_github_headers(), timeout=60)
         response.raise_for_status()
         
         contents = response.json()
@@ -510,7 +515,7 @@ def printout(content,filename):
 def load_remote_json(url):
     """Load JSON data from a URL with proper UTF-8 encoding handling"""
     http = urllib.PoolManager()
-    response = http.request("GET", url)
+    response = http.request("GET", url, timeout=60.0)
     
     if response.status != 200:
         raise Exception(f"HTTP {response.status}: Failed to fetch data from {url}")
@@ -563,8 +568,39 @@ def load_remote_json(url):
 def pp(json_content):
     return json.dumps(json_content, indent=2)
 
-def escape(str):
-    return str.replace('"', r'\"')
+class UnsafeFshText(ValueError):
+    """A value that cannot be written inside an FSH string literal as it is."""
+
+
+_UNSAFE_FSH = re.compile(r'["\\\x00-\x1f\x7f]')
+
+
+def fsh_text_problem(value):
+    """Why `value` cannot go inside an FSH "..." literal, or None when it can.
+
+    A double quote or a backslash would end or alter the literal, and a control
+    character (a newline above all) would start a new FSH rule. Such a value is
+    refused, never cleaned: a repaired name silently changes what the IG says.
+    """
+    if not isinstance(value, str):
+        return f"not a string: {type(value).__name__}"
+    if not value.strip():
+        return "empty"
+    m = _UNSAFE_FSH.search(value)
+    if m:
+        return f"contains {m.group()!r}"
+    return None
+
+
+def escape(value):
+    """Return `value` for an FSH string literal, or raise UnsafeFshText.
+
+    Kept under its old name so every call site refuses the same way.
+    """
+    problem = fsh_text_problem(value)
+    if problem:
+        raise UnsafeFshText(f"refused for an FSH string ({problem}): {value!r}")
+    return value
 
 def load_participants(participants_valueset, environment="PROD"):
     """Load participants based on environment requirements"""
