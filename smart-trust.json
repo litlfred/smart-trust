@@ -94,6 +94,24 @@
       "tile": {
         "icon": "docs"
       }
+    },
+    {
+      "id": "library",
+      "path": "library/",
+      "description": "L1 source documents materialized for smart-trust: the GDHCN Administrative and Operational Framework 1.2 (9 October 2026), the legal source document for GDHCN definitions and Trust Domains (owner, 2026-11-01: \"admin framework is the legal source document for GDHCN\"). Every knowledge-graph reference to the Framework resolves through here, and `check:materialized-fixity` verifies its SHA-256 digest against `catalogue/`.",
+      "graphTypologies": [
+        "library"
+      ]
+    },
+    {
+      "id": "smart-trust-catalogue",
+      "path": "catalogue/",
+      "description": "Qualified Dublin Core (`folio-dublin-core/v1`) and materialization fixity (`folio-catalogue-node/v1`) records for the documents materialized in `library/`: the GDHCN Administrative and Operational Framework 1.2. `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.",
+      "graphTypologies": [
+        "catalogue"
+      ],
+      "readOnly": true,
+      "readOnlyBasis": "Records of a WHO document materialized in `library/`; `check:materialized-fixity` verifies the SHA-256 digests recorded here against `library/`."
     }
   ],
   "avatar": {
