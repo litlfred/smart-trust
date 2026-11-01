@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ActorDefinition",
+  "id" : "OnboardingTeam",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGActor"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition OnboardingTeam</b></p><a name=\"OnboardingTeam\"> </a><a name=\"hcOnboardingTeam\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"file://C:\\work\\ImplementationGuides\\ig-release\\who\\smart-base\\output/StructureDefinition-SGActor.html\">SGActor</a></p></div><table class=\"grid\"><tr><td><b>Actor: OnboardingTeam </b></td><td>Onboarding Team</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/trust/ActorDefinition/OnboardingTeam",
+  "version" : "1.7.5",
+  "name" : "OnboardingTeam",
+  "title" : "Onboarding Team",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-11-01T20:39:54+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "The onboarding team of the Trust Network Gateway's service provider, which checks a Participant's test results and confirms production readiness (onboarding steps [64]-[77]).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "type" : "person"
+}

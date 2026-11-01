@@ -62,7 +62,7 @@
   "id": "",
   "type": "cat-harness:DynamicState",
   "harness": "cat-harness",
-  "generatedAt": "2026-10-31T02:09:05.525Z",
+  "generatedAt": "2026-11-01T21:49:57.858Z",
   "unreadStores": [
     "cat-harness"
   ],
@@ -92,7 +92,7 @@
       "stuck": [
         {
           "kind": "enabled-not-taken",
-          "detail": "the token has not moved since 2026-10-11T07:02:09.501Z — 19 day(s), past the 7-day threshold"
+          "detail": "the token has not moved since 2026-10-11T07:02:09.501Z — 21 day(s), past the 7-day threshold"
         },
         {
           "kind": "bean-closed",

@@ -1,9 +1,13 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-10-31",
+  "changedAt": "2026-11-01",
   "scope": "cat-harness/translations",
   "tile": {
     "smart-base-translations": {
+      "count": 5,
+      "unit": "locales"
+    },
+    "smart-trust-translations": {
       "count": 5,
       "unit": "locales"
     }
@@ -1141,7 +1145,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 2,
+          "templates": 6,
           "catalogues": 2,
           "entries": 120,
           "translated": 120,
@@ -1172,7 +1176,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 2,
+          "templates": 6,
           "catalogues": 2,
           "entries": 120,
           "translated": 120,
@@ -1203,7 +1207,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 2,
+          "templates": 6,
           "catalogues": 2,
           "entries": 120,
           "translated": 120,
@@ -1234,7 +1238,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 2,
+          "templates": 6,
           "catalogues": 2,
           "entries": 120,
           "translated": 120,
@@ -1265,7 +1269,7 @@
               "untranslated": 0
             }
           ],
-          "templates": 2,
+          "templates": 6,
           "catalogues": 2,
           "entries": 120,
           "translated": 120,

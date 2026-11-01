@@ -64,7 +64,7 @@
   ],
   "example": {
     "type": "valueset",
-    "count": 14,
+    "count": 16,
     "schemas": [
       {
         "filename": "ValueSet-Actors.schema.json",
@@ -81,6 +81,22 @@
         "description": "JSON Schema for WHO GDHCN Connection Types ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
         "url": "./ValueSet-ConnectionTypes.schema.json",
         "valueSetUrl": "http://smart.who.int/trust/ValueSet/ConnectionTypes"
+      },
+      {
+        "filename": "ValueSet-DAKComponents.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-DAKComponents.schema.json",
+        "title": "DAK components Schema",
+        "description": "JSON Schema for DAK components ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-DAKComponents.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/DAKComponents"
+      },
+      {
+        "filename": "ValueSet-DDCCTermsOfUse.schema.json",
+        "id": "http://smart.who.int/trust/ValueSet-DDCCTermsOfUse.schema.json",
+        "title": "DDCC Trust Domain terms of use Schema",
+        "description": "JSON Schema for DDCC Trust Domain terms of use ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-DDCCTermsOfUse.schema.json",
+        "valueSetUrl": "http://smart.who.int/trust/ValueSet/DDCCTermsOfUse"
       },
       {
         "filename": "ValueSet-Domains-DEV.schema.json",

@@ -628,7 +628,7 @@
   all, and a fetch for that would put a spinner in front of a badge.
 -->
 <!-- NOT MOVED: same reason as fa-site-links above. -->
-<script type="application/json" id="fa-declared-kinds">["block-kinds","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
+<script type="application/json" id="fa-declared-kinds">["block-kinds","catalogue","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","references","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
 <!--
   FIRST of the deferred scripts: it fills `#fa-navbar-row` and
   `meta[name=fa-tiles]` before any reader runs (bean `gp2f`).
@@ -931,11 +931,11 @@
 <tbody>
 <tr>
   <td><a href="https://github.com/litlfred/who-iris/blob/main/processes/iris-cdn-initial-load.bpmn"><code>IRIS CDN initial load</code></a><br><span class="p">who-iris/processes/iris-cdn-initial-load.bpmn</span></td>
-  <td>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record, and every bitstream (owner, 2026-10-30: metadata plus PDFs).<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Owner · IRIS CDN Exporter (agent) · Build pipeline · Cloudflare R2 + CDN · Cloudflare git (Artifacts)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
+  <td>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record and every bitstream: metadata plus PDFs.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Owner · IRIS CDN Exporter (agent) · Build pipeline · Cloudflare R2 + CDN · Cloudflare git (Artifacts)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/who-iris/blob/main/processes/iris-cdn-nightly.bpmn"><code>IRIS CDN nightly change ingest</code></a><br><span class="p">who-iris/processes/iris-cdn-nightly.bpmn</span></td>
-  <td>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (owner, 2026-10-30: full rebuild nightly; sorted output keeps unchanged partitions b…<div class="f"><span class="k">activities</span> 9</div><div class="f"><span class="k">lanes</span> Build pipeline · Cloudflare git (Artifacts) · IRIS CDN Exporter (agent)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
+  <td>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (sorted output keeps unchanged partitions byte-identical), and publish a signed rele…<div class="f"><span class="k">activities</span> 9</div><div class="f"><span class="k">lanes</span> Build pipeline · Cloudflare git (Artifacts) · IRIS CDN Exporter (agent)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/who-iris/blob/main/processes/iris-cdn-reconcile.bpmn"><code>IRIS CDN weekly reconciliation</code></a><br><span class="p">who-iris/processes/iris-cdn-reconcile.bpmn</span></td>

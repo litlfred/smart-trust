@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Binary-TrustDomain-DDCC.jsonld",
+  "@type": "fhir:Binary",
+  "dcterms:identifier": "Binary/TrustDomain-DDCC",
+  "dcterms:title": "TrustDomain-DDCC",
+  "dcterms:type": "Other",
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/Binary/TrustDomain-DDCC--d55bfa31.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "3736afc6dd0ef0a6614f5c061289bb838aa727f9"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.trust",
+    "schema:version": "1.7.5",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/trust"
+    }
+  }
+}

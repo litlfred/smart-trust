@@ -644,7 +644,7 @@
   all, and a fetch for that would put a spinner in front of a badge.
 -->
 <!-- NOT MOVED: same reason as fa-site-links above. -->
-<script type="application/json" id="fa-declared-kinds">["block-kinds","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
+<script type="application/json" id="fa-declared-kinds">["block-kinds","catalogue","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","references","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
 <!--
   FIRST of the deferred scripts: it fills `#fa-navbar-row` and
   `meta[name=fa-tiles]` before any reader runs (bean `gp2f`).
@@ -860,12 +860,12 @@
 </h1>
     
 
-<p>Every term the instances in this repository define or carry, as W3C SKOS. Terms link to the external concepts they match rather than copying them. 4090 terms: <strong>41 authored</strong> in 5 glossaries, one page per instance that owns them, and <strong>4049 extracted</strong> from knowledge-graph assets in 26 generated schemes, one page per asset type, plus the sources below.</p>
+<p>Every term the instances in this repository define or carry, as W3C SKOS. Terms link to the external concepts they match rather than copying them. 4193 terms: <strong>62 authored</strong> in 7 glossaries, one page per instance that owns them, and <strong>4049 extracted</strong> from knowledge-graph assets in 26 generated schemes, one page per asset type, plus the sources below.</p>
 
 <div class="table-wrapper"><table>
 <thead><tr><th>state</th><th>what it means</th><th>terms</th></tr></thead>
 <tbody>
-<tr><td>authored</td><td>A person wrote or approved the definition.</td><td>41</td></tr>
+<tr><td>authored</td><td>A person wrote or approved the definition.</td><td>62</td></tr>
 <tr><td>candidate, extracted</td><td>Lifted from a knowledge-graph asset's own title and description, verbatim, and not curated. The definition is the asset's text, the source links to the asset, and an asset with no description gives a term with none. A person promotes one by authoring it.</td><td>4049</td></tr>
 <tr><td>could-not-extract</td><td>The source names a term the extractor could not read, and says why.</td><td>0</td></tr>
 </tbody>
@@ -884,7 +884,7 @@
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
 <thead><tr><th>target</th><th>mapped</th><th>unmapped</th><th>undetermined</th><th>why undetermined</th></tr></thead>
-<tbody><tr><td><code>fhir</code></td><td>0</td><td>4076</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>4076</td><td>0</td><td>—</td></tr></tbody>
+<tbody><tr><td><code>fhir</code></td><td>0</td><td>4195</td><td>0</td><td>—</td></tr><tr><td><code>skos</code></td><td>0</td><td>4195</td><td>0</td><td>—</td></tr></tbody>
 </table></div>
 <p class="fa-gloss-mapping-note"><strong>Undetermined is never “no match”.</strong> 
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
@@ -910,10 +910,11 @@ be a term this corpus is right to coin.</p>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/instance/fhir-harness/">fhir-harness</a></td><td>authored terms of fhir-harness</td><td>0</td><td>2 KB</td></tr>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/instance/folio-assistant-core/">folio-assistant-core</a></td><td>authored terms of folio-assistant-core</td><td>4</td><td>8 KB</td></tr>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/instance/smart-base/">smart-base</a></td><td>authored terms of smart-base</td><td>0</td><td>2 KB</td></tr>
-<tr><td><a href="../../../en/folio-assistant-core/glossary/instance/who-iris/">who-iris</a></td><td>authored terms of who-iris</td><td>1</td><td>3 KB</td></tr>
+<tr><td><a href="../../../en/folio-assistant-core/glossary/instance/smart-trust/">smart-trust</a></td><td>authored terms of smart-trust</td><td>21</td><td>34 KB</td></tr>
+<tr><td><a href="../../../en/folio-assistant-core/glossary/instance/who-iris/">who-iris</a></td><td>authored terms of who-iris</td><td>83</td><td>81 KB</td></tr>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/skills/">Skills</a></td><td>candidates, extracted</td><td>349</td><td>270 KB</td></tr>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/tools/">Tools</a></td><td>candidates, extracted</td><td>64</td><td>64 KB</td></tr>
-<tr><td><a href="../../../en/folio-assistant-core/glossary/bpmn-activities/">BPMN activities</a></td><td>candidates, extracted</td><td>1025</td><td>928 KB</td></tr>
+<tr><td><a href="../../../en/folio-assistant-core/glossary/bpmn-activities/">BPMN activities</a></td><td>candidates, extracted</td><td>1025</td><td>820 KB</td></tr>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/dmn-decisions/">DMN decisions</a></td><td>candidates, extracted</td><td>14</td><td>11 KB</td></tr>
 <tr><td><a href="../../../en/folio-assistant-core/glossary/schema-fields/">Schema fields</a></td><td>candidates, extracted</td><td>2597</td><td>2.3 MB</td></tr>
 </tbody></table></div></div>
@@ -952,7 +953,8 @@ be a term this corpus is right to coin.</p>
 <li><a href="../../../en/folio-assistant-core/glossary/instance/fhir-harness/">fhir-harness</a>: 0 terms in </li>
 <li><a href="../../../en/folio-assistant-core/glossary/instance/folio-assistant-core/">folio-assistant-core</a>: 4 terms in Folio Assistant platform terms, Guideline domain</li>
 <li><a href="../../../en/folio-assistant-core/glossary/instance/smart-base/">smart-base</a>: 0 terms in </li>
-<li><a href="../../../en/folio-assistant-core/glossary/instance/who-iris/">who-iris</a>: 1 terms in WHO house terms</li>
+<li><a href="../../../en/folio-assistant-core/glossary/instance/smart-trust/">smart-trust</a>: 21 terms in GDHCN terms</li>
+<li><a href="../../../en/folio-assistant-core/glossary/instance/who-iris/">who-iris</a>: 83 terms in National health workforce accounts: a handbook, second edition (2023), WHO house terms</li>
 </ul>
 <h2 id="sources">
   
@@ -972,10 +974,12 @@ be a term this corpus is right to coin.</p>
     
 
 <ul>
+<li><strong>GDHCN terms</strong> (smart-trust, 21 terms) · <a href="../../../assets/glossary/smart-trust--gdhcn.skos.jsonld">SKOS JSON-LD</a> · <code>glossary/gdhcn.glossary.json</code></li>
 <li><strong>Bootstrap terms</strong> (bootstrap, 22 terms) · <a href="../../../assets/glossary/bootstrap--terms.skos.jsonld">SKOS JSON-LD</a> · <code>bootstrap/schemas/graph.schema.json</code></li>
 <li><strong>Folio Assistant platform terms (cat-harness)</strong> (cat-harness, 14 terms) · <a href="../../../assets/glossary/cat-harness--platform.skos.jsonld">SKOS JSON-LD</a> · <code>folio-assistant-core/glossary/cat-harness.glossary.json</code></li>
 <li><strong>Folio Assistant platform terms</strong> (folio-assistant-core, 1 term) · <a href="../../../assets/glossary/folio-assistant-core--platform.skos.jsonld">SKOS JSON-LD</a> · <code>folio-assistant-core/glossary/folio-assistant-core.glossary.json</code></li>
 <li><strong>Guideline domain</strong> (folio-assistant-core, 3 terms) · <a href="../../../assets/glossary/folio-assistant-core--guideline-domain.skos.jsonld">SKOS JSON-LD</a> · <code>folio-assistant-core/glossary/guideline-domain.glossary.json</code></li>
+<li><strong>National health workforce accounts: a handbook, second edition (2023)</strong> (who-iris, 82 terms) · <a href="../../../assets/glossary/who-iris--nhwa-2023.skos.jsonld">SKOS JSON-LD</a> · <code>who-iris/glossary/nhwa-2023.glossary.json</code></li>
 <li><strong>WHO house terms</strong> (who-iris, 1 term) · <a href="../../../assets/glossary/who-iris--who-terms.skos.jsonld">SKOS JSON-LD</a> · <code>who-iris/glossary/who-iris.glossary.json</code></li>
 <li><strong>Swimlane roles</strong> (cat-harness, 54 terms) · <a href="../../../cat-harness/auto-docs/glossary/swimlane-glossary/">rendered here</a> · <code>cat-harness/glossary/glossary-ledger.json</code></li>
 <li><strong>Swimlane roles</strong> (bootstrap, 7 terms) · <a href="../../../cat-harness/auto-docs/glossary/swimlane-glossary/">rendered here</a> · <code>cat-harness/glossary/bootstrap/glossary-ledger.json</code></li>
@@ -1014,11 +1018,7 @@ be a term this corpus is right to coin.</p>
 <ul>
   
   <li>
-    <a href="../../../en/folio-assistant-core/glossary/instance/bootstrap/">Glossary: bootstrap</a>
-  </li>
-  
-  <li>
-    <a href="../../../en/folio-assistant-core/glossary/instance/folio-assistant-core/">Glossary: folio-assistant-core</a>
+    <a href="../../../en/folio-assistant-core/glossary/instance/smart-base/">Glossary: smart-base</a>
   </li>
   
   <li>
@@ -1026,15 +1026,23 @@ be a term this corpus is right to coin.</p>
   </li>
   
   <li>
-    <a href="../../../en/folio-assistant-core/glossary/instance/cat-harness/">Glossary: cat-harness</a>
-  </li>
-  
-  <li>
     <a href="../../../en/folio-assistant-core/glossary/instance/fhir-harness/">Glossary: fhir-harness</a>
   </li>
   
   <li>
-    <a href="../../../en/folio-assistant-core/glossary/instance/smart-base/">Glossary: smart-base</a>
+    <a href="../../../en/folio-assistant-core/glossary/instance/cat-harness/">Glossary: cat-harness</a>
+  </li>
+  
+  <li>
+    <a href="../../../en/folio-assistant-core/glossary/instance/folio-assistant-core/">Glossary: folio-assistant-core</a>
+  </li>
+  
+  <li>
+    <a href="../../../en/folio-assistant-core/glossary/instance/smart-trust/">Glossary: smart-trust</a>
+  </li>
+  
+  <li>
+    <a href="../../../en/folio-assistant-core/glossary/instance/bootstrap/">Glossary: bootstrap</a>
   </li>
   
   <li>

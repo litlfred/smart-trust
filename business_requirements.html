@@ -232,7 +232,7 @@ The DSCA is a certificate which acts a trust anchor in the verification of the c
 <div style="clear:both;"></div>
 
 <h4 id="scope-of-document">Scope of Document</h4>
-<p>Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [1] and [2]. It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. 
+<p>Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on <a href="#ref-ehn-trust-framework-2021">[1]</a> and <a href="#ref-ehn-dcc-techspec-vol1-2021">[2]</a>. It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. 
 Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. 
 Legal and administrative procedures are not in the scope of this document, they must be defined separately.</p>
 
@@ -296,10 +296,10 @@ Legal and administrative procedures are not in the scope of this document, they 
 Each GDHCN Participant can either use existing certificate authorities or they can set up a dedicated (possibly self-signed) certificate authority for the SCA system.
 The GDHCN Participants MUST present their SCA certificate(s) to the GDHCN Secretariat during the official <a href="concepts_onboarding.html">on-boarding procedure</a>. After successful registration of the GDHCN Participant (see section “Registration of GDHCN Participant Backends” for more details), the GDHCN Secretariat will update a signed trust list that contains all SCA certificates that are active. The GDHCN Secretariat will use a dedicated asymmetric key pair to sign the trust list and the certificates in an offline environment. The private key will not be stored on the online TNG system, such that a compromise of the online system does not enable an attacker to compromise the trust list. The corresponding trust anchor certificate TNG<sub>TA</sub> will be provided to the GDHCN Participants during the onboarding process. GDHCN Participants can retrieve the trust list from the TNG for their verification procedures.</p>
 
-<p>The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -&gt; SCA -&gt; DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will <em>ignore</em> anything above the SCA – and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [2] only allows for exactly two levels - a ‘root’ SCA and a single ‘leaf’ DSC signed by just that SCA.
+<p>The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -&gt; SCA -&gt; DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will <em>ignore</em> anything above the SCA – and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model <a href="#ref-ehn-dcc-techspec-vol1-2021">[2]</a> only allows for exactly two levels - a ‘root’ SCA and a single ‘leaf’ DSC signed by just that SCA.
 In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment.</p>
 
-<p>The verification model in the Trust Network PKI is the shell model (for example, defined in [3]), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:</p>
+<p>The verification model in the Trust Network PKI is the shell model (for example, defined in <a href="#ref-etsi-en-319-102-1-2016">[3]</a>), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:</p>
 <ul>
   <li>The SCA SHALL NOT issue certificates that are valid longer than the CA certificate itself (see [2, Section 5]).</li>
   <li>The document signer SHALL NOT sign documents that are valid longer than the DSC itself.
@@ -439,6 +439,35 @@ SHA-256 SHALL be used as cryptographic hash function (see ISO/IEC 10118-3:2004).
 </table>
 
 <p>The recommended elliptic curve for EC-DSA is again NIST-p-256 due to its widespread implementation.</p>
+
+<p><a name="gpg-keys"></a></p>
+<h6 id="requirements-on-gpg-keys">Requirements on GPG keys</h6>
+
+<p>Each person authorised to provide key material for a GDHCN Participant has a GPG key, named in the Letter of Application. The key SHALL be compliant with RFC 4880 (OpenPGP), as the Letter of Application requires, and SHALL meet the following:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key algorithm</th>
+      <th>Key size</th>
+      <th>Identity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RSA</td>
+      <td>Min. 3072 Bit</td>
+      <td>The email address in the key SHALL match the email address given for that person in the Letter of Application</td>
+    </tr>
+    <tr>
+      <td>EC (e.g. ECDSA)</td>
+      <td>Min. 256 Bit</td>
+      <td>The email address in the key SHALL match the email address given for that person in the Letter of Application</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The GDHCN Secretariat checks these requirements when it verifies the Letter of Application (see the <a href="concepts_onboarding_process_full.html">onboarding process</a>, step [22]).</p>
 
 <h6 id="sca-certificate-tnpsca">SCA certificate (TNP<sub>SCA</sub>)</h6>
 <p>The following table gives guidance on the TNP<sub>SCA</sub> certificate template in case that a GDHCN Participant decides to operate its own SCA for the DCC system. <strong>Bold</strong> entries are required (MUST be included in the certificate), <em>italic</em> entries are recommended (SHOULD be included). For absent fields, no recommendations are defined.</p>
@@ -645,9 +674,11 @@ SHA-256 SHALL be used as cryptographic hash function (see ISO/IEC 10118-3:2004).
 <p>The TLS certificate of the TNG will be issued by a publicly trusted certificate authority (included in all major browsers and operating systems, following the CAB Forum baseline requirements).</p>
 
 <h4 id="references">REFERENCES</h4>
-<p>[1] Interoperability of health certificates – Trust Framework – v. 1.0 – 12.03.2021 – eHealth Network – available at https://ec.europa.eu/health/sites/health/files/ehealth/docs/trust-framework_interoperability_certificates_en.pdf - last accessed 27.04.2021<br />
-[2] Technical Specifications for Digital COVID Certificates Volume 1 V1.0.5  - eHealth Network – available at  https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_v1_en.pdf - last accessed 27.04.2021<br />
-[3] ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation – version 1.1.1, 2016 – available at https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.01.01_60/en_31910201v010101p.pdf – last accessed 23.04.2021</p>
+<!-- references:begin style=bracket keys=ehn-trust-framework-2021,ehn-dcc-techspec-vol1-2021,etsi-en-319-102-1-2016 -->
+<p id="ref-ehn-trust-framework-2021" data-ref="ehn-trust-framework-2021">[1] eHealth Network. <a href="https://ec.europa.eu/health/sites/health/files/ehealth/docs/trust-framework_interoperability_certificates_en.pdf">Interoperability of health certificates – Trust Framework</a>. Version 1.0. 12 March 2021. Last accessed 27 April 2021.</p>
+<p id="ref-ehn-dcc-techspec-vol1-2021" data-ref="ehn-dcc-techspec-vol1-2021">[2] eHealth Network. <a href="https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_v1_en.pdf">Technical Specifications for Digital COVID Certificates Volume 1</a>. Version V1.0.5. Last accessed 27 April 2021.</p>
+<p id="ref-etsi-en-319-102-1-2016" data-ref="etsi-en-319-102-1-2016">[3] <a href="https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.01.01_60/en_31910201v010101p.pdf">ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation</a>. Version 1.1.1. 2016. Last accessed 23 April 2021.</p>
+<!-- references:end -->
 
 <h3 id="onboarding-process-1">Onboarding Process</h3>
 
@@ -779,24 +810,15 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
 
 <h4 id="details-of-the-onboarding-process">Details of the Onboarding Process</h4>
 
-<p>This document describes the standard onboarding process (so called Future Onboarding Process - FOP).</p>
+<p>This page describes the onboarding process of the GDHCN (the so called Future Onboarding Process, FOP), drawn in BPMN 2.0. Under each drawing is the text of the steps it shows. That text is kept in a Markdown file beside each BPMN file, with one section per task, and each task of the drawing links to its section, so the page and the drawings come from one source. The numbers <strong>[n]</strong> are the step numbers of <a href="#original-drawing">the original drawing</a>.</p>
 
-<p><strong>Note:</strong> In the embedded image the following relabels apply:</p>
+<p>Where a drawing and a text differ, the text is authority: the GDHCN Administrative and Operational Framework first, then the step text. The drawings only refer to the documentation; requirements such as key sizes are stated in the documentation they name, for example <a href="concepts_certificate_governance.html#gpg-keys">the requirements on GPG keys</a>.</p>
 
-<ul>
-  <li>
-    <p>DCCG -&gt; TNG</p>
-  </li>
-  <li>
-    <p>CSCA -&gt; SCA</p>
-  </li>
-  <li>
-    <p>DCC -&gt; VDHC (Verifiable Digital Health Certificate)</p>
-  </li>
-  <li>
-    <p>NB -&gt; TNP</p>
-  </li>
-</ul>
+<h4 id="overview-of-the-onboarding-processes">Overview of the onboarding processes</h4>
+
+<p>Onboarding runs in three phases. In <strong>phase 1</strong> the Participant applies and has its Letter of Application verified. In <strong>phase 2</strong> the gateway operator registers the Participant’s keys, once for each environment. In <strong>phase 3</strong> the Participant connects to the gateway and passes the tests, first in UAT and then in PROD. After onboarding, a Participant may join a further Trust Domain, change its keys or its representatives, or end its participation, and an Eligible GDHCN Participant may propose a new Trust Domain.</p>
+
+<p>Each drawing has one pool for each party (the GDHCN Participant, the GDHCN Secretariat at WHO, and the gateway operator) and one lane for each actor. A task with a <strong>+</strong> marker calls another process: select it in a drawing to go to that process. The environment (UAT, PROD, and DEV if used) is an input of the processes that run once for each environment.</p>
 
 <p>It is highly recommended:</p>
 
@@ -809,15 +831,148 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
   </li>
 </ul>
 
-<p>In the following description the required steps are divided into three sections:</p>
+<p>The processes are listed by phase: <a href="#top-level">Top level</a>, <a href="#phase-1">Phase 1: apply and be verified</a>, <a href="#phase-2">Phase 2: register the keys</a>, <a href="#phase-3">Phase 3: go live</a>, <a href="#after-onboarding">After onboarding</a>. A process that is reused later is listed under the phase where it first runs.</p>
 
-<p><strong>[1]</strong> - <strong>[29]</strong> - Application and Verification<br />
-<strong>[30]</strong> - <strong>[59]</strong> Setup<br />
-<strong>[60]</strong> - <strong>[End]</strong> Participant Onboarding</p>
+<h5 id="actors">Actors</h5>
 
-<p><img src="OnboardingProcess_Full.png" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+<p>Each lane is one actor, defined as an ActorDefinition of this guide.</p>
 
-<h5 id="application-and-verification">Application and Verification</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Role in onboarding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="artifact/ActorDefinition-BusinessOwnerRepresentative.html">Business Owner Representative</a></td>
+      <td>Sends the Statement of Interest and the Letter of Application; may meet WHO in person (Framework IX).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-LegalRepresentative.html">Legal Representative</a></td>
+      <td>May meet WHO in person to convey the Letter (Framework IX); receives notice of amendments (XI.2).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-OfficialDelegate.html">Official Delegate</a></td>
+      <td>Delegate at the World Health Assembly or another WHO governing body meeting (Framework IX).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-KeyMasterRepresentative.html">Key Master Representative</a></td>
+      <td>Manages the Participant’s Public Key Infrastructure and holds the GPG key named in the Letter (Framework IX).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-TechnicalRepresentative.html">Technical Representative</a></td>
+      <td>Connects the Participant’s systems to the Trust Network Gateway and runs the tests (Framework IX).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-GDHCNSecretariat.html">GDHCN Secretariat</a></td>
+      <td>Authorized WHO staff of the GDHCN Secretariat (Framework V, VI).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-WHOCountryRepresentative.html">WHO Country Representative</a></td>
+      <td>Meets the representative in country and sends the Letter by diplomatic pouch (Framework IX).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-TrustNetworkAnchor.html">Trust Network Anchor</a></td>
+      <td>WHO as trust anchor for the Public Key Infrastructure (Framework VI.6).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-OperationsTeam.html">Operations Team</a></td>
+      <td>The gateway service provider’s operations team (steps [30]-[50]).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-OnboardingTeam.html">Onboarding Team</a></td>
+      <td>The gateway service provider’s onboarding team (steps [64]-[77]).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-GitHubBot.html">GitHub Bot</a></td>
+      <td>The gateway’s GitHub bot user for the environment (steps [11]-[13], [34]-[38]).</td>
+    </tr>
+    <tr>
+      <td><a href="artifact/ActorDefinition-TrustNetworkGateway.html">Trust Network Gateway</a></td>
+      <td>The Trust Network Gateway (Framework V.1).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="top-level"></a></p>
+<h4 id="top-level">Top level</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>What it does</th>
+      <th>Calls</th>
+      <th>Called by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#gdhcn-onb">Onboard a Participant (top level)</a></td>
+      <td>Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify, set up and go live.</td>
+      <td><a href="#gdhcn-onb-apply">Apply and be verified</a>, <a href="#gdhcn-onb-golive">Go live</a>, <a href="#gdhcn-onb-registerkeys">Register the keys</a></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="gdhcn-onb"></a></p>
+<h5 id="onboard-a-participant-top-level">Onboard a Participant (top level)</h5>
+
+<p>Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify, set up and go live.</p>
+
+<p>Framework V.4, VI.5 and IX. Calls: <a href="#gdhcn-onb-apply">Apply and be verified</a>, <a href="#gdhcn-onb-golive">Go live</a>, <a href="#gdhcn-onb-registerkeys">Register the keys</a>. Called by: no other process. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.bpmn">GDHCN.ONB.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Onboard a Participant (top level)"><img src="GDHCN.ONB.svg" alt="Onboard a Participant (top level)" style="width:100%;" /></object>
+</figure>
+
+<p><a name="phase-1"></a></p>
+<h4 id="phase-1-apply-and-be-verified">Phase 1: apply and be verified</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>What it does</th>
+      <th>Calls</th>
+      <th>Called by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#gdhcn-onb-apply">Apply and be verified</a></td>
+      <td>Apply to join and have the Letter of Application verified.</td>
+      <td><a href="#gdhcn-onb-preparekeys">Prepare the keys and the repository</a>, <a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a></td>
+      <td><a href="#gdhcn-onb">Onboard a Participant (top level)</a></td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-onb-preparekeys">Prepare the keys and the repository</a></td>
+      <td>Prepare the keys and the repository for one environment.</td>
+      <td>-</td>
+      <td><a href="#gdhcn-onb-apply">Apply and be verified</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a></td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a></td>
+      <td>Verify one Letter of Application, and have it corrected if needed.</td>
+      <td><a href="#gdhcn-onb-conveyletter">Convey the Letter through a secure channel</a></td>
+      <td><a href="#gdhcn-onb-apply">Apply and be verified</a>, <a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a></td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-onb-conveyletter">Convey the Letter through a secure channel</a></td>
+      <td>Convey a Letter of Application through a secure channel.</td>
+      <td>-</td>
+      <td><a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="gdhcn-onb-apply"></a></p>
+<h5 id="apply-and-be-verified">Apply and be verified</h5>
+
+<p>Apply to join and have the Letter of Application verified.</p>
 
 <p><strong>[1]</strong> The eligible Trust Network Participant (TNP) has to submit its Statement of Interest [link to the form. [Document 5] ] to gdhcn-support@who.int .</p>
 
@@ -844,6 +999,17 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
 
 <p>For a successful connection to the Trust Network Gateway there are the following steps [9] – [11] to prepare:</p>
 
+<p>Framework V.4 and IX. Calls: <a href="#gdhcn-onb-preparekeys">Prepare the keys and the repository</a>, <a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>. Called by: <a href="#gdhcn-onb">Onboard a Participant (top level)</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.Apply.bpmn">GDHCN.ONB.Apply.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.Apply.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Apply and be verified"><img src="GDHCN.ONB.Apply.svg" alt="Apply and be verified" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-onb-preparekeys"></a></p>
+<h5 id="prepare-the-keys-and-the-repository">Prepare the keys and the repository</h5>
+
+<p>Prepare the keys and the repository for one environment.</p>
+
 <p><strong>[9]</strong> Create certificates per environment. Details can be found here: https://smart.who.int/trust/concepts_CertificatePreperation.html</p>
 
 <p>1) Certificates must be prepared for all environments (self-signed allowed) following the requirements in Certificate Governance - Authentication: TNPTLS - Upload: TNPUP - SCA(s): TNPSCA</p>
@@ -868,7 +1034,7 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
 
 <p>Follow the instructions to create a key: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key</p>
 
-<p>Use Algorithm RSA or EC with minimum key length of 4096 bit (RSA) or 256 bit (EC).</p>
+<p>The key must meet the <a href="concepts_certificate_governance.html#gpg-keys">GPG key requirements</a> in the Certificate Governance.</p>
 
 <p><strong>[11]</strong> The TNP creates the private GitHub repositories per environment</p>
 
@@ -885,6 +1051,17 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
 <p><strong>[12]</strong> Upon GitHub repository creation and invitation to GitHub bot user to WHO is sent, validity for accepting this invitation is 7 days by default. If no action is taken it loses validity.</p>
 
 <p><strong>[13]</strong> Invitation for GitHub bot user must be accepted by WHO within 7 days since invitation was emitted.</p>
+
+<p>Framework V.4.c, VII.4-5 and IX. Calls: no other process. Called by: <a href="#gdhcn-onb-apply">Apply and be verified</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.PrepareKeys.bpmn">GDHCN.ONB.PrepareKeys.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.PrepareKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Prepare the keys and the repository"><img src="GDHCN.ONB.PrepareKeys.svg" alt="Prepare the keys and the repository" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-onb-verifyletter"></a></p>
+<h5 id="verify-the-letter-of-application">Verify the Letter of Application</h5>
+
+<p>Verify one Letter of Application, and have it corrected if needed.</p>
 
 <p><strong>[14]</strong> TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:</p>
 
@@ -930,7 +1107,7 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
 
 <ul>
   <li>
-    <p>Key length (min. 3072 bit for RSA and min. 256 bit for ECDSA)</p>
+    <p>the <a href="concepts_certificate_governance.html#gpg-keys">GPG key requirements</a> in the Certificate Governance, including the key length</p>
   </li>
   <li>
     <p>mail address in GPG key must match with the provided mail address in the Letter of Application</p>
@@ -954,31 +1131,127 @@ and <a href="https://github.com/WorldHealthOrganization/tng-participant-template
   </li>
 </ul>
 
-<h5 id="setup">Setup</h5>
+<p>Framework V.4.a-b and IX. Calls: <a href="#gdhcn-onb-conveyletter">Convey the Letter through a secure channel</a>. Called by: <a href="#gdhcn-onb-apply">Apply and be verified</a>, <a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.VerifyLetter.bpmn">GDHCN.ONB.VerifyLetter.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.VerifyLetter.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Verify the Letter of Application"><img src="GDHCN.ONB.VerifyLetter.svg" alt="Verify the Letter of Application" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-onb-conveyletter"></a></p>
+<h5 id="convey-the-letter-through-a-secure-channel">Convey the Letter through a secure channel</h5>
+
+<p>Convey a Letter of Application through a secure channel.</p>
+
+<p>Framework IX. Calls: no other process. Called by: <a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.ConveyLetter.bpmn">GDHCN.ONB.ConveyLetter.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.ConveyLetter.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Convey the Letter through a secure channel"><img src="GDHCN.ONB.ConveyLetter.svg" alt="Convey the Letter through a secure channel" style="width:100%;" /></object>
+</figure>
+
+<p><a name="phase-2"></a></p>
+<h4 id="phase-2-register-the-keys">Phase 2: register the keys</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>What it does</th>
+      <th>Calls</th>
+      <th>Called by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#gdhcn-onb-registerkeys">Register the keys</a></td>
+      <td>Register a Participant’s keys for one environment.</td>
+      <td>-</td>
+      <td><a href="#gdhcn-onb">Onboard a Participant (top level)</a>, <a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="gdhcn-onb-registerkeys"></a></p>
+<h5 id="register-the-keys">Register the keys</h5>
+
+<p>Register a Participant’s keys for one environment.</p>
 
 <p><strong>[30]</strong> The collected onboarding information is sent to the operations (OPS) team. The onboarding (OB) team is informed as well.</p>
 
 <p><strong>[31 - 35]</strong> The onboarding data is taken over to the configuration files by the OPS team to automate the GitHub processes. As a result, a Pull Request (PR) is created. Dependent on the environment, the subsequent steps differ.</p>
 
-<p><strong>[38]</strong> For UAT (and optional DEV), an auto signing process signs the keys.</p>
-
 <p><strong>[36 -37]</strong> For PROD environment, the PR is verified by WHO. After successful verification, the air-gapped signing process is performed to sign the keys. Follow to <strong>[47]</strong></p>
+
+<p><strong>[38]</strong> For UAT (and optional DEV), an auto signing process signs the keys.</p>
 
 <p><strong>[39]</strong> The service provider checks the PR as well.</p>
 
-<p><strong>[40 - 41]</strong> In case the verification failed, WHO is informed about the outcome.</p>
-
-<p><strong>[42]</strong> Correction.</p>
-
-<p><strong>[43]</strong> In case the verification was successful the whitelisting of the certificates is initiated.</p>
-
-<p><strong>[44 - 46]</strong> and the participant will be informed that the preparation has been completed successfully.</p>
-
 <p><strong>[47]</strong> TSI Verification of Pull Request in PROD Environment.</p>
+
+<p><strong>[40 - 41]</strong> In case the verification failed, WHO is informed about the outcome.</p>
 
 <p><strong>[48 - 50]</strong> In case Pull Request failed, TSIS to communicate to Participant for them to Correct</p>
 
-<h4 id="participant-onboarding">Participant Onboarding</h4>
+<p><strong>[42]</strong> Correction.</p>
+
+<p>Calls: no other process. Called by: <a href="#gdhcn-onb">Onboard a Participant (top level)</a>, <a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a>, <a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.RegisterKeys.bpmn">GDHCN.ONB.RegisterKeys.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.RegisterKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Register the keys"><img src="GDHCN.ONB.RegisterKeys.svg" alt="Register the keys" style="width:100%;" /></object>
+</figure>
+
+<p><a name="phase-3"></a></p>
+<h4 id="phase-3-go-live">Phase 3: go live</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>What it does</th>
+      <th>Calls</th>
+      <th>Called by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#gdhcn-onb-golive">Go live</a></td>
+      <td>Connect to the gateway and pass the tests, in UAT and then PROD.</td>
+      <td><a href="#gdhcn-onb-connecttest">Connect and test</a></td>
+      <td><a href="#gdhcn-onb">Onboard a Participant (top level)</a>, <a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a></td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-onb-connecttest">Connect and test</a></td>
+      <td>Connect to the gateway and pass the test, for one environment.</td>
+      <td>-</td>
+      <td><a href="#gdhcn-onb-golive">Go live</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="gdhcn-onb-golive"></a></p>
+<h5 id="go-live">Go live</h5>
+
+<p>Connect to the gateway and pass the tests, in UAT and then PROD.</p>
+
+<p><strong>[77 - 80]</strong> After passing the Production Readiness Test, the participant is allowed to use the TNG PROD environment. A confirmation email is sent to the participant and to WHO with the confirmation about the successfully passed test and the completion of the onboarding process.</p>
+
+<p>Calls: <a href="#gdhcn-onb-connecttest">Connect and test</a>. Called by: <a href="#gdhcn-onb">Onboard a Participant (top level)</a>, <a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.GoLive.bpmn">GDHCN.ONB.GoLive.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.GoLive.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Go live"><img src="GDHCN.ONB.GoLive.svg" alt="Go live" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-onb-connecttest"></a></p>
+<h5 id="connect-and-test">Connect and test</h5>
+
+<p>Connect to the gateway and pass the test, for one environment.</p>
+
+<p><strong>[43]</strong> In case the verification was successful the whitelisting of the certificates is initiated.</p>
+
+<p><strong>[67]</strong> If the Dry Run Test has passed successfully, the whitelisting of the certificates in the gateway (PROD environment) continues.</p>
+
+<p><strong>[44 - 46]</strong> and the participant will be informed that the preparation has been completed successfully.</p>
+
+<p><strong>[68 - 69]</strong> The Onboarding team informs the TNP to be ready to connect to TNG PROD environment.</p>
 
 <p><strong>[60]</strong> The participant is connecting to UAT environment and the following steps has to be performed to check the connection:</p>
 
@@ -1021,7 +1294,11 @@ You should see an output like:
 
 <p>2) Test the other Trustlist Routes in the same style (e. g. with DSC/SCA/Upload/Authentication…)</p>
 
+<p><strong>[70]</strong> The participant is allowed and enabled to connect to TNG PROD environment (for detailed information see [60]).</p>
+
 <p><strong>[61]</strong> In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP.</p>
+
+<p><strong>[71]</strong> In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP.</p>
 
 <p><strong>[62]</strong> After the connection to the TNG is established the participant can start the dry run test on UAT.</p>
 
@@ -1038,20 +1315,6 @@ You should see an output like:
 <p>e) Provide sample VDHC s to be verified by the service provider</p>
 
 <p>f) Validate some sample VDHC ‘s to ensure the validation implementation is working fine</p>
-
-<p><strong>[63]</strong> After executing all required steps, the participant must provide the test results to the onboarding team.</p>
-
-<p><strong>[64 - 65]</strong> The onboarding team checks the results and provides feedback to the participant.</p>
-
-<p><strong>[66]</strong> In case of any issues additional corrective actions are bespoken and solved with the participant.</p>
-
-<p><strong>[67]</strong> If the Dry Run Test has passed successfully, the whitelisting of the certificates in the gateway (PROD environment) continues.</p>
-
-<p><strong>[68 - 69]</strong> The Onboarding team informs the TNP to be ready to connect to TNG PROD environment.</p>
-
-<p><strong>[70]</strong> The participant is allowed and enabled to connect to TNG PROD environment (for detailed information see [60]).</p>
-
-<p><strong>[71]</strong> In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP.</p>
 
 <p><strong>[72]</strong> After the connection to the TNG PROD is established the Production Readiness Test can start.</p>
 
@@ -1096,13 +1359,129 @@ f) Upload it again in case the DSC is required
 
 </details>
 
+<p><strong>[63]</strong> After executing all required steps, the participant must provide the test results to the onboarding team.</p>
+
 <p><strong>[73 - 74]</strong> After executing all required steps, the participant must provide the test results to the service provider by mail.</p>
+
+<p><strong>[64 - 65]</strong> The onboarding team checks the results and provides feedback to the participant.</p>
 
 <p><strong>[75]</strong> The service provider checks the results.</p>
 
+<p><strong>[66]</strong> In case of any issues additional corrective actions are bespoken and solved with the participant.</p>
+
 <p><strong>[76]</strong> and in case of any issues additional corrective actions are bespoken and solved with the participant.</p>
 
-<p><strong>[77 - 80]</strong> After passing the Production Readiness Test, the participant is allowed to use the TNG PROD environment. A confirmation email is sent to the participant and to WHO with the confirmation about the successfully passed test and the completion of the onboarding process.</p>
+<p>Calls: no other process. Called by: <a href="#gdhcn-onb-golive">Go live</a>. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.ConnectTest.bpmn">GDHCN.ONB.ConnectTest.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.ConnectTest.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Connect and test"><img src="GDHCN.ONB.ConnectTest.svg" alt="Connect and test" style="width:100%;" /></object>
+</figure>
+
+<p><a name="after-onboarding"></a></p>
+<h4 id="after-onboarding">After onboarding</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>What it does</th>
+      <th>Calls</th>
+      <th>Called by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#gdhcn-trustdomain-join">Join a further Trust Domain</a></td>
+      <td>Join a further Trust Domain once onboarded.</td>
+      <td><a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>, <a href="#gdhcn-onb-golive">Go live</a>, <a href="#gdhcn-onb-registerkeys">Register the keys</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-onb-changekeys">Change the keys or the representatives</a></td>
+      <td>Change the keys or the representatives after onboarding.</td>
+      <td><a href="#gdhcn-onb-preparekeys">Prepare the keys and the repository</a>, <a href="#gdhcn-onb-conveyletter">Convey the Letter through a secure channel</a>, <a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>, <a href="#gdhcn-onb-registerkeys">Register the keys</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-trustdomain-propose">Propose a new Trust Domain</a></td>
+      <td>Propose a new Trust Domain and have it approved.</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><a href="#gdhcn-onb-terminate">End participation</a></td>
+      <td>End participation in one or more Trust Domains.</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="gdhcn-trustdomain-join"></a></p>
+<h5 id="join-a-further-trust-domain">Join a further Trust Domain</h5>
+
+<p>Join a further Trust Domain once onboarded.</p>
+
+<p>Framework V.4 and IX. Calls: <a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>, <a href="#gdhcn-onb-golive">Go live</a>, <a href="#gdhcn-onb-registerkeys">Register the keys</a>. Called by: no other process. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.TrustDomain.Join.bpmn">GDHCN.TrustDomain.Join.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.TrustDomain.Join.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Join a further Trust Domain"><img src="GDHCN.TrustDomain.Join.svg" alt="Join a further Trust Domain" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-onb-changekeys"></a></p>
+<h5 id="change-the-keys-or-the-representatives">Change the keys or the representatives</h5>
+
+<p>Change the keys or the representatives after onboarding.</p>
+
+<p>Framework IX. Calls: <a href="#gdhcn-onb-preparekeys">Prepare the keys and the repository</a>, <a href="#gdhcn-onb-conveyletter">Convey the Letter through a secure channel</a>, <a href="#gdhcn-onb-verifyletter">Verify the Letter of Application</a>, <a href="#gdhcn-onb-registerkeys">Register the keys</a>. Called by: no other process. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.ChangeKeys.bpmn">GDHCN.ONB.ChangeKeys.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.ChangeKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Change the keys or the representatives"><img src="GDHCN.ONB.ChangeKeys.svg" alt="Change the keys or the representatives" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-trustdomain-propose"></a></p>
+<h5 id="propose-a-new-trust-domain">Propose a new Trust Domain</h5>
+
+<p>Propose a new Trust Domain and have it approved.</p>
+
+<p>Framework V.3, VI.2-3 and XI. Calls: no other process. Called by: no other process. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.TrustDomain.Propose.bpmn">GDHCN.TrustDomain.Propose.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.TrustDomain.Propose.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Propose a new Trust Domain"><img src="GDHCN.TrustDomain.Propose.svg" alt="Propose a new Trust Domain" style="width:100%;" /></object>
+</figure>
+
+<p><a name="gdhcn-onb-terminate"></a></p>
+<h5 id="end-participation">End participation</h5>
+
+<p>End participation in one or more Trust Domains.</p>
+
+<p>Framework XV.1-3. Calls: no other process. Called by: no other process. BPMN file: <a href="https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.Terminate.bpmn">GDHCN.ONB.Terminate.bpmn</a>.</p>
+
+<figure style="width:100%">
+  <object data="GDHCN.ONB.Terminate.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="End participation"><img src="GDHCN.ONB.Terminate.svg" alt="End participation" style="width:100%;" /></object>
+</figure>
+
+<p><a name="original-drawing"></a></p>
+<h4 id="the-original-drawing">The original drawing</h4>
+
+<p><strong>Note:</strong> In the embedded image the following relabels apply:</p>
+
+<ul>
+  <li>
+    <p>DCCG -&gt; TNG</p>
+  </li>
+  <li>
+    <p>CSCA -&gt; SCA</p>
+  </li>
+  <li>
+    <p>DCC -&gt; VDHC (Verifiable Digital Health Certificate)</p>
+  </li>
+  <li>
+    <p>NB -&gt; TNP</p>
+  </li>
+</ul>
+
+<p><img src="OnboardingProcess_Full.png" style="float:none; margin: 0px 0px 0px 0px;" /></p>
 
 <h3 id="use-cases">Use Cases</h3>
 
@@ -1330,12 +1709,14 @@ define "Completed Immunizations":
 
 <p>CQL authoring resources:</p>
 
+<!-- references:begin style=ul keys=hl7-cql-introduction,hl7-cql-authors-guide,hl7-crmi-using-cql,hl7-crmi-packaging -->
 <ul>
-  <li><a href="https://cql.hl7.org/01-introduction.html">CQL Introduction</a></li>
-  <li><a href="https://cql.hl7.org/02-authorsguide.html">CQL Authoring Guide</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/crmi-ig/branches/master/using-cql.html">CRMI IG CQL Guidelines</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/cqf-measures/packaging.html">CRMI IG Packaging Guidelines</a></li>
+  <li id="ref-hl7-cql-introduction" data-ref="hl7-cql-introduction">HL7 International. <a href="https://cql.hl7.org/01-introduction.html">CQL Introduction</a>.</li>
+  <li id="ref-hl7-cql-authors-guide" data-ref="hl7-cql-authors-guide">HL7 International. <a href="https://cql.hl7.org/02-authorsguide.html">CQL Authoring Guide</a>.</li>
+  <li id="ref-hl7-crmi-using-cql" data-ref="hl7-crmi-using-cql">HL7 International. <a href="https://build.fhir.org/ig/HL7/crmi-ig/branches/master/using-cql.html">CRMI IG CQL Guidelines</a>.</li>
+  <li id="ref-hl7-crmi-packaging" data-ref="hl7-crmi-packaging">HL7 International. <a href="https://build.fhir.org/ig/HL7/cqf-measures/packaging.html">CRMI IG Packaging Guidelines</a>.</li>
 </ul>
+<!-- references:end -->
 
 <h3 id="cql-execution">CQL Execution</h3>
 
@@ -1685,7 +2066,7 @@ npm <span class="nb">install </span>cql-execution cql-exec-fhir
 <p>Identity authentication and identity binding is out of scope for this framework and is determined by policies established at the individual verifier level.</p>
 
 <p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/business_requirements.md" data-repo="litlfred/smart-trust" href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/business_requirements.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/business_requirements.md", "lines": [{"t":"Business Requirements","l":1},{"t":"Concepts  Glossary","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Trust Network","l":5,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Secretariat","l":8,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Participant","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Eligible GDHCN Participant","l":14,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Terms of Participation (TOP)","l":27,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Business Owner Representative","l":36,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Key Master Representative","l":39,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Legal Representative","l":42,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Technical Representative","l":45,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Letter of Application","l":48,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Onboarding Process","l":51,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Health Professions Education Accreditation Agency","l":54,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Health Services Licensing Agency","l":57,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Public Health Agency","l":60,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Public Health Security Agency","l":63,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Public Key Infrastructure (PKI)","l":66,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Signing Certificate Authority (SCA)","l":69,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Holder","l":72,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Receiver","l":75,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Issuer","l":78,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Document Signer","l":81,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Document Signer Certificates (DSCs)","l":84,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Encryption Key Certificate Governance","l":87,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Domain","l":90,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Lists","l":96,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network","l":105,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Gateway (TNG)","l":109,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Gateway - Trust Anchor  (TNGTA)","l":112,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Gateway - Transport Layer Security  (TNGTLS)","l":115,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant (TNP)","l":118,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Participant Backend System","l":121,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Data Exchange Certificate Authority  (TNPDECA)","l":124,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Document Signing Certificate Authority  (TNPDSCA)","l":130,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Transport Layer Security (TNPTLS)","l":133,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Transport Layer Security (TNPUP)","l":136,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant Verifier","l":139,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trusted Service","l":143,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Verifiable Digital Health Certificate","l":148,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Certificate Governance","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Context","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Scope of Document","l":24,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Terminology","l":29,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"TNG communication flows and security services","l":42,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"General","l":48,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Authentication and connection establishment","l":55,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Signing Certificate Authorities and Validation Model","l":65,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Integrity and authenticity of uploaded data","l":78,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on the technical TNG architecture","l":87,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificate Life-cycle Management","l":94,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Registration of GDHCN Participant Backends","l":96,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificate authorities, validity periods and renewal","l":114,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Validity periods","l":117,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Revocation of certificates","l":142,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificates for Staging Environments","l":155,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificate Templates","l":160,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Cryptographic requirements","l":163,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on the DSC","l":165,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on TLS, Upload and SCA","l":169,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"SCA certificate (TNPSCA)","l":180,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Document Signer (DSC)","l":191,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Upload Certificates (TNPUP)","l":219,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"GDHCN Participant TLS Client Authentication (TNPTLS)","l":227,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Trust list signature certificate (TNGTA)","l":240,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"TNG TLS Server certificates (TNGTLS)","l":248,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"REFERENCES","l":263,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Onboarding Process","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Overview of the Onboarding Process","l":30,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Prepare Key Material Submission","l":42,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Perform Acceptance Testing","l":66,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Go Live on Production Environment","l":74,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Onboarding Application Requirements","l":81,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application","l":94,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application - DDCC","l":96,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application - PH4H","l":107,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application - IPS Pilgrimage","l":112,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letter of Application - Trust Network Gateway","l":114,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Secretariat Tasks","l":124,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Details of the Onboarding Process","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Application and Verification","l":32,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Setup","l":137,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Participant Onboarding","l":164,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Use Cases","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Federated PKD Aggregation","l":3,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Federated Verification","l":14,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Dynamic Business Rule Validation​","l":26,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Background","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Business Rules in Practice","l":35,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Authoring","l":68,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Authoring Tools","l":74,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Structure","l":83,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL for Health Credentials","l":125,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Packaging CQL for Distribution","l":139,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Example CQL","l":148,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"References","l":172,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Execution","l":181,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Terminology","l":200,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Structure Maps and Concept Maps","l":208,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Primer","l":252,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Overview","l":256,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Convert Vaccination Credentials to DDCC Resource Instance","l":268,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Running the Matchbox Docker Image","l":278,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Loading IGs Into Matchbox","l":290,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Converting the Vaccination Credential Into a DDCC FHIR Resource","l":310,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Running CQL Against Converted Vaccination Credentials","l":338,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Translating CQL to ELM","l":364,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Extracting ELM From a FHIR Library","l":383,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Running ELM Against Converted Vaccination Credentials","l":440,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Requirements","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"},{"t":"Health content​ interoperability","l":5,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"},{"t":"Trust interoperability and trust networks​","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"},{"t":"Identity authentication and identity binding","l":21,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/business_requirements.md", "lines": [{"t":"Business Requirements","l":1},{"t":"Concepts  Glossary","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Trust Network","l":5,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Secretariat","l":8,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Participant","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Eligible GDHCN Participant","l":14,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Terms of Participation (TOP)","l":27,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Business Owner Representative","l":36,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Key Master Representative","l":39,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Legal Representative","l":42,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Technical Representative","l":45,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Letter of Application","l":48,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Onboarding Process","l":51,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Health Professions Education Accreditation Agency","l":54,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Health Services Licensing Agency","l":57,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Public Health Agency","l":60,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Public Health Security Agency","l":63,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Public Key Infrastructure (PKI)","l":66,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Signing Certificate Authority (SCA)","l":69,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Holder","l":72,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Receiver","l":75,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Issuer","l":78,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Document Signer","l":81,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Document Signer Certificates (DSCs)","l":84,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Encryption Key Certificate Governance","l":87,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Domain","l":90,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Lists","l":96,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network","l":105,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Gateway (TNG)","l":109,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Gateway - Trust Anchor  (TNGTA)","l":112,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Gateway - Transport Layer Security  (TNGTLS)","l":115,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant (TNP)","l":118,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"GDHCN Participant Backend System","l":121,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Data Exchange Certificate Authority  (TNPDECA)","l":124,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Document Signing Certificate Authority  (TNPDSCA)","l":130,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Transport Layer Security (TNPTLS)","l":133,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant - Transport Layer Security (TNPUP)","l":136,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trust Network Participant Verifier","l":139,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Trusted Service","l":143,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Verifiable Digital Health Certificate","l":148,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts.md"},{"t":"Certificate Governance","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Context","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Scope of Document","l":24,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Terminology","l":29,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"TNG communication flows and security services","l":42,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"General","l":48,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Authentication and connection establishment","l":55,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Signing Certificate Authorities and Validation Model","l":65,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Integrity and authenticity of uploaded data","l":78,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on the technical TNG architecture","l":87,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificate Life-cycle Management","l":94,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Registration of GDHCN Participant Backends","l":96,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificate authorities, validity periods and renewal","l":114,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Validity periods","l":117,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Revocation of certificates","l":142,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificates for Staging Environments","l":155,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Certificate Templates","l":160,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Cryptographic requirements","l":163,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on the DSC","l":165,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on TLS, Upload and SCA","l":169,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Requirements on GPG keys","l":181,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"SCA certificate (TNPSCA)","l":192,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Document Signer (DSC)","l":203,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Upload Certificates (TNPUP)","l":231,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"GDHCN Participant TLS Client Authentication (TNPTLS)","l":239,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Trust list signature certificate (TNGTA)","l":252,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"TNG TLS Server certificates (TNGTLS)","l":260,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"REFERENCES","l":275,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md"},{"t":"Onboarding Process","l":2,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Overview of the Onboarding Process","l":30,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Prepare Key Material Submission","l":42,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Perform Acceptance Testing","l":66,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Go Live on Production Environment","l":74,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Onboarding Application Requirements","l":81,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application","l":94,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application - DDCC","l":96,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application - PH4H","l":107,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letters of Application - IPS Pilgrimage","l":112,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Letter of Application - Trust Network Gateway","l":114,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Secretariat Tasks","l":124,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md"},{"t":"Details of the Onboarding Process","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Overview of the onboarding processes","l":7,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Actors","l":21,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Top level","l":41,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Onboard a Participant (top level)","l":48,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Phase 1: apply and be verified","l":59,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Apply and be verified","l":69,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Prepare the keys and the repository","l":100,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Verify the Letter of Application","l":149,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Convey the Letter through a secure channel","l":205,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Phase 2: register the keys","l":216,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Register the keys","l":223,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Phase 3: go live","l":252,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Go live","l":260,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Connect and test","l":273,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"After onboarding","l":410,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Join a further Trust Domain","l":420,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Change the keys or the representatives","l":431,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Propose a new Trust Domain","l":442,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"End participation","l":453,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"The original drawing","l":464,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md"},{"t":"Use Cases","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Federated PKD Aggregation","l":3,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Federated Verification","l":14,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Dynamic Business Rule Validation​","l":26,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/use_cases.md"},{"t":"Background","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Business Rules in Practice","l":35,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Authoring","l":68,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Authoring Tools","l":74,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Structure","l":83,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL for Health Credentials","l":125,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Packaging CQL for Distribution","l":139,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Example CQL","l":148,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"References","l":172,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Execution","l":185,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Terminology","l":204,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Structure Maps and Concept Maps","l":212,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"CQL Primer","l":256,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Overview","l":260,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Convert Vaccination Credentials to DDCC Resource Instance","l":272,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Running the Matchbox Docker Image","l":282,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Loading IGs Into Matchbox","l":294,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Converting the Vaccination Credential Into a DDCC FHIR Resource","l":314,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Running CQL Against Converted Vaccination Credentials","l":342,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Translating CQL to ELM","l":368,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Extracting ELM From a FHIR Library","l":387,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Running ELM Against Converted Vaccination Credentials","l":444,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md"},{"t":"Requirements","l":1,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"},{"t":"Health content​ interoperability","l":5,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"},{"t":"Trust interoperability and trust networks​","l":11,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"},{"t":"Identity authentication and identity binding","l":21,"b":"https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/functional.md"}]}</script>
 
 <script src="./assets/ig-source-links.js"></script>
 

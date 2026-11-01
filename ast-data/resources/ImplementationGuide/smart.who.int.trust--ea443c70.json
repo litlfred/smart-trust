@@ -14,7 +14,7 @@
   "title" : "WHO SMART Trust",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-30T16:06:01+00:00",
+  "date" : "2026-11-01T20:39:54+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -86,6 +86,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/BusinessOwnerRepresentative"
+      },
+      "name" : "Business Owner Representative",
+      "description" : "The Business Owner Representative of a GDHCN Participant, named in the Letter of Application (Framework IX). Sends the Statement of Interest and the Letter of Application, and may meet WHO in person to convey the Letter.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical:abstract"
       }],
       "reference" : {
@@ -117,6 +129,54 @@
       },
       "name" : "COSE Headers (DRAFT)",
       "description" : "Data elements for COSE Headers https://www.iana.org/assignments/cose/cose.xhtml#header-parameters",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DAKComponents"
+      },
+      "name" : "DAK components",
+      "description" : "All DAK components.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DAKComponents"
+      },
+      "name" : "DAK components",
+      "description" : "The ten components of a WHO SMART Guidelines Digital Adaptation Kit (DAK), as smart-base's DAK document kind lists them (smart-base document-kinds/dak.json). A Trust Domain's use cases point at these components. Move to smart-base once its DAK logical model publishes a code system for them.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DDCCTermsOfUse"
+      },
+      "name" : "DDCC Trust Domain terms of use",
+      "description" : "The policies of the DDCC Trust Domain that a participant may name in a VC termsOfUse entry (TrustDomainPolicy).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DDCCTermsOfUse"
+      },
+      "name" : "DDCC Trust Domain terms of use",
+      "description" : "The policy and regulatory standards of the DDCC Trust Domain, quoted from Annex I of the GDHCN Administrative and Operational Framework 1.2. GDHCN Participants confirm their readiness and intent to follow each one.",
       "isExample" : false
     },
     {
@@ -201,6 +261,42 @@
       },
       "name" : "GDHCN Participants to WHO Regional Offices",
       "description" : "ConceptMap from GDHCN Trust Network Production Participants to WHO Regional Offices.\nParticipants that are not WHO Member States or State Parties (e.g. international organizations\nor non-member territories) have no mapping and are grouped under Other Participants.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/GDHCNSecretariat"
+      },
+      "name" : "GDHCN Secretariat",
+      "description" : "Authorized WHO staff working in the GDHCN Secretariat, which administers the GDHCN and oversees the Onboarding Process (Framework V, VI).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TrustDomain"
+      },
+      "name" : "GDHCN Trust Domain",
+      "description" : "A GDHCN Trust Domain. Its parts follow the definition in Section II of the GDHCN Administrative and Operational Framework, which says a Trust Domain consists of:\n\n- defined use cases and business processes related to the utilization of Verifiable Digital Health Certificates;\n- the open, interoperable technical specifications that identify or define the applicable Trusted Services and Verifiable Digital Health Certificates; and\n- a set of policy and regulatory standards describing expected behavior of GDHCN Participants.\n\nA Trust Domain also names its terms of use. This is the ValueSet of policies a participant may say it acts under, for example in the `termsOfUse` of a VHL Receiver's Verifiable Credential (see [TrustDomainPolicy](StructureDefinition-TrustDomainPolicy.html)).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TrustDomainPolicy"
+      },
+      "name" : "GDHCN Trust Domain policy (VC termsOfUse entry)",
+      "description" : "One entry of a W3C Verifiable Credentials Data Model 2.0 `termsOfUse` (section 5.5) naming a policy of a GDHCN Trust Domain that the credential's issuer acts under. One example is a VHL Receiver's self-issued credential under the Verifiable Credential Option of IHE ITI VHL ITI-YY5.\n\nVC 2.0 requires each `termsOfUse` value to have a `type` and allows an `id`. The `type` is this logical model's canonical URL. The `id` is the policy: a code in a Trust Domain's terms-of-use ValueSet, written as `{CodeSystem canonical}#{code}`. A verifier finds the Trust Domain from the ValueSet that holds the policy.\n\n```json\n\"termsOfUse\": [{\n  \"type\": \"http://smart.who.int/trust/StructureDefinition/TrustDomainPolicy\",\n  \"id\": \"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT#CONSENT-KSA\"\n}]\n```",
       "isExample" : false
     },
     {
@@ -7090,6 +7186,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/GitHubBot"
+      },
+      "name" : "GitHub Bot",
+      "description" : "The GitHub bot user of the Trust Network Gateway (one per environment), which is invited to a Participant's private repository, pulls its public key material and opens the onboarding pull request (onboarding steps [11]-[13], [34]-[38]).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -7133,6 +7241,66 @@
       },
       "name" : "Issuer",
       "description" : "An Issuer a system authorized by a Trust Network Participant to generate Verifiable Digital Health Certificates which are provided to a Holder.   An Issuer is responsible for generating the content that is digitally signed within the Verifiable Digital Health Certificate.   In order to sign this content, an Issuer should either itself be a Document Signer or utilize a Document Signer service, as authorized by the jurisdicitonal policy.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/KeyMasterRepresentative"
+      },
+      "name" : "Key Master Representative",
+      "description" : "The individual responsible for a GDHCN Participant's Public Key Infrastructure, including generating key pairs and managing the connections to the Trust Network Gateway (Letter of Application; Framework IX). Holds the GPG key named in the Letter.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/LegalRepresentative"
+      },
+      "name" : "Legal Representative",
+      "description" : "The Legal Representative of a GDHCN Participant, named in the Letter of Application (Framework IX). May meet WHO in person to convey the Letter, and receives notice of amendments (Framework XI.2).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/OfficialDelegate"
+      },
+      "name" : "Official Delegate",
+      "description" : "An official delegate of a GDHCN Participant at the World Health Assembly or another meeting of WHO's governing bodies, who may convey the Letter of Application in a face-to-face meeting (Framework IX).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/OnboardingTeam"
+      },
+      "name" : "Onboarding Team",
+      "description" : "The onboarding team of the Trust Network Gateway's service provider, which checks a Participant's test results and confirms production readiness (onboarding steps [64]-[77]).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/OperationsTeam"
+      },
+      "name" : "Operations Team",
+      "description" : "The operations team of the Trust Network Gateway's service provider, which registers a Participant's key material and verifies its pull requests (onboarding steps [30]-[50]).",
       "isExample" : false
     },
     {
@@ -7417,10 +7585,68 @@
         "valueString" : "ActorDefinition"
       }],
       "reference" : {
+        "reference" : "ActorDefinition/TechnicalRepresentative"
+      },
+      "name" : "Technical Representative",
+      "description" : "The Technical Representative of a GDHCN Participant, named in the Letter of Application (Framework IX). Connects the Participant's systems to the Trust Network Gateway and runs the onboarding tests.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/TrustDomain-DDCC"
+      },
+      "name" : "Trust Domain: DDCC",
+      "description" : "The Digital Documentation of COVID-19 Certificates (DDCC) Trust Domain, from Annex I of the GDHCN Administrative and Operational Framework 1.2.",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/trust/StructureDefinition/TrustDomain"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/TrustDomain-IPS-PILGRIMAGE"
+      },
+      "name" : "Trust Domain: IPS for Pilgrimage",
+      "description" : "The IPS for Pilgrimage Trust Domain. No annex yet: the GDHCN Administrative and Operational Framework 1.2 has no annex for it, so this is drafted from the IPS Pilgrimage IG.",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/trust/StructureDefinition/TrustDomain"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
         "reference" : "ActorDefinition/TrustNetworkAnchor"
       },
       "name" : "Trust Network Anchor",
       "description" : "Trust Anchor which receives and distributes PKI-material within a Trust Network",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/TrustNetworkGateway"
+      },
+      "name" : "Trust Network Gateway",
+      "description" : "The Trust Network Gateway through which the GDHCN is operationalized (Framework V.1). It whitelists a Participant's certificates and accepts its connections.",
       "isExample" : false
     },
     {
@@ -7445,6 +7671,18 @@
       },
       "name" : "Utilize a Verifiable Digital Health Certificate",
       "description" : "Utilize a Verifiable Digital Health Certificate that was provided by a Holder",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/WHOCountryRepresentative"
+      },
+      "name" : "WHO Country Representative",
+      "description" : "The WHO Country Representative, or the WHO Country Office, who may meet a GDHCN Participant's representative in person and send the Letter of Application by diplomatic pouch to WHO Headquarters (Framework IX).",
       "isExample" : false
     },
     {

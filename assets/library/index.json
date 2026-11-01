@@ -3105,6 +3105,62 @@
       "view": "/en/cat-harness/library/folio-assistant-core/dspace-7-rest-contract/"
     },
     {
+      "id": "gdhcn-administrative-and-operational-framework",
+      "instance": "smart-trust",
+      "dir": "library/gdhcn-administrative-and-operational-framework",
+      "title": "GDHCN Administrative and Operational Framework",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "gdhcn-administrative-and-operational-framework",
+      "sourceFile": "GDHCN_Administrative_and_Operational_Framework.pdf",
+      "sourceSha256": "005bb7b0faaeec35854ab5466a1c0773c7ed488db82b495e55b4c536ce37b0be",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 27,
+      "blocks": 27,
+      "images": 0,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 16,
+      "words": 5113,
+      "chars": 36316,
+      "bytes": 137486,
+      "upload": "absent",
+      "uploadInstance": "",
+      "readme": "https://github.com/litlfred/smart-trust/blob/main/library/gdhcn-administrative-and-operational-framework/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/smart-trust/gdhcn-administrative-and-operational-framework.png",
+        "src": "library/gdhcn-administrative-and-operational-framework/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "smart-trust",
+          "from": "catalogue/nodes/item-gdhcn-administrative-and-operational-framework.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 24,
+        "summarised": 0,
+        "backlog": 24,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 24,
+        "unreadable": 0,
+        "empty": 3
+      },
+      "view": "/en/cat-harness/library/smart-trust/gdhcn-administrative-and-operational-framework/"
+    },
+    {
       "id": "mehl-2021-who-smart-guidelines",
       "instance": "smart-base",
       "dir": "smart-base/library/mehl-2021-who-smart-guidelines",
@@ -3289,9 +3345,9 @@
       "pageEnd": 182,
       "words": 69252,
       "chars": 473627,
-      "bytes": 13316408,
-      "upload": "absent",
-      "uploadInstance": "",
+      "bytes": 13331188,
+      "upload": "match",
+      "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240010567-eng/README.md",
       "referencedBy": [
         {
@@ -3352,7 +3408,7 @@
       "pageEnd": 53,
       "words": 18813,
       "chars": 135641,
-      "bytes": 2242430,
+      "bytes": 2262440,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240016514-eng/README.md",
@@ -3379,6 +3435,63 @@
       "view": "/en/cat-harness/library/who-iris/9789240016514-eng/"
     },
     {
+      "id": "9789240081291-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789240081291-eng",
+      "title": "National health workforce accounts: a handbook",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789240081291-eng",
+      "sourceFile": "9789240081291-eng.pdf",
+      "sourceSha256": "dbdfa54acd2c3b486b67aeec8f512ba9538a03ca69baff173327eba90de7a199",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 63,
+      "blocks": 85,
+      "images": 23,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 132,
+      "words": 31920,
+      "chars": 228065,
+      "bytes": 2508303,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240081291-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789240081291-eng.png",
+        "src": "who-iris/library/9789240081291-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789240081291-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 61,
+        "summarised": 61,
+        "backlog": 0,
+        "draft": 61,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 2
+      },
+      "view": "/en/cat-harness/library/who-iris/9789240081291-eng/",
+      "viewable": "pdf"
+    },
+    {
       "id": "9789240081949-eng",
       "instance": "who-iris",
       "dir": "who-iris/library/9789240081949-eng",
@@ -3403,9 +3516,9 @@
       "pageEnd": 66,
       "words": 22088,
       "chars": 166943,
-      "bytes": 718973,
-      "upload": "absent",
-      "uploadInstance": "",
+      "bytes": 719458,
+      "upload": "match",
+      "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240081949-eng/README.md",
       "referencedBy": [
         {
@@ -3440,6 +3553,7 @@
       "instance": "who-iris",
       "dir": "who-iris/library/9789240093362-eng",
       "title": "Digital transformation handbook for primary health care",
+      "extractedTitle": "Digital transformation handbook for primary health care: optimizing person-centred point of service systems",
       "provenance": "ingested",
       "rung": "paged",
       "docId": "9789240093362-eng",
@@ -3460,7 +3574,7 @@
       "pageEnd": 98,
       "words": 46772,
       "chars": 315129,
-      "bytes": 4609804,
+      "bytes": 4610234,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240093362-eng/README.md",
@@ -3529,10 +3643,15 @@
       "pageEnd": 100,
       "words": 36176,
       "chars": 249593,
-      "bytes": 4048245,
+      "bytes": 4056719,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240099456-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789240099456-eng.png",
+        "src": "who-iris/library/9789240099456-eng-cover.png",
+        "source": "cover"
+      },
       "referencedBy": [
         {
           "kind": "catalogue",
@@ -3560,7 +3679,6 @@
       "instance": "who-iris",
       "dir": "who-iris/library/9789240101197-eng",
       "title": "Digital transformation handbook for health supply chain architecture",
-      "extractedTitle": "9789240101197-eng",
       "provenance": "ingested",
       "rung": "paged",
       "docId": "9789240101197-eng",
@@ -3581,7 +3699,7 @@
       "pageEnd": 78,
       "words": 23549,
       "chars": 176393,
-      "bytes": 5085300,
+      "bytes": 6318269,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/README.md",
@@ -3630,7 +3748,6 @@
       "instance": "who-iris",
       "dir": "who-iris/library/9789240116191-eng",
       "title": "Digital transformation handbook for health product catalogue",
-      "extractedTitle": "9789240116191-eng",
       "provenance": "ingested",
       "rung": "paged",
       "docId": "9789240116191-eng",
@@ -3651,7 +3768,7 @@
       "pageEnd": 62,
       "words": 15526,
       "chars": 115271,
-      "bytes": 2471985,
+      "bytes": 2490371,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240116191-eng/README.md",
@@ -3720,9 +3837,9 @@
       "pageEnd": 72,
       "words": 21679,
       "chars": 161635,
-      "bytes": 1613249,
-      "upload": "absent",
-      "uploadInstance": "",
+      "bytes": 1613395,
+      "upload": "match",
+      "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240120747-eng/README.md",
       "referencedBy": [
         {
@@ -3745,6 +3862,63 @@
         "empty": 0
       },
       "view": "/en/cat-harness/library/who-iris/9789240120747-eng/"
+    },
+    {
+      "id": "9789240122925-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789240122925-eng",
+      "title": "National health workforce accounts: health workforce levels and trends 2026",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789240122925-eng",
+      "sourceFile": "9789240122925-eng.pdf",
+      "sourceSha256": "3f25fc38dd70fa25941f0107d125f4a9cd71cb53bc5e0841d939ece1eaed8e8f",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 27,
+      "blocks": 28,
+      "images": 6,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 72,
+      "words": 17086,
+      "chars": 115116,
+      "bytes": 1365937,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240122925-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789240122925-eng.png",
+        "src": "who-iris/library/9789240122925-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789240122925-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 27,
+        "summarised": 27,
+        "backlog": 0,
+        "draft": 27,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/9789240122925-eng/",
+      "viewable": "pdf"
     },
     {
       "id": "9789241509510-eng",
@@ -3771,9 +3945,9 @@
       "pageEnd": 106,
       "words": 38273,
       "chars": 265464,
-      "bytes": 14716840,
-      "upload": "absent",
-      "uploadInstance": "",
+      "bytes": 14717045,
+      "upload": "match",
+      "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241509510-eng/README.md",
       "referencedBy": [
         {
@@ -3822,9 +3996,9 @@
       "pageEnd": 144,
       "words": 69899,
       "chars": 444739,
-      "bytes": 14893979,
-      "upload": "absent",
-      "uploadInstance": "",
+      "bytes": 14894270,
+      "upload": "match",
+      "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241511766-eng/README.md",
       "referencedBy": [
         {
@@ -3847,6 +4021,120 @@
         "empty": 0
       },
       "view": "/en/cat-harness/library/who-iris/9789241511766-eng/"
+    },
+    {
+      "id": "9789241513111-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789241513111-eng",
+      "title": "National health workforce accounts: a handbook",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789241513111-eng",
+      "sourceFile": "9789241513111-eng.pdf",
+      "sourceSha256": "1bbf37171b242fa5270b4b3a7db2bce64b87a4e29d04ba294d48ab4a5695f590",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 115,
+      "blocks": 115,
+      "images": 2,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 168,
+      "words": 33503,
+      "chars": 246412,
+      "bytes": 1919081,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241513111-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789241513111-eng.png",
+        "src": "who-iris/library/9789241513111-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789241513111-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 114,
+        "summarised": 114,
+        "backlog": 0,
+        "draft": 114,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 1
+      },
+      "view": "/en/cat-harness/library/who-iris/9789241513111-eng/",
+      "viewable": "pdf"
+    },
+    {
+      "id": "9789241514446-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789241514446-eng",
+      "title": "National health workforce accounts: implementation guide",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789241514446-eng",
+      "sourceFile": "9789241514446-eng.pdf",
+      "sourceSha256": "400283544d37fc3ad3169e4cb3119f1373a753472fe5fc4e8ae78e97d6c6a86c",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 25,
+      "blocks": 25,
+      "images": 1,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 40,
+      "words": 8603,
+      "chars": 58526,
+      "bytes": 363589,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241514446-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789241514446-eng.png",
+        "src": "who-iris/library/9789241514446-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789241514446-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 25,
+        "summarised": 25,
+        "backlog": 0,
+        "draft": 25,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/9789241514446-eng/",
+      "viewable": "pdf"
     },
     {
       "id": "9789241548960-eng",
@@ -3873,7 +4161,7 @@
       "pageEnd": 179,
       "words": 54440,
       "chars": 366442,
-      "bytes": 1588470,
+      "bytes": 1589587,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241548960-eng/README.md",
@@ -3936,7 +4224,7 @@
       "pageEnd": 172,
       "words": 81822,
       "chars": 572052,
-      "bytes": 686504,
+      "bytes": 703501,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241549912-eng/README.md",
@@ -3966,8 +4254,7 @@
       "id": "9789241549912-webannexes-eng",
       "instance": "who-iris",
       "dir": "who-iris/library/9789241549912-webannexes-eng",
-      "title": "WHO recommendations on antenatal care for a positive pregnancy experience: web annexes",
-      "extractedTitle": "WHO recommendations on antenatal care for a positive pregnancy experience: web annexes *",
+      "title": "WHO recommendations on antenatal care for a positive pregnancy experience: web annexes *",
       "provenance": "ingested",
       "rung": "paged",
       "docId": "9789241549912-webannexes-eng",
@@ -3988,18 +4275,11 @@
       "pageEnd": 24,
       "words": 8140,
       "chars": 61673,
-      "bytes": 158363,
+      "bytes": 177527,
       "upload": "absent",
       "uploadInstance": "",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241549912-webannexes-eng/README.md",
-      "referencedBy": [
-        {
-          "kind": "catalogue",
-          "instance": "who-iris",
-          "from": "who-iris/catalogue/nodes/item-9789241549912-webannexes-eng.json",
-          "count": 1
-        }
-      ],
+      "referencedBy": [],
       "summaries": {
         "prose": 24,
         "summarised": 24,
@@ -4018,8 +4298,7 @@
       "id": "9789241549912-websupplement-eng",
       "instance": "who-iris",
       "dir": "who-iris/library/9789241549912-websupplement-eng",
-      "title": "Web supplement WHO recommendations on antenatal care for a positive pregnancy experience: evidence base",
-      "extractedTitle": "Web supplement WHO recommendations on antenatal care for a positive pregnancy experience: evidence base*",
+      "title": "Web supplement WHO recommendations on antenatal care for a positive pregnancy experience: evidence base*",
       "provenance": "ingested",
       "rung": "paged",
       "docId": "9789241549912-websupplement-eng",
@@ -4040,18 +4319,11 @@
       "pageEnd": 129,
       "words": 31064,
       "chars": 224491,
-      "bytes": 763281,
+      "bytes": 828047,
       "upload": "absent",
       "uploadInstance": "",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241549912-websupplement-eng/README.md",
-      "referencedBy": [
-        {
-          "kind": "catalogue",
-          "instance": "who-iris",
-          "from": "who-iris/catalogue/nodes/item-9789241549912-websupplement-eng.json",
-          "count": 1
-        }
-      ],
+      "referencedBy": [],
       "summaries": {
         "prose": 123,
         "summarised": 123,
@@ -4065,6 +4337,63 @@
         "empty": 6
       },
       "view": "/en/cat-harness/library/who-iris/9789241549912-websupplement-eng/"
+    },
+    {
+      "id": "b0426",
+      "instance": "who-iris",
+      "dir": "who-iris/library/b0426",
+      "title": "National health accounts",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "b0426",
+      "sourceFile": "B0426.pdf",
+      "sourceSha256": "94375d9b64a831696429237d19b99efc1139c7544f185e294caebe872b090e67",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 18,
+      "blocks": 18,
+      "images": 1,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 20,
+      "words": 3705,
+      "chars": 26673,
+      "bytes": 226564,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/b0426/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/b0426.png",
+        "src": "who-iris/library/b0426/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-b0426.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 18,
+        "summarised": 18,
+        "backlog": 0,
+        "draft": 18,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/b0426/",
+      "viewable": "pdf"
     },
     {
       "id": "who-2019-ncov-digital-certificates-vaccination-20211-eng",
@@ -4091,7 +4420,7 @@
       "pageEnd": 99,
       "words": 33990,
       "chars": 232458,
-      "bytes": 5314362,
+      "bytes": 5346452,
       "upload": "absent",
       "uploadInstance": "",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/who-2019-ncov-digital-certificates-vaccination-20211-eng/README.md",
@@ -4118,6 +4447,63 @@
       "view": "/en/cat-harness/library/who-iris/who-2019-ncov-digital-certificates-vaccination-20211-eng/"
     },
     {
+      "id": "who-his-hwf-nhwa-20171-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/who-his-hwf-nhwa-20171-eng",
+      "title": "Understanding national health workforce accounts",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "who-his-hwf-nhwa-20171-eng",
+      "sourceFile": "WHO-HIS-HWF-NHWA-2017.1-eng.pdf",
+      "sourceSha256": "5458c98d9be05b1dd6cd9f2f62e3861d78b4e4cf99f10400d562b5b51f3c4aac",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 16,
+      "blocks": 19,
+      "images": 6,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 16,
+      "words": 1365,
+      "chars": 9568,
+      "bytes": 2026999,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/who-his-hwf-nhwa-20171-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/who-his-hwf-nhwa-20171-eng.png",
+        "src": "who-iris/library/who-his-hwf-nhwa-20171-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-who-his-hwf-nhwa-20171-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 16,
+        "summarised": 16,
+        "backlog": 0,
+        "draft": 16,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/who-his-hwf-nhwa-20171-eng/",
+      "viewable": "pdf"
+    },
+    {
       "id": "who-pub-tps-931",
       "instance": "who-iris",
       "dir": "who-iris/library/who-pub-tps-931",
@@ -4142,7 +4528,7 @@
       "pageEnd": 121,
       "words": 25714,
       "chars": 175822,
-      "bytes": 819058,
+      "bytes": 819102,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/who-pub-tps-931/README.md",
@@ -4205,9 +4591,9 @@
       "pageEnd": 20,
       "words": 11744,
       "chars": 87671,
-      "bytes": 165467,
-      "upload": "absent",
-      "uploadInstance": "",
+      "bytes": 165487,
+      "upload": "match",
+      "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/who-rhr-1806-eng/README.md",
       "referencedBy": [
         {
@@ -4262,7 +4648,7 @@
       "pageEnd": 33,
       "words": 3405,
       "chars": 20063,
-      "bytes": 4356007,
+      "bytes": 4355935,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/wpr-rdo-2020-003-eng/README.md",
@@ -4327,6 +4713,18 @@
       "declaredFiles": 0
     },
     {
+      "file": "9789240010567-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240010567-eng",
+      "bytes": 1037,
+      "ext": "",
+      "ingestedBy": "9789240010567-eng",
+      "docId": "9789240010567-eng",
+      "title": "Digital implementation investment guide (DIIG): integrating digital interventions into health programmes",
+      "declaredFiles": 1
+    },
+    {
       "file": "9789240016514-eng",
       "kind": "intake",
       "instance": "who-iris",
@@ -4351,6 +4749,30 @@
       "declaredFiles": 1
     },
     {
+      "file": "9789240081291-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240081291-eng",
+      "bytes": 5817492,
+      "ext": "",
+      "ingestedBy": "9789240081291-eng",
+      "docId": "9789240081291-eng",
+      "title": "National health workforce accounts: a handbook",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789240081949-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240081949-eng",
+      "bytes": 1037,
+      "ext": "",
+      "ingestedBy": "9789240081949-eng",
+      "docId": "9789240081949-eng",
+      "title": "Classification of digital interventions, services and applications in health: a shared language to describe the uses of digital technology for health",
+      "declaredFiles": 1
+    },
+    {
       "file": "9789240085138-eng",
       "kind": "intake",
       "instance": "who-iris",
@@ -4367,7 +4789,7 @@
       "kind": "intake",
       "instance": "who-iris",
       "path": "who-iris/uploads/9789240093362-eng",
-      "bytes": 2787753,
+      "bytes": 2788704,
       "ext": "",
       "ingestedBy": "9789240093362-eng",
       "docId": "9789240093362-eng",
@@ -4391,7 +4813,7 @@
       "kind": "intake",
       "instance": "who-iris",
       "path": "who-iris/uploads/9789240101197-eng",
-      "bytes": 2113121,
+      "bytes": 2113287,
       "ext": "",
       "ingestedBy": "9789240101197-eng",
       "docId": "9789240101197-eng",
@@ -4403,11 +4825,35 @@
       "kind": "intake",
       "instance": "who-iris",
       "path": "who-iris/uploads/9789240116191-eng",
-      "bytes": 1366617,
+      "bytes": 1366783,
       "ext": "",
       "ingestedBy": "9789240116191-eng",
       "docId": "9789240116191-eng",
       "title": "Digital transformation handbook for health product catalogue",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789240120747-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240120747-eng",
+      "bytes": 1037,
+      "ext": "",
+      "ingestedBy": "9789240120747-eng",
+      "docId": "9789240120747-eng",
+      "title": "Digital transformation handbook for reporting substandard and falsified medical products",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789240122925-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240122925-eng",
+      "bytes": 3758547,
+      "ext": "",
+      "ingestedBy": "9789240122925-eng",
+      "docId": "9789240122925-eng",
+      "title": "National health workforce accounts: health workforce levels and trends 2026",
       "declaredFiles": 1
     },
     {
@@ -4420,6 +4866,54 @@
       "ingestedBy": "",
       "docId": "9789240124233-eng",
       "title": "Consolidated HIV guidelines: service delivery",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789241509510-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789241509510-eng",
+      "bytes": 1010,
+      "ext": "",
+      "ingestedBy": "9789241509510-eng",
+      "docId": "9789241509510-eng",
+      "title": "The MAPS Toolkit: mHealth Assessment and Planning for Scale",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789241511766-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789241511766-eng",
+      "bytes": 1037,
+      "ext": "",
+      "ingestedBy": "9789241511766-eng",
+      "docId": "9789241511766-eng",
+      "title": "Monitoring and Evaluating Digital Health Interventions: A practical guide to conducting research and assessment",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789241513111-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789241513111-eng",
+      "bytes": 2883990,
+      "ext": "",
+      "ingestedBy": "9789241513111-eng",
+      "docId": "9789241513111-eng",
+      "title": "National health workforce accounts: a handbook",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789241514446-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789241514446-eng",
+      "bytes": 3164533,
+      "ext": "",
+      "ingestedBy": "9789241514446-eng",
+      "docId": "9789241514446-eng",
+      "title": "National health workforce accounts: implementation guide",
       "declaredFiles": 1
     },
     {
@@ -4463,12 +4957,12 @@
       "kind": "intake",
       "instance": "who-iris",
       "path": "who-iris/uploads/9789241549912-eng",
-      "bytes": 1167,
+      "bytes": 1639,
       "ext": "",
       "ingestedBy": "9789241549912-eng",
       "docId": "9789241549912-eng",
       "title": "WHO recommendations on antenatal care for a positive pregnancy experience",
-      "declaredFiles": 1
+      "declaredFiles": 3
     },
     {
       "file": "9789241550581-eng",
@@ -4480,6 +4974,18 @@
       "ingestedBy": "",
       "docId": "9789241550581-eng",
       "title": "Consolidated guidelines on HIV testing services, 2019",
+      "declaredFiles": 1
+    },
+    {
+      "file": "b0426",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/b0426",
+      "bytes": 150783,
+      "ext": "",
+      "ingestedBy": "b0426",
+      "docId": "b0426",
+      "title": "National health accounts",
       "declaredFiles": 1
     },
     {
@@ -4499,7 +5005,7 @@
       "kind": "file",
       "instance": "who-iris",
       "path": "who-iris/uploads/README.md",
-      "bytes": 5206,
+      "bytes": 6230,
       "ext": "md",
       "ingestedBy": "isaitb-2026-interoperability-test-bed-readme",
       "docId": "",
@@ -4831,6 +5337,18 @@
       "declaredFiles": 1
     },
     {
+      "file": "who-his-hwf-nhwa-20171-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/who-his-hwf-nhwa-20171-eng",
+      "bytes": 3185715,
+      "ext": "",
+      "ingestedBy": "who-his-hwf-nhwa-20171-eng",
+      "docId": "who-his-hwf-nhwa-20171-eng",
+      "title": "Understanding national health workforce accounts",
+      "declaredFiles": 1
+    },
+    {
       "file": "who-pub-tps-931",
       "kind": "intake",
       "instance": "who-iris",
@@ -4841,6 +5359,18 @@
       "docId": "who-pub-tps-931",
       "title": "WHO editorial style manual",
       "declaredFiles": 2
+    },
+    {
+      "file": "who-rhr-1806-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/who-rhr-1806-eng",
+      "bytes": 1034,
+      "ext": "",
+      "ingestedBy": "who-rhr-1806-eng",
+      "docId": "who-rhr-1806-eng",
+      "title": "Classification of Digital Health Interventions v1.0",
+      "declaredFiles": 1
     },
     {
       "file": "wpr-rdo-2020-003-eng",
@@ -4873,8 +5403,8 @@
     {
       "instance": "who-iris",
       "dir": "who-iris/uploads",
-      "total": 44,
-      "ingested": 10,
+      "total": 56,
+      "ingested": 22,
       "uningested": 34
     }
   ],

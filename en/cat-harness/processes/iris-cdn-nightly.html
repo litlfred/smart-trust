@@ -628,7 +628,7 @@
   all, and a fetch for that would put a spinner in front of a badge.
 -->
 <!-- NOT MOVED: same reason as fa-site-links above. -->
-<script type="application/json" id="fa-declared-kinds">["block-kinds","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
+<script type="application/json" id="fa-declared-kinds">["block-kinds","catalogue","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","references","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
 <!--
   FIRST of the deferred scripts: it fills `#fa-navbar-row` and
   `meta[name=fa-tiles]` before any reader runs (bean `gp2f`).
@@ -848,7 +848,7 @@
 
 <p><code class="language-plaintext highlighter-rouge">Process_IrisCdnNightly</code> · strict (defaulted) · 9 step(s)</p>
 
-<p>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (owner, 2026-10-30: full rebuild nightly; sorted output keeps unchanged partitions byte-identical), and publish a signed release. A night with no changes publishes nothing and commits nothing.</p>
+<p>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (sorted output keeps unchanged partitions byte-identical), and publish a signed release. A night with no changes publishes nothing and commits nothing.</p>
 
 <p><em>No rendered diagram — run <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</em></p>
 <h2 id="how-it-connects">
@@ -967,7 +967,7 @@
     <tr>
       <td><strong>Commit the advanced cursor</strong><br /><code class="language-plaintext highlighter-rouge">Task_AdvanceCursor</code></td>
       <td>Cloudflare git (Artifacts)</td>
-      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">iris-rest-feed</code></td>
       <td>Only after the release verified. A failed night leaves the cursor where it was, so the next night re-reads the same window.</td>
     </tr>
     <tr>

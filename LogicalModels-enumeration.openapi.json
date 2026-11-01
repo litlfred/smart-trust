@@ -20,7 +20,7 @@
                 },
                 "example": {
                   "type": "logical_model",
-                  "count": 5,
+                  "count": 7,
                   "schemas": [
                     {
                       "filename": "StructureDefinition-COSEHeader.schema.json",
@@ -61,6 +61,22 @@
                       "description": "Logical Model for Information on the trusted list and its issuing scheme",
                       "url": "./StructureDefinition-SchemeInformation.schema.json",
                       "propertyCount": 21
+                    },
+                    {
+                      "filename": "StructureDefinition-TrustDomain.schema.json",
+                      "id": "http://smart.who.int/trust/StructureDefinition-TrustDomain.schema.json",
+                      "title": "GDHCN Trust Domain",
+                      "description": "A GDHCN Trust Domain. Its parts follow the definition in Section II of the GDHCN Administrative and Operational Framework, which says a Trust Domain consists of:\n\n- defined use cases and business processes related to the utilization of Verifiable Digital Health Certificates;\n- the open, interoperable technical specifications that identify or define the applicable Trusted Services and Verifiable Digital Health Certificates; and\n- a set of policy and regulatory standards describing expected behavior of GDHCN Participants.\n\nA Trust Domain also names its terms of use. This is the ValueSet of policies a participant may say it acts under, for example in the `termsOfUse` of a VHL Receiver's Verifiable Credential (see [TrustDomainPolicy](StructureDefinition-TrustDomainPolicy.html)).",
+                      "url": "./StructureDefinition-TrustDomain.schema.json",
+                      "propertyCount": 19
+                    },
+                    {
+                      "filename": "StructureDefinition-TrustDomainPolicy.schema.json",
+                      "id": "http://smart.who.int/trust/StructureDefinition-TrustDomainPolicy.schema.json",
+                      "title": "GDHCN Trust Domain policy (VC termsOfUse entry)",
+                      "description": "One entry of a W3C Verifiable Credentials Data Model 2.0 `termsOfUse` (section 5.5) naming a policy of a GDHCN Trust Domain that the credential's issuer acts under. One example is a VHL Receiver's self-issued credential under the Verifiable Credential Option of IHE ITI VHL ITI-YY5.\n\nVC 2.0 requires each `termsOfUse` value to have a `type` and allows an `id`. The `type` is this logical model's canonical URL. The `id` is the policy: a code in a Trust Domain's terms-of-use ValueSet, written as `{CodeSystem canonical}#{code}`. A verifier finds the Trust Domain from the ValueSet that holds the policy.\n\n```json\n\"termsOfUse\": [{\n  \"type\": \"http://smart.who.int/trust/StructureDefinition/TrustDomainPolicy\",\n  \"id\": \"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT#CONSENT-KSA\"\n}]\n```",
+                      "url": "./StructureDefinition-TrustDomainPolicy.schema.json",
+                      "propertyCount": 3
                     }
                   ]
                 }
@@ -139,7 +155,7 @@
         ],
         "example": {
           "type": "logical_model",
-          "count": 5,
+          "count": 7,
           "schemas": [
             {
               "filename": "StructureDefinition-COSEHeader.schema.json",
@@ -180,6 +196,22 @@
               "description": "Logical Model for Information on the trusted list and its issuing scheme",
               "url": "./StructureDefinition-SchemeInformation.schema.json",
               "propertyCount": 21
+            },
+            {
+              "filename": "StructureDefinition-TrustDomain.schema.json",
+              "id": "http://smart.who.int/trust/StructureDefinition-TrustDomain.schema.json",
+              "title": "GDHCN Trust Domain",
+              "description": "A GDHCN Trust Domain. Its parts follow the definition in Section II of the GDHCN Administrative and Operational Framework, which says a Trust Domain consists of:\n\n- defined use cases and business processes related to the utilization of Verifiable Digital Health Certificates;\n- the open, interoperable technical specifications that identify or define the applicable Trusted Services and Verifiable Digital Health Certificates; and\n- a set of policy and regulatory standards describing expected behavior of GDHCN Participants.\n\nA Trust Domain also names its terms of use. This is the ValueSet of policies a participant may say it acts under, for example in the `termsOfUse` of a VHL Receiver's Verifiable Credential (see [TrustDomainPolicy](StructureDefinition-TrustDomainPolicy.html)).",
+              "url": "./StructureDefinition-TrustDomain.schema.json",
+              "propertyCount": 19
+            },
+            {
+              "filename": "StructureDefinition-TrustDomainPolicy.schema.json",
+              "id": "http://smart.who.int/trust/StructureDefinition-TrustDomainPolicy.schema.json",
+              "title": "GDHCN Trust Domain policy (VC termsOfUse entry)",
+              "description": "One entry of a W3C Verifiable Credentials Data Model 2.0 `termsOfUse` (section 5.5) naming a policy of a GDHCN Trust Domain that the credential's issuer acts under. One example is a VHL Receiver's self-issued credential under the Verifiable Credential Option of IHE ITI VHL ITI-YY5.\n\nVC 2.0 requires each `termsOfUse` value to have a `type` and allows an `id`. The `type` is this logical model's canonical URL. The `id` is the policy: a code in a Trust Domain's terms-of-use ValueSet, written as `{CodeSystem canonical}#{code}`. A verifier finds the Trust Domain from the ValueSet that holds the policy.\n\n```json\n\"termsOfUse\": [{\n  \"type\": \"http://smart.who.int/trust/StructureDefinition/TrustDomainPolicy\",\n  \"id\": \"http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT#CONSENT-KSA\"\n}]\n```",
+              "url": "./StructureDefinition-TrustDomainPolicy.schema.json",
+              "propertyCount": 3
             }
           ]
         }

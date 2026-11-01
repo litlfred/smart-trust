@@ -670,7 +670,7 @@ The TNG may be operated in front with a network component (Load Balancer, <a hre
 
 <h5 id="who-trust-network-gateway-modifications">WHO Trust Network Gateway Modifications</h5>
 
-<p>In the last version of the TNG<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>. During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:</p>
+<p>In the last version of the TNG<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification <a href="#ref-w3c-did-core">[1]</a>. During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:</p>
 
 <ul>
   <li>Native DID Support for the Gateway’s Trustlists (DID Document Format) (optional)</li>
@@ -698,8 +698,14 @@ The TNG may be operated in front with a network component (Load Balancer, <a hre
 
 <hr />
 
+<h4 id="references">References</h4>
+
+<!-- references:begin style=bracket keys=w3c-did-core -->
+<p id="ref-w3c-did-core" data-ref="w3c-did-core">[1] W3C. <a href="https://www.w3.org/TR/did-core/">DID Core</a>.</p>
+<!-- references:end -->
+
 <p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/trust_network_gateway_architecture.md" data-repo="litlfred/smart-trust" href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/trust_network_gateway_architecture.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/trust_network_gateway_architecture.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/trust_network_gateway_architecture.md", "lines": [{"t":"Terminology","l":1},{"t":"Introduction","l":16},{"t":"Trusted Party vs. National Backend","l":27},{"t":"Gateway Design Vision","l":30},{"t":"Use Cases","l":43},{"t":"Bilateral Onboarding","l":45},{"t":"Peer to Peer Exchange","l":51},{"t":"Primary-Secondary Exchange","l":56},{"t":"Combined Sources Exchange","l":61},{"t":"Trust Mediator","l":66},{"t":"Architecture Overview","l":75},{"t":"Data exchanged by TNG","l":79},{"t":"Metadata Exchange","l":81},{"t":"Public Key Exchange","l":91},{"t":"Reference Exchange","l":94},{"t":"Issuer Exchange","l":97},{"t":"Solution Concept","l":100},{"t":"Connection Establishment to the Gateway","l":107},{"t":"Options for Bridging to other Systems","l":110},{"t":"Building Blocks","l":117},{"t":"Trust Model","l":122},{"t":"Overview","l":124},{"t":"SCA & DSC","l":127},{"t":"CMS Usage","l":132},{"t":"Enhancement","l":137},{"t":"Raw Public Keys","l":148},{"t":"DSC Limitation","l":157},{"t":"Federator Architecture","l":178},{"t":"Overview","l":179},{"t":"Black-box View","l":182},{"t":"Whitebox View","l":186},{"t":"Data Model","l":190},{"t":"Endpoints","l":219},{"t":"Download Process","l":244},{"t":"Architecture Modifications & Changes","l":250},{"t":"EU DCC Gateway Modifications (Spec)","l":252},{"t":"Data Tables","l":253},{"t":"SignerInformation Upload","l":258},{"t":"Trusted Certificate Upload","l":261},{"t":"Health Check","l":264},{"t":"Route Profiles","l":267},{"t":"Value Set and Business Rules Endpoints","l":270},{"t":"Trusted References","l":277},{"t":"Trusted Issuer","l":294},{"t":"Deployment","l":313},{"t":"WHO Trust Network Gateway Modifications","l":324},{"t":"Technical Changes","l":334},{"t":"Azure Architecture & Deployment","l":340},{"t":"Onboarding Process Concept","l":347}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/trust_network_gateway_architecture.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/trust_network_gateway_architecture.md", "lines": [{"t":"Terminology","l":1},{"t":"Introduction","l":16},{"t":"Trusted Party vs. National Backend","l":27},{"t":"Gateway Design Vision","l":30},{"t":"Use Cases","l":43},{"t":"Bilateral Onboarding","l":45},{"t":"Peer to Peer Exchange","l":51},{"t":"Primary-Secondary Exchange","l":56},{"t":"Combined Sources Exchange","l":61},{"t":"Trust Mediator","l":66},{"t":"Architecture Overview","l":75},{"t":"Data exchanged by TNG","l":79},{"t":"Metadata Exchange","l":81},{"t":"Public Key Exchange","l":91},{"t":"Reference Exchange","l":94},{"t":"Issuer Exchange","l":97},{"t":"Solution Concept","l":100},{"t":"Connection Establishment to the Gateway","l":107},{"t":"Options for Bridging to other Systems","l":110},{"t":"Building Blocks","l":117},{"t":"Trust Model","l":122},{"t":"Overview","l":124},{"t":"SCA & DSC","l":127},{"t":"CMS Usage","l":132},{"t":"Enhancement","l":137},{"t":"Raw Public Keys","l":148},{"t":"DSC Limitation","l":157},{"t":"Federator Architecture","l":178},{"t":"Overview","l":179},{"t":"Black-box View","l":182},{"t":"Whitebox View","l":186},{"t":"Data Model","l":190},{"t":"Endpoints","l":219},{"t":"Download Process","l":244},{"t":"Architecture Modifications & Changes","l":250},{"t":"EU DCC Gateway Modifications (Spec)","l":252},{"t":"Data Tables","l":253},{"t":"SignerInformation Upload","l":258},{"t":"Trusted Certificate Upload","l":261},{"t":"Health Check","l":264},{"t":"Route Profiles","l":267},{"t":"Value Set and Business Rules Endpoints","l":270},{"t":"Trusted References","l":277},{"t":"Trusted Issuer","l":294},{"t":"Deployment","l":313},{"t":"WHO Trust Network Gateway Modifications","l":324},{"t":"Technical Changes","l":334},{"t":"Azure Architecture & Deployment","l":340},{"t":"Onboarding Process Concept","l":347},{"t":"References","l":356}]}</script>
 
 <script src="./assets/ig-source-links.js"></script>
 
@@ -715,9 +721,6 @@ The TNG may be operated in front with a network component (Load Balancer, <a hre
   <ol>
     <li id="fn:1">
       <p>TNG Trust Network Gateway, formerly named Digital Documentation of Covid Certificates (DDCC) Gateway <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>DID Core,   https://www.w3.org/TR/did-core/ <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

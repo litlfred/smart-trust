@@ -628,7 +628,7 @@
   all, and a fetch for that would put a spinner in front of a badge.
 -->
 <!-- NOT MOVED: same reason as fa-site-links above. -->
-<script type="application/json" id="fa-declared-kinds">["block-kinds","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
+<script type="application/json" id="fa-declared-kinds">["block-kinds","catalogue","code","code-list","content-adapters","docs","document-kinds","fhir-artifact-index","glossary","ig-ast","ig-pages","l1-extraction","library","methodology","openapi","processes","qa","qa-checkers","references","scenarios","schemas","skills","themes","tools","translation-sources","typologies","validators"]</script>
 <!--
   FIRST of the deferred scripts: it fills `#fa-navbar-row` and
   `meta[name=fa-tiles]` before any reader runs (bean `gp2f`).
@@ -848,7 +848,7 @@
 
 <p><code class="language-plaintext highlighter-rouge">Process_IrisCdnInitialLoad</code> · strict (defaulted) · 10 step(s)</p>
 
-<p>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record, and every bitstream (owner, 2026-10-30: metadata plus PDFs). Run in batches with a checkpoint, so a run that stops resumes where it stopped and never re-fetches what it already holds. Ends in one signed, verified release.</p>
+<p>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record and every bitstream: metadata plus PDFs. Run in batches with a checkpoint, so a run that stops resumes where it stopped and never re-fetches what it already holds. Ends in one signed, verified release.</p>
 
 <p><em>No rendered diagram — run <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</em></p>
 <h2 id="how-it-connects">
@@ -886,7 +886,7 @@
   <tbody>
     <tr>
       <td>Owner</td>
-      <td><code class="language-plaintext highlighter-rouge">owner</code></td>
+      <td><code class="language-plaintext highlighter-rouge">iris-cdn-owner</code></td>
       <td>A person: decides scope, budget and the storage target. Nothing downstream widens what the owner approved.</td>
     </tr>
     <tr>
@@ -965,13 +965,13 @@
     <tr>
       <td><strong>Commit the batch checkpoint</strong><br /><code class="language-plaintext highlighter-rouge">Task_Checkpoint</code></td>
       <td>Cloudflare git (Artifacts)</td>
-      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">iris-cdn-exporter</code></td>
       <td>state/initial-load.json in the Cloudflare git repository. A restarted load reads it and skips finished batches.</td>
     </tr>
     <tr>
       <td><strong>Quarantine and report the mismatch</strong><br /><code class="language-plaintext highlighter-rouge">Task_Quarantine</code></td>
       <td>Build pipeline</td>
-      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">iris-cdn-exporter</code></td>
       <td>Not published, not retried silently. The record keeps its reference to IRIS and the bitstream is marked unknown.</td>
     </tr>
     <tr>

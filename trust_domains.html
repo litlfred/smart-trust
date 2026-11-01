@@ -33,6 +33,36 @@
 <p>The codes for the GDHCN Trust Domains are contained in the <a href="artifact/ValueSet-Domains.html">GDHCN Trust Domain Value Set</a>.
   </p>
 
+<h4 id="trust-domain-model">Trust Domain model</h4>
+
+<p>The <a href="GDHCN_Administrative_and_Operational_Framework.pdf">GDHCN Administrative and Operational Framework</a> is the legal source for Trust Domains. The <a href="artifact/StructureDefinition-TrustDomain.html">Trust Domain</a> logical model follows its three-part definition: use cases (modelled by DAK components), technical specifications, and policy and regulatory standards. A Trust Domain also names its <strong>terms of use</strong>, which is a ValueSet of the policies a participant may say it acts under.</p>
+
+<p>A participant names those policies in a Verifiable Credential with one <a href="artifact/StructureDefinition-TrustDomainPolicy.html">termsOfUse entry</a> per policy. For example, a VHL Receiver does this under the Verifiable Credential Option of IHE ITI VHL.</p>
+
+<p>The model allows each part to be empty, but an empty part is a QA error. So is a terms-of-use ValueSet that no BPMN business process uses.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><a href="artifact/StructureDefinition-TrustDomain.html">Trust Domain</a></th>
+      <th>Defined in</th>
+      <th>Terms of use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="artifact/Binary-TrustDomain-DDCC.html">DDCC</a></td>
+      <td>Framework, Annex I</td>
+      <td><a href="artifact/ValueSet-DDCCTermsOfUse.html">DDCC terms of use</a></td>
+    </tr>
+    <tr>
+      <td><a href="artifact/Binary-TrustDomain-IPS-PILGRIMAGE.html">IPS-PILGRIMAGE</a></td>
+      <td>No Framework annex yet; drafted from the <a href="http://smart.who.int/ips-pilgrimage">IPS Pilgrimage IG</a></td>
+      <td><a href="http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.CONSENT.html">IPS.HAJJ.CONSENT</a></td>
+    </tr>
+  </tbody>
+</table>
+
 <h4 id="digital-documentation-of-covid-19-certificates-ddcc">Digital Documentation of COVID-19 Certificates (DDCC)</h4>
 
 <p>The <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital Documentation of COVID-19 Certificates (DDCC)</a> published in August 2021 and similar guidance for test results (https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1) published in March 2022 serve as the reference for the associated <a href="https://smart.who.int/ddcc/">FHIR Implementation Guide</a>. This Implementation Guide (IG) acts as the computable representation of the core data elements in the published guidance, mapped to standard terminologies. These data models, in the form of FHIR logical models, and terminologies, in the form of FHIR value sets, are the basis for interoperability between the various credential formats. The IG provides FHIR Structure Maps and Concept Maps to define transformations between supported credential formats and the core data set, which allows business rules to execute against a common set of data elements.</p>
@@ -64,7 +94,7 @@
 <p>The  <a href="http://smart.who.int/ips-pilgrimage">IPS Pilgrimage</a> implementation guide includes a machine-readable representation of WHO guidelines for verifiable IPS during pilgrimage. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of IPS during pilgrimage usage scenario.</p>
 
 <p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/trust_domains.md" data-repo="litlfred/smart-trust" href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/trust_domains.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/trust_domains.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/trust_domains.md", "lines": [{"t":"Trust Domains","l":1},{"t":"Digital Documentation of COVID-19 Certificates (DDCC)","l":13},{"t":"Source specifications","l":32},{"t":"PH4H","l":37},{"t":"IPS Pilgrimage (IPS-Pilgrimage)","l":41}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/trust_domains.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/trust_domains.md", "lines": [{"t":"Trust Domains","l":1},{"t":"Trust Domain model","l":11},{"t":"Digital Documentation of COVID-19 Certificates (DDCC)","l":27},{"t":"Source specifications","l":46},{"t":"PH4H","l":51},{"t":"IPS Pilgrimage (IPS-Pilgrimage)","l":55}]}</script>
 
 <script src="./assets/ig-source-links.js"></script>
 
