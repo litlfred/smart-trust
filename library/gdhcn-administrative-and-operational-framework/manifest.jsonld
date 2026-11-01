@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://litlfred.github.io/smart-trust/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/"
+    }
+  ],
+  "@id": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
+  "@type": [
+    "cat-harness:SourceDocument"
+  ],
+  "title": "gdhcn-administrative-and-operational-framework",
+  "contains": [
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-front-matter",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-000",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-001",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-002",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-003",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-004",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-005",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-006",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-007",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-008",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-009",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-010",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-011",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-012",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-013",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-014",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-015",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-016",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-017",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-018",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-019",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-020",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-021",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-022",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-023",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-024",
+    "library/gdhcn-administrative-and-operational-framework/sections/sec-025"
+  ],
+  "provenance": "ingested",
+  "inSubgraph": "https://litlfred.github.io/folio-assistant/smart-trust/directory/library",
+  "meta": {
+    "doc_id": "gdhcn-administrative-and-operational-framework",
+    "title_source": "slug",
+    "source_file": "GDHCN_Administrative_and_Operational_Framework.pdf",
+    "source_sha256": "005bb7b0faaeec35854ab5466a1c0773c7ed488db82b495e55b4c536ce37b0be",
+    "pages": 16,
+    "arxiv": null,
+    "doi": null,
+    "document_class": null,
+    "extractor_validated": null,
+    "disposition": "ingested source material — attributed to its document, not folio content"
+  }
+}
