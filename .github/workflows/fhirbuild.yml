@@ -22,4 +22,6 @@ jobs:
   # index.config.json contentTypes.dak, and dak.json is gone. The called
   # workflow takes no inputs and no secrets.
   call_build:
-    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@49178a48d460bb53acf6e90d8c0aee3f0146d8f7 # main
+    # Pinned to smart-base main. The ref comment sits on its own line: stage-local's detectPublisher reads
+    # a `uses:` line only when nothing follows the ref (smart-trust#124).
+    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@49178a48d460bb53acf6e90d8c0aee3f0146d8f7
