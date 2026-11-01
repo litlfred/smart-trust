@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f524a7e98bde3b8f390f0163a81829b158ad11b2",
+          "ref": "9ce0140479ea97fbb327ce8517b5e9a1ff1bd0a5",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -30,9 +30,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "f524a7e98bde3b8f390f0163a81829b158ad11b2",
-              "evidence": "smart-base main (smart-base#224, owner's option B on who-iris#107) needs who-iris, so re-pinning smart-base for the 8lcl schemas move brings who-iris into this closure; mounted as smart-base mounts it. main tip f524a7e (IRIS assets #108, dark replica #110, navbar #112, direction #114 #118, CI #116). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z), extended 19:21Z 'merge window + 3hrs' (to ~22:38Z)."
+              "on": "2026-11-01",
+              "ref": "9ce0140479ea97fbb327ce8517b5e9a1ff1bd0a5",
+              "evidence": "litlfred 2026-11-01 19:49Z 'open sibling to fix who-iris bug' (who-iris#160: catalogue forwarding page with no <body> breaks staging previews; fixed on who-iris main by #133 bdadee3, smart-trust pinned f524a7e before it). Re-pin to who-iris main tip 9ce0140. Window: litlfred 2026-11-01 19:36Z '+6hr window' (to 2026-11-02 01:36Z)."
             }
           }
         }
