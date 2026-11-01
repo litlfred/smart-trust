@@ -1,0 +1,26 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "who-surveillance-ethics-2017",
+  "type": "book",
+  "title": "Guidelines on ethical issues in public health surveillance",
+  "publisher": "World Health Organization",
+  "publisher-place": "Geneva",
+  "issued": {
+    "date-parts": [
+      [
+        2017
+      ]
+    ]
+  },
+  "URL": "https://www.who.int/publications/i/item/who-guidelines-on-ethical-issues-in-public-health-surveillance",
+  "accessed": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        27
+      ]
+    ]
+  },
+  "provenance": "authored"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "ehn-trust-framework-2021",
+  "type": "report",
+  "title": "Interoperability of health certificates – Trust Framework",
+  "version": "1.0",
+  "author": [
+    {
+      "literal": "eHealth Network"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        12
+      ]
+    ]
+  },
+  "URL": "https://ec.europa.eu/health/sites/health/files/ehealth/docs/trust-framework_interoperability_certificates_en.pdf",
+  "accessed": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        27
+      ]
+    ]
+  },
+  "provenance": "authored"
+}

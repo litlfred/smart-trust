@@ -1,0 +1,33 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "coe-bioethics-vaccine-pass-2021",
+  "type": "report",
+  "title": "Statement on human rights considerations relevant to “vaccine pass” and similar documents",
+  "author": [
+    {
+      "literal": "Committee on Bioethics"
+    }
+  ],
+  "publisher": "Council of Europe",
+  "publisher-place": "Strasbourg",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        4
+      ]
+    ]
+  },
+  "URL": "https://rm.coe.int/dh-bio-2021-7-final-statement-vaccines-e/1680a259dd",
+  "accessed": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        27
+      ]
+    ]
+  },
+  "provenance": "authored"
+}

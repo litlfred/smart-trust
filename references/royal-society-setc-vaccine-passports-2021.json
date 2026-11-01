@@ -1,0 +1,33 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "royal-society-setc-vaccine-passports-2021",
+  "type": "report",
+  "title": "Twelve criteria for the development and use of COVID-19 vaccine passports. Pre-print paper",
+  "author": [
+    {
+      "literal": "The Royal Society SET-C (Science in Emergencies Tasking – COVID)"
+    }
+  ],
+  "publisher": "The Royal Society",
+  "publisher-place": "London",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        14
+      ]
+    ]
+  },
+  "URL": "https://royalsociety.org/-/media/policy/projects/set-c/set-c-vaccine-passports.pdf",
+  "accessed": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        27
+      ]
+    ]
+  },
+  "provenance": "authored"
+}

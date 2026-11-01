@@ -1,0 +1,8 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "hl7-shc-vaccination-ig",
+  "type": "webpage",
+  "title": "COVID-19 vaccine and testing-specific specification",
+  "URL": "http://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig",
+  "provenance": "authored"
+}

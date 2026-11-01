@@ -1,0 +1,9 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "ec-dcc-vol1-2022",
+  "type": "report",
+  "title": "Volume 1: Formats and trust management",
+  "note": "References “Implementing Decision (EU) 2021/1073, Annex I”.",
+  "URL": "https://health.ec.europa.eu/system/files/2022-02/digital-covid-certificates_v1_en.pdf",
+  "provenance": "authored"
+}

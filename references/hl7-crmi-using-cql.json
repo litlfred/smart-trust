@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "hl7-crmi-using-cql",
+  "type": "webpage",
+  "title": "CRMI IG CQL Guidelines",
+  "author": [
+    {
+      "literal": "HL7 International"
+    }
+  ],
+  "URL": "https://build.fhir.org/ig/HL7/crmi-ig/branches/master/using-cql.html",
+  "provenance": "authored"
+}

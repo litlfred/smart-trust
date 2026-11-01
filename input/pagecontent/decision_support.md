@@ -173,10 +173,14 @@ define "Completed Immunizations":
 
 CQL authoring resources:
 
-* [CQL Introduction](https://cql.hl7.org/01-introduction.html)
-* [CQL Authoring Guide](https://cql.hl7.org/02-authorsguide.html)
-* [CRMI IG CQL Guidelines](https://build.fhir.org/ig/HL7/crmi-ig/branches/master/using-cql.html)
-* [CRMI IG Packaging Guidelines](https://build.fhir.org/ig/HL7/cqf-measures/packaging.html)
+<!-- references:begin style=ul keys=hl7-cql-introduction,hl7-cql-authors-guide,hl7-crmi-using-cql,hl7-crmi-packaging -->
+<ul>
+  <li id="ref-hl7-cql-introduction" data-ref="hl7-cql-introduction">HL7 International. <a href="https://cql.hl7.org/01-introduction.html">CQL Introduction</a>.</li>
+  <li id="ref-hl7-cql-authors-guide" data-ref="hl7-cql-authors-guide">HL7 International. <a href="https://cql.hl7.org/02-authorsguide.html">CQL Authoring Guide</a>.</li>
+  <li id="ref-hl7-crmi-using-cql" data-ref="hl7-crmi-using-cql">HL7 International. <a href="https://build.fhir.org/ig/HL7/crmi-ig/branches/master/using-cql.html">CRMI IG CQL Guidelines</a>.</li>
+  <li id="ref-hl7-crmi-packaging" data-ref="hl7-crmi-packaging">HL7 International. <a href="https://build.fhir.org/ig/HL7/cqf-measures/packaging.html">CRMI IG Packaging Guidelines</a>.</li>
+</ul>
+<!-- references:end -->
 
 ### CQL Execution
 

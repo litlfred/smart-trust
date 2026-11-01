@@ -1,0 +1,29 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "swiss-taskforce-vaccination-proof-2021",
+  "type": "report",
+  "title": "Requiring proof of Covid-19 vaccination (vaccine “passports”/“certificates”): Key ethical, legal, and social issues. Policy brief",
+  "container-title": "Swiss National COVID-19 Science Task Force [website]",
+  "publisher": "ETH Board",
+  "publisher-place": "Zurich",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        19
+      ]
+    ]
+  },
+  "URL": "https://sciencetaskforce.ch/en/policy-brief/requiring-proof-of-covid-19-vaccination-vaccine-passports-certificates-key-ethicallegal-and-social-issues",
+  "accessed": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        27
+      ]
+    ]
+  },
+  "provenance": "authored"
+}

@@ -12,14 +12,16 @@
 #### EU DCC 
 
   
+<!-- references:begin style=ul keys=ehn-trust-framework-2021,ehn-dcc-techspec-vol1-2021,etsi-en-319-102-1-2016,ec-dcc-techspec-vol1-5,ec-dcc-vol1-2022,eu-implementing-decision-2021-1073 -->
 <ul>
-    <li><a href="https://ec.europa.eu/health/sites/health/files/ehealth/docs/trust-framework_interoperability_certificates_en.pdf">Interoperability of health certificates – Trust Framework – v. 1.0 – 12.03.2021 – eHealth Network</a>  - last accessed 27.04.2021</li>
-    <li><a href="https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_v1_en.pdf">Technical Specifications for Digital COVID Certificates Volume 1 V1.0.5  - eHealth Network</a> - last accessed 27.04.2021</li>
-    <li><a href="https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.01.01_60/en_31910201v010101p.pdf">ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation – version 1.1.1, 2016</a>  – last accessed 23.04.2021</li>
-    <li><a href="https://health.ec.europa.eu/publications/technical-specifications-eu-digital-covid-certificates-volumes-1-5_en">Technical specifications for EU Digital COVID Certificates - Volumes 1-5 </a> </li>
-    <li><a href="https://health.ec.europa.eu/system/files/2022-02/digital-covid-certificates_v1_en.pdf">Volume 1: Formats and trust management available at  references "Implementing Decision (EU) 2021/1073, Annex I"</a></li>
-    <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/uri=uriserv%3AOJ.L_.2021.230.01.0032.01.ENG)">Implementing Decision (EU) 2021/1073, Annex I can be found at , along with other relevant Annexes.</a></li>
-  </ul>
+  <li id="ref-ehn-trust-framework-2021" data-ref="ehn-trust-framework-2021">eHealth Network. <a href="https://ec.europa.eu/health/sites/health/files/ehealth/docs/trust-framework_interoperability_certificates_en.pdf">Interoperability of health certificates – Trust Framework</a>. Version 1.0. 12 March 2021. Last accessed 27 April 2021.</li>
+  <li id="ref-ehn-dcc-techspec-vol1-2021" data-ref="ehn-dcc-techspec-vol1-2021">eHealth Network. <a href="https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_v1_en.pdf">Technical Specifications for Digital COVID Certificates Volume 1</a>. Version V1.0.5. Last accessed 27 April 2021.</li>
+  <li id="ref-etsi-en-319-102-1-2016" data-ref="etsi-en-319-102-1-2016"><a href="https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.01.01_60/en_31910201v010101p.pdf">ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation</a>. Version 1.1.1. 2016. Last accessed 23 April 2021.</li>
+  <li id="ref-ec-dcc-techspec-vol1-5" data-ref="ec-dcc-techspec-vol1-5"><a href="https://health.ec.europa.eu/publications/technical-specifications-eu-digital-covid-certificates-volumes-1-5_en">Technical specifications for EU Digital COVID Certificates - Volumes 1-5</a>.</li>
+  <li id="ref-ec-dcc-vol1-2022" data-ref="ec-dcc-vol1-2022"><a href="https://health.ec.europa.eu/system/files/2022-02/digital-covid-certificates_v1_en.pdf">Volume 1: Formats and trust management</a>. References “Implementing Decision (EU) 2021/1073, Annex I”.</li>
+  <li id="ref-eu-implementing-decision-2021-1073" data-ref="eu-implementing-decision-2021-1073"><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.230.01.0032.01.ENG">Implementing Decision (EU) 2021/1073, Annex I</a>. Found along with other relevant Annexes.</li>
+</ul>
+<!-- references:end -->
 
 
   
@@ -37,19 +39,23 @@
 #### ICAO 
 
   
+<!-- references:begin style=ul keys=icao-vds-nc -->
 <ul>
-    <li> ICAO <a href="https://www.icao.int/vdsnc-spec">VDS NC</a></li>
-  </ul>
+  <li id="ref-icao-vds-nc" data-ref="icao-vds-nc">ICAO. <a href="https://www.icao.int/vdsnc-spec">VDS NC</a>.</li>
+</ul>
+<!-- references:end -->
 
 
   
 #### SMART Health Cards 
 
   
+<!-- references:begin style=ul keys=smart-health-cards-spec,hl7-shc-vaccination-ig -->
 <ul>
-    <li>General SMART Health Card <a href="https://spec.smarthealth.cards">specification</a> </li>
-    <li>COVID-19 <a href="http://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig">vaccine and testing-specific specification</a> </li>
-  </ul>
+  <li id="ref-smart-health-cards-spec" data-ref="smart-health-cards-spec"><a href="https://spec.smarthealth.cards">General SMART Health Card specification</a>.</li>
+  <li id="ref-hl7-shc-vaccination-ig" data-ref="hl7-shc-vaccination-ig"><a href="http://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig">COVID-19 vaccine and testing-specific specification</a>.</li>
+</ul>
+<!-- references:end -->
 
     
 
@@ -60,10 +66,12 @@
 <a name="smart-guidelines"> </a>
 
   
+<!-- references:begin style=ul keys=who-smart-guidelines,who-guideline-handbook -->
 <ul>
-    <li>WHO <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">SMART Guidelines</a> overviews the SMART Guidelines approach</li>
-    <li>WHO <a href="https://www.who.int/publications/i/item/9789241548960">Handbook for guideline development</a> provides an overview of the WHO guideline development and publication process</li>
-  </ul>
+  <li id="ref-who-smart-guidelines" data-ref="who-smart-guidelines">World Health Organization. <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">SMART Guidelines</a>. Overviews the SMART Guidelines approach.</li>
+  <li id="ref-who-guideline-handbook" data-ref="who-guideline-handbook">World Health Organization. <a href="https://www.who.int/publications/i/item/9789241548960">Handbook for guideline development</a>. Provides an overview of the WHO guideline development and publication process.</li>
+</ul>
+<!-- references:end -->
 
 
 
