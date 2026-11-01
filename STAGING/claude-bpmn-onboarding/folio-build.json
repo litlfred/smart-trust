@@ -7,9 +7,9 @@
   "source": {
     "repo": "litlfred/smart-trust",
     "ref": "claude/bpmn-onboarding",
-    "commit": "aebfeab706f2f116b55158e5f821f5c893543991"
+    "commit": "092fb2d1cb571b307829f82950d3793b7ecb1752"
   },
-  "builtAt": "2026-11-01T17:44:29.740Z",
+  "builtAt": "2026-11-01T18:39:56.221Z",
   "ast": {
     "commit": "ab8eb70c33062cfd8860775ca23091a08d4323e1",
     "verdict": "stale-inputs",
