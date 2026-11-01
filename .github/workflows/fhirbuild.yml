@@ -22,4 +22,8 @@ jobs:
   # index.config.json contentTypes.dak, and dak.json is gone. The called
   # workflow takes no inputs and no secrets.
   call_build:
-    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@49178a48d460bb53acf6e90d8c0aee3f0146d8f7 # main
+    # Pinned to smart-base main. The comment sits on its own line because the
+    # tools pin in index.lock.json predates cat-harness-tools#1314, whose
+    # site-publisher could not read a uses: line with a trailing comment
+    # (smart-trust#124).
+    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@49178a48d460bb53acf6e90d8c0aee3f0146d8f7
