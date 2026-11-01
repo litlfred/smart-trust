@@ -6,12 +6,12 @@
   },
   "source": {
     "repo": "litlfred/smart-trust",
-    "ref": "claude/bpmn-onboarding",
-    "commit": "092fb2d1cb571b307829f82950d3793b7ecb1752"
+    "ref": "claude/onboarding-phase-groups",
+    "commit": "bf32b4796045e3de9a876209e1433dd822ce7b23"
   },
-  "builtAt": "2026-11-01T18:39:56.221Z",
+  "builtAt": "2026-11-01T19:32:04.108Z",
   "ast": {
-    "commit": "ab8eb70c33062cfd8860775ca23091a08d4323e1",
+    "commit": "dae98c2989c24de1ef2b00028e81b3e047a9f8d3",
     "verdict": "stale-inputs",
     "kind": "full"
   }

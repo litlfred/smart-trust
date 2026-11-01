@@ -105,11 +105,11 @@ function disableHeadStyleSheets() {
 // only that. No manifest, or one that cannot be read:
 // the whole index, exactly as the theme always did.
 function searchUrl(path) {
-  return '/smart-trust/STAGING/claude-bpmn-onboarding/'.replace(/\/?$/, '/') + String(path).replace(/^\//, '');
+  return '/smart-trust/STAGING/claude-onboarding-phase-groups/'.replace(/\/?$/, '/') + String(path).replace(/^\//, '');
 }
 
 function scopeForPage(manifest) {
-  var base = '/smart-trust/STAGING/claude-bpmn-onboarding/'.replace(/\/?$/, '/');
+  var base = '/smart-trust/STAGING/claude-onboarding-phase-groups/'.replace(/\/?$/, '/');
   var path = window.location.pathname;
   if (path.indexOf(base) === 0) path = path.slice(base.length);
   var seg = path.split('/').filter(function(s){ return s.length > 0; });
@@ -245,7 +245,7 @@ function offerRemote(manifest) {
 function initSearch() {
   getJson(searchUrl('assets/js/search/manifest.json'), function(manifest){
     var scope = manifest ? scopeForPage(manifest) : null;
-    var url = scope ? searchUrl(scope.path) : '/smart-trust/STAGING/claude-bpmn-onboarding/assets/js/search-data.json';
+    var url = scope ? searchUrl(scope.path) : '/smart-trust/STAGING/claude-onboarding-phase-groups/assets/js/search-data.json';
     var ready = function(index, docs){
       searchLoaded(index, docs);
       replaySearch();
@@ -629,7 +629,7 @@ jtd.getTheme = function() {
 
 jtd.setTheme = function(theme) {
   var cssFile = document.querySelector('[rel="stylesheet"]');
-  cssFile.setAttribute('href', '/smart-trust/STAGING/claude-bpmn-onboarding/assets/css/just-the-docs-' + theme + '.css');
+  cssFile.setAttribute('href', '/smart-trust/STAGING/claude-onboarding-phase-groups/assets/css/just-the-docs-' + theme + '.css');
 }
 
 // Note: pathname can have a trailing slash on a local jekyll server

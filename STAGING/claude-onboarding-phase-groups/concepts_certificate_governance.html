@@ -307,6 +307,35 @@ SHA-256 SHALL be used as cryptographic hash function (see ISO/IEC 10118-3:2004).
 
 <p>The recommended elliptic curve for EC-DSA is again NIST-p-256 due to its widespread implementation.</p>
 
+<p><a name="gpg-keys"></a></p>
+<h6 id="requirements-on-gpg-keys">Requirements on GPG keys</h6>
+
+<p>Each person authorised to provide key material for a GDHCN Participant has a GPG key, named in the Letter of Application. The key SHALL be compliant with RFC 4880 (OpenPGP), as the Letter of Application requires, and SHALL meet the following:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key algorithm</th>
+      <th>Key size</th>
+      <th>Identity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RSA</td>
+      <td>Min. 3072 Bit</td>
+      <td>The email address in the key SHALL match the email address given for that person in the Letter of Application</td>
+    </tr>
+    <tr>
+      <td>EC (e.g. ECDSA)</td>
+      <td>Min. 256 Bit</td>
+      <td>The email address in the key SHALL match the email address given for that person in the Letter of Application</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The GDHCN Secretariat checks these requirements when it verifies the Letter of Application (see the <a href="concepts_onboarding_process_full.html">onboarding process</a>, step [22]).</p>
+
 <h6 id="sca-certificate-tnpsca">SCA certificate (TNP<sub>SCA</sub>)</h6>
 <p>The following table gives guidance on the TNP<sub>SCA</sub> certificate template in case that a GDHCN Participant decides to operate its own SCA for the DCC system. <strong>Bold</strong> entries are required (MUST be included in the certificate), <em>italic</em> entries are recommended (SHOULD be included). For absent fields, no recommendations are defined.</p>
 
@@ -517,7 +546,7 @@ SHA-256 SHALL be used as cryptographic hash function (see ISO/IEC 10118-3:2004).
 [3] ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation – version 1.1.1, 2016 – available at https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.01.01_60/en_31910201v010101p.pdf – last accessed 23.04.2021</p>
 
 <p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/concepts_certificate_governance.md" data-repo="litlfred/smart-trust" href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/concepts_certificate_governance.md">Edit this page on GitHub</a></p>
-<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/concepts_certificate_governance.md", "lines": [{"t":"Certificate Governance","l":1},{"t":"Context","l":11},{"t":"Scope of Document","l":24},{"t":"Terminology","l":29},{"t":"TNG communication flows and security services","l":42},{"t":"General","l":48},{"t":"Authentication and connection establishment","l":55},{"t":"Signing Certificate Authorities and Validation Model","l":65},{"t":"Integrity and authenticity of uploaded data","l":78},{"t":"Requirements on the technical TNG architecture","l":87},{"t":"Certificate Life-cycle Management","l":94},{"t":"Registration of GDHCN Participant Backends","l":96},{"t":"Certificate authorities, validity periods and renewal","l":114},{"t":"Validity periods","l":117},{"t":"Revocation of certificates","l":142},{"t":"Certificates for Staging Environments","l":155},{"t":"Certificate Templates","l":160},{"t":"Cryptographic requirements","l":163},{"t":"Requirements on the DSC","l":165},{"t":"Requirements on TLS, Upload and SCA","l":169},{"t":"SCA certificate (TNPSCA)","l":180},{"t":"Document Signer (DSC)","l":191},{"t":"Upload Certificates (TNPUP)","l":219},{"t":"GDHCN Participant TLS Client Authentication (TNPTLS)","l":227},{"t":"Trust list signature certificate (TNGTA)","l":240},{"t":"TNG TLS Server certificates (TNGTLS)","l":248},{"t":"REFERENCES","l":263}]}</script>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_certificate_governance.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/concepts_certificate_governance.md", "lines": [{"t":"Certificate Governance","l":1},{"t":"Context","l":11},{"t":"Scope of Document","l":24},{"t":"Terminology","l":29},{"t":"TNG communication flows and security services","l":42},{"t":"General","l":48},{"t":"Authentication and connection establishment","l":55},{"t":"Signing Certificate Authorities and Validation Model","l":65},{"t":"Integrity and authenticity of uploaded data","l":78},{"t":"Requirements on the technical TNG architecture","l":87},{"t":"Certificate Life-cycle Management","l":94},{"t":"Registration of GDHCN Participant Backends","l":96},{"t":"Certificate authorities, validity periods and renewal","l":114},{"t":"Validity periods","l":117},{"t":"Revocation of certificates","l":142},{"t":"Certificates for Staging Environments","l":155},{"t":"Certificate Templates","l":160},{"t":"Cryptographic requirements","l":163},{"t":"Requirements on the DSC","l":165},{"t":"Requirements on TLS, Upload and SCA","l":169},{"t":"Requirements on GPG keys","l":181},{"t":"SCA certificate (TNPSCA)","l":192},{"t":"Document Signer (DSC)","l":203},{"t":"Upload Certificates (TNPUP)","l":231},{"t":"GDHCN Participant TLS Client Authentication (TNPTLS)","l":239},{"t":"Trust list signature certificate (TNGTA)","l":252},{"t":"TNG TLS Server certificates (TNGTLS)","l":260},{"t":"REFERENCES","l":275}]}</script>
 
 <script src="./assets/ig-source-links.js"></script>
 
