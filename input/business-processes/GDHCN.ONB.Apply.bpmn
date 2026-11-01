@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.Apply.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.Apply.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="KeyMasterRepresentative" name="Key Master Representative" />
   <bpmn:resource id="BusinessOwnerRepresentative" name="Business Owner Representative" />
   <bpmn:resource id="GDHCNSecretariat" name="GDHCN Secretariat" />
@@ -39,15 +40,15 @@
       <bpmn:outgoing>Flow_12</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sendTask id="A.P.Interest" name="Send the Statement of Interest">
-      <bpmn:documentation textFormat="text/markdown">**[1]** The eligible Trust Network Participant (TNP) has to submit its Statement of Interest [link to the form. [Document 5] ] to gdhcn-support@who.int .</bpmn:documentation>
+      <bpmn:documentation>Step [1].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.P.Interest" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_12</bpmn:incoming>
       <bpmn:incoming>Flow_16</bpmn:incoming>
       <bpmn:outgoing>Flow_13</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:receiveTask id="A.P.Result" name="Receive the result of the check">
-      <bpmn:documentation textFormat="text/markdown">**[8]** The TNP receives the confirmation and necessary technical information to connect to the TNG and register the certificates.
-
-For a successful connection to the Trust Network Gateway there are the following steps [9] – [11] to prepare:</bpmn:documentation>
+      <bpmn:documentation>Steps [5] and [8].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.P.Result" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_13</bpmn:incoming>
       <bpmn:outgoing>Flow_14</bpmn:outgoing>
     </bpmn:receiveTask>
@@ -58,7 +59,8 @@ For a successful connection to the Trust Network Gateway there are the following
       <bpmn:outgoing>Flow_15</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="A.P.Modify" name="Modify the data">
-      <bpmn:documentation textFormat="text/markdown">**[6]** TNP needs to modify the data they shared with WHO and re-apply it.</bpmn:documentation>
+      <bpmn:documentation>Step [6]: modify the data and re-apply.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.P.Modify" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_15</bpmn:incoming>
       <bpmn:outgoing>Flow_16</bpmn:outgoing>
     </bpmn:userTask>
@@ -108,9 +110,8 @@ For a successful connection to the Trust Network Gateway there are the following
       <bpmn:messageEventDefinition id="A.S.Start.Def" />
     </bpmn:startEvent>
     <bpmn:userTask id="A.S.Check" name="Validate the data and the Terms of Participation">
-      <bpmn:documentation textFormat="text/markdown">**[2 – 3]** WHO validates all provided data and verify that such a data follows WHO compliance with Trusted Network Terms of Participation (TOP 0 – 3) https://smart.who.int/trust/concepts.html as well as: Participant´s eligibility criteria, governmental entity/health agency, contact details of approvers and individuals. [See Elegibility Criteria]. [Document 16]
-
-\&lt; see chapter 9.5 in TOP details \&gt; [Document 6]</bpmn:documentation>
+      <bpmn:documentation>Steps [2]-[3]; Framework V.4.a and VIII.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.S.Check" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_19</bpmn:incoming>
       <bpmn:outgoing>Flow_20</bpmn:outgoing>
     </bpmn:userTask>
@@ -121,7 +122,8 @@ For a successful connection to the Trust Network Gateway there are the following
       <bpmn:outgoing>Flow_21</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sendTask id="A.S.Reject" name="Reject by email">
-      <bpmn:documentation textFormat="text/markdown">**[4 - 5]** In case no compliance with WHO governance rules is given, the application is rejected. The rejection is communicated to the TNP by email.</bpmn:documentation>
+      <bpmn:documentation>Steps [4]-[5].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.S.Reject" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_21</bpmn:incoming>
       <bpmn:outgoing>Flow_22</bpmn:outgoing>
     </bpmn:sendTask>
@@ -130,11 +132,8 @@ For a successful connection to the Trust Network Gateway there are the following
       <bpmn:incoming>Flow_22</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sendTask id="A.S.Invite" name="Invite to start onboarding">
-      <bpmn:documentation textFormat="text/markdown">**[7]** If the WHO’s technical team gives a positive opinion, the eligible Trust Network Participant will be invited to start the onboarding process. The following information is included:
-
-1.  The necessary technical specifications and configuration information to connect the local backend systems to the WHO TNG
-    1.  The request to provide the necessary information to be onboarded to the different environments (UAT, PROD, DEV (optional))
-    2.  The request to comply with the Trust Network Terms of Participation</bpmn:documentation>
+      <bpmn:documentation>Step [7].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.S.Invite" /></bpmn:extensionElements>
       <bpmn:incoming>A.F.ok</bpmn:incoming>
       <bpmn:outgoing>Flow_23</bpmn:outgoing>
     </bpmn:sendTask>

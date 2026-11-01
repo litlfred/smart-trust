@@ -1,6 +1,6 @@
 ####  Details of the Onboarding Process
 
-This page describes the onboarding process of the GDHCN (the so called Future Onboarding Process, FOP), drawn in BPMN 2.0. Under each drawing is the text of the steps it shows. That text is kept in the BPMN files, in the documentation of the task that performs the step, so the page and the drawings come from one source. The numbers **[n]** are the step numbers of [the original drawing](#original-drawing).
+This page describes the onboarding process of the GDHCN (the so called Future Onboarding Process, FOP), drawn in BPMN 2.0. Under each drawing is the text of the steps it shows. That text is kept in a Markdown file beside each BPMN file, with one section per task, and each task of the drawing links to its section, so the page and the drawings come from one source. The numbers **[n]** are the step numbers of [the original drawing](#original-drawing).
 
 Where a drawing and a text differ, the text is authority: the GDHCN Administrative and Operational Framework first, then the step text. The drawings only refer to the documentation; requirements such as key sizes are stated in the documentation they name, for example [the requirements on GPG keys](concepts_certificate_governance.html#gpg-keys).
 

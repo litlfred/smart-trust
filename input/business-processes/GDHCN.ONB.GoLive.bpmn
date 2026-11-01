@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.GoLive.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.GoLive.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="TechnicalRepresentative" name="Technical Representative" />
   <bpmn:resource id="BusinessOwnerRepresentative" name="Business Owner Representative" />
   <bpmn:resource id="OnboardingTeam" name="Onboarding Team" />
@@ -85,7 +86,8 @@
       <bpmn:outgoing>Flow_87</bpmn:outgoing>
     </bpmn:callActivity>
     <bpmn:sendTask id="G.O.Confirm" name="Confirm Production Readiness">
-      <bpmn:documentation textFormat="text/markdown">**[77 - 80]** After passing the Production Readiness Test, the participant is allowed to use the TNG PROD environment. A confirmation email is sent to the participant and to WHO with the confirmation about the successfully passed test and the completion of the onboarding process.</bpmn:documentation>
+      <bpmn:documentation>Step [77]: to the Participant and to WHO.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.GoLive.md#G.O.Confirm" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_87</bpmn:incoming>
       <bpmn:outgoing>Flow_88</bpmn:outgoing>
     </bpmn:sendTask>

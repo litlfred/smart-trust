@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.ConnectTest.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.ConnectTest.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="TechnicalRepresentative" name="Technical Representative" />
   <bpmn:resource id="OnboardingTeam" name="Onboarding Team" />
   <bpmn:resource id="TrustNetworkGateway" name="Trust Network Gateway" />
@@ -38,48 +39,8 @@
       <bpmn:messageEventDefinition id="X.P.Start.Def" />
     </bpmn:startEvent>
     <bpmn:userTask id="X.P.Connect" name="Connect to the gateway">
-      <bpmn:documentation textFormat="text/markdown">**[60]** The participant is connecting to UAT environment and the following steps has to be performed to check the connection:
-
-&lt;details&gt; 
-
-&lt;summary&gt; 1) check the connectivity with the following command:  &lt;/summary&gt; 
-input:
-
-curl -v https://tng-uat.who.int/trustList --cert TLS.pem --key TLS_key.pem 
-
-You should see an output like:
-
-\`\`\`
-
-[
-
-{
-
-"kid": "+jrpHSqdqZY=",
-
-"timestamp": "2023-05-25T07:55:21Z",
-
-"country": "XC",
-
-"certificateType": "UPLOAD",
-
-"thumbprint": "fa3ae91d...",
-
-"signature": "MIAGCSqGSIb3D...",
-
-"rawData": "MIIErTCCA5WgAwIBAgII..."
-
-}
-
-]
-
-\`\`\`
-
-&lt;/details&gt; 
-
-2) Test the other Trustlist Routes in the same style (e. g. with DSC/SCA/Upload/Authentication…)
-
-**[70]** The participant is allowed and enabled to connect to TNG PROD environment (for detailed information see [60]).</bpmn:documentation>
+      <bpmn:documentation>Steps [60] and [70].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Connect" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_89</bpmn:incoming>
       <bpmn:incoming>Flow_92</bpmn:incoming>
       <bpmn:outgoing>Flow_90</bpmn:outgoing>
@@ -91,79 +52,21 @@ You should see an output like:
       <bpmn:outgoing>Flow_91</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="X.P.Fix" name="Correct the connection with the operations team">
-      <bpmn:documentation textFormat="text/markdown">**[61]** In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP.
-
-**[71]** In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP.</bpmn:documentation>
+      <bpmn:documentation>Steps [61] and [71].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Fix" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_91</bpmn:incoming>
       <bpmn:outgoing>Flow_92</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="X.P.Test" name="Run the test">
-      <bpmn:documentation textFormat="text/markdown">**[62]** After the connection to the TNG is established the participant can start the dry run test on UAT.
-
-This test includes the listed steps:
-
-a) Upload one or more DSCs to the TNG
-
-b) Delete at least one DSC again (revocation of a DSC)
-
-c) Optional: Upload it again (if it is required for further testing)
-
-d) Download the trust list from the TNG gateway [(API)](openapi)
-
-e) Provide sample VDHC s to be verified by the service provider
-
-f) Validate some sample VDHC 's to ensure the validation implementation is working fine
-
-**[72]** After the connection to the TNG PROD is established the Production Readiness Test can start. 
-
-&lt;details&gt; 
-&lt;summary&gt; This test includes the listed steps: &lt;/summary&gt; 
-
-a) Create a Document Signer Certificate (DSC) and sign it by the SCA
-
-
-b) Create an CMS package with the following command: 
-
-Input:
-
-openssl x509 -outform der -in cert.pem -out cert.der
-
-openssl cms -sign -nodetach -in cert.der -signer signing.crt -inkey signing.key -out signed.der -outform DER -binary
-
-openssl base64 -in signed.der -out cms.b64 -e -A
-
-Note: cert.der is your DSC, signing.crt is the TNPUP
-
-
- c) Upload the CMS package to the gateway 
-
-Input:
-
-curl -v -X POST -H "Content-Type: application/cms" --cert TLS.pem --key TLS_key.pem --data @cms.b64 https://tng-uat.who.int/signerCertificate  
-
-
-
- d) Download the trustlist again and check if your DSC is available. &lt;
-
-
-**Note**: Some versions of curl don’t attach the client certificates automatically. This can be checked via curl –version. Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/):  
-  
-OpenSSL Test Example (working)
-
-
-e) Delete at least one DSC again (Revocation)
-
-f) Upload it again in case the DSC is required
-
-&lt;/details&gt;</bpmn:documentation>
+      <bpmn:documentation>Step [62]: the UAT dry run. Step [72]: the PROD readiness test.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Test" /></bpmn:extensionElements>
       <bpmn:incoming>X.F.conn</bpmn:incoming>
       <bpmn:incoming>Flow_96</bpmn:incoming>
       <bpmn:outgoing>Flow_93</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sendTask id="X.P.Send" name="Send the test results">
-      <bpmn:documentation textFormat="text/markdown">**[63]** After executing all required steps, the participant must provide the test results to the onboarding team.
-
-**[73 - 74]** After executing all required steps, the participant must provide the test results to the service provider by mail.</bpmn:documentation>
+      <bpmn:documentation>Steps [63] and [73].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Send" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_93</bpmn:incoming>
       <bpmn:outgoing>Flow_94</bpmn:outgoing>
     </bpmn:sendTask>
@@ -216,16 +119,14 @@ f) Upload it again in case the DSC is required
       <bpmn:outgoing>Flow_97</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:serviceTask id="X.O.White" name="Whitelist the certificates">
-      <bpmn:documentation textFormat="text/markdown">**[43]** In case the verification was successful the whitelisting of the certificates is initiated.
-
-**[67]** If the Dry Run Test has passed successfully, the whitelisting of the certificates in the gateway (PROD environment) continues.</bpmn:documentation>
+      <bpmn:documentation>Steps [43] (UAT) and [67] (PROD, after the dry run passed).</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.White" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_97</bpmn:incoming>
       <bpmn:outgoing>Flow_98</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sendTask id="X.O.Inform" name="Send the connection information">
-      <bpmn:documentation textFormat="text/markdown">**[44 - 46]** and the participant will be informed that the preparation has been completed successfully.
-
-**[68 - 69]** The Onboarding team informs the TNP to be ready to connect to TNG PROD environment.</bpmn:documentation>
+      <bpmn:documentation>Steps [44]-[45] and [68].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.Inform" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_98</bpmn:incoming>
       <bpmn:outgoing>Flow_99</bpmn:outgoing>
     </bpmn:sendTask>
@@ -236,9 +137,8 @@ f) Upload it again in case the DSC is required
       <bpmn:outgoing>Flow_100</bpmn:outgoing>
     </bpmn:receiveTask>
     <bpmn:userTask id="X.O.Check" name="Check the test results">
-      <bpmn:documentation textFormat="text/markdown">**[64 - 65]** The onboarding team checks the results and provides feedback to the participant.
-
-**[75]** The service provider checks the results.</bpmn:documentation>
+      <bpmn:documentation>Steps [65] and [75].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.Check" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_100</bpmn:incoming>
       <bpmn:outgoing>Flow_101</bpmn:outgoing>
     </bpmn:userTask>
@@ -249,9 +149,8 @@ f) Upload it again in case the DSC is required
       <bpmn:outgoing>Flow_102</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sendTask id="X.O.Fix" name="Agree corrective actions">
-      <bpmn:documentation textFormat="text/markdown">**[66]** In case of any issues additional corrective actions are bespoken and solved with the participant.
-
-**[76]** and in case of any issues additional corrective actions are bespoken and solved with the participant.</bpmn:documentation>
+      <bpmn:documentation>Steps [66] and [76].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.Fix" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_102</bpmn:incoming>
       <bpmn:outgoing>Flow_103</bpmn:outgoing>
     </bpmn:sendTask>
