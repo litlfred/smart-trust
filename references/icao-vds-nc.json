@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "icao-vds-nc",
+  "type": "standard",
+  "title": "VDS NC",
+  "author": [
+    {
+      "literal": "ICAO"
+    }
+  ],
+  "URL": "https://www.icao.int/vdsnc-spec",
+  "provenance": "authored"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "w3c-did-core",
+  "type": "standard",
+  "title": "DID Core",
+  "author": [
+    {
+      "literal": "W3C"
+    }
+  ],
+  "URL": "https://www.w3.org/TR/did-core/",
+  "provenance": "authored"
+}

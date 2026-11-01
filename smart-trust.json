@@ -122,6 +122,14 @@
       ]
     },
     {
+      "id": "references",
+      "path": "references/",
+      "description": "smart-trust's bibliography: one folio-reference/v1 CSL-JSON entry per cited work, `<key>.json`, taken from the hand-written reference lists of the IG pages (certificate governance, references, ethical principles, decision support, TNG architecture). The pages' lists are written from these entries by `input/scripts/references.ts` between `references:begin`/`references:end` markers, and each in-text citation links to its entry's `#ref-<key>` anchor; `--check` fails on a stale list, a missing entry or a dangling citation.",
+      "graphTypologies": [
+        "references"
+      ]
+    },
+    {
       "id": "smart-trust-translations",
       "path": "translations/",
       "description": "The gettext side of smart-trust's own strings, one directory per target locale: today the `glossary/` templates of the GDHCN glossary (`glossary/gdhcn.glossary.json`). A scheme's translations sit with the instance whose terms they translate (owner, 2026-10-04, bean riit). Written by `bun run cat glossary:pot`.",

@@ -1,0 +1,25 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "etsi-en-319-102-1-2016",
+  "type": "standard",
+  "title": "ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation",
+  "version": "1.1.1",
+  "issued": {
+    "date-parts": [
+      [
+        2016
+      ]
+    ]
+  },
+  "URL": "https://www.etsi.org/deliver/etsi_en/319100_319199/31910201/01.01.01_60/en_31910201v010101p.pdf",
+  "accessed": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        23
+      ]
+    ]
+  },
+  "provenance": "authored"
+}
