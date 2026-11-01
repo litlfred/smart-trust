@@ -1,0 +1,18 @@
+{
+  "$schema": "folio-site-build/v1",
+  "instance": "smart-trust",
+  "platform": {
+    "commit": "d2d0ae247504f3dafbd1ba439a1967df1e833c84"
+  },
+  "source": {
+    "repo": "litlfred/smart-trust",
+    "ref": "claude/computable-references",
+    "commit": "980af586919bb8a6f4db5080094af08ffb4b7e81"
+  },
+  "builtAt": "2026-11-01T19:30:17.552Z",
+  "ast": {
+    "commit": "dae98c2989c24de1ef2b00028e81b3e047a9f8d3",
+    "verdict": "stale-inputs",
+    "kind": "full"
+  }
+}

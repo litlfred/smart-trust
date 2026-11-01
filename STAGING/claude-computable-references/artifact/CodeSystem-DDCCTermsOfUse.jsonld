@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "CodeSystem-DDCCTermsOfUse.jsonld",
+  "@type": "fhir:CodeSystem",
+  "dcterms:identifier": "CodeSystem/DDCCTermsOfUse",
+  "schema:name": "DDCCTermsOfUse",
+  "dcterms:title": "DDCC Trust Domain terms of use",
+  "dcterms:description": "The policy and regulatory standards of the DDCC Trust Domain, quoted from Annex I of the GDHCN Administrative and Operational Framework 1.2. GDHCN Participants confirm their readiness and intent to follow each one.",
+  "schema:version": "1.7.5",
+  "dcterms:type": "Terminology: Code Systems",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/trust/CodeSystem/DDCCTermsOfUse"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../ast-data/resources/CodeSystem/DDCCTermsOfUse--61accc49.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "dae98c2989c24de1ef2b00028e81b3e047a9f8d3"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.trust",
+    "schema:version": "1.7.5",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/trust"
+    }
+  }
+}
