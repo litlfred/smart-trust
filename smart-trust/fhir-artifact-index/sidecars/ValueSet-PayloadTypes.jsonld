@@ -16,7 +16,7 @@
   },
   "@id": "http://smart.who.int/trust/ValueSet-PayloadTypes.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-11-01T21:48:41.336Z",
+  "generatedAt": "2026-11-01T22:16:39.148Z",
   "@graph": [
     {
       "id": "#urn:who:trust:trustlist:v2",
