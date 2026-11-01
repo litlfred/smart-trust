@@ -215,7 +215,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "ed547a9ab77e8445f13f52fe2152d6e82776bcaf",
+          "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -227,9 +227,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "ed547a9ab77e8445f13f52fe2152d6e82776bcaf",
-              "evidence": "Owner litlfred tapped card Q-TRAIN-11 'A. Yes, PR and merge on green' on 2026-11-01 21:27:32Z (thread 'Run re-pins as a 2-hour train', cmsg_017WNUkNK8kdDziPK58Pv6G9TK77EXHDtmC4sB3f6yjoab), inside the window 'merge all green and ready (not content) + 6hrs' (20:40:15Z, to 2026-11-02 02:40Z). Re-pin the harness layers to main so smart-trust previews get cat-harness-tools#1318 (staging banner 'Review changes' link, owner option A: merge and roll out); cat-harness, core and bootstrap layers move with it to avoid cross-layer skew."
+              "on": "2026-10-30",
+              "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip b7fb762."
             }
           }
         }
