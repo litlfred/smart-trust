@@ -8,6 +8,20 @@ A Trust Domain consists of:
   <p>The codes for the GDHCN Trust Domains are contained in the <a href="ValueSet-Domains.html">GDHCN Trust Domain Value Set</a>.
   </p>
 
+#### Trust Domain model
+
+The [GDHCN Administrative and Operational Framework](GDHCN_Administrative_and_Operational_Framework.pdf) is the legal source for Trust Domains. The [Trust Domain](StructureDefinition-TrustDomain.html) logical model follows its three-part definition: use cases (modelled by DAK components), technical specifications, and policy and regulatory standards. A Trust Domain also names its **terms of use**, which is a ValueSet of the policies a participant may say it acts under.
+
+A participant names those policies in a Verifiable Credential with one [termsOfUse entry](StructureDefinition-TrustDomainPolicy.html) per policy. For example, a VHL Receiver does this under the Verifiable Credential Option of IHE ITI VHL.
+
+The model allows each part to be empty, but an empty part is a QA error. So is a terms-of-use ValueSet that no BPMN business process uses.
+
+| Trust Domain | Defined in | Terms of use |
+|---|---|---|
+| [DDCC](Binary-TrustDomain-DDCC.html) | Framework, Annex I | [DDCC terms of use](ValueSet-DDCCTermsOfUse.html) |
+| [IPS-PILGRIMAGE](Binary-TrustDomain-IPS-PILGRIMAGE.html) | No Framework annex yet; drafted from the [IPS Pilgrimage IG](http://smart.who.int/ips-pilgrimage) | [IPS.HAJJ.CONSENT](http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.CONSENT.html) |
+
+
 
 
 #### Digital Documentation of COVID-19 Certificates (DDCC)
