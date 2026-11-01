@@ -13,10 +13,14 @@ Usage: #example
 * useCase[0].description = "A health check and counselling at origin, with the pilgrim's consent recorded, and a health link issued to the pilgrim."
 * useCase[0].dakComponent[0].component = #generic-business-processes-and-workflows
 * useCase[0].dakComponent[0].reference = "http://smart.who.int/ips-pilgrimage/business-processes.html"
+* useCase[0].dakComponent[1].component = #user-scenarios
+* useCase[0].dakComponent[1].reference = "http://smart.who.int/ips-pilgrimage/scenarios.html"
 * useCase[1].title = "Clinical encounter for unplanned care"
 * useCase[1].description = "Care during Hajj, in which the receiving facility retrieves the pilgrim's IPS through a health link."
 * useCase[1].dakComponent[0].component = #generic-business-processes-and-workflows
 * useCase[1].dakComponent[0].reference = "http://smart.who.int/ips-pilgrimage/business-processes.html"
+* useCase[1].dakComponent[1].component = #user-scenarios
+* useCase[1].dakComponent[1].reference = "http://smart.who.int/ips-pilgrimage/scenarios.html"
 * technicalSpecification[0] = "http://smart.who.int/ips-pilgrimage"
 * technicalSpecification[1] = "http://smart.who.int/trust-phw"
 * policyStandard[0].text = "Data exchange is mediated by the pilgrim on the basis of consent, recorded as a Hajj consent (IPS.HAJJ.CONSENT) in the pilgrim's IPS (IPS Pilgrimage IG, trust domain policy)."
