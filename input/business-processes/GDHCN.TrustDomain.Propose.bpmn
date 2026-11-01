@@ -14,6 +14,16 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.TrustDomain.Propose.Participant" name="Propose a Trust Domain" isExecutable="false">
     <bpmn:documentation>Framework V.3.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.TrustDomain.Propose.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>TP.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TP.Draft</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TP.Send</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TP.Recv</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TP.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="TP.Start" name="Need for a new Trust Domain">
       <bpmn:documentation>Framework V.3: one or more Eligible GDHCN Participants may propose a Trust Domain.</bpmn:documentation>
       <bpmn:outgoing>Flow_82</bpmn:outgoing>
@@ -44,6 +54,19 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.TrustDomain.Propose.Secretariat" name="Approve a Trust Domain" isExecutable="false">
     <bpmn:documentation>Framework VI.2, XI.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.TrustDomain.Propose.Secretariat.LaneSet">
+      <bpmn:lane id="Secretariat.Lane" name="GDHCN Secretariat (WHO)">
+        <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+        <bpmn:flowNodeRef>TS.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.Advise</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.Ok</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.Annex</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.Publish</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.No</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.End</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS.EndNo</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="TS.Start" name="Proposal received">
       <bpmn:documentation>Framework V.3.</bpmn:documentation>
       <bpmn:outgoing>Flow_86</bpmn:outgoing>
@@ -94,7 +117,9 @@
   <bpmndi:BPMNDiagram id="GDHCN.TrustDomain.Propose.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.TrustDomain.Propose.Plane" bpmnElement="GDHCN.TrustDomain.Propose.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1670" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="1640" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="240" width="1670" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat.Lane_di" bpmnElement="Secretariat.Lane" isHorizontal="true"><dc:Bounds x="150" y="240" width="1640" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TP.Start_di" bpmnElement="TP.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TP.Draft_di" bpmnElement="TP.Draft"><dc:Bounds x="420" y="95" width="160" height="80" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TP.Send_di" bpmnElement="TP.Send"><dc:Bounds x="610" y="95" width="160" height="80" /></bpmndi:BPMNShape>

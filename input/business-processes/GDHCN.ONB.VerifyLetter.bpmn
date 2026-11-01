@@ -14,6 +14,26 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.VerifyLetter.Secretariat" name="Verify the Letter of Application" isExecutable="false">
     <bpmn:documentation>Steps [15]-[23].</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.VerifyLetter.Secretariat.LaneSet">
+      <bpmn:lane id="Secretariat.Lane" name="GDHCN Secretariat (WHO)">
+        <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+        <bpmn:flowNodeRef>V.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Channel</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Office</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Wha</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Ok</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Fail</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Corrected</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Split</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Email</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Crit</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Join</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.Collect</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>V.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="V.Start" name="Letter of Application received">
       <bpmn:documentation>Step [15]. One Letter for each Trust Domain. Framework IX.</bpmn:documentation>
       <bpmn:outgoing>Flow_37</bpmn:outgoing>
@@ -116,6 +136,7 @@
     <bpmndi:BPMNPlane id="GDHCN.ONB.VerifyLetter.Plane" bpmnElement="GDHCN.ONB.VerifyLetter.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="2240" height="70" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="160" width="2240" height="410" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat.Lane_di" bpmnElement="Secretariat.Lane" isHorizontal="true"><dc:Bounds x="150" y="160" width="2210" height="410" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="V.Start_di" bpmnElement="V.Start"><dc:Bounds x="292" y="217" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="V.Channel_di" bpmnElement="V.Channel" isMarkerVisible="true"><dc:Bounds x="475" y="210" width="50" height="50" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="V.Office_di" bpmnElement="V.Office"><dc:Bounds x="610" y="195" width="160" height="80" /></bpmndi:BPMNShape>

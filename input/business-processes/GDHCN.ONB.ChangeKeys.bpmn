@@ -17,6 +17,17 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.ChangeKeys.Participant" name="Report a change" isExecutable="false">
     <bpmn:documentation>Framework IX.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.ChangeKeys.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>C.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>C.What</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>C.Tech</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>C.Rep</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>C.Merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>C.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="C.Start" name="Keys or representatives change">
       <bpmn:documentation>Framework IX, last paragraphs.</bpmn:documentation>
       <bpmn:outgoing>Flow_98</bpmn:outgoing>
@@ -56,6 +67,18 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.ONB.ChangeKeys.Secretariat" name="Verify a change" isExecutable="false">
     <bpmn:documentation>Framework IX.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.ChangeKeys.Secretariat.LaneSet">
+      <bpmn:lane id="Secretariat.Lane" name="GDHCN Secretariat (WHO)">
+        <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+        <bpmn:flowNodeRef>CS.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CS.Verify</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CS.Keys</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CS.Handover</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CS.Record</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CS.Merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CS.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="CS.Start" name="Change received">
       <bpmn:documentation></bpmn:documentation>
       <bpmn:outgoing>Flow_104</bpmn:outgoing>
@@ -102,6 +125,14 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.ONB.ChangeKeys.Operator" name="Register changed keys" isExecutable="false">
     <bpmn:documentation>Steps [31]-[50] again.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.ChangeKeys.Operator.LaneSet">
+      <bpmn:lane id="Operator.Lane" name="Gateway operator">
+        <bpmn:documentation>The operations (OPS) and onboarding (OB) teams of the service provider that runs the Trust Network Gateway, with the GitHub bot (tng-bot, tng-bot-dev) as its service tasks. Page [30]-[80].</bpmn:documentation>
+        <bpmn:flowNodeRef>CO2.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO2.Reg</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO2.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="CO2.Start" name="New keys received">
       <bpmn:documentation></bpmn:documentation>
       <bpmn:outgoing>Flow_110</bpmn:outgoing>
@@ -123,8 +154,11 @@
   <bpmndi:BPMNDiagram id="GDHCN.ONB.ChangeKeys.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.ONB.ChangeKeys.Plane" bpmnElement="GDHCN.ONB.ChangeKeys.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1670" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="1640" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="370" width="1670" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat.Lane_di" bpmnElement="Secretariat.Lane" isHorizontal="true"><dc:Bounds x="150" y="370" width="1640" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Operator_di" bpmnElement="Operator" isHorizontal="true"><dc:Bounds x="120" y="680" width="1670" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Operator.Lane_di" bpmnElement="Operator.Lane" isHorizontal="true"><dc:Bounds x="150" y="680" width="1640" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="C.Start_di" bpmnElement="C.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="C.What_di" bpmnElement="C.What" isMarkerVisible="true"><dc:Bounds x="475" y="110" width="50" height="50" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="C.Tech_di" bpmnElement="C.Tech"><dc:Bounds x="610" y="95" width="160" height="80" /></bpmndi:BPMNShape>

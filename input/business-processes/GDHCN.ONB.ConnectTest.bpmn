@@ -15,6 +15,20 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.ConnectTest.Participant" name="Connect and test" isExecutable="false">
     <bpmn:documentation>Steps [60]-[63] (UAT) and [70]-[73] (PROD).</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.ConnectTest.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>CP.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Connect</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Conn</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Fix</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Test</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Send</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Recv</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.Ok</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CP.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="CP.Start" name="Connection information received">
       <bpmn:documentation>Steps [46] and [69]. Input: the environment.</bpmn:documentation>
       <bpmn:outgoing>Flow_74</bpmn:outgoing>
@@ -76,6 +90,20 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.ONB.ConnectTest.Operator" name="Whitelist and check the test" isExecutable="false">
     <bpmn:documentation>Steps [43]-[46], [64]-[69], [74]-[76].</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.ConnectTest.Operator.LaneSet">
+      <bpmn:lane id="Operator.Lane" name="Gateway operator">
+        <bpmn:documentation>The operations (OPS) and onboarding (OB) teams of the service provider that runs the Trust Network Gateway, with the GitHub bot (tng-bot, tng-bot-dev) as its service tasks. Page [30]-[80].</bpmn:documentation>
+        <bpmn:flowNodeRef>CO.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.White</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.Inform</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.Recv</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.Ok</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.Fix</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.Pass</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>CO.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="CO.Start" name="Keys registered">
       <bpmn:documentation>Input: the environment (UAT or PROD).</bpmn:documentation>
       <bpmn:outgoing>Flow_66</bpmn:outgoing>
@@ -134,7 +162,9 @@
   <bpmndi:BPMNDiagram id="GDHCN.ONB.ConnectTest.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.ONB.ConnectTest.Plane" bpmnElement="GDHCN.ONB.ConnectTest.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="2050" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="2020" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Operator_di" bpmnElement="Operator" isHorizontal="true"><dc:Bounds x="120" y="370" width="2050" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Operator.Lane_di" bpmnElement="Operator.Lane" isHorizontal="true"><dc:Bounds x="150" y="370" width="2020" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="CO.Start_di" bpmnElement="CO.Start"><dc:Bounds x="292" y="427" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="CO.White_di" bpmnElement="CO.White"><dc:Bounds x="420" y="405" width="160" height="80" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="CO.Inform_di" bpmnElement="CO.Inform"><dc:Bounds x="610" y="405" width="160" height="80" /></bpmndi:BPMNShape>

@@ -18,6 +18,24 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.RegisterKeys.Operator" name="Register the keys" isExecutable="false">
     <bpmn:documentation>Steps [31]-[50]. Framework VI.6 (WHO as trust anchor signs PROD keys).</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.RegisterKeys.Operator.LaneSet">
+      <bpmn:lane id="Operator.Lane" name="Gateway operator">
+        <bpmn:documentation>The operations (OPS) and onboarding (OB) teams of the service provider that runs the Trust Network Gateway, with the GitHub bot (tng-bot, tng-bot-dev) as its service tasks. Page [30]-[80].</bpmn:documentation>
+        <bpmn:flowNodeRef>R.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Config</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Pr</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Env</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Auto</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.AskWho</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Signed</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Ok</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Fb</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.Fixed</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>R.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="R.Start" name="Onboarding information received">
       <bpmn:documentation>Step [30]. Input: the environment (UAT or PROD).</bpmn:documentation>
       <bpmn:outgoing>Flow_53</bpmn:outgoing>
@@ -105,6 +123,7 @@
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="2050" height="70" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="160" width="2050" height="70" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Operator_di" bpmnElement="Operator" isHorizontal="true"><dc:Bounds x="120" y="260" width="2050" height="410" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Operator.Lane_di" bpmnElement="Operator.Lane" isHorizontal="true"><dc:Bounds x="150" y="260" width="2020" height="410" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="R.Start_di" bpmnElement="R.Start"><dc:Bounds x="292" y="317" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="R.Config_di" bpmnElement="R.Config"><dc:Bounds x="420" y="295" width="160" height="80" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="R.Pr_di" bpmnElement="R.Pr"><dc:Bounds x="610" y="295" width="160" height="80" /></bpmndi:BPMNShape>

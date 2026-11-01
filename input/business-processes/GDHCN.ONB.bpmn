@@ -21,6 +21,22 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.Participant" name="Join the GDHCN" isExecutable="false">
     <bpmn:documentation>The Participant side of onboarding.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>P.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.SendInterest</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.RecvResult</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.Invited</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.Modify</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.Prepare</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.SendLetter</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.TestUAT</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.TestPROD</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.RecvDone</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>P.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="P.Start" name="Decided to join the GDHCN">
       <bpmn:documentation>The Participant determines which Trust Domains it intends to participate in. Framework VII.1.</bpmn:documentation>
       <bpmn:outgoing>Flow_1</bpmn:outgoing>
@@ -92,6 +108,22 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.ONB.Secretariat" name="Oversee onboarding" isExecutable="false">
     <bpmn:documentation>The Secretariat side of onboarding. Framework VI.5.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.Secretariat.LaneSet">
+      <bpmn:lane id="Secretariat.Lane" name="GDHCN Secretariat (WHO)">
+        <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+        <bpmn:flowNodeRef>S.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Check</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Ok</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Reject</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Rejected</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Invite</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Verify</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Handover</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.RecvReady</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.Monitor</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>S.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="S.Start" name="Statement of Interest received">
       <bpmn:documentation>Step [1].</bpmn:documentation>
       <bpmn:outgoing>Flow_11</bpmn:outgoing>
@@ -160,6 +192,17 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.ONB.Operator" name="Set up the gateway" isExecutable="false">
     <bpmn:documentation>The operator side of onboarding.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.Operator.LaneSet">
+      <bpmn:lane id="Operator.Lane" name="Gateway operator">
+        <bpmn:documentation>The operations (OPS) and onboarding (OB) teams of the service provider that runs the Trust Network Gateway, with the GitHub bot (tng-bot, tng-bot-dev) as its service tasks. Page [30]-[80].</bpmn:documentation>
+        <bpmn:flowNodeRef>O.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>O.Register</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>O.TestUAT</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>O.TestPROD</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>O.Confirm</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>O.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="O.Start" name="Onboarding information received">
       <bpmn:documentation>Step [30].</bpmn:documentation>
       <bpmn:outgoing>Flow_20</bpmn:outgoing>
@@ -199,8 +242,11 @@
   <bpmndi:BPMNDiagram id="GDHCN.ONB.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.ONB.Plane" bpmnElement="GDHCN.ONB.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="2620" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="2590" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="370" width="2620" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat.Lane_di" bpmnElement="Secretariat.Lane" isHorizontal="true"><dc:Bounds x="150" y="370" width="2590" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Operator_di" bpmnElement="Operator" isHorizontal="true"><dc:Bounds x="120" y="680" width="2620" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Operator.Lane_di" bpmnElement="Operator.Lane" isHorizontal="true"><dc:Bounds x="150" y="680" width="2590" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="P.Start_di" bpmnElement="P.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="P.SendInterest_di" bpmnElement="P.SendInterest"><dc:Bounds x="420" y="95" width="160" height="80" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="P.RecvResult_di" bpmnElement="P.RecvResult"><dc:Bounds x="610" y="95" width="160" height="80" /></bpmndi:BPMNShape>

@@ -15,6 +15,15 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.TrustDomain.Join.Participant" name="Join a further Trust Domain" isExecutable="false">
     <bpmn:documentation>Framework V.4, IX.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.TrustDomain.Join.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>J.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>J.Letter</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>J.Test</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>J.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="J.Start" name="Wants a further Trust Domain">
       <bpmn:documentation>An onboarded GDHCN Participant decides to join another Trust Domain. Framework VII.1, V.4 ("one or more Trust Domains").</bpmn:documentation>
       <bpmn:outgoing>Flow_92</bpmn:outgoing>
@@ -39,6 +48,15 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.TrustDomain.Join.Secretariat" name="Admit to a further Trust Domain" isExecutable="false">
     <bpmn:documentation>Framework V.4, IX.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.TrustDomain.Join.Secretariat.LaneSet">
+      <bpmn:lane id="Secretariat.Lane" name="GDHCN Secretariat (WHO)">
+        <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+        <bpmn:flowNodeRef>JS.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>JS.Verify</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>JS.Handover</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>JS.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="JS.Start" name="Letter received">
       <bpmn:documentation></bpmn:documentation>
       <bpmn:outgoing>Flow_95</bpmn:outgoing>
@@ -65,7 +83,9 @@
   <bpmndi:BPMNDiagram id="GDHCN.TrustDomain.Join.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.TrustDomain.Join.Plane" bpmnElement="GDHCN.TrustDomain.Join.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1290" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="1260" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="240" width="1290" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat.Lane_di" bpmnElement="Secretariat.Lane" isHorizontal="true"><dc:Bounds x="150" y="240" width="1260" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Operator_di" bpmnElement="Operator" isHorizontal="true"><dc:Bounds x="120" y="420" width="1290" height="70" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="J.Start_di" bpmnElement="J.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="J.Letter_di" bpmnElement="J.Letter"><dc:Bounds x="420" y="95" width="160" height="80" /></bpmndi:BPMNShape>

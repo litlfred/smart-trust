@@ -13,6 +13,14 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.Terminate.Participant" name="Leave the GDHCN" isExecutable="false">
     <bpmn:documentation>Framework XV.1.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.Terminate.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>T.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T.Notice</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="T.Start" name="Decided to leave">
       <bpmn:documentation>Framework XV.1: for one or more Trust Domains.</bpmn:documentation>
       <bpmn:outgoing>Flow_112</bpmn:outgoing>
@@ -31,6 +39,17 @@
   </bpmn:process>
   <bpmn:process id="GDHCN.ONB.Terminate.Secretariat" name="End a participation" isExecutable="false">
     <bpmn:documentation>Framework XV.1-3.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.Terminate.Secretariat.LaneSet">
+      <bpmn:lane id="Secretariat.Lane" name="GDHCN Secretariat (WHO)">
+        <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+        <bpmn:flowNodeRef>TS2.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS2.Own</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS2.Merge</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS2.Inform</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS2.Wait</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>TS2.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="TS2.Start" name="Notice received">
       <bpmn:documentation>Framework XV.1.</bpmn:documentation>
       <bpmn:outgoing>Flow_114</bpmn:outgoing>
@@ -70,7 +89,9 @@
   <bpmndi:BPMNDiagram id="GDHCN.ONB.Terminate.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.ONB.Terminate.Plane" bpmnElement="GDHCN.ONB.Terminate.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1290" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="1260" height="150" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="240" width="1290" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat.Lane_di" bpmnElement="Secretariat.Lane" isHorizontal="true"><dc:Bounds x="150" y="240" width="1260" height="280" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="T.Start_di" bpmnElement="T.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="T.Notice_di" bpmnElement="T.Notice"><dc:Bounds x="420" y="95" width="160" height="80" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="T.End_di" bpmnElement="T.End"><dc:Bounds x="672" y="117" width="36" height="36" /></bpmndi:BPMNShape>

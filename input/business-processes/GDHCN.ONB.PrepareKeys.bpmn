@@ -13,6 +13,22 @@
   </bpmn:collaboration>
   <bpmn:process id="GDHCN.ONB.PrepareKeys.Participant" name="Prepare keys and repository" isExecutable="false">
     <bpmn:documentation>Steps [9]-[13]. Framework V.4.c, VII.4-5, IX.</bpmn:documentation>
+    <bpmn:laneSet id="GDHCN.ONB.PrepareKeys.Participant.LaneSet">
+      <bpmn:lane id="Participant.Lane" name="GDHCN Participant">
+        <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+        <bpmn:flowNodeRef>K.Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Split</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Certs</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Gpg</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Repo</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Join</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Publish</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Invite</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Accept</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.Expired</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>K.End</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
     <bpmn:startEvent id="K.Start" name="Invitation received">
       <bpmn:documentation>Step [8]. Input: the environment (UAT, PROD, or DEV).</bpmn:documentation>
       <bpmn:outgoing>Flow_25</bpmn:outgoing>
@@ -87,6 +103,7 @@
   <bpmndi:BPMNDiagram id="GDHCN.ONB.PrepareKeys.Diagram">
     <bpmndi:BPMNPlane id="GDHCN.ONB.PrepareKeys.Plane" bpmnElement="GDHCN.ONB.PrepareKeys.Collaboration">
       <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1670" height="410" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant.Lane_di" bpmnElement="Participant.Lane" isHorizontal="true"><dc:Bounds x="150" y="60" width="1640" height="410" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="500" width="1670" height="70" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="K.Start_di" bpmnElement="K.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="K.Split_di" bpmnElement="K.Split"><dc:Bounds x="475" y="110" width="50" height="50" /></bpmndi:BPMNShape>
