@@ -74,8 +74,8 @@
       <bpmn:incoming>Flow_47</bpmn:incoming>
       <bpmn:outgoing>Flow_49</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="V.Crit" name="Check GPG key length and email">
-      <bpmn:documentation>Step [22]: at least 3072 bit RSA or 256 bit ECDSA, and the email matches the Letter.</bpmn:documentation>
+    <bpmn:userTask id="V.Crit" name="Check the GPG key against the criteria">
+      <bpmn:documentation>Step [22]: the key meets the criteria in concepts_certificate_governance and the Letter of Application (RFC 4880; Framework IX), and its email matches the Letter.</bpmn:documentation>
       <bpmn:incoming>Flow_48</bpmn:incoming>
       <bpmn:outgoing>Flow_50</bpmn:outgoing>
     </bpmn:userTask>

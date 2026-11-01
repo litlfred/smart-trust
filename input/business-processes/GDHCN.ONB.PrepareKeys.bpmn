@@ -30,7 +30,7 @@
       <bpmn:outgoing>Flow_29</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="K.Gpg" name="Create GPG keys for each user">
-      <bpmn:documentation>Step [10], for the environment and each authorised person. RFC 4880 keys of the Key Master Representative. Framework IX.</bpmn:documentation>
+      <bpmn:documentation>Step [10], for the environment and each authorised person, as concepts_onboarding_checklist describes. Framework IX and the Letter of Application: a key compliant with RFC 4880.</bpmn:documentation>
       <bpmn:incoming>Flow_27</bpmn:incoming>
       <bpmn:outgoing>Flow_30</bpmn:outgoing>
     </bpmn:userTask>
@@ -47,12 +47,12 @@
       <bpmn:outgoing>Flow_32</bpmn:outgoing>
     </bpmn:parallelGateway>
     <bpmn:userTask id="K.Publish" name="Put public keys in the repository and sign a tag">
-      <bpmn:documentation>Steps [9] and [11]: the public keys in PEM format, committed and signed with a GPG-signed tag.</bpmn:documentation>
+      <bpmn:documentation>Steps [9] and [11], as concepts_onboarding_checklist describes.</bpmn:documentation>
       <bpmn:incoming>Flow_32</bpmn:incoming>
       <bpmn:outgoing>Flow_33</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sendTask id="K.Invite" name="Invite the GitHub bot user">
-      <bpmn:documentation>Steps [11]-[12]: tng-bot for PROD, tng-bot-dev for UAT and DEV.</bpmn:documentation>
+      <bpmn:documentation>Steps [11]-[12]: the bot user for the environment named in concepts_onboarding_checklist.</bpmn:documentation>
       <bpmn:incoming>Flow_33</bpmn:incoming>
       <bpmn:incoming>Flow_36</bpmn:incoming>
       <bpmn:outgoing>Flow_34</bpmn:outgoing>
