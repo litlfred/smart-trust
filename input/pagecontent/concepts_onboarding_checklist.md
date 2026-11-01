@@ -185,7 +185,7 @@ Click **Add Selection** to complete the invitation.
 	gpg --default-new-key-algo rsa4096 --gen-key
 	~~~
 - At the prompt, specify the kind of key you want, or press Enter to accept the default. (Default is RSA)
-- At the prompt, specify the key size you want, or press Enter to accept the default. (For RSA go for 4096)
+- At the prompt, specify the key size you want, or press Enter to accept the default. (The key must meet the [GPG key requirements](concepts_certificate_governance.html#gpg-keys) in the Certificate Governance; RSA 4096 does.)
 - Enter the length of time the key should be valid. Press Enter to specify the default selection, indicating that the key doesn't expire. Unless you require an expiration date, we recommend accepting this default.
 - Verify that your selections are correct.
 - Enter your user ID information.

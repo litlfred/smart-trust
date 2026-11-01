@@ -76,7 +76,7 @@ In all other cases, the participant provides the appropriate CA certificate.
 
 Follow the instructions to create a key: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
 
-Use Algorithm RSA or EC with minimum key length of 4096 bit (RSA) or 256 bit (EC).
+The key must meet the [GPG key requirements](concepts_certificate_governance.html#gpg-keys) in the Certificate Governance.
 
 **[11]** The TNP creates the private GitHub repositories per environment
 
@@ -120,7 +120,7 @@ When the Letter of Application is received, identification of individuals take p
 
 **[22]** Validate that GPG key matches cryptographic/governance criteria
 
-- Key length (min. 3072 bit for RSA and min. 256 bit for ECDSA)
+- the [GPG key requirements](concepts_certificate_governance.html#gpg-keys) in the Certificate Governance, including the key length
 
 - mail address in GPG key must match with the provided mail address in the Letter of Application
 

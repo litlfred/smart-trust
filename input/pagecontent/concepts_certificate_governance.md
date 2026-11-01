@@ -177,6 +177,18 @@ For digital certificates and cryptographic signatures in the TNG context, the ma
 
 The recommended elliptic curve for EC-DSA is again NIST-p-256 due to its widespread implementation.
 
+<a name="gpg-keys"></a>
+###### Requirements on GPG keys
+
+Each person authorised to provide key material for a GDHCN Participant has a GPG key, named in the Letter of Application. The key SHALL be compliant with RFC 4880 (OpenPGP), as the Letter of Application requires, and SHALL meet the following:
+
+|Key algorithm|Key size|Identity|
+|-------------|--------|--------|
+|RSA|Min. 3072 Bit|The email address in the key SHALL match the email address given for that person in the Letter of Application|
+|EC (e.g. ECDSA)|Min. 256 Bit|The email address in the key SHALL match the email address given for that person in the Letter of Application|
+
+The GDHCN Secretariat checks these requirements when it verifies the Letter of Application (see the [onboarding process](concepts_onboarding_process_full.html), step [22]).
+
 ###### 	SCA certificate (TNP<sub>SCA</sub>)
 The following table gives guidance on the TNP<sub>SCA</sub> certificate template in case that a GDHCN Participant decides to operate its own SCA for the DCC system. **Bold** entries are required (MUST be included in the certificate), *italic* entries are recommended (SHOULD be included). For absent fields, no recommendations are defined.
 
