@@ -1,5 +1,5 @@
 <!-- kg:subgraph:begin -->
-# gdhcn-administrative-and-operational-framework
+# GDHCN Administrative and Operational Framework
 
 ingested source material — attributed to its document, not folio content
 
