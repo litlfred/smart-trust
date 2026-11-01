@@ -19,7 +19,7 @@ The model allows each part to be empty, but an empty part is a QA error. So is a
 | Trust Domain | Defined in | Terms of use |
 |---|---|---|
 | [DDCC](Binary-TrustDomain-DDCC.html) | Framework, Annex I | [DDCC terms of use](ValueSet-DDCCTermsOfUse.html) |
-| IPS-PILGRIMAGE | No Framework annex yet; drafted from the [IPS Pilgrimage IG](http://smart.who.int/ips-pilgrimage) | `IPS.HAJJ.CONSENT` |
+| [IPS-PILGRIMAGE](Binary-TrustDomain-IPS-PILGRIMAGE.html) | No Framework annex yet; drafted from the [IPS Pilgrimage IG](http://smart.who.int/ips-pilgrimage) | [IPS.HAJJ.CONSENT](http://smart.who.int/ips-pilgrimage/ValueSet-IPS.HAJJ.CONSENT.html) |
 
 
 
