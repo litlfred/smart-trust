@@ -10,20 +10,8 @@ Onboarding runs in three phases. In **phase 1** the Participant applies and has 
 
 Each drawing has one pool for each party (the GDHCN Participant, the GDHCN Secretariat at WHO, and the gateway operator) and one lane for each actor. A task with a **+** marker calls another process: select it in a drawing to go to that process. The environment (UAT, PROD, and DEV if used) is an input of the processes that run once for each environment.
 
-| Process | What it does | Steps | Calls | Called by |
-| --- | --- | --- | --- | --- |
-| [Onboard a Participant (top level)](#gdhcn-onb) | Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify (steps [1]-[29]), set up (steps [30]-[59]) and go live (steps [60]-[80]). | [1]-[29], [30]-[59], [60]-[80] | [Phase 1: apply and be verified](#gdhcn-onb-apply), [Phase 3: go live](#gdhcn-onb-golive), [Phase 2: register the keys](#gdhcn-onb-registerkeys) | - |
-| [Phase 1: apply and be verified](#gdhcn-onb-apply) | Apply to join and have the Letter of Application verified. | [1]-[29] | [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Verify the Letter of Application](#gdhcn-onb-verifyletter) | [Onboard a Participant (top level)](#gdhcn-onb) |
-| [Prepare the keys and the repository](#gdhcn-onb-preparekeys) | Prepare the keys and the repository for one environment. | [9]-[13] | - | [Phase 1: apply and be verified](#gdhcn-onb-apply), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
-| [Verify the Letter of Application](#gdhcn-onb-verifyletter) | Verify one Letter of Application, and have it corrected if needed. | [15]-[23] | [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter) | [Phase 1: apply and be verified](#gdhcn-onb-apply), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
-| [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter) | Convey a Letter of Application through a secure channel. | not numbered | - | [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
-| [Phase 2: register the keys](#gdhcn-onb-registerkeys) | Register a Participant's keys for one environment. | [31]-[50] | - | [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
-| [Phase 3: go live](#gdhcn-onb-golive) | Connect to the gateway and pass the tests, in UAT and then PROD. | [43]-[46], [60]-[78] | [Connect and test](#gdhcn-onb-connecttest) | [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join) |
-| [Connect and test](#gdhcn-onb-connecttest) | Connect to the gateway and pass the test, for one environment. | [43]-[46], [60]-[66], [67]-[76] | - | [Phase 3: go live](#gdhcn-onb-golive) |
-| [Join a further Trust Domain](#gdhcn-trustdomain-join) | Join a further Trust Domain once onboarded. | not numbered | [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Phase 3: go live](#gdhcn-onb-golive), [Phase 2: register the keys](#gdhcn-onb-registerkeys) | - |
-| [Change the keys or the representatives](#gdhcn-onb-changekeys) | Change the keys or the representatives after onboarding. | not numbered | [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter), [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Phase 2: register the keys](#gdhcn-onb-registerkeys) | - |
-| [Propose a new Trust Domain](#gdhcn-trustdomain-propose) | Propose a new Trust Domain and have it approved. | not numbered | - | - |
-| [End participation](#gdhcn-onb-terminate) | End participation in one or more Trust Domains. | not numbered | - | - |
+
+The processes are listed by phase: [Top level](#top-level), [Phase 1: apply and be verified](#phase-1), [Phase 2: register the keys](#phase-2), [Phase 3: go live](#phase-3), [After onboarding](#after-onboarding). A process that is reused later is listed under the phase where it first runs.
 
 ##### Actors
 
@@ -44,26 +32,47 @@ Each lane is one actor, defined as an ActorDefinition of this guide.
 | [GitHub Bot](ActorDefinition-GitHubBot.html) | The gateway's GitHub bot user for the environment (steps [11]-[13], [34]-[38]). |
 | [Trust Network Gateway](ActorDefinition-TrustNetworkGateway.html) | The Trust Network Gateway (Framework V.1). |
 
+<a name="top-level"></a>
+#### Top level
+
+The whole onboarding, phase by phase.
+
+| Process | What it does | Steps | Calls | Called by |
+| --- | --- | --- | --- | --- |
+| [Onboard a Participant (top level)](#gdhcn-onb) | Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify (steps [1]-[29]), set up (steps [30]-[59]) and go live (steps [60]-[80]). | [1]-[29], [30]-[59], [60]-[80] | [Apply and be verified](#gdhcn-onb-apply), [Go live](#gdhcn-onb-golive), [Register the keys](#gdhcn-onb-registerkeys) | - |
+
 <a name="gdhcn-onb"></a>
 ##### Onboard a Participant (top level)
 
 Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify (steps [1]-[29]), set up (steps [30]-[59]) and go live (steps [60]-[80]). Framework V.4, VI.5 and IX. Process file: `input/business-processes/GDHCN.ONB.bpmn`.
 
-Calls: [Phase 1: apply and be verified](#gdhcn-onb-apply), [Phase 3: go live](#gdhcn-onb-golive), [Phase 2: register the keys](#gdhcn-onb-registerkeys). Called by: no other process.
+Calls: [Apply and be verified](#gdhcn-onb-apply), [Go live](#gdhcn-onb-golive), [Register the keys](#gdhcn-onb-registerkeys). Called by: no other process.
 
 <figure style="width:100%">
   <object data="GDHCN.ONB.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Onboard a Participant (top level)"><img src="GDHCN.ONB.svg" alt="Onboard a Participant (top level)" style="width:100%;"/></object>
 </figure>
 
+<a name="phase-1"></a>
+#### Phase 1: apply and be verified
+
+Steps [1]-[29].
+
+| Process | What it does | Steps | Calls | Called by |
+| --- | --- | --- | --- | --- |
+| [Apply and be verified](#gdhcn-onb-apply) | Apply to join and have the Letter of Application verified. | [1]-[29] | [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Verify the Letter of Application](#gdhcn-onb-verifyletter) | [Onboard a Participant (top level)](#gdhcn-onb) |
+| [Prepare the keys and the repository](#gdhcn-onb-preparekeys) | Prepare the keys and the repository for one environment. | [9]-[13] | - | [Apply and be verified](#gdhcn-onb-apply), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
+| [Verify the Letter of Application](#gdhcn-onb-verifyletter) | Verify one Letter of Application, and have it corrected if needed. | [15]-[23] | [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter) | [Apply and be verified](#gdhcn-onb-apply), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
+| [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter) | Convey a Letter of Application through a secure channel. | not numbered | - | [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
+
 <a name="gdhcn-onb-apply"></a>
-##### Phase 1: apply and be verified
+##### Apply and be verified
 
 Apply to join and have the Letter of Application verified. Phase 1, steps [1]-[29]; Framework V.4 and IX. Process file: `input/business-processes/GDHCN.ONB.Apply.bpmn`.
 
 Calls: [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Verify the Letter of Application](#gdhcn-onb-verifyletter). Called by: [Onboard a Participant (top level)](#gdhcn-onb).
 
 <figure style="width:100%">
-  <object data="GDHCN.ONB.Apply.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Phase 1: apply and be verified"><img src="GDHCN.ONB.Apply.svg" alt="Phase 1: apply and be verified" style="width:100%;"/></object>
+  <object data="GDHCN.ONB.Apply.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Apply and be verified"><img src="GDHCN.ONB.Apply.svg" alt="Apply and be verified" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-preparekeys"></a>
@@ -71,7 +80,7 @@ Calls: [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Verify th
 
 Prepare the keys and the repository for one environment. Steps [9]-[13]; Framework V.4.c, VII.4-5 and IX. Process file: `input/business-processes/GDHCN.ONB.PrepareKeys.bpmn`.
 
-Calls: no other process. Called by: [Phase 1: apply and be verified](#gdhcn-onb-apply), [Change the keys or the representatives](#gdhcn-onb-changekeys).
+Calls: no other process. Called by: [Apply and be verified](#gdhcn-onb-apply), [Change the keys or the representatives](#gdhcn-onb-changekeys).
 
 <figure style="width:100%">
   <object data="GDHCN.ONB.PrepareKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Prepare the keys and the repository"><img src="GDHCN.ONB.PrepareKeys.svg" alt="Prepare the keys and the repository" style="width:100%;"/></object>
@@ -82,7 +91,7 @@ Calls: no other process. Called by: [Phase 1: apply and be verified](#gdhcn-onb-
 
 Verify one Letter of Application, and have it corrected if needed. Steps [15]-[23]; Framework V.4.a-b and IX. Process file: `input/business-processes/GDHCN.ONB.VerifyLetter.bpmn`.
 
-Calls: [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter). Called by: [Phase 1: apply and be verified](#gdhcn-onb-apply), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys).
+Calls: [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter). Called by: [Apply and be verified](#gdhcn-onb-apply), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys).
 
 <figure style="width:100%">
   <object data="GDHCN.ONB.VerifyLetter.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Verify the Letter of Application"><img src="GDHCN.ONB.VerifyLetter.svg" alt="Verify the Letter of Application" style="width:100%;"/></object>
@@ -99,26 +108,45 @@ Calls: no other process. Called by: [Verify the Letter of Application](#gdhcn-on
   <object data="GDHCN.ONB.ConveyLetter.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Convey the Letter through a secure channel"><img src="GDHCN.ONB.ConveyLetter.svg" alt="Convey the Letter through a secure channel" style="width:100%;"/></object>
 </figure>
 
+<a name="phase-2"></a>
+#### Phase 2: register the keys
+
+Steps [30]-[59].
+
+| Process | What it does | Steps | Calls | Called by |
+| --- | --- | --- | --- | --- |
+| [Register the keys](#gdhcn-onb-registerkeys) | Register a Participant's keys for one environment. | [31]-[50] | - | [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys) |
+
 <a name="gdhcn-onb-registerkeys"></a>
-##### Phase 2: register the keys
+##### Register the keys
 
 Register a Participant's keys for one environment. Phase 2, steps [31]-[50]. Process file: `input/business-processes/GDHCN.ONB.RegisterKeys.bpmn`.
 
 Calls: no other process. Called by: [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys).
 
 <figure style="width:100%">
-  <object data="GDHCN.ONB.RegisterKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Phase 2: register the keys"><img src="GDHCN.ONB.RegisterKeys.svg" alt="Phase 2: register the keys" style="width:100%;"/></object>
+  <object data="GDHCN.ONB.RegisterKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Register the keys"><img src="GDHCN.ONB.RegisterKeys.svg" alt="Register the keys" style="width:100%;"/></object>
 </figure>
 
+<a name="phase-3"></a>
+#### Phase 3: go live
+
+Steps [60]-[80].
+
+| Process | What it does | Steps | Calls | Called by |
+| --- | --- | --- | --- | --- |
+| [Go live](#gdhcn-onb-golive) | Connect to the gateway and pass the tests, in UAT and then PROD. | [43]-[46], [60]-[78] | [Connect and test](#gdhcn-onb-connecttest) | [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join) |
+| [Connect and test](#gdhcn-onb-connecttest) | Connect to the gateway and pass the test, for one environment. | [43]-[46], [60]-[66], [67]-[76] | - | [Go live](#gdhcn-onb-golive) |
+
 <a name="gdhcn-onb-golive"></a>
-##### Phase 3: go live
+##### Go live
 
 Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]. Process file: `input/business-processes/GDHCN.ONB.GoLive.bpmn`.
 
 Calls: [Connect and test](#gdhcn-onb-connecttest). Called by: [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join).
 
 <figure style="width:100%">
-  <object data="GDHCN.ONB.GoLive.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Phase 3: go live"><img src="GDHCN.ONB.GoLive.svg" alt="Phase 3: go live" style="width:100%;"/></object>
+  <object data="GDHCN.ONB.GoLive.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Go live"><img src="GDHCN.ONB.GoLive.svg" alt="Go live" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-connecttest"></a>
@@ -126,18 +154,30 @@ Calls: [Connect and test](#gdhcn-onb-connecttest). Called by: [Onboard a Partici
 
 Connect to the gateway and pass the test, for one environment. Steps [43]-[46], [60]-[66] (UAT) and [67]-[76] (PROD). Process file: `input/business-processes/GDHCN.ONB.ConnectTest.bpmn`.
 
-Calls: no other process. Called by: [Phase 3: go live](#gdhcn-onb-golive).
+Calls: no other process. Called by: [Go live](#gdhcn-onb-golive).
 
 <figure style="width:100%">
   <object data="GDHCN.ONB.ConnectTest.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Connect and test"><img src="GDHCN.ONB.ConnectTest.svg" alt="Connect and test" style="width:100%;"/></object>
 </figure>
+
+<a name="after-onboarding"></a>
+#### After onboarding
+
+Not numbered on this page; from the Framework.
+
+| Process | What it does | Steps | Calls | Called by |
+| --- | --- | --- | --- | --- |
+| [Join a further Trust Domain](#gdhcn-trustdomain-join) | Join a further Trust Domain once onboarded. | not numbered | [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Go live](#gdhcn-onb-golive), [Register the keys](#gdhcn-onb-registerkeys) | - |
+| [Change the keys or the representatives](#gdhcn-onb-changekeys) | Change the keys or the representatives after onboarding. | not numbered | [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter), [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Register the keys](#gdhcn-onb-registerkeys) | - |
+| [Propose a new Trust Domain](#gdhcn-trustdomain-propose) | Propose a new Trust Domain and have it approved. | not numbered | - | - |
+| [End participation](#gdhcn-onb-terminate) | End participation in one or more Trust Domains. | not numbered | - | - |
 
 <a name="gdhcn-trustdomain-join"></a>
 ##### Join a further Trust Domain
 
 Join a further Trust Domain once onboarded. Framework V.4 and IX. Process file: `input/business-processes/GDHCN.TrustDomain.Join.bpmn`.
 
-Calls: [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Phase 3: go live](#gdhcn-onb-golive), [Phase 2: register the keys](#gdhcn-onb-registerkeys). Called by: no other process.
+Calls: [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Go live](#gdhcn-onb-golive), [Register the keys](#gdhcn-onb-registerkeys). Called by: no other process.
 
 <figure style="width:100%">
   <object data="GDHCN.TrustDomain.Join.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Join a further Trust Domain"><img src="GDHCN.TrustDomain.Join.svg" alt="Join a further Trust Domain" style="width:100%;"/></object>
@@ -148,7 +188,7 @@ Calls: [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Phase 3: go
 
 Change the keys or the representatives after onboarding. Framework IX. Process file: `input/business-processes/GDHCN.ONB.ChangeKeys.bpmn`.
 
-Calls: [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter), [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Phase 2: register the keys](#gdhcn-onb-registerkeys). Called by: no other process.
+Calls: [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter), [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Register the keys](#gdhcn-onb-registerkeys). Called by: no other process.
 
 <figure style="width:100%">
   <object data="GDHCN.ONB.ChangeKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Change the keys or the representatives"><img src="GDHCN.ONB.ChangeKeys.svg" alt="Change the keys or the representatives" style="width:100%;"/></object>
