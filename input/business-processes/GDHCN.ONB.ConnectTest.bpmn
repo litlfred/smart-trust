@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.ConnectTest.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.ConnectTest.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="TechnicalRepresentative" name="Technical Representative" />
   <bpmn:resource id="OnboardingTeam" name="Onboarding Team" />
   <bpmn:resource id="TrustNetworkGateway" name="Trust Network Gateway" />
@@ -39,6 +40,7 @@
     </bpmn:startEvent>
     <bpmn:userTask id="X.P.Connect" name="Connect to the gateway">
       <bpmn:documentation>Steps [60] and [70].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Connect" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_89</bpmn:incoming>
       <bpmn:incoming>Flow_92</bpmn:incoming>
       <bpmn:outgoing>Flow_90</bpmn:outgoing>
@@ -51,17 +53,20 @@
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="X.P.Fix" name="Correct the connection with the operations team">
       <bpmn:documentation>Steps [61] and [71].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Fix" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_91</bpmn:incoming>
       <bpmn:outgoing>Flow_92</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="X.P.Test" name="Run the test">
       <bpmn:documentation>Step [62]: the UAT dry run. Step [72]: the PROD readiness test.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Test" /></bpmn:extensionElements>
       <bpmn:incoming>X.F.conn</bpmn:incoming>
       <bpmn:incoming>Flow_96</bpmn:incoming>
       <bpmn:outgoing>Flow_93</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sendTask id="X.P.Send" name="Send the test results">
       <bpmn:documentation>Steps [63] and [73].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.P.Send" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_93</bpmn:incoming>
       <bpmn:outgoing>Flow_94</bpmn:outgoing>
     </bpmn:sendTask>
@@ -115,11 +120,13 @@
     </bpmn:startEvent>
     <bpmn:serviceTask id="X.O.White" name="Whitelist the certificates">
       <bpmn:documentation>Steps [43] (UAT) and [67] (PROD, after the dry run passed).</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.White" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_97</bpmn:incoming>
       <bpmn:outgoing>Flow_98</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:sendTask id="X.O.Inform" name="Send the connection information">
       <bpmn:documentation>Steps [44]-[45] and [68].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.Inform" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_98</bpmn:incoming>
       <bpmn:outgoing>Flow_99</bpmn:outgoing>
     </bpmn:sendTask>
@@ -131,6 +138,7 @@
     </bpmn:receiveTask>
     <bpmn:userTask id="X.O.Check" name="Check the test results">
       <bpmn:documentation>Steps [65] and [75].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.Check" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_100</bpmn:incoming>
       <bpmn:outgoing>Flow_101</bpmn:outgoing>
     </bpmn:userTask>
@@ -142,6 +150,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:sendTask id="X.O.Fix" name="Agree corrective actions">
       <bpmn:documentation>Steps [66] and [76].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.ConnectTest.md#X.O.Fix" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_102</bpmn:incoming>
       <bpmn:outgoing>Flow_103</bpmn:outgoing>
     </bpmn:sendTask>

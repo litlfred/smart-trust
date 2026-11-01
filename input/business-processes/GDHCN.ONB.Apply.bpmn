@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.Apply.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.Apply.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="KeyMasterRepresentative" name="Key Master Representative" />
   <bpmn:resource id="BusinessOwnerRepresentative" name="Business Owner Representative" />
   <bpmn:resource id="GDHCNSecretariat" name="GDHCN Secretariat" />
@@ -40,12 +41,14 @@
     </bpmn:startEvent>
     <bpmn:sendTask id="A.P.Interest" name="Send the Statement of Interest">
       <bpmn:documentation>Step [1].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.P.Interest" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_12</bpmn:incoming>
       <bpmn:incoming>Flow_16</bpmn:incoming>
       <bpmn:outgoing>Flow_13</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:receiveTask id="A.P.Result" name="Receive the result of the check">
       <bpmn:documentation>Steps [5] and [8].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.P.Result" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_13</bpmn:incoming>
       <bpmn:outgoing>Flow_14</bpmn:outgoing>
     </bpmn:receiveTask>
@@ -57,6 +60,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="A.P.Modify" name="Modify the data">
       <bpmn:documentation>Step [6]: modify the data and re-apply.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.P.Modify" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_15</bpmn:incoming>
       <bpmn:outgoing>Flow_16</bpmn:outgoing>
     </bpmn:userTask>
@@ -107,6 +111,7 @@
     </bpmn:startEvent>
     <bpmn:userTask id="A.S.Check" name="Validate the data and the Terms of Participation">
       <bpmn:documentation>Steps [2]-[3]; Framework V.4.a and VIII.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.S.Check" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_19</bpmn:incoming>
       <bpmn:outgoing>Flow_20</bpmn:outgoing>
     </bpmn:userTask>
@@ -118,6 +123,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:sendTask id="A.S.Reject" name="Reject by email">
       <bpmn:documentation>Steps [4]-[5].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.S.Reject" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_21</bpmn:incoming>
       <bpmn:outgoing>Flow_22</bpmn:outgoing>
     </bpmn:sendTask>
@@ -127,6 +133,7 @@
     </bpmn:endEvent>
     <bpmn:sendTask id="A.S.Invite" name="Invite to start onboarding">
       <bpmn:documentation>Step [7].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.Apply.md#A.S.Invite" /></bpmn:extensionElements>
       <bpmn:incoming>A.F.ok</bpmn:incoming>
       <bpmn:outgoing>Flow_23</bpmn:outgoing>
     </bpmn:sendTask>

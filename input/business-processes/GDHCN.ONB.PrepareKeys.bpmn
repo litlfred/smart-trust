@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.PrepareKeys.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.PrepareKeys.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="KeyMasterRepresentative" name="Key Master Representative" />
   <bpmn:resource id="GitHubBot" name="GitHub Bot" />
   <bpmn:collaboration id="GDHCN.ONB.PrepareKeys.Collaboration">
@@ -44,16 +45,19 @@
     </bpmn:parallelGateway>
     <bpmn:userTask id="K.Certs" name="Create the TLS, upload and SCA certificates">
       <bpmn:documentation>Step [9], as concepts_CertificatePreperation describes.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.PrepareKeys.md#K.Certs" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_26</bpmn:incoming>
       <bpmn:outgoing>Flow_29</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="K.Gpg" name="Create a GPG key for each authorized person">
       <bpmn:documentation>Step [10], as concepts_onboarding_checklist describes; the requirements are in concepts_certificate_governance.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.PrepareKeys.md#K.Gpg" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_27</bpmn:incoming>
       <bpmn:outgoing>Flow_30</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="K.Repo" name="Create the private GitHub repository">
       <bpmn:documentation>Step [11].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.PrepareKeys.md#K.Repo" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_28</bpmn:incoming>
       <bpmn:outgoing>Flow_31</bpmn:outgoing>
     </bpmn:userTask>
@@ -71,6 +75,7 @@
     </bpmn:userTask>
     <bpmn:sendTask id="K.Invite" name="Invite the GitHub bot">
       <bpmn:documentation>Steps [11]-[12].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.PrepareKeys.md#K.Invite" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_33</bpmn:incoming>
       <bpmn:incoming>Flow_36</bpmn:incoming>
       <bpmn:outgoing>Flow_34</bpmn:outgoing>
@@ -119,6 +124,7 @@
     </bpmn:startEvent>
     <bpmn:sendTask id="KB.Accept" name="Accept the invitation">
       <bpmn:documentation>Step [13]: WHO accepts through the bot user.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.PrepareKeys.md#KB.Accept" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_37</bpmn:incoming>
       <bpmn:outgoing>Flow_38</bpmn:outgoing>
     </bpmn:sendTask>

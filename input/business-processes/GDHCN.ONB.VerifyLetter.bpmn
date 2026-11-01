@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.VerifyLetter.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.VerifyLetter.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="BusinessOwnerRepresentative" name="Business Owner Representative" />
   <bpmn:resource id="GDHCNSecretariat" name="GDHCN Secretariat" />
   <bpmn:collaboration id="GDHCN.ONB.VerifyLetter.Collaboration">
@@ -28,6 +29,7 @@
     </bpmn:laneSet>
     <bpmn:startEvent id="V.P.Start" name="Letter signed">
       <bpmn:documentation>Step [14].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.P.Start" /></bpmn:extensionElements>
       <bpmn:outgoing>Flow_52</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:exclusiveGateway id="V.P.Again" name="">
@@ -52,6 +54,7 @@
     </bpmn:startEvent>
     <bpmn:userTask id="V.P.Correct" name="Correct the Letter">
       <bpmn:documentation>Step [20]: corrective activities.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.P.Correct" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_55</bpmn:incoming>
       <bpmn:outgoing>Flow_56</bpmn:outgoing>
     </bpmn:userTask>
@@ -89,11 +92,13 @@
     </bpmn:exclusiveGateway>
     <bpmn:callActivity id="V.S.Receive" name="Receive the Letter" calledElement="GDHCN.ONB.ConveyLetter.Secretariat">
       <bpmn:documentation>Step [15], through a secure channel (Framework IX).</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.S.Receive" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_58</bpmn:incoming>
       <bpmn:outgoing>Flow_59</bpmn:outgoing>
     </bpmn:callActivity>
     <bpmn:userTask id="V.S.Check" name="Verify accuracy, eligibility and rules">
       <bpmn:documentation>Step [18]; Framework V.4.a and IX.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.S.Check" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_59</bpmn:incoming>
       <bpmn:outgoing>Flow_60</bpmn:outgoing>
     </bpmn:userTask>
@@ -105,16 +110,19 @@
     </bpmn:exclusiveGateway>
     <bpmn:sendTask id="V.S.Fail" name="Inform the Participant of the failure">
       <bpmn:documentation>Step [19], by email.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.S.Fail" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_61</bpmn:incoming>
       <bpmn:outgoing>Flow_62</bpmn:outgoing>
     </bpmn:sendTask>
     <bpmn:userTask id="V.S.Gpg" name="Check each GPG key">
       <bpmn:documentation>Steps [21]-[22]: the key holds the email given in the Letter and meets the GPG key requirements in concepts_certificate_governance.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.S.Gpg" /></bpmn:extensionElements>
       <bpmn:incoming>V.F.ok</bpmn:incoming>
       <bpmn:outgoing>Flow_63</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:userTask id="V.S.Collect" name="Collect the information for the operator">
       <bpmn:documentation>Step [23], as listed there.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.VerifyLetter.md#V.S.Collect" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_63</bpmn:incoming>
       <bpmn:outgoing>Flow_64</bpmn:outgoing>
     </bpmn:userTask>

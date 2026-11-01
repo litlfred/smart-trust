@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.RegisterKeys.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:cat-harness.processes="https://litlfred.github.io/cat-harness/v0/processes/ns#" id="GDHCN.ONB.RegisterKeys.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:import namespace="https://litlfred.github.io/cat-harness/v0/processes/ns#" location="https://litlfred.github.io/cat-harness/v0/processes/ns.jsonld" importType="http://www.w3.org/ns/json-ld" />
   <bpmn:resource id="TrustNetworkAnchor" name="Trust Network Anchor" />
   <bpmn:resource id="OperationsTeam" name="Operations Team" />
   <bpmn:resource id="GitHubBot" name="GitHub Bot" />
@@ -35,6 +36,7 @@
     </bpmn:startEvent>
     <bpmn:sendTask id="R.T.Sign" name="Verify the PR and sign air-gapped">
       <bpmn:documentation>Steps [36]-[37].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.T.Sign" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_65</bpmn:incoming>
       <bpmn:outgoing>Flow_66</bpmn:outgoing>
     </bpmn:sendTask>
@@ -70,10 +72,12 @@
     </bpmn:laneSet>
     <bpmn:startEvent id="R.O.Start" name="Onboarding information received">
       <bpmn:documentation>Step [30]. Input: the environment.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.O.Start" /></bpmn:extensionElements>
       <bpmn:outgoing>Flow_67</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:userTask id="R.O.Config" name="Add the data to the configuration files">
       <bpmn:documentation>Steps [31]-[33].</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.O.Config" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_67</bpmn:incoming>
       <bpmn:outgoing>Flow_68</bpmn:outgoing>
     </bpmn:userTask>
@@ -90,6 +94,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="R.O.Verify" name="Verify the pull request">
       <bpmn:documentation>Steps [39] (UAT) and [47] (PROD).</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.O.Verify" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_75</bpmn:incoming>
       <bpmn:outgoing>Flow_76</bpmn:outgoing>
     </bpmn:userTask>
@@ -105,6 +110,7 @@
     </bpmn:endEvent>
     <bpmn:sendTask id="R.O.Fail" name="Send the failure">
       <bpmn:documentation>Steps [40]-[41] and [48]-[49]: to the Participant; WHO is informed as well.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.O.Fail" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_77</bpmn:incoming>
       <bpmn:outgoing>Flow_78</bpmn:outgoing>
     </bpmn:sendTask>
@@ -131,6 +137,7 @@
     </bpmn:exclusiveGateway>
     <bpmn:serviceTask id="R.B.Auto" name="Sign the keys automatically">
       <bpmn:documentation>Step [38], UAT (and optional DEV).</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.B.Auto" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_71</bpmn:incoming>
       <bpmn:outgoing>Flow_74</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -165,6 +172,7 @@
     </bpmn:startEvent>
     <bpmn:sendTask id="R.P.Fix" name="Correct the key material">
       <bpmn:documentation>Steps [42] and [50], in the Participant's repository.</bpmn:documentation>
+      <bpmn:extensionElements><cat-harness.processes:narrative href="GDHCN.ONB.RegisterKeys.md#R.P.Fix" /></bpmn:extensionElements>
       <bpmn:incoming>Flow_79</bpmn:incoming>
       <bpmn:outgoing>Flow_80</bpmn:outgoing>
     </bpmn:sendTask>
