@@ -35,7 +35,7 @@
             "verdict": "permitted",
             "basis": "Published by WHO as part of the WHO SMART Trust IG (https://smart.who.int/trust/GDHCN_Administrative_and_Operational_Framework.pdf), whose ImplementationGuide declares `license: CC-BY-SA-3.0-IGO` (sushi-config.yaml); the document itself states no licence. Attribution and share-alike are met by `licence.json` and `catalogue/records/`.",
             "decidedAt": "2026-11-01",
-            "decidedBy": "proposed in this PR, pending the owner's confirmation"
+            "decidedBy": "owner ruling, 2026-11-01 (card Q-VC-5 A)"
           },
           "retention": {
             "verdict": "permitted",
@@ -49,7 +49,7 @@
             "verdict": "permitted",
             "basis": "Published by WHO as part of the WHO SMART Trust IG (https://smart.who.int/trust/GDHCN_Administrative_and_Operational_Framework.pdf), whose ImplementationGuide declares `license: CC-BY-SA-3.0-IGO` (sushi-config.yaml); the document itself states no licence. Attribution and share-alike are met by `licence.json` and `catalogue/records/`.",
             "decidedAt": "2026-11-01",
-            "decidedBy": "proposed in this PR, pending the owner's confirmation"
+            "decidedBy": "owner ruling, 2026-11-01 (card Q-VC-5 A)"
           }
         }
       }
@@ -81,7 +81,7 @@
             "verdict": "permitted",
             "basis": "Published by WHO as part of the WHO SMART Trust IG (https://smart.who.int/trust/GDHCN_Administrative_and_Operational_Framework.pdf), whose ImplementationGuide declares `license: CC-BY-SA-3.0-IGO` (sushi-config.yaml); the document itself states no licence. Attribution and share-alike are met by `licence.json` and `catalogue/records/`.",
             "decidedAt": "2026-11-01",
-            "decidedBy": "proposed in this PR, pending the owner's confirmation"
+            "decidedBy": "owner ruling, 2026-11-01 (card Q-VC-5 A)"
           },
           "retention": {
             "verdict": "permitted",
@@ -95,7 +95,7 @@
             "verdict": "permitted",
             "basis": "Published by WHO as part of the WHO SMART Trust IG (https://smart.who.int/trust/GDHCN_Administrative_and_Operational_Framework.pdf), whose ImplementationGuide declares `license: CC-BY-SA-3.0-IGO` (sushi-config.yaml); the document itself states no licence. Attribution and share-alike are met by `licence.json` and `catalogue/records/`.",
             "decidedAt": "2026-11-01",
-            "decidedBy": "proposed in this PR, pending the owner's confirmation"
+            "decidedBy": "owner ruling, 2026-11-01 (card Q-VC-5 A)"
           }
         }
       }
@@ -117,7 +117,7 @@
         "verdict": "permitted",
         "basis": "Published by WHO as part of the WHO SMART Trust IG (https://smart.who.int/trust/GDHCN_Administrative_and_Operational_Framework.pdf), whose ImplementationGuide declares `license: CC-BY-SA-3.0-IGO` (sushi-config.yaml); the document itself states no licence. Attribution and share-alike are met by `licence.json` and `catalogue/records/`.",
         "decidedAt": "2026-11-01",
-        "decidedBy": "proposed in this PR, pending the owner's confirmation"
+        "decidedBy": "owner ruling, 2026-11-01 (card Q-VC-5 A)"
       },
       "retention": {
         "verdict": "permitted",
@@ -131,7 +131,7 @@
         "verdict": "permitted",
         "basis": "Published by WHO as part of the WHO SMART Trust IG (https://smart.who.int/trust/GDHCN_Administrative_and_Operational_Framework.pdf), whose ImplementationGuide declares `license: CC-BY-SA-3.0-IGO` (sushi-config.yaml); the document itself states no licence. Attribution and share-alike are met by `licence.json` and `catalogue/records/`.",
         "decidedAt": "2026-11-01",
-        "decidedBy": "proposed in this PR, pending the owner's confirmation"
+        "decidedBy": "owner ruling, 2026-11-01 (card Q-VC-5 A)"
       }
     }
   }
