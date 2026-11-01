@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.PrepareKeys.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:collaboration id="GDHCN.ONB.PrepareKeys.Collaboration">
+    <bpmn:documentation>Prepare the keys and repository for one environment. Steps [9]-[13].</bpmn:documentation>
+    <bpmn:participant id="Participant" name="GDHCN Participant" processRef="GDHCN.ONB.PrepareKeys.Participant">
+      <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+    </bpmn:participant>
+    <bpmn:participant id="Secretariat" name="GDHCN Secretariat (WHO)">
+      <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+    </bpmn:participant>
+    <bpmn:messageFlow id="Msg.K.Invite" name="Bot invitation" sourceRef="K.Invite" targetRef="Secretariat" />
+    <bpmn:messageFlow id="Msg.K.Accept" name="Invitation accepted" sourceRef="Secretariat" targetRef="K.Accept" />
+  </bpmn:collaboration>
+  <bpmn:process id="GDHCN.ONB.PrepareKeys.Participant" name="Prepare keys and repository" isExecutable="false">
+    <bpmn:documentation>Steps [9]-[13]. Framework V.4.c, VII.4-5, IX.</bpmn:documentation>
+    <bpmn:startEvent id="K.Start" name="Invitation received">
+      <bpmn:documentation>Step [8]. Input: the environment (UAT, PROD, or DEV).</bpmn:documentation>
+      <bpmn:outgoing>Flow_25</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:parallelGateway id="K.Split" name="">
+      <bpmn:documentation>Steps [9]-[11] can run in parallel.</bpmn:documentation>
+      <bpmn:incoming>Flow_25</bpmn:incoming>
+      <bpmn:outgoing>Flow_26</bpmn:outgoing>
+      <bpmn:outgoing>Flow_27</bpmn:outgoing>
+      <bpmn:outgoing>Flow_28</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:userTask id="K.Certs" name="Create TLS, UP and SCA certificates">
+      <bpmn:documentation>Step [9], for the environment. See concepts_CertificatePreperation. Framework VII.4.</bpmn:documentation>
+      <bpmn:incoming>Flow_26</bpmn:incoming>
+      <bpmn:outgoing>Flow_29</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="K.Gpg" name="Create GPG keys for each user">
+      <bpmn:documentation>Step [10], for the environment and each authorised person. RFC 4880 keys of the Key Master Representative. Framework IX.</bpmn:documentation>
+      <bpmn:incoming>Flow_27</bpmn:incoming>
+      <bpmn:outgoing>Flow_30</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="K.Repo" name="Create a private GitHub repository">
+      <bpmn:documentation>Step [11], one for the environment. Framework IX.</bpmn:documentation>
+      <bpmn:incoming>Flow_28</bpmn:incoming>
+      <bpmn:outgoing>Flow_31</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:parallelGateway id="K.Join" name="">
+      <bpmn:documentation>All three are ready.</bpmn:documentation>
+      <bpmn:incoming>Flow_29</bpmn:incoming>
+      <bpmn:incoming>Flow_30</bpmn:incoming>
+      <bpmn:incoming>Flow_31</bpmn:incoming>
+      <bpmn:outgoing>Flow_32</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:userTask id="K.Publish" name="Put public keys in the repository and sign a tag">
+      <bpmn:documentation>Steps [9] and [11]: the public keys in PEM format, committed and signed with a GPG-signed tag.</bpmn:documentation>
+      <bpmn:incoming>Flow_32</bpmn:incoming>
+      <bpmn:outgoing>Flow_33</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask id="K.Invite" name="Invite the GitHub bot user">
+      <bpmn:documentation>Steps [11]-[12]: tng-bot for PROD, tng-bot-dev for UAT and DEV.</bpmn:documentation>
+      <bpmn:incoming>Flow_33</bpmn:incoming>
+      <bpmn:incoming>Flow_36</bpmn:incoming>
+      <bpmn:outgoing>Flow_34</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:receiveTask id="K.Accept" name="Receive the acceptance">
+      <bpmn:documentation>Step [13]: WHO must accept within 7 days.</bpmn:documentation>
+      <bpmn:incoming>Flow_34</bpmn:incoming>
+      <bpmn:outgoing>Flow_35</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:boundaryEvent id="K.Expired" name="7 days passed" attachedToRef="K.Accept" cancelActivity="true">
+      <bpmn:documentation>Step [12]: the invitation loses validity after 7 days.</bpmn:documentation>
+      <bpmn:outgoing>Flow_36</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="K.Expired.Def"><bpmn:timeDuration>P7D</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:boundaryEvent>
+    <bpmn:endEvent id="K.End" name="Keys and repository ready">
+      <bpmn:documentation>Ready for the Letter of Application, step [14].</bpmn:documentation>
+      <bpmn:incoming>Flow_35</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_25" sourceRef="K.Start" targetRef="K.Split" />
+    <bpmn:sequenceFlow id="Flow_26" sourceRef="K.Split" targetRef="K.Certs" />
+    <bpmn:sequenceFlow id="Flow_27" sourceRef="K.Split" targetRef="K.Gpg" />
+    <bpmn:sequenceFlow id="Flow_28" sourceRef="K.Split" targetRef="K.Repo" />
+    <bpmn:sequenceFlow id="Flow_29" sourceRef="K.Certs" targetRef="K.Join" />
+    <bpmn:sequenceFlow id="Flow_30" sourceRef="K.Gpg" targetRef="K.Join" />
+    <bpmn:sequenceFlow id="Flow_31" sourceRef="K.Repo" targetRef="K.Join" />
+    <bpmn:sequenceFlow id="Flow_32" sourceRef="K.Join" targetRef="K.Publish" />
+    <bpmn:sequenceFlow id="Flow_33" sourceRef="K.Publish" targetRef="K.Invite" />
+    <bpmn:sequenceFlow id="Flow_34" sourceRef="K.Invite" targetRef="K.Accept" />
+    <bpmn:sequenceFlow id="Flow_35" sourceRef="K.Accept" targetRef="K.End" />
+    <bpmn:sequenceFlow id="Flow_36" sourceRef="K.Expired" targetRef="K.Invite" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="GDHCN.ONB.PrepareKeys.Diagram">
+    <bpmndi:BPMNPlane id="GDHCN.ONB.PrepareKeys.Plane" bpmnElement="GDHCN.ONB.PrepareKeys.Collaboration">
+      <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1670" height="410" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="500" width="1670" height="70" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Start_di" bpmnElement="K.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Split_di" bpmnElement="K.Split"><dc:Bounds x="475" y="110" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Certs_di" bpmnElement="K.Certs"><dc:Bounds x="610" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Gpg_di" bpmnElement="K.Gpg"><dc:Bounds x="610" y="225" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Repo_di" bpmnElement="K.Repo"><dc:Bounds x="610" y="355" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Join_di" bpmnElement="K.Join"><dc:Bounds x="855" y="110" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Publish_di" bpmnElement="K.Publish"><dc:Bounds x="990" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Invite_di" bpmnElement="K.Invite"><dc:Bounds x="1180" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Accept_di" bpmnElement="K.Accept"><dc:Bounds x="1370" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.Expired_di" bpmnElement="K.Expired"><dc:Bounds x="1474" y="157" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="K.End_di" bpmnElement="K.End"><dc:Bounds x="1622" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_25_di" bpmnElement="Flow_25"><di:waypoint x="328" y="135" /><di:waypoint x="475" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_26_di" bpmnElement="Flow_26"><di:waypoint x="525" y="135" /><di:waypoint x="610" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_27_di" bpmnElement="Flow_27"><di:waypoint x="500" y="160" /><di:waypoint x="500" y="265" /><di:waypoint x="610" y="265" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_28_di" bpmnElement="Flow_28"><di:waypoint x="500" y="160" /><di:waypoint x="500" y="395" /><di:waypoint x="610" y="395" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_29_di" bpmnElement="Flow_29"><di:waypoint x="770" y="135" /><di:waypoint x="855" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_30_di" bpmnElement="Flow_30"><di:waypoint x="770" y="265" /><di:waypoint x="880" y="265" /><di:waypoint x="880" y="160" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_31_di" bpmnElement="Flow_31"><di:waypoint x="770" y="395" /><di:waypoint x="880" y="395" /><di:waypoint x="880" y="160" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_32_di" bpmnElement="Flow_32"><di:waypoint x="905" y="135" /><di:waypoint x="990" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_33_di" bpmnElement="Flow_33"><di:waypoint x="1150" y="135" /><di:waypoint x="1180" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_34_di" bpmnElement="Flow_34"><di:waypoint x="1340" y="135" /><di:waypoint x="1370" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_35_di" bpmnElement="Flow_35"><di:waypoint x="1530" y="135" /><di:waypoint x="1622" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_36_di" bpmnElement="Flow_36"><di:waypoint x="1492" y="193" /><di:waypoint x="1492" y="235" /><di:waypoint x="1260" y="235" /><di:waypoint x="1260" y="175" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.K.Invite_di" bpmnElement="Msg.K.Invite"><di:waypoint x="1240" y="175" /><di:waypoint x="1240" y="500" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.K.Accept_di" bpmnElement="Msg.K.Accept"><di:waypoint x="1470" y="500" /><di:waypoint x="1470" y="175" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

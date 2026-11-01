@@ -272,6 +272,7 @@
         "sushi-config.yaml",
         "ig.ini",
         "local-template/",
+        "input/business-processes/",
         "input/data/",
         "input/fsh/",
         "input/ignoreWarnings.txt",

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.ConnectTest.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:collaboration id="GDHCN.ONB.ConnectTest.Collaboration">
+    <bpmn:documentation>Connect to the gateway and test, for one environment. Steps [43]-[46], [60]-[76]. The page names the onboarding team for UAT [64] and the service provider for PROD [75]; both are the gateway operator here.</bpmn:documentation>
+    <bpmn:participant id="Participant" name="GDHCN Participant" processRef="GDHCN.ONB.ConnectTest.Participant">
+      <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+    </bpmn:participant>
+    <bpmn:participant id="Operator" name="Gateway operator" processRef="GDHCN.ONB.ConnectTest.Operator">
+      <bpmn:documentation>The operations (OPS) and onboarding (OB) teams of the service provider that runs the Trust Network Gateway, with the GitHub bot (tng-bot, tng-bot-dev) as its service tasks. Page [30]-[80].</bpmn:documentation>
+    </bpmn:participant>
+    <bpmn:messageFlow id="Msg.C.Info" name="Connection information" sourceRef="CO.Inform" targetRef="CP.Start" />
+    <bpmn:messageFlow id="Msg.C.Res" name="Test results" sourceRef="CP.Send" targetRef="CO.Recv" />
+    <bpmn:messageFlow id="Msg.C.Fix" name="Corrective actions" sourceRef="CO.Fix" targetRef="CP.Recv" />
+    <bpmn:messageFlow id="Msg.C.Pass" name="Test passed" sourceRef="CO.Pass" targetRef="CP.Recv" />
+  </bpmn:collaboration>
+  <bpmn:process id="GDHCN.ONB.ConnectTest.Participant" name="Connect and test" isExecutable="false">
+    <bpmn:documentation>Steps [60]-[63] (UAT) and [70]-[73] (PROD).</bpmn:documentation>
+    <bpmn:startEvent id="CP.Start" name="Connection information received">
+      <bpmn:documentation>Steps [46] and [69]. Input: the environment.</bpmn:documentation>
+      <bpmn:outgoing>Flow_74</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="CP.Start.Def" />
+    </bpmn:startEvent>
+    <bpmn:userTask id="CP.Connect" name="Connect to the gateway">
+      <bpmn:documentation>Steps [60] and [70].</bpmn:documentation>
+      <bpmn:incoming>Flow_74</bpmn:incoming>
+      <bpmn:incoming>Flow_77</bpmn:incoming>
+      <bpmn:outgoing>Flow_75</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="CP.Conn" name="Connected?" default="Flow_CP_conn_yes">
+      <bpmn:documentation>Is the connection to the TNG established?</bpmn:documentation>
+      <bpmn:incoming>Flow_75</bpmn:incoming>
+      <bpmn:outgoing>Flow_CP_conn_yes</bpmn:outgoing>
+      <bpmn:outgoing>Flow_76</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="CP.Fix" name="Correct the connection with the operator">
+      <bpmn:documentation>Steps [61] and [71]: the operations team supports the Participant.</bpmn:documentation>
+      <bpmn:incoming>Flow_76</bpmn:incoming>
+      <bpmn:outgoing>Flow_77</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="CP.Test" name="Run the test">
+      <bpmn:documentation>Step [62]: the UAT dry run test. Step [72]: the Production Readiness Test.</bpmn:documentation>
+      <bpmn:incoming>Flow_CP_conn_yes</bpmn:incoming>
+      <bpmn:incoming>Flow_81</bpmn:incoming>
+      <bpmn:outgoing>Flow_78</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask id="CP.Send" name="Send the test results">
+      <bpmn:documentation>Steps [63] and [73], by email.</bpmn:documentation>
+      <bpmn:incoming>Flow_78</bpmn:incoming>
+      <bpmn:outgoing>Flow_79</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:receiveTask id="CP.Recv" name="Receive the check result">
+      <bpmn:documentation>Steps [65] and [75].</bpmn:documentation>
+      <bpmn:incoming>Flow_79</bpmn:incoming>
+      <bpmn:outgoing>Flow_80</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:exclusiveGateway id="CP.Ok" name="Passed?" default="Flow_CP_ok_yes">
+      <bpmn:documentation>Did the test pass?</bpmn:documentation>
+      <bpmn:incoming>Flow_80</bpmn:incoming>
+      <bpmn:outgoing>Flow_CP_ok_yes</bpmn:outgoing>
+      <bpmn:outgoing>Flow_81</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="CP.End" name="Test passed">
+      <bpmn:documentation></bpmn:documentation>
+      <bpmn:incoming>Flow_CP_ok_yes</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_74" sourceRef="CP.Start" targetRef="CP.Connect" />
+    <bpmn:sequenceFlow id="Flow_75" sourceRef="CP.Connect" targetRef="CP.Conn" />
+    <bpmn:sequenceFlow id="Flow_CP_conn_yes" name="yes" sourceRef="CP.Conn" targetRef="CP.Test" />
+    <bpmn:sequenceFlow id="Flow_76" name="no" sourceRef="CP.Conn" targetRef="CP.Fix" />
+    <bpmn:sequenceFlow id="Flow_77" sourceRef="CP.Fix" targetRef="CP.Connect" />
+    <bpmn:sequenceFlow id="Flow_78" sourceRef="CP.Test" targetRef="CP.Send" />
+    <bpmn:sequenceFlow id="Flow_79" sourceRef="CP.Send" targetRef="CP.Recv" />
+    <bpmn:sequenceFlow id="Flow_80" sourceRef="CP.Recv" targetRef="CP.Ok" />
+    <bpmn:sequenceFlow id="Flow_CP_ok_yes" name="yes" sourceRef="CP.Ok" targetRef="CP.End" />
+    <bpmn:sequenceFlow id="Flow_81" name="no, after correction" sourceRef="CP.Ok" targetRef="CP.Test" />
+  </bpmn:process>
+  <bpmn:process id="GDHCN.ONB.ConnectTest.Operator" name="Whitelist and check the test" isExecutable="false">
+    <bpmn:documentation>Steps [43]-[46], [64]-[69], [74]-[76].</bpmn:documentation>
+    <bpmn:startEvent id="CO.Start" name="Keys registered">
+      <bpmn:documentation>Input: the environment (UAT or PROD).</bpmn:documentation>
+      <bpmn:outgoing>Flow_66</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="CO.White" name="Whitelist the certificates">
+      <bpmn:documentation>Steps [43] (UAT) and [67] (PROD, after the dry run passed).</bpmn:documentation>
+      <bpmn:incoming>Flow_66</bpmn:incoming>
+      <bpmn:outgoing>Flow_67</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sendTask id="CO.Inform" name="Send the connection information">
+      <bpmn:documentation>Steps [44]-[45] and [68].</bpmn:documentation>
+      <bpmn:incoming>Flow_67</bpmn:incoming>
+      <bpmn:outgoing>Flow_68</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:receiveTask id="CO.Recv" name="Receive the test results">
+      <bpmn:documentation>Steps [64] and [74].</bpmn:documentation>
+      <bpmn:incoming>Flow_68</bpmn:incoming>
+      <bpmn:incoming>Flow_72</bpmn:incoming>
+      <bpmn:outgoing>Flow_69</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:userTask id="CO.Check" name="Check the test results">
+      <bpmn:documentation>Steps [65] and [75].</bpmn:documentation>
+      <bpmn:incoming>Flow_69</bpmn:incoming>
+      <bpmn:outgoing>Flow_70</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="CO.Ok" name="Passed?" default="Flow_CO_ok_yes">
+      <bpmn:documentation>Did the test pass?</bpmn:documentation>
+      <bpmn:incoming>Flow_70</bpmn:incoming>
+      <bpmn:outgoing>Flow_CO_ok_yes</bpmn:outgoing>
+      <bpmn:outgoing>Flow_71</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="CO.Fix" name="Agree corrective actions">
+      <bpmn:documentation>Steps [66] and [76].</bpmn:documentation>
+      <bpmn:incoming>Flow_71</bpmn:incoming>
+      <bpmn:outgoing>Flow_72</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:sendTask id="CO.Pass" name="Send the result">
+      <bpmn:documentation>The test passed.</bpmn:documentation>
+      <bpmn:incoming>Flow_CO_ok_yes</bpmn:incoming>
+      <bpmn:outgoing>Flow_73</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:endEvent id="CO.End" name="Test passed">
+      <bpmn:documentation>UAT: go on to PROD. PROD: step [77].</bpmn:documentation>
+      <bpmn:incoming>Flow_73</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_66" sourceRef="CO.Start" targetRef="CO.White" />
+    <bpmn:sequenceFlow id="Flow_67" sourceRef="CO.White" targetRef="CO.Inform" />
+    <bpmn:sequenceFlow id="Flow_68" sourceRef="CO.Inform" targetRef="CO.Recv" />
+    <bpmn:sequenceFlow id="Flow_69" sourceRef="CO.Recv" targetRef="CO.Check" />
+    <bpmn:sequenceFlow id="Flow_70" sourceRef="CO.Check" targetRef="CO.Ok" />
+    <bpmn:sequenceFlow id="Flow_CO_ok_yes" name="yes" sourceRef="CO.Ok" targetRef="CO.Pass" />
+    <bpmn:sequenceFlow id="Flow_71" name="no" sourceRef="CO.Ok" targetRef="CO.Fix" />
+    <bpmn:sequenceFlow id="Flow_72" sourceRef="CO.Fix" targetRef="CO.Recv" />
+    <bpmn:sequenceFlow id="Flow_73" sourceRef="CO.Pass" targetRef="CO.End" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="GDHCN.ONB.ConnectTest.Diagram">
+    <bpmndi:BPMNPlane id="GDHCN.ONB.ConnectTest.Plane" bpmnElement="GDHCN.ONB.ConnectTest.Collaboration">
+      <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="2050" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Operator_di" bpmnElement="Operator" isHorizontal="true"><dc:Bounds x="120" y="370" width="2050" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Start_di" bpmnElement="CO.Start"><dc:Bounds x="292" y="427" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.White_di" bpmnElement="CO.White"><dc:Bounds x="420" y="405" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Inform_di" bpmnElement="CO.Inform"><dc:Bounds x="610" y="405" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Recv_di" bpmnElement="CO.Recv"><dc:Bounds x="1180" y="405" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Check_di" bpmnElement="CO.Check"><dc:Bounds x="1370" y="405" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Ok_di" bpmnElement="CO.Ok" isMarkerVisible="true"><dc:Bounds x="1615" y="420" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Fix_di" bpmnElement="CO.Fix"><dc:Bounds x="1560" y="535" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.Pass_di" bpmnElement="CO.Pass"><dc:Bounds x="1750" y="405" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CO.End_di" bpmnElement="CO.End"><dc:Bounds x="2002" y="427" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Start_di" bpmnElement="CP.Start"><dc:Bounds x="672" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Connect_di" bpmnElement="CP.Connect"><dc:Bounds x="800" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Conn_di" bpmnElement="CP.Conn" isMarkerVisible="true"><dc:Bounds x="1045" y="110" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Fix_di" bpmnElement="CP.Fix"><dc:Bounds x="990" y="225" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Test_di" bpmnElement="CP.Test"><dc:Bounds x="1180" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Send_di" bpmnElement="CP.Send"><dc:Bounds x="1370" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Recv_di" bpmnElement="CP.Recv"><dc:Bounds x="1560" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.Ok_di" bpmnElement="CP.Ok" isMarkerVisible="true"><dc:Bounds x="1805" y="110" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CP.End_di" bpmnElement="CP.End"><dc:Bounds x="2002" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_66_di" bpmnElement="Flow_66"><di:waypoint x="328" y="445" /><di:waypoint x="420" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_67_di" bpmnElement="Flow_67"><di:waypoint x="580" y="445" /><di:waypoint x="610" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_68_di" bpmnElement="Flow_68"><di:waypoint x="770" y="445" /><di:waypoint x="1180" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_69_di" bpmnElement="Flow_69"><di:waypoint x="1340" y="445" /><di:waypoint x="1370" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_70_di" bpmnElement="Flow_70"><di:waypoint x="1530" y="445" /><di:waypoint x="1615" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_CO_ok_yes_di" bpmnElement="Flow_CO_ok_yes"><di:waypoint x="1665" y="445" /><di:waypoint x="1750" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_71_di" bpmnElement="Flow_71"><di:waypoint x="1640" y="470" /><di:waypoint x="1640" y="535" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_72_di" bpmnElement="Flow_72"><di:waypoint x="1560" y="575" /><di:waypoint x="1220" y="575" /><di:waypoint x="1220" y="485" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_73_di" bpmnElement="Flow_73"><di:waypoint x="1910" y="445" /><di:waypoint x="2002" y="445" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_74_di" bpmnElement="Flow_74"><di:waypoint x="708" y="135" /><di:waypoint x="800" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_75_di" bpmnElement="Flow_75"><di:waypoint x="960" y="135" /><di:waypoint x="1045" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_CP_conn_yes_di" bpmnElement="Flow_CP_conn_yes"><di:waypoint x="1095" y="135" /><di:waypoint x="1180" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_76_di" bpmnElement="Flow_76"><di:waypoint x="1070" y="160" /><di:waypoint x="1070" y="225" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_77_di" bpmnElement="Flow_77"><di:waypoint x="990" y="265" /><di:waypoint x="840" y="265" /><di:waypoint x="840" y="175" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_78_di" bpmnElement="Flow_78"><di:waypoint x="1340" y="135" /><di:waypoint x="1370" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_79_di" bpmnElement="Flow_79"><di:waypoint x="1530" y="135" /><di:waypoint x="1560" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_80_di" bpmnElement="Flow_80"><di:waypoint x="1720" y="135" /><di:waypoint x="1805" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_CP_ok_yes_di" bpmnElement="Flow_CP_ok_yes"><di:waypoint x="1855" y="135" /><di:waypoint x="2002" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_81_di" bpmnElement="Flow_81"><di:waypoint x="1830" y="160" /><di:waypoint x="1830" y="197" /><di:waypoint x="1260" y="197" /><di:waypoint x="1260" y="175" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.C.Info_di" bpmnElement="Msg.C.Info"><di:waypoint x="690" y="405" /><di:waypoint x="690" y="153" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.C.Res_di" bpmnElement="Msg.C.Res"><di:waypoint x="1450" y="175" /><di:waypoint x="1450" y="355" /><di:waypoint x="1260" y="355" /><di:waypoint x="1260" y="405" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.C.Fix_di" bpmnElement="Msg.C.Fix"><di:waypoint x="1720" y="550" /><di:waypoint x="1730" y="550" /><di:waypoint x="1730" y="355" /><di:waypoint x="1620" y="355" /><di:waypoint x="1620" y="175" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.C.Pass_di" bpmnElement="Msg.C.Pass"><di:waypoint x="1850" y="405" /><di:waypoint x="1850" y="355" /><di:waypoint x="1660" y="355" /><di:waypoint x="1660" y="175" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

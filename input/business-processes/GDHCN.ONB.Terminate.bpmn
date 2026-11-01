@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="GDHCN.ONB.Terminate.Definitions" targetNamespace="http://smart.who.int/trust/bpmn">
+  <bpmn:collaboration id="GDHCN.ONB.Terminate.Collaboration">
+    <bpmn:documentation>End participation in one or more Trust Domains. Framework XV.1-3. Not drawn on the page. XV.4 (the Secretariat ceases the GDHCN) is out of scope.</bpmn:documentation>
+    <bpmn:participant id="Participant" name="GDHCN Participant" processRef="GDHCN.ONB.Terminate.Participant">
+      <bpmn:documentation>The Eligible GDHCN Participant (the page calls it the Trust Network Participant, TNP). Framework VII.</bpmn:documentation>
+    </bpmn:participant>
+    <bpmn:participant id="Secretariat" name="GDHCN Secretariat (WHO)" processRef="GDHCN.ONB.Terminate.Secretariat">
+      <bpmn:documentation>Administers the GDHCN and oversees the Onboarding Process. Framework V.1, V.4, VI.5.</bpmn:documentation>
+    </bpmn:participant>
+    <bpmn:messageFlow id="Msg.T" name="Notice of termination" sourceRef="T.Notice" targetRef="TS2.Start" />
+    <bpmn:messageFlow id="Msg.T.Others" name="Termination of a Participant" sourceRef="TS2.Inform" targetRef="Participant" />
+  </bpmn:collaboration>
+  <bpmn:process id="GDHCN.ONB.Terminate.Participant" name="Leave the GDHCN" isExecutable="false">
+    <bpmn:documentation>Framework XV.1.</bpmn:documentation>
+    <bpmn:startEvent id="T.Start" name="Decided to leave">
+      <bpmn:documentation>Framework XV.1: for one or more Trust Domains.</bpmn:documentation>
+      <bpmn:outgoing>Flow_112</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sendTask id="T.Notice" name="Send written notice by diplomatic channel">
+      <bpmn:documentation>Framework XV.1: in writing, through formal diplomatic channels, at least 30 days ahead.</bpmn:documentation>
+      <bpmn:incoming>Flow_112</bpmn:incoming>
+      <bpmn:outgoing>Flow_113</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:endEvent id="T.End" name="Notice given">
+      <bpmn:documentation></bpmn:documentation>
+      <bpmn:incoming>Flow_113</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_112" sourceRef="T.Start" targetRef="T.Notice" />
+    <bpmn:sequenceFlow id="Flow_113" sourceRef="T.Notice" targetRef="T.End" />
+  </bpmn:process>
+  <bpmn:process id="GDHCN.ONB.Terminate.Secretariat" name="End a participation" isExecutable="false">
+    <bpmn:documentation>Framework XV.1-3.</bpmn:documentation>
+    <bpmn:startEvent id="TS2.Start" name="Notice received">
+      <bpmn:documentation>Framework XV.1.</bpmn:documentation>
+      <bpmn:outgoing>Flow_114</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="TS2.Start.Def" />
+    </bpmn:startEvent>
+    <bpmn:startEvent id="TS2.Own" name="Secretariat decides to terminate">
+      <bpmn:documentation>Framework XV.3: the Secretariat may terminate a Participant at its sole discretion.</bpmn:documentation>
+      <bpmn:outgoing>Flow_115</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="TS2.Merge" name="">
+      <bpmn:documentation></bpmn:documentation>
+      <bpmn:incoming>Flow_114</bpmn:incoming>
+      <bpmn:incoming>Flow_115</bpmn:incoming>
+      <bpmn:outgoing>Flow_116</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="TS2.Inform" name="Inform the other Participants">
+      <bpmn:documentation>Framework XV.2.</bpmn:documentation>
+      <bpmn:incoming>Flow_116</bpmn:incoming>
+      <bpmn:outgoing>Flow_117</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:intermediateCatchEvent id="TS2.Wait" name="30 days after receipt">
+      <bpmn:documentation>Framework XV.1: termination takes effect 30 days after the Secretariat receives the notice. The page does not say how long a XV.3 termination waits.</bpmn:documentation>
+      <bpmn:incoming>Flow_117</bpmn:incoming>
+      <bpmn:outgoing>Flow_118</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TS2.Wait.Def"><bpmn:timeDuration>P30D</bpmn:timeDuration></bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent id="TS2.End" name="Participation ended">
+      <bpmn:documentation></bpmn:documentation>
+      <bpmn:incoming>Flow_118</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_114" sourceRef="TS2.Start" targetRef="TS2.Merge" />
+    <bpmn:sequenceFlow id="Flow_115" sourceRef="TS2.Own" targetRef="TS2.Merge" />
+    <bpmn:sequenceFlow id="Flow_116" sourceRef="TS2.Merge" targetRef="TS2.Inform" />
+    <bpmn:sequenceFlow id="Flow_117" sourceRef="TS2.Inform" targetRef="TS2.Wait" />
+    <bpmn:sequenceFlow id="Flow_118" sourceRef="TS2.Wait" targetRef="TS2.End" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="GDHCN.ONB.Terminate.Diagram">
+    <bpmndi:BPMNPlane id="GDHCN.ONB.Terminate.Plane" bpmnElement="GDHCN.ONB.Terminate.Collaboration">
+      <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant" isHorizontal="true"><dc:Bounds x="120" y="60" width="1290" height="150" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Secretariat_di" bpmnElement="Secretariat" isHorizontal="true"><dc:Bounds x="120" y="240" width="1290" height="280" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T.Start_di" bpmnElement="T.Start"><dc:Bounds x="292" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T.Notice_di" bpmnElement="T.Notice"><dc:Bounds x="420" y="95" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T.End_di" bpmnElement="T.End"><dc:Bounds x="672" y="117" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TS2.Start_di" bpmnElement="TS2.Start"><dc:Bounds x="482" y="297" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TS2.Own_di" bpmnElement="TS2.Own"><dc:Bounds x="482" y="427" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TS2.Merge_di" bpmnElement="TS2.Merge" isMarkerVisible="true"><dc:Bounds x="665" y="290" width="50" height="50" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TS2.Inform_di" bpmnElement="TS2.Inform"><dc:Bounds x="800" y="275" width="160" height="80" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TS2.Wait_di" bpmnElement="TS2.Wait"><dc:Bounds x="1052" y="297" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TS2.End_di" bpmnElement="TS2.End"><dc:Bounds x="1242" y="297" width="36" height="36" /></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_112_di" bpmnElement="Flow_112"><di:waypoint x="328" y="135" /><di:waypoint x="420" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_113_di" bpmnElement="Flow_113"><di:waypoint x="580" y="135" /><di:waypoint x="672" y="135" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_114_di" bpmnElement="Flow_114"><di:waypoint x="518" y="315" /><di:waypoint x="665" y="315" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_115_di" bpmnElement="Flow_115"><di:waypoint x="518" y="445" /><di:waypoint x="690" y="445" /><di:waypoint x="690" y="340" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_116_di" bpmnElement="Flow_116"><di:waypoint x="715" y="315" /><di:waypoint x="800" y="315" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_117_di" bpmnElement="Flow_117"><di:waypoint x="960" y="315" /><di:waypoint x="1052" y="315" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_118_di" bpmnElement="Flow_118"><di:waypoint x="1088" y="315" /><di:waypoint x="1242" y="315" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.T_di" bpmnElement="Msg.T"><di:waypoint x="500" y="175" /><di:waypoint x="500" y="297" /></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Msg.T.Others_di" bpmnElement="Msg.T.Others"><di:waypoint x="910" y="275" /><di:waypoint x="910" y="210" /></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

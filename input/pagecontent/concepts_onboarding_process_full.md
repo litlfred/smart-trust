@@ -27,6 +27,98 @@ In the following description the required steps are divided into three sections:
 **[60]** - **[End]** Participant Onboarding
 
 
+#### The Onboarding Process as BPMN
+
+The onboarding process is also drawn in BPMN 2.0, in `input/business-processes/`. Where the drawing below and the text differ, the text is authority: the GDHCN Administrative and Operational Framework first, then the step text on this page. Each task names its step numbers **[n]** and Framework sections in its documentation.
+
+Three pools take part: the GDHCN Participant, the GDHCN Secretariat (WHO), and the gateway operator (the operations and onboarding teams, with the GitHub bot as service tasks). The environment (UAT, PROD, and DEV if used) is a parameter of each subprocess, so each subprocess is drawn once.
+
+| Process | What it does | Steps on this page | Framework |
+| --- | --- | --- | --- |
+| `GDHCN.ONB` | Onboard a Participant (top level) | [1]-[80] | V.4, VI.5, IX |
+| `GDHCN.ONB.PrepareKeys` | Prepare keys and repository, per environment | [9]-[13] | V.4.c, VII.4-5, IX |
+| `GDHCN.ONB.VerifyLetter` | Verify the Letter of Application | [15]-[23] | V.4.a-b, IX |
+| `GDHCN.ONB.RegisterKeys` | Register the keys, per environment | [31]-[50] | VI.6 |
+| `GDHCN.ONB.ConnectTest` | Connect and test, per environment | [43]-[46], [60]-[76] | IX |
+| `GDHCN.TrustDomain.Propose` | Propose a new Trust Domain | not on the drawing | V.3, VI.2-3, XI |
+| `GDHCN.TrustDomain.Join` | Join a further Trust Domain | not on the drawing | V.4, IX |
+| `GDHCN.ONB.ChangeKeys` | Change keys or representatives | not on the drawing | IX |
+| `GDHCN.ONB.Terminate` | End participation | not on the drawing | XV.1-3 |
+
+##### Onboard a Participant (top level)
+
+`GDHCN.ONB`. Steps [1]-[80]; Framework V.4, VI.5, IX.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.svg" alt="Onboard a Participant (top level)" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Prepare keys and repository, per environment
+
+`GDHCN.ONB.PrepareKeys`. Steps [9]-[13]; Framework V.4.c, VII.4-5, IX.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.PrepareKeys.svg" alt="Prepare keys and repository, per environment" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Verify the Letter of Application
+
+`GDHCN.ONB.VerifyLetter`. Steps [15]-[23]; Framework V.4.a-b, IX.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.VerifyLetter.svg" alt="Verify the Letter of Application" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Register the keys, per environment
+
+`GDHCN.ONB.RegisterKeys`. Steps [31]-[50]; Framework VI.6.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.RegisterKeys.svg" alt="Register the keys, per environment" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Connect and test, per environment
+
+`GDHCN.ONB.ConnectTest`. Steps [43]-[46], [60]-[76]; Framework IX.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.ConnectTest.svg" alt="Connect and test, per environment" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Propose a new Trust Domain
+
+`GDHCN.TrustDomain.Propose`. Not on the drawing below; from Framework V.3, VI.2-3, XI.
+
+<figure style="width:100%">
+  <img src="GDHCN.TrustDomain.Propose.svg" alt="Propose a new Trust Domain" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Join a further Trust Domain
+
+`GDHCN.TrustDomain.Join`. Not on the drawing below; from Framework V.4, IX.
+
+<figure style="width:100%">
+  <img src="GDHCN.TrustDomain.Join.svg" alt="Join a further Trust Domain" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### Change keys or representatives
+
+`GDHCN.ONB.ChangeKeys`. Not on the drawing below; from Framework IX.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.ChangeKeys.svg" alt="Change keys or representatives" style="width:100%; max-width:1400px;" />
+</figure>
+
+##### End participation
+
+`GDHCN.ONB.Terminate`. Not on the drawing below; from Framework XV.1-3.
+
+<figure style="width:100%">
+  <img src="GDHCN.ONB.Terminate.svg" alt="End participation" style="width:100%; max-width:1400px;" />
+</figure>
+
+#### The original drawing
+
 <img src="OnboardingProcess_Full.png" style="float:none; margin: 0px 0px 0px 0px;"/>
 
 ##### Application and Verification
