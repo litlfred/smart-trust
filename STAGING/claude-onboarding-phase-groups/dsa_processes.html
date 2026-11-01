@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Sharing Agreement Processes — WHO SMART Trust</title>
+<link rel="canonical" href="./dsa_processes.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23276749'/%3E%3C/svg%3E">
+<meta name="folio-navbar" content="linked">
+<meta name="fa-visualiser-label" content="WHO SMART Trust">
+<link rel="stylesheet" href="./assets/page-layout.css" data-fa-page-layout>
+<script src="./assets/page-layout.js" defer data-fa-page-layout></script>
+<link rel="stylesheet" href="./assets/ig-artifact.css">
+<link rel="stylesheet" href="./assets/css/docs-ui.css" data-fa-folio-mount>
+<script src="./assets/navbar/row-2acuhncsmbg.js" defer></script><script src="./assets/js/docs-ui.js" defer data-fa-folio-mount></script>
+<script type="application/json" id="fa-translation-meta">{"lang":"en","translationStatus":"","translationSource":"","supportedLocales":["ar","zh","en","fr","ru","es"],"availableLocales":[]}</script><link rel="stylesheet" href="./assets/css/navbar.css"><script src="./assets/navbar/rail-45ihyd86ut.js" defer></script><script src="./assets/js/navbar.js" defer></script><link rel="stylesheet" href="./assets/css/navbar-row.css"><script src="./assets/js/navbar-row.js" defer></script><meta name="fa-pinned-data" content="."></head>
+<body><div data-fa-staging-banner lang="en" dir="ltr" style="background:#4F6F52;color:#fff;padding:8px 16px;font-size:14px;text-align:center;position:fixed;top:0;left:0;right:0;box-sizing:border-box;z-index:2147483001;font-family:system-ui">🔀 <b>FEATURE BRANCH</b> <span data-fa-staging-detail>— loading build details…</span></div><style>:root{--fa-staging-offset:0px}body{margin:0}.side-bar,.fa-nav{top:var(--fa-staging-offset,0px)!important}html{padding-top:var(--fa-staging-offset,0px)}</style><script>(function(){
+function el(t,a,x){var e=document.createElement(t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e;}
+function link(href,text,extra){var a=el('a',{href:href,style:'color:#fff;text-decoration:underline'},text);if(extra)a.setAttribute('style',a.getAttribute('style')+';'+extra);return a;}
+function chip(text){return el('span',{style:"font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:rgba(0,0,0,.22);color:#fff;padding:1px 6px;border-radius:3px"},text);}
+function sep(){return document.createTextNode(' \u00b7 ');}
+function root(){var m=location.pathname.match(/^(.*\/STAGING\/[^/]+\/)/);return m?m[1]:null;}
+function measure(){var b=document.querySelector('[data-fa-staging-banner]');if(!b)return;document.documentElement.style.setProperty('--fa-staging-offset',b.getBoundingClientRect().height+'px');}
+function fill(d,f,r){
+  while(d.firstChild)d.removeChild(d.firstChild);
+  d.appendChild(document.createTextNode('\u2014 '));
+  var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
+  d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
+  d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
+  if(f.issue){d.appendChild(sep());d.appendChild(link(f.issueUrl,'issue #'+f.issue));}
+  d.appendChild(sep());
+  var rel=location.pathname.slice(r.length);
+  if(rel===''||rel.charAt(rel.length-1)==='/')rel+='index.html';
+  if(!f.mainPagesKnown){
+    d.appendChild(link(f.mainSite+'/','compare with '+(f.beforeRef||'main')+' \u2197'));
+  }else if(f.newPages.indexOf(rel)>=0){
+    d.appendChild(link(f.mainSite+'/',(f.beforeRef||'main')+' \u2197'));
+    d.appendChild(document.createTextNode(' '));
+    d.appendChild(el('span',{style:'opacity:.85'},'(new page)'));
+  }else{
+    d.appendChild(link(f.mainSite+'/'+rel,'compare with '+(f.beforeRef||'main')+' \u2197'));
+  }
+  d.appendChild(sep());d.appendChild(link(f.runUrl,'build log'));
+  if(f.checksUrl){d.appendChild(sep());d.appendChild(link(f.checksUrl,'CI results'));}
+  stamp(f);
+  measure();
+}
+function stamp(f){
+  var p=document.querySelector('.fa-build-stamp');if(!p)return;
+  while(p.firstChild)p.removeChild(p.firstChild);
+  p.appendChild(document.createTextNode('deployed '));
+  var a=link(f.runUrl,'');a.appendChild(el('code',null,f.sha));p.appendChild(a);
+  p.appendChild(document.createTextNode(' · '+f.built));
+}
+function go(){
+  measure();
+  var d=document.querySelector('[data-fa-staging-detail]');if(!d)return;
+  var r=root();
+  if(!r){d.textContent='\u2014 build details unavailable (not served from a preview path)';return;}
+  fetch(r+'staging.json',{cache:'no-store'}).then(function(x){if(!x.ok)throw 0;return x.json();})
+    .then(function(f){fill(d,f,r);})
+    .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
+}
+measure();
+if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
+window.addEventListener('resize',measure);window.addEventListener('load',measure);
+})();</script><script type="application/json" id="fa-navbar-row" data-fa-root="." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root=".">{"data":"rail-45ihyd86ut","here":"/dsa_processes.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="./">WHO SMART Trust</a></nav>
+
+<div class="ig-topbar fa-page-bar" role="navigation" aria-label="WHO SMART Trust menu"><a class="ig-topbar-home" href="./index.html">WHO SMART Trust</a><details class="ig-topbar-group"><summary>Home</summary><ul><li><a href="./index.html">Summary</a></li><li><a href="./dependencies.html">Dependencies</a></li><li><a href="./ethical_principles.html">Ethical Considerations and Data Protection Principles</a></li><li><a href="./faq.html">Frequently Asked Questions</a></li></ul></details><a class="ig-topbar-group ig-topbar-link" href="./GDHCN_Administrative_and_Operational_Framework.pdf">GDHCN Administrative and Operational Framework</a><details class="ig-topbar-group"><summary>Business Requirements</summary><ul><li><a href="./concepts.html">Concepts</a></li><li><a href="./concepts_certificate_governance.html">Certificate Governance</a></li><li><a href="./concepts_onboarding.html">Onboarding Process</a></li><li><a href="./dsa_processes.html">Data Sharing Agreement Processes</a></li><li><a href="./use_cases.html">Use Cases</a></li><li><a href="./decision_support.html">Decision Support Logic</a></li><li><a href="./functional.html">Functional Requirements</a></li></ul></details><details class="ig-topbar-group"><summary>Data Models and Exchange</summary><ul><li><a href="./system-actors.html">System Actors</a></li><li><a href="./transactions.html">Transactions</a></li><li><a href="./sequence-diagrams.html">Sequence Diagrams</a></li><li><a href="./trust_domains.html">Trust Domains</a></li><li><a href="./trust_network_gateway_architecture.html">Trust Network Gateway Architecture</a></li><li><a href="./concepts_did.html">DID Trustlist Specification</a></li><li><a href="./hcert_spec.html">HCERT Specification</a></li><li><a href="./qr_code_generation.html">QR Code Generation</a></li></ul></details><details class="ig-topbar-group"><summary>Deployment</summary><ul><li><a href="./concepts_onboarding_checklist.html">Onboarding Checklist</a></li><li><a href="./security_privacy.html">Security and Privacy Considerations</a></li><li><a href="./testing.html">Testing</a></li><li><a href="./reference_implementation.html">Reference Implementations</a></li><li><a href="./downloads.html">Downloads</a></li><li><a href="./changes.html">Changes</a></li><li><a href="./endpoints.html">Endpoints</a></li></ul></details><details class="ig-topbar-group"><summary>Indices</summary><ul><li><a href="./artifacts.html">Artifact Index</a></li><li><a href="./references.html">References</a></li><li><a href="./maps.html">Mappings</a></li><li><a href="./license.html">License</a></li><li><a href="./dak-api.html">DAK API</a></li></ul></details><form class="ig-search" role="search" data-ig-search-index="./assets/ig-search.json"><label class="ig-search-label" for="search-input">Search WHO SMART Trust</label><input type="search" id="search-input" class="ig-search-input" placeholder="Search pages and artefacts" autocomplete="off" aria-controls="ig-search-results" aria-expanded="false"><ul id="ig-search-results" class="ig-search-results" hidden></ul></form><span class="ig-locale-slot" data-fa-slot="locale"></span><script src="./assets/ig-search.js" defer></script></div>
+<main class="ig-main main-content fa-page-main" id="main-content">
+<p><span hidden="" data-fa-figure-images="ig"></span></p>
+
+<h3 id="data-sharing-agreement-processes">Data Sharing Agreement Processes</h3>
+
+<p>This page is implementation guidance for data sharing agreements (DSAs). It
+describes the technical processes that carry out a DSA between two
+organisations. It covers only the trust-network processes. Other processes are
+planned in other guides (see <a href="#elsewhere">Where the other processes are</a>).</p>
+
+<blockquote>
+  <p><strong>Draft.</strong> This page is in the litlfred fork. It is not WHO guidance. The
+process list (P1 to P15) is our own structure; no standard defines “the DSA
+processes”. Items marked <strong>unverified</strong> were not checked against the source
+specification.</p>
+</blockquote>
+
+<h4 id="key-points">Key points</h4>
+
+<ul>
+  <li>A DSA needs the same technical processes whether or not it is computable.
+Keys are still registered. Access is still decided, logged and revoked.</li>
+  <li>“Computable” changes one thing: where the access rule comes from.
+    <ul>
+      <li><strong>Computable DSA:</strong> an <a href="https://www.w3.org/TR/odrl-model/">ODRL 2.2</a>
+<code class="language-plaintext highlighter-rouge">Agreement</code> derived from the legal text. A program evaluates it on each
+request.</li>
+      <li><strong>Document-only DSA:</strong> a signed PDF. A person reads it and configures the
+systems by hand.</li>
+    </ul>
+  </li>
+  <li><strong>GDHCN is one possible trust anchor, not the only one.</strong> A DSA may name a
+national PKI, a party’s own did:web, or a local list instead. Nothing on
+this page requires GDHCN.</li>
+</ul>
+
+<h4 id="roles">Roles</h4>
+
+<p>These are roles, not organisations. One organisation can play several.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Maps to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data provider</td>
+      <td>ODRL <code class="language-plaintext highlighter-rouge">assigner</code> (ODRL 2.2 §2.1.3, §2.3)</td>
+    </tr>
+    <tr>
+      <td>Data recipient</td>
+      <td>ODRL <code class="language-plaintext highlighter-rouge">assignee</code> (ODRL 2.2 §2.1.3)</td>
+    </tr>
+    <tr>
+      <td>Trust anchor</td>
+      <td><a href="artifact/ActorDefinition-TrustNetworkAnchor.html">Trust Network Anchor</a>; or an X.509 root CA (<a href="https://www.rfc-editor.org/rfc/rfc5280">RFC 5280</a> §6)</td>
+    </tr>
+    <tr>
+      <td>Party with keys</td>
+      <td><a href="artifact/ActorDefinition-TrustNetworkParticipant.html">Trust Network Participant</a>, <a href="artifact/ActorDefinition-Issuer.html">Issuer</a></td>
+    </tr>
+    <tr>
+      <td>Verifier</td>
+      <td><a href="artifact/ActorDefinition-Receiver.html">Receiver</a>; any system that checks a party’s signature or TLS certificate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>“Data provider” and “data recipient” are our words. No actor in this guide has
+those names.</p>
+
+<h4 id="anchors">Trust anchor choices</h4>
+
+<p>A DSA, or the policy of the system that enforces it, says which anchors it
+accepts. The accepted list is either a DID document or a set of X.509 roots.
+No new format is needed.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Anchor</th>
+      <th>What it is</th>
+      <th>Standard</th>
+      <th>Paperwork to join</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>GDHCN</strong></td>
+      <td>WHO’s trust list, published as did:web DID documents and fed by the Trust Network Gateway</td>
+      <td><a href="https://www.w3.org/TR/did-core/">DID Core 1.0</a>, did:web, JsonWebSignature2020 proof (<a href="concepts_did_gdhcn.html">DID Trustlist v2</a>)</td>
+      <td><a href="concepts_onboarding.html">Onboarding Process</a></td>
+    </tr>
+    <tr>
+      <td><strong>National PKI</strong></td>
+      <td>A country’s X.509 root CA</td>
+      <td>RFC 5280 path validation (§6) and CRLs (§5)</td>
+      <td>National rules</td>
+    </tr>
+    <tr>
+      <td><strong>Own did:web</strong></td>
+      <td>A ministry or institute publishes its own DID document</td>
+      <td>DID Core 1.0, did:web</td>
+      <td>None. Trust comes from the domain and its TLS certificate</td>
+    </tr>
+    <tr>
+      <td><strong>Local list</strong></td>
+      <td>The deploying system’s own list of accepted keys or roots</td>
+      <td>A DID document, or PEM roots checked by RFC 5280</td>
+      <td>Whatever the system owner decides</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Two more options exist and are <strong>not</strong> recommended here:</p>
+
+<ul>
+  <li>UDAP (HL7 FAST UDAP Security, STU): a trial-use standard. Needs approval
+before use.</li>
+  <li>OpenID Federation: not a final specification. Left out.</li>
+</ul>
+
+<p><a href="https://www.rfc-editor.org/rfc/rfc5914">RFC 5914</a> (Trust Anchor Format)
+states “this root is trusted” in ASN.1 only. It has no JSON form. A local list
+of X.509 roots is therefore kept as PEM files plus RFC 5280 checks.</p>
+
+<h4 id="p3">P3. Register parties and keys with a trust anchor</h4>
+
+<figure>
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SEQUENCE" style="width:854px;height:922px;background:#FFFFFF;" width="854px" height="922px" viewBox="0 0 854 922" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.9?><defs /><g font-family="sans-serif" lengthAdjust="spacing"><g class="title" data-source-line="2"><text x="239.815" y="28.563" fill="#000" font-size="14" textLength="372.688" font-weight="700" font-family="Roboto Condensed">DSA P3: Register Parties and Keys with a Trust Anchor</text></g><rect x="89.932" y="167.277" width="511.744" height="526.601" fill="#FFF" style="stroke:#FFF;stroke-width:1;" rx="4.5" ry="4.5" /><rect x="89.932" y="167.277" width="511.744" height="526.601" fill="none" style="stroke:#107050;stroke-width:1.5;" rx="4.5" ry="4.5" /><g class="participant-lifeline" data-qualified-name="Party" data-entity-uid="part1" id="part1-lifeline" data-source-line="5"><g><title>..system-actors.html.trust-network-participant Party.n.data provider or recipient...</title><rect x="102.432" y="96.818" width="8" height="611.06" fill="#000" fill-opacity="0" /><line x1="105.932" y1="96.818" x2="105.932" y2="707.878" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g><line x1="105.932" y1="707.878" x2="105.932" y2="749.188" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:1,4;" /><g><title>..system-actors.html.trust-network-participant Party.n.data provider or recipient...</title><rect x="102.432" y="749.188" width="8" height="113.918" fill="#000" fill-opacity="0" /><line x1="105.932" y1="749.188" x2="105.932" y2="863.105" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant-lifeline" data-qualified-name="Anchor" data-entity-uid="part2" id="part2-lifeline" data-source-line="6"><g><title>..system-actors.html.trust-network-anchor Accepted.nTrust Anchor..</title><rect x="364.959" y="96.818" width="8" height="611.06" fill="#000" fill-opacity="0" /><line x1="368.459" y1="96.818" x2="368.459" y2="707.878" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g><line x1="368.459" y1="707.878" x2="368.459" y2="749.188" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:1,4;" /><g><title>..system-actors.html.trust-network-anchor Accepted.nTrust Anchor..</title><rect x="364.959" y="749.188" width="8" height="113.918" fill="#000" fill-opacity="0" /><line x1="368.459" y1="749.188" x2="368.459" y2="863.105" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant-lifeline" data-qualified-name="Verifier" data-entity-uid="part3" id="part3-lifeline" data-source-line="7"><g><title>Verifier</title><rect x="582.176" y="96.818" width="8" height="611.06" fill="#000" fill-opacity="0" /><line x1="585.676" y1="96.818" x2="585.676" y2="707.878" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g><line x1="585.676" y1="707.878" x2="585.676" y2="749.188" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:1,4;" /><g><title>Verifier</title><rect x="582.176" y="749.188" width="8" height="113.918" fill="#000" fill-opacity="0" /><line x1="585.676" y1="749.188" x2="585.676" y2="863.105" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant participant-head" data-qualified-name="Party" data-entity-uid="part1" id="part1-head" data-source-line="5"><rect x="10" y="47.939" width="191.864" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><a target="_top" href="system-actors.html#trust-network-participant" xlink:href="system-actors.html#trust-network-participant" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-participant" xlink:title="system-actors.html#trust-network-participant"><text x="17" y="68.502" fill="#00F" font-size="14" textLength="34.521" text-decoration="underline" font-family="Roboto Condensed">Party</text></a><a target="_top" href="system-actors.html#trust-network-participant" xlink:href="system-actors.html#trust-network-participant" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-participant" xlink:title="system-actors.html#trust-network-participant"><text x="17" y="85.441" fill="#00F" font-size="14" textLength="177.864" text-decoration="underline" font-family="Roboto Condensed">(data provider or recipient)</text></a></g><g class="participant participant-head" data-qualified-name="Anchor" data-entity-uid="part2" id="part2-head" data-source-line="6"><rect x="318.276" y="47.939" width="100.365" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><a target="_top" href="system-actors.html#trust-network-anchor" xlink:href="system-actors.html#trust-network-anchor" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-anchor" xlink:title="system-actors.html#trust-network-anchor"><text x="325.276" y="68.502" fill="#00F" font-size="14" textLength="63.704" text-decoration="underline" font-family="Roboto Condensed">Accepted</text></a><a target="_top" href="system-actors.html#trust-network-anchor" xlink:href="system-actors.html#trust-network-anchor" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-anchor" xlink:title="system-actors.html#trust-network-anchor"><text x="325.276" y="85.441" fill="#00F" font-size="14" textLength="86.365" text-decoration="underline" font-family="Roboto Condensed">Trust Anchor</text></a></g><g class="participant participant-head" data-qualified-name="Verifier" data-entity-uid="part3" id="part3-head" data-source-line="7"><rect x="524.703" y="47.939" width="121.946" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="561.433" y="68.502" fill="#000" font-size="14" textLength="48.487" font-family="Roboto Condensed">Verifier</text><text x="531.703" y="85.441" fill="#000" font-size="14" textLength="107.946" font-family="Roboto Condensed">(the other party)</text></g><g class="participant participant-tail" data-qualified-name="Party" data-entity-uid="part1" id="part1-tail" data-source-line="5"><rect x="10" y="863.105" width="191.864" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><a target="_top" href="system-actors.html#trust-network-participant" xlink:href="system-actors.html#trust-network-participant" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-participant" xlink:title="system-actors.html#trust-network-participant"><text x="17" y="883.668" fill="#00F" font-size="14" textLength="34.521" text-decoration="underline" font-family="Roboto Condensed">Party</text></a><a target="_top" href="system-actors.html#trust-network-participant" xlink:href="system-actors.html#trust-network-participant" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-participant" xlink:title="system-actors.html#trust-network-participant"><text x="17" y="900.607" fill="#00F" font-size="14" textLength="177.864" text-decoration="underline" font-family="Roboto Condensed">(data provider or recipient)</text></a></g><g class="participant participant-tail" data-qualified-name="Anchor" data-entity-uid="part2" id="part2-tail" data-source-line="6"><rect x="318.276" y="863.105" width="100.365" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><a target="_top" href="system-actors.html#trust-network-anchor" xlink:href="system-actors.html#trust-network-anchor" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-anchor" xlink:title="system-actors.html#trust-network-anchor"><text x="325.276" y="883.668" fill="#00F" font-size="14" textLength="63.704" text-decoration="underline" font-family="Roboto Condensed">Accepted</text></a><a target="_top" href="system-actors.html#trust-network-anchor" xlink:href="system-actors.html#trust-network-anchor" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="system-actors.html#trust-network-anchor" xlink:title="system-actors.html#trust-network-anchor"><text x="325.276" y="900.607" fill="#00F" font-size="14" textLength="86.365" text-decoration="underline" font-family="Roboto Condensed">Trust Anchor</text></a></g><g class="participant participant-tail" data-qualified-name="Verifier" data-entity-uid="part3" id="part3-tail" data-source-line="7"><rect x="524.703" y="863.105" width="121.946" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="561.433" y="883.668" fill="#000" font-size="14" textLength="48.487" font-family="Roboto Condensed">Verifier</text><text x="531.703" y="900.607" fill="#000" font-size="14" textLength="107.946" font-family="Roboto Condensed">(the other party)</text></g><g class="message" data-entity-1="part1" data-entity-2="part1" id="msg1" data-source-line="11"><line x1="105.932" y1="142.277" x2="147.932" y2="142.277" style="stroke:#107050;stroke-width:1;" /><line x1="147.932" y1="142.277" x2="147.932" y2="155.277" style="stroke:#107050;stroke-width:1;" /><line x1="106.932" y1="155.277" x2="147.932" y2="155.277" style="stroke:#107050;stroke-width:1;" /><polygon points="116.932,151.277,106.932,155.277,116.932,159.277,112.932,155.277" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="112.932" y="129.277" fill="#000" font-size="13" textLength="18.713" font-weight="700" font-family="Roboto Condensed">01:</text><text x="135.645" y="121.412" fill="#000" font-size="13" textLength="131.104" font-family="Roboto Condensed">choose the anchor(s)</text><text x="135.645" y="137.142" fill="#000" font-size="13" textLength="102.331" font-family="Roboto Condensed">the DSA accepts</text></g><path d="M94.432,167.277 L150.763,167.277 L150.763,175.007 L140.763,185.007 L89.932,185.007 L89.932,171.777 A4.5,4.5 0 0 1 94.432,167.277" style="stroke:#107050;stroke-width:1.5;" fill="#FFF" /><rect x="89.932" y="167.277" width="511.744" height="526.601" fill="none" style="stroke:#107050;stroke-width:1.5;" rx="4.5" ry="4.5" /><text x="104.932" y="180.871" fill="#000" font-size="13" textLength="15.831" font-weight="700" font-family="Roboto Condensed">alt</text><text x="165.763" y="179.934" fill="#000" font-size="11" textLength="49.231" font-weight="700" font-family="Roboto Condensed">[GDHCN]</text><g class="message" data-entity-1="part1" data-entity-2="part2" id="msg2" data-source-line="13"><polygon points="356.459,228.466,366.459,232.466,356.459,236.466,360.459,232.466" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="105.932" y1="232.466" x2="362.459" y2="232.466" style="stroke:#107050;stroke-width:1;" /><text x="112.932" y="219.465" fill="#000" font-size="13" textLength="21.296" font-weight="700" font-family="Roboto Condensed">02:</text><text x="138.229" y="211.601" fill="#000" font-size="13" textLength="128.362" font-family="Roboto Condensed">Letter of Application,</text><text x="138.229" y="227.33" fill="#000" font-size="13" textLength="213.23" font-family="Roboto Condensed">Terms of Participation, onboarding</text></g><g class="message" data-entity-1="part1" data-entity-2="part1" id="msg3" data-source-line="14"><line x1="105.932" y1="277.925" x2="147.932" y2="277.925" style="stroke:#107050;stroke-width:1;" /><line x1="147.932" y1="277.925" x2="147.932" y2="290.925" style="stroke:#107050;stroke-width:1;" /><line x1="106.932" y1="290.925" x2="147.932" y2="290.925" style="stroke:#107050;stroke-width:1;" /><polygon points="116.932,286.925,106.932,290.925,116.932,294.925,112.932,290.925" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="112.932" y="264.924" fill="#000" font-size="13" textLength="21.5" font-weight="700" font-family="Roboto Condensed">03:</text><text x="138.432" y="257.06" fill="#000" font-size="13" textLength="87.375" font-family="Roboto Condensed">generate keys</text><text x="138.432" y="272.789" fill="#000" font-size="13" textLength="146.409" font-family="Roboto Condensed">(SCA, DSC, UP, TLS, ...)</text></g><g class="message" data-entity-1="part1" data-entity-2="part2" id="msg4" data-source-line="15"><polygon points="356.459,316.654,366.459,320.654,356.459,324.654,360.459,320.654" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="105.932" y1="320.654" x2="362.459" y2="320.654" style="stroke:#107050;stroke-width:1;" /><text x="112.932" y="315.519" fill="#000" font-size="13" textLength="21.899" font-weight="700" font-family="Roboto Condensed">04:</text><a target="_top" href="transactions.html#publish_keys" xlink:href="transactions.html#publish_keys" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="transactions.html#publish_keys" xlink:title="transactions.html#publish_keys"><text x="138.832" y="315.519" fill="#00F" font-size="13" textLength="78.933" text-decoration="underline" font-family="Roboto Condensed">Publish Keys</text></a></g><g class="message" data-entity-1="part2" data-entity-2="part2" id="msg5" data-source-line="16"><line x1="368.459" y1="366.113" x2="410.459" y2="366.113" style="stroke:#107050;stroke-width:1;" /><line x1="410.459" y1="366.113" x2="410.459" y2="379.113" style="stroke:#107050;stroke-width:1;" /><line x1="369.459" y1="379.113" x2="410.459" y2="379.113" style="stroke:#107050;stroke-width:1;" /><polygon points="379.459,375.113,369.459,379.113,379.459,383.113,375.459,379.113" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="375.459" y="353.113" fill="#000" font-size="13" textLength="21.417" font-weight="700" font-family="Roboto Condensed">05:</text><text x="400.876" y="345.248" fill="#000" font-size="13" textLength="166.448" font-family="Roboto Condensed">validate keys; sign trust list</text><text x="400.876" y="360.978" fill="#000" font-size="13" textLength="158.704" font-family="Roboto Condensed">(JsonWebSignature2020)</text></g><line x1="89.932" y1="388.113" x2="601.676" y2="388.113" style="stroke:#107050;stroke-width:1;stroke-dasharray:2,2;" /><text x="94.932" y="400.77" fill="#000" font-size="11" textLength="118.051" font-weight="700" font-family="Roboto Condensed">[National PKI (X.509)]</text><g class="message" data-entity-1="part1" data-entity-2="part2" id="msg6" data-source-line="18"><polygon points="356.459,424.152,366.459,428.152,356.459,432.152,360.459,428.152" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="105.932" y1="428.152" x2="362.459" y2="428.152" style="stroke:#107050;stroke-width:1;" /><text x="112.932" y="423.017" fill="#000" font-size="13" textLength="21.55" font-weight="700" font-family="Roboto Condensed">06:</text><text x="138.482" y="423.017" fill="#000" font-size="13" textLength="82.132" font-family="Roboto Condensed">national rules</text></g><g class="message" data-entity-1="part1" data-entity-2="part1" id="msg7" data-source-line="19"><line x1="105.932" y1="457.882" x2="147.932" y2="457.882" style="stroke:#107050;stroke-width:1;" /><line x1="147.932" y1="457.882" x2="147.932" y2="470.882" style="stroke:#107050;stroke-width:1;" /><line x1="106.932" y1="470.882" x2="147.932" y2="470.882" style="stroke:#107050;stroke-width:1;" /><polygon points="116.932,466.882,106.932,470.882,116.932,474.882,112.932,470.882" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="112.932" y="452.746" fill="#000" font-size="13" textLength="20.668" font-weight="700" font-family="Roboto Condensed">07:</text><text x="137.6" y="452.746" fill="#000" font-size="13" textLength="107.472" font-family="Roboto Condensed">generate key pair</text></g><g class="message" data-entity-1="part2" data-entity-2="part1" id="msg8" data-source-line="20"><polygon points="116.932,496.611,106.932,500.611,116.932,504.611,112.932,500.611" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="110.932" y1="500.611" x2="367.459" y2="500.611" style="stroke:#107050;stroke-width:1;" /><text x="122.932" y="495.476" fill="#000" font-size="13" textLength="21.569" font-weight="700" font-family="Roboto Condensed">08:</text><text x="148.501" y="495.476" fill="#000" font-size="13" textLength="138.049" font-family="Roboto Condensed">issue X.509 certificate</text></g><line x1="89.932" y1="509.611" x2="601.676" y2="509.611" style="stroke:#107050;stroke-width:1;stroke-dasharray:2,2;" /><text x="94.932" y="522.268" fill="#000" font-size="11" textLength="78.934" font-weight="700" font-family="Roboto Condensed">[Own did:web]</text><g class="message" data-entity-1="part1" data-entity-2="part1" id="msg9" data-source-line="22"><line x1="105.932" y1="549.65" x2="147.932" y2="549.65" style="stroke:#107050;stroke-width:1;" /><line x1="147.932" y1="549.65" x2="147.932" y2="562.65" style="stroke:#107050;stroke-width:1;" /><line x1="106.932" y1="562.65" x2="147.932" y2="562.65" style="stroke:#107050;stroke-width:1;" /><polygon points="116.932,558.65,106.932,562.65,116.932,566.65,112.932,562.65" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="112.932" y="544.515" fill="#000" font-size="13" textLength="21.55" font-weight="700" font-family="Roboto Condensed">09:</text><text x="138.482" y="544.515" fill="#000" font-size="13" textLength="107.472" font-family="Roboto Condensed">generate key pair</text></g><g class="message" data-entity-1="part1" data-entity-2="part1" id="msg10" data-source-line="23"><line x1="105.932" y1="608.109" x2="147.932" y2="608.109" style="stroke:#107050;stroke-width:1;" /><line x1="147.932" y1="608.109" x2="147.932" y2="621.109" style="stroke:#107050;stroke-width:1;" /><line x1="106.932" y1="621.109" x2="147.932" y2="621.109" style="stroke:#107050;stroke-width:1;" /><polygon points="116.932,617.109,106.932,621.109,116.932,625.109,112.932,621.109" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="112.932" y="595.109" fill="#000" font-size="13" textLength="18.713" font-weight="700" font-family="Roboto Condensed">10:</text><text x="135.645" y="587.244" fill="#000" font-size="13" textLength="163.617" font-family="Roboto Condensed">publish verificationMethod</text><text x="135.645" y="602.974" fill="#000" font-size="13" textLength="131.936" font-family="Roboto Condensed">in own DID document</text></g><line x1="89.932" y1="630.109" x2="601.676" y2="630.109" style="stroke:#107050;stroke-width:1;stroke-dasharray:2,2;" /><text x="94.932" y="642.766" fill="#000" font-size="11" textLength="55.854" font-weight="700" font-family="Roboto Condensed">[Local list]</text><g class="message" data-entity-1="part1" data-entity-2="part3" id="msg11" data-source-line="25"><polygon points="573.676,681.878,583.676,685.878,573.676,689.878,577.676,685.878" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="105.932" y1="685.878" x2="579.676" y2="685.878" style="stroke:#107050;stroke-width:1;" /><text x="112.932" y="672.877" fill="#000" font-size="13" textLength="15.552" font-weight="700" font-family="Roboto Condensed">11:</text><text x="132.484" y="665.013" fill="#000" font-size="13" textLength="152.541" font-family="Roboto Condensed">key or root, by a channel</text><text x="132.484" y="680.742" fill="#000" font-size="13" textLength="173.012" font-family="Roboto Condensed">the instance owner chooses</text></g><text x="314.73" y="732.534" fill="#000" font-size="11" textLength="62.149" font-family="Roboto Condensed">time passes</text><g class="message" data-entity-1="part3" data-entity-2="part2" id="msg12" data-source-line="28"><polygon points="379.459,782.646,369.459,786.646,379.459,790.646,375.459,786.646" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="373.459" y1="786.646" x2="584.676" y2="786.646" style="stroke:#107050;stroke-width:1;" /><text x="385.459" y="773.646" fill="#000" font-size="13" textLength="18.135" font-weight="700" font-family="Roboto Condensed">12:</text><text x="407.594" y="765.781" fill="#000" font-size="13" textLength="171.082" font-family="Roboto Condensed">fetch the list, DID document</text><text x="407.594" y="781.511" fill="#000" font-size="13" textLength="115.064" font-family="Roboto Condensed">or certificate chain</text></g><g class="message" data-entity-1="part3" data-entity-2="part3" id="msg13" data-source-line="29"><line x1="585.676" y1="832.105" x2="627.676" y2="832.105" style="stroke:#107050;stroke-width:1;" /><line x1="627.676" y1="832.105" x2="627.676" y2="845.105" style="stroke:#107050;stroke-width:1;" /><line x1="586.676" y1="845.105" x2="627.676" y2="845.105" style="stroke:#107050;stroke-width:1;" /><polygon points="596.676,841.105,586.676,845.105,596.676,849.105,592.676,845.105" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="592.676" y="819.105" fill="#000" font-size="13" textLength="18.338" font-weight="700" font-family="Roboto Condensed">13:</text><text x="615.015" y="811.24" fill="#000" font-size="13" textLength="116.207" font-family="Roboto Condensed">check its signature</text><text x="615.015" y="826.97" fill="#000" font-size="13" textLength="221.305" font-family="Roboto Condensed">(proof, or RFC 5280 path validation)</text></g><?plantuml-src bPHlQzim4CRVwrFSiZS9E6xeA6nP2OI4RLsxBZJT7qZ2aELBB6fBHZedvDllPCV5OOLjRmAEJi_zxhd79aqvmdmvXSMRCJpWJdj21mlfIAC7QLAunQE7WwOC93owoXDCZSgi4w-qKNcL8iGNdeuvnhegSY7AS5VfKXg2tchbZwnO3AKYwtoSKP6_fg0oD4W7wvw6tVhGzxWs_LIIXDBPlKwPnZfmo1KQ3Gqscnv8trJ-TozPayDKAIm9qxNf3dHIFart9lqTdTvgT8n66OBb7mUXuZYexxJdGiYAhAcAXCzxrybaD1fVNoIJdX0rC0md3JcCWRjOZn3q6go-7wnDU0pha3MY5p8d-3Z_DBiN0CyI3I9ht265TTajJCiorqgIjYRYiT0LFlozQAUe3y2Qn4gNQhFhohL4EpJe924yySfvrELi6Z7CB89lYmWUxvOHn74yU95ajI8dZMVhkT79-x9ASkspNq4E5ir37QVDXZLELxiYUvdhj0Lu3rxl3DGB1BvAJFJPM_C3aoKVIAeSNeukHmE1EVjuNuyeSrZSta3_PtmrUlSogMaBNPMZ_viFl6NjpcZRAkrzXL0t0eLiypRuZmtDruE1LAVZ0oR_sk6FefDziA_3rUps2r9cERVQWEKMyvivf5PL1RyPJUCxgtYqO5TNiiqdguQEuOMobY98ZlnIgqmQWtcJFMqySHmno7Dz4r8lqAI2Tm-a2sHWp_-5B8XduQx3MoILrS4E7D4PvTfmISUkq5sRCvqEhCfGFO4cNsUXNZcdW3yCTXk5AHu-pE3gyks8aVZxT8eFspGGlm40?></g></svg>
+</figure>
+
+<ul>
+  <li><strong>Roles.</strong> Each party; the trust anchor operator.</li>
+  <li><strong>Trigger.</strong> A party will sign something others verify (tokens,
+credentials, QR codes), or will connect by mutual TLS.</li>
+  <li><strong>Steps.</strong>
+    <ol>
+      <li>Choose the anchor or anchors the DSA accepts (<a href="#anchors">above</a>). Both
+parties record the choice in the agreement.</li>
+      <li>Do the anchor’s paperwork.
+        <ul>
+          <li>GDHCN: Letter of Application, Terms of Participation, technical
+evaluation, acceptance testing, go-live
+(<a href="concepts_onboarding.html">Onboarding Process</a>).</li>
+          <li>National PKI: national rules.</li>
+          <li>Own did:web, or a local list: none.</li>
+        </ul>
+      </li>
+      <li>Generate keys for each usage needed.
+        <ul>
+          <li>GDHCN: the usages in the <a href="artifact/ValueSet-KeyUsage.html">KeyUsage</a> value set
+(for example SCA, DSC, UP, TLS). See
+<a href="concepts_certificate_governance.html">Certificate Governance</a>.</li>
+          <li>Other anchors: the key usage the certificate or verification method
+allows.</li>
+        </ul>
+      </li>
+      <li>Publish the public keys.
+        <ul>
+          <li>GDHCN: <a href="transactions.html#publish_keys">Publish Keys</a> through the
+Trust Network Gateway.</li>
+          <li>did:web: add a <code class="language-plaintext highlighter-rouge">verificationMethod</code> entry to the party’s DID document
+(DID Core 1.0 §5.2, <strong>unverified</strong> section number).</li>
+          <li>X.509: the CA issues the certificate.</li>
+          <li>Local list: hand the key or root to the other party.</li>
+        </ul>
+      </li>
+      <li>The verifier fetches the list and checks its signature.
+        <ul>
+          <li>GDHCN: <a href="transactions.html#get_keys_did">Retrieve Verification Keys - DID</a>.
+The trust list proof is <code class="language-plaintext highlighter-rouge">JsonWebSignature2020</code>
+(<a href="concepts_did_gdhcn.html">Verifying a trust list document</a>).</li>
+          <li>X.509: RFC 5280 path validation to the accepted root.</li>
+          <li>did:web: resolve the DID document over HTTPS.</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li><strong>In.</strong> Key pairs; for GDHCN, application letters.</li>
+  <li><strong>Out.</strong> A DID document entry, or an X.509 certificate; for GDHCN, a signed
+trust list entry.</li>
+  <li><strong>Standards.</strong> DID Core 1.0 (W3C Recommendation). did:web and
+JsonWebSignature2020 (not final; approved by the owner for this work).
+RFC 5280. IHE VHL transactions “Submit PKI Material with DID” (ITI-YY1) and
+“Retrieve Trust List with DID” (ITI-YY2) describe the same steps (ballot;
+transaction names <strong>unverified</strong> this session).</li>
+  <li><strong>Computable?</strong> Partly. Step 2 is done by people. Steps 4 and 5 are done by
+programs.</li>
+  <li><strong>Document-only DSA.</strong> Identical. A PDF-only DSA still needs keys when any
+system signs or connects by mutual TLS.</li>
+</ul>
+
+<h5 id="p3-gdhcn">If the anchor is GDHCN</h5>
+
+<p>This note applies only when the parties choose GDHCN.</p>
+
+<ul>
+  <li>GDHCN groups keys by <a href="trust_domains.html">trust domain</a>, such as DDCC,
+ICVP, IPS-PILGRIMAGE and PH4H. It has <strong>no trust domain for DSAs</strong>.</li>
+  <li>Using a key from another domain to sign DSA material works technically. It
+is outside that key’s stated purpose.</li>
+  <li>A DSA trust domain would be WHO’s decision. This guide does not propose one.</li>
+  <li>GDHCN joining is itself governed by documents (Terms of Participation, the
+Administrative and Operational Framework). It is a working example of a
+document-only agreement with technical processes on top. See
+<a href="concepts.html">Concepts</a>.</li>
+</ul>
+
+<h4 id="p15">P15. Dispute and breach handling</h4>
+
+<figure>
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="ACTIVITY" style="width:583px;height:615px;background:#FFFFFF;" width="583px" height="615px" viewBox="0 0 583 615" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.9?><defs /><g font-family="sans-serif" lengthAdjust="spacing"><g class="title" data-source-line="2"><text x="159.206" y="33.563" fill="#000" font-size="14" textLength="263.122" font-weight="700" font-family="Roboto Condensed">DSA P15: Dispute and Breach Handling</text></g><ellipse cx="289.767" cy="62.939" rx="10" ry="10" fill="#222" style="stroke:#222;stroke-width:1;" /><rect x="164.12" y="92.939" width="251.293" height="49.039" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="174.12" y="114.564" fill="#000" font-size="12" textLength="155.742" font-family="Roboto Condensed">Suspected breach reported</text><text x="174.12" y="129.084" fill="#000" font-size="12" textLength="231.293" font-family="Roboto Condensed">(use beyond purpose, missed duty, leak)</text><rect x="161.337" y="161.979" width="256.859" height="49.039" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="171.337" y="183.604" fill="#000" font-size="12" textLength="236.859" font-family="Roboto Condensed">Contain: suspend grants, clients and keys</text><text x="171.337" y="198.123" fill="#000" font-size="12" textLength="202.775" font-family="Roboto Condensed">(P13, planned in smart-trust-server)</text><rect x="148.145" y="231.018" width="283.244" height="63.559" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="158.145" y="252.643" fill="#000" font-size="12" textLength="210.967" font-family="Roboto Condensed">Gather evidence: audit records (P12),</text><text x="158.145" y="267.162" fill="#000" font-size="12" textLength="116.941" font-family="Roboto Condensed">the log's hash chain,</text><text x="158.145" y="281.682" fill="#000" font-size="12" textLength="263.244" font-family="Roboto Condensed">the hash of the signed agreement version (P2)</text><rect x="207.702" y="314.576" width="164.129" height="49.039" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="217.702" y="336.201" fill="#000" font-size="12" textLength="144.129" font-family="Roboto Condensed">Follow the dispute clause</text><text x="217.702" y="350.721" fill="#000" font-size="12" textLength="86.443" font-family="Roboto Condensed">in the legal text</text><rect x="198.02" y="383.615" width="183.494" height="34.52" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="208.02" y="405.24" fill="#000" font-size="12" textLength="163.494" font-family="Roboto Condensed">Notify those the law requires</text><polygon points="53.241,438.135,106.308,438.135,118.308,450.135,106.308,462.135,53.241,462.135,41.241,450.135,53.241,438.135" fill="#FFF" style="stroke:#107050;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="83.774" y="472.791" fill="#000" font-size="11" textLength="45.311" font-family="Roboto Condensed">reinstate</text><text x="53.241" y="454.136" fill="#000" font-size="11" textLength="53.066" font-family="Roboto Condensed">Outcome?</text><rect x="16" y="495.444" width="127.549" height="34.52" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="26" y="517.069" fill="#000" font-size="12" textLength="107.549" font-family="Roboto Condensed">Lift the suspension</text><polygon points="257.522,438.135,257.522,438.135,269.522,450.135,257.522,462.135,257.522,462.135,245.522,450.135,257.522,438.135" fill="#FFF" style="stroke:#107050;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:10;" /><text x="261.522" y="472.791" fill="#000" font-size="11" textLength="35.46" font-family="Roboto Condensed">amend</text><text x="269.522" y="447.481" fill="#000" font-size="11" textLength="49.14" font-family="Roboto Condensed">terminate</text><rect x="163.549" y="495.444" width="187.947" height="34.52" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="173.549" y="517.069" fill="#000" font-size="12" textLength="167.947" font-family="Roboto Condensed">New agreement version (P14)</text><rect x="371.496" y="484.53" width="192.037" height="49.039" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="381.496" y="506.155" fill="#000" font-size="12" textLength="171.592" font-family="Roboto Condensed">Terminate (P14); revoke (P13);</text><text x="381.496" y="520.674" fill="#000" font-size="12" textLength="172.037" font-family="Roboto Condensed">start end-of-agreement duties</text><ellipse cx="289.767" cy="584.569" rx="11" ry="11" fill="none" style="stroke:#222;stroke-width:1;" /><ellipse cx="289.767" cy="584.569" rx="6" ry="6" fill="#222" style="stroke:#222;stroke-width:1;" /><line x1="289.767" y1="72.939" x2="289.767" y2="92.939" style="stroke:#107050;stroke-width:1;" /><polygon points="285.767,82.939,289.767,92.939,293.767,82.939,289.767,86.939" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="289.767" y1="141.979" x2="289.767" y2="161.979" style="stroke:#107050;stroke-width:1;" /><polygon points="285.767,151.979,289.767,161.979,293.767,151.979,289.767,155.979" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="289.767" y1="211.018" x2="289.767" y2="231.018" style="stroke:#107050;stroke-width:1;" /><polygon points="285.767,221.018,289.767,231.018,293.767,221.018,289.767,225.018" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="289.767" y1="294.576" x2="289.767" y2="314.576" style="stroke:#107050;stroke-width:1;" /><polygon points="285.767,304.576,289.767,314.576,293.767,304.576,289.767,308.576" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="289.767" y1="363.615" x2="289.767" y2="383.615" style="stroke:#107050;stroke-width:1;" /><polygon points="285.767,373.615,289.767,383.615,293.767,373.615,289.767,377.615" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="79.774" y1="462.135" x2="79.774" y2="495.444" style="stroke:#107050;stroke-width:1;" /><polygon points="75.774,485.444,79.774,495.444,83.774,485.444,79.774,489.444" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="79.774" y1="529.964" x2="79.774" y2="553.569" style="stroke:#107050;stroke-width:1;" /><polygon points="75.774,543.569,79.774,553.569,83.774,543.569,79.774,547.569" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="257.522" y1="462.135" x2="257.522" y2="495.444" style="stroke:#107050;stroke-width:1;" /><polygon points="253.522,485.444,257.522,495.444,261.522,485.444,257.522,489.444" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="257.522" y1="529.964" x2="257.522" y2="553.569" style="stroke:#107050;stroke-width:1;" /><polygon points="253.522,543.569,257.522,553.569,261.522,543.569,257.522,547.569" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="118.308" y1="450.135" x2="245.522" y2="450.135" style="stroke:#107050;stroke-width:1;" /><polygon points="235.522,446.135,245.522,450.135,235.522,454.135,239.522,450.135" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="289.767" y1="418.135" x2="289.767" y2="423.135" style="stroke:#107050;stroke-width:1;" /><line x1="289.767" y1="423.135" x2="79.774" y2="423.135" style="stroke:#107050;stroke-width:1;" /><line x1="79.774" y1="423.135" x2="79.774" y2="438.135" style="stroke:#107050;stroke-width:1;" /><polygon points="75.774,428.135,79.774,438.135,83.774,428.135,79.774,432.135" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="269.522" y1="450.135" x2="467.515" y2="450.135" style="stroke:#107050;stroke-width:1;" /><line x1="467.515" y1="450.135" x2="467.515" y2="484.53" style="stroke:#107050;stroke-width:1;" /><polygon points="463.515,474.53,467.515,484.53,471.515,474.53,467.515,478.53" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="467.515" y1="533.569" x2="467.515" y2="553.569" style="stroke:#107050;stroke-width:1;" /><polygon points="463.515,543.569,467.515,553.569,471.515,543.569,467.515,547.569" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="79.774" y1="553.569" x2="467.515" y2="553.569" style="stroke:#107050;stroke-width:1;" /><line x1="289.767" y1="553.569" x2="289.767" y2="573.569" style="stroke:#107050;stroke-width:1;" /><polygon points="285.767,563.569,289.767,573.569,293.767,563.569,289.767,567.569" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><?plantuml-src RPB1ZXCn38RlUGfpeYDD5tKNBjC30bR00IqhBSTUiebdncec6MAdPTuUPzgA2xVO_ltxYnCX2GYFBv_WUVUXWqVYkGY2ZHu-PxHkXEzw3XG7yuQY2yKZtBrZMGBUKPc2CImsY-bU2i_e13syNleopYbhV8YRmWYlk2GrdKkU4sCB4p6hs1TPMWXeZytUT5zI54kn0wvkAX-oZS8jk42eXvNhY0khwVFkeOKvs1ZLXYBmf1nRoOLbovXFcAlZDoiZPi0JUOmEEx35aoYSIzapgCjzqnwYYY2auIt3Q7a4Doh5DRqcKW_rp3JKQNR8Y9C2WKvXIb5zxkkqhoc4T5wb_hf95wnU_n2LS1s2WmqW-4TK_fI4-aNpkf5BrPuLxNUXZBmtrCFcPn6N9lpOrBhEoKXHDoxO683k1_Lo0LltLL7s1WDZRRsrM2Nrg_m9p_zbtxrlBcsm4SmJnPl_hrjq5IdSAHtNwA7P7-Bwzg3sszHl_pdherAzW1Qerm-IPlCN?></g></svg>
+</figure>
+
+<ul>
+  <li><strong>Roles.</strong> Both parties; regulators; the courts or arbiters the legal text
+names.</li>
+  <li><strong>Trigger.</strong> A suspected breach: data used beyond the purpose, a missed
+duty, a leak.</li>
+  <li><strong>Steps.</strong>
+    <ol>
+      <li><strong>Contain.</strong> Suspend grants, clients and keys (P13, planned).
+        <ul>
+          <li>GDHCN key: remove the DSC from the trust list (see “DSC generation and
+deletion” in the <a href="concepts_onboarding_checklist.html">Onboarding Checklist</a>).</li>
+          <li>X.509 certificate: revoke it and publish a CRL (RFC 5280 §5). This
+guide advises CRLs over OCSP for privacy
+(<a href="concepts_certificate_governance.html">Certificate Governance</a>).</li>
+          <li>did:web key: remove the <code class="language-plaintext highlighter-rouge">verificationMethod</code> from the DID document.</li>
+        </ul>
+      </li>
+      <li><strong>Gather evidence.</strong> The audit records (P12, planned), the log’s hash
+chain if it has one, and the hash of the agreement version both sides
+signed (P2).</li>
+      <li><strong>Follow the dispute clause</strong> in the legal text.</li>
+      <li><strong>Resolve.</strong> Reinstate (lift the suspension), amend (P14) or terminate
+(P14, then revoke by P13).</li>
+      <li><strong>Notify</strong> those the law requires, for example a data protection
+authority. This depends on national law and is outside this guide.</li>
+    </ol>
+  </li>
+  <li><strong>Standards.</strong> None for the process itself. In a computable DSA, ODRL 2.2
+<code class="language-plaintext highlighter-rouge">consequence</code> (§2.6.6) and <code class="language-plaintext highlighter-rouge">remedy</code> (§2.6.7) can state what follows when a
+duty is not met. The dispute itself is a legal matter.</li>
+  <li><strong>Computable?</strong> No: people decide. The evidence is produced by programs.
+This is the main value a computable DSA adds here.</li>
+  <li><strong>Document-only DSA.</strong> Same. The evidence is logs plus hashes.</li>
+</ul>
+
+<h4 id="signed-pdf">When the agreement is only a signed PDF</h4>
+
+<p>A worked example. The names are fictional. Ministry M shares a dataset with
+Institute I under a signed PDF. There is no ODRL.</p>
+
+<figure>
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SEQUENCE" style="width:990px;height:437px;background:#FFFFFF;" width="990px" height="437px" viewBox="0 0 990 437" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.9?><defs /><g font-family="sans-serif" lengthAdjust="spacing"><g class="title" data-source-line="2"><text x="333.285" y="28.563" fill="#000" font-size="14" textLength="322.082" font-weight="700" font-family="Roboto Condensed">DSA When the Agreement Is Only a Signed PDF</text></g><g class="participant-lifeline" data-qualified-name="M" data-entity-uid="part1" id="part1-lifeline--2" data-source-line="5"><g><title>Provider staff</title><rect x="58.501" y="96.818" width="8" height="281.024" fill="#000" fill-opacity="0" /><line x1="62.001" y1="96.818" x2="62.001" y2="377.843" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant-lifeline" data-qualified-name="Pub" data-entity-uid="part2" id="part2-lifeline--2" data-source-line="6"><g><title>Publisher site</title><rect x="243.421" y="96.818" width="8" height="281.024" fill="#000" fill-opacity="0" /><line x1="246.921" y1="96.818" x2="246.921" y2="377.843" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant-lifeline" data-qualified-name="Adm" data-entity-uid="part3" id="part3-lifeline--2" data-source-line="7"><g><title>Provider admin</title><rect x="364.382" y="96.818" width="8" height="281.024" fill="#000" fill-opacity="0" /><line x1="367.882" y1="96.818" x2="367.882" y2="377.843" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant-lifeline" data-qualified-name="AS" data-entity-uid="part4" id="part4-lifeline" data-source-line="8"><g><title>Authorisation server</title><rect x="661.028" y="96.818" width="8" height="281.024" fill="#000" fill-opacity="0" /><line x1="664.528" y1="96.818" x2="664.528" y2="377.843" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant-lifeline" data-qualified-name="I" data-entity-uid="part5" id="part5-lifeline" data-source-line="9"><g><title>Recipient server</title><rect x="915.354" y="96.818" width="8" height="281.024" fill="#000" fill-opacity="0" /><line x1="918.854" y1="96.818" x2="918.854" y2="377.843" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5,5;" /></g></g><g class="participant participant-head" data-qualified-name="M" data-entity-uid="part1" id="part1-head--2" data-source-line="5"><rect x="10" y="64.879" width="104.002" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="17" y="85.441" fill="#000" font-size="14" textLength="90.002" font-family="Roboto Condensed">Provider staff</text></g><g class="participant participant-head" data-qualified-name="Pub" data-entity-uid="part2" id="part2-head--2" data-source-line="6"><rect x="193.044" y="47.939" width="107.755" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="202.354" y="68.502" fill="#000" font-size="14" textLength="89.134" font-family="Roboto Condensed">Publisher site</text><text x="200.044" y="85.441" fill="#000" font-size="14" textLength="93.755" font-family="Roboto Condensed">and catalogue</text></g><g class="participant participant-head" data-qualified-name="Adm" data-entity-uid="part3" id="part3-head--2" data-source-line="7"><rect x="310.799" y="64.879" width="114.167" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="317.799" y="85.441" fill="#000" font-size="14" textLength="100.167" font-family="Roboto Condensed">Provider admin</text></g><g class="participant participant-head" data-qualified-name="AS" data-entity-uid="part4" id="part4-head" data-source-line="8"><rect x="590.628" y="64.879" width="147.8" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="597.628" y="85.441" fill="#000" font-size="14" textLength="133.8" font-family="Roboto Condensed">Authorisation server</text></g><g class="participant participant-head" data-qualified-name="I" data-entity-uid="part5" id="part5-head" data-source-line="9"><rect x="858.055" y="64.879" width="121.598" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="865.055" y="85.441" fill="#000" font-size="14" textLength="107.598" font-family="Roboto Condensed">Recipient server</text></g><g class="participant participant-tail" data-qualified-name="M" data-entity-uid="part1" id="part1-tail--2" data-source-line="5"><rect x="10" y="377.843" width="104.002" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="17" y="398.405" fill="#000" font-size="14" textLength="90.002" font-family="Roboto Condensed">Provider staff</text></g><g class="participant participant-tail" data-qualified-name="Pub" data-entity-uid="part2" id="part2-tail--2" data-source-line="6"><rect x="193.044" y="377.843" width="107.755" height="47.879" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="202.354" y="398.405" fill="#000" font-size="14" textLength="89.134" font-family="Roboto Condensed">Publisher site</text><text x="200.044" y="415.345" fill="#000" font-size="14" textLength="93.755" font-family="Roboto Condensed">and catalogue</text></g><g class="participant participant-tail" data-qualified-name="Adm" data-entity-uid="part3" id="part3-tail--2" data-source-line="7"><rect x="310.799" y="377.843" width="114.167" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="317.799" y="398.405" fill="#000" font-size="14" textLength="100.167" font-family="Roboto Condensed">Provider admin</text></g><g class="participant participant-tail" data-qualified-name="AS" data-entity-uid="part4" id="part4-tail" data-source-line="8"><rect x="590.628" y="377.843" width="147.8" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="597.628" y="398.405" fill="#000" font-size="14" textLength="133.8" font-family="Roboto Condensed">Authorisation server</text></g><g class="participant participant-tail" data-qualified-name="I" data-entity-uid="part5" id="part5-tail" data-source-line="9"><rect x="858.055" y="377.843" width="121.598" height="30.939" fill="#FFF" style="stroke:#107050;stroke-width:0.5;" rx="4.5" ry="4.5" /><text x="865.055" y="398.405" fill="#000" font-size="14" textLength="107.598" font-family="Roboto Condensed">Recipient server</text></g><g class="message" data-entity-1="part1" data-entity-2="part2" id="msg1--2" data-source-line="13"><polygon points="234.921,138.277,244.921,142.277,234.921,146.277,238.921,142.277" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="62.001" y1="142.277" x2="240.921" y2="142.277" style="stroke:#107050;stroke-width:1;" /><text x="69.001" y="129.277" fill="#000" font-size="13" textLength="18.713" font-weight="700" font-family="Roboto Condensed">01:</text><text x="91.714" y="121.412" fill="#000" font-size="13" textLength="138.208" font-family="Roboto Condensed">signed PDF, SHA-256,</text><text x="91.714" y="137.142" fill="#000" font-size="13" textLength="109.814" font-family="Roboto Condensed">DCAT record (P2)</text></g><g class="message" data-entity-1="part1" data-entity-2="part3" id="msg2--2" data-source-line="14"><polygon points="355.882,183.736,365.882,187.736,355.882,191.736,359.882,187.736" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="62.001" y1="187.736" x2="361.882" y2="187.736" style="stroke:#107050;stroke-width:1;" /><text x="69.001" y="174.736" fill="#000" font-size="13" textLength="21.296" font-weight="700" font-family="Roboto Condensed">02:</text><text x="94.297" y="166.871" fill="#000" font-size="13" textLength="152.052" font-family="Roboto Condensed">configure the agreement</text><text x="94.297" y="182.601" fill="#000" font-size="13" textLength="129.245" font-family="Roboto Condensed">version (URL + hash)</text></g><g class="message" data-entity-1="part3" data-entity-2="part4" id="msg3--2" data-source-line="15"><polygon points="652.528,229.195,662.528,233.195,652.528,237.195,656.528,233.195" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="367.882" y1="233.195" x2="658.528" y2="233.195" style="stroke:#107050;stroke-width:1;" /><text x="374.882" y="220.195" fill="#000" font-size="13" textLength="21.5" font-weight="700" font-family="Roboto Condensed">03:</text><text x="400.382" y="212.33" fill="#000" font-size="13" textLength="247.146" font-family="Roboto Condensed">register client; set scopes from the PDF;</text><text x="400.382" y="228.06" fill="#000" font-size="13" textLength="227.113" font-family="Roboto Condensed">change record cites URL + hash (P4)</text></g><g class="message" data-entity-1="part5" data-entity-2="part4" id="msg4--2" data-source-line="16"><polygon points="675.528,258.925,665.528,262.925,675.528,266.925,671.528,262.925" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="669.528" y1="262.925" x2="917.854" y2="262.925" style="stroke:#107050;stroke-width:1;" /><text x="681.528" y="257.789" fill="#000" font-size="13" textLength="21.899" font-weight="700" font-family="Roboto Condensed">04:</text><text x="707.427" y="257.789" fill="#000" font-size="13" textLength="204.426" font-family="Roboto Condensed">client credentials over mTLS (P5)</text></g><g class="message" data-entity-1="part4" data-entity-2="part5" id="msg5--2" data-source-line="17"><polygon points="906.854,288.654,916.854,292.654,906.854,296.654,910.854,292.654" fill="#107050" style="stroke:#107050;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;" /><line x1="664.528" y1="292.654" x2="912.854" y2="292.654" style="stroke:#107050;stroke-width:1;" /><text x="671.528" y="287.519" fill="#000" font-size="13" textLength="21.417" font-weight="700" font-family="Roboto Condensed">05:</text><text x="696.945" y="287.519" fill="#000" font-size="13" textLength="176.078" font-family="Roboto Condensed">access token (static scopes)</text></g><path d="M261.282,310.154 L261.282,358.154 A4.5,4.5 0 0 0 265.782,362.654 L469.782,362.654 A4.5,4.5 0 0 0 474.282,358.154 L474.282,315.654 L464.282,305.654 L265.782,305.654 A4.5,4.5 0 0 0 261.282,310.154" style="stroke:#107050;stroke-width:0.5;" fill="#FFF" /><path d="M464.282,305.654 L464.282,313.404 A2.25,2.25 0 0 0 466.532,315.654 L474.282,315.654 L464.282,305.654" style="stroke:#107050;stroke-width:0.5;" fill="#FFF" /><text x="267.282" y="323.248" fill="#000" font-size="13" textLength="192.201" font-style="italic" font-family="Roboto Condensed">review the log against the PDF;</text><text x="267.282" y="338.978" fill="#000" font-size="13" textLength="100.439" font-style="italic" font-family="Roboto Condensed">expiry reminder;</text><text x="267.282" y="354.707" fill="#000" font-size="13" textLength="170.727" font-style="italic" font-family="Roboto Condensed">disable the client on breach</text><?plantuml-src TP9FQnin4CNl-XHJdsoQVuIcXoGObffIGq9DDgKNNsQbyUvGxSX8MhV-zXtjncbJw6d5yjxCJ-yfS_O4gxg2xnq9v8wWQYDHJv9XdU2h-2CWrDmAETYiFfjtBDOFZk3YCkMZfmiUUc_C7cDcotjKtsmJmu4THKWPTxiPO8B7VnH3upbrHSAPjeBYm6967zg1HeCg_ZCKNSyoQYhNlzLKG-v2v8IPWq2YUA0uAUktmYVI4vTB_YLQ6uD33ZBqZQwPtJVBgwlR-yjcEJFc4SwNXGbkbVWKnXdKNwhpwvkFPrjPVQgU8P8DqS5ySxsO74ge3Xjan-qGQGmOJm5lHJUdGZh_zlG0xw73r2rCyHHhhSv8BQUiDDONsZl5LMGRzfHW5qC_3bIIkwtO3gMb4uBLM1Fy6QjC7nPc_JfucWSsajCleqyGb0RwvuTQjJUAKHVnMhLeBQK4EVpG9pBNJZN75uY5aP1fifOsGFSVc7wEN5gcNXPPKdxbL0NzsdCygb1hr3xBBwULDNwAvuLCKsaYeUqCwTieMynl?></g></svg>
+</figure>
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>What happens</th>
+      <th>Process</th>
+      <th>Done by a program</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>M and I negotiate and sign a PDF. An annex with security controls stays private</td>
+      <td>P1</td>
+      <td>nothing</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>M publishes the PDF at an immutable URL (for example <code class="language-plaintext highlighter-rouge">/dsa/42/v3</code>), its SHA-256, and a <a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT 3</a> record with the checksum (§6.8.20). If the PDF is confidential, M publishes only the hash</td>
+      <td>P2</td>
+      <td>hash, catalogue</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>I’s server certificate is issued by the national PKI, or I publishes a did:web</td>
+      <td><a href="#p3">P3</a></td>
+      <td>key publication</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>M’s admin registers I’s client by hand: client id, mutual TLS certificate, and scopes that match the PDF. The admin’s change record cites the PDF URL and hash</td>
+      <td>P4</td>
+      <td>registration</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>I’s server gets tokens by client credentials over mutual TLS (<a href="https://www.rfc-editor.org/rfc/rfc8705">RFC 8705</a>) and calls the API</td>
+      <td>P5</td>
+      <td>all transport</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Where consent is needed, consents are paper forms, scanned into FHIR <code class="language-plaintext highlighter-rouge">Consent.source[x]</code>, with <code class="language-plaintext highlighter-rouge">Consent.policy.uri</code> set to the PDF URL (<a href="https://hl7.org/fhir/R4/consent.html">FHIR R4 Consent</a>)</td>
+      <td>P9</td>
+      <td>storage, lookup</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>M’s server allows or refuses each call from its configuration</td>
+      <td>P11</td>
+      <td>the check (the rule is set by hand)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Every call is logged with the PDF URL and hash. A person reviews the log against the PDF’s clauses. At the end, I sends a signed deletion letter; M keeps it with its hash</td>
+      <td>P12</td>
+      <td>records</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>If I breaches the PDF, M’s admin disables the client and revokes the certificate</td>
+      <td>P13, <a href="#p15">P15</a></td>
+      <td>mechanism</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>On expiry a reminder fires. The admin disables the client. I returns or deletes the data</td>
+      <td>P14</td>
+      <td>mechanism</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>What a person does by hand here, that a computable DSA would check:</strong>
+turning clauses into scopes (step 4); checking the purpose of each request
+(possible only if the client states it); expiry (step 10); duty checks
+(step 8).</p>
+
+<p><strong>What is the same in both kinds of DSA:</strong> keys, transport, tokens, logs and
+revocation. That is why these processes are worth documenting for every DSA.</p>
+
+<p>FHIR R4 <code class="language-plaintext highlighter-rouge">Consent</code> is shown because IHE PCF uses it. This guide is FHIR R5.
+Which Consent version applies is decided in smart-trust-phw (<strong>needs
+approval</strong>).</p>
+
+<h4 id="elsewhere">Where the other processes are</h4>
+
+<p>The DSA processes are split by layer. Only P3 and P15 are on this page.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Process</th>
+      <th>Where</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P1</td>
+      <td>Draft and negotiate the agreement</td>
+      <td>folio-assistant-core (document life cycle)</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>Publish: version, hash, catalogue</td>
+      <td>folio-assistant-core (document life cycle)</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>Register parties and keys with a trust anchor</td>
+      <td><a href="#p3">this page</a></td>
+      <td>draft</td>
+    </tr>
+    <tr>
+      <td>P4</td>
+      <td>Register a server client</td>
+      <td>smart-trust-server</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P5</td>
+      <td>Server-to-server access</td>
+      <td>smart-trust-server</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P6</td>
+      <td>Wallet issuance</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw">smart-trust-phw</a></td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P7</td>
+      <td>Wallet presentation</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw">smart-trust-phw</a></td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P8</td>
+      <td>QR and paper</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw">smart-trust-phw</a></td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>Individual consent, linked to the agreement</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw">smart-trust-phw</a></td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>Agent delegation</td>
+      <td><a href="https://github.com/litlfred/smart-trust-phw">smart-trust-phw</a></td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P11</td>
+      <td>Access decision</td>
+      <td>smart-trust-server</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>Audit, provenance and duty checks</td>
+      <td>smart-trust-server</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P13</td>
+      <td>Revocation and suspension</td>
+      <td>smart-trust-server</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P14</td>
+      <td>Amendment, renewal, termination, expiry</td>
+      <td>folio-assistant-core (document life cycle)</td>
+      <td>planned</td>
+    </tr>
+    <tr>
+      <td>P15</td>
+      <td>Dispute and breach handling</td>
+      <td><a href="#p15">this page</a></td>
+      <td>draft</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>smart-trust-server does not exist yet. It will have the same shape as
+smart-trust-phw. Tracked in
+<a href="https://github.com/litlfred/folio-assistant/issues/2702">litlfred/folio-assistant#2702</a>.</p>
+
+<h4 id="unverified">Not verified</h4>
+
+<ul>
+  <li>DID Core 1.0 section number for verification methods (§5.2).</li>
+  <li>IHE VHL transaction numbers and names (ITI-YY1, ITI-YY2), taken from an
+analysis and not re-checked.</li>
+  <li>RFC 5280 and RFC 8705 section numbers are cited from standing knowledge.</li>
+</ul>
+
+<p class="ig-edit"><a data-fa-link="edit" data-src="input/pagecontent/dsa_processes.md" data-repo="litlfred/smart-trust" href="https://github.com/litlfred/smart-trust/edit/main/input/pagecontent/dsa_processes.md">Edit this page on GitHub</a></p>
+<script type="application/json" id="ig-source-lines">{"blob": "https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/dsa_processes.md", "repo": "litlfred/smart-trust", "branch": "main", "path": "input/pagecontent/dsa_processes.md", "lines": [{"t":"Data Sharing Agreement Processes","l":1},{"t":"Key points","l":13},{"t":"Roles","l":27},{"t":"Trust anchor choices","l":42},{"t":"P3. Register parties and keys with a trust anchor","l":65},{"t":"If the anchor is GDHCN","l":115},{"t":"P15. Dispute and breach handling","l":129},{"t":"When the agreement is only a signed PDF","l":162},{"t":"Where the other processes are","l":196},{"t":"Not verified","l":222}]}</script>
+
+<script src="./assets/ig-source-links.js"></script>
+
+<link rel="stylesheet" href="assets/ig-pages.css" />
+
+<footer id="ig-footer">
+<p class="ig-footer-nav"><a href="concepts_onboarding.html">&lt;prev</a> | <a href="#">top</a> | <a href="use_cases.html">next&gt;</a></p>
+<p class="ig-footer-band">IG © 2023+ <a href="http://who.int" rel="external">WHO</a>. Package <code>smart.who.int.trust#1.7.5</code> based on <a href="http://hl7.org/fhir/R5/" rel="external">FHIR 5.0.0</a>. </p>
+<p class="ig-footer-links">Links: <a href="toc.html">Table of Contents</a> | <a href="https://spdx.org/licenses/CC-BY-SA-3.0-IGO.html" rel="external">License</a></p>
+</footer>
+
+
+</main>
+</body>
+</html>
