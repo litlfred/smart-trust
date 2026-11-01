@@ -34,7 +34,7 @@
       <bpmn:outgoing>Flow_65</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sendTask id="R.T.Sign" name="Verify the PR and sign air-gapped">
-      <bpmn:documentation>Steps [36]-[37].</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[36 -37]** For PROD environment, the PR is verified by WHO. After successful verification, the air-gapped signing process is performed to sign the keys. Follow to **[47]**</bpmn:documentation>
       <bpmn:incoming>Flow_65</bpmn:incoming>
       <bpmn:outgoing>Flow_66</bpmn:outgoing>
     </bpmn:sendTask>
@@ -69,11 +69,11 @@
       </bpmn:lane>
     </bpmn:laneSet>
     <bpmn:startEvent id="R.O.Start" name="Onboarding information received">
-      <bpmn:documentation>Step [30]. Input: the environment.</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[30]** The collected onboarding information is sent to the operations (OPS) team. The onboarding (OB) team is informed as well.</bpmn:documentation>
       <bpmn:outgoing>Flow_67</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:userTask id="R.O.Config" name="Add the data to the configuration files">
-      <bpmn:documentation>Steps [31]-[33].</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[31 - 35]** The onboarding data is taken over to the configuration files by the OPS team to automate the GitHub processes. As a result, a Pull Request (PR) is created. Dependent on the environment, the subsequent steps differ.</bpmn:documentation>
       <bpmn:incoming>Flow_67</bpmn:incoming>
       <bpmn:outgoing>Flow_68</bpmn:outgoing>
     </bpmn:userTask>
@@ -89,7 +89,9 @@
       <bpmn:outgoing>Flow_75</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:userTask id="R.O.Verify" name="Verify the pull request">
-      <bpmn:documentation>Steps [39] (UAT) and [47] (PROD).</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[39]** The service provider checks the PR as well.
+
+**[47]** TSI Verification of Pull Request in PROD Environment.</bpmn:documentation>
       <bpmn:incoming>Flow_75</bpmn:incoming>
       <bpmn:outgoing>Flow_76</bpmn:outgoing>
     </bpmn:userTask>
@@ -104,7 +106,9 @@
       <bpmn:incoming>R.F.ok</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sendTask id="R.O.Fail" name="Send the failure">
-      <bpmn:documentation>Steps [40]-[41] and [48]-[49]: to the Participant; WHO is informed as well.</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[40 - 41]** In case the verification failed, WHO is informed about the outcome.
+
+**[48 - 50]** In case Pull Request failed, TSIS to communicate to Participant for them to Correct</bpmn:documentation>
       <bpmn:incoming>Flow_77</bpmn:incoming>
       <bpmn:outgoing>Flow_78</bpmn:outgoing>
     </bpmn:sendTask>
@@ -130,7 +134,7 @@
       <bpmn:outgoing>Flow_72</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:serviceTask id="R.B.Auto" name="Sign the keys automatically">
-      <bpmn:documentation>Step [38], UAT (and optional DEV).</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[38]** For UAT (and optional DEV), an auto signing process signs the keys.</bpmn:documentation>
       <bpmn:incoming>Flow_71</bpmn:incoming>
       <bpmn:outgoing>Flow_74</bpmn:outgoing>
     </bpmn:serviceTask>
@@ -164,7 +168,7 @@
       <bpmn:messageEventDefinition id="R.P.Start.Def" />
     </bpmn:startEvent>
     <bpmn:sendTask id="R.P.Fix" name="Correct the key material">
-      <bpmn:documentation>Steps [42] and [50], in the Participant's repository.</bpmn:documentation>
+      <bpmn:documentation textFormat="text/markdown">**[42]** Correction.</bpmn:documentation>
       <bpmn:incoming>Flow_79</bpmn:incoming>
       <bpmn:outgoing>Flow_80</bpmn:outgoing>
     </bpmn:sendTask>
