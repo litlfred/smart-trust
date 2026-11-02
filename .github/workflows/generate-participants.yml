@@ -34,7 +34,7 @@ jobs:
         
     - name: Install dependencies
       run: |
-        pip install pandas urllib3 requests cryptography
+        pip install --require-hashes -r .github/requirements/generate-participants.lock
         
     - name: Determine environment
       id: env
