@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "185fedd64a0a291d6b16550deb6bd8382e645b6c",
+          "ref": "3556cf97ced1eb610cee1f237418eb177ec3e407",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -181,8 +181,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-02",
-              "ref": "185fedd64a0a291d6b16550deb6bd8382e645b6c",
-              "evidence": "Owner litlfred, 2026-11-02 14:39:25Z, thread 'Show page TOC in IG left navbar' (cmsg_017WNUkNK8kdDziPK58Pv6G9T2NwvJrwiuyNa9WdtSZ8Ag): tapped 'B All layers to latest' on the card 'How should smart-trust get the TOC fix?' (re-pin every harness layer of smart-trust to main, for fhir-harness#279)."
+              "ref": "3556cf97ced1eb610cee1f237418eb177ec3e407",
+              "evidence": "Owner litlfred, 2026-11-02 14:39:25Z, thread 'Show page TOC in IG left navbar' (cmsg_017WNUkNK8kdDziPK58Pv6G9T2NwvJrwiuyNa9WdtSZ8Ag): tapped 'B All layers to latest' on the card 'How should smart-trust get the TOC fix?' (re-pin every harness layer of smart-trust to main, for fhir-harness#279). cat-harness-tools held one commit behind main (3556cf9, before #1407) because cat-harness main's navbar.js is not yet regenerated for #1407."
             }
           }
         }
