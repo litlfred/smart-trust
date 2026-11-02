@@ -45,7 +45,15 @@ At the current time, the following content profiles are recognized through the W
 
 ##### Source specifications
 
-It can be difficult to find the "source of truth" specifications for the certificate formats that are mapped to the DDCC core data sets. The [references](references.html) contains links to the best known documentation for each of the certificate formats listed above.
+It can be difficult to find the "source of truth" specifications for the certificate formats that are mapped to the DDCC core data sets. The best known documentation for each of the certificate formats listed above is in the [bibliography](en/folio-assistant-core/bibliography/):
+
+* EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)
+* DIVOC:
+  * Elements are defined by JSON-LD. As of 2023-02-12, the most current [JSON-LD context for vaccines](en/folio-assistant-core/bibliography/#ref-divoc-vaccination-context) and for [test results](en/folio-assistant-core/bibliography/#ref-divoc-test-certificate-context) is here . Note that the URIs for the DIVOC-specific JSON-LD contexts embedded in the certificates do not resolve.
+  * DIVOC's [documentation](en/folio-assistant-core/bibliography/#ref-divoc-documentation) is here  but this does not include element-level descriptions (e.g., terminology bindings at a per-element level).
+  * Terminology bindings at the element level must be inferred from more [general documentation](en/folio-assistant-core/bibliography/#ref-divoc-qr-code-contents).  The `v2` JSON-LD context introduces the `evidence.icd11Code` element for vaccines, but there is no documentation on which codes this element is bound to or whether this is used in production. There is no other computable representation of vaccine type/product.
+* ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)
+* SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)
 
 
 #### PH4H 
