@@ -30,9 +30,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
+              "on": "2026-11-02",
               "ref": "9ce0140479ea97fbb327ce8517b5e9a1ff1bd0a5",
-              "evidence": "litlfred 2026-11-01 19:49Z 'open sibling to fix who-iris bug' (who-iris#160: catalogue forwarding page with no <body> breaks staging previews; fixed on who-iris main by #133 bdadee3, smart-trust pinned f524a7e before it). Re-pin to who-iris main tip 9ce0140. Window: litlfred 2026-11-01 19:36Z '+6hr window' (to 2026-11-02 01:36Z)."
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
@@ -43,7 +43,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "625ab8347493f46c32752a18dea7b02202d29727",
+          "ref": "b3500414e40fdb729c3497aaa1afb27d970eefb5",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -77,9 +77,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "625ab8347493f46c32752a18dea7b02202d29727",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 625ab83 (who-iris mount #224, CI #227 #229, schemas move #225, sidecars #198). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z), extended 19:21Z 'merge window + 3hrs' (to ~22:38Z)."
+              "on": "2026-11-02",
+              "ref": "b3500414e40fdb729c3497aaa1afb27d970eefb5",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
@@ -90,7 +90,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "3772521c4f6e0a1a88c2a01bfbe361f4ccab3b83",
+          "ref": "a5e07932a24c331d20c99203e2ccb94aae13facd",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -99,9 +99,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "3772521c4f6e0a1a88c2a01bfbe361f4ccab3b83",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip 3772521 (IG pages #214, CI #217 #221, direction #224, schemas move #215, claim 5 schema link #226). Window: litlfred 2026-10-30 11:13Z 'merge and repin window open for 4 horus', extended 16:37Z 'merge window +3 hrs' (to ~19:38Z), extended 19:21Z 'merge window + 3hrs' (to ~22:38Z)."
+              "on": "2026-11-02",
+              "ref": "a5e07932a24c331d20c99203e2ccb94aae13facd",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "0a39c5ea5bcf338800f49c6eb91c1e463b7b5ed2",
+          "ref": "b2d596676777f8e4481668e04d022ebe15347f69",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "0a39c5ea5bcf338800f49c6eb91c1e463b7b5ed2",
-              "evidence": "Owner litlfred tapped card Q-TRAIN-11 'A. Yes, PR and merge on green' on 2026-11-01 21:27:32Z (thread 'Run re-pins as a 2-hour train', cmsg_017WNUkNK8kdDziPK58Pv6G9TK77EXHDtmC4sB3f6yjoab), inside the window 'merge all green and ready (not content) + 6hrs' (20:40:15Z, to 2026-11-02 02:40Z). Re-pin the harness layers to main so smart-trust previews get cat-harness-tools#1318 (staging banner 'Review changes' link, owner option A: merge and roll out); cat-harness, core and bootstrap layers move with it to avoid cross-layer skew."
+              "on": "2026-11-02",
+              "ref": "b2d596676777f8e4481668e04d022ebe15347f69",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "676c507b6a8eb708dbed191e66cf9621fca11ec1",
+          "ref": "9c8fc67c5037d1ca69e261b69b6fe2660dc809cd",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -155,9 +155,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "676c507b6a8eb708dbed191e66cf9621fca11ec1",
-              "evidence": "Owner litlfred tapped card Q-TRAIN-11 'A. Yes, PR and merge on green' on 2026-11-01 21:27:32Z (thread 'Run re-pins as a 2-hour train', cmsg_017WNUkNK8kdDziPK58Pv6G9TK77EXHDtmC4sB3f6yjoab), inside the window 'merge all green and ready (not content) + 6hrs' (20:40:15Z, to 2026-11-02 02:40Z). Re-pin the harness layers to main so smart-trust previews get cat-harness-tools#1318 (staging banner 'Review changes' link, owner option A: merge and roll out); cat-harness, core and bootstrap layers move with it to avoid cross-layer skew."
+              "on": "2026-11-02",
+              "ref": "9c8fc67c5037d1ca69e261b69b6fe2660dc809cd",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "be9d8b070976ef63005b5fddd22ec93ef73cf0ca",
+          "ref": "a8f46f0ec211fff5078385254c888067f0e2e74b",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -180,9 +180,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "be9d8b070976ef63005b5fddd22ec93ef73cf0ca",
-              "evidence": "Owner litlfred tapped card Q-TRAIN-11 'A. Yes, PR and merge on green' on 2026-11-01 21:27:32Z (thread 'Run re-pins as a 2-hour train', cmsg_017WNUkNK8kdDziPK58Pv6G9TK77EXHDtmC4sB3f6yjoab), inside the window 'merge all green and ready (not content) + 6hrs' (20:40:15Z, to 2026-11-02 02:40Z). Re-pin the harness layers to main so smart-trust previews get cat-harness-tools#1318 (staging banner 'Review changes' link, owner option A: merge and roll out); cat-harness, core and bootstrap layers move with it to avoid cross-layer skew."
+              "on": "2026-11-02",
+              "ref": "a8f46f0ec211fff5078385254c888067f0e2e74b",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
@@ -215,7 +215,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+          "ref": "ed547a9ab77e8445f13f52fe2152d6e82776bcaf",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -227,9 +227,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-30",
-              "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
-              "evidence": "litlfred 2026-10-30 16:37Z 'merge window +3 hrs' (to ~19:38Z) and 'can we accelerate cat-harness re-pin round'; standing rule 'Merge all ready and then deal with aftermath'. Re-pin wave to main tip b7fb762."
+              "on": "2026-11-02",
+              "ref": "ed547a9ab77e8445f13f52fe2152d6e82776bcaf",
+              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
             }
           }
         }
