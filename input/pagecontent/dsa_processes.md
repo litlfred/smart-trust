@@ -137,14 +137,14 @@ This note applies only when the parties choose GDHCN.
 - **Trigger.** A suspected breach: data used beyond the purpose, a missed
   duty, a leak.
 - **Steps.**
-  1. **Contain.** Suspend grants, clients and keys (P13, planned).
+  1. **Contain.** Suspend grants, clients and keys (P13, smart-trust-phw process H).
      - GDHCN key: remove the DSC from the trust list (see "DSC generation and
        deletion" in the [Onboarding Checklist](concepts_onboarding_checklist.html)).
      - X.509 certificate: revoke it and publish a CRL (RFC 5280 §5). This
        guide advises CRLs over OCSP for privacy
        ([Certificate Governance](concepts_certificate_governance.html)).
      - did:web key: remove the `verificationMethod` from the DID document.
-  2. **Gather evidence.** The audit records (P12, planned), the log's hash
+  2. **Gather evidence.** The audit records (P12, smart-trust-phw process G), the log's hash
      chain if it has one, and the hash of the agreement version both sides
      signed (P2).
   3. **Follow the dispute clause** in the legal text.
@@ -202,21 +202,21 @@ The DSA processes are split by layer. Only P3 and P15 are on this page.
 | P1 | Draft and negotiate the agreement | folio-assistant-core (document life cycle) | planned |
 | P2 | Publish: version, hash, catalogue | folio-assistant-core (document life cycle) | planned |
 | P3 | Register parties and keys with a trust anchor | [this page](#p3) | draft |
-| P4 | Register a server client | smart-trust-server | planned |
-| P5 | Server-to-server access | smart-trust-server | planned |
+| P4 | Register a server client | [smart-trust-phw, process D](https://github.com/litlfred/smart-trust-phw/blob/main/input/business-processes/PHW.D.bpmn) | draft |
+| P5 | Server-to-server access | [smart-trust-phw, process E](https://github.com/litlfred/smart-trust-phw/blob/main/input/business-processes/PHW.E.bpmn) | draft |
 | P6 | Wallet issuance | [smart-trust-phw](https://github.com/litlfred/smart-trust-phw) | planned |
 | P7 | Wallet presentation | [smart-trust-phw](https://github.com/litlfred/smart-trust-phw) | planned |
 | P8 | QR and paper | [smart-trust-phw](https://github.com/litlfred/smart-trust-phw) | planned |
 | P9 | Individual consent, linked to the agreement | [smart-trust-phw](https://github.com/litlfred/smart-trust-phw) | planned |
 | P10 | Agent delegation | [smart-trust-phw](https://github.com/litlfred/smart-trust-phw) | planned |
-| P11 | Access decision | smart-trust-server | planned |
-| P12 | Audit, provenance and duty checks | smart-trust-server | planned |
-| P13 | Revocation and suspension | smart-trust-server | planned |
+| P11 | Access decision | [smart-trust-phw, process F](https://github.com/litlfred/smart-trust-phw/blob/main/input/business-processes/PHW.F.bpmn) | draft |
+| P12 | Audit, provenance and duty checks | [smart-trust-phw, process G](https://github.com/litlfred/smart-trust-phw/blob/main/input/business-processes/PHW.G.bpmn) | draft |
+| P13 | Revocation and suspension | [smart-trust-phw, process H](https://github.com/litlfred/smart-trust-phw/blob/main/input/business-processes/PHW.H.bpmn) | draft |
 | P14 | Amendment, renewal, termination, expiry | folio-assistant-core (document life cycle) | planned |
 | P15 | Dispute and breach handling | [this page](#p15) | draft |
 
-smart-trust-server does not exist yet. It will have the same shape as
-smart-trust-phw. Tracked in
+The server-to-server processes (P4, P5, P11, P12, P13) are BPMN processes D
+to H in smart-trust-phw. Tracked in
 [litlfred/folio-assistant#2702](https://github.com/litlfred/folio-assistant/issues/2702).
 
 #### Not verified {#unverified}

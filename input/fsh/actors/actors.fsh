@@ -8,6 +8,10 @@ Usage: #definition
 * experimental = true
 * publisher = "WHO"
 * type = $actorType#system
+// The API a Trust Network Anchor offers: the trust network gateway, published
+// with this guide at openapi/ (smart-trust#146). A deployment of it is an
+// mCSD Endpoint; this links the actor type to its API.
+* reference = "http://smart.who.int/trust/openapi/openapi.json"
 
 Instance: TrustNetworkParticipant
 InstanceOf: $SGActor
