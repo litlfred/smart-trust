@@ -1,0 +1,1582 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L308
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:308
+msgid "\"certificateType\": \"UPLOAD\","
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L306
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:306
+msgid "\"country\": \"XC\","
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L302
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:302
+msgid "\"kid\": \"+jrpHSqdqZY=\","
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L314
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:314
+msgid "\"rawData\": \"MIIErTCCA5WgAwIBAgII...\""
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L312
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:312
+msgid "\"signature\": \"MIAGCSqGSIb3D...\","
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L310
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:310
+msgid "\"thumbprint\": \"fa3ae91d...\","
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L304
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:304
+msgid "\"timestamp\": \"2023-05-25T07:55:21Z\","
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L106
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:106
+msgid "1) Certificates must be prepared for all environments (self-signed allowed) following the requirements in Certificate Governance - Authentication: TNPTLS - Upload: TNPUP - SCA(s): TNPSCA"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L289
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:289
+msgid "1) check the connectivity with the following command:   input:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L117
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:117
+msgid "2) Prepare public keys in PEM format in your private GitHub repository (see [11]) dedicated to the used environment keys."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L324
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:324
+msgid "2) Test the other Trustlist Routes in the same style (e. g. with DSC/SCA/Upload/Authentication…)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L119
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:119
+msgid "3) The prepared public keys must be tagged by the generated GPG keys:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L159
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:159
+msgid "3-digit ISO Participant code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L194
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:194
+msgid "3-digit ISO participant code of the TNP"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L125
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:125
+msgid "[10] Create the GPG keys per environment and per each user needed."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L131
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:131
+msgid "[11] The TNP creates the private GitHub repositories per environment"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L138
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:138
+msgid "[12] Upon GitHub repository creation and invitation to GitHub bot user to WHO is sent, validity for accepting this invitation is 7 days by default. If no action is taken it loses validity."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L140
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:140
+msgid "[13] Invitation for GitHub bot user must be accepted by WHO within 7 days since invitation was emitted."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L153
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:153
+msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L163
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:163
+msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L165
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:165
+msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L174
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:174
+msgid "[18] WHO acknowledges the Letter of Application and proceeds to validate the provided data. At this stage verification of rules compliance takes place. Verification is in detailed according to process and individuals involved in the request."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L176
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:176
+msgid "[19] In case the compliance rules verification failed, WHO need to inform the TNP by email."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L73
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:73
+msgid "[1] The eligible Trust Network Participant (TNP) has to submit its Statement of Interest [link to the form. [Document 5] ] to gdhcn-support@who.int ."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L75
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:75
+msgid "[2 – 3] WHO validates all provided data and verify that such a data follows WHO compliance with Trusted Network Terms of Participation (TOP 0 – 3) https://smart.who.int/trust/concepts.html as well as: Participant´s eligibility criteria, governmental entity/health agency, contact details of approvers and individuals. [See Elegibility Criteria]. [Document 16]"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L178
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:178
+msgid "[20] The TNP receive an email with information indicating that validations failed. Corrective activities have to be taken."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L180
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:180
+msgid "[21] WHO is checking for each provided GPG key, if the given email address is included in the GPG key."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L182
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:182
+msgid "[22] Validate that GPG key matches cryptographic/governance criteria"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L188
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:188
+msgid "[23] WHO is collecting the required information to be provided to the operations team (OPS):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L227
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:227
+msgid "[30] The collected onboarding information is sent to the operations (OPS) team. The onboarding (OB) team is informed as well."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L229
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:229
+msgid "[31 - 35] The onboarding data is taken over to the configuration files by the OPS team to automate the GitHub processes. As a result, a Pull Request (PR) is created. Dependent on the environment, the subsequent steps differ."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L231
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:231
+msgid "[36 -37] For PROD environment, the PR is verified by WHO. After successful verification, the air-gapped signing process is performed to sign the keys. Follow to [47]"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L233
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:233
+msgid "[38] For UAT (and optional DEV), an auto signing process signs the keys."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L235
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:235
+msgid "[39] The service provider checks the PR as well."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L79
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:79
+msgid "[4 - 5] In case no compliance with WHO governance rules is given, the application is rejected. The rejection is communicated to the TNP by email."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L239
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:239
+msgid "[40 - 41] In case the verification failed, WHO is informed about the outcome."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L243
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:243
+msgid "[42] Correction."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L277
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:277
+msgid "[43] In case the verification was successful the whitelisting of the certificates is initiated."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L281
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:281
+msgid "[44 - 46] and the participant will be informed that the preparation has been completed successfully."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L237
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:237
+msgid "[47] TSI Verification of Pull Request in PROD Environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L241
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:241
+msgid "[48 - 50] In case Pull Request failed, TSIS to communicate to Participant for them to Correct"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L285
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:285
+msgid "[60] The participant is connecting to UAT environment and the following steps has to be performed to check the connection:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L328
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:328
+msgid "[61] In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L332
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:332
+msgid "[62] After the connection to the TNG is established the participant can start the dry run test on UAT."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L391
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:391
+msgid "[63] After executing all required steps, the participant must provide the test results to the onboarding team."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L395
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:395
+msgid "[64 - 65] The onboarding team checks the results and provides feedback to the participant."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L399
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:399
+msgid "[66] In case of any issues additional corrective actions are bespoken and solved with the participant."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L279
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:279
+msgid "[67] If the Dry Run Test has passed successfully, the whitelisting of the certificates in the gateway (PROD environment) continues."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L283
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:283
+msgid "[68 - 69] The Onboarding team informs the TNP to be ready to connect to TNG PROD environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L81
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:81
+msgid "[6] TNP needs to modify the data they shared with WHO and re-apply it."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L326
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:326
+msgid "[70] The participant is allowed and enabled to connect to TNG PROD environment (for detailed information see [60])."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L330
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:330
+msgid "[71] In case the connection fails, some corrective actions must be performed to analyze and solve the issue(s). The operations team is supporting the TNP."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L348
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:348
+msgid "[72] After the connection to the TNG PROD is established the Production Readiness Test can start."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L393
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:393
+msgid "[73 - 74] After executing all required steps, the participant must provide the test results to the service provider by mail."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L397
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:397
+msgid "[75] The service provider checks the results."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L401
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:401
+msgid "[76] and in case of any issues additional corrective actions are bespoken and solved with the participant."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L264
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:264
+msgid "[77 - 80] After passing the Production Readiness Test, the participant is allowed to use the TNG PROD environment. A confirmation email is sent to the participant and to WHO with the confirmation about the successfully passed test and the completion of the onboarding process."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L83
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:83
+msgid "[7] If the WHO’s technical team gives a positive opinion, the eligible Trust Network Participant will be invited to start the onboarding process. The following information is included:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L89
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:89
+msgid "[8] The TNP receives the confirmation and necessary technical information to connect to the TNG and register the certificates."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L104
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:104
+msgid "[9] Create certificates per environment. Details can be found here: https://smart.who.int/trust/concepts_CertificatePreperation.html"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L77
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:77
+msgid "\\ [Document 6]"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L296
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L320
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:296
+#: input/pagecontent/concepts_onboarding_process_full.md:320
+msgid "\\\\`"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L353
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:353
+msgid "a) Create a Document Signer Certificate (DSC) and sign it by the SCA"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L336
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:336
+msgid "a) Upload one or more DSCs to the TNG"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L25
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:25
+msgid "Actor"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L21
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:21
+msgid "Actors"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L410
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:410
+msgid "After onboarding"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L123
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:123
+msgid "After verification of the provisioned material, the content will be taken over for the participant"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L63
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L69
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:63
+#: input/pagecontent/concepts_onboarding_process_full.md:69
+msgid "Apply and be verified"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L64
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:64
+msgid "Apply and be verified, Change the keys or the representatives"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L45
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:45
+msgid "Apply and be verified, Go live, Register the keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L65
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:65
+msgid "Apply and be verified, Join a further Trust Domain, Change the keys or the representatives"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L63
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L71
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:63
+#: input/pagecontent/concepts_onboarding_process_full.md:71
+msgid "Apply to join and have the Letter of Application verified."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L32
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:32
+msgid "Authorized WHO staff of the GDHCN Secretariat (Framework V, VI)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L356
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:356
+msgid "b) Create an CMS package with the following command:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L338
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:338
+msgid "b) Delete at least one DSC again (revocation of a DSC)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L27
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:27
+msgid "Business Owner Representative"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L340
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:340
+msgid "c) Optional: Upload it again (if it is required for further testing)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L369
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:369
+msgid "c) Upload the CMS package to the gateway"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L43
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L61
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L218
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L254
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L412
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:43
+#: input/pagecontent/concepts_onboarding_process_full.md:61
+#: input/pagecontent/concepts_onboarding_process_full.md:218
+#: input/pagecontent/concepts_onboarding_process_full.md:254
+#: input/pagecontent/concepts_onboarding_process_full.md:412
+msgid "Called by"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L43
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L61
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L218
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L254
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L412
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:43
+#: input/pagecontent/concepts_onboarding_process_full.md:61
+#: input/pagecontent/concepts_onboarding_process_full.md:218
+#: input/pagecontent/concepts_onboarding_process_full.md:254
+#: input/pagecontent/concepts_onboarding_process_full.md:412
+msgid "Calls"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L266
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:266
+msgid "Calls: Connect and test. Called by: Onboard a Participant (top level), Join a further Trust Domain. BPMN file: GDHCN.ONB.GoLive.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L403
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:403
+msgid "Calls: no other process. Called by: Go live. BPMN file: GDHCN.ONB.ConnectTest.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L245
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:245
+msgid "Calls: no other process. Called by: Onboard a Participant (top level), Join a further Trust Domain, Change the keys or the representatives. BPMN file: GDHCN.ONB.RegisterKeys.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L415
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L431
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:415
+#: input/pagecontent/concepts_onboarding_process_full.md:431
+msgid "Change the keys or the representatives"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L415
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L433
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:415
+#: input/pagecontent/concepts_onboarding_process_full.md:433
+msgid "Change the keys or the representatives after onboarding."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L256
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L257
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L273
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:256
+#: input/pagecontent/concepts_onboarding_process_full.md:257
+#: input/pagecontent/concepts_onboarding_process_full.md:273
+msgid "Connect and test"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L257
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L275
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:257
+#: input/pagecontent/concepts_onboarding_process_full.md:275
+msgid "Connect to the gateway and pass the test, for one environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L256
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L262
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:256
+#: input/pagecontent/concepts_onboarding_process_full.md:262
+msgid "Connect to the gateway and pass the tests, in UAT and then PROD."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L31
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:31
+msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L66
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L207
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:66
+#: input/pagecontent/concepts_onboarding_process_full.md:207
+msgid "Convey a Letter of Application through a secure channel."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L65
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L66
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L205
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:65
+#: input/pagecontent/concepts_onboarding_process_full.md:66
+#: input/pagecontent/concepts_onboarding_process_full.md:205
+msgid "Convey the Letter through a secure channel"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L133
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:133
+msgid "Create a private git repository on GitHub."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L470
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:470
+msgid "CSCA -> SCA"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L373
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:373
+msgid "curl -v -X POST -H \"Content-Type: application/cms\" --cert TLS.pem --key TLS_key.pem --data @cms.b64 https://tng-uat.who.int/signerCertificate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L292
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:292
+msgid "curl -v https://tng-uat.who.int/trustList --cert TLS.pem --key TLS_key.pem"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L342
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:342
+msgid "d) Download the trust list from the TNG gateway (API)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L377
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:377
+msgid "d) Download the trustlist again and check if your DSC is available. <"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L472
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:472
+msgid "DCC -> VDHC (Verifiable Digital Health Certificate)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L468
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:468
+msgid "DCCG -> TNG"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L29
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:29
+msgid "Delegate at the World Health Assembly or another WHO governing body meeting (Framework IX)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L1
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:1
+msgid "Details of the Onboarding Process"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L385
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:385
+msgid "e) Delete at least one DSC again (Revocation)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L344
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:344
+msgid "e) Provide sample VDHC s to be verified by the service provider"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L11
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:11
+msgid "Each drawing has one pool for each party (the GDHCN Participant, the GDHCN Secretariat at WHO, and the gateway operator) and one lane for each actor. A task with a + marker calls another process: select it in a drawing to go to that process. The environment (UAT, PROD, and DEV if used) is an input of the processes that run once for each environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L23
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:23
+msgid "Each lane is one actor, defined as an ActorDefinition of this guide."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L417
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L453
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:417
+#: input/pagecontent/concepts_onboarding_process_full.md:453
+msgid "End participation"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L417
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L455
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:417
+#: input/pagecontent/concepts_onboarding_process_full.md:455
+msgid "End participation in one or more Trust Domains."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L135
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:135
+msgid "Environment repository URL’s (all private to hide uploader's identity) (DEV (optional), UAT, PROD)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L387
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:387
+msgid "f) Upload it again in case the DSC is required"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L346
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:346
+msgid "f) Validate some sample VDHC 's to ensure the validation implementation is working fine"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L127
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:127
+msgid "Follow the instructions to create a key: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L91
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:91
+msgid "For a successful connection to the Trust Network Gateway there are the following steps [9] – [11] to prepare:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L209
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:209
+msgid "Framework IX. Calls: no other process. Called by: Verify the Letter of Application, Change the keys or the representatives. BPMN file: GDHCN.ONB.ConveyLetter.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L435
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:435
+msgid "Framework IX. Calls: Prepare the keys and the repository, Convey the Letter through a secure channel, Verify the Letter of Application, Register the keys. Called by: no other process. BPMN file: GDHCN.ONB.ChangeKeys.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L446
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:446
+msgid "Framework V.3, VI.2-3 and XI. Calls: no other process. Called by: no other process. BPMN file: GDHCN.TrustDomain.Propose.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L93
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:93
+msgid "Framework V.4 and IX. Calls: Prepare the keys and the repository, Verify the Letter of Application. Called by: Onboard a Participant (top level). BPMN file: GDHCN.ONB.Apply.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L424
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:424
+msgid "Framework V.4 and IX. Calls: Verify the Letter of Application, Go live, Register the keys. Called by: no other process. BPMN file: GDHCN.TrustDomain.Join.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L52
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:52
+msgid "Framework V.4, VI.5 and IX. Calls: Apply and be verified, Go live, Register the keys. Called by: no other process. BPMN file: GDHCN.ONB.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L198
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:198
+msgid "Framework V.4.a-b and IX. Calls: Convey the Letter through a secure channel. Called by: Apply and be verified, Join a further Trust Domain, Change the keys or the representatives. BPMN file: GDHCN.ONB.VerifyLetter.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L142
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:142
+msgid "Framework V.4.c, VII.4-5 and IX. Calls: no other process. Called by: Apply and be verified, Change the keys or the representatives. BPMN file: GDHCN.ONB.PrepareKeys.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L457
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:457
+msgid "Framework XV.1-3. Calls: no other process. Called by: no other process. BPMN file: GDHCN.ONB.Terminate.bpmn."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L32
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:32
+msgid "GDHCN Secretariat"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L37
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:37
+msgid "GitHub Bot"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L256
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L257
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L260
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:256
+#: input/pagecontent/concepts_onboarding_process_full.md:257
+#: input/pagecontent/concepts_onboarding_process_full.md:260
+msgid "Go live"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L190
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:190
+msgid "GPG keys of all confirmed people and for all requested environments (UAT, PROD and optional DEV)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L110
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:110
+msgid "If the participant uses a self-signed TLS certificate, the TLS certificate can simply be copied and renamed to CA.crt."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L112
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:112
+msgid "In all other cases, the participant provides the appropriate CA certificate."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L358
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L371
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:358
+#: input/pagecontent/concepts_onboarding_process_full.md:371
+msgid "Input:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L136
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:136
+msgid "Invite the WHO bot user to the private repository (with read rights). The bot user is: tng-bot for PROD and tng-bot-dev for DEV (optional) and UAT environments."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L13
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:13
+msgid "It is highly recommended:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L414
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L420
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:414
+#: input/pagecontent/concepts_onboarding_process_full.md:420
+msgid "Join a further Trust Domain"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L414
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L422
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:414
+#: input/pagecontent/concepts_onboarding_process_full.md:422
+msgid "Join a further Trust Domain once onboarded."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L30
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:30
+msgid "Key Master Representative"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L28
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:28
+msgid "Legal Representative"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L186
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:186
+msgid "mail address in GPG key must match with the provided mail address in the Letter of Application"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L30
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:30
+msgid "Manages the Participant's Public Key Infrastructure and holds the GPG key named in the Letter (Framework IX)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L28
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:28
+msgid "May meet WHO in person to convey the Letter (Framework IX); receives notice of amendments (XI.2)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L33
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:33
+msgid "Meets the representative in country and sends the Letter by diplomatic pouch (Framework IX)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L474
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:474
+msgid "NB -> TNP"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L17
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:17
+msgid "Not to reuse any certificates across the different staging environments"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L108
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:108
+msgid "Note The participant must provide the CA certificate as well as the TLS certificate."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L366
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:366
+msgid "Note: cert.der is your DSC, signing.crt is the TNPUP"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L466
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:466
+msgid "Note: In the embedded image the following relabels apply:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L380
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:380
+msgid "Note: Some versions of curl don’t attach the client certificates automatically. This can be checked via curl –version. Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L29
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:29
+msgid "Official Delegate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L45
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L50
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:45
+#: input/pagecontent/concepts_onboarding_process_full.md:50
+msgid "Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify, set up and go live."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L45
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L48
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L63
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:45
+#: input/pagecontent/concepts_onboarding_process_full.md:48
+#: input/pagecontent/concepts_onboarding_process_full.md:63
+msgid "Onboard a Participant (top level)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L256
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:256
+msgid "Onboard a Participant (top level), Join a further Trust Domain"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L220
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:220
+msgid "Onboard a Participant (top level), Join a further Trust Domain, Change the keys or the representatives"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L9
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:9
+msgid "Onboarding runs in three phases. In phase 1 the Participant applies and has its Letter of Application verified. In phase 2 the gateway operator registers the Participant's keys, once for each environment. In phase 3 the Participant connects to the gateway and passes the tests, first in UAT and then in PROD. After onboarding, a Participant may join a further Trust Domain, change its keys or its representatives, or end its participation, and an Eligible GDHCN Participant may propose a new Trust Domain."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L36
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:36
+msgid "Onboarding Team"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L364
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:364
+msgid "openssl base64 -in signed.der -out cms.b64 -e -A"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L362
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:362
+msgid "openssl cms -sign -nodetach -in cert.der -signer signing.crt -inkey signing.key -out signed.der -outform DER -binary"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L382
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:382
+msgid "OpenSSL Test Example (working)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L360
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:360
+msgid "openssl x509 -outform der -in cert.pem -out cert.der"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L35
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:35
+msgid "Operations Team"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L7
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:7
+msgid "Overview of the onboarding processes"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L59
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:59
+msgid "Phase 1: apply and be verified"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L216
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:216
+msgid "Phase 2: register the keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L252
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:252
+msgid "Phase 3: go live"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L134
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:134
+msgid "Prepare the following information to be provided in the onboarding request:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L64
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L100
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:64
+#: input/pagecontent/concepts_onboarding_process_full.md:100
+msgid "Prepare the keys and the repository"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L64
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L102
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:64
+#: input/pagecontent/concepts_onboarding_process_full.md:102
+msgid "Prepare the keys and the repository for one environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L415
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:415
+msgid "Prepare the keys and the repository, Convey the Letter through a secure channel, Verify the Letter of Application, Register the keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L63
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:63
+msgid "Prepare the keys and the repository, Verify the Letter of Application"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L43
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L61
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L218
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L254
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L412
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:43
+#: input/pagecontent/concepts_onboarding_process_full.md:61
+#: input/pagecontent/concepts_onboarding_process_full.md:218
+#: input/pagecontent/concepts_onboarding_process_full.md:254
+#: input/pagecontent/concepts_onboarding_process_full.md:412
+msgid "Process"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L416
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L442
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:416
+#: input/pagecontent/concepts_onboarding_process_full.md:442
+msgid "Propose a new Trust Domain"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L416
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L444
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:416
+#: input/pagecontent/concepts_onboarding_process_full.md:444
+msgid "Propose a new Trust Domain and have it approved."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L220
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L225
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:220
+#: input/pagecontent/concepts_onboarding_process_full.md:225
+msgid "Register a Participant's keys for one environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L220
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L223
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:220
+#: input/pagecontent/concepts_onboarding_process_full.md:223
+msgid "Register the keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L25
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:25
+msgid "Role in onboarding"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L27
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:27
+msgid "Sends the Statement of Interest and the Letter of Application; may meet WHO in person (Framework IX)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L121
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:121
+msgid "Tag the version of your latest information by using git tag + signing commands either from terminal or developer IDE. Please note that an update in GitHub web desktop itself is not working, because the platform will use an intermediate key."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L31
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:31
+msgid "Technical Representative"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L122
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:122
+msgid "The bot user clones the latest tag of your private repo and verifies the signature of the tag against the onboarded GPG keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L196
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:196
+msgid "the confirmation that the invitation for the GitHub bot users has been accepted"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L161
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:161
+msgid "The contact details (including email address) of the people authorized to provide the certificates of the TNPThe TNP exchanges the Letter of Application to WHO."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L36
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:36
+msgid "The gateway service provider's onboarding team (steps [64]-[77])."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L35
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:35
+msgid "The gateway service provider's operations team (steps [30]-[50])."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L37
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:37
+msgid "The gateway's GitHub bot user for the environment (steps [11]-[13], [34]-[38])."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L184
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:184
+msgid "the GPG key requirements in the Certificate Governance, including the key length"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L157
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:157
+msgid "the GPG keys per used environment and authorized/responsible person"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L129
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:129
+msgid "The key must meet the GPG key requirements in the Certificate Governance."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L85
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:85
+msgid "The necessary technical specifications and configuration information to connect the local backend systems to the WHO TNG"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L464
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:464
+msgid "The original drawing"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L19
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:19
+msgid "The processes are listed by phase: Top level, Phase 1: apply and be verified, Phase 2: register the keys, Phase 3: go live, After onboarding. A process that is reused later is listed under the phase where it first runs."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L87
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:87
+msgid "The request to comply with the Trust Network Terms of Participation"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L86
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:86
+msgid "The request to provide the necessary information to be onboarded to the different environments (UAT, PROD, DEV (optional))"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L38
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:38
+msgid "The Trust Network Gateway (Framework V.1)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L155
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:155
+msgid "the URL of the private GitHub repositories for each environment (UAT, PROD, DEV (optional))"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L192
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:192
+msgid "the URL's of the applicant private GitHub repositories"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L3
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:3
+msgid "This page describes the onboarding process of the GDHCN (the so called Future Onboarding Process, FOP), drawn in BPMN 2.0. Under each drawing is the text of the steps it shows. That text is kept in a Markdown file beside each BPMN file, with one section per task, and each task of the drawing links to its section, so the page and the drawings come from one source. The numbers [n] are the step numbers of the original drawing."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L334
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L350
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:334
+#: input/pagecontent/concepts_onboarding_process_full.md:350
+msgid "This test includes the listed steps:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L167
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:167
+msgid "Through a Face to Face meeting"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L168
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:168
+msgid "Through Diplomat Channel signed confirmation"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L15
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:15
+msgid "To use certificates issued from a public CA which follows the CAB Forum Rules"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L41
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:41
+msgid "Top level"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L34
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:34
+msgid "Trust Network Anchor"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L38
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:38
+msgid "Trust Network Gateway"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L65
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L151
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:65
+#: input/pagecontent/concepts_onboarding_process_full.md:151
+msgid "Verify one Letter of Application, and have it corrected if needed."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L65
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L149
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:65
+#: input/pagecontent/concepts_onboarding_process_full.md:149
+msgid "Verify the Letter of Application"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L66
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:66
+msgid "Verify the Letter of Application, Change the keys or the representatives"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L414
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:414
+msgid "Verify the Letter of Application, Go live, Register the keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L43
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L61
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L218
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L254
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L412
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:43
+#: input/pagecontent/concepts_onboarding_process_full.md:61
+#: input/pagecontent/concepts_onboarding_process_full.md:218
+#: input/pagecontent/concepts_onboarding_process_full.md:254
+#: input/pagecontent/concepts_onboarding_process_full.md:412
+msgid "What it does"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L172
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:172
+msgid "When the Letter of Application is received, identification of individuals take place with passport, finger printing or similar."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L5
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:5
+msgid "Where a drawing and a text differ, the text is authority: the GDHCN Administrative and Operational Framework first, then the step text. The drawings only refer to the documentation; requirements such as key sizes are stated in the documentation they name, for example the requirements on GPG keys."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L34
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:34
+msgid "WHO as trust anchor for the Public Key Infrastructure (Framework VI.6)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L33
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:33
+msgid "WHO Country Representative"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_process_full.md#L294
+#. URL: http://smart.who.int/trust/concepts_onboarding_process_full.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_process_full.html
+#: input/pagecontent/concepts_onboarding_process_full.md:294
+msgid "You should see an output like:"
+msgstr ""
+

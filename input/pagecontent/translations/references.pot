@@ -1,0 +1,95 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L28
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:28
+msgid "DIVOC"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L15
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:15
+msgid "eHealth Network. Interoperability of health certificates – Trust Framework. Version 1.0. 12 March 2021. Last accessed 27 April 2021. eHealth Network. Technical Specifications for Digital COVID Certificates Volume 1. Version V1.0.5. Last accessed 27 April 2021. ETSI EN 319 102-1: Electronic Signatures and Infrastructures (ESI); Procedures for Creation and Validation of AdES Digital Signatures; Part 1: Creation and Validation. Version 1.1.1. 2016. Last accessed 23 April 2021. Technical specifications for EU Digital COVID Certificates - Volumes 1-5. Volume 1: Formats and trust management. References “Implementing Decision (EU) 2021/1073, Annex I”. Implementing Decision (EU) 2021/1073, Annex I. Found along with other relevant Annexes."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L31
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:31
+msgid "Elements are defined by JSON-LD. As of 2023-02-12, the most current JSON-LD context for vaccines and for test results is here . Note that the URIs for the DIVOC-specific JSON-LD contexts embedded in the certificates do not resolve.  DIVOC's documentation is here  but this does not include element-level descriptions (e.g., terminology bindings at a per-element level).  Terminology bindings at the element level must be inferred from more general documentation.  The  JSON-LD context introduces the  element for vaccines, but there is no documentation on which codes this element is bound to or whether this is used in production. There is no other computable representation of vaccine type/product."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L12
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:12
+msgid "EU DCC"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L53
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:53
+msgid "General SMART Health Card specification. COVID-19 vaccine and testing-specific specification."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L39
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:39
+msgid "ICAO"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L42
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:42
+msgid "ICAO. VDS NC."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L50
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:50
+msgid "SMART Health Cards"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L5
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:5
+msgid "Trust Network Specifications"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L64
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:64
+msgid "WHO SMART Guideline Development"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/references.md#L69
+#. URL: http://smart.who.int/trust/references.html
+#. URL: https://litlfred.github.io/smart-trust/references.html
+#: input/pagecontent/references.md:69
+msgid "World Health Organization. SMART Guidelines. Overviews the SMART Guidelines approach. World Health Organization. Handbook for guideline development. Provides an overview of the WHO guideline development and publication process."
+msgstr ""
+

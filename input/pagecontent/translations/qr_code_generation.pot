@@ -1,0 +1,844 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L67
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:67
+msgid "**For this walkthrough the payload is a DVC — a Digital Vaccine Certificate —"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L16
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:16
+msgid "1. The pipeline at a glance"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L200
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:200
+msgid "10. Step 9 — Render the QR code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L216
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:216
+msgid "11. Verifying: the same steps upwards"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L246
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:246
+msgid "12. Worked example — a newborn birth dose DVC"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L248
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:248
+msgid "12.1 Scenario"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L271
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:271
+msgid "12.2 Host-country schedule"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L282
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:282
+msgid "12.3 Issuer"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L297
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:297
+msgid "12.4 The payload"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L336
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:336
+msgid "12.5 Size at each stage"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L353
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:353
+msgid "12.6 The certificates"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L46
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:46
+msgid "2. Step 1 — Select the payload type"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L342
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:342
+msgid "222 bytes"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L344
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:344
+msgid "293 bytes"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L74
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:74
+msgid "3. Step 2 — Assemble the payload"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L343
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:343
+msgid "307 bytes"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L207
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:207
+msgid "35 mm to 60 mm diagonal — RECOMMENDED"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L106
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:106
+msgid "4. Step 3 — Build the CWT claim set"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L345
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:345
+msgid "444 characters"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L124
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:124
+msgid "5. Step 4 — Serialise as CBOR"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L137
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:137
+msgid "6. Step 5 — Sign as a COSE_Sign1"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L170
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:170
+msgid "7. Step 6 — Compress"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L180
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:180
+msgid "8. Step 7 — Encode as Base45"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L190
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:190
+msgid "9. Step 8 — Prefix the context identifier"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L69
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:69
+msgid "A different payload changes only Step 2; Steps 3 to 9 are identical."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L259
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:259
+msgid "A DVC rather than an ICVP. Hepatitis B and BCG are routine schedule"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L250
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:250
+msgid "A family from the Lao People's Democratic Republic is visiting relatives abroad when the mother delivers. The newborn receives the routine birth-dose vaccinations of the host country's national childhood immunization schedule before discharge. The clinic records the doses and issues a signed certificate; the family has one shared phone between them, so the clinic prints a paper card with the QR code and offers digital delivery as an option."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L48
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:48
+msgid "A payload is identified by a subclaim inside the  claim (). The subclaims, and the logical model each one carries, are enumerated in the HCert logical model; section 3.2.7.1 of the HCERT Specification is authoritative for which are assigned. The registered trust domains are listed in the GDHCN Trust Domain value set and described under Trust Domains."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L262
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:262
+msgid "a rural clinic back home, on paper, with no reliable connectivity."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L100
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:100
+msgid "administered product must be resolved in the PreQual vaccine database and that identifier used. A clinical code for the vaccine type will not satisfy it."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L205
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:205
+msgid "Alphanumeric (Mode 2, symbols ) — MUST, in conjunction with Base45"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L231
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:231
+msgid "and only then apply business rules."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L94
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:94
+msgid "At least one of  or  must be present — the"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L345
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:345
+msgid "Base45 +  prefix"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L219
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:219
+msgid "Base45-decode, then ZLIB-decompress."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L365
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:365
+msgid "BCG, the second certificate from the same visit:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L294
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:294
+msgid "Because  must fall inside the DSC validity period and  must not exceed it, the scenario dates sit inside the window of the onboarded DEV certificate."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L375
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:375
+msgid "Both certificates carry the key identifier  (hex )."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L68
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:68
+msgid "carried under subclaim . The steps below are the steps for that payload.**"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L172
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:172
+msgid "Compress the COSE structure with ZLIB (RFC 1950) using Deflate (RFC 1951). Compression comes after signing, so the verifier decompresses before it verifies."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L154
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:154
+msgid "Computing the signature: build the"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L218
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:218
+msgid "Confirm the  prefix and strip it."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L343
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:343
+msgid "COSE_Sign1, signed"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L342
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:342
+msgid "CWT claim set, CBOR"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L261
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:261
+msgid "Data in the QR rather than behind a link. The certificate has to verify at"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L229
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:229
+msgid "Decode the CBOR payload and check  and  against the current time."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L149
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:149
+msgid "Deriving the : take the DER encoding of the DSC and use the first 8 bytes of its SHA-256 fingerprint. Because it is truncated,  is not unique, so a verifier that finds several DSCs with the same  MUST try all of them.  is not security-critical; it is a lookup hint."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L114
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:114
+msgid "deserves attention because it is the only revocation mechanism this specification offers: certificates cannot be reliably revoked once issued, so the validity period must be chosen to bound the damage from a compromised key, balanced against the holder's ability to come back for a reissue. It must not exceed the DSC's own validity period, and  must not predate it. See section 6.1."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L227
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:227
+msgid "DSC until one succeeds. Verify the signature before processing the payload."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L126
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:126
+msgid "Encode the claim set as CBOR (RFC 7049). The JSON shown on this page and in the logical models is schema notation only — the wire format is CBOR, and an implementation need never produce the JSON form at all."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L182
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:182
+msgid "Encode the compressed bytes with Base45. Base45 exists for one reason: its 45-character alphabet is exactly the QR Alphanumeric character set, which stores data far more densely than byte mode."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L205
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:205
+msgid "Encoding mode"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L206
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:206
+msgid "Error correction"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L143
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:143
+msgid "ES256 is the primary algorithm ( ) and PS256 the secondary (). Both MUST be implemented even though only one signs any given certificate; the secondary exists so that a break in the primary does not strand the whole network.  MAY instead sit in the unprotected header, and verifiers MUST accept both placements — but when it appears in both, the protected one wins."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L338
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:338
+msgid "For the hepatitis B certificate:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L89
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:89
+msgid "Four points about using the model are not apparent from the StructureDefinition and are worth stating here:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L1
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:1
+msgid "Generating a QR Code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L266
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:266
+msgid "guardian element carries the mother's name instead."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L99
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:99
+msgid "has a required binding to the WHO PreQual product identifiers, so the"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L299
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:299
+msgid "Hepatitis B birth dose,  subclaim , shown in JSON notation.  carries the PreQual product identifier of the product actually administered:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L355
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:355
+msgid "Hepatitis B birth dose:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L97
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:97
+msgid "identification document. A newborn is the obvious case;  carries the parent or guardian instead."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L209
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:209
+msgid "If you are printing below 300 dpi, make sure each module is rendered as an exact square. Non-proportional scaling turns modules into rectangles and is a frequent cause of certificates that scan on screen but not on paper."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L279
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:279
+msgid "Implementers should confirm the current schedule against the national authority before relying on it; schedules are revised."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L95
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:95
+msgid "invariant."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L92
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:92
+msgid "is 1..1. One DVC documents one immunization event. A visit at which"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L320
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:320
+msgid "is Hepatitis B Vaccine (rDNA) (Paediatric) (FVP-P-132) in the WHO PreQual product identifiers. The BCG certificate is identical but for , which carries , BCG Vaccine (FVP-P-73), and its batch number."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L96
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:96
+msgid "is optional precisely because many certificate subjects have no"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L83
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:83
+msgid "is the concrete model: its parent  is abstract, as is , so neither can be instantiated directly."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L206
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:206
+msgid "Level , approximately 25% — RECOMMENDED"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L36
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:36
+msgid "Live examples. Each step below has a live example that runs in your browser, using a WebAssembly build of an open-source HCERT library (litlfred/smart-trust-tools). They share one certificate: edit the payload in Step 2 and every later step re-runs. The signing key below was just generated by your browser. It cannot leave the page, and its certificate is a self-signed test DSC on no trust list, so nothing made here verifies anywhere else."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L225
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:225
+msgid "Look the  up on the trust list, retrieving every DSC that matches."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L267
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:267
+msgid "Nationality and issuer differ.  is the infant's nationality ();"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L222
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:222
+msgid "necessarily happens before signature verification, which makes it an attack surface; check types and lengths defensively. See section 6.3."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L265
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:265
+msgid "No , but a . The newborn has no identification document. The"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L220
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:220
+msgid "Parse the COSE_Sign1 and read  and  from the protected header."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L264
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:264
+msgid "per vaccine."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L108
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:108
+msgid "Place the payload under its subclaim, inside the  claim, inside a CWT claim set — see that model for the claim keys and types, and section 3.2 of the specification for their normative definitions."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L76
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:76
+msgid "Populate the logical model for the payload type you selected. For a DVC that is DVCMinPreQual, whose vaccine details are DVCMinVaccineDetailsPreQual. Follow those definitions for the element list, cardinalities and bindings rather than any copy of them."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L192
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:192
+msgid "Prefix the Base45 string with . Verifiers use this to recognise what they have scanned and which decoding scheme to apply. A future backwards-incompatible revision will use a new identifier, incrementing through  and then ."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L202
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:202
+msgid "Property"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L204
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:204
+msgid "QR Code, ISO/IEC 18004:2015 — SHALL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L346
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:346
+msgid "QR symbol"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L230
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:230
+msgid "Read the  claim, dispatch on the subclaim to the right logical model,"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L226
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:226
+msgid "Rebuild the  and verify the signature against each candidate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L207
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:207
+msgid "Rendered size"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L202
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:202
+msgid "Requirement"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L62
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:62
+msgid "Section 3.2.7 of the specification allows several types of health certificate to exist under the  claim. Carrying exactly one is an implementation choice, not a constraint of the container, and it is the choice made throughout this page."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L160
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:160
+msgid "serialise it as CBOR, and sign those bytes. For ES256 the COSE signature value is the fixed-width concatenation , 32 bytes each — not the ASN.1 DER encoding that most crypto libraries return by default. Converting between the two is the single most common interoperability bug in HCERT implementations."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L289
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:289
+msgid "Signing uses a key whose public key is onboarded to the GDHCN DEV trust network, so the example verifies against the DEV trust list. The private key is held in the build environment and never enters this repository; only the DSC, the SCA, the QR images and the  strings are published."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L340
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:340
+msgid "Size"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L340
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:340
+msgid "Stage"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L30
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:30
+msgid "Steps 3 to 9 never vary with the payload. A verifier runs the same list upwards."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L131
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:131
+msgid "Strings SHOULD be NFC-normalised. Decoders SHOULD be permissive about input that is not."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L204
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:204
+msgid "Symbology"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L273
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:273
+msgid "Thailand's Expanded Programme on Immunization gives two vaccines at birth: BCG as soon as possible after birth, and the first dose of hepatitis B vaccine within 24 hours of birth. The DTP-HepB and OPV series begin later, at 2, 4 and 6 months. A birth visit in Thailand therefore produces exactly the two certificates modelled here."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L7
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:7
+msgid "The container, the signature and the transport encoding are the same for every GDHCN trust domain, and are specified normatively in the HCERT Specification. What changes from one use case to the next is only the payload: which logical model goes inside the  claim, and under which subclaim. Everything after that choice is mechanical."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L86
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:86
+msgid "The element names are two and three characters long because every byte is paid for twice — once in the CBOR encoding and again in the QR's module count."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L284
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:284
+msgid "The example is issued by GDHCN DEV participant , not by any Member State. GDHCN participant codes are ISO 3166-1 alpha-3, while the CWT  claim and the X.509 country attribute take the alpha-2 form — here , matching the  attribute of the Document Signing Certificate subject."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L233
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:233
+msgid "The Extended Key Usage identifiers in Appendix A.2 are inherited from the EU DCC and cover test, vaccination and recovery. They have not been applied to the payload types introduced since, and there is no mapping from the newer subclaims to a key usage, so a verifier has nothing to check them against for a DVC."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L268
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:268
+msgid "the issuer is the country whose clinic administered the dose. This separation is exactly what the model is for."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L165
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:165
+msgid "The resulting structure is ."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L389
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:389
+msgid "The same two certificates, decoded and verified live in your browser against XXR's Document Signing Certificate from the DEV trust list:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L348
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:348
+msgid "The signature and its headers account for 85 of the 307 bytes — on payloads this small, the cryptography costs more than the clinical data. This is why the minimal models use two-character element names, and why a payload much larger than this does not belong in a QR code at all."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L257
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:257
+msgid "This drives the design decisions directly:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L3
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:3
+msgid "This page is a step-by-step, implementer-facing walkthrough of how a signed health certificate becomes a QR code on a piece of paper or a phone screen, and how a verifier turns that QR code back into trustworthy data."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L378
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:378
+msgid "To verify them, resolve that  against the GDHCN trust list rather than against any copy of the certificate shipped beside the QR code. The DID trust list endpoints for the development, user-acceptance testing and production environments are listed under Trustlist Distribution Endpoints; this example is issued in DEV, so its Document Signing Certificate is on the DEV trust list. Fetching the signing certificate from the trust list is the verification path the specification defines, and the only one that tells a verifier the key is still trusted — a certificate distributed alongside the certificate it signed proves nothing about that."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L263
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:263
+msgid "Two certificates.  is 1..1, so the birth visit yields one certificate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L56
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:56
+msgid "Two things are worth knowing before picking a number. Subclaims 0 and above are reserved by WHO and are allocated together with a trust domain, through the GDHCN Secretariat. Subclaims that are negative integers are the development range and are free to use, so an implementation using one is a pilot or a development deployment and the number is not guaranteed to be stable."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L93
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:93
+msgid "two vaccines are administered produces two certificates and two QR codes."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L260
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:260
+msgid "vaccines, not International Health Regulations entry requirements."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L221
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:221
+msgid "Validate the input before trusting it. Parsing the protected header"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L241
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:241
+msgid "Verify the string made above, change one character of it and watch the step that stops it, or paste any  string:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L346
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:346
+msgid "Version 16, error correction , Alphanumeric mode"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L13
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:13
+msgid "Where this page and the HCERT Specification appear to differ, the HCERT Specification is authoritative."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L139
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:139
+msgid "Wrap the CBOR payload in a single-signer COSE structure (RFC 8152), CBOR tag , with  (label 1) and  (label 4) in the protected header."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L325
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:325
+msgid "Wrapped in the CWT claim set:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/qr_code_generation.md#L344
+#. URL: http://smart.who.int/trust/qr_code_generation.html
+#. URL: https://litlfred.github.io/smart-trust/qr_code_generation.html
+#: input/pagecontent/qr_code_generation.md:344
+msgid "ZLIB/Deflate compressed"
+msgstr ""
+

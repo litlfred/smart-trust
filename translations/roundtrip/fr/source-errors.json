@@ -1,0 +1,58 @@
+[
+ {
+  "component": "page-concepts_onboarding_process_full",
+  "key": "12",
+  "source": "3-digit ISO Participant code",
+  "issue": "GDHCN participant codes are ISO 3166-1 alpha-3 (3 letters), not digits",
+  "handling": "translated faithfully as 'à 3 chiffres'"
+ },
+ {
+  "component": "page-concepts_onboarding_process_full",
+  "key": "13",
+  "source": "3-digit ISO participant code of the TNP",
+  "issue": "same as key 12",
+  "handling": "translated faithfully as 'à 3 chiffres'"
+ },
+ {
+  "component": "page-concepts_onboarding_process_full",
+  "key": "19",
+  "source": "The TNP .",
+  "issue": "truncated sentence in source",
+  "handling": "reproduced literally as 'Le TNP .'"
+ },
+ {
+  "component": "page-concepts_did_v1",
+  "key": "11",
+  "source": "...added to existing keys with changing the underlying keys themselves",
+  "issue": "'with' evidently a typo for 'without' (sentence says metadata is added to existing keys)",
+  "handling": "treated as a typo: translated 'sans modifier les clés sous-jacentes'; flag for review"
+ },
+ {
+  "component": "page-concepts",
+  "key": "94",
+  "source": "Trust Network Participant - Transport Layer Security (TNPUP)",
+  "issue": "TNPUP is the upload certificate, not Transport Layer Security (copy-paste from TNPTLS)",
+  "handling": "translator had corrected to 'téléversement'; reverted to faithful 'Participant au réseau de confiance – sécurité de la couche transport (TNPUP)'"
+ },
+ {
+  "component": "page-concepts_certificate_governance",
+  "key": "112",
+  "source": "Each Trust Network Certificate brings its own TNPUP certificate",
+  "issue": "evidently means 'Each Trust Network Participant'",
+  "handling": "translator had corrected to 'Chaque participant au réseau de confiance'; reverted to faithful 'Chaque certificat du réseau de confiance apporte son propre certificat TNPUP'"
+ },
+ {
+  "component": "page-hcert_spec",
+  "key": "35",
+  "source": "DDCC Vaccination Status (DDCC:TR) documents ... for vaccination certificates",
+  "issue": "label says Vaccination Status but code is DDCC:TR (Test Results); copy-paste of key 36",
+  "handling": "translator had corrected to Test Results; reverted to faithful 'Statut vaccinal DDCC (DDCC:TR) ... certificats de vaccination'"
+ },
+ {
+  "component": "page-dak-api",
+  "key": "2",
+  "source": "Data Access Kit (DAK)",
+  "issue": "WHO usage is 'Digital Adaptation Kit'",
+  "handling": "translated faithfully as 'Data Access Kit (DAK)' (no change needed)"
+ }
+]

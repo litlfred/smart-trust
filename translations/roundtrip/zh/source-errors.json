@@ -1,0 +1,65 @@
+[
+ {
+  "component": "page-hcert_spec",
+  "key": "35",
+  "source": "DDCC Vaccination Status (DDCC:TR) documents ... for vaccination certificates",
+  "issue": "label says Vaccination Status but code DDCC:TR (Test Results); likely copy-paste error",
+  "handling": "translated as written (DDCC疫苗接种状态（DDCC:TR）)"
+ },
+ {
+  "component": "page-concepts",
+  "key": "94",
+  "source": "Trust Network Participant - Transport Layer Security (TNPUP)",
+  "issue": "TNPUP is the upload certificate, not Transport Layer Security (copy-paste from TNPTLS)",
+  "handling": "translated as written (传输层安全（TNPUP）)"
+ },
+ {
+  "component": "page-dak-api",
+  "key": "2",
+  "source": "Data Access Kit (DAK)",
+  "issue": "WHO usage is 'Digital Adaptation Kit'",
+  "handling": "translated as written (数据访问工具包（DAK）)"
+ },
+ {
+  "component": "page-concepts_certificate_governance",
+  "key": "112",
+  "source": "Each Trust Network Certificate brings its own TNPUP certificate",
+  "issue": "should evidently read 'Each Trust Network Participant'",
+  "handling": "translated as written (每个信任网络证书都带有自己的TNPUP证书)"
+ },
+ {
+  "component": "page-hcert_spec",
+  "key": "45, 118",
+  "source": "SOG-IT",
+  "issue": "likely SOG-IS (as in certificate_governance key 19)",
+  "handling": "kept SOG-IT as in source"
+ },
+ {
+  "component": "page-hcert_spec",
+  "key": "96",
+  "source": "Signer Certificate Authorities (SCAs)",
+  "issue": "elsewhere 'Signing Certificate Authority'",
+  "handling": "rendered with the termbase term 签名证书颁发机构 (same referent; naming variant only)"
+ },
+ {
+  "component": "page-concepts",
+  "key": "6",
+  "source": "receive from a Holder a Veritifable verify, and utilize the content within",
+  "issue": "garbled (words missing: 'Verifiable Digital Health Certificate,')",
+  "handling": "evident meaning translated (receive a VDHC from a Holder, verify it and use its content); flagged for upstream fix"
+ },
+ {
+  "component": "page-concepts",
+  "key": "81",
+  "source": "standards that GDHCN Participants pertaining to ... a GDHCN Trust Participants operates",
+  "issue": "ungrammatical (missing verb, 'GDHCN Trust Participants')",
+  "handling": "evident meaning translated; 'GDHCN Trust Participants' kept as GDHCN信任参与者"
+ },
+ {
+  "component": "page-concepts",
+  "key": "77",
+  "source": "... and in this role, the GDHCN Secretariat.",
+  "issue": "missing 'is referred to as'",
+  "handling": "evident meaning translated (被称为GDHCN秘书处)"
+ }
+]

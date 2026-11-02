@@ -1,0 +1,496 @@
+{
+ "glossary": {
+  "_summary": {
+   "n": 42,
+   "ok": 42,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "images-images": {
+  "7": {
+   "v": "minor",
+   "note": "wrap fragment 'actions' (of 'Agree corrective / actions') left in English; since 'Agree corrective' was rendered 'Convenir de mesures', the continuation fragment must be 'correctives'",
+   "fixed": true
+  },
+  "232": {
+   "v": "minor",
+   "note": "'Meet WHO at a governing body' rendered literally 'lors d’un organe directeur'; made idiomatic 'lors d’une session d’un organe directeur'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 469,
+   "ok": 467,
+   "minor": 2,
+   "drift": 0,
+   "fixed": 2
+  }
+ },
+ "images-source-diagrams": {
+  "_summary": {
+   "n": 69,
+   "ok": 69,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-business_requirements": {
+  "_summary": {
+   "n": 10,
+   "ok": 10,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-changes": {
+  "_summary": {
+   "n": 74,
+   "ok": 74,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts": {
+  "94": {
+   "v": "drift",
+   "note": "translator 'corrected' source label error 'Transport Layer Security (TNPUP)' to 'téléversement'; reverted to faithful per source-error policy",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 101,
+   "ok": 100,
+   "minor": 0,
+   "drift": 1,
+   "fixed": 1
+  }
+ },
+ "page-concepts_certificate_governance": {
+  "112": {
+   "v": "drift",
+   "note": "translator 'corrected' source error 'Each Trust Network Certificate' to 'participant'; reverted to faithful per source-error policy (listed in source-errors.json)",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 156,
+   "ok": 155,
+   "minor": 0,
+   "drift": 1,
+   "fixed": 1
+  }
+ },
+ "page-concepts_did": {
+  "_summary": {
+   "n": 11,
+   "ok": 11,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_did_gdhcn": {
+  "_summary": {
+   "n": 103,
+   "ok": 103,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_did_specifications": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_did_v1": {
+  "_summary": {
+   "n": 13,
+   "ok": 13,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_onboarding": {
+  "_summary": {
+   "n": 65,
+   "ok": 65,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_onboarding_checklist": {
+  "83": {
+   "v": "minor",
+   "note": "lowercase 'should exist' rendered 'doit exister' (stronger); now 'devrait exister'",
+   "fixed": true
+  },
+  "207": {
+   "v": "minor",
+   "note": "lowercase 'should also contain' rendered 'doivent'; now 'devraient'",
+   "fixed": true
+  },
+  "210": {
+   "v": "minor",
+   "note": "lowercase 'should be' rendered 'doit être'; now 'devrait être'",
+   "fixed": true
+  },
+  "247": {
+   "v": "minor",
+   "note": "'please create' rendered 'vous devez créer' (added obligation); now 'veuillez créer'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 326,
+   "ok": 322,
+   "minor": 4,
+   "drift": 0,
+   "fixed": 4
+  }
+ },
+ "page-concepts_onboarding_process_full": {
+  "_summary": {
+   "n": 210,
+   "ok": 210,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-dak-api": {
+  "_summary": {
+   "n": 4,
+   "ok": 4,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-data_exchange": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-decision_support": {
+  "_summary": {
+   "n": 105,
+   "ok": 105,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-dependencies": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-deployment": {
+  "_summary": {
+   "n": 3,
+   "ok": 3,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-disclaimer": {
+  "_summary": {
+   "n": 2,
+   "ok": 2,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-downloads": {
+  "_summary": {
+   "n": 7,
+   "ok": 7,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-dsa_processes": {
+  "_summary": {
+   "n": 198,
+   "ok": 198,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-endpoints": {
+  "5": {
+   "v": "minor",
+   "note": "'Embedded' rendered 'Intégré', which in this IG is the term for 'onboarded' (bt read 'Onboarded'); changed to 'Incorporé' to avoid confusion",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 37,
+   "ok": 36,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 1
+  }
+ },
+ "page-ethical_principles": {
+  "51": {
+   "v": "minor",
+   "note": "'unfair' dropped from 'unfair disadvantages'; restored (désavantages injustes)",
+   "fixed": true
+  },
+  "59": {
+   "v": "drift",
+   "note": "'enforced' rendered 'assumées' (taken on) instead of enforced; now 'leur respect assuré'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 67,
+   "ok": 65,
+   "minor": 1,
+   "drift": 1,
+   "fixed": 2
+  }
+ },
+ "page-faq": {
+  "_summary": {
+   "n": 42,
+   "ok": 42,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-feedback": {
+  "_summary": {
+   "n": 3,
+   "ok": 3,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-functional": {
+  "_summary": {
+   "n": 13,
+   "ok": 13,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-hcert_spec": {
+  "35": {
+   "v": "drift",
+   "note": "translator 'corrected' source copy-paste error (Vaccination Status (DDCC:TR) ... vaccination certificates) into Test Results; reverted to faithful per source-error policy",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 133,
+   "ok": 132,
+   "minor": 0,
+   "drift": 1,
+   "fixed": 1
+  }
+ },
+ "page-home": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-indices": {
+  "_summary": {
+   "n": 8,
+   "ok": 8,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-license": {
+  "_summary": {
+   "n": 14,
+   "ok": 14,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-maps": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-overview": {
+  "_summary": {
+   "n": 32,
+   "ok": 32,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-qr_code_generation": {
+  "74": {
+   "v": "minor",
+   "note": "fragment ended with 'L’' and next fragment (57) began 'l’élément' -> doubled article when rejoined; article moved to 57",
+   "fixed": true
+  },
+  "57": {
+   "v": "minor",
+   "note": "see 74: article now carried here",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 118,
+   "ok": 116,
+   "minor": 2,
+   "drift": 0,
+   "fixed": 2
+  }
+ },
+ "page-reference_implementation": {
+  "_summary": {
+   "n": 22,
+   "ok": 22,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-references": {
+  "6": {
+   "v": "minor",
+   "note": "ICAO acronym rendered OACI; rule 4 keeps ICAO (as in trust_domains)",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 11,
+   "ok": 10,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 1
+  }
+ },
+ "page-security_privacy": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-sequence-diagrams": {
+  "_summary": {
+   "n": 6,
+   "ok": 6,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-support": {
+  "_summary": {
+   "n": 3,
+   "ok": 3,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-system-actors": {
+  "_summary": {
+   "n": 8,
+   "ok": 8,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-testing": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-transactions": {
+  "_summary": {
+   "n": 68,
+   "ok": 68,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-trust_domains": {
+  "_summary": {
+   "n": 33,
+   "ok": 33,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-trust_network_gateway_architecture": {
+  "99": {
+   "v": "minor",
+   "note": "lowercase 'should be executed' rendered 'doit' (stronger); aligned to 'devrait'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 253,
+   "ok": 252,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 1
+  }
+ },
+ "page-use_cases": {
+  "_summary": {
+   "n": 18,
+   "ok": 18,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "_final_delta": {
+  "_summary": {
+   "n": 66,
+   "ok": 66,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ }
+}

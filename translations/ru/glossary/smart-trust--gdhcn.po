@@ -1,0 +1,513 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-01T09:14:41.047Z\n"
+"PO-Revision-Date: 2026-11-02 12:55+0000\n"
+"Last-Translator: Claude (machine translation, round-trip verified; needs native review)\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/verifiable-digital-health-certificate
+#: glossary/gdhcn.glossary.json:155
+msgid ""
+"A digital representation of a data set comprising a certificate or document,"
+" designed for a set of specific clinical or public health use cases which is"
+" defined using open, interoperable digital health standards; that contains "
+"within, or is associated to, a digital signature which can be verified by "
+"the public key of a public-private encryption key pair, and which is issued "
+"by a GDHCN Participant."
+msgstr ""
+"Цифровое представление набора данных, составляющих свидетельство или "
+"документ, предназначенное для ряда конкретных клинических вариантов "
+"использования или вариантов использования в области общественного "
+"здравоохранения и определяемое с использованием открытых, функционально "
+"совместимых стандартов цифрового здравоохранения; оно содержит цифровую "
+"подпись или связано с цифровой подписью, которая может быть проверена с "
+"помощью открытого ключа из пары открытого и закрытого ключей шифрования, и "
+"выдается участником GDHCN."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/letter-of-application
+#: glossary/gdhcn.glossary.json:83
+msgid ""
+"A formal application sent via a verifiable and secure channel from an "
+"Eligible GDHCN Participant to the GDHCN Secretariat to join the GDHCN Trust "
+"Network and participate in a particular Trust Domain."
+msgstr ""
+"Официальная заявка, направляемая по проверяемому и защищенному каналу "
+"участником, отвечающим критериям пользования GDHCN, в Секретариат GDHCN для "
+"вступления в доверенную сеть GDHCN и участия в определенном доверенном "
+"домене."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trusted-service
+#: glossary/gdhcn.glossary.json:148
+msgid ""
+"A service (digital or otherwise) related to the issuance, management, "
+"verification, exchange, or other relevant processes, of Verifiable Digital "
+"Health Certificates which is defined using open, interoperable digital "
+"health standards."
+msgstr ""
+"Служба (цифровая или иная), связанная с выдачей, управлением, проверкой, "
+"обменом или другими соответствующими процессами в отношении верифицируемых "
+"цифровых медицинских свидетельств, которая определяется с использованием "
+"открытых, функционально совместимых стандартов цифрового здравоохранения."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/public-key-infrastructure
+#: glossary/gdhcn.glossary.json:112
+msgid ""
+"A system of hardware, software, policies, procedures, and roles that support"
+" the management of public keys and supports authentication, encryption, "
+"integrity, or non-repudiation services via a database of digital public "
+"keys."
+msgstr ""
+"Система аппаратных средств, программного обеспечения, политик, процедур и "
+"ролей, которая поддерживает управление открытыми ключами и обеспечивает "
+"услуги аутентификации, шифрования, целостности или неотказуемости "
+"посредством базы данных цифровых открытых ключей."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trust-network
+#: glossary/gdhcn.glossary.json:134
+msgid ""
+"A Trust Network is a means to authenticate the encryption public keys used "
+"by participants within a network to perform encryption services, verify "
+"digital signatures, establish secure connections between systems, and "
+"otherwise make use of encryption public keys."
+msgstr ""
+"Доверенная сеть — это средство аутентификации открытых ключей шифрования, "
+"используемых участниками сети для выполнения услуг шифрования, проверки "
+"цифровых подписей, установления защищенных соединений между системами и "
+"иного использования открытых ключей шифрования."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/eligible-gdhcn-participant
+#: glossary/gdhcn.glossary.json:33
+msgid ""
+"An Eligible GDHCN Participant is one of the following: • a WHO Member State "
+"or Associate Member, or sub-national unit thereof; • a State Party to the "
+"International Health Regulations (2005), or sub-national unit thereof; • the"
+" United Nations (UN) and other intergovernmental organizations in effective "
+"relations with WHO; • a fund, programme, specialized agency, or related "
+"organization within the UN system; or • an organization officially delegated"
+" by one of the organizations mentioned above that can abide by the GDHCN "
+"Terms of Participation and fulfils one or more of the following health "
+"service functions: • Public Health Agency; • Health Professions Education "
+"Accreditation Agency; • Health Services Licensing Agency; or • Public Health"
+" Security Agency. and, once accepted to the GDHCN, after the successful "
+"conclusion of the Onboarding Process, will be referred to as GDHCN "
+"Participant throughout this document. An Eligible GDHCN Participant that has"
+" initiated the Onboarding Process will be referred to as an Eligible GDHCN "
+"Applicant throughout this document."
+msgstr ""
+"Участником, отвечающим критериям пользования GDHCN, является одна из "
+"следующих сторон: • государство-член или ассоциированный член ВОЗ либо его "
+"субнациональная единица; • государство-участник Международных медико-"
+"санитарных правил (2005 г.) либо его субнациональная единица; • Организация "
+"Объединенных Наций (ООН) и другие межправительственные организации, "
+"поддерживающие эффективные отношения с ВОЗ; • фонд, программа, "
+"специализированное учреждение или связанная организация системы ООН; или • "
+"организация, официально уполномоченная одной из вышеупомянутых организаций, "
+"которая может соблюдать условия участия в GDHCN и выполняет одну или "
+"несколько из следующих функций в сфере медицинских услуг: • орган "
+"общественного здравоохранения; • орган по аккредитации образования в области"
+" медицинских профессий; • орган лицензирования медицинских услуг; или • "
+"орган по обеспечению безопасности в области общественного здравоохранения. "
+"После принятия в GDHCN по успешном завершении процедуры регистрации такая "
+"сторона именуется в настоящем документе участником GDHCN. Участник, "
+"отвечающий критериям пользования GDHCN, который начал процедуру регистрации,"
+" именуется в настоящем документе заявителем, отвечающим критериям "
+"пользования GDHCN."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/certificate-authority
+#: glossary/gdhcn.glossary.json:19
+msgid ""
+"An entity that stores, signs, and issues cryptographic certificates and "
+"certifies the ownership of a public key by the named subject of the "
+"certificate. This allows GDHCN Trust Network Gateway participants to rely on"
+" signatures or assertions made in relation to the private key corresponding "
+"to the certified public key. Certificate Authorities may be operated by "
+"different types of entities, including, but not limited to, a private-sector"
+" Certificate Authority, a ministry or agency responsible for ICT/eGovernment"
+" services, a Ministry of Health, or another competent authority within the "
+"jurisdiction. It is the responsibility of each GDHCN Participant to "
+"determine the appropriate arrangement for its Certificate Authority, in "
+"accordance with applicable laws and policies within its jurisdiction, to "
+"guarantee security and proper data management. Each GDHCN Participant must "
+"identify, establish, or liaise with the relevant Certificate Authority, as "
+"applicable and impose on the latter all requirements of this document."
+msgstr ""
+"Организация, которая хранит, подписывает и выдает криптографические "
+"сертификаты и удостоверяет принадлежность открытого ключа указанному в "
+"сертификате субъекту. Это позволяет участникам шлюза доверенной сети GDHCN "
+"полагаться на подписи или утверждения, сделанные с использованием закрытого "
+"ключа, соответствующего удостоверенному открытому ключу. Удостоверяющие "
+"центры могут находиться в ведении организаций различных типов, включая, "
+"помимо прочего, удостоверяющий центр частного сектора, министерство или "
+"ведомство, отвечающее за услуги в области ИКТ/электронного правительства, "
+"министерство здравоохранения или иной компетентный орган в пределах "
+"юрисдикции. Каждый участник GDHCN несет ответственность за определение "
+"надлежащего порядка функционирования своего удостоверяющего центра в "
+"соответствии с применимыми законами и политиками в пределах своей юрисдикции"
+" в целях обеспечения безопасности и надлежащего управления данными. Каждый "
+"участник GDHCN обязан, в зависимости от обстоятельств, определить или "
+"создать соответствующий удостоверяющий центр либо взаимодействовать с ним и "
+"распространить на него все требования настоящего документа."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/health-professions-education-accreditation-
+#. agency
+#: glossary/gdhcn.glossary.json:55
+msgid ""
+"An organization or organizational unit that is responsible for establishing "
+"and/or implementing procedures for accreditation of health professions "
+"education institutions."
+msgstr ""
+"Организация или организационное подразделение, отвечающее за установление и "
+"(или) применение процедур аккредитации учебных заведений, осуществляющих "
+"подготовку по медицинским профессиям."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/health-services-licensing-agency
+#: glossary/gdhcn.glossary.json:62
+msgid ""
+"An organization or organizational unit that is responsible for establishing "
+"and/or implementing procedures for licensure, and the licensing of "
+"organizations or individuals to provide clinical, health system or public "
+"health services within their jurisdiction. Licensing comprises processes "
+"through which duly authorized governmental authorities, such as recognized "
+"professional organizations, grant permission to an individual or healthcare "
+"organization to operate or engage in a medical occupation or profession."
+msgstr ""
+"Организация или организационное подразделение, отвечающее за установление и "
+"(или) применение процедур лицензирования, а также за выдачу организациям или"
+" физическим лицам лицензий на оказание клинических услуг, услуг системы "
+"здравоохранения или услуг общественного здравоохранения в пределах своей "
+"юрисдикции. Лицензирование включает процессы, посредством которых надлежащим"
+" образом уполномоченные государственные органы, например признанные "
+"профессиональные организации, предоставляют физическому лицу или медицинской"
+" организации разрешение на осуществление деятельности или занятие "
+"медицинской деятельностью или профессией."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/public-health-agency
+#: glossary/gdhcn.glossary.json:98
+msgid ""
+"An organization, or organizational unit, that is responsible for "
+"establishing procedures for and/or implementation of activities related to "
+"the protection, promotion, and improvement of public health within a "
+"specific jurisdiction or domain. May also be referred to as a Ministry of "
+"Health, Department of Health, or Public Health Authority."
+msgstr ""
+"Организация или организационное подразделение, отвечающее за установление "
+"процедур и (или) осуществление деятельности, связанной с охраной, "
+"укреплением и улучшением общественного здоровья в пределах определенной "
+"юрисдикции или области. Может также именоваться министерством "
+"здравоохранения, департаментом здравоохранения или органом общественного "
+"здравоохранения."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/public-health-security-agency
+#: glossary/gdhcn.glossary.json:105
+msgid ""
+"An organization, or organizational unit, that is responsible for "
+"establishing procedures for and/or implementing required activities, both "
+"proactive and reactive, for minimizing the danger and impact of acute public"
+" health events that endanger people’s health across geographical regions and"
+" international boundaries."
+msgstr ""
+"Организация или организационное подразделение, отвечающее за установление "
+"процедур и (или) осуществление необходимых мер, как упреждающих, так и "
+"ответных, для сведения к минимуму опасности и последствий острых событий в "
+"области общественного здравоохранения, угрожающих здоровью людей в разных "
+"географических регионах и за пределами национальных границ."
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/business-owner-representative
+#: glossary/gdhcn.glossary.json:12
+msgid "Business Owner Representative"
+msgstr "Представитель оператора"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/certificate-authority
+#: glossary/gdhcn.glossary.json:19
+msgid "Certificate Authority"
+msgstr "Удостоверяющий центр"
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trust-domain
+#: glossary/gdhcn.glossary.json:127
+msgid ""
+"Consists of: • Defined use cases and business processes related to the "
+"utilization of Verifiable Digital Health Certificates; • the open, "
+"interoperable technical specifications that identify or define the "
+"applicable Trusted Services and Verifiable Digital Health Certificates; and "
+"• a set of policy and regulatory standards describing expected behavior of "
+"GDHCN Participants in relation to operation of the Trusted Services and "
+"utilization of Verifiable Digital Health Certificates (e.g. data "
+"minimization, privacy, scope of use)."
+msgstr ""
+"Включает: • определенные варианты использования и рабочие процессы, "
+"связанные с использованием верифицируемых цифровых медицинских свидетельств;"
+" • открытые, функционально совместимые технические спецификации, которые "
+"идентифицируют или определяют применимые доверенные службы и верифицируемые "
+"цифровые медицинские свидетельства; и • комплекс политических и регуляторных"
+" стандартов, описывающих ожидаемое поведение участников GDHCN в отношении "
+"функционирования доверенных служб и использования верифицируемых цифровых "
+"медицинских свидетельств (например, минимизация данных, неприкосновенность "
+"частной жизни, сфера использования)."
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/eligible-gdhcn-participant
+#: glossary/gdhcn.glossary.json:33
+msgid "Eligible GDHCN Participant"
+msgstr "Участник, отвечающий критериям пользования GDHCN"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/encryption-key-certificate-governance
+#: glossary/gdhcn.glossary.json:26
+msgid "Encryption Key Certificate Governance"
+msgstr "Управление сертификатами ключей шифрования"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/gdhcn-secretariat
+#: glossary/gdhcn.glossary.json:41
+msgid "GDHCN Secretariat"
+msgstr "Секретариат GDHCN"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/gdhcn-trust-network
+#: glossary/gdhcn.glossary.json:48
+msgid "GDHCN Trust Network"
+msgstr "Доверенная сеть GDHCN"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/health-professions-education-accreditation-
+#. agency
+#: glossary/gdhcn.glossary.json:55
+msgid "Health Professions Education Accreditation Agency"
+msgstr "Орган по аккредитации образования в области медицинских профессий"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/health-services-licensing-agency
+#: glossary/gdhcn.glossary.json:62
+msgid "Health Services Licensing Agency"
+msgstr "Орган лицензирования медицинских услуг"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/key-master-representative
+#: glossary/gdhcn.glossary.json:69
+msgid "Key Master Representative"
+msgstr "Представитель — держатель мастера ключей"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/legal-representative
+#: glossary/gdhcn.glossary.json:76
+msgid "Legal Representative"
+msgstr "Юридический представитель"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/letter-of-application
+#: glossary/gdhcn.glossary.json:83
+msgid "Letter of Application"
+msgstr "Письмо-заявка"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/onboarding-process
+#: glossary/gdhcn.glossary.json:90
+msgid "Onboarding Process"
+msgstr "Процедура регистрации"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/public-health-agency
+#: glossary/gdhcn.glossary.json:98
+msgid "Public Health Agency"
+msgstr "Орган общественного здравоохранения"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/public-health-security-agency
+#: glossary/gdhcn.glossary.json:105
+msgid "Public Health Security Agency"
+msgstr ""
+"Орган по обеспечению безопасности в области общественного здравоохранения"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/public-key-infrastructure
+#: glossary/gdhcn.glossary.json:112
+msgid "Public Key Infrastructure"
+msgstr "Инфраструктура открытых ключей"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/technical-representative
+#: glossary/gdhcn.glossary.json:120
+msgid "Technical Representative"
+msgstr "Технический представитель"
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/gdhcn-trust-network
+#: glossary/gdhcn.glossary.json:48
+msgid ""
+"The GDHCN Trust Network is a Trust Network comprised of the GDHCN "
+"Secretariat and GDHCN Participants. The GDHCN Trust Network operationalizes "
+"Trust Domains through a Trust Network Gateway by enabling bilateral "
+"verification and utilization of Verifiable Digital Health Certificates and "
+"the utilization of Trusted Services by GDHCN Participants."
+msgstr ""
+"Доверенная сеть GDHCN — это доверенная сеть, в состав которой входят "
+"Секретариат GDHCN и участники GDHCN. Доверенная сеть GDHCN обеспечивает "
+"функционирование доверенных доменов посредством шлюза доверенной сети, "
+"создавая для участников GDHCN возможность двусторонней проверки и "
+"использования верифицируемых цифровых медицинских свидетельств, а также "
+"использования доверенных служб."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/technical-representative
+#: glossary/gdhcn.glossary.json:120
+msgid ""
+"The individual designated by a GDHCN Participant as having the primary "
+"overall responsibility for the security, technical matters and systems "
+"infrastructure of this GDHCN Participant for the applicable Trust Domain, "
+"including ensuring compliance with technical specifications."
+msgstr ""
+"Физическое лицо, назначенное участником GDHCN в качестве лица, несущего "
+"основную общую ответственность за безопасность, технические вопросы и "
+"инфраструктуру систем этого участника GDHCN в отношении соответствующего "
+"доверенного домена, в том числе за обеспечение соответствия техническим "
+"спецификациям."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/legal-representative
+#: glossary/gdhcn.glossary.json:76
+msgid ""
+"The individual designated by a GDHCN Participant as having the primary "
+"responsibility for reviewing the requirements related to a Trust Domain on "
+"behalf of this GDHCN Participant. This person should be someone that the "
+"GDHCN Secretariat can consult in relation to any legal or policy issues that"
+" may arise, such as changes to this document or changes to one of its "
+"Annexes that defines a Trust Domain."
+msgstr ""
+"Физическое лицо, назначенное участником GDHCN в качестве лица, несущего "
+"основную ответственность за рассмотрение требований, касающихся доверенного "
+"домена, от имени этого участника GDHCN. Таким лицом следует назначать того, "
+"с кем Секретариат GDHCN может консультироваться по любым возникающим "
+"вопросам правового или политического характера, например в связи с "
+"изменениями настоящего документа или одного из его приложений, в котором "
+"определяется доверенный домен."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/business-owner-representative
+#: glossary/gdhcn.glossary.json:12
+msgid ""
+"The individual identified by a GDHCN Participant as having the primary "
+"business and programmatic responsibility for the GDHCN Participant for the "
+"implementation of the use cases covered by a Trust Domain."
+msgstr ""
+"Физическое лицо, указанное участником GDHCN в качестве лица, несущего "
+"основную ответственность в отношении рабочих процессов и программ участника "
+"GDHCN по реализации вариантов использования, предусмотренных доверенным "
+"доменом."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/key-master-representative
+#: glossary/gdhcn.glossary.json:69
+msgid ""
+"The individual identified by a GDHCN Participant as having the primary "
+"responsibility for the management of the Public Key Infrastructure, "
+"including the generation of any needed public-private key pairs, and the "
+"configuration and management of the connections between the GDHCN "
+"Participant’s Public Key Infrastructure and the GDHCN Trust Network Gateway."
+msgstr ""
+"Физическое лицо, указанное участником GDHCN в качестве лица, несущего "
+"основную ответственность за управление инфраструктурой открытых ключей, "
+"включая создание всех необходимых пар открытых и закрытых ключей, а также "
+"настройку и управление подключениями между инфраструктурой открытых ключей "
+"участника GDHCN и шлюзом доверенной сети GDHCN."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trust-network-gateway
+#: glossary/gdhcn.glossary.json:141
+msgid ""
+"The open-source software and its IT operational infrastructure, utilizing "
+"open standards, for a Public Key Infrastructure and metadata management "
+"services which is used to operationalize one or more Trust Domains."
+msgstr ""
+"Программное обеспечение с открытым исходным кодом и его операционная ИТ-"
+"инфраструктура, использующие открытые стандарты, для инфраструктуры открытых"
+" ключей и служб управления метаданными, которые применяются для обеспечения "
+"функционирования одного или нескольких доверенных доменов."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/encryption-key-certificate-governance
+#: glossary/gdhcn.glossary.json:26
+msgid ""
+"The process and technical specifications regarding the management and use of"
+" encryption keys for Verifiable Digital Health Certificates, Public Key "
+"Infrastructure, and for securing connections with Trusted Services and the "
+"Trust Network Gateway."
+msgstr ""
+"Процесс и технические спецификации, касающиеся управления ключами шифрования"
+" и их использования для верифицируемых цифровых медицинских свидетельств, "
+"инфраструктуры открытых ключей, а также для защиты соединений с доверенными "
+"службами и шлюзом доверенной сети."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/onboarding-process
+#: glossary/gdhcn.glossary.json:90
+msgid ""
+"The processes required for an Eligible GDHCN Participant to join the GDHCN "
+"Trust Network. At the successful conclusion of the Onboarding Process, the "
+"Eligible GDHCN Participant shall be considered a GDHCN Participant. "
+"Sometimes simply referred to as “Onboarding”."
+msgstr ""
+"Процессы, необходимые для вступления участника, отвечающего критериям "
+"пользования GDHCN, в доверенную сеть GDHCN. По успешном завершении процедуры"
+" регистрации участник, отвечающий критериям пользования GDHCN, считается "
+"участником GDHCN. Иногда именуется просто «регистрацией»."
+
+#. Glossary term definition: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/gdhcn-secretariat
+#: glossary/gdhcn.glossary.json:41
+msgid ""
+"The WHO Secretariat serves as the operational and management leadership of "
+"the GDHCN, and in this role, is referred to as the GDHCN Secretariat."
+msgstr ""
+"Секретариат ВОЗ осуществляет оперативное и административное руководство "
+"GDHCN и в этом качестве именуется Секретариатом GDHCN."
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trust-domain
+#: glossary/gdhcn.glossary.json:127
+msgid "Trust Domain"
+msgstr "Доверенный домен"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trust-network
+#: glossary/gdhcn.glossary.json:134
+msgid "Trust Network"
+msgstr "Доверенная сеть"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trust-network-gateway
+#: glossary/gdhcn.glossary.json:141
+msgid "Trust Network Gateway"
+msgstr "Шлюз доверенной сети"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/trusted-service
+#: glossary/gdhcn.glossary.json:148
+msgid "Trusted Service"
+msgstr "Доверенная служба"
+
+#. Glossary term label: https://litlfred.github.io/smart-
+#. trust/v0/ns#glossary/gdhcn/verifiable-digital-health-certificate
+#: glossary/gdhcn.glossary.json:155
+msgid "Verifiable Digital Health Certificate"
+msgstr "Верифицируемое цифровое медицинское свидетельство"

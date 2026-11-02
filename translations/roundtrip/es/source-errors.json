@@ -1,0 +1,79 @@
+[
+ {
+  "component": "page-concepts_onboarding_process_full",
+  "key": "12",
+  "source": "3-digit ISO Participant code",
+  "issue": "GDHCN participant codes are ISO 3166-1 alpha-3 (3 letters), not digits",
+  "handling": "translated faithfully as 'de 3 dígitos'"
+ },
+ {
+  "component": "page-concepts_onboarding_process_full",
+  "key": "13",
+  "source": "3-digit ISO participant code of the TNP",
+  "issue": "same as key 12 (alpha-3 letters, not digits)",
+  "handling": "translated faithfully"
+ },
+ {
+  "component": "page-concepts_onboarding_process_full",
+  "key": "19",
+  "source": "The TNP .",
+  "issue": "truncated sentence in source",
+  "handling": "reproduced literally as 'El TNP .'"
+ },
+ {
+  "component": "page-hcert_spec",
+  "key": "35",
+  "source": "DDCC Vaccination Status (DDCC:TR) documents ... for vaccination certificates.",
+  "issue": "copy/paste error: DDCC:TR is the Test Results specification (duplicate of key 36 wording)",
+  "handling": "group A translator had corrected it to Test Results; reverted in round-trip review to faithful 'DDCC Estado de vacunación (DDCC:TR) ... certificados de vacunación'"
+ },
+ {
+  "component": "page-concepts",
+  "key": "94",
+  "source": "Trust Network Participant - Transport Layer Security (TNPUP)",
+  "issue": "TNPUP is the upload signing certificate, not TLS (label copied from key 93)",
+  "handling": "translated faithfully ('Seguridad de la capa de transporte (TNPUP)')"
+ },
+ {
+  "component": "page-dak-api",
+  "key": "2",
+  "source": "Data Access Kit (DAK)",
+  "issue": "WHO DAK = Digital Adaptation Kit",
+  "handling": "translated faithfully ('kit de acceso a datos (DAK)')"
+ },
+ {
+  "component": "page-concepts_certificate_governance",
+  "key": "112",
+  "source": "Each Trust Network Certificate brings its own TNPUP certificate",
+  "issue": "evidently 'Each Trust Network Participant'",
+  "handling": "translated faithfully ('Cada certificado de la red de confianza')"
+ },
+ {
+  "component": "page-hcert_spec",
+  "key": "75",
+  "source": "used to carry the WHO Digital Covid Certificate (DCC)",
+  "issue": "the DCC is the EU Digital COVID Certificate, not a WHO certificate",
+  "handling": "translated faithfully ('certificado COVID digital (DCC) de la OMS')"
+ },
+ {
+  "component": "page-hcert_spec",
+  "key": "45, 118",
+  "source": "SOG-IT",
+  "issue": "probably SOG-IS (Senior Officials Group Information Systems Security)",
+  "handling": "kept as 'SOG-IT'"
+ },
+ {
+  "component": "page-concepts",
+  "key": "6",
+  "source": "to receive from a Holder a Veritifable verify, and utilize the content within",
+  "issue": "garbled source (words missing)",
+  "handling": "translated with the evident meaning (receive a Verifiable Digital Health Certificate from a Holder, verify it and use its content); no content changed"
+ },
+ {
+  "component": "page-concepts",
+  "key": "81",
+  "source": "policy and regulatory standards that GDHCN Participants pertaining to Trusted Services that a GDHCN Trust Participants operates",
+  "issue": "garbled source (verb missing)",
+  "handling": "translated with the evident meaning ('normas ... aplicables a los Participantes en la GDHCN')"
+ }
+]

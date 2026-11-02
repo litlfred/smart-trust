@@ -1,0 +1,95 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L18
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:18
+msgid "DID Document v1.0 (deprecated)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L14
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:14
+msgid "DID Document v2.0"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L4
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:4
+msgid "DID Specifications"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L19
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:19
+msgid "In version 1.0 of the WHO GDHCN DID publication specification a single DID file containing all keys."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L15
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:15
+msgid "In version 2.0 of the WHO GDHCN DID publication specification, multiple DID files are created depending on your key needs."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L9
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:9
+msgid "SHALL be cacheable"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L7
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:7
+msgid "SHALL be convertible from each existing trust network's formats"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L10
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:10
+msgid "SHALL be mergeable (trust list operators can integrate each other's entries)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L11
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:11
+msgid "SHALL be usable by all stakeholders required to verify health credentials in their operations"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L8
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:8
+msgid "SHALL describe a key-to-trust-anchor path for all specifications"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_did.md#L6
+#. URL: http://smart.who.int/trust/concepts_did.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_did.html
+#: input/pagecontent/concepts_did.md:6
+msgid "The common trust list specification defines the lowest common denominator format that can interoperate between all included specifications and can support the minimal required features from each specification. This includes considering the minimum security requirements that satisfy each of the specifications. It was designed taking into account the following tenets:"
+msgstr ""
+
