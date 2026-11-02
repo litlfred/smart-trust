@@ -110,8 +110,6 @@ pages:
     title: Indices
     artifacts.html:
       title: Artifact Index
-    references.md:
-      title: References
     maps.md:
       title: Mappings
     license.md:
@@ -152,7 +150,7 @@ menu:
     Endpoints: endpoints.html
   Indices:
     Artifact Index: artifacts.html
-    References: references.html
+    Bibliography: en/folio-assistant-core/bibliography/
     Mappings: maps.html
     License: license.html
     DAK API: dak-api.html

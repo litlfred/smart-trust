@@ -1,0 +1,22 @@
+{
+  "$schema": "folio-reference/v1",
+  "id": "divoc-qr-code-contents",
+  "type": "webpage",
+  "title": "What information goes into a QR code",
+  "author": [
+    {
+      "literal": "DIVOC"
+    }
+  ],
+  "URL": "https://divoc.digit.org/platform/divocs-verifiable-certificate-features/what-information-goes-into-a-qr-code",
+  "accessed": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        12
+      ]
+    ]
+  },
+  "provenance": "authored"
+}
