@@ -1,0 +1,17 @@
+{
+  "$schema": "folio-catalogue-node/v1",
+  "id": "item/hl7-crmi-using-cql",
+  "kind": "item",
+  "flavour": "item",
+  "title": "CRMI IG CQL Guidelines",
+  "parents": [],
+  "metadataRef": "catalogue/records/hl7-crmi-using-cql.dc.json",
+  "materialization": {
+    "state": "referenced",
+    "provenance": {
+      "upstream": "https://build.fhir.org/ig/HL7/crmi-ig/branches/master/using-cql.html"
+    },
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/hl7-crmi-using-cql.dc.json and its capture uploads/hl7-crmi-using-cql/. Converted 2026-11-03 from references/hl7-crmi-using-cql.json."
+  },
+  "bitstreams": []
+}

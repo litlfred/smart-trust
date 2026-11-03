@@ -1,8 +1,0 @@
-{
-  "$schema": "folio-reference/v1",
-  "id": "smart-health-cards-spec",
-  "type": "webpage",
-  "title": "General SMART Health Card specification",
-  "URL": "https://spec.smarthealth.cards",
-  "provenance": "authored"
-}

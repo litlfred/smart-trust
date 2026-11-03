@@ -1,0 +1,17 @@
+{
+  "$schema": "folio-catalogue-node/v1",
+  "id": "item/smart-health-cards-spec",
+  "kind": "item",
+  "flavour": "item",
+  "title": "General SMART Health Card specification",
+  "parents": [],
+  "metadataRef": "catalogue/records/smart-health-cards-spec.dc.json",
+  "materialization": {
+    "state": "referenced",
+    "provenance": {
+      "upstream": "https://spec.smarthealth.cards"
+    },
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/smart-health-cards-spec.dc.json and its capture uploads/smart-health-cards-spec/. Converted 2026-11-03 from references/smart-health-cards-spec.json."
+  },
+  "bitstreams": []
+}
