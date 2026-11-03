@@ -7,7 +7,7 @@ generated: "scripts/subgraph-readmes.ts of the bootstrap toolset (https://github
 
 # smart-trust-catalogue
 
-Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records. Two kinds of item: the document materialized in `library/` (the GDHCN Administrative and Operational Framework 1.2), and, since bean folio-assistant-djj5 (owner, 2026-11-03: references/ retired, "Library + catalogue only"), every work the IG cites that is not ingested, as a `referenced` item whose record is the IG's bibliography entry for it (the key is the citation's: `#ref-<slug>`) and whose capture is `uploads/<slug>/`. `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.
+Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records. Two kinds of item: the document materialized in `library/` (the GDHCN Administrative and Operational Framework 1.2), and, since bean folio-assistant-djj5 (owner, 2026-11-03: references/ retired, "Library + catalogue only"), every work the IG cites that is not ingested, as a `referenced` item whose record is the IG's bibliography entry for it (the key is the citation's: `#ref-<slug>`) (a capture of it, when one exists, is kept in the repository's `uploads/` data store, which is not part of the KG). `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.
 
 Part of [WHO SMART Trust](../README.md) 0.1.0, declared as `smart-trust-catalogue`, holding `catalogue`.
 
