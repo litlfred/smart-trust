@@ -1,0 +1,17 @@
+{
+  "$schema": "folio-catalogue-node/v1",
+  "id": "item/divoc-documentation",
+  "kind": "item",
+  "flavour": "item",
+  "title": "DIVOC documentation",
+  "parents": [],
+  "metadataRef": "catalogue/records/divoc-documentation.dc.json",
+  "materialization": {
+    "state": "referenced",
+    "provenance": {
+      "upstream": "https://divoc.digit.org"
+    },
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/divoc-documentation.dc.json and its capture uploads/divoc-documentation/. Converted 2026-11-03 from references/divoc-documentation.json."
+  },
+  "bitstreams": []
+}

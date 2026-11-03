@@ -1,0 +1,23 @@
+{
+  "$schema": "folio-intake/v1",
+  "doc_id": "eu-implementing-decision-2021-1073",
+  "item": "item/eu-implementing-decision-2021-1073",
+  "record": "../../catalogue/records/eu-implementing-decision-2021-1073.dc.json",
+  "_comment": "Captured by the bean folio-assistant-djj5 converter: the owner chose a catalogue record plus an uploads/ copy for every cited work that is not ingested (2026-11-03). Capture failed on 2026-11-03: HTTP 000.",
+  "source": {
+    "upstream": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.230.01.0032.01.ENG",
+    "capturedAt": "2026-11-03T05:57:45Z",
+    "capturedBy": "curl, bean djj5 converter"
+  },
+  "files": [],
+  "licence": {
+    "status": "unknown",
+    "searched": [
+      {
+        "where": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.230.01.0032.01.ENG",
+        "result": "capture failed (HTTP 000: curl: (56) CONNECT tunnel failed, response 403)",
+        "on": "2026-11-03"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "folio-intake/v1",
+  "doc_id": "divoc-vaccination-context",
+  "item": "item/divoc-vaccination-context",
+  "record": "../../catalogue/records/divoc-vaccination-context.dc.json",
+  "_comment": "Captured by the bean folio-assistant-djj5 converter: the owner chose a catalogue record plus an uploads/ copy for every cited work that is not ingested (2026-11-03). Capture failed on 2026-11-03: HTTP 403.",
+  "source": {
+    "upstream": "https://github.com/egovernments/DIVOC/blob/icmr/vaccination-context/vaccination-context.js",
+    "capturedAt": "2026-11-03T05:57:45Z",
+    "capturedBy": "curl, bean djj5 converter"
+  },
+  "files": [],
+  "licence": {
+    "status": "unknown",
+    "searched": [
+      {
+        "where": "https://github.com/egovernments/DIVOC/blob/icmr/vaccination-context/vaccination-context.js",
+        "result": "capture failed (HTTP 403)",
+        "on": "2026-11-03"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "folio-catalogue-node/v1",
+  "id": "item/divoc-qr-code-contents",
+  "kind": "item",
+  "flavour": "item",
+  "title": "What information goes into a QR code",
+  "parents": [],
+  "metadataRef": "catalogue/records/divoc-qr-code-contents.dc.json",
+  "materialization": {
+    "state": "referenced",
+    "provenance": {
+      "upstream": "https://divoc.digit.org/platform/divocs-verifiable-certificate-features/what-information-goes-into-a-qr-code"
+    },
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/divoc-qr-code-contents.dc.json and its capture uploads/divoc-qr-code-contents/. Converted 2026-11-03 from references/divoc-qr-code-contents.json."
+  },
+  "bitstreams": []
+}

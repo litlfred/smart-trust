@@ -1,0 +1,17 @@
+{
+  "$schema": "folio-catalogue-node/v1",
+  "id": "item/icao-vds-nc",
+  "kind": "item",
+  "flavour": "item",
+  "title": "VDS NC",
+  "parents": [],
+  "metadataRef": "catalogue/records/icao-vds-nc.dc.json",
+  "materialization": {
+    "state": "referenced",
+    "provenance": {
+      "upstream": "https://www.icao.int/vdsnc-spec"
+    },
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/icao-vds-nc.dc.json and its capture uploads/icao-vds-nc/. Converted 2026-11-03 from references/icao-vds-nc.json."
+  },
+  "bitstreams": []
+}
