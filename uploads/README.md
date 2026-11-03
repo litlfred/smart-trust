@@ -13,32 +13,12 @@ Part of [WHO SMART Trust](../README.md) 0.1.0, declared as `smart-trust-uploads`
 
 | file | what it is | used by |
 |---|---|---|
-| [`ada-lovelace-vaccine-passports-2021/`](ada-lovelace-vaccine-passports-2021/) | _nothing declares what this holds_ | |
-| [`coe-bioethics-vaccine-pass-2021/`](coe-bioethics-vaccine-pass-2021/) | _nothing declares what this holds_ | |
-| [`divoc-documentation/`](divoc-documentation/) | _nothing declares what this holds_ | |
-| [`divoc-qr-code-contents/`](divoc-qr-code-contents/) | _nothing declares what this holds_ | |
-| [`divoc-test-certificate-context/`](divoc-test-certificate-context/) | _nothing declares what this holds_ | |
-| [`divoc-vaccination-context/`](divoc-vaccination-context/) | _nothing declares what this holds_ | |
-| [`ec-dcc-techspec-vol1-5/`](ec-dcc-techspec-vol1-5/) | _nothing declares what this holds_ | |
-| [`ec-dcc-vol1-2022/`](ec-dcc-vol1-2022/) | _nothing declares what this holds_ | |
-| [`ehn-dcc-techspec-vol1-2021/`](ehn-dcc-techspec-vol1-2021/) | _nothing declares what this holds_ | |
-| [`ehn-trust-framework-2021/`](ehn-trust-framework-2021/) | _nothing declares what this holds_ | |
-| [`etsi-en-319-102-1-2016/`](etsi-en-319-102-1-2016/) | _nothing declares what this holds_ | |
-| [`eu-implementing-decision-2021-1073/`](eu-implementing-decision-2021-1073/) | _nothing declares what this holds_ | |
 | [`hl7-cql-authors-guide/`](hl7-cql-authors-guide/) | _nothing declares what this holds_ | |
 | [`hl7-cql-introduction/`](hl7-cql-introduction/) | _nothing declares what this holds_ | |
 | [`hl7-crmi-packaging/`](hl7-crmi-packaging/) | _nothing declares what this holds_ | |
-| [`hl7-crmi-using-cql/`](hl7-crmi-using-cql/) | _nothing declares what this holds_ | |
 | [`hl7-shc-vaccination-ig/`](hl7-shc-vaccination-ig/) | _nothing declares what this holds_ | |
-| [`icao-vds-nc/`](icao-vds-nc/) | _nothing declares what this holds_ | |
-| [`royal-society-setc-vaccine-passports-2021/`](royal-society-setc-vaccine-passports-2021/) | _nothing declares what this holds_ | |
-| [`smart-health-cards-spec/`](smart-health-cards-spec/) | _nothing declares what this holds_ | |
-| [`swiss-taskforce-vaccination-proof-2021/`](swiss-taskforce-vaccination-proof-2021/) | _nothing declares what this holds_ | |
-| [`voo2021/`](voo2021/) | _nothing declares what this holds_ | |
-| [`w3c-did-core/`](w3c-did-core/) | _nothing declares what this holds_ | |
 | [`who-guideline-handbook/`](who-guideline-handbook/) | _nothing declares what this holds_ | |
 | [`who-smart-guidelines/`](who-smart-guidelines/) | _nothing declares what this holds_ | |
 | [`who-surveillance-ethics-2017/`](who-surveillance-ethics-2017/) | _nothing declares what this holds_ | |
-| [`who-vaccination-certificates-ethics/`](who-vaccination-certificates-ethics/) | _nothing declares what this holds_ | |
 
 <!-- kg:subgraph:end -->

@@ -9,7 +9,7 @@
   "materialization": {
     "state": "referenced",
     "provenance": {},
-    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/who-vaccination-certificates-ethics.dc.json and its capture uploads/who-vaccination-certificates-ethics/. Converted 2026-11-03 from references/who-vaccination-certificates-ethics.json. Its upstream is not recorded: the entry names no URL."
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/who-vaccination-certificates-ethics.dc.json. Converted 2026-11-03 from references/who-vaccination-certificates-ethics.json. Its upstream is not recorded: the entry names no URL. Not captured: tried 2026-11-03 at references/who-vaccination-certificates-ethics.json: the entry names no URL, so nothing could be captured. No intake is kept until a capture exists (an intake records a capture's files)."
   },
   "bitstreams": []
 }

@@ -11,7 +11,7 @@
     "provenance": {
       "upstream": "https://spec.smarthealth.cards"
     },
-    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/smart-health-cards-spec.dc.json and its capture uploads/smart-health-cards-spec/. Converted 2026-11-03 from references/smart-health-cards-spec.json."
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/smart-health-cards-spec.dc.json. Converted 2026-11-03 from references/smart-health-cards-spec.json. Not captured: tried 2026-11-03 at https://spec.smarthealth.cards: capture failed (HTTP 000: curl: (56) CONNECT tunnel failed, response 403). No intake is kept until a capture exists (an intake records a capture's files)."
   },
   "bitstreams": []
 }

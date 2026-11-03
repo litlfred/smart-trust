@@ -11,7 +11,7 @@
     "provenance": {
       "upstream": "https://github.com/egovernments/DIVOC/blob/icmr/test-certificate-context/test-certificate-context.js"
     },
-    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/divoc-test-certificate-context.dc.json and its capture uploads/divoc-test-certificate-context/. Converted 2026-11-03 from references/divoc-test-certificate-context.json."
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/divoc-test-certificate-context.dc.json. Converted 2026-11-03 from references/divoc-test-certificate-context.json. Not captured: tried 2026-11-03 at https://github.com/egovernments/DIVOC/blob/icmr/test-certificate-context/test-certificate-context.js: capture failed (HTTP 403). No intake is kept until a capture exists (an intake records a capture's files)."
   },
   "bitstreams": []
 }

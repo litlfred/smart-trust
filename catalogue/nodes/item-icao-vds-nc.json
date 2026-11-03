@@ -11,7 +11,7 @@
     "provenance": {
       "upstream": "https://www.icao.int/vdsnc-spec"
     },
-    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/icao-vds-nc.dc.json and its capture uploads/icao-vds-nc/. Converted 2026-11-03 from references/icao-vds-nc.json."
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/icao-vds-nc.dc.json. Converted 2026-11-03 from references/icao-vds-nc.json. Not captured: tried 2026-11-03 at https://www.icao.int/vdsnc-spec: capture failed (HTTP 000: curl: (56) CONNECT tunnel failed, response 403). No intake is kept until a capture exists (an intake records a capture's files)."
   },
   "bitstreams": []
 }
