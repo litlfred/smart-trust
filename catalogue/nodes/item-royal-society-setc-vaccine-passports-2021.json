@@ -11,7 +11,7 @@
     "provenance": {
       "upstream": "https://royalsociety.org/-/media/policy/projects/set-c/set-c-vaccine-passports.pdf"
     },
-    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/royal-society-setc-vaccine-passports-2021.dc.json and its capture uploads/royal-society-setc-vaccine-passports-2021/. Converted 2026-11-03 from references/royal-society-setc-vaccine-passports-2021.json."
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/royal-society-setc-vaccine-passports-2021.dc.json. Converted 2026-11-03 from references/royal-society-setc-vaccine-passports-2021.json. Not captured: tried 2026-11-03 at https://royalsociety.org/-/media/policy/projects/set-c/set-c-vaccine-passports.pdf: capture failed (HTTP 000: curl: (56) CONNECT tunnel failed, response 403). No intake is kept until a capture exists (an intake records a capture's files)."
   },
   "bitstreams": []
 }

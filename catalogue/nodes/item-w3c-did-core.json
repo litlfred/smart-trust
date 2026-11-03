@@ -11,7 +11,7 @@
     "provenance": {
       "upstream": "https://www.w3.org/TR/did-core/"
     },
-    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/w3c-did-core.dc.json and its capture uploads/w3c-did-core/. Converted 2026-11-03 from references/w3c-did-core.json."
+    "note": "A cited work that is not ingested (bean folio-assistant-djj5): its record is catalogue/records/w3c-did-core.dc.json. Converted 2026-11-03 from references/w3c-did-core.json. Not captured: tried 2026-11-03 at https://www.w3.org/TR/did-core/: capture failed (HTTP 000: curl: (56) CONNECT tunnel failed, response 403). No intake is kept until a capture exists (an intake records a capture's files)."
   },
   "bitstreams": []
 }

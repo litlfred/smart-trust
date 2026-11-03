@@ -106,7 +106,7 @@
     {
       "id": "smart-trust-catalogue",
       "path": "catalogue/",
-      "description": "Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records. Two kinds of item: the document materialized in `library/` (the GDHCN Administrative and Operational Framework 1.2), and, since bean folio-assistant-djj5 (owner, 2026-11-03: references/ retired, \"Library + catalogue only\"), every work the IG cites that is not ingested, as a `referenced` item whose record is the IG's bibliography entry for it (the key is the citation's: `#ref-<slug>`) and whose capture is `uploads/<slug>/`. `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.",
+      "description": "Qualified Dublin Core (`folio-dublin-core/v1`) and catalogue node (`folio-catalogue-node/v1`) records. Two kinds of item: the document materialized in `library/` (the GDHCN Administrative and Operational Framework 1.2), and, since bean folio-assistant-djj5 (owner, 2026-11-03: references/ retired, \"Library + catalogue only\"), every work the IG cites that is not ingested, as a `referenced` item whose record is the IG's bibliography entry for it (the key is the citation's: `#ref-<slug>`) (a capture of it, when one exists, is kept in the repository's `uploads/` data store, which is not part of the KG). `bun run cat check:catalogue` and `bun run cat check:materialized-fixity` verify every node, metadataRef, libraryId, localPath and SHA-256 digest.",
       "graphTypologies": [
         "catalogue"
       ],
@@ -119,16 +119,6 @@
       "description": "The primary GDHCN glossary (`gdhcn.glossary.json`, folio-glossary/v1): the 21 definitions in Section II of the GDHCN Administrative and Operational Framework 1.2, quoted from the L1 copy in `library/`. The Framework is the legal source (owner, 2026-11-01); IG-only terms may be added in a separate scheme and never override it. Rendered and checked by check:glossary.",
       "graphTypologies": [
         "glossary"
-      ]
-    },
-    {
-      "id": "smart-trust-uploads",
-      "path": "uploads/",
-      "readOnly": false,
-      "readOnlyBasis": "The ingestion drop zone: a write target by design, as who-iris's `uploads/` states.",
-      "description": "The incoming queue: one `uploads/<slug>/intake.json` (`folio-intake/v1`) per cited work that is not ingested, recording its capture (upstream URL, when, size and sha256, or why it failed) and its licence (bean folio-assistant-djj5; owner, 2026-11-03: \"Catalogue + uploads/ copy\"). NOT L1 and not greppable as corpus. A capture's bytes are committed only once a licence that permits a copy is established; until then the intake records them and says so. Each intake names its catalogue record (`record`) and item node (`item`).",
-      "graphTypologies": [
-        "uploads"
       ]
     },
     {
