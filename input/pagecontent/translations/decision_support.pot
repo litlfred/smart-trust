@@ -1,0 +1,753 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L430
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:430
+msgid "An example FHIR Library containing ELM can be downloaded:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L8
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:8
+msgid "Applying business rules in the context of trust networks for health credentials requires a computable and standards-based approach for defining the rules and subsequently evaluating them against credentials. For example, individuals who wish to test their vaccine credentials against border entry requirement prior to travel must be able to evaluate the business rules for a variety of destination jurisdictions against a variety of credential formats."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L389
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:389
+msgid "As an alternative to translating the CQL, if the desired CQL already exists and the ELM translation is packaged with the CQL as part of a FHIR Library then the ELM can be extracted from the Library. This document describes how to extract the ELM using a simple Node.js project. Node.js will first need to be installed if it is not already available. A new Node.js project can be set up using npm:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L46
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:46
+msgid "Authoring the rules: The rules can be written in CQL by clinical domain experts. For this"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L74
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:74
+msgid "Authoring Tools"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L1
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:1
+msgid "Background"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L3
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:3
+msgid "Business rules for health credentials are the instructions, guidelines, and regulations that express health policies such as \"this course of vaccines meets jurisdiction entry requirements\" or \"this patient should complete their immunization schedule\". These policies can support a range of scenarios such as evaluating proof of vaccination or providing continuity of care."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L35
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:35
+msgid "Business Rules in Practice"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L65
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:65
+msgid "can be run against them and a result determined. In this example the results would show whether or not the traveler meets the travel requirements."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L120
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:120
+msgid "Complete information on authoring CQL, including examples, can be found in the CQL Authoring Guide. Additional guidelines and best practices can be found in the CRMI IG CQL Guidelines."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L42
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:42
+msgid "Conceptualizing the rules: First, the rules themselves need to be decided at a governance"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L59
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:59
+msgid "Convert the health credentials to the format supported for verification: The WHO DDCC effort"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L272
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:272
+msgid "Convert Vaccination Credentials to DDCC Resource Instance"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L314
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:314
+msgid "Converting the Vaccination Credential Into a DDCC FHIR Resource"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L85
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:85
+msgid "CQL artifacts are organized around the concept of a library. A CQL library can be thought of as a container for a specific instance of business logic. A CQL file begins with a declaration of the library name and version:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L68
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:68
+msgid "CQL Authoring"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L174
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:174
+msgid "CQL authoring resources:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L76
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:76
+msgid "CQL can be authored using any text editor, however using an integrated development environment (IDE) that specifically supports CQL can streamline the experience. The Visual Studio (VS) Code IDE has a CQL extension that supports syntax highlighting when writing CQL."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L141
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:141
+msgid "CQL can be packaged for distribution in a FHIR Library resource, intended for describing and sharing knowledge artifacts like CQL. The CRMI IG Packaging Guidelines provide information on how CQL libraries should be packaged. Examples of CQL packaged in FHIR Libraries can be found in the DDCC IG Knowledge Artifact Libraries."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L370
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:370
+msgid "CQL can be translated to ELM using the CQL Translation Service docker image. The following command starts the docker image on a local machine listening on port 8081:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L185
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:185
+msgid "CQL Execution"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L70
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:70
+msgid "CQL expresses the logic of business rules in a way that is both human readable and computable. The logic must be written against a common standard format for representing the credentials for the logic to be computed against health credentials in a scalable and standardized way."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L125
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:125
+msgid "CQL for Health Credentials"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L101
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:101
+msgid "CQL libraries can also contain terminology declarations, including codesystems and valuesets. These declarations allow the CQL to define a local name to represent a codesystem or valueset used in the CQL logic:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L256
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:256
+msgid "CQL Primer"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L83
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:83
+msgid "CQL Structure"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L280
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:280
+msgid "Credentials can be converted using the appropriate StructureMaps using the Matchbox FHIR Server."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L56
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:56
+msgid "credentials need to be validated to ensure that they are authentic. This validation can make use of federated cryptography infrastructure to share authentication infrastructure across jurisdictions."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L117
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:117
+msgid "DDCC IG Code Systems"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L253
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:253
+msgid "DDCC IG Concept Maps"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L252
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:252
+msgid "DDCC IG Structure Maps"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L118
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:118
+msgid "DDCC IG Value Sets"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L60
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:60
+msgid "defines a FHIR-based common standard for health credentials against which CQL can be run. Credentials in other standards can be converted to the DDCC FHIR standard using FHIR StructureMaps and ConceptMaps defined in the DDCC Implementation Guide."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L221
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:221
+msgid "Digital Infrastructure for Verifiable Open Credentialing (DIVOC)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L93
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:93
+msgid "Each CQL library operates against one or more specific data models. In the case of CQL intended to be run against DDCC health credentials the data model is FHIR, which can be specified with the  declaration:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L219
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:219
+msgid "European Union Digital COVID Certificates (EUDCC)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L148
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:148
+msgid "Example CQL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L47
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:47
+msgid "example, the CQL would express the 72 hour timeframe and indicate which COVID-19 tests are acceptable."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L64
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:64
+msgid "Execute CQL against the health credentials: Once the credentials have been converted, the CQL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L387
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:387
+msgid "Extracting ELM From a FHIR Library"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L27
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:27
+msgid "Health credentials can be specified using multiple standards. DDCC health credentials, which can be evaluated against CQL business rules, are specified using the Fast Healthcare Interoperability Resources (FHIR) standard. FHIR is a standard that supports the electronic exchange of healthcare information. The FHIR standard is based on common internet standards widely used across industry such as the Hypertext Transfer Protocol (HTTP), JavaScript Object Notation (JSON), representational state transfer (REST), and the Open Authorization (OAuth) standard."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L176
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:176
+msgid "HL7 International. CQL Introduction. HL7 International. CQL Authoring Guide. HL7 International. CRMI IG CQL Guidelines. HL7 International. CRMI IG Packaging Guidelines."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L266
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:266
+msgid "Identify the correct StructureMap for converting the vaccination credential into the DDCC CoreDataSet logical model"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L239
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:239
+msgid "In addition to mapping the overall structure, clinical concepts need to be correctly mapped. For example, one format may use LOINC to represent the type of a medical test while another format may use SNOMED CT. Mapping the clinical concepts from one format to another is accomplished using FHIR ConceptMaps. A ConceptMap defines a mapping from a set of concepts in one code system to concepts in another code system."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L220
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:220
+msgid "International Civil Aviation Organization Visible Digital Seals (ICAO VDS-NC)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L199
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:199
+msgid "Java CQL Evaluation Engine"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L198
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:198
+msgid "JavaScript CQL Execution Framework"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L43
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:43
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a county"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L294
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:294
+msgid "Loading IGs Into Matchbox"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L254
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:254
+msgid "Mapping Engine Implementations"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L230
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:230
+msgid "Mapping the structure requires pulling data from the source format and expressing it in the destination format. For example, the name of the credential holder has different representations in each of the formats and needs to be correctly mapped to the destination format. Mapping the structure of the credential is accomplished using FHIR StructureMaps. StructureMaps define rules that describe how two different structures are related to each other and provides the logic that defines how instances can be converted from one structure to the other in an automated fashion."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L296
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:296
+msgid "Matchbox needs the appropriate IGs to be loaded in order to perform the desired translations. The DDCC IG and the SHC IG can be loaded via the following curl commands against the Matchbox server:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L290
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:290
+msgid "NOTE: At the time of writing the latest version of Matchbox does not correctly handle the required StructureMap transformations; ensure that the version of Matchbox you're testing with has been updated. The Matchbox docker image does not appear to have a correct  tag, so be sure to specify the actual version number of the latest docker image."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L338
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:338
+msgid "NOTE: At the time of writing these conversion steps did not work correctly, particularly the second one, and the CQL has not been tested against the final version"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L187
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:187
+msgid "Once CQL has been authored and packaged into a FHIR Library for distribution the CQL can be run in a CQL execution environment. Before being run, CQL must first be converted into its ELM representation using the CQL-to-ELM Translator. This conversion can be accomplished using the CQL to ELM Translation Service, which is also available as a docker image. The resulting ELM can then be run in a CQL Execution Engine. Available CQL Execution Engines include:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L436
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:436
+msgid "Once the FHIR Library has been downloaded the code can be run to extract the ELM from the Library:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L455
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:455
+msgid "Once the project is set up the ELM from the CQL business rules can be evaluated against the vaccination credential that was converted to the DDCC resource instance. The following example JavaScript code can serve as a starting point:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L376
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:376
+msgid "Once the translation service is running the CQL can be translated to ELM using the following curl command:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L260
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:260
+msgid "Overview"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L139
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:139
+msgid "Packaging CQL for Distribution"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L50
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:50
+msgid "Publishing the rules: The CQL rules can be packaged as a FHIR Library resource and published"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L172
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:172
+msgid "References"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L250
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:250
+msgid "References:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L270
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:270
+msgid "Run the business rules against the FHIR instance"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L342
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:342
+msgid "Running CQL Against Converted Vaccination Credentials"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L206
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:206
+msgid "Running CQL also requires the appropriate terminology references to be present. Running CQL in the Java CQL Evaluation Engine requires access to a FHIR terminology server. The JavaScript CQL Execution Framework, in addition to supporting the use of terminology servers, also allows terminology resources to be passed into the library at the time of execution."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L344
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:344
+msgid "Running CQL business rules against a record requires translating the CQL to the Expression Logical Model (ELM) representation and running the ELM in a CQL execution engine. For this document we'll start with one of the examples from the DDCC IG:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L444
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:444
+msgid "Running ELM Against Converted Vaccination Credentials"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L292
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:292
+msgid "Running Matchbox in this fashion uses an in-memory data store rather than a backing database, so will not persist state across different container instantiations."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L282
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:282
+msgid "Running the Matchbox Docker Image"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L442
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:442
+msgid "Running the script should produce a file with the desired ELM translation."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L495
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:495
+msgid "Running the script should produce results that look similar to this:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L269
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:269
+msgid "Set up a Node.js project with appropriate CQL dependencies to provide an execution environment for the ELM representation"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L268
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:268
+msgid "Set up the CQL Translation Service for converting CQL into the Expression Logical Model (ELM) representation"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L265
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:265
+msgid "Set up the Matchbox FHIR Server for transforming credentials"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L218
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:218
+msgid "SMART Health Cards: Vaccination & Testing (SMART Health Cards)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L264
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:264
+msgid "Start with a vaccination credential in a supported format and a set of business rules written in CQL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L212
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:212
+msgid "Structure Maps and Concept Maps"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L204
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:204
+msgid "Terminology"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L115
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:115
+msgid "The code systems and value sets referenced in DDCC health credentials can be found in the DDCC IG:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L223
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:223
+msgid "The common representation that these source health credential formats need to be transformed to before evaluating CQL business rules is the World Health Organization Digital Documentation of COVID-19 Certificates (WHO DDCC)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L214
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:214
+msgid "The DDCC Implementation Guide defines both the common standard representation against which the CQL can be written and the mappings for translating various source formats into the common representation. The source formats are"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L446
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:446
+msgid "The ELM translation of the CQL can be run against the vaccination record using the JavaScript CQL Execution Framework library along with the JavaScript CQL Execution FHIR Data Source. This document describes how to set this up in a simple Node.js project. Node.js will first need to be installed if it is not already available. A new Node.js project with the needed CQL libraries can be set up using npm:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L150
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:150
+msgid "The following example CQL shows a simple example of business rules applied to immunizations:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L397
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:397
+msgid "The following example JavaScript code can serve as a starting point:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L262
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:262
+msgid "The following high level steps, described in detail below, can be used to run CQL business rules against a vaccination record:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L109
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:109
+msgid "The local name can then be used to reference the codesystem or valueset in the CQL:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L284
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:284
+msgid "The Matchbox server can be run via its docker image.  The following command starts the docker image on a local machine listening on port 8080:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L274
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:274
+msgid "The process starts with converting the vaccination credential to be evaluated into the DDCC FHIR model. For the examples used in this document we'll start with an example credential payload in the SHC format, which you can download:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L340
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:340
+msgid "The record is now ready to be evaluated against the business rules."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L14
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:14
+msgid "The WHO DDCC effort uses Clinical Quality Language (CQL), a standard for health domain business rules, as the computable representation of business rules to apply against health credentials in its Global Trust Network. CQL defines a human readable representation of logic that can be evaluated against clinical knowledge, including health credentials. CQL is a domain specific language intended to be usable by clinical domain experts to both author and read clinical expressions and does not require software development expertise. Once CQL has been authored, running it against clinical knowledge first requires translating the CQL into its canonical representation, the Expression Logical Model (ELM). The resulting ELM expression of the CQL can be run against a DDCC health credential using a CQL execution engine. The result can be packaged and shared, meaning that the execution of CQL does not require a central server and is platform independent. This ensures that the CQL can be run on health data without requiring personal health data to be shared."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L127
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:127
+msgid "The WHO DDCC IG specifies health credentials using the FHIR standard, and the CQL for expressing business rules against credentials operates on the FHIR resources that make up a credential. The DDCC health credential document Bundle contains a minimal Patient resource along with appropriate linked Immunization resources representing information on vaccines administered and Observation resources representing test results."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L201
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:201
+msgid "There is also a CQL Evaluator, which combines the CQL-to-ELM Translator with the Java CQL Evaluation Engine."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L489
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:489
+msgid "This code can be run to execute the business rules against the resource using the following command:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L258
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:258
+msgid "This document describes how to run business rules written in Clinical Quality Language (CQL) against credentials to validate that provided data meets jurisdictional business requirements."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L316
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:316
+msgid "This is a two step process. The first step is to convert the vaccination credential payload into the DDCC CoreDataSet logical model using the appropriate StructureMap from the DDCC IG:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L327
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:327
+msgid "This should result in a new file containing the vaccine information in the intermediary CoreDataSet format. The data in the intermediary format can then be converted to a DDCC FHIR resource instance:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L227
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:227
+msgid "Translating across formats requires correctly mapping both the structure of the credential and the clinical concepts expressed within that structure."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L368
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:368
+msgid "Translating CQL to ELM"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L267
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:267
+msgid "Use Matchbox to transform the credential to a DDCC CoreDataSet logical model instance and then to the corresponding DDCC resource instance"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L37
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:37
+msgid "Using CQL to apply business rules against health credentials in practice is a process that takes place over a few steps. For example, given a scenario where a health ministry intends to implement requirements for COVID-19 testing for entry into a country, the following steps would be followed through the lifecycle of the rules:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L246
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:246
+msgid "Using the StructureMaps to translate formats requires a mapping engine. Note that using the Java mapping engine also requires the use of a terminology server; it uses tx.fhir.org by default."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L55
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:55
+msgid "Verify the health credentials: Before CQL can be run against health credentials the"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L51
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:51
+msgid "with an online trust health service. In this example publishing the rules would allow a traveler to retrieve the published rules to run in a universal verifier application against their SMART Health Card before traveling to ensure that they meet the entry requirements."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/decision_support.md#L366
+#. URL: http://smart.who.int/trust/decision_support.html
+#. URL: https://litlfred.github.io/smart-trust/decision_support.html
+#: input/pagecontent/decision_support.md:366
+msgid "You can place this example in a file called  and modify it as desired before proceeding."
+msgstr ""
+

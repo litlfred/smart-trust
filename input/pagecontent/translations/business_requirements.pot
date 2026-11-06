@@ -1,0 +1,88 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L1
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:1
+msgid "Business Requirements"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L20
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:20
+msgid "Certificate Governance"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L18
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:18
+msgid "GDHCN Administrative and Operational Framework"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L19
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:19
+msgid "Glossary"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L17
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:17
+msgid "In addition to the key concepts used throughout this document, which are defined below, additional documentation may be found on:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L6
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:6
+msgid "It has been broken up into the following sections:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L8
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:8
+msgid "Key Concepts Functional Requirements Use Cases Personas Data Dictionary"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L21
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:21
+msgid "Onboarding Process"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L24
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:24
+msgid "The GDHCN Administrative and Operational Framework should be considered the authoritative source of definitions and concepts in case of any discrepancies."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/business_requirements.md#L3
+#. URL: http://smart.who.int/trust/business_requirements.html
+#. URL: https://litlfred.github.io/smart-trust/business_requirements.html
+#: input/pagecontent/business_requirements.md:3
+msgid "This digital health trust network is a network of stakeholders that securely exchange and uses health information based on trust, security, and privacy principles, and is designed to ensure that health information is handled in a secure, private, and compliant manner.  Through the GDHCN, WHO serves as the custodian of a digital health trust network."
+msgstr ""
+

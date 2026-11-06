@@ -1,0 +1,691 @@
+{
+ "glossary": {
+  "30": {
+   "v": "minor",
+   "note": "lowercase 'should' rendered as 'должно быть' (stronger); softened to 'следует'",
+   "fixed": true
+  },
+  "5": {
+   "v": "drift",
+   "note": "'in effective relations with WHO' (WHO Constitution art. 70 term) rendered as 'официальные отношения' (a distinct WHO status); fixed to 'эффективные отношения'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 42,
+   "ok": 40,
+   "minor": 1,
+   "drift": 1,
+   "fixed": 2
+  }
+ },
+ "images-images": {
+  "341": {
+   "v": "minor",
+   "note": "'Record ... as onboarded' -> 'Зарегистрировать ... как зарегистрированного' (tautology because onboarding = регистрация); meaning intact; left to keep fragment consistency with 338/277/263",
+   "fixed": false
+  },
+  "_summary": {
+   "n": 469,
+   "ok": 468,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "images-source-diagrams": {
+  "_summary": {
+   "n": 69,
+   "ok": 69,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-business_requirements": {
+  "_summary": {
+   "n": 10,
+   "ok": 10,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-changes": {
+  "20": {
+   "v": "drift",
+   "note": "Spanish added to the list of five languages (Arabic, Chinese, English, French, Russian); removed",
+   "fixed": true
+  },
+  "43": {
+   "v": "minor",
+   "note": "IOM expanded to Russian acronym МОМ; kept Latin acronym only",
+   "fixed": true
+  },
+  "27": {
+   "v": "minor",
+   "note": "case agreement across split fragments 27/16 (с любым принятому) fixed",
+   "fixed": true
+  },
+  "16": {
+   "v": "minor",
+   "note": "case agreement with fragment 27 fixed",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 74,
+   "ok": 70,
+   "minor": 3,
+   "drift": 1,
+   "fixed": 4
+  }
+ },
+ "page-concepts": {
+  "76": {
+   "v": "drift",
+   "note": "'in effective relations with WHO' rendered as 'официальные отношения' (distinct WHO status); fixed to 'эффективные отношения'",
+   "fixed": true
+  },
+  "63": {
+   "v": "minor",
+   "note": "lowercase 'should' rendered as 'должно быть'; softened (same as glossary 30)",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 101,
+   "ok": 99,
+   "minor": 1,
+   "drift": 1,
+   "fixed": 2
+  }
+ },
+ "page-concepts_certificate_governance": {
+  "9": {
+   "v": "minor",
+   "note": "lowercase 'should' rendered as 'должны'; softened to 'следует'",
+   "fixed": true
+  },
+  "27": {
+   "v": "minor",
+   "note": "'how they should be designed' rendered as 'должны быть устроены'; softened",
+   "fixed": true
+  },
+  "54": {
+   "v": "minor",
+   "note": "'trust anchor of the Network Participant state' — 'state' dropped; restored 'государства — участника сети'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 156,
+   "ok": 153,
+   "minor": 3,
+   "drift": 0,
+   "fixed": 3
+  }
+ },
+ "page-concepts_did": {
+  "_summary": {
+   "n": 11,
+   "ok": 11,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_did_gdhcn": {
+  "15": {
+   "v": "drift",
+   "note": "lowercase should ($domain should be one of the codes) rendered as должен; changed to следует",
+   "fixed": true
+  },
+  "16": {
+   "v": "drift",
+   "note": "lowercase should ($participant should be one of the codes) rendered as должен; changed to следует",
+   "fixed": true
+  },
+  "69": {
+   "v": "minor",
+   "note": "garbled phrase член значения (member of value) → член со значением",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 103,
+   "ok": 100,
+   "minor": 1,
+   "drift": 2,
+   "fixed": 3
+  }
+ },
+ "page-concepts_did_specifications": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_did_v1": {
+  "8": {
+   "v": "drift",
+   "note": "lowercase should rendered as должен (must); changed to следует",
+   "fixed": true
+  },
+  "11": {
+   "v": "minor",
+   "note": "source typo with changing (= without changing) rendered by intended meaning без изменения; noted",
+   "fixed": false
+  },
+  "_summary": {
+   "n": 13,
+   "ok": 11,
+   "minor": 1,
+   "drift": 1,
+   "fixed": 1
+  }
+ },
+ "page-concepts_onboarding": {
+  "3": {
+   "v": "drift",
+   "note": "lowercase should (connectivity test first) rendered as должен (must); changed to следует",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 65,
+   "ok": 64,
+   "minor": 0,
+   "drift": 1,
+   "fixed": 1
+  }
+ },
+ "page-concepts_onboarding_checklist": {
+  "_summary": {
+   "n": 326,
+   "ok": 326,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-concepts_onboarding_process_full": {
+  "_summary": {
+   "n": 210,
+   "ok": 210,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-dak-api": {
+  "_summary": {
+   "n": 4,
+   "ok": 4,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-data_exchange": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-decision_support": {
+  "_summary": {
+   "n": 105,
+   "ok": 105,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-dependencies": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-deployment": {
+  "_summary": {
+   "n": 3,
+   "ok": 3,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-disclaimer": {
+  "_summary": {
+   "n": 2,
+   "ok": 2,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-downloads": {
+  "_summary": {
+   "n": 7,
+   "ok": 7,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-dsa_processes": {
+  "99": {
+   "v": "drift",
+   "note": "fragment join 99+22 ('a data protection'+'authority.') read 'орган по защите' + 'надзорный орган.' — 'data' lost, broken phrase; re-split as 'надзорный' + 'орган по защите данных.'",
+   "fixed": true
+  },
+  "22": {
+   "v": "minor",
+   "note": "join partner of 99; adjusted to 'орган по защите данных.'",
+   "fixed": true
+  },
+  "57": {
+   "v": "drift",
+   "note": "fragment join 57+24 ('the log's hash'+'chain if it has one') mistranslated as 'хеш журнала' + 'цепочку' (separate items); meaning is the log's hash chain; re-split",
+   "fixed": true
+  },
+  "24": {
+   "v": "minor",
+   "note": "join partner of 57; adjusted ('журнала, если она имеется, ...')",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 198,
+   "ok": 194,
+   "minor": 2,
+   "drift": 2,
+   "fixed": 4
+  }
+ },
+ "page-endpoints": {
+  "_summary": {
+   "n": 37,
+   "ok": 37,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-ethical_principles": {
+  "3": {
+   "v": "drift",
+   "note": "all-caps heading SHOULD rendered as ДОЛЖНА/ДОЛЖНЫ (reads as SHALL keyword); changed to СЛЕДУЕТ",
+   "fixed": true
+  },
+  "5": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "6": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "8": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "11": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "13": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "15": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "17": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "18": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "20": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "21": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "24": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "27": {
+   "v": "drift",
+   "note": "all-caps heading SHOULD rendered as ДОЛЖНА/ДОЛЖНЫ (reads as SHALL keyword); changed to СЛЕДУЕТ",
+   "fixed": true
+  },
+  "28": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "29": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "33": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "34": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "35": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "42": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "43": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "46": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "47": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "48": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "56": {
+   "v": "minor",
+   "note": "lowercase 'should' in policy prose partly rendered as должен/должны (accepted UN-Russian usage for non-keyword should; not an RFC keyword); left as is, flag for harmonisation",
+   "fixed": false
+  },
+  "2": {
+   "v": "drift",
+   "note": "all-caps heading SHOULD rendered as ДОЛЖНА/ДОЛЖНЫ (reads as SHALL keyword); changed to СЛЕДУЕТ",
+   "fixed": true
+  },
+  "50": {
+   "v": "drift",
+   "note": "all-caps heading SHOULD rendered as ДОЛЖНА/ДОЛЖНЫ (reads as SHALL keyword); changed to СЛЕДУЕТ",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 67,
+   "ok": 41,
+   "minor": 22,
+   "drift": 4,
+   "fixed": 4
+  }
+ },
+ "page-faq": {
+  "1": {
+   "v": "minor",
+   "note": "lowercase 'should' rendered as obligation 'должен'; softened to 'следует'",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 42,
+   "ok": 41,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 1
+  }
+ },
+ "page-feedback": {
+  "_summary": {
+   "n": 3,
+   "ok": 3,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-functional": {
+  "_summary": {
+   "n": 13,
+   "ok": 13,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-hcert_spec": {
+  "35": {
+   "v": "drift",
+   "note": "translator 'corrected' source content error (source: 'DDCC Vaccination Status (DDCC:TR) ... for vaccination certificates'); reverted to faithful per source-error policy, listed in source-errors.json",
+   "fixed": true
+  },
+  "42": {
+   "v": "minor",
+   "note": "'8 bit safe' rendered as '8-битного безопасного' (security sense); fixed to 8-bit-clean meaning",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 133,
+   "ok": 131,
+   "minor": 1,
+   "drift": 1,
+   "fixed": 2
+  }
+ },
+ "page-home": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-indices": {
+  "_summary": {
+   "n": 8,
+   "ok": 8,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-license": {
+  "_summary": {
+   "n": 14,
+   "ok": 14,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-maps": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-overview": {
+  "_summary": {
+   "n": 32,
+   "ok": 32,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-qr_code_generation": {
+  "_summary": {
+   "n": 118,
+   "ok": 118,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-reference_implementation": {
+  "_summary": {
+   "n": 22,
+   "ok": 22,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-references": {
+  "6": {
+   "v": "minor",
+   "note": "added Russian acronym ИКАО not in source; reverted to Latin ICAO per acronym rule",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 11,
+   "ok": 10,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 1
+  }
+ },
+ "page-security_privacy": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-sequence-diagrams": {
+  "_summary": {
+   "n": 6,
+   "ok": 6,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-support": {
+  "_summary": {
+   "n": 3,
+   "ok": 3,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-system-actors": {
+  "_summary": {
+   "n": 8,
+   "ok": 8,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-testing": {
+  "_summary": {
+   "n": 1,
+   "ok": 1,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-transactions": {
+  "5": {
+   "v": "minor",
+   "note": "source heading truncated ('Execute Business'); tr completes it as 'business rule'; harmless",
+   "fixed": false
+  },
+  "60": {
+   "v": "minor",
+   "note": "lowercase 'should' rendered as 'должно'; softened",
+   "fixed": true
+  },
+  "_summary": {
+   "n": 68,
+   "ok": 66,
+   "minor": 2,
+   "drift": 0,
+   "fixed": 1
+  }
+ },
+ "page-trust_domains": {
+  "_summary": {
+   "n": 33,
+   "ok": 33,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-trust_network_gateway_architecture": {
+  "_summary": {
+   "n": 253,
+   "ok": 253,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "page-use_cases": {
+  "_summary": {
+   "n": 18,
+   "ok": 18,
+   "minor": 0,
+   "drift": 0,
+   "fixed": 0
+  }
+ },
+ "_final_delta": {
+  "_summary": {
+   "n": 95,
+   "ok": 94,
+   "minor": 1,
+   "drift": 0,
+   "fixed": 1
+  },
+  "page-trust_network_gateway_architecture|32": {
+   "v": "minor",
+   "note": "\"которым следует соответствовать инфраструктуре\" ambiguous (both datives; bt read it as the infrastructure conforming to the rules); rephrased so the business rules follow the KA/CDS infrastructure",
+   "fixed": true
+  }
+ }
+}

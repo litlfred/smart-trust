@@ -1,0 +1,2366 @@
+# WHO SMART Guidelines Translation Template
+# Copyright (C) 2026 World Health Organization
+# This file is distributed under the CC-BY-SA-3.0-IGO license.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WHO SMART Guidelines\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : n>=11 && n<=99 ? 3 : 4);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L206
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:206
+msgid "$ gpg --list-secret-keys --keyid-format=long /Users/hubot/.gnupg/secring.gpg"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L723
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:723
+msgid "./gen_dsc.sh: Script name"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L736
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:736
+msgid "./upload_dsc.sh: Script name"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L740
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:740
+msgid "/path/to/DSCdir: Create DSCdir directory which contain the DSC.pem."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L725
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:725
+msgid "/path/to/sca: Create SCA directory which contains SCA.pem and SCA.key"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L738
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:738
+msgid "/path/to/subdir: Create subdir directory which contains UP.pem and UP.key."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L272
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:272
+msgid "1.Open PowerShell on your Windows machine."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L274
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:274
+msgid "2.Set the required environment variables."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1021
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1021
+msgid "5c3386c G Scott Chacon  Signed commit ca82a6d N Scott Chacon  Change the version number 085bb3b N Scott Chacon  Remove unnecessary test code a11bef0 N Scott Chacon  Initial commit ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L676
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:676
+msgid "> Below command require 3 inputs (TLS.pem, TLS.key and DSC_cms.b64)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L165
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:165
+msgid "> Note: Before generating a new GPG key, make sure you've verified your email address. If you haven't verified your email address, you won't be able to sign commits and tags with GPG. > Please check GPG key Creation  video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L225
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:225
+msgid "> Please check Adding GPG key to repository  video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L148
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:148
+msgid "> Please check Invite tng-bot to private repository video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L655
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:655
+msgid ">Note: It could be achieved using either of the two methods listed below — Method 1 (Command Line) OR Method 2 (Script-based approach)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L668
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:668
+msgid ">Note: Please replace XC with your actual two letter country code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L804
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:804
+msgid "[ CAprivateKeyUsagePeriod ] notBefore               = IMPLICIT:0,GENERALIZEDTIME:$ENV::PRIVKEYSTART notAfter                = IMPLICIT:1,GENERALIZEDTIME:$ENV::CAPRIVKEY_END"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L846
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:846
+msgid "[ documentsignerrecoveryext ] keyUsage                = critical,digitalSignature subjectKeyIdentifier    = hash authorityKeyIdentifier  = keyid:always subjectAltName          = dirName:dirsect issuerAltName           = dirName:dir_sect crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.3 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L826
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:826
+msgid "[ documentsignertestext ] keyUsage                = critical,digitalSignature subjectKeyIdentifier    = hash authorityKeyIdentifier  = keyid:always subjectAltName          = dirName:dirsect issuerAltName           = dirName:dir_sect crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.1 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L836
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:836
+msgid "[ documentsignervaccinationsext ] keyUsage                = critical,digitalSignature subjectKeyIdentifier    = hash authorityKeyIdentifier  = keyid:always subjectAltName          = dirName:dirsect issuerAltName           = dirName:dir_sect crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.2 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L856
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:856
+msgid "[ DSprivateKeyUsagePeriod ] notBefore               = IMPLICIT:0,GENERALIZEDTIME:$ENV::PRIVKEYSTART notAfter                = IMPLICIT:1,GENERALIZEDTIME:$ENV::DSPRIVKEY_END ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L808
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:808
+msgid "[dir_sect] L=XX ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L436
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:436
+msgid "[dn] C = DE ST = NRW L = Bonn O = MinistryOfTest OU = DGCOperations CN = NationX_TNPUP"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L471
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:471
+msgid "[dn] C = DE ST = NRW L = Bonn O = MinistryOfTest OU = DGCOperations CN = NationXTNPTLS"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L352
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:352
+msgid "[dn] C = DE ST = NRW L = Bonn O = MinistryOfTest OU = DGCOperations CN = SCADGCDE_01"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L360
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:360
+msgid "[ext] basicConstraints = critical, CA:TRUE, pathlen:0 keyUsage = critical, cRLSign, keyCertSign subjectKeyIdentifier = hash ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L444
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:444
+msgid "[ext] keyUsage = critical, digitalSignature ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L479
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:479
+msgid "[ext] keyUsage = critical, digitalSignature extendedKeyUsage = clientAuth ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L997
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:997
+msgid "[master 5c3386c] Signed commit 4 files changed, 4 insertions(+), 24 deletions(-) rewrite Rakefile (100%) create mode 100644 lib/git.rb ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L139
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L144
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:139
+#: input/pagecontent/concepts_onboarding_checklist.md:144
+msgid "```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L990
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:990
+msgid "``` $ git commit -a -S -m 'Signed commit'"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1018
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1018
+msgid "``` $ git log --pretty=\"format:%h %G? %aN  %s\""
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1005
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1005
+msgid "``` $ git log --show-signature -1 commit 5c3386cf54bba0a33a32da706aa52bc0155503c2 gpg: Signature made Wed Jun  4 19:49:17 2014 PDT using RSA key ID 0A46826A gpg: Good signature from \"Scott Chacon (Git signing key) \" Author: Scott Chacon  Date:   Wed Jun 4 19:49:17 2014 -0700"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1051
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1051
+msgid "``` $ git merge --verify-signatures -S  signed-branch Commit 13ad65e has a good GPG signature by Scott Chacon (Git signing key)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L933
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:933
+msgid "``` $ git show v1.5 tag v1.5 Tagger: Ben Straub  Date:   Sat May 3 20:29:41 2014 -0700"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L923
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:923
+msgid "``` $ git tag -s v1.5 -m 'my signed 1.5 tag'"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L963
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:963
+msgid "``` $ git tag -v v1.4.2.1 object 883653babd8ee7ea23e6a5c392bb739348b1eb61 type commit tag v1.4.2.1 tagger Junio C Hamano  1158138501 -0700"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L897
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:897
+msgid "``` $ gpg --list-secret-keys --keyid-format=long /Users/hubot/.gnupg/secring.gpg"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L346
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L430
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L465
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:346
+#: input/pagecontent/concepts_onboarding_checklist.md:430
+#: input/pagecontent/concepts_onboarding_checklist.md:465
+msgid "``` [req] prompt = no defaultmd = sha256 distinguishedname = dn"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L552
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:552
+msgid "``` git config --global user.name \"Your Git UserName\""
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L522
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:522
+msgid "``` OutPut"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L814
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:814
+msgid "``` plaintext [ documentsignerallext ] keyUsage                = critical,digitalSignature subjectKeyIdentifier    = hash authorityKeyIdentifier  = keyid:always subjectAltName          = dirName:dirsect issuerAltName           = dirName:dir_sect crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.1,1.3.6.1.4.1.1847.2021.1.2,1.3.6.1.4.1.1847.2021.1.3 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L791
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:791
+msgid "``` plaintext [ scaext ] basicConstraints        = critical,CA:true,pathlen:0 keyUsage                = critical,keyCertSign,cRLSign subjectKeyIdentifier    = hash authorityKeyIdentifier  = keyid:always issuerAltName           = dirName:dirsect subjectAltName          = dirName:dir_sect crlDistributionPoints   = URI:http://crl.publichealth.xx/CRLs/XX-Health.crl 2.5.29.16               = ASN1:SEQUENCE:CAprivateKeyUsagePeriod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L203
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L216
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:203
+#: input/pagecontent/concepts_onboarding_checklist.md:216
+msgid "``` Shell"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L177
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L369
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L385
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L406
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L414
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L450
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L486
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L495
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L518
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L541
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L547
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L558
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L562
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L566
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L571
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L577
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L582
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L908
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L914
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L981
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1033
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1040
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:177
+#: input/pagecontent/concepts_onboarding_checklist.md:369
+#: input/pagecontent/concepts_onboarding_checklist.md:385
+#: input/pagecontent/concepts_onboarding_checklist.md:406
+#: input/pagecontent/concepts_onboarding_checklist.md:414
+#: input/pagecontent/concepts_onboarding_checklist.md:450
+#: input/pagecontent/concepts_onboarding_checklist.md:486
+#: input/pagecontent/concepts_onboarding_checklist.md:495
+#: input/pagecontent/concepts_onboarding_checklist.md:518
+#: input/pagecontent/concepts_onboarding_checklist.md:541
+#: input/pagecontent/concepts_onboarding_checklist.md:547
+#: input/pagecontent/concepts_onboarding_checklist.md:558
+#: input/pagecontent/concepts_onboarding_checklist.md:562
+#: input/pagecontent/concepts_onboarding_checklist.md:566
+#: input/pagecontent/concepts_onboarding_checklist.md:571
+#: input/pagecontent/concepts_onboarding_checklist.md:577
+#: input/pagecontent/concepts_onboarding_checklist.md:582
+#: input/pagecontent/concepts_onboarding_checklist.md:908
+#: input/pagecontent/concepts_onboarding_checklist.md:914
+#: input/pagecontent/concepts_onboarding_checklist.md:981
+#: input/pagecontent/concepts_onboarding_checklist.md:1033
+#: input/pagecontent/concepts_onboarding_checklist.md:1040
+msgid "````"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L130
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:130
+msgid "Add Note, Expiration, 'Repo' as a scope and click ‘Generate Token’"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L224
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:224
+msgid "Add the GPG key to your GitHub account."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L230
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:230
+msgid "Add Title. Add key copied in last step"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L153
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:153
+msgid "Add tng-bot for Prod and tng-bot-dev for dev and UAT"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L147
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:147
+msgid "Add tng-bot to new repository"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L89
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:89
+msgid "Additional Resources and Documentation"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1016
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1016
+msgid "Additionally, you can configure git log to check any signatures it finds and list them in its output with the %G? format."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L628
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:628
+msgid "After onboarding in the DEV/UAT/PROD Environment, check the connectivity with the Trust Network Gateway using its API. This can be achieved with following command:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L784
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:784
+msgid "Appendix"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L154
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:154
+msgid "Assign Role:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L188
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:188
+msgid "At the prompt, specify the key size you want, or press Enter to accept the default. (The key must meet the GPG key requirements in the Certificate Governance; RSA 4096 does.)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L187
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:187
+msgid "At the prompt, specify the kind of key you want, or press Enter to accept the default. (Default is RSA)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L151
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L193
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:151
+#: input/pagecontent/concepts_onboarding_checklist.md:193
+msgid "Authenticate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L8
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:8
+msgid "Before beginning the onboarding process, please ensure the following tools, permissions, and environment configurations are in place. This checklist is crucial for a seamless setup experience."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L321
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:321
+msgid "CA.pem -> onboarding/DCC/TLS"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L871
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:871
+msgid "CAprivkey.key: This file contains the private key."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L873
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:873
+msgid "CAreq.csr: This file contains the Certificate Signing Request."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L141
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:141
+msgid "cd (repo)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L366
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:366
+msgid "Certificate generation: Open a command line prompt in the folder where the sca.conf is located and use the following OpenSSL command to create the private key (CAprivkey.key) and the certificate (CAcert.pem):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L493
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:493
+msgid "Certificate generation: Open a command line prompt in the folder where the TLSClient.conf is located and use the following OpenSSL command to create the private key (TNPTLS.key) and the certificate (TNPTLS.pem):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L448
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:448
+msgid "Certificate generation: Open a command line prompt in the folder where the uploadCert.conf is located and use the following OpenSSL command to create the private key (TNPUP.key) and the certificate (TNPUP.pem):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L240
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:240
+msgid "Certificate Preparation for DEV and UAT"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L773
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:773
+msgid "Certificate Validation on Grafana: Once the CMS package is uploaded to the gateway, your DSC certificate entry will be reflected in Grafana."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L327
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:327
+msgid "Certification Preparation for Prod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L956
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:956
+msgid "Change version number ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L666
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:666
+msgid "Check DSC is already exist before upload CMS package"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L748
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:748
+msgid "Check DSC Status"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L76
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:76
+msgid "CLI Tools and Path Configuration"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L231
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:231
+msgid "Click on Add GPG Key"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L152
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:152
+msgid "Click on Add people"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L120
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:120
+msgid "Click on Create Repository"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L128
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:128
+msgid "Click on Generate New Token button (Generate New Token classic)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L118
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:118
+msgid "Click on New"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L229
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:229
+msgid "Click on New GPG Key"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L137
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:137
+msgid "Clone the new Github repo in your local repo"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L952
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:952
+msgid "commit ca82a6dff817ec66f44342007202690a93763949 Author: Scott Chacon  Date:   Mon Mar 17 21:52:11 2008 -0700"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L539
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:539
+msgid "Configure the signing key to be used globally for Git commits and tag"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L551
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:551
+msgid "Configures the global Git username and email"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L81
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:81
+msgid "Confirm that all tools (e.g., openssl, curl, git) are available in the system PATH for easy command-line access."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L317
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:317
+msgid "Copy the generated certificates to the respective folders and change the file names to match the naming convention. For the case of self-signed TLS certificates, the CA.pem is just a copy of the TLS.pem (check to have keyCertSign in the keyUsage). The CA.pem should exist, since it is used to verify the TLS client certificate when connecting to the TNG application. Files to be copied in respective folders are as follows:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L223
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:223
+msgid "Copy your GPG key, beginning with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L404
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:404
+msgid "Create a certificate signing request (CSR):In order to create a certificate for a Document Signer, first create a Certificate Signing Request preferably on the machine that will use the certificate in order to avoid copying the private key (DSC01privkey.key) to this machine later. The CSR must contain the Distinguished Name (DN) information that will be included in the DSC. Open a command prompt and use the following command to create the CSR:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L383
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:383
+msgid "Create a new file called DSC.conf in the folder where your CA’s private key is located and add the following fields:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L463
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:463
+msgid "Create a new file called TLSClient.conf and replace the dn entries with your jurisdiction’s details."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L428
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:428
+msgid "Create a new file called uploadCert.conf and replace the dn entries with your jurisdiction’s details."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L109
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:109
+msgid "Create a private git repository on github. One for each Environment (DEV, UAT, PROD)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L561
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:561
+msgid "Create a signed Git commit with a commit message,"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L570
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:570
+msgid "Create a signed Git tag with a message"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L653
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:653
+msgid "Create an CMS Package :"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L651
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:651
+msgid "Create an Document Signer Certificate and sign it by the SCA Refer and DSC generation example"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L238
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:238
+msgid "Create Certificates"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L164
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:164
+msgid "Create GPG Keys for responsible persons for each environment"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L125
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:125
+msgid "Create PAT (Personal Access Token) for Github account if not created already"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L34
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:34
+msgid "cURL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L760
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:760
+msgid "Curl version on Unix/Mac: We strongly recommend updating curl and nss to newer latest versions for full compatibility with modern cryptographic standards.The outdated version of curl or nss and may not support modern SSL/TLS protocols or elliptic curve cryptography (ECC) cipher suites properly."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L684
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:684
+msgid "DCC for domain, DSC for group, and https://tng-dev.who.int for DEV environment endpoint."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L742
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:742
+msgid "DCC: The domain name to be used. If omitted, the script will default to DCC."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L612
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L777
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:612
+#: input/pagecontent/concepts_onboarding_checklist.md:777
+msgid "DEV"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L242
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:242
+msgid "Disclaimer: This script is designed to create self-signed certificates solely for non-production environments, such as DEV and UAT, not intended to be used on production environments. To use it, choose the appropriate script for your operating system:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L575
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:575
+msgid "Displays the details of a specific tag"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L167
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:167
+msgid "Download and install the GPG command line tools for your operating system. We generally recommend installing the latest version for your operating system."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L42
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:42
+msgid "Download cURL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L51
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:51
+msgid "Download Git"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L60
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:60
+msgid "Download GPG"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L33
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:33
+msgid "Download OpenSSL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L691
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:691
+msgid "Download the Trustlist again, and check if your DSC is available."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L68
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:68
+msgid "Download Visual Studio Code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L338
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:338
+msgid "DSA with SHA-256"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L812
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:812
+msgid "DSC conf"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L377
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:377
+msgid "DSC generation example"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L378
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:378
+msgid "DSC generation example Document Signer Certificates (DSCs) must be signed by the SCA. Hence, you have to create the SCA certificate (with the corresponding private key) before you can issue DSCs."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L381
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:381
+msgid "DSC.conf: Please check DSC generation and deletion  video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L335
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:335
+msgid "ECDSA with SHA-256"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L336
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:336
+msgid "ECDSA with SHA-384"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L608
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:608
+msgid "EndpointURL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L22
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:22
+msgid "Ensure you have an active GitHub account with access to the relevant repositories."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L119
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:119
+msgid "Enter Repository name, follow the convention, it has to contain the ISO 3 letter. All the rest is optional"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L189
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:189
+msgid "Enter the length of time the key should be valid. Press Enter to specify the default selection, indicating that the key doesn't expire. Unless you require an expiration date, we recommend accepting this default."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L191
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:191
+msgid "Enter your user ID information."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L608
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L775
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:608
+#: input/pagecontent/concepts_onboarding_checklist.md:775
+msgid "Environment"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L83
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:83
+msgid "Environment Configuration"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L88
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:88
+msgid "Environment Variables: Set required environment variables (e.g., API keys, tokens, or paths) as specified."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L57
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:57
+msgid "Essential for singing you git tags in your private repository."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L48
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:48
+msgid "Essential for version control and interacting with GitHub repositories."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L592
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:592
+msgid "Everyone Must Sign - Always a good idea Signing tags and commits is great, but if you decide to use this in your normal workflow, you’ll have to make sure that everyone on your team understands how to do so. This can be achieved by asking everyone working with the repository to run git config --local commit.gpgsign true to automatically have all of their commits in the repository signed by default. If you don’t, you’ll end up spending a lot of time helping people figure out how to rewrite their commits with signed versions. Make sure you understand GPG and the benefits of signing things before adopting this as part of your standard workflow."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L67
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:67
+msgid "Extensions: If using VS Code, consider adding extensions for Markdown and GitHub integration."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L94
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:94
+msgid "Familiarize yourself with supplementary documentation, including API references, security guidelines, and data handling policies needed for the onboarding process."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L398
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:398
+msgid "Field &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Value\\ extendedKeyUsage &emsp; 1.3.6.1.4.1.1847.2021.1.1 for Test Issuers\\ extendedKeyUsage &emsp; 1.3.6.1.4.1.1847.2021.1.2 for Vaccination Issuers\\ extendedKeyUsage &emsp; 1.3.6.1.4.1.1847.2021.1.3 for Recovery Issuers\\"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L514
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:514
+msgid "Finally commit push changes and make a signed tag for the version you want to take into use, by following the steps below:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L75
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:75
+msgid "Firewall Permissions: Verify firewall permissions to avoid connectivity issues."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L895
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:895
+msgid "First of all, if you want to sign anything you need to get GPG configured and your personal key installed."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L585
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:585
+msgid "For more detailed git commands please review Appendix"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L368
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:368
+msgid "For Prod it's recommended to use Trusted CA issued Certificate only. As below command for self-signed certificate generation as it's usually only recommended for DEV/UAT environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L331
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:331
+msgid "For production, It is strongly recommended to use certificates signed by a trusted Certificate Authority (CA). This is just an example reference on how to use a Trusted CA certificate in a production environment. You should refer to the specific procedures provided by the public Trusted Certificate Authority (CA) of your choice for accurate and detailed instructions Reference- Recommendation to use Trusted Public CA Certificate in Prod"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L270
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:270
+msgid "For Windows, use the genallcerts.ps1 PowerShell script. You can modify the environment variables directly within the script or set them in your current PowerShell session:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L117
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:117
+msgid "From Github profile, go to repositories"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L201
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:201
+msgid "From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is 3AA5C34371567BD2:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L786
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:786
+msgid "Further example configuration files"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L863
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:863
+msgid "Generate a Certificate Signing Request (CSR)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L169
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:169
+msgid "Generate a GPG key pair. Since there are multiple versions of GPG, you may need to consult the relevant man page to find the appropriate key generation command."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L704
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:704
+msgid "Generate DSCs"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L163
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:163
+msgid "Generate GPG Key"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L43
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:43
+msgid "Git"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L970
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:970
+msgid "GIT 1.4.2.1"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L140
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:140
+msgid "git clone https://(your account PAT)@github.com/(your account or organization)/(repo).git"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L512
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:512
+msgid "Git Commands for Configuring, Committing, and Pushing Signed Commits are also available here"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L555
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:555
+msgid "git config --global user.email \"Your email Id\" ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L893
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:893
+msgid "Git is cryptographically secure, but it’s not foolproof. If you’re taking work from others on the internet and want to verify that commits are actually from a trusted source, Git has a few ways to sign and verify work using GPG."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L143
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:143
+msgid "git pull template-repo main"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L142
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:142
+msgid "git remote add template-repo https://github.com/WorldHealthOrganization/tng-participant-template.git"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L107
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:107
+msgid "Git Repository"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L150
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:150
+msgid "Go to Collaborators"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L127
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:127
+msgid "Go to Developers Settings -> Personal Access Tokens -> Tokens (Classic)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L126
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L227
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:126
+#: input/pagecontent/concepts_onboarding_checklist.md:227
+msgid "Go to Github profile -> Settings"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L136
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:136
+msgid "Go to local repo"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L149
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:149
+msgid "Go to Repository -> Settings"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L228
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:228
+msgid "Go to SSH and GPG Keys"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L52
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:52
+msgid "GPG - Gnu Privacy Guard"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L219
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:219
+msgid "gpg --armor --export > # Prints the GPG key ID, in ASCII armor format ``` > Save For Later: Be sure to securely save the GPG Key, as it will be needed in upcoming steps."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L525
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:525
+msgid "gpg --list-key /home/test/.gnupg/pubring.kbx"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1027
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1027
+msgid "Here we can see that only the latest commit is signed and valid and the previous commits are not."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L294
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:294
+msgid "How to Run Script :"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L730
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:730
+msgid "How to run uploaddsc.sh script to upload CMS Package: uploaddsc.sh"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L717
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:717
+msgid "How to to run DSC Generate Script gen_dsc.sh"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L612
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:612
+msgid "https://tng-dev.who.int"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L611
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:611
+msgid "https://tng-uat.who.int"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L610
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:610
+msgid "https://tng.who.int"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L410
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:410
+msgid "If needed, you can repeat this procedure to create multiple CSRs for different DSCs (on different machines). When prompted, enter the necessary information (e.g. C= your jurisdiction (MUST), O = your Organization (OPTIONAL), CN = non-empty and unique CN (MUST), …)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1038
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1038
+msgid "If the merge contains only valid signed commits, the merge command will show you all the signatures it has checked and then move forward with the merge."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L181
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:181
+msgid "If you are not on version 2.1.17 or greater, the gpg --full-generate-key command doesn't work. Paste the text below and skip to step 4."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L174
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:174
+msgid "If you are on version 2.1.17 or greater, paste the text below to generate a GPG key pair."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L906
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:906
+msgid "If you don’t have a key installed, you can generate one with gpg --gen-key."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L979
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:979
+msgid "If you don’t have the signer’s public key, you get something like this instead:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L921
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:921
+msgid "If you have a GPG private key set up, you can now use it to sign new tags. All you have to do is use -s instead of -a:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L931
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:931
+msgid "If you run git show on that tag, you can see your GPG signature attached to it:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1031
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1031
+msgid "If you use this option when merging a branch and it contains commits that are not signed and valid, the merge will not work."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L252
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:252
+msgid "If your Operating Systems is Unix/Linux/Mac"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L268
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:268
+msgid "If your Operating Systems is Windows"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L744
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:744
+msgid "Important : Once above command executed sucessfully that's mean your CMS package uploaded to gateway"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L417
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:417
+msgid "Important Recommendations for Prod: Please replace CAcert.pem and CAprivkey.key with signing material from an officially Trusted Certification Authority instead using your own self-signed one."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1029
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1029
+msgid "In Git 1.8.3 and later, git merge and git pull can be told to inspect and reject when merging a commit that does not carry a trusted GPG signature with the --verify-signatures command."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L988
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:988
+msgid "In more recent versions of Git (v1.7.9 and above), you can now also sign individual commits. If you’re interested in signing commits directly instead of just the tags, all you need to do is add a -S to your git commit command."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L146
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:146
+msgid "Invite tng-bot"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L943
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:943
+msgid "iQEcBAABAgAGBQJTZbQlAAoJEF0+sviABDDrZbQH/09PfE51KPVPlanr6q1v4/Ut LQxfojUWiLQdg2ESJItkcuweYg+kc3HCyFejeDIBw9dpXt00rY26p05qrpnG+85b hM1/PswpPLuBSr+oCIDj5GMC2r2iEKsfv2fJbNW8iWAXVLoWZRF8B0MfqX/YTMbm ecorc4iXzQu7tupRihslbNkfvfciMnSDeSvzCpWAHl7h8Wj6hhqePmLm9lAYqnKp 8S5B/1SSQuEAjRZgI4IexpZoeKGVDptPHxLLS38fozsyi0QyDyzEgJxcJQVMXxVi RUysgqjcpT8+iQM1PblGfHR4XAhuOqN5Fx06PSaFZhqvWFezJ28/CLyX5q+oIVk= =EFTF -----END PGP SIGNATURE-----"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L412
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:412
+msgid "Issue the certificate: Copy the CSR (DSC01csr.pem) to the folder where the private key of your CA is located. Open a command prompt and use the following command to issue the DSC (DSCcert.pem):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L394
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:394
+msgid "It is recommended that a SCA provides certificate revocation lists. Therefore, replace the crlDistributionPoints URI with the information for your jurisdiction."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L339
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:339
+msgid "Legacy: SHA-256 with RSA Encryption"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L516
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:516
+msgid "List all the GPG keys available on your system"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L134
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:134
+msgid "Local Repository"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1059
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1059
+msgid "Merge made by the 'recursive' strategy. README | 2 ++ 1 file changed, 2 insertions(+) ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L658
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:658
+msgid "Method 1 - Command line . Before running the below commands we need DSC certificate : To Generate DSC through command line - Follow section 4.1.1.5.6.2"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L699
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:699
+msgid "Method 2 - Scripts"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L30
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:30
+msgid "Minimum Version: 1.1.1 or higher."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L58
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:58
+msgid "Minimum Version: 2.2 - 2.4 any fewer version is outdated."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L49
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:49
+msgid "Minimum Version: 2.28.0 or higher (recommended for improved configuration capabilities)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L40
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:40
+msgid "Minimum Version: 7.68.0 or higher."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L972
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:972
+msgid "Minor fixes since 1.4.2, including git-mv and git-http with alternates. gpg: Signature made Wed Sep 13 02:08:25 2006 PDT using DSA key ID F3119B9A gpg: Good signature from \"Junio C Hamano \" gpg:                 aka \"[jpeg image of size 1513]\" Primary key fingerprint: 3565 2A26 2040 E066 C9A7  4A7D C0C6 D9A4 F311 9B9A ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L255
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:255
+msgid "Modify the following default certificate parameters as needed."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L888
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:888
+msgid "More information about Git commit, signing and tagging commands"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L939
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:939
+msgid "my signed 1.5 tag -----BEGIN PGP SIGNATURE----- Version: GnuPG v1"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L39
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:39
+msgid "Necessary for command-line data transfers, especially useful for API requests."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L74
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:74
+msgid "Network Access: Ensure network settings allow access to GitHub and other required external resources (e.g., API endpoints)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L69
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:69
+msgid "Network and Firewall Permissions"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L484
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:484
+msgid "Note :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L315
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:315
+msgid "Note: keep your private keys safe and secure. Do not share them with anyone."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L324
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:324
+msgid "Note: On DEV and UAT environment, if the files are generated using a script, delete the generated folder before committing the files."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L265
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L285
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:265
+#: input/pagecontent/concepts_onboarding_checklist.md:285
+msgid "Note: OSSLCOUNTRYNAME should be ISO 2 letter name of the country mapped to the name used in repository."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L682
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:682
+msgid "Note: Replace domain, group, and EndpointURL with the appropriate values for your onboarding environment."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L758
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:758
+msgid "Note: Some versions of curl don’t attach the client certificates automatically. This can be checked via curl --version Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L535
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:535
+msgid "Note: The PUB ID in above output is CD822874C7862BA4BB6B950E40CC62009D9A00B0 , In your case you need to replace with > with your actual GPG public key ID to configure Git to use a GPG key for signing commits or tags in next command."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L192
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:192
+msgid "Note: When asked to enter your email address, ensure that you enter the verified email address for your GitHub account. To keep your email address private, use your GitHub-provided no-reply email address. For more information, see \"Verifying your email address\" and \"Setting your commit email address.\""
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L297
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:297
+msgid "Notes: While execution of \"genallcerts.sh\" script on Unix/Linux/Mac Operating System, Please provide script argument \"DN_template.cnf\" file which consists of country related information to generate all required certificates (TLS,SCA,UP)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L918
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:918
+msgid "Now Git will use your key by default to sign tags and commits if you want."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1
+msgid "Onboarding Checklist"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L602
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:602
+msgid "Once the confirmation of successful onboarding is received from the TNG Support Team ( gdhcn-support@who.int), please do the following."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L296
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:296
+msgid "Once you execute the script. It will generate all certificates and keys in a subfolder named by current datetime."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L912
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:912
+msgid "Once you have a private key to sign with, you can configure Git to use it for signing things by setting the user.signingkey config setting."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L884
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:884
+msgid "Once you receive the CA-signed certificate, you will use it instead of generating a new self-signed certificate. Here’s how you can replace the placeholders with the signed certificate: cp signedCAcert.pem ${subdir}/CAcert.pem cp CAprivkey.key ${subdir}/CAprivkey.key"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L334
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:334
+msgid "Only following signature algoriths are supported for the certificate."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L168
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:168
+msgid "Open Git Bash"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L24
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:24
+msgid "OpenSSL"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L82
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:82
+msgid "OS Compatibility: These instructions are applicable for Linux, macOS, and Windows."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L214
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:214
+msgid "Paste the text below, substituting in the GPG key ID you'd like to use. In this example, the GPG key ID is 3AA5C34371567BD2:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L32
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:32
+msgid "Path Configuration: Ensure OpenSSL is correctly added to the system path."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L23
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:23
+msgid "Permissions: Confirm the necessary repository permissions (read/write access if required for pushing commits)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L510
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:510
+msgid "Please check  Signing (tag) certificates video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L461
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:461
+msgid "Please check  TLS Creation video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L111
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:111
+msgid "Please check Create private repository video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L342
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:342
+msgid "Please check SCA Creation video  for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L426
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:426
+msgid "Please check UP Creation  video for reference"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L616
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:616
+msgid "Please ensure you replace with your actual environment's endpoint URL wherever indicated."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L288
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:288
+msgid "Please note that you need to have  OpenSSL installed  (e.g. Win64 OpenSSL v3.3.0 Light) and added to your PATH environment variable. Also you may need allow the execution by setting an execution policy."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L710
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:710
+msgid "Please replace with your actual OSSLCOUNTRYNAME, OSSLSTATENAME etc parameters accordingly of DN_template.cnf file."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L751
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:751
+msgid "Please replace XC with your actual two letter country code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L313
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:313
+msgid "Prepare Folders"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L6
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:6
+msgid "Prerequisites for Onboarding"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L610
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L779
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:610
+#: input/pagecontent/concepts_onboarding_checklist.md:779
+msgid "PROD"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L508
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:508
+msgid "Provide"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L529
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:529
+msgid "pub   rsa4096 2024-09-19 [SC] CD822874C7862BA4BB6B950E40CC62009D9A00B0 uid           [ultimate] Test User1 (This GPG Key is for XXC test Country)  sub   rsa4096 2024-09-19 [E] ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L565
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:565
+msgid "Push changes to the main branch."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L581
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:581
+msgid "Pushes all the local tags to the remote repository"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L29
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:29
+msgid "Required for generating and managing digital certificates."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L546
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:546
+msgid "Retrieve the current GPG signing key configured for Git"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L500
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:500
+msgid "RSA Public Key Certificates In case you want to use RSA certificates you can still use the configuration files provided above. During the CSR/certificate creation, replace the  with  for a 4096 Bit RSA key. Please be aware that RSA is NOT RECOMMENDED for the DSC and if you want to use RSA as your document signing algorithm, please create either a 2048 bit RSA key or at maximum a 3072 bit RSA key due to the space limitations on the QR codes."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L337
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:337
+msgid "RSASSA-PSS"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L122
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:122
+msgid "Save For Later: Be sure to securely save items like GitHub usernames, and Repository Name, URL as they will be needed in upcoming steps."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L102
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:102
+msgid "Save For Later: Be sure to securely save items like GPG Keys, Secrets, GitHub usernames, GitHub Repository URL, GitHub PAT (Personal Access Token), and other configurations as they will be needed in upcoming steps."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L132
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:132
+msgid "Save For Later: Be sure to securely save the GitHub PAT (Personal Access Token), as it will be needed in upcoming steps."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L341
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:341
+msgid "SCA certificate (TNPSCA) generation example"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L789
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:789
+msgid "SCA Conf"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L344
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:344
+msgid "sca.conf: Create a new file called sca.conf and replace the dn entries with your jurisdiction’s details."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L875
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:875
+msgid "sca.conf: This is the OpenSSL configuration file used during the CSR generation."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L319
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:319
+msgid "SCA.pem -> onboarding/DCC/SCA"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L209
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:209
+msgid "sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10] uid                          Hubot  ssb   4096R/4BB6D45482678BE3 2016-03-10 ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L901
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:901
+msgid "sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10] uid                          Hubot  ssb   4096R/4BB6D45482678BE3 2016-03-10 ````"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L595
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:595
+msgid "Send an onboarding/participation request"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L597
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:597
+msgid "Send an onboarding/participation request to gdhcn-support@who.int which contains:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1013
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1013
+msgid "Signed commit ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L987
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:987
+msgid "Signing Commits"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L920
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:920
+msgid "Signing Tags"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L891
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:891
+msgid "Signing Your Work"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L199
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:199
+msgid "Some GPG installations on Linux may require you to use gpg2 --list-keys --keyid-format LONG to view a list of your existing keys instead. In this case you will also need to configure Git to use gpg2 by running git config --global gpg.program gpg2."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L557
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:557
+msgid "Stage all changes for the next commit"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L105
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:105
+msgid "Steps to Be Followed by Participant Country:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L861
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:861
+msgid "Steps to Obtain and Use a CA-Signed Certificate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L880
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:880
+msgid "Submit CSR to the Public CA:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L877
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:877
+msgid "Submit the CSR to a Public Certificate Authority (CA):"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L878
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:878
+msgid "Submit the generated CAreq.csr file to the public CA of your choice. The CA will use this CSR to issue a certificate. Upon approval, the CA will provide you with:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L881
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:881
+msgid "Submit the generated CAreq.csr file to the public CA of your choice. They will use the CSR to issue a certificate. The CA will provide you with the signed certificate and possibly a certificate chain or intermediate certificates."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L648
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:648
+msgid "Test the other Trustlist Routes in the same style (e.g. with DSC/SCA/Upload/Authentication…)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L61
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:61
+msgid "Text Editor or IDE (Optional)"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L402
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:402
+msgid "The above example contains all three extended key usages."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L708
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:708
+msgid "The Distinguished Name ( DN) configuration file while will parse as source  DN_template.cnf is an example."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L701
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:701
+msgid "The DSC generation and upload of  CMS package to TNG Gateway  could be achieved through the below mentioned scripts. For DEV and UAT environments you may use script."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L396
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:396
+msgid "The extendedKeyUsage field is optional, for Covid certificates the below values are recommend to be used to further restrict the DSC certificate as follows:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L606
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:606
+msgid "THe following are the endpoints for the Trust Network Gateway for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L787
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:787
+msgid "The following configuration files have been provided during the alignment on the certificate governance. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L599
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:599
+msgid "The GPG key ( Beginning with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----) exported in Step 1.8.6.4"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L712
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:712
+msgid "The script expects at least two arguments: A configuration file (DN_template.cnf) that contains the Distinguished Name (DN) template. A subdirectory where the SCA (Signing Certificate Authority) PEM and KEY files are located. An optional third argument can be provided to specify the purpose of the DSC (e.g., test, vax, rec). If this argument is not provided, the DSC will be generated for all purposes."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L249
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:249
+msgid "These scripts, along with the provided configuration files, serve as guidelines for certificate preparation ."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L329
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:329
+msgid "This guide follows the certificate templates defined in the certificate governance. Public Key Certificates generated by following this guide will include the minimal required fields - further fields can be added in the configuration files if needed.Self-signed certificates are typically used in DEV and UAT environments."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L3
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:3
+msgid "This repository contains the a checklist for onboarding the Trust Network Participants. This includes CSCAs, Auth information, signing information and other relevant files for onboarding a participant. Video guides to the steps are embedded in the steps below."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L311
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:311
+msgid "This setup generates all required certificates (TLS, SCA, UP) and keys in a timestamped subfolder, based on the configuration specified in DN_template.cnf for Unix/Linux and the environment variables set in the current PowerShell session for Windows."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L322
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:322
+msgid "TLS.pem -> onboarding/DCC/TLS"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L460
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:460
+msgid "TLSClient.conf"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L458
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:458
+msgid "TNPTLS generation example"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L423
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:423
+msgid "TNPUP generation example"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L864
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:864
+msgid "To begin, generate a CSR using the following OpenSSL command. This request will include a new private key and a configuration file:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L254
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:254
+msgid "To customize certificate parameters, update the DNtemplate.cnf file, which will be used by the genall_certs.sh script."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1003
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1003
+msgid "To see and verify these signatures, there is also a --show-signature option to git log."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L960
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:960
+msgid "To verify a signed tag, you use git tag -v . This command uses GPG to verify the signature. You need the signer’s public key in your keyring for this to work properly:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L10
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:10
+msgid "Tools/Requirement Description     GitHub Account"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L611
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L778
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:611
+#: input/pagecontent/concepts_onboarding_checklist.md:778
+msgid "UAT"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L244
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:244
+msgid "Unix/Linux:	Use the genallcerts.sh bash script on Linux/Unix/Mac operating system."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L320
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:320
+msgid "UP.pem -> onboarding/DCC/UP"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L650
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:650
+msgid "Upload DSC Certificate"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L706
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:706
+msgid "Upload DSCs"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L674
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:674
+msgid "Upload the CMS Package to the Gateway"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L425
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:425
+msgid "uploadCert.conf"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L598
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:598
+msgid "URL of the private repository created as a prerequisite"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L66
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:66
+msgid "Use a reliable text editor or IDE such as Visual Studio Code, Sublime Text, or Notepad++ for editing files."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L129
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:129
+msgid "Use Authentication code"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L883
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:883
+msgid "Use the CA-Signed Certificate:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L194
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:194
+msgid "Use the gpg --list-secret-keys --keyid-format=long command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L601
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:601
+msgid "Validate the connection"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L190
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:190
+msgid "Verify that your selections are correct."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L41
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:41
+msgid "Verify: curl --version."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L50
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:50
+msgid "Verify: git --version."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L59
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:59
+msgid "Verify: gpg --version."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L31
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:31
+msgid "Verify: openssl version."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L959
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:959
+msgid "Verifying Tags"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L155
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:155
+msgid "When inviting both tng-bot and tng-bot-dev, select the role as \"Write\" Click Add Selection to complete the invitation."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L625
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:625
+msgid "Windows Platform Users Only: Run all below validation commands using ./curl.exe ... to ensure the correct SSL backend is used."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L620
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:620
+msgid "Windows ships with cURL that uses Schannel, which does not support PKI/KEY certificates. To avoid validation errors, use a cURL build with OpenSSL. Users should check their current version with curl --version and download an OpenSSL-based build if necessary. DownloadLink After extracting, go to the bin folder and verify with ./curl.exe --version (it should show LibreSSL or OpenSSL)."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L618
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:618
+msgid "Windows Users – cURL Certificate Validation Note:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L246
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:246
+msgid "Windows:		Use the genallcerts.ps1 PowerShell script on Windows operating system."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1049
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:1049
+msgid "You can also use the -S option with the git merge command to sign the resulting merge commit itself. The following example both verifies that every commit in the branch to be merged is signed and furthermore signs the resulting merge commit."
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L926
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:926
+msgid "You need a passphrase to unlock the secret key for user: \"Ben Straub \" 2048-bit RSA key, ID 800430EB, created 2014-05-04 ```"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L993
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L1055
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:993
+#: input/pagecontent/concepts_onboarding_checklist.md:1055
+msgid "You need a passphrase to unlock the secret key for user: \"Scott Chacon (Git signing key) \" 2048-bit RSA key, ID 0A46826A, created 2014-06-04"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L633
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:633
+msgid "You should see a output like:"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L183
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:183
+msgid "~~~ Shell gpg --default-new-key-algo rsa4096 --gen-key ~~~"
+msgstr ""
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/pagecontent/concepts_onboarding_checklist.md#L195
+#. URL: http://smart.who.int/trust/concepts_onboarding_checklist.html
+#. URL: https://litlfred.github.io/smart-trust/concepts_onboarding_checklist.html
+#: input/pagecontent/concepts_onboarding_checklist.md:195
+msgid "~~~ Shell gpg --list-secret-keys --keyid-format=long ~~~"
+msgstr ""
+

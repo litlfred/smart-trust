@@ -28,6 +28,16 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'
   produce-jekyll-data: true
+  # Target languages for the IG Publisher's resource translation extraction
+  # (same as smart-base). Page and diagram translations are the gettext .po
+  # files under input/*/translations/ and translations/<lang>/.
+  i18n-default-lang: en
+  i18n-lang:
+  - ar
+  - zh
+  - fr
+  - ru
+  - es
 meta:
   profile:
   - http://smart.who.int/base/StructureDefinition/SGImplementationGuide
@@ -154,3 +164,23 @@ menu:
     Mappings: maps.html
     License: license.html
     DAK API: dak-api.html
+# Translation configuration (WHO SMART extension, ignored by SUSHI), read by
+# smart-base's translation_config.py. Same languages as smart-base.
+translations:
+  sourceLanguage: en
+  languages:
+  - code: ar
+    name: Arabic
+    direction: rtl
+  - code: zh
+    name: Chinese (Simplified)
+    direction: ltr
+  - code: fr
+    name: French
+    direction: ltr
+  - code: ru
+    name: Russian
+    direction: ltr
+  - code: es
+    name: Spanish
+    direction: ltr

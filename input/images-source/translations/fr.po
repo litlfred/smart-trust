@@ -1,0 +1,705 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-trust\n"
+"POT-Creation-Date: 2026-11-02 06:24+0000\n"
+"PO-Revision-Date: 2026-11-02 12:55+0000\n"
+"Last-Translator: Claude (machine translation, round-trip verified; needs native review)\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L25
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:25
+msgid "(Optional) Retrieve Business Rule Signing Key"
+msgstr "(Facultatif) Récupérer la clé de signature des règles métier"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L10
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L12
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L12
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L11
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/dsa_register_keys.plantuml:10
+#: input/images-source/dsa_signed_pdf.plantuml:12
+#: input/images-source/routine_sync.plantuml:12
+#: input/images-source/verify_vdhc.plantuml:11
+msgid "<b>00:</b>"
+msgstr "<b>00:</b>"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L7
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:7
+msgid "[[system-actors.html#holder Holder]]"
+msgstr "[[system-actors.html#holder Titulaire]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L6
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:6
+msgid "[[system-actors.html#issuer Issuer]]"
+msgstr "[[system-actors.html#issuer Émetteur]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L7
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:7
+msgid "[[system-actors.html#trust-network-anchor Accepted\\nTrust Anchor]]"
+msgstr ""
+"[[system-actors.html#trust-network-anchor Ancre de\\nconfiance acceptée]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L17
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L12
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L7
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L11
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/aggregation.plantuml:17
+#: input/images-source/business_rule_validation.plantuml:12
+#: input/images-source/routine_sync.plantuml:7
+#: input/images-source/verification.plantuml:11
+msgid "[[system-actors.html#trust-network-anchor Trust Network\\nAnchor]]"
+msgstr ""
+"[[system-actors.html#trust-network-anchor Ancre du\\nréseau de confiance]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L6
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:6
+msgid ""
+"[[system-actors.html#trust-network-participant Party\\n(data provider or "
+"recipient)]]"
+msgstr ""
+"[[system-actors.html#trust-network-participant Partie\\n(fournisseur ou "
+"destinataire des données)]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L11
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L6
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/aggregation.plantuml:11
+#: input/images-source/routine_sync.plantuml:6
+msgid ""
+"[[system-actors.html#trust-network-participant Trust Network\\nParticipant "
+"A]]"
+msgstr ""
+"[[system-actors.html#trust-network-participant Participant au\\nréseau de "
+"confiance A]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L14
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L15
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:14
+#: input/images-source/business_rule_validation.plantuml:15
+msgid ""
+"[[system-actors.html#trust-network-participant Trust Network\\nParticipant "
+"A]] Trustlist"
+msgstr ""
+"[[system-actors.html#trust-network-participant Participant au\\nréseau de "
+"confiance A]] Liste de confiance"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L14
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L8
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/aggregation.plantuml:14
+#: input/images-source/routine_sync.plantuml:8
+msgid ""
+"[[system-actors.html#trust-network-participant Trust Network\\nParticipant "
+"B]]"
+msgstr ""
+"[[system-actors.html#trust-network-participant Participant au\\nréseau de "
+"confiance B]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L5
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:5
+msgid ""
+"[[system-actors.html#trust-network-participant Trust Network\\nParticipant]]"
+msgstr ""
+"[[system-actors.html#trust-network-participant Participant au\\nréseau de "
+"confiance]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L22
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L18
+#. URL: http://smart.who.int/trust/verification.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L8
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/business_rule_validation.plantuml:22
+#: input/images-source/verification.plantuml:18
+#: input/images-source/verify_vdhc.plantuml:8
+msgid "[[system-actors.html#verifier Verifier]]"
+msgstr "[[system-actors.html#verifier Vérificateur]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L26
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L21
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/routine_sync.plantuml:26
+#: input/images-source/verification.plantuml:21
+msgid "[[transactions.html#get_keys_did Retrieve Verification Keys]]"
+msgstr "[[transactions.html#get_keys_did Récupérer des clés de vérification]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L16
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L19
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/dsa_register_keys.plantuml:16
+#: input/images-source/routine_sync.plantuml:19
+msgid "[[transactions.html#publish_keys Publish Keys]]"
+msgstr "[[transactions.html#publish_keys Publier des clés]]"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L18
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:18
+msgid "access token (static scopes)"
+msgstr "jeton d’accès (portées statiques)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L13
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:13
+msgid "Aggegated Trustist"
+msgstr "Liste de confiance agrégée"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L24
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L12
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/aggregation.plantuml:24
+#: input/images-source/verification.plantuml:12
+msgid "Aggregated Trustlist"
+msgstr "Liste de confiance agrégée"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L9
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:9
+msgid "Authorisation server"
+msgstr "Serveur d’autorisation"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L18
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:18
+msgid "Business Rule"
+msgstr "Règle métier"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L17
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:17
+msgid "Business Rule Library"
+msgstr "Bibliothèque de règles métier"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L30
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:30
+msgid "check its signature\\n(proof, or RFC 5280 path validation)"
+msgstr ""
+"contrôler sa signature\\n(preuve, ou validation du chemin selon la RFC 5280)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L12
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:12
+msgid "choose the anchor(s)\\nthe DSA accepts"
+msgstr "choisir la ou les ancres\\nacceptées par le DSA"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L17
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:17
+msgid "client credentials over mTLS (P5)"
+msgstr "identifiants client sur mTLS (P5)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L15
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:15
+msgid "configure the agreement\\nversion (URL + hash)"
+msgstr "configurer la version\\nde l’accord (URL + hachage)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L23
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/routine_sync.plantuml:23
+msgid "Construct and sign trustlist of\\nvalidated keys for distribution"
+msgstr ""
+"Constituer et signer la liste de confiance\\ndes clés validées en vue de sa "
+"distribution"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L22
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/verification.plantuml:22
+msgid "Deserialize and Determine Key ID"
+msgstr "Désérialiser et déterminer l’identifiant de clé"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L27
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:27
+msgid "Deserialize, Verify Signature, and Extract FHIR Resources"
+msgstr "Désérialiser, vérifier la signature et extraire les ressources FHIR"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L13
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:13
+msgid ""
+"designate as authorized issuer of \\nVerifiable Digital Health\\n "
+"Certificates (VDHCs)"
+msgstr ""
+"désigner comme émetteur autorisé de \\ncertificats de santé numériques\\n "
+"vérifiables (VDHC)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_breach.plantuml#L3
+#. URL: http://smart.who.int/trust/dsa_breach.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_breach.svg
+#: input/images-source/dsa_breach.plantuml:3
+msgid "DSA P15: Dispute and Breach Handling"
+msgstr "DSA P15 : traitement des litiges et des manquements"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L3
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:3
+msgid "DSA P3: Register Parties and Keys with a Trust Anchor"
+msgstr ""
+"DSA P3 : enregistrer les parties et les clés auprès d’une ancre de confiance"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L3
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:3
+msgid "DSA When the Agreement Is Only a Signed PDF"
+msgstr "DSA : lorsque l’accord n’est qu’un PDF signé"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L9
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:9
+msgid "Dynamic Business Rules Validation"
+msgstr "Validation dynamique des règles métier"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L28
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:28
+msgid "Execute Business Rule"
+msgstr "Exécuter la règle métier"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L17
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:17
+msgid "extract signature, key id, and\\nparticipant code from the VDHC"
+msgstr ""
+"extraire la signature, l’identifiant de clé et\\nle code du participant du "
+"VDHC"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L7
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#: input/images-source/aggregation.plantuml:7
+msgid "Federated PKD Aggregation"
+msgstr "Agrégation du PKD fédéré"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L29
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:29
+msgid "fetch the list, DID document\\nor certificate chain"
+msgstr "récupérer la liste, le document DID\\nou la chaîne de certificats"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L20
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L23
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:20
+#: input/images-source/dsa_register_keys.plantuml:23
+msgid "generate key pair"
+msgstr "générer une paire de clés"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L15
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:15
+msgid "generate keys\\n(SCA, DSC, UP, TLS, ...)"
+msgstr "générer les clés\\n(SCA, DSC, UP, TLS, ...)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L18
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/routine_sync.plantuml:18
+msgid "generate public-private key pairs"
+msgstr "générer des paires de clés publique-privée"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L15
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:15
+msgid "issue VDHC"
+msgstr "délivrer le VDHC"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L21
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:21
+msgid "issue X.509 certificate"
+msgstr "émettre le certificat X.509"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L26
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:26
+msgid "key or root, by a channel\\nthe instance owner chooses"
+msgstr "clé ou racine, par un moyen\\nchoisi par le propriétaire de l’instance"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L14
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:14
+msgid "Letter of Application,\\nTerms of Participation, onboarding"
+msgstr "Lettre de candidature,\\nconditions de participation, intégration"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L18
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:18
+msgid ""
+"lookup  Document Signing Certificate (DSC)\\n public key by  key id and "
+"participant code"
+msgstr ""
+"rechercher la clé publique du certificat de signature de documents (DSC)\\n "
+"au moyen de l’identifiant de clé et du code du participant"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L19
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:19
+msgid "national rules"
+msgstr "règles nationales"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L8
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:8
+msgid "Provider admin"
+msgstr "Administrateur du fournisseur"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L6
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:6
+msgid "Provider staff"
+msgstr "Personnel du fournisseur"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L16
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:16
+msgid "provider VDHC"
+msgstr "VDHC du fournisseur"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L12
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L15
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L19
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L22
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L25
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L26
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L13
+#. URL: http://smart.who.int/trust/verification.svg
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L14
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/aggregation.plantuml:12
+#: input/images-source/aggregation.plantuml:15
+#: input/images-source/aggregation.plantuml:19
+#: input/images-source/aggregation.plantuml:22
+#: input/images-source/aggregation.plantuml:25
+#: input/images-source/aggregation.plantuml:26
+#: input/images-source/verification.plantuml:13
+#: input/images-source/verification.plantuml:14
+msgid "Public Key"
+msgstr "Clé publique"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L24
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:24
+msgid "publish verificationMethod\\nin own DID document"
+msgstr "publier verificationMethod\\ndans son propre document DID"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L7
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:7
+msgid "Publisher site\\nand catalogue"
+msgstr "Site de l’éditeur\\net catalogue"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L10
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:10
+msgid "Recipient server"
+msgstr "Serveur du destinataire"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L16
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:16
+msgid ""
+"register client; set scopes from the PDF;\\nchange record cites URL + hash "
+"(P4)"
+msgstr ""
+"enregistrer le client ; définir les portées à partir du PDF "
+";\\nl’enregistrement de modification cite l’URL + le hachage (P4)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L14
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:14
+msgid "request a VDHC"
+msgstr "demander un VDHC"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L26
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:26
+msgid "Retrieve Business Rule and (Optional) Verify Signature"
+msgstr "Récupérer la règle métier et (facultatif) vérifier la signature"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L20
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:20
+msgid ""
+"review the log against the PDF;\n"
+"expiry reminder;\n"
+"disable the client on breach"
+msgstr ""
+"examiner le journal au regard du PDF ;\n"
+"rappel d’expiration ;\n"
+"désactiver le client en cas de manquement"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L3
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/routine_sync.plantuml:3
+msgid "Routine Synchronization"
+msgstr "Synchronisation régulière"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_signed_pdf.plantuml#L14
+#. URL: http://smart.who.int/trust/dsa_signed_pdf.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_signed_pdf.svg
+#: input/images-source/dsa_signed_pdf.plantuml:14
+msgid "signed PDF, SHA-256,\\nDCAT record (P2)"
+msgstr "PDF signé, SHA-256,\\nenregistrement DCAT (P2)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L18
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#: input/images-source/aggregation.plantuml:18
+msgid "TNP A Mirror"
+msgstr "Miroir TNP A"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/aggregation.plantuml#L21
+#. URL: http://smart.who.int/trust/aggregation.svg
+#. URL: https://litlfred.github.io/smart-trust/aggregation.svg
+#: input/images-source/aggregation.plantuml:21
+msgid "TNP B Mirror"
+msgstr "Miroir TNP B"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L19
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/verification.plantuml:19
+msgid "Vaccine Credential"
+msgstr "Justificatif de vaccination"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/routine_sync.plantuml#L22
+#. URL: http://smart.who.int/trust/routine_sync.svg
+#. URL: https://litlfred.github.io/smart-trust/routine_sync.svg
+#: input/images-source/routine_sync.plantuml:22
+msgid "Validate keys"
+msgstr "Valider les clés"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L17
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:17
+msgid "validate keys; sign trust list\\n(JsonWebSignature2020)"
+msgstr ""
+"valider les clés ; signer la liste de confiance\\n(JsonWebSignature2020)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/business_rule_validation.plantuml#L23
+#. URL: http://smart.who.int/trust/business_rule_validation.svg
+#. URL: https://litlfred.github.io/smart-trust/business_rule_validation.svg
+#: input/images-source/business_rule_validation.plantuml:23
+msgid "Verificable Digital\\nHealth Certificate"
+msgstr "Certificat de santé\\nnumérique vérifiable"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L8
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/verification.plantuml:8
+msgid "Verification"
+msgstr "Vérification"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/dsa_register_keys.plantuml#L8
+#. URL: http://smart.who.int/trust/dsa_register_keys.svg
+#. URL: https://litlfred.github.io/smart-trust/dsa_register_keys.svg
+#: input/images-source/dsa_register_keys.plantuml:8
+msgid "Verifier\\n(the other party)"
+msgstr "Vérificateur\\n(l’autre partie)"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L3
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:3
+msgid "Verify a Digitial Health Certificate"
+msgstr "Vérifier un certificat de santé numérique"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verification.plantuml#L23
+#. URL: http://smart.who.int/trust/verification.svg
+#. URL: https://litlfred.github.io/smart-trust/verification.svg
+#: input/images-source/verification.plantuml:23
+msgid "Verify Signature"
+msgstr "Vérifier la signature"
+
+#. Source: https://github.com/litlfred/smart-trust/blob/main/input/images-
+#. source/verify_vdhc.plantuml#L19
+#. URL: http://smart.who.int/trust/verify_vdhc.svg
+#. URL: https://litlfred.github.io/smart-trust/verify_vdhc.svg
+#: input/images-source/verify_vdhc.plantuml:19
+msgid "verify signature using the public key"
+msgstr "vérifier la signature au moyen de la clé publique"
