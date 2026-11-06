@@ -168,7 +168,7 @@ msgstr "Физическое лицо, назначенное Участнико
 #: glossary/gdhcn.glossary.json:76
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/legal-representative
 msgid "The individual designated by a GDHCN Participant as having the primary responsibility for reviewing the requirements related to a Trust Domain on behalf of this GDHCN Participant. This person should be someone that the GDHCN Secretariat can consult in relation to any legal or policy issues that may arise, such as changes to this document or changes to one of its Annexes that defines a Trust Domain."
-msgstr "Физическое лицо, назначенное Участником GDHCN в качестве лица, несущего основную ответственность за рассмотрение требований, связанных с Доменом доверия, от имени данного Участника GDHCN. Это должно быть лицо, с которым Секретариат GDHCN может консультироваться по любым возникающим правовым или политическим вопросам, например в связи с изменениями настоящего документа или изменениями одного из приложений к нему, определяющего Домен доверия."
+msgstr "Физическое лицо, назначенное Участником GDHCN в качестве лица, несущего основную ответственность за рассмотрение требований, связанных с Доменом доверия, от имени данного Участника GDHCN. Таким лицом следует назначить того, с кем Секретариат GDHCN может консультироваться по любым возникающим правовым или политическим вопросам, например в связи с изменениями настоящего документа или изменениями одного из приложений к нему, определяющего Домен доверия."
 
 #: glossary/gdhcn.glossary.json:12
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/business-owner-representative

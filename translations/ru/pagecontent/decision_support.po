@@ -275,7 +275,7 @@ msgstr "После загрузки FHIR Library можно выполнить �
 
 #: input/pagecontent/decision_support.md:446
 msgid "Once the project is set up the ELM from the CQL business rules can be evaluated against the vaccination credential that was converted to the DDCC resource instance. The following example JavaScript code can serve as a starting point:"
-msgstr "После создания проекта ELM из бизнес-правил CQL можно оценить в отношении удостоверения о вакцинации, преобразованного в экземпляр ресурса DDCC. Отправной точкой может послужить следующий пример кода на JavaScript:"
+msgstr "После настройки проекта можно вычислить ELM, полученный из бизнес-правил CQL, в отношении удостоверения о вакцинации, преобразованного в экземпляр ресурса DDCC. Отправной точкой может послужить следующий пример кода на JavaScript:"
 
 #: input/pagecontent/decision_support.md:367
 msgid "Once the translation service is running the CQL can be translated to ELM using the following curl command:"

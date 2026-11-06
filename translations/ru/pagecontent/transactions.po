@@ -67,7 +67,7 @@ msgstr "Выражает политику в области здравоохра
 
 #: input/pagecontent/transactions.md:28
 msgid "Federated PKDs are expected to:"
-msgstr "Федеративные PKD должны:"
+msgstr "От федеративных PKD ожидается, что они:"
 
 #: input/pagecontent/transactions.md:29
 msgid "Have a means for retrieving local public key directories / nodes members represented in the aggregation services"
