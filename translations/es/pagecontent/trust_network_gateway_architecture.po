@@ -16,7 +16,7 @@ msgstr ""
 
 #: input/pagecontent/trust_network_gateway_architecture.md:354
 msgid "[^1]: TNG Trust Network Gateway, formerly named Digital Documentation of Covid Certificates (DDCC) Gateway"
-msgstr "[^1]: TNG puerta de enlace a la red de confianza (Trust Network Gateway), anteriormente denominada pasarela de Documentación digital de certificados de COVID-19 (DDCC Gateway)"
+msgstr "[^1]: TNG puerta de enlace a la red de confianza (Trust Network Gateway), anteriormente denominada puerta de enlace de Documentación digital de certificados de COVID-19 (DDCC Gateway)"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:224
 msgid "/trustlist/certificates"

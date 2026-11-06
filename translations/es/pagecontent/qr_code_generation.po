@@ -47,7 +47,7 @@ msgstr "{code0} es el modelo concreto: su padre {code1} es abstracto, al igual q
 #: input/pagecontent/qr_code_generation.md:62
 #, python-brace-format
 msgid "<a0>Section 3.2.7</a0> of the specification allows several types of health certificate to exist under the {code0} claim. Carrying exactly one is an implementation choice, not a constraint of the container, and it is the choice made throughout this page."
-msgstr "La <a0>sección 3.2.7</a0> de la especificación permite que existan varios tipos de certificado de salud bajo la reclamación {code0}. Llevar exactamente uno es una decisión de implementación, no una restricción del contenedor, y es la decisión adoptada en toda esta página."
+msgstr "La <a0>sección 3.2.7</a0> de la especificación permite que existan varios tipos de certificado de salud bajo la declaración {code0}. Llevar exactamente uno es una decisión de implementación, no una restricción del contenedor, y es la decisión adoptada en toda esta página."
 
 #: input/pagecontent/qr_code_generation.md:16
 msgid "1. The pipeline at a glance"
@@ -115,7 +115,7 @@ msgstr "De 35 mm a 60 mm de diagonal — RECOMENDADO"
 
 #: input/pagecontent/qr_code_generation.md:106
 msgid "4. Step 3 — Build the CWT claim set"
-msgstr "4. Paso 3 — Construir el conjunto de reclamaciones CWT"
+msgstr "4. Paso 3 — Construir el conjunto de declaraciones CWT"
 
 #: input/pagecontent/qr_code_generation.md:345
 msgid "444 characters"
@@ -152,7 +152,7 @@ msgstr "Una familia de la República Democrática Popular Lao está de visita en
 #: input/pagecontent/qr_code_generation.md:48
 #, python-brace-format
 msgid "A payload is identified by a subclaim inside the {code0} claim ({code1}). The subclaims, and the logical model each one carries, are enumerated in the <a0>HCert logical model</a0>; section <a1>3.2.7.1</a1> of the HCERT Specification is authoritative for which are assigned. The registered trust domains are listed in the <a2>GDHCN Trust Domain value set</a2> and described under <a3>Trust Domains</a3>."
-msgstr "Una carga útil se identifica mediante una subreclamación dentro de la reclamación {code0} ({code1}). Las subreclamaciones, y el modelo lógico que lleva cada una, se enumeran en el <a0>modelo lógico HCert</a0>; la sección <a1>3.2.7.1</a1> de la especificación HCERT es la referencia autorizada sobre cuáles están asignadas. Los ámbitos de confianza registrados se enumeran en el <a2>conjunto de valores de ámbitos de confianza de la GDHCN</a2> y se describen en <a3>Ámbitos de confianza</a3>."
+msgstr "Una carga útil se identifica mediante una subdeclaración dentro de la declaración {code0} ({code1}). Las subdeclaraciónes, y el modelo lógico que lleva cada una, se enumeran en el <a0>modelo lógico HCert</a0>; la sección <a1>3.2.7.1</a1> de la especificación HCERT es la referencia autorizada sobre cuáles están asignadas. Los ámbitos de confianza registrados se enumeran en el <a2>conjunto de valores de ámbitos de confianza de la GDHCN</a2> y se describen en <a3>Ámbitos de confianza</a3>."
 
 #: input/pagecontent/qr_code_generation.md:205
 #, python-brace-format
@@ -207,7 +207,7 @@ msgstr "COSE_Sign1, firmado"
 
 #: input/pagecontent/qr_code_generation.md:342
 msgid "CWT claim set, CBOR"
-msgstr "Conjunto de reclamaciones CWT, CBOR"
+msgstr "Conjunto de declaraciones CWT, CBOR"
 
 #: input/pagecontent/qr_code_generation.md:261
 msgid "Data in the QR rather than behind a link. The certificate has to verify at a rural clinic back home, on paper, with no reliable connectivity."
@@ -225,7 +225,7 @@ msgstr "Obtención del {code0}: tome la codificación DER del DSC y utilice los 
 
 #: input/pagecontent/qr_code_generation.md:126
 msgid "Encode the claim set as CBOR (<a0>RFC 7049</a0>). The JSON shown on this page and in the logical models is schema notation only — the wire format is CBOR, and an implementation need never produce the JSON form at all."
-msgstr "Codifique el conjunto de reclamaciones como CBOR (<a0>RFC 7049</a0>). El JSON que se muestra en esta página y en los modelos lógicos es solo notación de esquema: el formato de transmisión es CBOR, y una implementación nunca necesita producir la forma JSON."
+msgstr "Codifique el conjunto de declaraciones como CBOR (<a0>RFC 7049</a0>). El JSON que se muestra en esta página y en los modelos lógicos es solo notación de esquema: el formato de transmisión es CBOR, y una implementación nunca necesita producir la forma JSON."
 
 #: input/pagecontent/qr_code_generation.md:182
 msgid "Encode the compressed bytes with <a0>Base45</a0>. Base45 exists for one reason: its 45-character alphabet is exactly the QR Alphanumeric character set, which stores data far more densely than byte mode."
@@ -251,7 +251,7 @@ msgstr "Para el certificado de la hepatitis B:"
 #: input/pagecontent/qr_code_generation.md:67
 #, python-brace-format
 msgid "For this walkthrough the payload is a DVC — a Digital Vaccine Certificate — carried under subclaim {code0}. The steps below are the steps for that payload. A different payload changes only Step 2; Steps 3 to 9 are identical."
-msgstr "En este recorrido guiado, la carga útil es un DVC —un certificado digital de vacunación— que se transporta bajo la subreclamación {code0}. Los pasos siguientes son los correspondientes a esa carga útil. Una carga útil diferente solo modifica el paso 2; los pasos 3 a 9 son idénticos."
+msgstr "En este recorrido guiado, la carga útil es un DVC —un certificado digital de vacunación— que se transporta bajo la subdeclaración {code0}. Los pasos siguientes son los correspondientes a esa carga útil. Una carga útil diferente solo modifica el paso 2; los pasos 3 a 9 son idénticos."
 
 #: input/pagecontent/qr_code_generation.md:89
 msgid "Four points about using the model are not apparent from the StructureDefinition and are worth stating here:"
@@ -264,7 +264,7 @@ msgstr "Generación de un código QR"
 #: input/pagecontent/qr_code_generation.md:299
 #, python-brace-format
 msgid "Hepatitis B birth dose, {code0} subclaim {code1}, shown in JSON notation. {code2} carries the PreQual product identifier of the product actually administered:"
-msgstr "Dosis al nacer de hepatitis B, subreclamación {code0} {code1}, mostrada en notación JSON. {code2} lleva el identificador de producto PreQual del producto efectivamente administrado:"
+msgstr "Dosis al nacer de hepatitis B, subdeclaración {code0} {code1}, mostrada en notación JSON. {code2} lleva el identificador de producto PreQual del producto efectivamente administrado:"
 
 #: input/pagecontent/qr_code_generation.md:355
 msgid "Hepatitis B birth dose:"
@@ -310,7 +310,7 @@ msgstr "Analizar el COSE_Sign1 y leer {code0} y {code1} de la cabecera protegida
 #: input/pagecontent/qr_code_generation.md:108
 #, python-brace-format
 msgid "Place the payload under its subclaim, inside the {code0} claim, inside a <a0>CWT claim set</a0> — see that model for the claim keys and types, and <a1>section 3.2</a1> of the specification for their normative definitions."
-msgstr "Coloque la carga útil bajo su subreclamación, dentro de la reclamación {code0}, dentro de un <a0>conjunto de reclamaciones CWT</a0>; consulte ese modelo para conocer las claves y los tipos de las reclamaciones, y la <a1>sección 3.2</a1> de la especificación para sus definiciones normativas."
+msgstr "Coloque la carga útil bajo su subdeclaración, dentro de la declaración {code0}, dentro de un <a0>conjunto de declaraciones CWT</a0>; consulte ese modelo para conocer las claves y los tipos de las declaraciones, y la <a1>sección 3.2</a1> de la especificación para sus definiciones normativas."
 
 #: input/pagecontent/qr_code_generation.md:76
 msgid "Populate the logical model for the payload type you selected. For a DVC that is <a0>DVCMinPreQual</a0>, whose vaccine details are <a1>DVCMinVaccineDetailsPreQual</a1>. Follow those definitions for the element list, cardinalities and bindings rather than any copy of them."
@@ -336,7 +336,7 @@ msgstr "Símbolo QR"
 #: input/pagecontent/qr_code_generation.md:230
 #, python-brace-format
 msgid "Read the {code0} claim, dispatch on the subclaim to the right logical model, and only then apply business rules."
-msgstr "Leer la reclamación {code0}, remitir según la subreclamación al modelo lógico correcto y solo entonces aplicar las reglas de negocio."
+msgstr "Leer la declaración {code0}, remitir según la subdeclaración al modelo lógico correcto y solo entonces aplicar las reglas de negocio."
 
 #: input/pagecontent/qr_code_generation.md:226
 #, python-brace-format
@@ -388,7 +388,7 @@ msgstr "El Programa Ampliado de Inmunización de Tailandia administra dos vacuna
 #: input/pagecontent/qr_code_generation.md:7
 #, python-brace-format
 msgid "The container, the signature and the transport encoding are the same for every GDHCN trust domain, and are specified normatively in the <a0>HCERT Specification</a0>. What changes from one use case to the next is only the payload: which logical model goes inside the {code0} claim, and under which subclaim. Everything after that choice is mechanical."
-msgstr "El contenedor, la firma y la codificación de transporte son los mismos para todos los ámbitos de confianza de la GDHCN, y se especifican de forma normativa en la <a0>especificación HCERT</a0>. Lo único que cambia de un caso de uso a otro es la carga útil: qué modelo lógico va dentro de la reclamación {code0} y bajo qué subreclamación. Todo lo que sigue a esa elección es mecánico."
+msgstr "El contenedor, la firma y la codificación de transporte son los mismos para todos los ámbitos de confianza de la GDHCN, y se especifican de forma normativa en la <a0>especificación HCERT</a0>. Lo único que cambia de un caso de uso a otro es la carga útil: qué modelo lógico va dentro de la declaración {code0} y bajo qué subdeclaración. Todo lo que sigue a esa elección es mecánico."
 
 #: input/pagecontent/qr_code_generation.md:86
 msgid "The element names are two and three characters long because every byte is paid for twice — once in the CBOR encoding and again in the QR's module count."
@@ -397,11 +397,11 @@ msgstr "Los nombres de los elementos tienen dos y tres caracteres porque cada by
 #: input/pagecontent/qr_code_generation.md:284
 #, python-brace-format
 msgid "The example is issued by GDHCN DEV participant {code0}, not by any Member State. GDHCN participant codes are ISO 3166-1 alpha-3, while the CWT {code1} claim and the X.509 country attribute take the alpha-2 form — here {code2}, matching the {code3} attribute of the Document Signing Certificate subject."
-msgstr "El ejemplo lo emite el participante DEV de la GDHCN {code0}, no ningún Estado Miembro. Los códigos de participante de la GDHCN son ISO 3166-1 alfa-3, mientras que la reclamación CWT {code1} y el atributo de país X.509 adoptan la forma alfa-2 —aquí {code2}—, que coincide con el atributo {code3} del sujeto del certificado de firma de documentos."
+msgstr "El ejemplo lo emite el participante DEV de la GDHCN {code0}, no ningún Estado Miembro. Los códigos de participante de la GDHCN son ISO 3166-1 alfa-3, mientras que la declaración CWT {code1} y el atributo de país X.509 adoptan la forma alfa-2 —aquí {code2}—, que coincide con el atributo {code3} del sujeto del certificado de firma de documentos."
 
 #: input/pagecontent/qr_code_generation.md:233
 msgid "The Extended Key Usage identifiers in <a0>Appendix A.2</a0> are inherited from the EU DCC and cover test, vaccination and recovery. They have not been applied to the payload types introduced since, and there is no mapping from the newer subclaims to a key usage, so a verifier has nothing to check them against for a DVC."
-msgstr "Los identificadores de uso extendido de claves del <a0>apéndice A.2</a0> se heredan del EU DCC y abarcan pruebas, vacunación y recuperación. No se han aplicado a los tipos de carga útil introducidos desde entonces, y no existe correspondencia entre las subreclamaciones más recientes y un uso de clave, por lo que un verificador no tiene nada con qué contrastarlos en el caso de un DVC."
+msgstr "Los identificadores de uso extendido de claves del <a0>apéndice A.2</a0> se heredan del EU DCC y abarcan pruebas, vacunación y recuperación. No se han aplicado a los tipos de carga útil introducidos desde entonces, y no existe correspondencia entre las subdeclaraciónes más recientes y un uso de clave, por lo que un verificador no tiene nada con qué contrastarlos en el caso de un DVC."
 
 #: input/pagecontent/qr_code_generation.md:165
 #, python-brace-format
@@ -427,7 +427,7 @@ msgstr "Esta página es un recorrido guiado paso a paso, dirigido a los implemen
 #: input/pagecontent/qr_code_generation.md:378
 #, python-brace-format
 msgid "To verify them, resolve that {code0} against the GDHCN trust list rather than against any copy of the certificate shipped beside the QR code. The DID trust list endpoints for the development, user-acceptance testing and production environments are listed under <a0>Trustlist Distribution Endpoints</a0>; this example is issued in DEV, so its Document Signing Certificate is on the DEV trust list. Fetching the signing certificate from the trust list is the verification path the specification defines, and the only one that tells a verifier the key is still trusted — a certificate distributed alongside the certificate it signed proves nothing about that."
-msgstr "Para verificarlos, resuelva ese {code0} en la lista de confianza de la GDHCN y no en ninguna copia del certificado distribuida junto al código QR. Los puntos finales de la lista de confianza DID para los entornos de desarrollo, pruebas de aceptación por el usuario y producción figuran en <a0>Puntos finales de distribución de la lista de confianza</a0>; este ejemplo se emite en DEV, por lo que su certificado de firma de documentos está en la lista de confianza DEV. Obtener el certificado de firma de la lista de confianza es la vía de verificación que define la especificación, y la única que indica a un verificador que la clave sigue siendo de confianza: un certificado distribuido junto al certificado que firmó no demuestra nada al respecto."
+msgstr "Para verificarlos, resuelva ese {code0} en la lista de confianza de la GDHCN y no en ninguna copia del certificado distribuida junto al código QR. Los puntos de conexión de la lista de confianza DID para los entornos de desarrollo, pruebas de aceptación por el usuario y producción figuran en <a0>Puntos de conexión de distribución de la lista de confianza</a0>; este ejemplo se emite en DEV, por lo que su certificado de firma de documentos está en la lista de confianza DEV. Obtener el certificado de firma de la lista de confianza es la vía de verificación que define la especificación, y la única que indica a un verificador que la clave sigue siendo de confianza: un certificado distribuido junto al certificado que firmó no demuestra nada al respecto."
 
 #: input/pagecontent/qr_code_generation.md:263
 #, python-brace-format
@@ -436,7 +436,7 @@ msgstr "Dos certificados. {code0} es 1..1, por lo que la visita por nacimiento d
 
 #: input/pagecontent/qr_code_generation.md:56
 msgid "Two things are worth knowing before picking a number. Subclaims 0 and above are reserved by WHO and are allocated together with a trust domain, through the GDHCN Secretariat. Subclaims that are negative integers are the development range and are free to use, so an implementation using one is a pilot or a development deployment and the number is not guaranteed to be stable."
-msgstr "Conviene saber dos cosas antes de elegir un número. Las subreclamaciones 0 y superiores están reservadas por la OMS y se asignan junto con un ámbito de confianza, a través de la Secretaría de la Red Mundial. Las subreclamaciones que son números enteros negativos constituyen el intervalo de desarrollo y pueden usarse libremente, por lo que una implementación que utilice una de ellas es un piloto o un despliegue de desarrollo, y no se garantiza que el número sea estable."
+msgstr "Conviene saber dos cosas antes de elegir un número. Las subdeclaraciónes 0 y superiores están reservadas por la OMS y se asignan junto con un ámbito de confianza, a través de la Secretaría de la Red Mundial. Las subdeclaraciónes que son números enteros negativos constituyen el intervalo de desarrollo y pueden usarse libremente, por lo que una implementación que utilice una de ellas es un piloto o un despliegue de desarrollo, y no se garantiza que el número sea estable."
 
 #: input/pagecontent/qr_code_generation.md:221
 msgid "Validate the input before trusting it. Parsing the protected header necessarily happens before signature verification, which makes it an attack surface; check types and lengths defensively. See <a0>section 6.3</a0>."
@@ -463,7 +463,7 @@ msgstr "Encapsule la carga útil CBOR en una estructura COSE de un solo firmante
 
 #: input/pagecontent/qr_code_generation.md:325
 msgid "Wrapped in the CWT claim set:"
-msgstr "Encapsulado en el conjunto de reclamaciones CWT:"
+msgstr "Encapsulado en el conjunto de declaraciones CWT:"
 
 #: input/pagecontent/qr_code_generation.md:344
 msgid "ZLIB/Deflate compressed"

@@ -112,7 +112,7 @@ msgstr "Obtener el material de claves y abrir una PR"
 #: input/business-processes/GDHCN.ONB.RegisterKeys.bpmn:108
 #. Diagram element documentation
 msgid "Ready for whitelisting, steps [43] and [67]."
-msgstr "Listo para la inclusión en la lista de permitidos (whitelisting), pasos [43] y [67]."
+msgstr "Listo para la inclusión en la lista blanca (whitelisting), pasos [43] y [67]."
 
 #: input/business-processes/GDHCN.ONB.RegisterKeys.bpmn:84
 #. Diagram label

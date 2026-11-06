@@ -277,7 +277,7 @@ msgstr "Versión de curl en Unix/Mac: recomendamos encarecidamente actualizar cu
 
 #: input/pagecontent/concepts_onboarding_checklist.md:684
 msgid "DCC for domain, DSC for group, and https://tng-dev.who.int for DEV environment endpoint."
-msgstr "DCC para el dominio, DSC para el grupo y https://tng-dev.who.int como punto final del entorno DEV."
+msgstr "DCC para el dominio, DSC para el grupo y https://tng-dev.who.int como punto de conexión del entorno DEV."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:742
 msgid "DCC: The domain name to be used. If omitted, the script will default to DCC."
@@ -643,7 +643,7 @@ msgstr "Necesario para transferencias de datos desde la línea de comandos; espe
 
 #: input/pagecontent/concepts_onboarding_checklist.md:74
 msgid "Network Access: Ensure network settings allow access to GitHub and other required external resources (e.g., API endpoints)."
-msgstr "Acceso a la red: asegúrese de que la configuración de red permita el acceso a GitHub y a otros recursos externos necesarios (p. ej., puntos finales de la API)."
+msgstr "Acceso a la red: asegúrese de que la configuración de red permita el acceso a GitHub y a otros recursos externos necesarios (p. ej., puntos de conexión de la API)."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:484
 msgid "Note :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified."
@@ -752,7 +752,7 @@ msgstr "Consulte el vídeo <a0>UP Creation</a0> como referencia"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:616
 msgid "Please ensure you replace with your actual environment's endpoint URL wherever indicated."
-msgstr "Asegúrese de sustituirla por la URL del punto final de su entorno real dondequiera que se indique."
+msgstr "Asegúrese de sustituirla por la URL del punto de conexión de su entorno real dondequiera que se indique."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:288
 msgid "Please note that you need to have  <a0>OpenSSL installed</a0>  (e.g. Win64 OpenSSL v3.3.0 Light) and added to your PATH environment variable. Also you may need allow the execution by setting an execution policy."
@@ -913,7 +913,7 @@ msgstr "El campo extendedKeyUsage es opcional; para los certificados de COVID se
 
 #: input/pagecontent/concepts_onboarding_checklist.md:606
 msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "A continuación se indican los puntos finales de la <a0>puerta de enlace a la red de confianza (Trust Network Gateway)</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación de usuario (UAT) y producción (PROD):"
+msgstr "A continuación se indican los puntos de conexión de la <a0>puerta de enlace a la red de confianza (Trust Network Gateway)</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación de usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."

@@ -228,7 +228,7 @@ msgstr "El <a0>documento</a0> contiene una descripción detallada de las tareas 
 
 #: input/pagecontent/concepts_onboarding.md:70
 msgid "The <a0>Trust Network Gateway API</a0> can be used for interaction keeping the full functionality of the EU DCC Gateway. In addition, various HL7 FHIR services are being added."
-msgstr "La <a0>API de la puerta de enlace a la red de confianza</a0> puede utilizarse para la interacción, manteniendo toda la funcionalidad de la pasarela EU DCC Gateway. Además, se están añadiendo diversos servicios HL7 FHIR."
+msgstr "La <a0>API de la puerta de enlace a la red de confianza</a0> puede utilizarse para la interacción, manteniendo toda la funcionalidad de la puerta de enlace EU DCC Gateway. Además, se están añadiendo diversos servicios HL7 FHIR."
 
 #: input/pagecontent/concepts_onboarding.md:88
 msgid "The application of the GDHCN Participant must contain at least:"

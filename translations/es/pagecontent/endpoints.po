@@ -82,7 +82,7 @@ msgstr "Integrada"
 
 #: input/pagecontent/endpoints.md:1
 msgid "Endpoints"
-msgstr "Puntos finales"
+msgstr "Puntos de conexión"
 
 #: input/pagecontent/endpoints.md:26
 #: input/pagecontent/endpoints.md:42
@@ -135,11 +135,11 @@ msgstr "Paneles de seguimiento del estado"
 
 #: input/pagecontent/endpoints.md:24
 msgid "THe following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "A continuación figuran los puntos finales de la <a0>lista de confianza DID de la GDHCN</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
+msgstr "A continuación figuran los puntos de conexión de la <a0>lista de confianza DID de la GDHCN</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/endpoints.md:40
 msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "A continuación figuran los puntos finales de la <a0>puerta de enlace a la red de confianza</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
+msgstr "A continuación figuran los puntos de conexión de la <a0>puerta de enlace a la red de confianza</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/endpoints.md:53
 msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
@@ -147,7 +147,7 @@ msgstr "Los siguientes paneles reflejan el estado en tiempo real del material de
 
 #: input/pagecontent/endpoints.md:3
 msgid "The following describes the active services and endpoints for the GDHCN Trust Network Gateway."
-msgstr "A continuación se describen los servicios y puntos finales activos de la puerta de enlace a la red de confianza (TNG) de la GDHCN."
+msgstr "A continuación se describen los servicios y puntos de conexión activos de la puerta de enlace a la red de confianza (TNG) de la GDHCN."
 
 #: input/pagecontent/endpoints.md:8
 msgid "The list of active trust domains is maintained in the <a0>GDHCN Trust Domain Value Set</a0>."
@@ -171,7 +171,7 @@ msgstr "Puerta de enlace a la red de confianza"
 
 #: input/pagecontent/endpoints.md:22
 msgid "Trustlist Distribution Endpoints"
-msgstr "Puntos finales de distribución de la lista de confianza"
+msgstr "Puntos de conexión de distribución de la lista de confianza"
 
 #: input/pagecontent/endpoints.md:30
 #: input/pagecontent/endpoints.md:31

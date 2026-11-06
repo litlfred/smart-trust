@@ -104,7 +104,7 @@ msgstr "Se corrigieron los enlaces sensibles a mayúsculas y minúsculas al mode
 
 #: input/pagecontent/changes.md:91
 msgid "CWT Payload logical model updated to allow more than one health certificate under the hcert claim, per HCERT Specification 3.2.7"
-msgstr "Se actualizó el modelo lógico de la carga útil CWT para permitir más de un certificado de salud en la reivindicación (claim) hcert, conforme a la especificación HCERT 3.2.7"
+msgstr "Se actualizó el modelo lógico de la carga útil CWT para permitir más de un certificado de salud en la declaración (claim) hcert, conforme a la especificación HCERT 3.2.7"
 
 #: input/pagecontent/changes.md:35
 msgid "DAK API Documentation Hub added"
@@ -153,11 +153,11 @@ msgstr "Se corrigieron las actualizaciones que faltaban del CodeSystem de partic
 
 #: input/pagecontent/changes.md:16
 msgid "HCert Logical Model and specification updated with subclaim details and notes"
-msgstr "Se actualizaron el modelo lógico HCert y la especificación con detalles y notas sobre las subreivindicaciones (subclaims)"
+msgstr "Se actualizaron el modelo lógico HCert y la especificación con detalles y notas sobre las subdeclaraciónes (subclaims)"
 
 #: input/pagecontent/changes.md:23
 msgid "HCert Logical Model updated with subclaim for DVC"
-msgstr "Se actualizó el modelo lógico HCert con una subreivindicación (subclaim) para el DVC"
+msgstr "Se actualizó el modelo lógico HCert con una subdeclaración (subclaim) para el DVC"
 
 #: input/pagecontent/changes.md:10
 msgid "Hcert specifications added"

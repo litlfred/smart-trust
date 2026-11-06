@@ -227,12 +227,12 @@ msgstr "Puerta de enlace a la red de confianza"
 #: input/business-processes/GDHCN.ONB.ConnectTest.bpmn:99
 #. Diagram label
 msgid "Whitelist and check the test"
-msgstr "Incluir en la lista de permitidos y comprobar la prueba"
+msgstr "Incluir en la lista blanca y comprobar la prueba"
 
 #: input/business-processes/GDHCN.ONB.ConnectTest.bpmn:121
 #. Diagram label
 msgid "Whitelist the certificates"
-msgstr "Incluir los certificados en la lista de permitidos"
+msgstr "Incluir los certificados en la lista blanca"
 
 #: input/business-processes/GDHCN.ONB.ConnectTest.bpmn:90
 #. Diagram label

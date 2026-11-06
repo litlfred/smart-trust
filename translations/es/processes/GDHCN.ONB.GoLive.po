@@ -37,7 +37,7 @@ msgstr "Conectarse y realizar la prueba de preparación en PROD"
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
 #. Diagram label
 msgid "Connect and test"
-msgstr "Conectarse y probar"
+msgstr "Conectar y probar"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
