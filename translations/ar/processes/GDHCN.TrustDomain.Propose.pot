@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GDHCN.TrustDomain.Propose\n"
-"POT-Creation-Date: 2026-11-06T09:35:48.773Z\n"
+"POT-Creation-Date: 2026-11-06T09:38:56.546Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: ar\n"

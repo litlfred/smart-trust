@@ -124,7 +124,7 @@
     {
       "id": "smart-trust-translations",
       "path": "translations/",
-      "description": "The gettext side of smart-trust's own strings, one directory per target locale (ar, es, fr, ru, zh; the source is en): `.pot` templates of the GDHCN glossary (`glossary/`, from `glossary/gdhcn.glossary.json`, written by `bun run cat glossary:pot`; a scheme's translations sit with the instance whose terms they translate), of the IG's BPMN diagrams (`processes/`, from `input/business-processes/`, written by `tools/translation/bpmn-pot.ts` as the harness's `translate-bpmn` writes them) and of the IG's narrative pages (`pagecontent/`, from `input/pagecontent/`, written by `tools/translation/pages-pot.ts` with the harness's pot-extract), and the `.po` catalogues translated from them. Agent translations are unofficial (official: false, generatedBy agent) until a person signs them off. FHIR resources are not here: they use FHIR's own designation/translation mechanism.",
+      "description": "The gettext side of smart-trust's own strings, one directory per target locale: the `glossary/` templates of the GDHCN glossary (`glossary/gdhcn.glossary.json`). A scheme's translations sit with the instance whose terms they translate. Written by `bun run cat glossary:pot`.",
       "graphTypologies": [
         "translation-sources"
       ]
