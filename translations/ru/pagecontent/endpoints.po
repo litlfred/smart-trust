@@ -160,7 +160,7 @@ msgstr "Перечень кодов назначения ключей ведёт
 
 #: input/pagecontent/endpoints.md:18
 msgid "The list of onboarded Trust Network Participants is availabe in the  <a0>GDHCN Participants Value Set</a0>."
-msgstr "Перечень подключённых Участников Сети доверия доступен в <a0>наборе значений Участников GDHCN</a0>."
+msgstr "Перечень подключённых Участников сети доверия доступен в <a0>наборе значений Участников GDHCN</a0>."
 
 #: input/pagecontent/endpoints.md:6
 msgid "Trust Domains"

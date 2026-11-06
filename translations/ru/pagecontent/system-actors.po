@@ -21,7 +21,7 @@ msgstr "Акторы"
 
 #: input/pagecontent/system-actors.md:6
 msgid "Actors produce, manage, or act on health information. Actors relevant to the SMART Trust Network are as follows."
-msgstr "Акторы создают медицинскую информацию, управляют ею или выполняют действия на её основе. Ниже перечислены акторы, относящиеся к Сети доверия SMART."
+msgstr "Акторы создают медицинскую информацию, управляют ею или выполняют действия на её основе. Ниже перечислены акторы, относящиеся к сети доверия SMART."
 
 #: input/pagecontent/system-actors.md:19
 msgid "Business Rules Library"

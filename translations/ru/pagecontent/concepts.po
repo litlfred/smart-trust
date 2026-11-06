@@ -29,7 +29,7 @@ msgstr "Подписант документов использует закры�
 
 #: input/pagecontent/concepts.md:49
 msgid "A formal application sent via a verifiable and secure channel from an Eligible GDHCN Participant to the GDHCN Secretariat to join the GDHCN Trust Network and participate within a particular Trust Domain."
-msgstr "Официальная заявка, направляемая по проверяемому и защищённому каналу Правомочным участником GDHCN в Секретариат GDHCN для присоединения к Сети доверия GDHCN и участия в определённом Домене доверия."
+msgstr "Официальная заявка, направляемая по проверяемому и защищённому каналу Правомочным участником GDHCN в Секретариат GDHCN для присоединения к сети доверия GDHCN и участия в определённом Домене доверия."
 
 #: input/pagecontent/concepts.md:19
 msgid "a fund, programme, specialized agency, or related organization within the UN system; or"
@@ -37,7 +37,7 @@ msgstr "фонд, программа, специализированное уч�
 
 #: input/pagecontent/concepts.md:12
 msgid "A GDHCN Participant is participant of the Trust Network that adheres to the Terms of Participation and manages the necessary technical infrastructure and governance processes. GDHCN Participants are responsible for making bilateral determinations related to the utilization of Trusted Services."
-msgstr "Участник GDHCN — это участник Сети доверия, который соблюдает Условия участия и управляет необходимой технической инфраструктурой и процессами управления. Участники GDHCN отвечают за принятие двусторонних решений, связанных с использованием Доверенных услуг."
+msgstr "Участник GDHCN — это участник сети доверия, который соблюдает Условия участия и управляет необходимой технической инфраструктурой и процессами управления. Участники GDHCN отвечают за принятие двусторонних решений, связанных с использованием Доверенных услуг."
 
 #: input/pagecontent/concepts.md:122
 msgid "A GDHCN Participant's Backend System for managing the local part of information. The implementation of GDHCN Participant's Backend System is not in the scope of this document. A national backend can be also understood as a trusted party on-boarded in the Trust Network Gateway (can be a script, a proxy or a web server as well)."
@@ -209,11 +209,11 @@ msgstr "Участие в GDHCN осуществляется в соответс
 
 #: input/pagecontent/concepts.md:60
 msgid "Public Health Agency"
-msgstr "Агентство общественного здравоохранения"
+msgstr "Ведомство общественного здравоохранения"
 
 #: input/pagecontent/concepts.md:21
 msgid "Public Health Agency;"
-msgstr "Агентство общественного здравоохранения;"
+msgstr "Ведомство общественного здравоохранения;"
 
 #: input/pagecontent/concepts.md:63
 msgid "Public Health Security Agency"
@@ -261,7 +261,7 @@ msgstr "В настоящее время GDHCN поддерживает два �
 
 #: input/pagecontent/concepts.md:6
 msgid "The GDHCN Trust Network is a Trust Network comprised of the GDHCN Secretariat and GDHCN Participants. The GDHCN Trust Network operationalizes Trust Domains through a Trust Network Gateway by enabling bilateral verification and utilization of Verifiable Digital Health Certificates and the utilization of Trusted Services by GDHCN Participants."
-msgstr "Сеть доверия GDHCN — это Сеть доверия, в состав которой входят Секретариат GDHCN и Участники GDHCN. Сеть доверия GDHCN обеспечивает функционирование Доменов доверия посредством Шлюза сети доверия, предоставляя Участникам GDHCN возможность двусторонней проверки и использования проверяемых цифровых сертификатов о состоянии здоровья, а также использования Доверенных услуг."
+msgstr "Сеть доверия GDHCN — это сеть доверия, в состав которой входят Секретариат GDHCN и Участники GDHCN. Сеть доверия GDHCN обеспечивает функционирование Доменов доверия посредством Шлюза сети доверия, предоставляя Участникам GDHCN возможность двусторонней проверки и использования проверяемых цифровых сертификатов о состоянии здоровья, а также использования Доверенных услуг."
 
 #: input/pagecontent/concepts.md:46
 msgid "The individual designated by a GDHCN Participant as having the primary overall responsibility for the security, technical matters and systems infrastructure of this GDHCN Participant for the applicable Trust Domain including ensuring compliance with technical specifications."
@@ -289,7 +289,7 @@ msgstr "Процесс и технические спецификации, ка�
 
 #: input/pagecontent/concepts.md:52
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "Процессы, необходимые для присоединения Правомочного участника GDHCN к Сети доверия GDHCN. По успешном завершении Процесса подключения Правомочный участник GDHCN считается Участником GDHCN. Иногда называется просто «подключением»."
+msgstr "Процессы, необходимые для присоединения Правомочного участника GDHCN к сети доверия GDHCN. По успешном завершении Процесса подключения Правомочный участник GDHCN считается Участником GDHCN. Иногда называется просто «подключением»."
 
 #: input/pagecontent/concepts.md:137
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
@@ -393,7 +393,7 @@ msgstr "Участник сети доверия (TNP)"
 
 #: input/pagecontent/concepts.md:119
 msgid "Trust Network Participant (TNP) is an acronym used to label certificates, infrastructure, or technical artifacts made available by GDHCN Participants under the GDHCN Trust Network."
-msgstr "Участник сети доверия (TNP) — это сокращение, используемое для обозначения сертификатов, инфраструктуры или технических артефактов, предоставляемых Участниками GDHCN в рамках Сети доверия GDHCN."
+msgstr "Участник сети доверия (TNP) — это сокращение, используемое для обозначения сертификатов, инфраструктуры или технических артефактов, предоставляемых Участниками GDHCN в рамках сети доверия GDHCN."
 
 #: input/pagecontent/concepts.md:139
 msgid "Trust Network Participant Verifier"

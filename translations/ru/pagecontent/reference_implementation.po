@@ -81,7 +81,7 @@ msgstr "Первоначальное подтверждение концепци
 
 #: input/pagecontent/reference_implementation.md:31
 msgid "The role of the Trust Network Gateway is to enable the creation of trust networks by additional organizations beyond the EU Member States participating in the EUDCCG, expanding the network of operators and trusted parties to form a federated and documented network of trust gateways, supporting all major health credential certificates."
-msgstr "Роль Шлюза сети доверия заключается в том, чтобы обеспечить создание сетей доверия дополнительными организациями помимо государств — членов ЕС (EU), участвующих в EUDCCG, расширяя сеть операторов и доверенных сторон для формирования федеративной и документированной сети шлюзов доверия, поддерживающей все основные медицинские сертификаты и учётные документы."
+msgstr "Роль Шлюза сети доверия заключается в том, чтобы обеспечить создание сетей доверия дополнительными организациями помимо государств — членов ЕС (EU), участвующих в EUDCCG, расширяя сеть операторов и доверенных сторон для формирования федеративной и документированной сети шлюзов доверия, поддерживающей все основные медицинские сертификаты и удостоверения."
 
 #: input/pagecontent/reference_implementation.md:23
 msgid "The Trust Network Gateway is an open source implementation of a centralized trust network solution available to potential implementers intending to create a local or regional network. This implementation is derived from the <a0>European Union Digital COVID Certificate Gateway (EUDCCG)</a0>, which has been deployed in an operational setting within the European Union."

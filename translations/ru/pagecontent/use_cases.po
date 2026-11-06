@@ -85,8 +85,8 @@ msgstr "Варианты использования"
 
 #: input/pagecontent/use_cases.md:28
 msgid "Validate one or more verified COVID credential against a dynamic business rule.​"
-msgstr "Валидация одного или нескольких проверенных учётных документов COVID на соответствие динамическому бизнес-правилу."
+msgstr "Валидация одного или нескольких проверенных удостоверений COVID на соответствие динамическому бизнес-правилу."
 
 #: input/pagecontent/use_cases.md:16
 msgid "Verifications can cryptographically verify health credentials using keys retrieved from the Federated PKD."
-msgstr "Приложения проверки могут криптографически проверять медицинские учётные документы с помощью ключей, полученных из федеративного PKD."
+msgstr "Приложения проверки могут криптографически проверять медицинские удостоверения с помощью ключей, полученных из федеративного PKD."

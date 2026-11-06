@@ -18,12 +18,12 @@ msgstr ""
 #: glossary/gdhcn.glossary.json:155
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/verifiable-digital-health-certificate
 msgid "A digital representation of a data set comprising a certificate or document, designed for a set of specific clinical or public health use cases which is defined using open, interoperable digital health standards; that contains within, or is associated to, a digital signature which can be verified by the public key of a public-private encryption key pair, and which is issued by a GDHCN Participant."
-msgstr "Цифровое представление набора данных, составляющих сертификат или документ, предназначенное для ряда конкретных сценариев использования в клинической практике или в области общественного здравоохранения и определённое с использованием открытых, совместимых стандартов цифрового здравоохранения; содержащее цифровую подпись или связанное с цифровой подписью, которая может быть проверена с помощью открытого ключа пары открытого и закрытого ключей шифрования, и выданное Участником GDHCN."
+msgstr "Цифровое представление набора данных, составляющих сертификат или документ, предназначенное для ряда конкретных вариантов использования в клинической практике или в области общественного здравоохранения и определённое с использованием открытых, совместимых стандартов цифрового здравоохранения; содержащее цифровую подпись или связанное с цифровой подписью, которая может быть проверена с помощью открытого ключа пары открытого и закрытого ключей шифрования, и выданное Участником GDHCN."
 
 #: glossary/gdhcn.glossary.json:83
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/letter-of-application
 msgid "A formal application sent via a verifiable and secure channel from an Eligible GDHCN Participant to the GDHCN Secretariat to join the GDHCN Trust Network and participate in a particular Trust Domain."
-msgstr "Официальная заявка, направляемая Правомочным участником GDHCN Секретариату GDHCN по проверяемому и защищённому каналу, о присоединении к Сети доверия GDHCN и об участии в определённом Домене доверия."
+msgstr "Официальная заявка, направляемая Правомочным участником GDHCN Секретариату GDHCN по проверяемому и защищённому каналу, о присоединении к сети доверия GDHCN и об участии в определённом Домене доверия."
 
 #: glossary/gdhcn.glossary.json:148
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trusted-service
@@ -48,7 +48,7 @@ msgstr "Правомочным участником GDHCN является од�
 #: glossary/gdhcn.glossary.json:19
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/certificate-authority
 msgid "An entity that stores, signs, and issues cryptographic certificates and certifies the ownership of a public key by the named subject of the certificate. This allows GDHCN Trust Network Gateway participants to rely on signatures or assertions made in relation to the private key corresponding to the certified public key. Certificate Authorities may be operated by different types of entities, including, but not limited to, a private-sector Certificate Authority, a ministry or agency responsible for ICT/eGovernment services, a Ministry of Health, or another competent authority within the jurisdiction. It is the responsibility of each GDHCN Participant to determine the appropriate arrangement for its Certificate Authority, in accordance with applicable laws and policies within its jurisdiction, to guarantee security and proper data management. Each GDHCN Participant must identify, establish, or liaise with the relevant Certificate Authority, as applicable and impose on the latter all requirements of this document."
-msgstr "Организация, которая хранит, подписывает и выдаёт криптографические сертификаты и удостоверяет принадлежность открытого ключа субъекту, указанному в сертификате. Это позволяет участникам Шлюза Сети доверия GDHCN полагаться на подписи или утверждения, сделанные с использованием закрытого ключа, соответствующего удостоверенному открытому ключу. Функции Удостоверяющих центров могут выполнять организации различных типов, включая, помимо прочего, Удостоверяющий центр частного сектора, министерство или ведомство, отвечающее за услуги в сфере ИКТ/электронного правительства, министерство здравоохранения или иной компетентный орган в пределах юрисдикции. Каждый Участник GDHCN несёт ответственность за определение надлежащего порядка работы своего Удостоверяющего центра в соответствии с применимыми законами и политиками своей юрисдикции в целях обеспечения безопасности и надлежащего управления данными. Каждый Участник GDHCN должен, в зависимости от обстоятельств, определить или создать соответствующий Удостоверяющий центр либо взаимодействовать с ним и возложить на него все требования настоящего документа."
+msgstr "Организация, которая хранит, подписывает и выдаёт криптографические сертификаты и удостоверяет принадлежность открытого ключа субъекту, указанному в сертификате. Это позволяет участникам Шлюза сети доверия GDHCN полагаться на подписи или утверждения, сделанные с использованием закрытого ключа, соответствующего удостоверенному открытому ключу. Функции Удостоверяющих центров могут выполнять организации различных типов, включая, помимо прочего, Удостоверяющий центр частного сектора, министерство или ведомство, отвечающее за услуги в сфере ИКТ/электронного правительства, министерство здравоохранения или иной компетентный орган в пределах юрисдикции. Каждый Участник GDHCN несёт ответственность за определение надлежащего порядка работы своего Удостоверяющего центра в соответствии с применимыми законами и политиками своей юрисдикции в целях обеспечения безопасности и надлежащего управления данными. Каждый Участник GDHCN должен, в зависимости от обстоятельств, определить или создать соответствующий Удостоверяющий центр либо взаимодействовать с ним и возложить на него все требования настоящего документа."
 
 #: glossary/gdhcn.glossary.json:55
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/health-professions-education-accreditation-agency
@@ -83,7 +83,7 @@ msgstr "Удостоверяющий центр"
 #: glossary/gdhcn.glossary.json:127
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trust-domain
 msgid "Consists of: • Defined use cases and business processes related to the utilization of Verifiable Digital Health Certificates; • the open, interoperable technical specifications that identify or define the applicable Trusted Services and Verifiable Digital Health Certificates; and • a set of policy and regulatory standards describing expected behavior of GDHCN Participants in relation to operation of the Trusted Services and utilization of Verifiable Digital Health Certificates (e.g. data minimization, privacy, scope of use)."
-msgstr "Включает: • определённые сценарии использования и бизнес-процессы, связанные с использованием Проверяемых цифровых сертификатов о состоянии здоровья; • открытые, совместимые технические спецификации, которые определяют или устанавливают применимые Доверенные услуги и Проверяемые цифровые сертификаты о состоянии здоровья; и • набор политических и нормативных стандартов, описывающих ожидаемое поведение Участников GDHCN в связи с функционированием Доверенных услуг и использованием Проверяемых цифровых сертификатов о состоянии здоровья (например, минимизация данных, конфиденциальность, сфера использования)."
+msgstr "Включает: • определённые варианты использования и бизнес-процессы, связанные с использованием Проверяемых цифровых сертификатов о состоянии здоровья; • открытые, совместимые технические спецификации, которые определяют или устанавливают применимые Доверенные услуги и Проверяемые цифровые сертификаты о состоянии здоровья; и • набор политических и нормативных стандартов, описывающих ожидаемое поведение Участников GDHCN в связи с функционированием Доверенных услуг и использованием Проверяемых цифровых сертификатов о состоянии здоровья (например, минимизация данных, конфиденциальность, сфера использования)."
 
 #: glossary/gdhcn.glossary.json:33
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/eligible-gdhcn-participant
@@ -158,7 +158,7 @@ msgstr "Технический представитель"
 #: glossary/gdhcn.glossary.json:48
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/gdhcn-trust-network
 msgid "The GDHCN Trust Network is a Trust Network comprised of the GDHCN Secretariat and GDHCN Participants. The GDHCN Trust Network operationalizes Trust Domains through a Trust Network Gateway by enabling bilateral verification and utilization of Verifiable Digital Health Certificates and the utilization of Trusted Services by GDHCN Participants."
-msgstr "Сеть доверия GDHCN — это Сеть доверия, в состав которой входят Секретариат GDHCN и Участники GDHCN. Сеть доверия GDHCN обеспечивает функционирование Доменов доверия посредством Шлюза Сети доверия, предоставляя Участникам GDHCN возможность двусторонней проверки и использования Проверяемых цифровых сертификатов о состоянии здоровья, а также использования Доверенных услуг."
+msgstr "Сеть доверия GDHCN — это сеть доверия, в состав которой входят Секретариат GDHCN и Участники GDHCN. Сеть доверия GDHCN обеспечивает функционирование Доменов доверия посредством Шлюза сети доверия, предоставляя Участникам GDHCN возможность двусторонней проверки и использования Проверяемых цифровых сертификатов о состоянии здоровья, а также использования Доверенных услуг."
 
 #: glossary/gdhcn.glossary.json:120
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/technical-representative
@@ -173,12 +173,12 @@ msgstr "Физическое лицо, назначенное Участнико
 #: glossary/gdhcn.glossary.json:12
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/business-owner-representative
 msgid "The individual identified by a GDHCN Participant as having the primary business and programmatic responsibility for the GDHCN Participant for the implementation of the use cases covered by a Trust Domain."
-msgstr "Физическое лицо, определённое Участником GDHCN в качестве лица, несущего от имени Участника GDHCN основную деловую и программную ответственность за реализацию сценариев использования, охватываемых Доменом доверия."
+msgstr "Физическое лицо, определённое Участником GDHCN в качестве лица, несущего от имени Участника GDHCN основную деловую и программную ответственность за реализацию вариантов использования, охватываемых Доменом доверия."
 
 #: glossary/gdhcn.glossary.json:69
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/key-master-representative
 msgid "The individual identified by a GDHCN Participant as having the primary responsibility for the management of the Public Key Infrastructure, including the generation of any needed public-private key pairs, and the configuration and management of the connections between the GDHCN Participant’s Public Key Infrastructure and the GDHCN Trust Network Gateway."
-msgstr "Физическое лицо, определённое Участником GDHCN в качестве лица, несущего основную ответственность за управление Инфраструктурой открытых ключей, включая генерацию необходимых пар открытого и закрытого ключей, а также настройку соединений между Инфраструктурой открытых ключей Участника GDHCN и Шлюзом Сети доверия GDHCN и управление ими."
+msgstr "Физическое лицо, определённое Участником GDHCN в качестве лица, несущего основную ответственность за управление Инфраструктурой открытых ключей, включая генерацию необходимых пар открытого и закрытого ключей, а также настройку соединений между Инфраструктурой открытых ключей Участника GDHCN и Шлюзом сети доверия GDHCN и управление ими."
 
 #: glossary/gdhcn.glossary.json:141
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trust-network-gateway
@@ -188,12 +188,12 @@ msgstr "Программное обеспечение с открытым исх
 #: glossary/gdhcn.glossary.json:26
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/encryption-key-certificate-governance
 msgid "The process and technical specifications regarding the management and use of encryption keys for Verifiable Digital Health Certificates, Public Key Infrastructure, and for securing connections with Trusted Services and the Trust Network Gateway."
-msgstr "Процесс и технические спецификации, касающиеся управления ключами шифрования и их использования для Проверяемых цифровых сертификатов о состоянии здоровья, Инфраструктуры открытых ключей, а также для защиты соединений с Доверенными услугами и Шлюзом Сети доверия."
+msgstr "Процесс и технические спецификации, касающиеся управления ключами шифрования и их использования для Проверяемых цифровых сертификатов о состоянии здоровья, Инфраструктуры открытых ключей, а также для защиты соединений с Доверенными услугами и Шлюзом сети доверия."
 
 #: glossary/gdhcn.glossary.json:90
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "Процессы, необходимые для присоединения Правомочного участника GDHCN к Сети доверия GDHCN. По успешном завершении Процесса подключения Правомочный участник GDHCN считается Участником GDHCN. Иногда именуется просто «Подключение»."
+msgstr "Процессы, необходимые для присоединения Правомочного участника GDHCN к сети доверия GDHCN. По успешном завершении Процесса подключения Правомочный участник GDHCN считается Участником GDHCN. Иногда именуется просто «Подключение»."
 
 #: glossary/gdhcn.glossary.json:41
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/gdhcn-secretariat
@@ -213,7 +213,7 @@ msgstr "Сеть доверия"
 #: glossary/gdhcn.glossary.json:141
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trust-network-gateway
 msgid "Trust Network Gateway"
-msgstr "Шлюз Сети доверия"
+msgstr "Шлюз сети доверия"
 
 #: glossary/gdhcn.glossary.json:148
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trusted-service

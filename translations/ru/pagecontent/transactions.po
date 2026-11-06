@@ -22,7 +22,7 @@ msgstr "<a0>Децентрализованные идентификаторы</a
 
 #: input/pagecontent/transactions.md:49
 msgid "A Trust Network Partcipiant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
-msgstr "Участник Сети доверия публикует ключи в Шлюзе сети доверия для использования приложениями проверки. Ключи могут быть закодированы для различных целей, в том числе в соответствии с <a0>управлением сертификатами</a0> согласно их <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
+msgstr "Участник сети доверия публикует ключи в Шлюзе сети доверия для использования приложениями проверки. Ключи могут быть закодированы для различных целей, в том числе в соответствии с <a0>управлением сертификатами</a0> согласно их <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
 
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"
@@ -153,7 +153,7 @@ msgstr "Подключение федеративного PKD путём пол�
 #: input/pagecontent/transactions.md:63
 #: input/pagecontent/transactions.md:87
 msgid "Once a Verification Application has onboarded to the Trust Network it may retrieve verification keys.   The retrieved list of verificaiton keys may be used for the following busines processes:"
-msgstr "После подключения к Сети доверия приложение проверки может получать ключи проверки. Полученный список ключей проверки может использоваться в следующих бизнес-процессах:"
+msgstr "После подключения к сети доверия приложение проверки может получать ключи проверки. Полученный список ключей проверки может использоваться в следующих бизнес-процессах:"
 
 #: input/pagecontent/transactions.md:123
 #: input/pagecontent/transactions.md:141
@@ -266,7 +266,7 @@ msgstr "отсутствие сертификата в доступных спи
 
 #: input/pagecontent/transactions.md:39
 msgid "The claim payload of a <a0>HCERT</a0> has been generated and is ready to be signed by an Issuer acting on behalf of a Trust Network Participant."
-msgstr "Полезная нагрузка утверждения <a0>HCERT</a0> сформирована и готова к подписанию эмитентом, действующим от имени Участника Сети доверия."
+msgstr "Полезная нагрузка утверждения <a0>HCERT</a0> сформирована и готова к подписанию эмитентом, действующим от имени Участника сети доверия."
 
 #: input/pagecontent/transactions.md:69
 #: input/pagecontent/transactions.md:93
@@ -304,11 +304,11 @@ msgstr "Результатом должен быть действительны�
 
 #: input/pagecontent/transactions.md:7
 msgid "The Trust Anchor will validate the submitted key material and distribute it to other Trust Network Participants"
-msgstr "Якорь доверия проверяет представленные ключевые материалы и распространяет их среди других Участников Сети доверия"
+msgstr "Якорь доверия проверяет представленные ключевые материалы и распространяет их среди других Участников сети доверия"
 
 #: input/pagecontent/transactions.md:3
 msgid "The Trust Network Participant, or one of its authorized Issuers, generates a new public-private key pair for use for document signing."
-msgstr "Участник Сети доверия или один из уполномоченных им эмитентов генерирует новую пару открытого и закрытого ключей для подписания документов."
+msgstr "Участник сети доверия или один из уполномоченных им эмитентов генерирует новую пару открытого и закрытого ключей для подписания документов."
 
 #: input/pagecontent/transactions.md:2
 #: input/pagecontent/transactions.md:10

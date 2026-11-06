@@ -257,7 +257,7 @@ msgstr "необходимую информацию для подключени�
 
 #: input/pagecontent/concepts_onboarding.md:127
 msgid "The organizational identity and contact will be established in an offline process by WHO through it's Member State country offices with appropriate contacts at ministries of health or appropriate public health agency."
-msgstr "Организационная идентичность и контактные данные устанавливаются ВОЗ в автономном (офлайн) процессе через страновые бюро ВОЗ в государствах — членах ВОЗ с соответствующими контактными лицами в министерствах здравоохранения или в соответствующем Агентстве общественного здравоохранения."
+msgstr "Организационная идентичность и контактные данные устанавливаются ВОЗ в автономном (офлайн) процессе через страновые бюро ВОЗ в государствах — членах ВОЗ с соответствующими контактными лицами в министерствах здравоохранения или в соответствующем Ведомстве общественного здравоохранения."
 
 #: input/pagecontent/concepts_onboarding.md:72
 msgid "The participant needs to [communicate the results] of their tests to us, a quality check about the communicated results will be carried out, so that we can check for any issues or approve their readiness for production rollout."
