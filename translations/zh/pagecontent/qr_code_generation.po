@@ -415,7 +415,7 @@ msgstr "同样的两份证书，在你的浏览器中依据 DEV 信任列表中 
 
 #: input/pagecontent/qr_code_generation.md:348
 msgid "The signature and its headers account for 85 of the 307 bytes — on payloads this small, the cryptography costs more than the clinical data. This is why the minimal models use two-character element names, and why a payload much larger than this does not belong in a QR code at all."
-msgstr "在 307 字节中，签名及其头部占 85 字节——对于如此小的载荷，密码学部分的开销超过了临床数据。这就是最小模型使用两字符元素名称的原因，也是远大于此的载荷根本不适合放入 QR 码的原因。"
+msgstr "在 307 字节中，签名及其头部占 85 字节——对于如此小的载荷，密码学部分的开销超过了临床数据。这就是最小模型使用两字符元素名称的原因，也是远大于此的载荷根本不应放入 QR 码的原因。"
 
 #: input/pagecontent/qr_code_generation.md:257
 msgid "This drives the design decisions directly:"

@@ -632,7 +632,7 @@ msgstr "上传：1-2 年"
 
 #: input/pagecontent/concepts_certificate_governance.md:51
 msgid "Uploaded data packages are provided by the TNG “as is”, meaning that the TNG does not add or delete DSCs from the packages it receives. The Backend systems of the GDHCN Participants shall be enabled to verify the end-to-end integrity and authenticity of the uploaded data (see Section \"Integrity and authenticity of uploaded data\")."
-msgstr "TNG “按原样”提供上传的数据包，即 TNG 不会在其收到的数据包中添加或删除 DSC。GDHCN 参与方的后端系统应当能够验证上传数据的端到端完整性和真实性（参见“上传数据的完整性和真实性”一节）。"
+msgstr "TNG “按原样”提供上传的数据包，即 TNG 不会在其收到的数据包中添加或删除 DSC。GDHCN 参与方的后端系统须能够验证上传数据的端到端完整性和真实性（参见“上传数据的完整性和真实性”一节）。"
 
 #: input/pagecontent/concepts_certificate_governance.md:117
 msgid "Validity periods"

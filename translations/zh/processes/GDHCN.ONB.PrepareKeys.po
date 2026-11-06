@@ -28,7 +28,7 @@ msgstr "接受存储库邀请"
 #: input/business-processes/GDHCN.ONB.PrepareKeys.bpmn:71
 #. Diagram label
 msgid "Commit the public keys and sign a tag"
-msgstr "提交公钥并签署标签"
+msgstr "提交（commit）公钥并签署标签（tag）"
 
 #: input/business-processes/GDHCN.ONB.PrepareKeys.bpmn:52
 #. Diagram label

@@ -433,7 +433,7 @@ msgstr "在组合来源交换用例中，网关将从多个网关下载数据并
 
 #: input/pagecontent/trust_network_gateway_architecture.md:326
 msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
-msgstr "在 TNG[^1] 架构的上一版本中，对可信签发方和可信证书进行了更改，以允许在信任验证中使用不同类型的技术。这可以是 X509，也可以是符合 DID 核心规范 [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core) 的 DIDs。在规范和对齐的最近几轮迭代中，有一些关键点必须在网关中额外予以支持："
+msgstr "在 TNG[^1] 架构的最新版本中，对可信签发方和可信证书进行了更改，以允许在信任验证中使用不同类型的技术。这可以是 X509，也可以是符合 DID 核心规范 [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core) 的 DIDs。在规范和对齐的最近几轮迭代中，曾有一些关键点必须在网关中额外予以支持："
 
 #: input/pagecontent/trust_network_gateway_architecture.md:52
 msgid "In the peer-to-peer exchange use case, two or more gateways are able to exchange their data in a bi-directional manner. The source and the target gateway enable each other to download the data. All exchanged data will be appended to the existing data within the gateway. This can include the data of third-party gateways, if permitted by the data exchange agreement between two gateways."
@@ -847,7 +847,7 @@ msgstr "使用 OID 可以在验证过程中限制文档签名者证书的范围�
 
 #: input/pagecontent/trust_network_gateway_architecture.md:271
 msgid "The ValueSet and Business Rules endpoints must be configurable by configuration of profiles for enabling/disabling."
-msgstr "ValueSet 和业务规则端点必须可通过配置文件进行配置，以启用/停用。"
+msgstr "ValueSet 和业务规则端点必须可通过配置 profile 来启用/停用。"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:350
 msgid "The WHO Global Digital Health Certification Network Secretariat is responsible to manage the <a0>onboarding</a0> application of eligible Trust Network Participants to connect as a trusted party to the trust network."
@@ -1067,7 +1067,7 @@ msgstr "白盒视图"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:330
 msgid "WHO aligned onboarding process for eligible Trust Network Participants"
-msgstr "世卫组织（WHO）为合格信任网络参与方制定的一致入网流程"
+msgstr "与世卫组织（WHO）保持一致的、面向合格信任网络参与方的入网流程"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:324
 msgid "WHO Trust Network Gateway Modifications"
