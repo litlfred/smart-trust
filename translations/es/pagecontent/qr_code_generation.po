@@ -152,7 +152,7 @@ msgstr "Una familia de la República Democrática Popular Lao está de visita en
 #: input/pagecontent/qr_code_generation.md:48
 #, python-brace-format
 msgid "A payload is identified by a subclaim inside the {code0} claim ({code1}). The subclaims, and the logical model each one carries, are enumerated in the <a0>HCert logical model</a0>; section <a1>3.2.7.1</a1> of the HCERT Specification is authoritative for which are assigned. The registered trust domains are listed in the <a2>GDHCN Trust Domain value set</a2> and described under <a3>Trust Domains</a3>."
-msgstr "Una carga útil se identifica mediante una subdeclaración dentro de la declaración {code0} ({code1}). Las subdeclaraciónes, y el modelo lógico que lleva cada una, se enumeran en el <a0>modelo lógico HCert</a0>; la sección <a1>3.2.7.1</a1> de la especificación HCERT es la referencia autorizada sobre cuáles están asignadas. Los ámbitos de confianza registrados se enumeran en el <a2>conjunto de valores de ámbitos de confianza de la GDHCN</a2> y se describen en <a3>Ámbitos de confianza</a3>."
+msgstr "Una carga útil se identifica mediante una subdeclaración dentro de la declaración {code0} ({code1}). Las subdeclaraciones, y el modelo lógico que lleva cada una, se enumeran en el <a0>modelo lógico HCert</a0>; la sección <a1>3.2.7.1</a1> de la especificación HCERT es la referencia autorizada sobre cuáles están asignadas. Los ámbitos de confianza registrados se enumeran en el <a2>conjunto de valores de ámbitos de confianza de la GDHCN</a2> y se describen en <a3>Ámbitos de confianza</a3>."
 
 #: input/pagecontent/qr_code_generation.md:205
 #, python-brace-format
@@ -401,7 +401,7 @@ msgstr "El ejemplo lo emite el participante DEV de la GDHCN {code0}, no ningún 
 
 #: input/pagecontent/qr_code_generation.md:233
 msgid "The Extended Key Usage identifiers in <a0>Appendix A.2</a0> are inherited from the EU DCC and cover test, vaccination and recovery. They have not been applied to the payload types introduced since, and there is no mapping from the newer subclaims to a key usage, so a verifier has nothing to check them against for a DVC."
-msgstr "Los identificadores de uso extendido de claves del <a0>apéndice A.2</a0> se heredan del EU DCC y abarcan pruebas, vacunación y recuperación. No se han aplicado a los tipos de carga útil introducidos desde entonces, y no existe correspondencia entre las subdeclaraciónes más recientes y un uso de clave, por lo que un verificador no tiene nada con qué contrastarlos en el caso de un DVC."
+msgstr "Los identificadores de uso extendido de claves del <a0>apéndice A.2</a0> se heredan del EU DCC y abarcan pruebas, vacunación y recuperación. No se han aplicado a los tipos de carga útil introducidos desde entonces, y no existe correspondencia entre las subdeclaraciones más recientes y un uso de clave, por lo que un verificador no tiene nada con qué contrastarlos en el caso de un DVC."
 
 #: input/pagecontent/qr_code_generation.md:165
 #, python-brace-format
@@ -436,7 +436,7 @@ msgstr "Dos certificados. {code0} es 1..1, por lo que la visita por nacimiento d
 
 #: input/pagecontent/qr_code_generation.md:56
 msgid "Two things are worth knowing before picking a number. Subclaims 0 and above are reserved by WHO and are allocated together with a trust domain, through the GDHCN Secretariat. Subclaims that are negative integers are the development range and are free to use, so an implementation using one is a pilot or a development deployment and the number is not guaranteed to be stable."
-msgstr "Conviene saber dos cosas antes de elegir un número. Las subdeclaraciónes 0 y superiores están reservadas por la OMS y se asignan junto con un ámbito de confianza, a través de la Secretaría de la Red Mundial. Las subdeclaraciónes que son números enteros negativos constituyen el intervalo de desarrollo y pueden usarse libremente, por lo que una implementación que utilice una de ellas es un piloto o un despliegue de desarrollo, y no se garantiza que el número sea estable."
+msgstr "Conviene saber dos cosas antes de elegir un número. Las subdeclaraciones 0 y superiores están reservadas por la OMS y se asignan junto con un ámbito de confianza, a través de la Secretaría de la Red Mundial. Las subdeclaraciones que son números enteros negativos constituyen el intervalo de desarrollo y pueden usarse libremente, por lo que una implementación que utilice una de ellas es un piloto o un despliegue de desarrollo, y no se garantiza que el número sea estable."
 
 #: input/pagecontent/qr_code_generation.md:221
 msgid "Validate the input before trusting it. Parsing the protected header necessarily happens before signature verification, which makes it an attack surface; check types and lengths defensively. See <a0>section 6.3</a0>."

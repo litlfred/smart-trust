@@ -153,7 +153,7 @@ msgstr "Se corrigieron las actualizaciones que faltaban del CodeSystem de partic
 
 #: input/pagecontent/changes.md:16
 msgid "HCert Logical Model and specification updated with subclaim details and notes"
-msgstr "Se actualizaron el modelo lógico HCert y la especificación con detalles y notas sobre las subdeclaraciónes (subclaims)"
+msgstr "Se actualizaron el modelo lógico HCert y la especificación con detalles y notas sobre las subdeclaraciones (subclaims)"
 
 #: input/pagecontent/changes.md:23
 msgid "HCert Logical Model updated with subclaim for DVC"
