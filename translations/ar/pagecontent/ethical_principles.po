@@ -5,6 +5,15 @@
 # adjudicated it; official means human sign-off (#206). Acronyms, codes,
 # placeholders, numbers and URLs are kept as written; persona names are
 # fictional and kept as written. Modern Standard Arabic, right-to-left.
+# RFC 2119 keywords are kept beside their Arabic: يجب (MUST).
+#
+# Untainted round trip, 2026-11-06: five back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids, reviewing every
+# line whose negation, modal, quantifier, number or length moved. Drifts
+# found and fixed: lowercase should/shall strength (4), an added "only", a
+# distorted comparative, "verifiable" vs "verified", DID "resolve". No other
+# claim, quantifier, negation or named entity was found moved.
 #
 msgid ""
 msgstr ""
@@ -21,7 +30,7 @@ msgstr ""
 
 #: input/pagecontent/ethical_principles.md:26
 msgid "→ A PHR may increase digital exclusion if its application and use and requires that individuals have access to a digital infrastructure or if that digital infrastructure is too burdensome for all Member States to deploy."
-msgstr "→ قد يزيد السجل الصحي الشخصي (PHR) من الإقصاء الرقمي إذا كان تطبيقه واستخدامه يتطلبان أن تتوفر للأفراد إمكانية الوصول إلى بنية تحتية رقمية، أو إذا كانت تلك البنية التحتية الرقمية مرهقة أكثر مما ينبغي بحيث يتعذر على جميع الدول الأعضاء نشرها."
+msgstr "→ قد يزيد السجل الصحي الشخصي (PHR) من الإقصاء الرقمي إذا كان تطبيقه واستخدامه يتطلبان أن تتوفر للأفراد إمكانية الوصول إلى بنية تحتية رقمية، أو إذا كانت تلك البنية التحتية الرقمية أشدّ إرهاقًا من أن تتمكّن جميع الدول الأعضاء من نشرها."
 
 #: input/pagecontent/ethical_principles.md:40
 msgid "→ ACCOUNTABILITY: providing a clear framework for who is responsible for what, and how responsibilities will be regulated and enforced."

@@ -5,6 +5,15 @@
 # adjudicated it; official means human sign-off (#206). Acronyms, codes,
 # placeholders, numbers and URLs are kept as written; persona names are
 # fictional and kept as written. Modern Standard Arabic, right-to-left.
+# RFC 2119 keywords are kept beside their Arabic: يجب (MUST).
+#
+# Untainted round trip, 2026-11-06: five back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids, reviewing every
+# line whose negation, modal, quantifier, number or length moved. Drifts
+# found and fixed: lowercase should/shall strength (4), an added "only", a
+# distorted comparative, "verifiable" vs "verified", DID "resolve". No other
+# claim, quantifier, negation or named entity was found moved.
 #
 msgid ""
 msgstr ""
@@ -803,7 +812,7 @@ msgstr "صُمِّم مُنسِّق الاتحاد بوصفه مكوّنًا ف�
 
 #: input/pagecontent/trust_network_gateway_architecture.md:67
 msgid "The gateway content can be used to establish trust between attendees which are just loosely coupled, for example Verifier Devices which are known by Trusted Party A, but not directly known by Trusted Party B."
-msgstr "يمكن استخدام محتوى بوابة الربط لإرساء الثقة بين المشاركين المرتبطين ارتباطًا فضفاضًا فحسب، مثل أجهزة الجهات المُتحقِّقة المعروفة لدى الطرف الموثوق A، ولكنها غير معروفة مباشرةً لدى الطرف الموثوق B."
+msgstr "يمكن استخدام محتوى بوابة الربط لإرساء الثقة بين مشاركين لا يربطهم سوى ارتباط فضفاض، مثل أجهزة الجهات المُتحقِّقة المعروفة لدى الطرف الموثوق A، ولكنها غير معروفة مباشرةً لدى الطرف الموثوق B."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:268
 msgid "The routes for POST, PUT and DELETE will be modified by profiles to make them configurable. This allows it to switch off the data upload, which is especially for the primary-secondary/combined sources use case. Within this setup, no TNPUP certificates need to be onboarded."

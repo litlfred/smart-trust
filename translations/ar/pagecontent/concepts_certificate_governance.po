@@ -5,6 +5,15 @@
 # adjudicated it; official means human sign-off (#206). Acronyms, codes,
 # placeholders, numbers and URLs are kept as written; persona names are
 # fictional and kept as written. Modern Standard Arabic, right-to-left.
+# RFC 2119 keywords are kept beside their Arabic: يجب (MUST).
+#
+# Untainted round trip, 2026-11-06: five back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids, reviewing every
+# line whose negation, modal, quantifier, number or length moved. Drifts
+# found and fixed: lowercase should/shall strength (4), an added "only", a
+# distorted comparative, "verifiable" vs "verified", DID "resolve". No other
+# claim, quantifier, negation or named entity was found moved.
 #
 msgid ""
 msgstr ""
@@ -126,7 +135,7 @@ msgstr "السياق"
 
 #: input/pagecontent/concepts_certificate_governance.md:164
 msgid "Cryptographic algorithms and TLS cipher suites shall be chosen based on the current recommendation from the German Federal Office for Information Security (BSI) or SOG-IS. These recommendations and the recommendations of other institutions and standardization organization are quite similar. The recommendations can be found in the technical guidelines TR 02102-1 and TR 02102-2 (<a0>source</a0>) or SOG-IS Agreed Cryptographic Mechanisms (<a1>source</a1>)."
-msgstr "ينبغي اختيار خوارزميات التشفير ومجموعات تشفير TLS بناءً على التوصيات الحالية الصادرة عن المكتب الاتحادي الألماني لأمن المعلومات (BSI) أو عن SOG-IS. وتتشابه هذه التوصيات إلى حد كبير مع توصيات المؤسسات ومنظمات التوحيد القياسي الأخرى. ويمكن الاطلاع على التوصيات في المبادئ التوجيهية التقنية TR 02102-1 وTR 02102-2 (<a0>المصدر</a0>) أو في آليات التشفير المتفق عليها لدى SOG-IS (<a1>المصدر</a1>)."
+msgstr "يجب اختيار خوارزميات التشفير ومجموعات تشفير TLS بناءً على التوصيات الحالية الصادرة عن المكتب الاتحادي الألماني لأمن المعلومات (BSI) أو عن SOG-IS. وتتشابه هذه التوصيات إلى حد كبير مع توصيات المؤسسات ومنظمات التوحيد القياسي الأخرى. ويمكن الاطلاع على التوصيات في المبادئ التوجيهية التقنية TR 02102-1 وTR 02102-2 (<a0>المصدر</a0>) أو في آليات التشفير المتفق عليها لدى SOG-IS (<a1>المصدر</a1>)."
 
 #: input/pagecontent/concepts_certificate_governance.md:163
 msgid "Cryptographic requirements"

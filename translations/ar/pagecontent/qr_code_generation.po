@@ -5,6 +5,15 @@
 # adjudicated it; official means human sign-off (#206). Acronyms, codes,
 # placeholders, numbers and URLs are kept as written; persona names are
 # fictional and kept as written. Modern Standard Arabic, right-to-left.
+# RFC 2119 keywords are kept beside their Arabic: يجب (MUST).
+#
+# Untainted round trip, 2026-11-06: five back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids, reviewing every
+# line whose negation, modal, quantifier, number or length moved. Drifts
+# found and fixed: lowercase should/shall strength (4), an added "only", a
+# distorted comparative, "verifiable" vs "verified", DID "resolve". No other
+# claim, quantifier, negation or named entity was found moved.
 #
 msgid ""
 msgstr ""
@@ -216,7 +225,7 @@ msgstr "مجموعة مطالبات CWT، بصيغة CBOR"
 
 #: input/pagecontent/qr_code_generation.md:261
 msgid "Data in the QR rather than behind a link. The certificate has to verify at a rural clinic back home, on paper, with no reliable connectivity."
-msgstr "البيانات داخل رمز QR بدلًا من أن تكون خلف رابط. إذ يجب أن تُتحقَّق الشهادة في عيادة ريفية في البلد الأم، على الورق، من دون اتصال موثوق بالشبكة."
+msgstr "البيانات داخل رمز QR بدلًا من أن تكون خلف رابط. إذ يجب أن تكون الشهادة قابلة للتحقق في عيادة ريفية في البلد الأم، على الورق، من دون اتصال موثوق بالشبكة."
 
 #: input/pagecontent/qr_code_generation.md:229
 #, python-brace-format
@@ -432,7 +441,7 @@ msgstr "هذه الصفحة جولة إرشادية خطوة بخطوة موجّ
 #: input/pagecontent/qr_code_generation.md:378
 #, python-brace-format
 msgid "To verify them, resolve that {code0} against the GDHCN trust list rather than against any copy of the certificate shipped beside the QR code. The DID trust list endpoints for the development, user-acceptance testing and production environments are listed under <a0>Trustlist Distribution Endpoints</a0>; this example is issued in DEV, so its Document Signing Certificate is on the DEV trust list. Fetching the signing certificate from the trust list is the verification path the specification defines, and the only one that tells a verifier the key is still trusted — a certificate distributed alongside the certificate it signed proves nothing about that."
-msgstr "للتحقق منهما، استرجع {code0} ذاك مقابل قائمة الثقة في GDHCN، لا مقابل أي نسخة من الشهادة مرفقة بجانب رمز QR. وترد نقاط نهاية قائمة الثقة DID لبيئات التطوير واختبار قبول المستخدم والإنتاج تحت <a0>نقاط نهاية توزيع قائمة الثقة</a0>؛ وهذا المثال صادر في DEV، لذا فإن شهادة توقيع المستندات الخاصة به موجودة في قائمة الثقة DEV. وجلب شهادة التوقيع من قائمة الثقة هو مسار التحقق الذي تحدده المواصفة، وهو الوحيد الذي يُعلم الجهة المُتحقِّقة بأن المفتاح لا يزال موثوقًا — فالشهادة الموزَّعة مع الشهادة التي وقّعتها لا تثبت شيئًا في هذا الشأن."
+msgstr "للتحقق منهما، حُلَّ {code0} ذاك مقابل قائمة الثقة في GDHCN، لا مقابل أي نسخة من الشهادة مرفقة بجانب رمز QR. وترد نقاط نهاية قائمة الثقة DID لبيئات التطوير واختبار قبول المستخدم والإنتاج تحت <a0>نقاط نهاية توزيع قائمة الثقة</a0>؛ وهذا المثال صادر في DEV، لذا فإن شهادة توقيع المستندات الخاصة به موجودة في قائمة الثقة DEV. وجلب شهادة التوقيع من قائمة الثقة هو مسار التحقق الذي تحدده المواصفة، وهو الوحيد الذي يُعلم الجهة المُتحقِّقة بأن المفتاح لا يزال موثوقًا — فالشهادة الموزَّعة مع الشهادة التي وقّعتها لا تثبت شيئًا في هذا الشأن."
 
 #: input/pagecontent/qr_code_generation.md:263
 #, python-brace-format

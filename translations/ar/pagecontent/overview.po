@@ -5,6 +5,15 @@
 # adjudicated it; official means human sign-off (#206). Acronyms, codes,
 # placeholders, numbers and URLs are kept as written; persona names are
 # fictional and kept as written. Modern Standard Arabic, right-to-left.
+# RFC 2119 keywords are kept beside their Arabic: يجب (MUST).
+#
+# Untainted round trip, 2026-11-06: five back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids, reviewing every
+# line whose negation, modal, quantifier, number or length moved. Drifts
+# found and fixed: lowercase should/shall strength (4), an added "only", a
+# distorted comparative, "verifiable" vs "verified", DID "resolve". No other
+# claim, quantifier, negation or named entity was found moved.
 #
 msgid ""
 msgstr ""
@@ -33,7 +42,7 @@ msgstr "لا يتطلب تحقيقُ قابلية التشغيل البيني ا
 
 #: input/pagecontent/overview.md:135
 msgid "As with any digital solution, there are ethical considerations, such as potential impacts on equity and on equitable access, and data protection principles that need to inform the design of the technical specifications, as well as provide guidance on how resulting solutions can be ethically implemented. The following page discusses some key ethical considerations and data protection principles that Member States are encouraged to – and, where they have legal obligations, must – include in their respective deployments of digital solutions. These ethical considerations and data protection principles have also informed the design criteria for WHO’s SMART Guidelines and for the utilization of the WHO’s Global Digital Health Certification Network."
-msgstr "كما هو الحال مع أي حل رقمي، ثمة اعتبارات أخلاقية، مثل الآثار المحتملة على الإنصاف وعلى الوصول المنصف، ومبادئ لحماية البيانات ينبغي أن تسترشد بها عملية تصميم المواصفات التقنية، وأن توفر إرشادات بشأن كيفية تنفيذ الحلول الناتجة تنفيذًا أخلاقيًا. وتناقش الصفحة التالية بعض الاعتبارات الأخلاقية الرئيسية ومبادئ حماية البيانات التي تُشجَّع الدول الأعضاء على تضمينها – ويجب عليها ذلك حيثما كانت عليها التزامات قانونية – في عمليات نشرها للحلول الرقمية. وقد استرشدت معايير تصميم إرشادات SMART الصادرة عن منظمة الصحة العالمية (WHO) واستخدامُ الشبكة العالمية لإصدار الشهادات الصحية الرقمية التابعة لمنظمة الصحة العالمية (WHO) بهذه الاعتبارات الأخلاقية ومبادئ حماية البيانات أيضًا."
+msgstr "كما هو الحال مع أي حل رقمي، ثمة اعتبارات أخلاقية، مثل الآثار المحتملة على الإنصاف وعلى الوصول المنصف، ومبادئ لحماية البيانات يتعيّن أن تسترشد بها عملية تصميم المواصفات التقنية، وأن توفر إرشادات بشأن كيفية تنفيذ الحلول الناتجة تنفيذًا أخلاقيًا. وتناقش الصفحة التالية بعض الاعتبارات الأخلاقية الرئيسية ومبادئ حماية البيانات التي تُشجَّع الدول الأعضاء على تضمينها – ويجب عليها ذلك حيثما كانت عليها التزامات قانونية – في عمليات نشرها للحلول الرقمية. وقد استرشدت معايير تصميم إرشادات SMART الصادرة عن منظمة الصحة العالمية (WHO) واستخدامُ الشبكة العالمية لإصدار الشهادات الصحية الرقمية التابعة لمنظمة الصحة العالمية (WHO) بهذه الاعتبارات الأخلاقية ومبادئ حماية البيانات أيضًا."
 
 #: input/pagecontent/overview.md:90
 msgid "Audience"

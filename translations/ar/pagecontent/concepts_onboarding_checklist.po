@@ -5,6 +5,15 @@
 # adjudicated it; official means human sign-off (#206). Acronyms, codes,
 # placeholders, numbers and URLs are kept as written; persona names are
 # fictional and kept as written. Modern Standard Arabic, right-to-left.
+# RFC 2119 keywords are kept beside their Arabic: يجب (MUST).
+#
+# Untainted round trip, 2026-11-06: five back-translators that saw only the
+# Arabic (no English, no repository) rendered every Arabic msgstr into
+# English; the translator adjudicated against the msgids, reviewing every
+# line whose negation, modal, quantifier, number or length moved. Drifts
+# found and fixed: lowercase should/shall strength (4), an added "only", a
+# distorted comparative, "verifiable" vs "verified", DID "resolve". No other
+# claim, quantifier, negation or named entity was found moved.
 #
 msgid ""
 msgstr ""
@@ -222,7 +231,7 @@ msgstr "تأكَّد من توفر جميع الأدوات (مثل openssl وcur
 
 #: input/pagecontent/concepts_onboarding_checklist.md:317
 msgid "Copy the generated certificates to the respective folders and change the file names to match the naming convention. For the case of self-signed TLS certificates, the CA.pem is just a copy of the TLS.pem (check to have keyCertSign in the keyUsage). The CA.pem should exist, since it is used to verify the TLS client certificate when connecting to the TNG application. Files to be copied in respective folders are as follows:"
-msgstr "انسخ الشهادات المولَّدة إلى المجلدات المعنية وغيِّر أسماء الملفات لتطابق اصطلاح التسمية. وفي حالة شهادات TLS الموقَّعة ذاتيًا، يكون CA.pem مجرد نسخة من TLS.pem (تحقَّق من وجود keyCertSign في keyUsage). ويجب أن يكون CA.pem موجودًا، لأنه يُستخدم للتحقق من شهادة عميل TLS عند الاتصال بتطبيق TNG. والملفات المطلوب نسخها في المجلدات المعنية هي كما يلي:"
+msgstr "انسخ الشهادات المولَّدة إلى المجلدات المعنية وغيِّر أسماء الملفات لتطابق اصطلاح التسمية. وفي حالة شهادات TLS الموقَّعة ذاتيًا، يكون CA.pem مجرد نسخة من TLS.pem (تحقَّق من وجود keyCertSign في keyUsage). وينبغي أن يكون CA.pem موجودًا، لأنه يُستخدم للتحقق من شهادة عميل TLS عند الاتصال بتطبيق TNG. والملفات المطلوب نسخها في المجلدات المعنية هي كما يلي:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:223
 msgid "Copy your GPG key, beginning with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----."
@@ -652,7 +661,7 @@ msgstr "الوصول إلى الشبكة: تأكَّد من أن إعدادات 
 
 #: input/pagecontent/concepts_onboarding_checklist.md:484
 msgid "Note :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified."
-msgstr "ملاحظة: انتبه إلى أن الشهادات الموقَّعة ذاتيًا يجب أن تحتوي أيضًا على استخدام المفتاح «توقيع الشهادات» (keyCertSign)، حتى يمكن التحقق من التوقيع (الذاتي) للشهادة."
+msgstr "ملاحظة: انتبه إلى أن الشهادات الموقَّعة ذاتيًا ينبغي أن تحتوي أيضًا على استخدام المفتاح «توقيع الشهادات» (keyCertSign)، حتى يمكن التحقق من التوقيع (الذاتي) للشهادة."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:315
 msgid "Note: keep your private keys safe and secure. Do not share them with anyone."
@@ -665,7 +674,7 @@ msgstr "ملاحظة: في بيئتَي DEV وUAT، إذا وُلِّدت الم
 #: input/pagecontent/concepts_onboarding_checklist.md:265
 #: input/pagecontent/concepts_onboarding_checklist.md:285
 msgid "Note: OSSL_COUNTRY_NAME should be ISO 2 letter name of the country mapped to the name used in repository."
-msgstr "ملاحظة: يجب أن يكون OSSL_COUNTRY_NAME اسم البلد وفق رمز ISO 2 المكوَّن من حرفين، والمطابق للاسم المستخدم في المستودع."
+msgstr "ملاحظة: ينبغي أن يكون OSSL_COUNTRY_NAME اسم البلد وفق رمز ISO 2 المكوَّن من حرفين، والمطابق للاسم المستخدم في المستودع."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:682
 msgid "Note: Replace domain, group, and EndpointURL with the appropriate values for your onboarding environment."
