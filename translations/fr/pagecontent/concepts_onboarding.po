@@ -244,7 +244,7 @@ msgstr "Le processus d’intégration complet au GDHCN est divisé en trois éta
 
 #: input/pagecontent/concepts_onboarding.md:27
 msgid "The GDHCN Administrative and Operational Framework should be considered the authoritative source of definitions and concepts in case of any discrepncies."
-msgstr "En cas de divergence, le Cadre administratif et opérationnel du GDHCN doit être considéré comme la source faisant autorité pour les définitions et les concepts."
+msgstr "En cas de divergence, le Cadre administratif et opérationnel du GDHCN devrait être considéré comme la source faisant autorité pour les définitions et les concepts."
 
 #: input/pagecontent/concepts_onboarding.md:9
 msgid "The GDHCN Secretariat manages the Onboarding Process and Letters of Applications of eligible GDHCN Participants to connect as a trusted party to the trust network. Prepared onboarding records will be handed over to the GDHCN Secretariat with the request to process the technical on-boarding of the trusted party. An organizational and technical successful application results in a confirmation and the GDHCN Participant can connect to the trust network as a trusted party."

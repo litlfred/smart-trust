@@ -99,7 +99,7 @@ msgstr "JSON Web Keys (JWK)"
 #: input/pagecontent/transactions.md:61
 #: input/pagecontent/transactions.md:103
 msgid "Keys should be retrieved using the <a0>GDHCN DID</a0> specification."
-msgstr "Les clés doivent être récupérées au moyen de la spécification <a0>GDHCN DID</a0>."
+msgstr "Les clés devraient être récupérées au moyen de la spécification <a0>GDHCN DID</a0>."
 
 #: input/pagecontent/transactions.md:15
 msgid "Local PKD onboarding (one-time). Onboarding may include evaluating Local PKD format, providing the Federated PKD access, and signing of business agreements."
@@ -299,7 +299,7 @@ msgstr "la concordance du nom/de l'identité figurant sur le certificat avec une
 
 #: input/pagecontent/transactions.md:41
 msgid "The output should be a valid signed <a0>HCERT</a0>"
-msgstr "Le résultat doit être un <a0>HCERT</a0> signé valide"
+msgstr "Le résultat devrait être un <a0>HCERT</a0> signé valide"
 
 #: input/pagecontent/transactions.md:7
 msgid "The Trust Anchor will validate the submitted key material and distribute it to other Trust Network Participants"

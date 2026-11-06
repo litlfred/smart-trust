@@ -78,11 +78,11 @@ msgstr "<a0>tng-context/v1-DEV.jsonld</a0>, <a1>v1-UAT.jsonld</a1>, <a2>v1.jsonl
 
 #: input/pagecontent/concepts_did_gdhcn.md:46
 msgid "$domain**         | Contains trusted key material or DID references of GDHCN for a supported trust domain.   **$domain should be one of the codes in the <a0>GDHCN Trust Domain Value Set</a0>."
-msgstr "$domain**         | Contient des éléments de clé de confiance ou des références DID du GDHCN pour un domaine de confiance pris en charge.   **$domain doit être l'un des codes du <a0>GDHCN Trust Domain Value Set</a0>."
+msgstr "$domain**         | Contient des éléments de clé de confiance ou des références DID du GDHCN pour un domaine de confiance pris en charge.   **$domain devrait être l'un des codes du <a0>GDHCN Trust Domain Value Set</a0>."
 
 #: input/pagecontent/concepts_did_gdhcn.md:47
 msgid "$participant**    | Contains trusted key material or DID references of GDHCN for a trusted participant.  **$participant should be one of the codes in the  <a0>GDHCN Participant Value Set</a0>."
-msgstr "$participant**    | Contient des éléments de clé de confiance ou des références DID du GDHCN pour un participant de confiance.  **$participant doit être l'un des codes du  <a0>GDHCN Participant Value Set</a0>."
+msgstr "$participant**    | Contient des éléments de clé de confiance ou des références DID du GDHCN pour un participant de confiance.  **$participant devrait être l'un des codes du  <a0>GDHCN Participant Value Set</a0>."
 
 #: input/pagecontent/concepts_did_gdhcn.md:48
 msgid "$usage**  | Contains trusted key material or DID references of a supported key usage type.   **$usage type is one of the key usages codes in the <a0>GDHCN Key Usage Value Set</a0>."

@@ -163,7 +163,7 @@ msgstr "En tant que données d'entrée de l'analyse et de la surveillance contin
 
 #: input/pagecontent/hcert_spec.md:168
 msgid "As of this version of the specifications, countries should NOT assume that any Certificate Revocation List (CRL) information is used; or that the Private Key Usage Period is verified by implementers."
-msgstr "À compter de cette version des spécifications, les pays ne doivent PAS supposer qu'une quelconque information de liste de révocation de certificats (CRL) est utilisée, ni que la période d'utilisation de la clé privée est vérifiée par les implémenteurs."
+msgstr "À compter de cette version des spécifications, les pays ne devraient PAS supposer qu'une quelconque information de liste de révocation de certificats (CRL) est utilisée, ni que la période d'utilisation de la clé privée est vérifiée par les implémenteurs."
 
 #: input/pagecontent/hcert_spec.md:70
 #, python-brace-format
