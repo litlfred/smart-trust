@@ -197,7 +197,7 @@ msgstr "有关加密密钥管理和使用的流程与技术规范，涉及可验
 #: glossary/gdhcn.glossary.json:90
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "合格 GDHCN 参与方加入 GDHCN 信任网络所需的各项流程。入网流程顺利完成后，该合格 GDHCN 参与方即被视为 GDHCN 参与方。有时简称为“入网”。"
+msgstr "合格 GDHCN 参与方加入 GDHCN 信任网络所需的各项流程。入网流程顺利完成后，该合格 GDHCN 参与方应被视为 GDHCN 参与方。有时简称为“入网”。"
 
 #: glossary/gdhcn.glossary.json:41
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/gdhcn-secretariat
