@@ -28,7 +28,7 @@ msgstr "Un firmante de documentos utiliza la clave privada de un par de claves p
 
 #: input/pagecontent/concepts.md:49
 msgid "A formal application sent via a verifiable and secure channel from an Eligible GDHCN Participant to the GDHCN Secretariat to join the GDHCN Trust Network and participate within a particular Trust Domain."
-msgstr "Solicitud formal enviada por un canal verificable y seguro por un Participante cualificado para la Red Mundial a la Secretaría de la Red Mundial para adherirse a la red de confianza de la GDHCN y participar en un Ámbito de confianza concreto."
+msgstr "Solicitud formal enviada por un canal verificable y seguro por un Participante cualificado para la Red Mundial a la Secretaría de la Red Mundial para adherirse a la red de confianza de la Red Mundial y participar en un Ámbito de confianza concreto."
 
 #: input/pagecontent/concepts.md:19
 msgid "a fund, programme, specialized agency, or related organization within the UN system; or"
@@ -156,7 +156,7 @@ msgstr "Secretaría de la Red Mundial"
 
 #: input/pagecontent/concepts.md:5
 msgid "GDHCN Trust Network"
-msgstr "Red de confianza de la GDHCN"
+msgstr "Red de confianza de la Red Mundial"
 
 #: input/pagecontent/concepts.md:54
 msgid "Health Professions Education Accreditation Agency"
@@ -196,15 +196,15 @@ msgstr "Carta de solicitud"
 
 #: input/pagecontent/concepts.md:51
 msgid "Onboarding Process"
-msgstr "Proceso de incorporación"
+msgstr "Proceso de integración"
 
 #: input/pagecontent/concepts.md:25
 msgid "Once accepted to the GDHCN, after the successful conclusion of the Onboarding Process, will be referred to as GDHCN Participant.  An Eligible GDHCN Participant that has initiated the Onboarding Process will be referred to as an Eligible GDHCN Applicant."
-msgstr "Una vez aceptado en la GDHCN, tras la conclusión satisfactoria del Proceso de incorporación, se denominará Participante en la Red Mundial.  El Participante cualificado para la Red Mundial que haya iniciado el Proceso de incorporación se denominará Solicitante cualificado para la Red Mundial."
+msgstr "Una vez aceptado en la GDHCN, tras la conclusión satisfactoria del Proceso de integración, se denominará Participante en la Red Mundial.  El Participante cualificado para la Red Mundial que haya iniciado el Proceso de integración se denominará Solicitante cualificado para la Red Mundial."
 
 #: input/pagecontent/concepts.md:28
 msgid "Participation in the GDHCN is subject to the Onboarding Process set forth by the GDHCN Secretariat in its sole and absolute discretion, and in accordance with WHO rules, regulations, policies and practices, as may be amended from time to time. The requirements for the GDHCN Terms of Participation are comprised of the following components:"
-msgstr "La participación en la GDHCN está sujeta al Proceso de incorporación establecido por la Secretaría de la Red Mundial a su entera y absoluta discreción, y de conformidad con las normas, reglamentos, políticas y prácticas de la OMS, en su versión vigente en cada momento. Los requisitos de los Términos de participación de la GDHCN constan de los siguientes componentes:"
+msgstr "La participación en la GDHCN está sujeta al Proceso de integración establecido por la Secretaría de la Red Mundial a su entera y absoluta discreción, y de conformidad con las normas, reglamentos, políticas y prácticas de la OMS, en su versión vigente en cada momento. Los requisitos de los Términos de participación de la GDHCN constan de los siguientes componentes:"
 
 #: input/pagecontent/concepts.md:60
 msgid "Public Health Agency"
@@ -260,7 +260,7 @@ msgstr "Actualmente, la GDHCN admite dos medios para la distribución de claves 
 
 #: input/pagecontent/concepts.md:6
 msgid "The GDHCN Trust Network is a Trust Network comprised of the GDHCN Secretariat and GDHCN Participants. The GDHCN Trust Network operationalizes Trust Domains through a Trust Network Gateway by enabling bilateral verification and utilization of Verifiable Digital Health Certificates and the utilization of Trusted Services by GDHCN Participants."
-msgstr "La red de confianza de la GDHCN es una red de confianza integrada por la Secretaría de la Red Mundial y los Participantes en la Red Mundial. La red de confianza de la GDHCN hace operativos los Ámbitos de confianza mediante una puerta de enlace a la red de confianza, al permitir la verificación y utilización bilaterales de los certificados digitales de salud verificables y la utilización de los servicios de confianza por parte de los Participantes en la Red Mundial."
+msgstr "La red de confianza de la Red Mundial es una red de confianza integrada por la Secretaría de la Red Mundial y los Participantes en la Red Mundial. La red de confianza de la Red Mundial hace operativos los Ámbitos de confianza mediante una puerta de enlace a la red de confianza, al permitir la verificación y utilización bilaterales de los certificados digitales de salud verificables y la utilización de los servicios de confianza por parte de los Participantes en la Red Mundial."
 
 #: input/pagecontent/concepts.md:46
 msgid "The individual designated by a GDHCN Participant as having the primary overall responsibility for the security, technical matters and systems infrastructure of this GDHCN Participant for the applicable Trust Domain including ensuring compliance with technical specifications."
@@ -276,7 +276,7 @@ msgstr "Persona señalada por un Participante en la Red Mundial como principal r
 
 #: input/pagecontent/concepts.md:40
 msgid "The individual identified by a GDHCN Participant as having the primary responsibility for the management of the Public Key Infrastructure, including the generation of any needed public-private key pairs, and the configuration and management of the connections between the GDHCN Participant’s Public Key Infrastructure and the GDHCN Trust Network Gateway."
-msgstr "Persona señalada por un Participante en la Red Mundial como principal responsable de la gestión de la infraestructura de clave pública, incluida la generación de los pares de claves pública-privada necesarios, así como de la configuración y la gestión de las conexiones entre la infraestructura de clave pública del Participante en la Red Mundial y la puerta de enlace a la red de confianza de la GDHCN."
+msgstr "Persona señalada por un Participante en la Red Mundial como principal responsable de la gestión de la infraestructura de clave pública, incluida la generación de los pares de claves pública-privada necesarios, así como de la configuración y la gestión de las conexiones entre la infraestructura de clave pública del Participante en la Red Mundial y la puerta de enlace a la red de confianza de la Red Mundial."
 
 #: input/pagecontent/concepts.md:93
 msgid "the open, interoperable technical specifications that identify or define the applicable Trusted Services and Verifiable Digital Health Certificates; and"
@@ -288,7 +288,7 @@ msgstr "El proceso y las especificaciones técnicas relativos a la gestión y el
 
 #: input/pagecontent/concepts.md:52
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se adhiera a la red de confianza de la GDHCN. Tras la conclusión satisfactoria del Proceso de incorporación, el Participante cualificado para la Red Mundial deberá considerarse Participante en la Red Mundial. A veces se denomina simplemente “incorporación”."
+msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se adhiera a la red de confianza de la Red Mundial. Tras la conclusión satisfactoria del Proceso de integración, el Participante cualificado para la Red Mundial deberá considerarse Participante en la Red Mundial. A veces se denomina simplemente “incorporación”."
 
 #: input/pagecontent/concepts.md:137
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
@@ -332,11 +332,11 @@ msgstr "TOP0 Intercambio de las credenciales necesarias para establecer una cone
 
 #: input/pagecontent/concepts.md:31
 msgid "TOP1 Compliance, during initial Onboarding Process and during routine validation periods, with technical specifications required for a PKI;"
-msgstr "TOP1 Cumplimiento, durante el Proceso de incorporación inicial y durante los periodos de validación periódicos, de las especificaciones técnicas exigidas para una PKI;"
+msgstr "TOP1 Cumplimiento, durante el Proceso de integración inicial y durante los periodos de validación periódicos, de las especificaciones técnicas exigidas para una PKI;"
 
 #: input/pagecontent/concepts.md:32
 msgid "TOP2 Compliance, during initial Onboarding Process and during routine validation periods, with technical specifications for Verifiable Digital Health Certificates and APIs of Trusted Services for each applicable Trust Domain;"
-msgstr "TOP2 Cumplimiento, durante el Proceso de incorporación inicial y durante los periodos de validación periódicos, de las especificaciones técnicas de los certificados digitales de salud verificables y de las API de los servicios de confianza para cada Ámbito de confianza aplicable;"
+msgstr "TOP2 Cumplimiento, durante el Proceso de integración inicial y durante los periodos de validación periódicos, de las especificaciones técnicas de los certificados digitales de salud verificables y de las API de los servicios de confianza para cada Ámbito de confianza aplicable;"
 
 #: input/pagecontent/concepts.md:33
 msgid "TOP3 Compliance with policy and regulatory standards that GDHCN Participants pertaining to Trusted Services that a GDHCN Trust Participants operates or utilizes for each applicable Trust Domain; and"
@@ -392,7 +392,7 @@ msgstr "Participante en la red de confianza (TNP)"
 
 #: input/pagecontent/concepts.md:119
 msgid "Trust Network Participant (TNP) is an acronym used to label certificates, infrastructure, or technical artifacts made available by GDHCN Participants under the GDHCN Trust Network."
-msgstr "Participante en la red de confianza (TNP) es un acrónimo que se utiliza para designar los certificados, la infraestructura o los artefactos técnicos que los Participantes en la Red Mundial ponen a disposición en el marco de la red de confianza de la GDHCN."
+msgstr "Participante en la red de confianza (TNP) es un acrónimo que se utiliza para designar los certificados, la infraestructura o los artefactos técnicos que los Participantes en la Red Mundial ponen a disposición en el marco de la red de confianza de la Red Mundial."
 
 #: input/pagecontent/concepts.md:139
 msgid "Trust Network Participant Verifier"

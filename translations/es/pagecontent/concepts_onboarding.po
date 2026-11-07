@@ -20,11 +20,11 @@ msgstr "<a0>Gobernanza de certificados</a0>, que describe la gobernanza de los c
 
 #: input/pagecontent/concepts_onboarding.md:17
 msgid "<a0>Concepts</a0> underpinning the description of these on-boarding processes including the general description of the Terms of Participation;"
-msgstr "<a0>Conceptos</a0> en los que se basa la descripción de estos procesos de incorporación, incluida la descripción general de los Términos de participación;"
+msgstr "<a0>Conceptos</a0> en los que se basa la descripción de estos procesos de integración, incluida la descripción general de los Términos de participación;"
 
 #: input/pagecontent/concepts_onboarding.md:18
 msgid "<a0>Onboarding Overview</a0> describing the overview of the onboarding process;"
-msgstr "<a0>Resumen de la incorporación</a0>, que describe a grandes rasgos el proceso de incorporación;"
+msgstr "<a0>Resumen de la incorporación</a0>, que describe a grandes rasgos el proceso de integración;"
 
 #: input/pagecontent/concepts_onboarding.md:55
 msgid "A <a0>Diagram</a0> that gives and overview about the steps in order to start the Full Onboarding."
@@ -44,7 +44,7 @@ msgstr "Después de que nos pongamos en contacto con el participante para comuni
 
 #: input/pagecontent/concepts_onboarding.md:21
 msgid "An eligible GDHCN Participant should complete the <a0>Onboarding Checklist</a0> which contains guiding videos through the onboarding process."
-msgstr "Un Participante cualificado para la Red Mundial debería completar la <a0>Lista de verificación de la incorporación</a0>, que contiene vídeos que sirven de guía a lo largo del proceso de incorporación."
+msgstr "Un Participante cualificado para la Red Mundial debería completar la <a0>Lista de verificación de la incorporación</a0>, que contiene vídeos que sirven de guía a lo largo del proceso de integración."
 
 #: input/pagecontent/concepts_onboarding.md:86
 msgid "attestation to comply with the Terms of Participation."
@@ -176,7 +176,7 @@ msgstr "Requisitos de la solicitud de incorporación"
 
 #: input/pagecontent/concepts_onboarding.md:2
 msgid "Onboarding Process"
-msgstr "Proceso de incorporación"
+msgstr "Proceso de integración"
 
 #: input/pagecontent/concepts_onboarding.md:77
 msgid "Once the acceptance stage has been successfully completed and approved, the process to Go Live on Production Environment can commence. This involves submitting the key material targeted for the production environment (as outlined in stage 1), followed by onboarding to the production environment. The participant will be notified once the Go Live on Production Environment has been successful."
@@ -192,7 +192,7 @@ msgstr "Uno o más TNPSCA, un TNPTLS y un TNPUP;"
 
 #: input/pagecontent/concepts_onboarding.md:30
 msgid "Overview of the Onboarding Process"
-msgstr "Resumen del proceso de incorporación"
+msgstr "Resumen del proceso de integración"
 
 #: input/pagecontent/concepts_onboarding.md:66
 msgid "Perform Acceptance Testing"
@@ -236,11 +236,11 @@ msgstr "La solicitud del Participante en la Red Mundial debe contener, como mín
 
 #: input/pagecontent/concepts_onboarding.md:5
 msgid "The following describes the on-boarding processes for the Global Digital Health Certification Network (GDHCN)."
-msgstr "A continuación se describen los procesos de incorporación a la Red Mundial de Certificación Digital de Salud (GDHCN)."
+msgstr "A continuación se describen los procesos de integración en la Red Mundial de Certificación Digital de Salud (GDHCN)."
 
 #: input/pagecontent/concepts_onboarding.md:32
 msgid "The full GDHCN onboarding process is divided it into three main stages as per the following figure:"
-msgstr "El proceso completo de incorporación a la Red Mundial se divide en tres etapas principales, como se muestra en la siguiente figura:"
+msgstr "El proceso de integración plena en la Red Mundial se divide en tres etapas principales, como se muestra en la siguiente figura:"
 
 #: input/pagecontent/concepts_onboarding.md:27
 msgid "The GDHCN Administrative and Operational Framework should be considered the authoritative source of definitions and concepts in case of any discrepncies."
@@ -248,7 +248,7 @@ msgstr "El Marco administrativo y operativo de la Red Mundial debería considera
 
 #: input/pagecontent/concepts_onboarding.md:9
 msgid "The GDHCN Secretariat manages the Onboarding Process and Letters of Applications of eligible GDHCN Participants to connect as a trusted party to the trust network. Prepared onboarding records will be handed over to the GDHCN Secretariat with the request to process the technical on-boarding of the trusted party. An organizational and technical successful application results in a confirmation and the GDHCN Participant can connect to the trust network as a trusted party."
-msgstr "La Secretaría de la Red Mundial gestiona el Proceso de incorporación y las Cartas de solicitud de los Participantes cualificados para la Red Mundial que desean conectarse como parte de confianza a la red de confianza. Los registros de incorporación preparados se entregarán a la Secretaría de la Red Mundial con la solicitud de que tramite la incorporación técnica de la parte de confianza. Una solicitud satisfactoria en los aspectos organizativo y técnico da lugar a una confirmación, y el Participante en la Red Mundial puede conectarse a la red de confianza como parte de confianza."
+msgstr "La Secretaría de la Red Mundial gestiona el Proceso de integración y las Cartas de solicitud de los Participantes cualificados para la Red Mundial que desean conectarse como parte de confianza a la red de confianza. Los registros de incorporación preparados se entregarán a la Secretaría de la Red Mundial con la solicitud de que tramite la incorporación técnica de la parte de confianza. Una solicitud satisfactoria en los aspectos organizativo y técnico da lugar a una confirmación, y el Participante en la Red Mundial puede conectarse a la red de confianza como parte de confianza."
 
 #: input/pagecontent/concepts_onboarding.md:85
 msgid "the necessary information to connect to the production environment"
@@ -264,7 +264,7 @@ msgstr "El participante debe [comunicarnos los resultados] de sus pruebas; se ll
 
 #: input/pagecontent/concepts_onboarding.md:125
 msgid "The secretariat must handle the following tasks to establish the on-boarding process:"
-msgstr "La Secretaría debe encargarse de las siguientes tareas para establecer el proceso de incorporación:"
+msgstr "La Secretaría debe encargarse de las siguientes tareas para establecer el proceso de integración:"
 
 #: input/pagecontent/concepts_onboarding.md:45
 msgid "To establish a connection with the Trust Network Gateway (TNG) and become a participant of the GDHCN, the participant is required to prepare their own key materials for us to onboard onto the gateway. This process necessitates technical expertise for the preparation of X.509 certificates, which are to be stored in a GitHub repository owned by the participant for submission."

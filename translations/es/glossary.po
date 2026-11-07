@@ -93,10 +93,11 @@ msgstr "ICVP"
 # WHO's own Spanish (C.L.38.2023 and the Spanish Letters of Application):
 #   Trust Domain             Ámbito de confianza
 #   Trust Network Gateway    puerta de enlace a la red de confianza (TNG)
+#   GDHCN Trust Network      red de confianza de la Red Mundial
 #   GDHCN Secretariat        Secretaría de la Red Mundial
 #   Letter of Application    Carta de solicitud
 #   Eligible GDHCN Participant  Participante cualificado para la Red Mundial
-#   Onboarding Process       Proceso de incorporación (integración plena)
+#   Onboarding Process       Proceso de integración (plena: «proceso de integración plena»)
 #   Business Owner / Technical / Legal contact / Key Master
 #                            Responsable de contacto / Contacto técnico /
 #                            Contacto legal / Contacto principal

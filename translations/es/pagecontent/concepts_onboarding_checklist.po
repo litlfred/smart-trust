@@ -129,7 +129,7 @@ msgstr "Autenticar"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:8
 msgid "Before beginning the onboarding process, please ensure the following tools, permissions, and environment configurations are in place. This checklist is crucial for a seamless setup experience."
-msgstr "Antes de comenzar el proceso de incorporación, asegúrese de que estén disponibles las siguientes herramientas, permisos y configuraciones de entorno. Esta lista de comprobación es fundamental para que la configuración se realice sin problemas."
+msgstr "Antes de comenzar el proceso de integración, asegúrese de que estén disponibles las siguientes herramientas, permisos y configuraciones de entorno. Esta lista de comprobación es fundamental para que la configuración se realice sin problemas."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:321
 msgid "CA.pem -> onboarding/DCC/TLS"
@@ -398,7 +398,7 @@ msgstr "Extensiones: si utiliza VS Code, considere añadir extensiones para Mark
 
 #: input/pagecontent/concepts_onboarding_checklist.md:94
 msgid "Familiarize yourself with supplementary documentation, including API references, security guidelines, and data handling policies needed for the onboarding process."
-msgstr "Familiarícese con la documentación complementaria, incluidas las referencias de la API, las directrices de seguridad y las políticas de tratamiento de datos necesarias para el proceso de incorporación."
+msgstr "Familiarícese con la documentación complementaria, incluidas las referencias de la API, las directrices de seguridad y las políticas de tratamiento de datos necesarias para el proceso de integración."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:398
 msgid "Field &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Value\\ extendedKeyUsage &emsp; 1.3.6.1.4.1.1847.2021.1.1 for Test Issuers\\ extendedKeyUsage &emsp; 1.3.6.1.4.1.1847.2021.1.2 for Vaccination Issuers\\ extendedKeyUsage &emsp; 1.3.6.1.4.1.1847.2021.1.3 for Recovery Issuers\\"
