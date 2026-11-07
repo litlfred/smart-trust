@@ -43,3 +43,25 @@ Read fhir-harness's [`fhir-validation`](https://github.com/litlfred/fhir-harness
 fhir-package-mirror at exact versions only. Never report "SUSHI cannot run
 here" before running the seeder, and never substitute another version for a
 pinned one; its `--missing-out` list is what the mirror still needs.
+
+## Translations
+
+The harness's generic process is
+[`translation-refresh`](https://github.com/litlfred/cat-harness/blob/HEAD/skills/library/library-core/translation-refresh.md)
+and `translation-manager` §"Translating into several locales as a team"; this
+section names what that skill leaves to the instance. Locales: ar, es, fr, ru,
+zh, all unofficial (agent, no human sign-off). Each locale is its own PR to
+main.
+
+| step | here |
+|---|---|
+| templates | `bun input/scripts/translation-pot.ts` (`--check` in CI): `input/pagecontent/` and the BPMN of `input/business-processes/` into `translations/<locale>/{pagecontent,processes}/` |
+| new and obsolete strings | `bun input/scripts/po-status.ts --merge` appends new msgids empty and keeps obsolete ones as `#~`; without `--merge` it reports |
+| FHIR terms | one CodeSystem supplement per locale, `input/fsh/translations/<locale>.fsh`; never edit a resource's own text |
+
+`.github/workflows/translations.yml` runs the template check, the officiality
+check and `po-status --github`. Merge policy: **merge-when-green** (owner, 2026-11-07). A
+refresh run merges its own refresh PR only when every check is green and the
+untainted round trip on the changed strings records no fail; anything red,
+uncertain or failing is left open and reported to the owner. Merging is not
+sign-off: the translations stay unofficial.
