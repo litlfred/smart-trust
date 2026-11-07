@@ -127,7 +127,7 @@ msgstr "PROD"
 #: input/pagecontent/endpoints.md:31
 #: input/pagecontent/endpoints.md:33
 msgid "Reference"
-msgstr "Par référence"
+msgstr "Référence"
 
 #: input/pagecontent/endpoints.md:51
 msgid "Status Monitoring Dashboards"

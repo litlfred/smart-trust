@@ -24,7 +24,7 @@ msgstr "<a0>Glosario</a0>"
 
 #: input/pagecontent/business_requirements.md:21
 msgid "<a0>Onboarding Process</a0>"
-msgstr "<a0>Proceso de incorporación</a0>"
+msgstr "<a0>Proceso de integración</a0>"
 
 #: input/pagecontent/business_requirements.md:1
 msgid "Business Requirements"

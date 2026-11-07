@@ -195,7 +195,7 @@ msgstr "Se actualizó la lista de verificación de incorporación con instruccio
 
 #: input/pagecontent/changes.md:25
 msgid "Onboarding process revised to remove Transitive processes"
-msgstr "Se revisó el proceso de incorporación para eliminar los procesos transitivos"
+msgstr "Se revisó el proceso de integración para eliminar los procesos transitivos"
 
 #: input/pagecontent/changes.md:43
 #: input/pagecontent/changes.md:49

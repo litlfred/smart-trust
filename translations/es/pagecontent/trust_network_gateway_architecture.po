@@ -599,7 +599,7 @@ msgstr "El OID también puede utilizarse como indicador de verificación, ya que
 
 #: input/pagecontent/trust_network_gateway_architecture.md:347
 msgid "Onboarding Process Concept"
-msgstr "Concepto del proceso de incorporación"
+msgstr "Concepto del proceso de integración"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:280
 #: input/pagecontent/trust_network_gateway_architecture.md:299
@@ -1066,7 +1066,7 @@ msgstr "Vista de caja blanca"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:330
 msgid "WHO aligned onboarding process for eligible Trust Network Participants"
-msgstr "Proceso de incorporación alineado con la OMS para los participantes cualificados en la red de confianza"
+msgstr "Proceso de integración alineado con la OMS para los participantes cualificados en la red de confianza"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:324
 msgid "WHO Trust Network Gateway Modifications"

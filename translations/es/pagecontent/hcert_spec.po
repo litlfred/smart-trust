@@ -376,7 +376,7 @@ msgstr "Se espera que estas listas específicas de cada Participante en la Red M
 
 #: input/pagecontent/hcert_spec.md:215
 msgid "The \"GDHCN Secretariat\" is a functional role; not a person or a piece of software. It is expected that the WHO’s GDHCN Trust Network Gateway will automate most of these tasks."
-msgstr "La \"Secretaría de la Red Mundial\" es una función, no una persona ni un programa informático. Se prevé que la puerta de enlace a la red de confianza de la GDHCN de la OMS automatice la mayoría de estas tareas."
+msgstr "La \"Secretaría de la Red Mundial\" es una función, no una persona ni un programa informático. Se prevé que la puerta de enlace a la red de confianza de la Red Mundial de Certificación Digital de Salud de la OMS automatice la mayoría de estas tareas."
 
 #: input/pagecontent/hcert_spec.md:186
 msgid "The acceptable validity period may be determined by practical constraints. For example, a traveler may not have the possibility to renew the health certificate during a trip overseas. However, it may also be the case that an Issuer is considering the possibility of a security compromise of some sort, which requires the Issuer to withdraw an DSC (invalidating all health certificates issued using that key which are still within their validity period). The consequences of such an event may be limited by regularly rolling Issuer keys and requiring renewal of all health certificates, on some reasonable interval."

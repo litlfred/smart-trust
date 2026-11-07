@@ -147,7 +147,7 @@ msgstr "Los siguientes paneles reflejan el estado en tiempo real del material de
 
 #: input/pagecontent/endpoints.md:3
 msgid "The following describes the active services and endpoints for the GDHCN Trust Network Gateway."
-msgstr "A continuación se describen los servicios y puntos de conexión activos de la puerta de enlace a la red de confianza (TNG) de la GDHCN."
+msgstr "A continuación se describen los servicios y puntos de conexión activos de la puerta de enlace a la red de confianza de la Red Mundial."
 
 #: input/pagecontent/endpoints.md:8
 msgid "The list of active trust domains is maintained in the <a0>GDHCN Trust Domain Value Set</a0>."
