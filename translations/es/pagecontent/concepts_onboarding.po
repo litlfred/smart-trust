@@ -96,27 +96,27 @@ msgstr "Carta de solicitud - Puerta de enlace a la red de confianza"
 
 #: input/pagecontent/concepts_onboarding.md:100
 msgid "Letter of Application for DDCC by the Full Onboarding Process"
-msgstr "Carta de solicitud para DDCC mediante el proceso de incorporación plena"
+msgstr "Carta de solicitud para DDCC mediante el proceso de integración plena"
 
 #: input/pagecontent/concepts_onboarding.md:101
 msgid "Letter of Application for DDCC by the Full Onboarding Process - Arabic Version"
-msgstr "Carta de solicitud para DDCC mediante el proceso de incorporación plena - Versión en árabe"
+msgstr "Carta de solicitud para DDCC mediante el proceso de integración plena - Versión en árabe"
 
 #: input/pagecontent/concepts_onboarding.md:102
 msgid "Letter of Application for DDCC by the Full Onboarding Process - Chinese Version"
-msgstr "Carta de solicitud para DDCC mediante el proceso de incorporación plena - Versión en chino"
+msgstr "Carta de solicitud para DDCC mediante el proceso de integración plena - Versión en chino"
 
 #: input/pagecontent/concepts_onboarding.md:103
 msgid "Letter of Application for DDCC by the Full Onboarding Process - French Version"
-msgstr "Carta de solicitud para DDCC mediante el proceso de incorporación plena - Versión en francés"
+msgstr "Carta de solicitud para DDCC mediante el proceso de integración plena - Versión en francés"
 
 #: input/pagecontent/concepts_onboarding.md:104
 msgid "Letter of Application for DDCC by the Full Onboarding Process - Russian Version"
-msgstr "Carta de solicitud para DDCC mediante el proceso de incorporación plena - Versión en ruso"
+msgstr "Carta de solicitud para DDCC mediante el proceso de integración plena - Versión en ruso"
 
 #: input/pagecontent/concepts_onboarding.md:105
 msgid "Letter of Application for DDCC by the Full Onboarding Process - Spanish Version"
-msgstr "Carta de solicitud para DDCC mediante el proceso de incorporación plena - Versión en español"
+msgstr "Carta de solicitud para DDCC mediante el proceso de integración plena - Versión en español"
 
 #: input/pagecontent/concepts_onboarding.md:99
 msgid "Letter of Application for DDCC using the Transitive Trust"
@@ -212,7 +212,7 @@ msgstr "Preparar la presentación del material de claves"
 
 #: input/pagecontent/concepts_onboarding.md:24
 msgid "provide the necessary technical specifications and configuration information to connect to their back-end systems to the WHO GDHCN Trust Network Gateway (TNG)"
-msgstr "proporcionará las especificaciones técnicas y la información de configuración necesarias para conectar sus sistemas de back-end a la puerta de enlace a la Red de confianza de la GDHCN de la OMS (TNG)"
+msgstr "proporcionará las especificaciones técnicas y la información de configuración necesarias para conectar sus sistemas de back-end a la puerta de enlace a la red de confianza (TNG) de la Red Mundial de Certificación Digital de Salud de la OMS"
 
 #: input/pagecontent/concepts_onboarding.md:128
 msgid "providing a Secure Channel for the GDHCN Participant to deliver secure and trustworthy applications SCA and/or DID information;"
