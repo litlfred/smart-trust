@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "a378a59bec81f26a159449795d7ba823ff3a5c71",
+          "ref": "35f23d3f351547ead2a5cffa60b6d62635f1a94b",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -30,9 +30,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "a378a59bec81f26a159449795d7ba823ff3a5c71",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-07",
+              "ref": "35f23d3f351547ead2a5cffa60b6d62635f1a94b",
+              "evidence": "Owner litlfred, 2026-11-07, relayed by the coordinating session (session_01VQDpPg6DUZuufuAVwk6MqZ): 'repin + merge open 12 hrs'. who-iris moves from a378a59b to 35f23d3f, the merge of who-iris#176 (uploads/ is the repository's data store, not a KG directory), which clears check:state-on-main's who-iris::who-iris-uploads finding; 35f23d3f contains a378a59b."
             }
           }
         }
