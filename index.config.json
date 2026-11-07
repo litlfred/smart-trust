@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "a3f7af18fd3447c9cf6fedee22cef330f612712e",
+          "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -31,8 +31,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "a3f7af18fd3447c9cf6fedee22cef330f612712e",
-              "evidence": "litlfred 2026-11-07 05:25Z, session https://claude.ai/code/session_01VQDpPfeH29k3n4iKC2D5wg: \"repin + merge open 12 hrs\" (merge window to 17:25Z); refreshed 10:55Z for cat-harness-tools cc67cd17 (#1622). smart-base at #313 head 520cd525 as a staging basis (role/health-worker, role/point-of-care-system), to re-pin to main with consent after #313 merges."
+              "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
+              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back'; window extended to 05:27Z; 'follow smart-base main (>= af46ec5) rather than 520cd52; 520cd52 diverged from main'. smart-base at main af46ec5; who-iris and core forward to the commits smart-base pins; every other pin kept at main's newer commit."
             }
           }
         }
@@ -43,7 +43,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "520cd52597935984b58cb0fe4e00b2e3375c518b",
+          "ref": "af46ec5d53946f31fff35f8ec2dd1c4cfbe76a97",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -78,8 +78,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "520cd52597935984b58cb0fe4e00b2e3375c518b",
-              "evidence": "litlfred 2026-11-07 05:25Z, session https://claude.ai/code/session_01VQDpPfeH29k3n4iKC2D5wg: \"repin + merge open 12 hrs\" (merge window to 17:25Z); refreshed 10:55Z for cat-harness-tools cc67cd17 (#1622). smart-base at #313 head 520cd525 as a staging basis (role/health-worker, role/point-of-care-system), to re-pin to main with consent after #313 merges."
+              "ref": "af46ec5d53946f31fff35f8ec2dd1c4cfbe76a97",
+              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back'; window extended to 05:27Z; 'follow smart-base main (>= af46ec5) rather than 520cd52; 520cd52 diverged from main'. smart-base at main af46ec5; who-iris and core forward to the commits smart-base pins; every other pin kept at main's newer commit."
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "1c7506fabbd4cdad8cb2b332f93f6f5dc2ece9a0",
+          "ref": "6086f86b80d5d3cde4f98fd95a15e47641d6ce0f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -128,8 +128,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "1c7506fabbd4cdad8cb2b332f93f6f5dc2ece9a0",
-              "evidence": "litlfred 2026-11-07 05:25Z, session https://claude.ai/code/session_01VQDpPfeH29k3n4iKC2D5wg: \"repin + merge open 12 hrs\" (merge window to 17:25Z); refreshed 10:55Z for cat-harness-tools cc67cd17 (#1622). smart-base at #313 head 520cd525 as a staging basis (role/health-worker, role/point-of-care-system), to re-pin to main with consent after #313 merges."
+              "ref": "6086f86b80d5d3cde4f98fd95a15e47641d6ce0f",
+              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back'; window extended to 05:27Z; 'follow smart-base main (>= af46ec5) rather than 520cd52; 520cd52 diverged from main'. smart-base at main af46ec5; who-iris and core forward to the commits smart-base pins; every other pin kept at main's newer commit."
             }
           }
         }
