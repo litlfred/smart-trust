@@ -72,7 +72,7 @@ msgstr "TRANSACTIONS : Demander les mises à jour des règles métier, Exécuter
 
 #: input/pagecontent/use_cases.md:20
 msgid "Universal Verification Application –  verifies health documents using Public Key Infrastructure (PKI)​"
-msgstr "Application de vérification universelle –  vérifie les documents de santé à l’aide de l’infrastructure à clé publique (PKI)​"
+msgstr "Application de vérification universelle –  vérifie les documents de santé à l’aide de l’infrastructure à clés publiques (ICP, en anglais PKI)​"
 
 #: input/pagecontent/use_cases.md:31
 msgid "Universal Verification Application – executes business rules against verified health documents​"

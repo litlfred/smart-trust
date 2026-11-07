@@ -67,7 +67,7 @@ msgstr "Clés enregistrées"
 #: input/business-processes/GDHCN.ONB.RegisterKeys.bpmn:162
 #. Diagram element documentation
 msgid "Manages the Participant's Public Key Infrastructure and holds the GPG key named in the Letter (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
-msgstr "Gère l'infrastructure à clé publique du participant et détient la clé GPG indiquée dans la lettre (Cadre IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
+msgstr "Gère l'infrastructure à clés publiques du participant et détient la clé GPG indiquée dans la lettre (Cadre IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
 
 #: input/business-processes/GDHCN.ONB.RegisterKeys.bpmn:155
 #. Diagram label
@@ -292,7 +292,7 @@ msgstr "Quel environnement ?"
 #: input/business-processes/GDHCN.ONB.RegisterKeys.bpmn:27
 #. Diagram element documentation
 msgid "WHO as trust anchor for the Public Key Infrastructure (Framework VI.6). ActorDefinition http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor."
-msgstr "L'OMS en tant qu'ancre de confiance de l'infrastructure à clé publique (Cadre VI.6). ActorDefinition http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor."
+msgstr "L'OMS en tant qu'ancre de confiance de l'infrastructure à clés publiques (Cadre VI.6). ActorDefinition http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor."
 
 #: input/business-processes/GDHCN.ONB.RegisterKeys.bpmn:154
 #. Diagram label

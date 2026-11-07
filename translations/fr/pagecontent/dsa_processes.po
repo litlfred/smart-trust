@@ -232,11 +232,6 @@ msgstr "Projet. Cette page se trouve dans le fork litlfred. Il ne s’agit pas d
 msgid "Every call is logged with the PDF URL and hash. A person reviews the log against the PDF's clauses. At the end, I sends a signed deletion letter; M keeps it with its hash"
 msgstr "Chaque appel est journalisé avec l’URL et l’empreinte du PDF. Une personne examine le journal au regard des clauses du PDF. À la fin, I envoie une lettre de suppression signée ; M la conserve avec son empreinte"
 
-#: input/pagecontent/dsa_processes.md:192
-#, python-brace-format
-msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R5. Which Consent version applies is decided in smart-trust-phw (needs approval)."
-msgstr "FHIR R4 {code0} est présenté parce qu’IHE PCF l’utilise. Le présent guide repose sur FHIR R5. La version de Consent applicable est décidée dans smart-trust-phw (approbation requise)."
-
 #: input/pagecontent/dsa_processes.md:202
 #: input/pagecontent/dsa_processes.md:203
 #: input/pagecontent/dsa_processes.md:215
@@ -261,7 +256,7 @@ msgstr "Le GDHCN regroupe les clés par <a0>Domaine de confiance</a0>, par exemp
 
 #: input/pagecontent/dsa_processes.md:23
 msgid "GDHCN is one possible trust anchor, not the only one. A DSA may name a national PKI, a party's own did:web, or a local list instead. Nothing on this page requires GDHCN."
-msgstr "Le GDHCN est une ancre de confiance possible, mais pas la seule. Un DSA peut désigner à la place une PKI nationale, le did:web propre d’une partie ou une liste locale. Rien sur cette page n’exige le GDHCN."
+msgstr "Le GDHCN est une ancre de confiance possible, mais pas la seule. Un DSA peut désigner à la place une ICP (en anglais PKI) nationale, le did:web propre d’une partie ou une liste locale. Rien sur cette page n’exige le GDHCN."
 
 #: input/pagecontent/dsa_processes.md:124
 msgid "GDHCN joining is itself governed by documents (Terms of Participation, the Administrative and Operational Framework). It is a working example of a document-only agreement with technical processes on top. See <a0>Concepts</a0>."
@@ -298,7 +293,7 @@ msgstr "empreinte, catalogue"
 
 #: input/pagecontent/dsa_processes.md:175
 msgid "I's server certificate is issued by the national PKI, or I publishes a did:web"
-msgstr "Le certificat de serveur de I est émis par la PKI nationale, ou I publie un did:web"
+msgstr "Le certificat de serveur de I est émis par l’ICP nationale, ou I publie un did:web"
 
 #: input/pagecontent/dsa_processes.md:177
 msgid "I's server gets tokens by client credentials over mutual TLS (<a0>RFC 8705</a0>) and calls the API"
@@ -368,11 +363,11 @@ msgstr "mécanisme"
 
 #: input/pagecontent/dsa_processes.md:51
 msgid "National PKI"
-msgstr "PKI nationale"
+msgstr "ICP nationale"
 
 #: input/pagecontent/dsa_processes.md:81
 msgid "National PKI: national rules."
-msgstr "PKI nationale : règles nationales."
+msgstr "ICP nationale : règles nationales."
 
 #: input/pagecontent/dsa_processes.md:51
 msgid "National rules"
@@ -682,3 +677,12 @@ msgstr "X.509 : validation de chemin RFC 5280 jusqu’à la racine acceptée."
 #: input/pagecontent/dsa_processes.md:94
 msgid "X.509: the CA issues the certificate."
 msgstr "X.509 : l’autorité de certification émet le certificat."
+
+#: input/pagecontent/dsa_processes.md:192
+#, python-brace-format
+msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
+msgstr "La ressource FHIR R4 {code0} est présentée parce qu’IHE PCF l’utilise. Ce guide est en FHIR R4 4.0.1, comme smart-base et smart-trust-phw (propriétaire, 2026-11-07) ; le Consent est donc la propre version du guide. La page <a0>Consent</a0> de smart-trust-phw décrit le consentement explicite et le consentement implicite."
+
+#~ #, python-brace-format
+#~ msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R5. Which Consent version applies is decided in smart-trust-phw (needs approval)."
+#~ msgstr "FHIR R4 {code0} est présenté parce qu’IHE PCF l’utilise. Le présent guide repose sur FHIR R5. La version de Consent applicable est décidée dans smart-trust-phw (approbation requise)."

@@ -676,7 +676,7 @@ msgstr "l’adresse électronique figurant dans la clé GPG doit correspondre à
 
 #: input/pagecontent/concepts_onboarding_process_full.md:30
 msgid "Manages the Participant's Public Key Infrastructure and holds the GPG key named in the Letter (Framework IX)."
-msgstr "Gère l’infrastructure à clé publique du participant et détient la clé GPG indiquée dans la lettre (Cadre IX)."
+msgstr "Gère l’infrastructure à clés publiques du participant et détient la clé GPG indiquée dans la lettre (Cadre IX)."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:28
 msgid "May meet WHO in person to convey the Letter (Framework IX); receives notice of amendments (XI.2)."
@@ -926,7 +926,7 @@ msgstr "Lorsqu’un diagramme et un texte divergent, le texte fait foi : d’abo
 
 #: input/pagecontent/concepts_onboarding_process_full.md:34
 msgid "WHO as trust anchor for the Public Key Infrastructure (Framework VI.6)."
-msgstr "L’OMS en tant qu’ancre de confiance de l’infrastructure à clé publique (Cadre VI.6)."
+msgstr "L’OMS en tant qu’ancre de confiance de l’infrastructure à clés publiques (Cadre VI.6)."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
