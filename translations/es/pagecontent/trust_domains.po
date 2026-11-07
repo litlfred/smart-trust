@@ -36,7 +36,7 @@ msgstr "Un participante nombra esas políticas en una credencial verificable con
 
 #: input/pagecontent/trust_domains.md:5
 msgid "a set of policy and regulatory standards describing expected behavior of GDHCN Participants in relation to operation of the Trusted Services and utilization of Verifiable Digital Health Certificates (e.g. data minimization, privacy, scope of use)."
-msgstr "un conjunto de normas de política y reglamentación que describen el comportamiento esperado de los Participantes en la Red Mundial en relación con el funcionamiento de los servicios de confianza y la utilización de certificados digitales de salud verificables (p. ej., minimización de datos, privacidad, ámbito de uso)."
+msgstr "un conjunto de normas de política y reglamentación que describen el comportamiento esperado de los Participantes en la Red Mundial en relación con el funcionamiento de los servicios de confianza (Trusted Services) y la utilización de certificados digitales de salud verificables (p. ej., minimización de datos, privacidad, ámbito de uso)."
 
 #: input/pagecontent/trust_domains.md:2
 msgid "A Trust Domain consists of:"

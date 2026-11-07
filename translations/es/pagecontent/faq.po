@@ -20,7 +20,7 @@ msgstr "###!## ¿Cómo garantiza la OMS la confianza sin depender únicamente de
 
 #: input/pagecontent/faq.md:6
 msgid "A designated public health authority from a WHO Member State, with decision-making authority regarding participation in the GDHCN, should be the representative."
-msgstr "El representante debe ser una autoridad de salud pública designada de un Estado Miembro de la OMS, con facultad de decisión respecto a la participación en la GDHCN."
+msgstr "El representante debería ser una autoridad de salud pública designada de un Estado Miembro de la OMS, con facultad de decisión respecto a la participación en la GDHCN."
 
 #: input/pagecontent/faq.md:9
 msgid "A senior official with decision-making powers, involved in strategic decisions but not daily operations."
@@ -164,7 +164,7 @@ msgstr "¿Cuál es el proceso para proponer alternativas a la política actual d
 
 #: input/pagecontent/faq.md:8
 msgid "What is the role of the Business Owner Contact?"
-msgstr "¿Cuál es la función del Responsable de contacto?"
+msgstr "¿Cuál es la función del Responsable de contacto (Business Owner)?"
 
 #: input/pagecontent/faq.md:5
 msgid "Who can serve as the Application Form Representative for GDHCN participation?"
@@ -172,7 +172,7 @@ msgstr "¿Quién puede actuar como representante para el formulario de solicitud
 
 #: input/pagecontent/faq.md:11
 msgid "Who should be the Technical Contact?"
-msgstr "¿Quién debe ser el Contacto técnico?"
+msgstr "¿Quién debería ser el Contacto técnico?"
 
 #: input/pagecontent/faq.md:50
 msgid "With detailed definitions for key materials, ensuring clarity and visibility in the key exchange process, closely resembling EU DCC definitions."

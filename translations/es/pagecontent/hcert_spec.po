@@ -86,11 +86,11 @@ msgstr "3.2.4 Emisor"
 
 #: input/pagecontent/hcert_spec.md:76
 msgid "3.2.5 Expiration Time"
-msgstr "3.2.5 Fecha de expiración"
+msgstr "3.2.5 Hora de caducidad"
 
 #: input/pagecontent/hcert_spec.md:82
 msgid "3.2.6 Issued At"
-msgstr "3.2.6 Fecha de emisión"
+msgstr "3.2.6 Hora de emisión"
 
 #: input/pagecontent/hcert_spec.md:90
 msgid "3.2.7 Health Certificate Claim"
@@ -163,7 +163,7 @@ msgstr "Como insumo para el análisis y el seguimiento continuos de los riesgos,
 
 #: input/pagecontent/hcert_spec.md:168
 msgid "As of this version of the specifications, countries should NOT assume that any Certificate Revocation List (CRL) information is used; or that the Private Key Usage Period is verified by implementers."
-msgstr "En esta versión de las especificaciones, los países NO deben suponer que se utiliza información de listas de revocación de certificados (CRL), ni que los implementadores verifican el periodo de uso de la clave privada."
+msgstr "En esta versión de las especificaciones, los países NO deberían suponer que se utiliza información de listas de revocación de certificados (CRL), ni que los implementadores verifican el periodo de uso de la clave privada."
 
 #: input/pagecontent/hcert_spec.md:70
 #, python-brace-format
@@ -185,7 +185,7 @@ msgstr "Especificación del certificado sanitario electrónico"
 #: input/pagecontent/hcert_spec.md:40
 #, python-brace-format
 msgid "Expiration Time ({code0}, claim key 4)"
-msgstr "Fecha de expiración ({code0}, clave de declaración 4)"
+msgstr "Hora de caducidad ({code0}, clave de declaración 4)"
 
 #: input/pagecontent/hcert_spec.md:127
 msgid "For arbitrary data interfaces the HCERT container and its payloads may be transferred as-is, utilising any underlying, 8 bit safe, reliable data transport. These interfaces MAY include NFC, Bluetooth or transfer over an application layer protocol, for example transfer of an HCERT from the Issuer to a holder’s mobile device."
@@ -205,7 +205,7 @@ msgstr "En esta versión de la especificación, los niveles establecidos por el 
 
 #: input/pagecontent/hcert_spec.md:174
 msgid "GDHCN Participants can use a separate SCA (as per the WHO advice)(#ref) - but may also submit their existing eMRT SCA and/or DSC certificates; and may even choose to procure these from (commercial) trust centers - and submit these. However, any DSC certificate must always be signed by the SCA submitted by that country."
-msgstr "Los Participantes en la Red Mundial pueden usar una SCA independiente (según el consejo de la OMS)(#ref), pero también pueden presentar sus certificados SCA o DSC de eMRT existentes, e incluso optar por obtenerlos de centros de confianza (comerciales) y presentarlos. No obstante, todo certificado DSC debe estar siempre firmado por la SCA presentada por ese país."
+msgstr "Los Participantes en la Red Mundial pueden usar una SCA independiente (según el consejo de la OMS)(#ref), pero también pueden presentar sus certificados SCA y/o DSC de eMRT existentes, e incluso optar por obtenerlos de centros de confianza (comerciales) y presentarlos. No obstante, todo certificado DSC debe estar siempre firmado por la SCA presentada por ese país."
 
 #: input/pagecontent/hcert_spec.md:225
 msgid "GDHCN Participants may also bilaterally exchange SCA certificates with a number of other GDHCN Participants, verify these bilaterally and thus compile their own lists of SCA and DSC certificates which is specific to that GDHCN Participant. Verifiers may choose to rely on such a national list."
@@ -260,7 +260,7 @@ msgstr "En su lugar, el principal mecanismo de validez es la presencia del certi
 #: input/pagecontent/hcert_spec.md:39
 #, python-brace-format
 msgid "Issued At ({code0}, claim key 6)"
-msgstr "Fecha de emisión ({code0}, clave de declaración 6)"
+msgstr "Hora de emisión ({code0}, clave de declaración 6)"
 
 #: input/pagecontent/hcert_spec.md:38
 #, python-brace-format
@@ -405,11 +405,11 @@ msgstr "El formato contenedor del certificado sanitario electrónico (HCERT) est
 #: input/pagecontent/hcert_spec.md:78
 #, python-brace-format
 msgid "The Expiration Time ({code0}) claim SHALL hold a timestamp in the integer NumericDate format (as specified in <a0>RFC 8392</a0> section 2) indicating for how long this particular signature over the Payload SHALL be considered valid, after which a Verifier MUST reject the Payload as expired. The purpose of the expiry parameter is to force a limit of the validity period of the health certificate. The Claim Key 4 is used to identify this claim."
-msgstr "La declaración de fecha de expiración ({code0}) DEBERÁ contener una marca de tiempo en formato entero NumericDate (según se especifica en <a0>RFC 8392</a0>, sección 2) que indique durante cuánto tiempo DEBERÁ considerarse válida esta firma concreta sobre la carga útil; transcurrido ese tiempo, el Verificador DEBE rechazar la carga útil por estar expirada. La finalidad del parámetro de expiración es imponer un límite al periodo de validez del certificado sanitario. Para identificar esta declaración se utiliza la clave de declaración 4."
+msgstr "La declaración de hora de caducidad ({code0}) DEBERÁ contener una marca de tiempo en formato entero NumericDate (según se especifica en <a0>RFC 8392</a0>, sección 2) que indique durante cuánto tiempo DEBERÁ considerarse válida esta firma concreta sobre la carga útil; transcurrido ese tiempo, el Verificador DEBE rechazar la carga útil por estar expirada. La finalidad del parámetro de expiración es imponer un límite al periodo de validez del certificado sanitario. Para identificar esta declaración se utiliza la clave de declaración 4."
 
 #: input/pagecontent/hcert_spec.md:80
 msgid "The Expiration Time MUST not exceed the validity period of the DSC."
-msgstr "La fecha de expiración NO DEBE superar el periodo de validez del DSC."
+msgstr "La hora de caducidad NO DEBE superar el periodo de validez del DSC."
 
 #: input/pagecontent/hcert_spec.md:219
 msgid "The GDHCN Participant certificates are called Signer Certificate Authorities (SCAs) and are  self-signed certificates. Participants may have more than one (e.g., in case of regional devolution). These SCAs regularly sign the Document Signing Certificates (DSCs) used for signing HCERTs. GDHCN Participants will each maintain a public register of the DSC certificates kept current, communicated to the WHO’s Secretariat and published at a stable URL for bilateral exchange. GDHCN Participants MUST remove any revoked or stale certificates from this list."
@@ -431,11 +431,11 @@ msgstr "La integridad y la autenticidad del origen de los datos de la carga úti
 #: input/pagecontent/hcert_spec.md:84
 #, python-brace-format
 msgid "The Issued At ({code0}) claim SHALL hold a timestamp in the integer NumericDate format (as specified in <a0>RFC 8392</a0> section 2) indicating the time when the health certificate was created."
-msgstr "La declaración de fecha de emisión ({code0}) DEBERÁ contener una marca de tiempo en formato entero NumericDate (según se especifica en <a0>RFC 8392</a0>, sección 2) que indique el momento en que se creó el certificado sanitario."
+msgstr "La declaración de hora de emisión ({code0}) DEBERÁ contener una marca de tiempo en formato entero NumericDate (según se especifica en <a0>RFC 8392</a0>, sección 2) que indique el momento en que se creó el certificado sanitario."
 
 #: input/pagecontent/hcert_spec.md:86
 msgid "The Issued At field MUST not predate the validity period of the DSC."
-msgstr "El campo de fecha de emisión NO DEBE ser anterior al periodo de validez del DSC."
+msgstr "El campo de hora de emisión NO DEBE ser anterior al periodo de validez del DSC."
 
 #: input/pagecontent/hcert_spec.md:74
 #, python-brace-format

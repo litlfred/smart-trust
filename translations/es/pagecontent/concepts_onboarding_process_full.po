@@ -248,7 +248,7 @@ msgstr "<a0>Presentar la solicitud y ser verificado</a0>, <a1>Unirse a un Ámbit
 
 #: input/pagecontent/concepts_onboarding_process_full.md:27
 msgid "<a0>Business Owner Representative</a0>"
-msgstr "<a0>Representante del responsable</a0>"
+msgstr "<a0>Representante del responsable (Business Owner)</a0>"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:415
 msgid "<a0>Change the keys or the representatives</a0>"
@@ -368,7 +368,7 @@ msgstr "<a0>Representante de la OMS en el país</a0>"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:106
 msgid "1) Certificates must be prepared for all environments (self-signed allowed) following the requirements in Certificate Governance - Authentication: TNPTLS - Upload: TNPUP - SCA(s): TNPSCA"
-msgstr "1) Deben prepararse certificados para todos los entornos (se admiten certificados autofirmados) conforme a los requisitos de Gobernanza de certificados - Autenticación: TNPTLS - Carga: TNPUP - SCA: TNPSCA"
+msgstr "1) Deben prepararse certificados para todos los entornos (se admiten certificados autofirmados) conforme a los requisitos de Gobernanza de certificados - Autenticación: TNPTLS - Carga: TNPUP - SCA(s): TNPSCA"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:289
 msgid "1) check the connectivity with the following command:   input:"
@@ -684,7 +684,7 @@ msgstr "Puede reunirse con la OMS en persona para transmitir la Carta (Marco IX)
 
 #: input/pagecontent/concepts_onboarding_process_full.md:33
 msgid "Meets the representative in country and sends the Letter by diplomatic pouch (Framework IX)."
-msgstr "Se reúne con el representante en el país y envía la Carta por valija diplomática (Marco IX)."
+msgstr "Se reúne en el país con el representante del Participante y envía la Carta por valija diplomática (Marco IX)."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:474
 msgid "NB -> TNP"

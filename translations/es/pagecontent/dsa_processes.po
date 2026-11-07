@@ -32,7 +32,7 @@ msgstr "<a0>Proceso de incorporación</a0>"
 
 #: input/pagecontent/dsa_processes.md:37
 msgid "<a0>Receiver</a0>; any system that checks a party's signature or TLS certificate"
-msgstr "<a0>Receptor</a0>; cualquier sistema que compruebe la firma o el certificado TLS de una parte"
+msgstr "<a0>Receptor (Receiver)</a0>; cualquier sistema que compruebe la firma o el certificado TLS de una parte"
 
 #: input/pagecontent/dsa_processes.md:61
 msgid "<a0>RFC 5914</a0> (Trust Anchor Format) states \"this root is trusted\" in ASN.1 only. It has no JSON form. A local list of X.509 roots is therefore kept as PEM files plus RFC 5280 checks."

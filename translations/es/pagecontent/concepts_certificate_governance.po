@@ -121,7 +121,7 @@ msgstr "Contexto"
 
 #: input/pagecontent/concepts_certificate_governance.md:164
 msgid "Cryptographic algorithms and TLS cipher suites shall be chosen based on the current recommendation from the German Federal Office for Information Security (BSI) or SOG-IS. These recommendations and the recommendations of other institutions and standardization organization are quite similar. The recommendations can be found in the technical guidelines TR 02102-1 and TR 02102-2 (<a0>source</a0>) or SOG-IS Agreed Cryptographic Mechanisms (<a1>source</a1>)."
-msgstr "Los algoritmos criptográficos y los conjuntos de cifrado TLS se elegirán con arreglo a la recomendación vigente de la Oficina Federal de Seguridad de la Información de Alemania (BSI) o del SOG-IS. Estas recomendaciones y las de otras instituciones y organizaciones de normalización son bastante similares. Las recomendaciones figuran en las directrices técnicas TR 02102-1 y TR 02102-2 (<a0>fuente</a0>) o en SOG-IS Agreed Cryptographic Mechanisms (<a1>fuente</a1>)."
+msgstr "Los algoritmos criptográficos y los conjuntos de cifrado TLS deberán elegirse con arreglo a la recomendación vigente de la Oficina Federal de Seguridad de la Información de Alemania (BSI) o del SOG-IS. Estas recomendaciones y las de otras instituciones y organizaciones de normalización son bastante similares. Las recomendaciones figuran en las directrices técnicas TR 02102-1 y TR 02102-2 (<a0>fuente</a0>) o en SOG-IS Agreed Cryptographic Mechanisms (<a1>fuente</a1>)."
 
 #: input/pagecontent/concepts_certificate_governance.md:163
 msgid "Cryptographic requirements"

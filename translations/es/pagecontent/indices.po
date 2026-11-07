@@ -44,4 +44,4 @@ msgstr "Índices"
 
 #: input/pagecontent/indices.md:5
 msgid "This deployment guide consists of the following indexed material:"
-msgstr "Esta guía de implementación consta del siguiente material indexado:"
+msgstr "Esta guía de despliegue consta del siguiente material indexado:"

@@ -47,7 +47,7 @@ msgstr "Personal autorizado de la OMS de la Secretaría de la Red Mundial (Marco
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:26
 #. Diagram label
 msgid "Business Owner Representative"
-msgstr "Representante del responsable"
+msgstr "Representante del responsable (Business Owner)"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
 #. Diagram label

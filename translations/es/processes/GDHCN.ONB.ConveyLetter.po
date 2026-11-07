@@ -27,7 +27,7 @@ msgstr "Personal autorizado de la OMS de la Secretaría de la Red Mundial (Marco
 #: input/business-processes/GDHCN.ONB.ConveyLetter.bpmn:21
 #. Diagram label
 msgid "Business Owner Representative"
-msgstr "Representante del responsable"
+msgstr "Representante del responsable (Business Owner)"
 
 #: input/business-processes/GDHCN.ONB.ConveyLetter.bpmn:8
 #. Diagram element documentation
@@ -152,7 +152,7 @@ msgstr "Reunirse con la OMS en el país con el pasaporte"
 #: input/business-processes/GDHCN.ONB.ConveyLetter.bpmn:83
 #. Diagram element documentation
 msgid "Meets the representative in country and sends the Letter by diplomatic pouch (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/WHOCountryRepresentative."
-msgstr "Se reúne con el representante en el país y envía la Carta por valija diplomática (Marco IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/WHOCountryRepresentative."
+msgstr "Se reúne en el país con el representante del Participante y envía la Carta por valija diplomática (Marco IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/WHOCountryRepresentative."
 
 #: input/business-processes/GDHCN.ONB.ConveyLetter.bpmn:29
 #. Diagram label

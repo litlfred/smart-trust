@@ -36,7 +36,7 @@ msgstr "Servicio de terminología"
 
 #: input/pagecontent/system-actors.md:20
 msgid "Trusted service, provided by a node within a trust network, to share business rules using Clinical Quality Language (CQL) specification."
-msgstr "Servicio de confianza, prestado por un nodo de una red de confianza, para compartir reglas de negocio mediante la especificación Clinical Quality Language (CQL)."
+msgstr "Servicio de confianza (Trusted Service), prestado por un nodo de una red de confianza, para compartir reglas de negocio mediante la especificación Clinical Quality Language (CQL)."
 
 #: input/pagecontent/system-actors.md:26
 msgid "Used to manage and publish mappings between various local code systems and required vocabularies that are utilized Verifiable Digital Health Certificates."

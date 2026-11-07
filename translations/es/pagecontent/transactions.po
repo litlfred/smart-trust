@@ -99,7 +99,7 @@ msgstr "JSON Web Keys (JWK)"
 #: input/pagecontent/transactions.md:61
 #: input/pagecontent/transactions.md:103
 msgid "Keys should be retrieved using the <a0>GDHCN DID</a0> specification."
-msgstr "Las claves deben recuperarse mediante la especificación <a0>DID de la GDHCN</a0>."
+msgstr "Las claves deberían recuperarse mediante la especificación <a0>DID de la GDHCN</a0>."
 
 #: input/pagecontent/transactions.md:15
 msgid "Local PKD onboarding (one-time). Onboarding may include evaluating Local PKD format, providing the Federated PKD access, and signing of business agreements."
@@ -238,7 +238,7 @@ msgstr "Véase la documentación de la <a0>EU DCC Open API</a0>.  El uso de la c
 
 #: input/pagecontent/transactions.md:119
 msgid "Shall act as a Business Rules Library:"
-msgstr "Actuará como biblioteca de reglas de negocio:"
+msgstr "Deberá actuar como biblioteca de reglas de negocio:"
 
 #: input/pagecontent/transactions.md:37
 msgid "Sign Health Certificate (HCERT)  Claim {#sign_claim}"
@@ -299,7 +299,7 @@ msgstr "que el nombre/la identidad del certificado coincide con un documento de 
 
 #: input/pagecontent/transactions.md:41
 msgid "The output should be a valid signed <a0>HCERT</a0>"
-msgstr "El resultado debe ser un <a0>HCERT</a0> firmado válido"
+msgstr "El resultado debería ser un <a0>HCERT</a0> firmado válido"
 
 #: input/pagecontent/transactions.md:7
 msgid "The Trust Anchor will validate the submitted key material and distribute it to other Trust Network Participants"

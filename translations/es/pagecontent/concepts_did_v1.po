@@ -49,7 +49,7 @@ msgstr "El propio documento DID puede firmarse añadiendo un bloque ‘proof’ 
 
 #: input/pagecontent/concepts_did_v1.md:9
 msgid "The DID Document itself should have:​"
-msgstr "El propio documento DID debe contener:​"
+msgstr "El propio documento DID debería contener:​"
 
 #: input/pagecontent/concepts_did_v1.md:17
 msgid "the public key JWK, including the key's x509 and chain of trust to Root Certificate Authority​"

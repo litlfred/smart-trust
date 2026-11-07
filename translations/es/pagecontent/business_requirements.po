@@ -48,7 +48,7 @@ msgstr "Conceptos clave Requisitos funcionales Casos de uso Personas (perfiles) 
 
 #: input/pagecontent/business_requirements.md:24
 msgid "The GDHCN Administrative and Operational Framework should be considered the authoritative source of definitions and concepts in case of any discrepancies."
-msgstr "En caso de discrepancia, el Marco administrativo y operativo de la GDHCN debe considerarse la fuente autorizada de definiciones y conceptos."
+msgstr "En caso de discrepancia, el Marco administrativo y operativo de la GDHCN debería considerarse la fuente autorizada de definiciones y conceptos."
 
 #: input/pagecontent/business_requirements.md:3
 msgid "This digital health trust network is a network of stakeholders that securely exchange and uses health information based on trust, security, and privacy principles, and is designed to ensure that health information is handled in a secure, private, and compliant manner.  Through the GDHCN, WHO serves as the custodian of a digital health trust network."

@@ -264,7 +264,7 @@ msgstr "Generación de un código QR"
 #: input/pagecontent/qr_code_generation.md:299
 #, python-brace-format
 msgid "Hepatitis B birth dose, {code0} subclaim {code1}, shown in JSON notation. {code2} carries the PreQual product identifier of the product actually administered:"
-msgstr "Dosis al nacer de hepatitis B, subdeclaración {code0} {code1}, mostrada en notación JSON. {code2} lleva el identificador de producto PreQual del producto efectivamente administrado:"
+msgstr "Dosis al nacer de hepatitis B, subdeclaración {code1} de {code0}, mostrada en notación JSON. {code2} lleva el identificador de producto PreQual del producto efectivamente administrado:"
 
 #: input/pagecontent/qr_code_generation.md:355
 msgid "Hepatitis B birth dose:"
@@ -276,7 +276,7 @@ msgstr "Si imprime con menos de 300 ppp, asegúrese de que cada módulo se repre
 
 #: input/pagecontent/qr_code_generation.md:279
 msgid "Implementers should confirm the current schedule against the national authority before relying on it; schedules are revised."
-msgstr "Los implementadores deben confirmar el calendario vigente con la autoridad nacional antes de basarse en él; los calendarios se revisan."
+msgstr "Los implementadores deberían confirmar el calendario vigente con la autoridad nacional antes de basarse en él; los calendarios se revisan."
 
 #: input/pagecontent/qr_code_generation.md:206
 #, python-brace-format
@@ -345,7 +345,7 @@ msgstr "Reconstruir el {code0} y verificar la firma con cada DSC candidato hasta
 
 #: input/pagecontent/qr_code_generation.md:207
 msgid "Rendered size"
-msgstr "Tamaño de impresión"
+msgstr "Tamaño de visualización"
 
 #: input/pagecontent/qr_code_generation.md:202
 msgid "Requirement"
@@ -414,7 +414,7 @@ msgstr "Los mismos dos certificados, decodificados y verificados en vivo en su n
 
 #: input/pagecontent/qr_code_generation.md:348
 msgid "The signature and its headers account for 85 of the 307 bytes — on payloads this small, the cryptography costs more than the clinical data. This is why the minimal models use two-character element names, and why a payload much larger than this does not belong in a QR code at all."
-msgstr "La firma y sus cabeceras representan 85 de los 307 bytes: en cargas útiles tan pequeñas, la criptografía cuesta más que los datos clínicos. Por eso los modelos mínimos utilizan nombres de elementos de dos caracteres, y por eso una carga útil mucho mayor que esta no tiene cabida en un código QR."
+msgstr "La firma y sus cabeceras representan 85 de los 307 bytes: en cargas útiles tan pequeñas, la criptografía cuesta más que los datos clínicos. Por eso los modelos mínimos utilizan nombres de elementos de dos caracteres, y por eso una carga útil mucho mayor que esta no es apropiada en absoluto para un código QR."
 
 #: input/pagecontent/qr_code_generation.md:257
 msgid "This drives the design decisions directly:"

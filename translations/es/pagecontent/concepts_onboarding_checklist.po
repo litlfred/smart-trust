@@ -217,7 +217,7 @@ msgstr "Confirme que todas las herramientas (p. ej., openssl, curl, git) estén 
 
 #: input/pagecontent/concepts_onboarding_checklist.md:317
 msgid "Copy the generated certificates to the respective folders and change the file names to match the naming convention. For the case of self-signed TLS certificates, the CA.pem is just a copy of the TLS.pem (check to have keyCertSign in the keyUsage). The CA.pem should exist, since it is used to verify the TLS client certificate when connecting to the TNG application. Files to be copied in respective folders are as follows:"
-msgstr "Copie los certificados generados en las carpetas correspondientes y cambie los nombres de archivo para que sigan la convención de nomenclatura. En el caso de certificados TLS autofirmados, CA.pem es simplemente una copia de TLS.pem (compruebe que keyUsage contenga keyCertSign). CA.pem debe existir, ya que se utiliza para verificar el certificado de cliente TLS al conectarse a la aplicación TNG. Los archivos que deben copiarse en las carpetas correspondientes son los siguientes:"
+msgstr "Copie los certificados generados en las carpetas correspondientes y cambie los nombres de archivo para que sigan la convención de nomenclatura. En el caso de certificados TLS autofirmados, CA.pem es simplemente una copia de TLS.pem (compruebe que keyUsage contenga keyCertSign). CA.pem debería existir, ya que se utiliza para verificar el certificado de cliente TLS al conectarse a la aplicación TNG. Los archivos que deben copiarse en las carpetas correspondientes son los siguientes:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:223
 msgid "Copy your GPG key, beginning with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----."
@@ -365,7 +365,7 @@ msgstr "Introduzca el nombre del repositorio siguiendo la convención; debe cont
 
 #: input/pagecontent/concepts_onboarding_checklist.md:189
 msgid "Enter the length of time the key should be valid. Press Enter to specify the default selection, indicating that the key doesn't expire. Unless you require an expiration date, we recommend accepting this default."
-msgstr "Introduzca el tiempo de validez de la clave. Pulse Intro para indicar la opción predeterminada, que significa que la clave no caduca. Salvo que necesite una fecha de caducidad, recomendamos aceptar este valor predeterminado."
+msgstr "Introduzca el tiempo durante el cual debería ser válida la clave. Pulse Intro para indicar la opción predeterminada, que significa que la clave no caduca. Salvo que necesite una fecha de caducidad, recomendamos aceptar este valor predeterminado."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:191
 msgid "Enter your user ID information."
@@ -426,7 +426,7 @@ msgstr "Para Prod se recomienda utilizar únicamente un <a0>certificado emitido 
 
 #: input/pagecontent/concepts_onboarding_checklist.md:331
 msgid "For production, It is strongly recommended to use certificates signed by a trusted Certificate Authority (CA). This is just an example reference on how to use a Trusted CA certificate in a production environment. You should refer to the specific procedures provided by the public Trusted Certificate Authority (CA) of your choice for accurate and detailed instructions <a0>Reference- Recommendation to use Trusted Public CA Certificate in Prod</a0>"
-msgstr "Para producción, se recomienda encarecidamente utilizar certificados firmados por una autoridad de certificación (CA) de confianza. Esto es solo un ejemplo de referencia sobre cómo utilizar un certificado de una CA de confianza en un entorno de producción. Debe consultar los procedimientos específicos de la autoridad de certificación (CA) pública de confianza que elija para obtener instrucciones exactas y detalladas <a0>Referencia: recomendación de utilizar un certificado de una CA pública de confianza en Prod</a0>"
+msgstr "Para producción, se recomienda encarecidamente utilizar certificados firmados por una autoridad de certificación (CA) de confianza. Esto es solo un ejemplo de referencia sobre cómo utilizar un certificado de una CA de confianza en un entorno de producción. Debería consultar los procedimientos específicos de la autoridad de certificación (CA) pública de confianza que elija para obtener instrucciones exactas y detalladas <a0>Referencia: recomendación de utilizar un certificado de una CA pública de confianza en Prod</a0>"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:270
 msgid "For Windows, use the <a0>gen_all_certs.ps1</a0> PowerShell script. You can modify the environment variables directly within the script or set them in your current PowerShell session:"
@@ -555,7 +555,7 @@ msgstr "Si ejecuta git show sobre esa etiqueta, podrá ver su firma GPG adjunta:
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1031
 msgid "If you use this option when merging a branch and it contains commits that are not signed and valid, the merge will not work."
-msgstr "Si utiliza esta opción al fusionar una rama que contiene commits que no están firmados y no son válidos, la fusión no se realizará."
+msgstr "Si utiliza esta opción al fusionar una rama que contiene commits que no cumplan la condición de estar firmados y ser válidos, la fusión no se realizará."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:252
 msgid "If your Operating Systems is Unix/Linux/Mac"
@@ -647,7 +647,7 @@ msgstr "Acceso a la red: asegúrese de que la configuración de red permita el a
 
 #: input/pagecontent/concepts_onboarding_checklist.md:484
 msgid "Note :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified."
-msgstr "Nota: tenga en cuenta que los certificados autofirmados también deben contener el uso de clave de firma de certificados (keyCertSign), para que pueda verificarse la (auto)firma del certificado."
+msgstr "Nota: tenga en cuenta que los certificados autofirmados también deberían contener el uso de clave de firma de certificados (keyCertSign), para que pueda verificarse la (auto)firma del certificado."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:315
 msgid "Note: keep your private keys safe and secure. Do not share them with anyone."
@@ -660,7 +660,7 @@ msgstr "Nota: en los entornos DEV y UAT, si los archivos se generan mediante un 
 #: input/pagecontent/concepts_onboarding_checklist.md:265
 #: input/pagecontent/concepts_onboarding_checklist.md:285
 msgid "Note: OSSL_COUNTRY_NAME should be ISO 2 letter name of the country mapped to the name used in repository."
-msgstr "Nota: OSSL_COUNTRY_NAME debe ser el nombre ISO de 2 letras del país, que se corresponde con el nombre utilizado en el repositorio."
+msgstr "Nota: OSSL_COUNTRY_NAME debería ser el nombre ISO de 2 letras del país, que se corresponde con el nombre utilizado en el repositorio."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:682
 msgid "Note: Replace domain, group, and EndpointURL with the appropriate values for your onboarding environment."
@@ -1061,7 +1061,7 @@ msgstr "Solo para usuarios de la plataforma Windows: ejecute todos los comandos 
 
 #: input/pagecontent/concepts_onboarding_checklist.md:620
 msgid "Windows ships with cURL that uses Schannel, which does not support PKI/KEY certificates. To avoid validation errors, use a cURL build with OpenSSL. Users should check their current version with curl --version and download an OpenSSL-based build if necessary. <a0>DownloadLink</a0> After extracting, go to the bin folder and verify with ./curl.exe --version (it should show LibreSSL or OpenSSL)."
-msgstr "Windows incluye un cURL que utiliza Schannel, que no admite certificados PKI/KEY. Para evitar errores de validación, utilice una compilación de cURL con OpenSSL. Los usuarios deben comprobar su versión actual con curl --version y descargar una compilación basada en OpenSSL si es necesario. <a0>DownloadLink</a0> Tras extraerla, vaya a la carpeta bin y verifique con ./curl.exe --version (debería mostrar LibreSSL u OpenSSL)."
+msgstr "Windows incluye un cURL que utiliza Schannel, que no admite certificados PKI/KEY. Para evitar errores de validación, utilice una compilación de cURL con OpenSSL. Los usuarios deberían comprobar su versión actual con curl --version y descargar una compilación basada en OpenSSL si es necesario. <a0>DownloadLink</a0> Tras extraerla, vaya a la carpeta bin y verifique con ./curl.exe --version (debería mostrar LibreSSL u OpenSSL)."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:618
 msgid "Windows Users – cURL Certificate Validation Note:"

@@ -17,7 +17,7 @@ msgstr ""
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:28
 #. Diagram label
 msgid "Business Owner Representative"
-msgstr "Representante del responsable"
+msgstr "Representante del responsable (Business Owner)"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:88
 #. Diagram label

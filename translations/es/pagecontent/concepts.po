@@ -36,7 +36,7 @@ msgstr "un fondo, programa, organismo especializado u organización conexa del s
 
 #: input/pagecontent/concepts.md:12
 msgid "A GDHCN Participant is participant of the Trust Network that adheres to the Terms of Participation and manages the necessary technical infrastructure and governance processes. GDHCN Participants are responsible for making bilateral determinations related to the utilization of Trusted Services."
-msgstr "Un Participante en la Red Mundial es un participante de la red de confianza que se adhiere a los Términos de participación y gestiona la infraestructura técnica y los procesos de gobernanza necesarios. Los Participantes en la Red Mundial son responsables de adoptar las determinaciones bilaterales relativas a la utilización de los servicios de confianza."
+msgstr "Un Participante en la Red Mundial es un participante de la red de confianza que se adhiere a los Términos de participación y gestiona la infraestructura técnica y los procesos de gobernanza necesarios. Los Participantes en la Red Mundial son responsables de adoptar las determinaciones bilaterales relativas a la utilización de los servicios de confianza (Trusted Services)."
 
 #: input/pagecontent/concepts.md:122
 msgid "A GDHCN Participant's Backend System for managing the local part of information. The implementation of GDHCN Participant's Backend System is not in the scope of this document. A national backend can be also understood as a trusted party on-boarded in the Trust Network Gateway (can be a script, a proxy or a web server as well)."
@@ -84,7 +84,7 @@ msgstr "Un Participante cualificado para la Red Mundial es uno de los siguientes
 
 #: input/pagecontent/concepts.md:79
 msgid "An Issuer a system authorized by a Trust Network Participant to generate Verifiable Digital Health Certificates which are provided to a Holder.   An Issuer is responsible for generating the content that is digitally signed within the Verifiable Digital Health Certificate.   In order to sign this content, an Issuer should either itself be a Document Signer or utilize a Document Signer service, as authorized by the jurisdicitonal policy."
-msgstr "Un emisor es un sistema autorizado por un Participante en la red de confianza para generar certificados digitales de salud verificables que se entregan a un titular.   El emisor es responsable de generar el contenido que se firma digitalmente dentro del certificado digital de salud verificable.   Para firmar este contenido, el emisor debe ser él mismo un firmante de documentos o utilizar un servicio de firmante de documentos, según lo autorice la política de la jurisdicción."
+msgstr "Un emisor es un sistema autorizado por un Participante en la red de confianza para generar certificados digitales de salud verificables que se entregan a un titular.   El emisor es responsable de generar el contenido que se firma digitalmente dentro del certificado digital de salud verificable.   Para firmar este contenido, el emisor debería ser él mismo un firmante de documentos o utilizar un servicio de firmante de documentos, según lo autorice la política de la jurisdicción."
 
 #: input/pagecontent/concepts.md:20
 msgid "an organization officially delegated by one of the organizations mentioned above that can abide by the GDHCN Terms of Participation and fulfils one or more of the following health service functions:"
@@ -108,7 +108,7 @@ msgstr "Organización, o unidad organizativa, responsable de establecer los proc
 
 #: input/pagecontent/concepts.md:36
 msgid "Business Owner Representative"
-msgstr "Representante del responsable"
+msgstr "Representante del responsable (Business Owner)"
 
 #: input/pagecontent/concepts.md:2
 msgid "Concepts  Glossary"
@@ -200,7 +200,7 @@ msgstr "Proceso de incorporación"
 
 #: input/pagecontent/concepts.md:25
 msgid "Once accepted to the GDHCN, after the successful conclusion of the Onboarding Process, will be referred to as GDHCN Participant.  An Eligible GDHCN Participant that has initiated the Onboarding Process will be referred to as an Eligible GDHCN Applicant."
-msgstr "Una vez aceptado en la GDHCN, tras la conclusión satisfactoria del Proceso de incorporación, se denominará Participante en la Red Mundial.  El Participante cualificado para la Red Mundial que haya iniciado el Proceso de incorporación se denominará Solicitante cualificado."
+msgstr "Una vez aceptado en la GDHCN, tras la conclusión satisfactoria del Proceso de incorporación, se denominará Participante en la Red Mundial.  El Participante cualificado para la Red Mundial que haya iniciado el Proceso de incorporación se denominará Solicitante cualificado para la Red Mundial."
 
 #: input/pagecontent/concepts.md:28
 msgid "Participation in the GDHCN is subject to the Onboarding Process set forth by the GDHCN Secretariat in its sole and absolute discretion, and in accordance with WHO rules, regulations, policies and practices, as may be amended from time to time. The requirements for the GDHCN Terms of Participation are comprised of the following components:"
@@ -268,7 +268,7 @@ msgstr "Persona designada por un Participante en la Red Mundial como principal r
 
 #: input/pagecontent/concepts.md:43
 msgid "The individual designated by a GDHCN Participant as having the primary responsibility for reviewing the requirements related to a Trust Domain on behalf of this GDHCN Participant. This person should be someone that the GDHCN Secretariat can consult in relation to any legal or policy issues that may arise, such as changes to this document or changes to one of its Annexes that defines a Trust Domain."
-msgstr "Persona designada por un Participante en la Red Mundial como principal responsable de examinar los requisitos relativos a un Ámbito de confianza en nombre de dicho Participante en la Red Mundial. Debe tratarse de una persona a la que la Secretaría de la Red Mundial pueda consultar sobre cualquier cuestión jurídica o de política que pueda surgir, como cambios en este documento o en alguno de sus anexos que defina un Ámbito de confianza."
+msgstr "Persona designada por un Participante en la Red Mundial como principal responsable de examinar los requisitos relativos a un Ámbito de confianza en nombre de dicho Participante en la Red Mundial. Debería tratarse de una persona a la que la Secretaría de la Red Mundial pueda consultar sobre cualquier cuestión jurídica o de política que pueda surgir, como cambios en este documento o en alguno de sus anexos que defina un Ámbito de confianza."
 
 #: input/pagecontent/concepts.md:37
 msgid "The individual identified by a GDHCN Participant as having the primary business and programmatic responsibility for the GDHCN Participant for the implementation of the use cases covered by a Trust Domain."
@@ -288,7 +288,7 @@ msgstr "El proceso y las especificaciones técnicas relativos a la gestión y el
 
 #: input/pagecontent/concepts.md:52
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se adhiera a la red de confianza de la GDHCN. Tras la conclusión satisfactoria del Proceso de incorporación, el Participante cualificado para la Red Mundial se considerará Participante en la Red Mundial. A veces se denomina simplemente “incorporación”."
+msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se adhiera a la red de confianza de la GDHCN. Tras la conclusión satisfactoria del Proceso de incorporación, el Participante cualificado para la Red Mundial deberá considerarse Participante en la Red Mundial. A veces se denomina simplemente “incorporación”."
 
 #: input/pagecontent/concepts.md:137
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
@@ -400,7 +400,7 @@ msgstr "Verificador del Participante en la red de confianza"
 
 #: input/pagecontent/concepts.md:143
 msgid "Trusted Service"
-msgstr "Servicio de confianza"
+msgstr "Servicio de confianza (Trusted Service)"
 
 #: input/pagecontent/concepts.md:97
 msgid "Universal verifier applications that support different credential standards are complicated by wide variability in format of the credential payloads, signatures, key formats, and key distribution methods. Public keys formats include x509 certificates, JSON Web Key Sets (JWKS), and DID documents. Signing key distribution methods include API gateways, hosted by issuer at a pre-defined URL, embedded in certificates, and by block-chain based resolution. Establishing root of trust by trust anchor or distributing trust list has been accomplished by API gateway, hosted URL, private dissemination and other bilateral sharing agreements."

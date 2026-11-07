@@ -23,7 +23,7 @@ msgstr "ACTORES:"
 #: input/pagecontent/use_cases.md:10
 #: input/pagecontent/use_cases.md:22
 msgid "Aggregating/Federated PKD – trusted aggregation of public keys and trusted services from nodes"
-msgstr "PKD de agregación/federado: agregación de confianza de claves públicas y servicios de confianza procedentes de los nodos"
+msgstr "PKD de agregación/federado: agregación fiable de claves públicas y servicios de confianza procedentes de los nodos"
 
 #: input/pagecontent/use_cases.md:32
 msgid "Business Rules Library – trusted service, provided by a node within a trust network, to share business rules using Clinical Quality Language (CQL) specification​"

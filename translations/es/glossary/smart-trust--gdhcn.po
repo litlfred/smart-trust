@@ -42,7 +42,7 @@ msgstr "Una red de confianza es un medio para autenticar las claves públicas de
 #: glossary/gdhcn.glossary.json:33
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/eligible-gdhcn-participant
 msgid "An Eligible GDHCN Participant is one of the following: • a WHO Member State or Associate Member, or sub-national unit thereof; • a State Party to the International Health Regulations (2005), or sub-national unit thereof; • the United Nations (UN) and other intergovernmental organizations in effective relations with WHO; • a fund, programme, specialized agency, or related organization within the UN system; or • an organization officially delegated by one of the organizations mentioned above that can abide by the GDHCN Terms of Participation and fulfils one or more of the following health service functions: • Public Health Agency; • Health Professions Education Accreditation Agency; • Health Services Licensing Agency; or • Public Health Security Agency. and, once accepted to the GDHCN, after the successful conclusion of the Onboarding Process, will be referred to as GDHCN Participant throughout this document. An Eligible GDHCN Participant that has initiated the Onboarding Process will be referred to as an Eligible GDHCN Applicant throughout this document."
-msgstr "Un Participante cualificado para la Red Mundial es uno de los siguientes: • un Estado Miembro o Miembro Asociado de la OMS, o una unidad subnacional de este; • un Estado Parte en el Reglamento Sanitario Internacional (2005), o una unidad subnacional de este; • las Naciones Unidas (ONU) y otras organizaciones intergubernamentales que mantengan relaciones efectivas con la OMS; • un fondo, programa, organismo especializado u organización conexa del sistema de las Naciones Unidas; o • una organización oficialmente delegada por una de las organizaciones mencionadas anteriormente que pueda cumplir los Términos de participación de la GDHCN y desempeñe una o más de las siguientes funciones de servicios de salud: • Organismo de salud pública; • Organismo de acreditación de la formación de profesionales de la salud; • Organismo de concesión de licencias de servicios de salud; o • Organismo de seguridad sanitaria pública. Una vez aceptado en la GDHCN, tras la conclusión satisfactoria del Proceso de incorporación, se le denominará Participante en la Red Mundial a lo largo de este documento. Un Participante cualificado para la Red Mundial que haya iniciado el Proceso de incorporación se denominará Solicitante cualificado a lo largo de este documento."
+msgstr "Un Participante cualificado para la Red Mundial es uno de los siguientes: • un Estado Miembro o Miembro Asociado de la OMS, o una unidad subnacional de este; • un Estado Parte en el Reglamento Sanitario Internacional (2005), o una unidad subnacional de este; • las Naciones Unidas (ONU) y otras organizaciones intergubernamentales que mantengan relaciones efectivas con la OMS; • un fondo, programa, organismo especializado u organización conexa del sistema de las Naciones Unidas; o • una organización oficialmente delegada por una de las organizaciones mencionadas anteriormente que pueda cumplir los Términos de participación de la GDHCN y desempeñe una o más de las siguientes funciones de servicios de salud: • Organismo de salud pública; • Organismo de acreditación de la formación de profesionales de la salud; • Organismo de concesión de licencias de servicios de salud; o • Organismo de seguridad sanitaria pública. Una vez aceptado en la GDHCN, tras la conclusión satisfactoria del Proceso de incorporación, se le denominará Participante en la Red Mundial a lo largo de este documento. Un Participante cualificado para la Red Mundial que haya iniciado el Proceso de incorporación se denominará Solicitante cualificado para la Red Mundial a lo largo de este documento."
 
 #: glossary/gdhcn.glossary.json:19
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/certificate-authority
@@ -72,7 +72,7 @@ msgstr "Organización o unidad organizativa responsable de establecer los proced
 #: glossary/gdhcn.glossary.json:12
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/business-owner-representative
 msgid "Business Owner Representative"
-msgstr "Representante del responsable"
+msgstr "Representante del responsable (Business Owner)"
 
 #: glossary/gdhcn.glossary.json:19
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/certificate-authority
@@ -82,7 +82,7 @@ msgstr "Autoridad de certificación"
 #: glossary/gdhcn.glossary.json:127
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trust-domain
 msgid "Consists of: • Defined use cases and business processes related to the utilization of Verifiable Digital Health Certificates; • the open, interoperable technical specifications that identify or define the applicable Trusted Services and Verifiable Digital Health Certificates; and • a set of policy and regulatory standards describing expected behavior of GDHCN Participants in relation to operation of the Trusted Services and utilization of Verifiable Digital Health Certificates (e.g. data minimization, privacy, scope of use)."
-msgstr "Comprende: • casos de uso y procesos institucionales definidos relacionados con la utilización de certificados digitales de salud verificables; • las especificaciones técnicas abiertas e interoperables que identifican o definen los servicios de confianza y los certificados digitales de salud verificables aplicables; y • un conjunto de normas normativas y de política que describen el comportamiento que se espera de los Participantes en la Red Mundial en relación con el funcionamiento de los servicios de confianza y la utilización de los certificados digitales de salud verificables (p. ej., minimización de datos, privacidad, ámbito de uso)."
+msgstr "Comprende: • casos de uso y procesos institucionales definidos relacionados con la utilización de certificados digitales de salud verificables; • las especificaciones técnicas abiertas e interoperables que identifican o definen los servicios de confianza (Trusted Services) y los certificados digitales de salud verificables aplicables; y • un conjunto de normas normativas y de política que describen el comportamiento que se espera de los Participantes en la Red Mundial en relación con el funcionamiento de los servicios de confianza y la utilización de los certificados digitales de salud verificables (p. ej., minimización de datos, privacidad, ámbito de uso)."
 
 #: glossary/gdhcn.glossary.json:33
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/eligible-gdhcn-participant
@@ -167,7 +167,7 @@ msgstr "Persona designada por un Participante en la Red Mundial como principal r
 #: glossary/gdhcn.glossary.json:76
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/legal-representative
 msgid "The individual designated by a GDHCN Participant as having the primary responsibility for reviewing the requirements related to a Trust Domain on behalf of this GDHCN Participant. This person should be someone that the GDHCN Secretariat can consult in relation to any legal or policy issues that may arise, such as changes to this document or changes to one of its Annexes that defines a Trust Domain."
-msgstr "Persona designada por un Participante en la Red Mundial como principal responsable de examinar, en nombre de dicho Participante, los requisitos relacionados con un Ámbito de confianza. Debe tratarse de una persona a la que la Secretaría de la Red Mundial pueda consultar en relación con cualquier cuestión jurídica o de política que pueda surgir, como cambios en el presente documento o en uno de sus anexos que defina un Ámbito de confianza."
+msgstr "Persona designada por un Participante en la Red Mundial como principal responsable de examinar, en nombre de dicho Participante, los requisitos relacionados con un Ámbito de confianza. Debería tratarse de una persona a la que la Secretaría de la Red Mundial pueda consultar en relación con cualquier cuestión jurídica o de política que pueda surgir, como cambios en el presente documento o en uno de sus anexos que defina un Ámbito de confianza."
 
 #: glossary/gdhcn.glossary.json:12
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/business-owner-representative
@@ -192,7 +192,7 @@ msgstr "Proceso y especificaciones técnicas relativos a la gestión y el uso de
 #: glossary/gdhcn.glossary.json:90
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se una a la red de confianza de la GDHCN. Al concluir satisfactoriamente el Proceso de incorporación, el Participante cualificado para la Red Mundial se considerará Participante en la Red Mundial. A veces se denomina simplemente «incorporación»."
+msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se una a la red de confianza de la GDHCN. Al concluir satisfactoriamente el Proceso de incorporación, el Participante cualificado para la Red Mundial deberá considerarse Participante en la Red Mundial. A veces se denomina simplemente «incorporación»."
 
 #: glossary/gdhcn.glossary.json:41
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/gdhcn-secretariat
@@ -217,7 +217,7 @@ msgstr "Puerta de enlace a la red de confianza"
 #: glossary/gdhcn.glossary.json:148
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trusted-service
 msgid "Trusted Service"
-msgstr "Servicio de confianza"
+msgstr "Servicio de confianza (Trusted Service)"
 
 #: glossary/gdhcn.glossary.json:155
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/verifiable-digital-health-certificate

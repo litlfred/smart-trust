@@ -40,11 +40,11 @@ msgstr "Tras evaluar favorablemente la Carta de solicitud y evaluar el Formulari
 
 #: input/pagecontent/concepts_onboarding.md:68
 msgid "After we contacted the participant about successful onboarding, a connectivity test should be the first action of the process. When connectivity is successfully established the participant should execute their acceptance tests. These acceptance tests must be performed on dedicated test environment called User Acceptance Testing (UAT) which already connects other trust network participants, that applied for onboarding."
-msgstr "Después de que nos pongamos en contacto con el participante para comunicarle que la incorporación se ha realizado con éxito, la primera acción del proceso debe ser una prueba de conectividad. Una vez establecida correctamente la conectividad, el participante debe ejecutar sus pruebas de aceptación. Estas pruebas de aceptación deben realizarse en un entorno de pruebas específico denominado Pruebas de Aceptación del Usuario (UAT), que ya conecta a otros participantes de la red de confianza que han solicitado la incorporación."
+msgstr "Después de que nos pongamos en contacto con el participante para comunicarle que la incorporación se ha realizado con éxito, la primera acción del proceso debería ser una prueba de conectividad. Una vez establecida correctamente la conectividad, el participante debería ejecutar sus pruebas de aceptación. Estas pruebas de aceptación deben realizarse en un entorno de pruebas específico denominado Pruebas de Aceptación del Usuario (UAT), que ya conecta a otros participantes de la red de confianza que han solicitado la incorporación."
 
 #: input/pagecontent/concepts_onboarding.md:21
 msgid "An eligible GDHCN Participant should complete the <a0>Onboarding Checklist</a0> which contains guiding videos through the onboarding process."
-msgstr "Un Participante cualificado para la Red Mundial debe completar la <a0>Lista de verificación de la incorporación</a0>, que contiene vídeos que sirven de guía a lo largo del proceso de incorporación."
+msgstr "Un Participante cualificado para la Red Mundial debería completar la <a0>Lista de verificación de la incorporación</a0>, que contiene vídeos que sirven de guía a lo largo del proceso de incorporación."
 
 #: input/pagecontent/concepts_onboarding.md:86
 msgid "attestation to comply with the Terms of Participation."
@@ -52,7 +52,7 @@ msgstr "declaración de que se cumplirán los Términos de participación."
 
 #: input/pagecontent/concepts_onboarding.md:92
 msgid "Contact Persons - Technical, Legal, Business Owner."
-msgstr "Personas de contacto: Contacto técnico, Contacto legal, Responsable de contacto."
+msgstr "Personas de contacto: Contacto técnico, Contacto legal, Responsable de contacto (Business Owner)."
 
 #: input/pagecontent/concepts_onboarding.md:129
 msgid "creation and Securing a Key Pair (Trust Anchor)  to sign/confirm on-boarding requests for the gateway;"
@@ -244,7 +244,7 @@ msgstr "El proceso completo de incorporación a la Red Mundial se divide en tres
 
 #: input/pagecontent/concepts_onboarding.md:27
 msgid "The GDHCN Administrative and Operational Framework should be considered the authoritative source of definitions and concepts in case of any discrepncies."
-msgstr "El Marco administrativo y operativo de la Red Mundial debe considerarse la fuente autorizada de definiciones y conceptos en caso de discrepancia."
+msgstr "El Marco administrativo y operativo de la Red Mundial debería considerarse la fuente autorizada de definiciones y conceptos en caso de discrepancia."
 
 #: input/pagecontent/concepts_onboarding.md:9
 msgid "The GDHCN Secretariat manages the Onboarding Process and Letters of Applications of eligible GDHCN Participants to connect as a trusted party to the trust network. Prepared onboarding records will be handed over to the GDHCN Secretariat with the request to process the technical on-boarding of the trusted party. An organizational and technical successful application results in a confirmation and the GDHCN Participant can connect to the trust network as a trusted party."

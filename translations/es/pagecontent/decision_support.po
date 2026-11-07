@@ -164,7 +164,7 @@ msgstr "Elaboración de las reglas: las reglas pueden ser redactadas en CQL por 
 
 #: input/pagecontent/decision_support.md:3
 msgid "Business rules for health credentials are the instructions, guidelines, and regulations that express health policies such as \"this course of vaccines meets jurisdiction entry requirements\" or \"this patient should complete their immunization schedule\". These policies can support a range of scenarios such as evaluating proof of vaccination or providing continuity of care."
-msgstr "Las reglas de negocio para credenciales sanitarias son las instrucciones, directrices y normas que expresan políticas sanitarias como \"esta pauta de vacunas cumple los requisitos de entrada de la jurisdicción\" o \"este paciente debe completar su calendario de vacunación\". Estas políticas pueden respaldar diversos escenarios, como la evaluación de pruebas de vacunación o la continuidad de la atención."
+msgstr "Las reglas de negocio para credenciales sanitarias son las instrucciones, directrices y normas que expresan políticas sanitarias como \"esta pauta de vacunas cumple los requisitos de entrada de la jurisdicción\" o \"este paciente debería completar su calendario de vacunación\". Estas políticas pueden respaldar diversos escenarios, como la evaluación de pruebas de vacunación o la continuidad de la atención."
 
 #: input/pagecontent/decision_support.md:65
 msgid "can be run against them and a result determined. In this example the results would show whether or not the traveler meets the travel requirements."
@@ -192,7 +192,7 @@ msgstr "El CQL puede redactarse con cualquier editor de texto; no obstante, util
 
 #: input/pagecontent/decision_support.md:141
 msgid "CQL can be packaged for distribution in a <a0>FHIR Library</a0> resource, intended for describing and sharing knowledge artifacts like CQL. The <a1>CRMI IG Packaging Guidelines</a1> provide information on how CQL libraries should be packaged. Examples of CQL packaged in FHIR Libraries can be found in the <a2>DDCC IG Knowledge Artifact Libraries</a2>."
-msgstr "El CQL puede empaquetarse para su distribución en un recurso <a0>Library de FHIR</a0>, destinado a describir y compartir artefactos de conocimiento como el CQL. Las <a1>Directrices de empaquetado de la IG CRMI</a1> explican cómo deben empaquetarse las bibliotecas CQL. Pueden encontrarse ejemplos de CQL empaquetado en recursos Library de FHIR en las <a2>Bibliotecas de artefactos de conocimiento de la IG DDCC</a2>."
+msgstr "El CQL puede empaquetarse para su distribución en un recurso <a0>Library de FHIR</a0>, destinado a describir y compartir artefactos de conocimiento como el CQL. Las <a1>Directrices de empaquetado de la IG CRMI</a1> explican cómo deberían empaquetarse las bibliotecas CQL. Pueden encontrarse ejemplos de CQL empaquetado en recursos Library de FHIR en las <a2>Bibliotecas de artefactos de conocimiento de la IG DDCC</a2>."
 
 #: input/pagecontent/decision_support.md:361
 msgid "CQL can be translated to ELM using the CQL Translation Service docker image. The following command starts the docker image on a local machine listening on port 8081:"
