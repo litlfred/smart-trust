@@ -4,7 +4,7 @@ name: Trust
 experimental: false
 status: draft
 version: 1.7.5
-fhirVersion: 5.0.0
+fhirVersion: 4.0.1 # as smart-base; R5 pre-adopted with hl7.fhir.uv.extensions.r4
 copyrightYear: 2023+
 releaseLabel: ci-build
 title: WHO SMART Trust
@@ -32,7 +32,7 @@ meta:
   profile:
   - http://smart.who.int/base/StructureDefinition/SGImplementationGuide
 dependencies:
-  hl7.fhir.uv.extensions.r5: 5.2.0
+  hl7.fhir.uv.extensions.r4: 5.3.0
   smart.who.int.base: 0.2.0
   smart.who.int.trust-phw: 0.1.0
   who.ddcc: 1.0.1
