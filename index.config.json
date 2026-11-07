@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "ea6ace8071ababfefaa96efa68a0aed7172a7659",
+          "ref": "e82653753b9d1d69c4609ff5e780058f41299809",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -155,9 +155,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "ea6ace8071ababfefaa96efa68a0aed7172a7659",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-07",
+              "ref": "e82653753b9d1d69c4609ff5e780058f41299809",
+              "evidence": "Owner litlfred, 2026-11-07, relayed by the coordinating session (session_01VQDpPg6DUZuufuAVwk6MqZ): 'repin + merge open 12 hrs'. Aligned to the pins of folio-assistant-core 1c7506fa (the core this layer mounts), so the composition's locks agree (owner's 'align pins', bean cat-tools-sm8r); at the older pins ten cat-harness-tools gates newly failed."
             }
           }
         }
@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "109b85085488de4e167bd19737218ceb10d1e906",
+          "ref": "7b5c9852c66bac2afb33777777f1818e94b7329a",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -180,9 +180,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "109b85085488de4e167bd19737218ceb10d1e906",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-07",
+              "ref": "7b5c9852c66bac2afb33777777f1818e94b7329a",
+              "evidence": "Owner litlfred, 2026-11-07, relayed by the coordinating session (session_01VQDpPg6DUZuufuAVwk6MqZ): 'repin + merge open 12 hrs'. Aligned to the pins of folio-assistant-core 1c7506fa (the core this layer mounts), so the composition's locks agree (owner's 'align pins', bean cat-tools-sm8r); at the older pins ten cat-harness-tools gates newly failed."
             }
           }
         }
@@ -193,7 +193,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
+          "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -202,9 +202,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "c90ef456067a874fd7017a370232908ba62e9fcd",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-07",
+              "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
+              "evidence": "Owner litlfred, 2026-11-07, relayed by the coordinating session (session_01VQDpPg6DUZuufuAVwk6MqZ): 'repin + merge open 12 hrs'. Aligned to the pins of folio-assistant-core 1c7506fa (the core this layer mounts), so the composition's locks agree (owner's 'align pins', bean cat-tools-sm8r); at the older pins ten cat-harness-tools gates newly failed."
             }
           }
         }
@@ -215,7 +215,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "aa25987a2e637838be02baf4ed239d58086551a3",
+          "ref": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -227,9 +227,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "aa25987a2e637838be02baf4ed239d58086551a3",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-07",
+              "ref": "9f478d4d9fcd87842e9a4f5b886232ec806e657e",
+              "evidence": "Owner litlfred, 2026-11-07, relayed by the coordinating session (session_01VQDpPg6DUZuufuAVwk6MqZ): 'repin + merge open 12 hrs'. Aligned to the pins of folio-assistant-core 1c7506fa (the core this layer mounts), so the composition's locks agree (owner's 'align pins', bean cat-tools-sm8r); at the older pins ten cat-harness-tools gates newly failed."
             }
           }
         }
