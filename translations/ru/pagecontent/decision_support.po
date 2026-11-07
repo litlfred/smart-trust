@@ -307,11 +307,11 @@ msgstr "При таком способе запуска Matchbox использ�
 
 #: input/pagecontent/decision_support.md:433
 msgid "Running the script should produce a file with the desired ELM translation."
-msgstr "В результате выполнения сценария должен быть создан файл с нужной трансляцией в ELM."
+msgstr "В результате выполнения сценария будет создан файл с нужной трансляцией в ELM."
 
 #: input/pagecontent/decision_support.md:486
 msgid "Running the script should produce results that look similar to this:"
-msgstr "В результате выполнения сценария должны быть получены результаты, похожие на следующие:"
+msgstr "В результате выполнения сценария будут получены результаты, похожие на следующие:"
 
 #: input/pagecontent/decision_support.md:174
 msgid "See <a0>CQL Introduction</a0>, <a1>CQL Authoring Guide</a1>, <a2>CRMI IG CQL Guidelines</a2> and <a3>CRMI IG Packaging Guidelines</a3>."
@@ -403,7 +403,7 @@ msgstr "Это двухэтапный процесс. На первом этап
 
 #: input/pagecontent/decision_support.md:318
 msgid "This should result in a new file containing the vaccine information in the intermediary CoreDataSet format. The data in the intermediary format can then be converted to a DDCC FHIR resource instance:"
-msgstr "В результате должен быть создан новый файл, содержащий информацию о вакцине в промежуточном формате CoreDataSet. Затем данные в промежуточном формате можно преобразовать в экземпляр ресурса DDCC FHIR:"
+msgstr "В результате будет создан новый файл, содержащий информацию о вакцине в промежуточном формате CoreDataSet. Затем данные в промежуточном формате можно преобразовать в экземпляр ресурса DDCC FHIR:"
 
 #: input/pagecontent/decision_support.md:218
 msgid "Translating across formats requires correctly mapping both the structure of the credential and the clinical concepts expressed within that structure."

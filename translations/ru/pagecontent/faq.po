@@ -21,7 +21,7 @@ msgstr "###!## Как ВОЗ обеспечивает доверие, не по�
 
 #: input/pagecontent/faq.md:6
 msgid "A designated public health authority from a WHO Member State, with decision-making authority regarding participation in the GDHCN, should be the representative."
-msgstr "Представителем должен быть уполномоченный орган общественного здравоохранения государства — члена ВОЗ, обладающий полномочиями принимать решения об участии в GDHCN."
+msgstr "Представителем следует назначить уполномоченный орган общественного здравоохранения государства — члена ВОЗ, обладающий полномочиями принимать решения об участии в GDHCN."
 
 #: input/pagecontent/faq.md:9
 msgid "A senior official with decision-making powers, involved in strategic decisions but not daily operations."
@@ -173,7 +173,7 @@ msgstr "Кто может выступать представителем, за�
 
 #: input/pagecontent/faq.md:11
 msgid "Who should be the Technical Contact?"
-msgstr "Кто должен быть техническим контактным лицом?"
+msgstr "Кого следует назначить техническим контактным лицом?"
 
 #: input/pagecontent/faq.md:50
 msgid "With detailed definitions for key materials, ensuring clarity and visibility in the key exchange process, closely resembling EU DCC definitions."

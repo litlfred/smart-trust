@@ -85,7 +85,7 @@ msgstr "Правомочным участником GDHCN является од�
 
 #: input/pagecontent/concepts.md:79
 msgid "An Issuer a system authorized by a Trust Network Participant to generate Verifiable Digital Health Certificates which are provided to a Holder.   An Issuer is responsible for generating the content that is digitally signed within the Verifiable Digital Health Certificate.   In order to sign this content, an Issuer should either itself be a Document Signer or utilize a Document Signer service, as authorized by the jurisdicitonal policy."
-msgstr "Эмитент — это система, уполномоченная Участником сети доверия формировать проверяемые цифровые сертификаты о состоянии здоровья, которые предоставляются владельцу. Эмитент отвечает за формирование содержимого, которое подписывается цифровой подписью в проверяемом цифровом сертификате о состоянии здоровья. Чтобы подписать это содержимое, эмитент должен либо сам быть подписантом документов, либо пользоваться услугой подписанта документов в соответствии с политикой юрисдикции."
+msgstr "Эмитент — это система, уполномоченная Участником сети доверия формировать проверяемые цифровые сертификаты о состоянии здоровья, которые предоставляются владельцу. Эмитент отвечает за формирование содержимого, которое подписывается цифровой подписью в проверяемом цифровом сертификате о состоянии здоровья. Чтобы подписать это содержимое, эмитенту следует либо самому быть подписантом документов, либо пользоваться услугой подписанта документов в соответствии с политикой юрисдикции."
 
 #: input/pagecontent/concepts.md:20
 msgid "an organization officially delegated by one of the organizations mentioned above that can abide by the GDHCN Terms of Participation and fulfils one or more of the following health service functions:"
@@ -269,7 +269,7 @@ msgstr "Физическое лицо, назначенное Участнико
 
 #: input/pagecontent/concepts.md:43
 msgid "The individual designated by a GDHCN Participant as having the primary responsibility for reviewing the requirements related to a Trust Domain on behalf of this GDHCN Participant. This person should be someone that the GDHCN Secretariat can consult in relation to any legal or policy issues that may arise, such as changes to this document or changes to one of its Annexes that defines a Trust Domain."
-msgstr "Физическое лицо, назначенное Участником GDHCN в качестве несущего основную ответственность за рассмотрение требований, связанных с Доменом доверия, от имени этого Участника GDHCN. Это должно быть лицо, с которым Секретариат GDHCN может консультироваться по любым правовым или политическим вопросам, которые могут возникнуть, например при внесении изменений в настоящий документ или в одно из его приложений, определяющих Домен доверия."
+msgstr "Физическое лицо, назначенное Участником GDHCN в качестве несущего основную ответственность за рассмотрение требований, связанных с Доменом доверия, от имени этого Участника GDHCN. Рекомендуется, чтобы это было лицо, с которым Секретариат GDHCN может консультироваться по любым правовым или политическим вопросам, которые могут возникнуть, например при внесении изменений в настоящий документ или в одно из его приложений, определяющих Домен доверия."
 
 #: input/pagecontent/concepts.md:37
 msgid "The individual identified by a GDHCN Participant as having the primary business and programmatic responsibility for the GDHCN Participant for the implementation of the use cases covered by a Trust Domain."

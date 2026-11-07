@@ -121,7 +121,7 @@ msgstr "Для бизнес-правил вводится новая конеч�
 
 #: input/pagecontent/trust_network_gateway_architecture.md:85
 msgid "Business Rules which should follow the <a0>Knowledge Artifact</a0> and <a1>Clinical Decision Support infrastructure</a1> including the following resources:"
-msgstr "Бизнес-правила, которые должны соответствовать инфраструктуре <a0>Knowledge Artifact</a0> и <a1>Clinical Decision Support</a1> и включать следующие ресурсы:"
+msgstr "Бизнес-правила, которым рекомендуется соответствовать инфраструктуре <a0>Knowledge Artifact</a0> и <a1>Clinical Decision Support</a1> и включать следующие ресурсы:"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:283
 msgid "Can be a HTTP(s)"
@@ -405,7 +405,7 @@ msgstr "Ресурсы HL7 FHIR Library для совместного испол
 
 #: input/pagecontent/trust_network_gateway_architecture.md:87
 msgid "HL7 FHIR PlanDefinition resources to indicate which business rule should be executed based on the relevant validation or continuity of care use cases."
-msgstr "Ресурсы HL7 FHIR PlanDefinition для указания того, какое бизнес-правило должно выполняться в зависимости от соответствующих вариантов использования для валидации или преемственности медицинской помощи."
+msgstr "Ресурсы HL7 FHIR PlanDefinition для указания того, какое бизнес-правило следует выполнять в зависимости от соответствующих вариантов использования для валидации или преемственности медицинской помощи."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:84
 msgid "HL7 FHIR ValueSet resources to share codings and terminologies referenced by the various digital COVID certificate specifications (e.g. allowed vaccines or tests).   - HL7 FHIR ConceptMaps may be used to provide mappings between jurisdictionally defined coding DDCC specification coding."
@@ -556,11 +556,11 @@ msgstr "NONE"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:176
 msgid "Note: All extendedKey usages should be well documented on github to avoid confusion regarding the usage. Each necessary attribute should be set up to support the verification process in the best way."
-msgstr "Примечание: все варианты расширенного назначения ключа (extendedKey usage) должны быть хорошо задокументированы на github во избежание путаницы в отношении их использования. Каждый необходимый атрибут должен быть настроен так, чтобы наилучшим образом поддерживать процесс проверки."
+msgstr "Примечание: все варианты расширенного назначения ключа (extendedKey usage) следует хорошо документировать на github во избежание путаницы в отношении их использования. Каждый необходимый атрибут следует настраивать так, чтобы наилучшим образом поддерживать процесс проверки."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:229
 msgid "Note: All routes should filter the delivered content by hash to avoid duplicate content delivery. Two different federations can receive from a single TP the same content in some circumstances."
-msgstr "Примечание: все маршруты должны фильтровать предоставляемое содержимое по хешу, чтобы избежать повторной передачи одного и того же содержимого. При некоторых обстоятельствах две разные федерации могут получить от одной TP одинаковое содержимое."
+msgstr "Примечание: всем маршрутам следует фильтровать предоставляемое содержимое по хешу, чтобы избежать повторной передачи одного и того же содержимого. При некоторых обстоятельствах две разные федерации могут получить от одной TP одинаковое содержимое."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:115
 msgid "Note: Database Replications have their own behavior and the functionality of the gateway can not cover each available database. Therefore JDBC feature should be used only if necessary and at own risk."
@@ -666,7 +666,7 @@ msgstr "Флаг повтора"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:224
 msgid "Returns the list of trusted certificates. The list can be filtered with optional query parameters. For legacy reasons, all signercertificates introduced in the “DSC” certificate group (if profile enabled) All other certificates should be delivered over query parameter."
-msgstr "Возвращает список доверенных сертификатов. Список может быть отфильтрован с помощью необязательных параметров запроса. По соображениям совместимости с унаследованными системами все сертификаты подписантов, внесённые в группу сертификатов “DSC” (если профиль включён). Все прочие сертификаты должны предоставляться через параметр запроса."
+msgstr "Возвращает список доверенных сертификатов. Список может быть отфильтрован с помощью необязательных параметров запроса. По соображениям совместимости с унаследованными системами все сертификаты подписантов, внесённые в группу сертификатов “DSC” (если профиль включён). Все прочие сертификаты следует предоставлять через параметр запроса."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:225
 msgid "Returns the list of trusted issuers. The list can be filtered with optional query parameters."
@@ -783,7 +783,7 @@ msgstr "Текущая модель доверия DCC Gateway поддержи�
 
 #: input/pagecontent/trust_network_gateway_architecture.md:241
 msgid "The data format of the federated data should always contain a federation wrapper with the information of federationID, Domain and resource type."
-msgstr "Формат федеративных данных всегда должен содержать оболочку федерации со сведениями о federationID, домене (Domain) и типе ресурса."
+msgstr "В формат федеративных данных всегда следует включать оболочку федерации со сведениями о federationID, домене (Domain) и типе ресурса."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:108
 msgid "The DDCC specification provides interoperable standards for exchanging metadata content such as trusted references, trusted certificates and signer certificates with systems via a Trust Network Gateway. This metadata is managed through Trusted Systems which will need a connection/proxying or facade service with the Trust Network Gateway (“TNG Mediator”). This mediator must be onboarded and trusted by the operator of the TNG before upload or download of content is possible. Technically this can be a script, a backend system or an OpenHIM mediator. The main tasks of this kind of software is to establish a mTLS connection with the gateway, sign the uploaded content (e.g. CMS Cryptographic Message Syntax) and upload signed DSCs, revocation entries or releasing business rules. The procedures used in background is out of scope. There may be manual release processes, automatic decisions or other processes, however it is crucial to ensured that the trusted channel and the security of the used certificates for upload/tls connection are not compromised."
@@ -811,7 +811,7 @@ msgstr "Конечные точки информации о подписанта
 
 #: input/pagecontent/trust_network_gateway_architecture.md:37
 msgid "The TNG should realize this enhancement of the current implementation of DCCG with the purpose to create a network between multiple gateways for exchanging health record associated public key material, value sets and business rules between different parties (authority, non-authority, commercial). In this architecture a gateway can connect to any other gateway by manually configuring the list of connections and trust relationships. To manage the connections and their download behavior a new component federator is introduced. The federator is a microservice which acts as an automated download client between two gateways and fulfills all responsibilities of trusted data exchange."
-msgstr "TNG должен реализовать данное расширение текущей реализации DCCG с целью создания сети из нескольких шлюзов для обмена материалом открытых ключей, связанным с медицинскими записями, наборами значений и бизнес-правилами между различными сторонами (органами власти, сторонами, не являющимися органами власти, коммерческими организациями). В этой архитектуре шлюз может подключаться к любому другому шлюзу путём ручной настройки списка соединений и доверительных отношений. Для управления соединениями и их поведением при загрузке вводится новый компонент — федератор. Федератор — это микросервис, который выступает автоматизированным клиентом загрузки между двумя шлюзами и выполняет все обязанности по обмену доверенными данными."
+msgstr "В TNG следует реализовать данное расширение текущей реализации DCCG с целью создания сети из нескольких шлюзов для обмена материалом открытых ключей, связанным с медицинскими записями, наборами значений и бизнес-правилами между различными сторонами (органами власти, сторонами, не являющимися органами власти, коммерческими организациями). В этой архитектуре шлюз может подключаться к любому другому шлюзу путём ручной настройки списка соединений и доверительных отношений. Для управления соединениями и их поведением при загрузке вводится новый компонент — федератор. Федератор — это микросервис, который выступает автоматизированным клиентом загрузки между двумя шлюзами и выполняет все обязанности по обмену доверенными данными."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:149
 msgid "The trust model doesn’t support raw public keys due to security reasons especially in cases where:"
@@ -900,7 +900,7 @@ msgstr "Для установления доверия между участни
 
 #: input/pagecontent/trust_network_gateway_architecture.md:246
 msgid "To federate multiple gateway data, a download process is introduced which should ensure that only trusted data is downloaded to a local gateway. Trusted data means in this context, that the operator of a local gateway has the total control which federated data is accepted and which not. To achieve this target, the local gateway operator must explicitly onboard any remote federators plus the trust anchors of the data which can be accepted. This is necessary because each remote federator may deliver the data of multiple other gateways (which are trusted by the origin gateway operator), but this means not necessarily that this data is trusted automatically by the local gateway operator as well (implicit trust relations must be avoided). Therefore, during the download process, a check should be run which skips all data that is not explicitly trusted by the local operator. This can be reached over the whitelisting of multiple trust anchors and the cross check over the TNPUP certificates. If the trust chain is established in this way, each content can be downloaded, verified and pushed to the store. The entire download process itself follows a delta download mechanism, which downloads daily the entire content, and within the day just the deltas. This means for the trust network, that a certificate “bubbles” from the origin gateway step by step to all other gateways. Through this behavior, it must be considered that around one day between creating a key pair, and issuing the first certificates with it is considered."
-msgstr "Для федерации данных нескольких шлюзов вводится процесс загрузки, который должен гарантировать, что в локальный шлюз загружаются только доверенные данные. В данном контексте доверенные данные означают, что оператор локального шлюза полностью контролирует, какие федеративные данные принимаются, а какие нет. Для достижения этой цели оператор локального шлюза должен явно подключить все удалённые федераторы, а также якоря доверия тех данных, которые могут быть приняты. Это необходимо, поскольку каждый удалённый федератор может предоставлять данные нескольких других шлюзов (которым доверяет оператор исходного шлюза), но это не обязательно означает, что эти данные автоматически являются доверенными и для оператора локального шлюза (неявных доверительных отношений следует избегать). Поэтому в ходе процесса загрузки должна выполняться проверка, пропускающая все данные, которым локальный оператор явно не доверяет. Этого можно достичь путём внесения нескольких якорей доверия в белый список и перекрёстной проверки по сертификатам TNPUP. Если цепочка доверия установлена таким образом, каждое содержимое может быть загружено, проверено и помещено в хранилище. Весь процесс загрузки следует механизму дельта-загрузки: ежедневно загружается всё содержимое, а в течение дня — только изменения (дельты). Для сети доверия это означает, что сертификат шаг за шагом «всплывает» от исходного шлюза ко всем остальным шлюзам. В связи с таким поведением необходимо учитывать, что между созданием пары ключей и выдачей с её помощью первых сертификатов проходит около одного дня."
+msgstr "Для федерации данных нескольких шлюзов вводится процесс загрузки, с помощью которого следует гарантировать, что в локальный шлюз загружаются только доверенные данные. В данном контексте доверенные данные означают, что оператор локального шлюза полностью контролирует, какие федеративные данные принимаются, а какие нет. Для достижения этой цели оператор локального шлюза должен явно подключить все удалённые федераторы, а также якоря доверия тех данных, которые могут быть приняты. Это необходимо, поскольку каждый удалённый федератор может предоставлять данные нескольких других шлюзов (которым доверяет оператор исходного шлюза), но это не обязательно означает, что эти данные автоматически являются доверенными и для оператора локального шлюза (неявных доверительных отношений следует избегать). Поэтому в ходе процесса загрузки следует выполнять проверку, пропускающую все данные, которым локальный оператор явно не доверяет. Этого можно достичь путём внесения нескольких якорей доверия в белый список и перекрёстной проверки по сертификатам TNPUP. Если цепочка доверия установлена таким образом, каждое содержимое может быть загружено, проверено и помещено в хранилище. Весь процесс загрузки следует механизму дельта-загрузки: ежедневно загружается всё содержимое, а в течение дня — только изменения (дельты). Для сети доверия это означает, что сертификат шаг за шагом «всплывает» от исходного шлюза ко всем остальным шлюзам. В связи с таким поведением необходимо учитывать, что между созданием пары ключей и выдачей с её помощью первых сертификатов проходит около одного дня."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:265
 msgid "To monitor the status of the Gateway, a health check is introduced. The new route returns 200 if the gateway is up and running. When the gateway is in maintenance, the routes must return 204. All other return codes indicate an error."
@@ -1039,7 +1039,7 @@ msgstr "Конечные точки наборов значений и бизн�
 
 #: input/pagecontent/trust_network_gateway_architecture.md:83
 msgid "Value Sets which should be shared using the transactions defined in the IHE Sharing Value Sets and Concept Maps (SVCM) profile and include the following resources:"
-msgstr "Наборы значений, которые должны совместно использоваться с помощью транзакций, определённых в профиле IHE Sharing Value Sets and Concept Maps (SVCM), и включать следующие ресурсы:"
+msgstr "Наборы значений, которые рекомендуется совместно использовать с помощью транзакций, определённых в профиле IHE Sharing Value Sets and Concept Maps (SVCM), и которые включают следующие ресурсы:"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:199
 #: input/pagecontent/trust_network_gateway_architecture.md:200

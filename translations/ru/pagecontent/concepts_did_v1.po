@@ -50,7 +50,7 @@ msgstr "Сам документ DID может быть подписан пут�
 
 #: input/pagecontent/concepts_did_v1.md:9
 msgid "The DID Document itself should have:​"
-msgstr "Сам документ DID должен содержать:​"
+msgstr "В сам документ DID следует включить:​"
 
 #: input/pagecontent/concepts_did_v1.md:17
 msgid "the public key JWK, including the key's x509 and chain of trust to Root Certificate Authority​"

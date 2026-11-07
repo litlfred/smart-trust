@@ -83,7 +83,7 @@ msgstr "$domain**         | Содержит доверенный ключево
 
 #: input/pagecontent/concepts_did_gdhcn.md:47
 msgid "$participant**    | Contains trusted key material or DID references of GDHCN for a trusted participant.  **$participant should be one of the codes in the  <a0>GDHCN Participant Value Set</a0>."
-msgstr "$participant**    | Содержит доверенный ключевой материал или ссылки DID GDHCN для доверенного участника.  **$participant должен быть одним из кодов из  <a0>набора значений участников GDHCN (GDHCN Participant Value Set)</a0>."
+msgstr "$participant**    | Содержит доверенный ключевой материал или ссылки DID GDHCN для доверенного участника.  **$participant следует указывать в виде одного из кодов из  <a0>набора значений участников GDHCN (GDHCN Participant Value Set)</a0>."
 
 #: input/pagecontent/concepts_did_gdhcn.md:48
 msgid "$usage**  | Contains trusted key material or DID references of a supported key usage type.   **$usage type is one of the key usages codes in the <a0>GDHCN Key Usage Value Set</a0>."

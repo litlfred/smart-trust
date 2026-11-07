@@ -41,11 +41,11 @@ msgstr "После положительной оценки Письма-заяв
 
 #: input/pagecontent/concepts_onboarding.md:68
 msgid "After we contacted the participant about successful onboarding, a connectivity test should be the first action of the process. When connectivity is successfully established the participant should execute their acceptance tests. These acceptance tests must be performed on dedicated test environment called User Acceptance Testing (UAT) which already connects other trust network participants, that applied for onboarding."
-msgstr "После того как мы сообщим участнику об успешном подключении, первым действием процесса должна стать проверка связи. После успешного установления связи участник должен провести свои приёмочные испытания. Эти приёмочные испытания должны проводиться в специальной тестовой среде, называемой средой пользовательского приёмочного тестирования (UAT), к которой уже подключены другие участники сети доверия, подавшие заявку на подключение."
+msgstr "После того как мы сообщим участнику об успешном подключении, первым действием процесса следует сделать проверку связи. После успешного установления связи участнику следует провести свои приёмочные испытания. Эти приёмочные испытания должны проводиться в специальной тестовой среде, называемой средой пользовательского приёмочного тестирования (UAT), к которой уже подключены другие участники сети доверия, подавшие заявку на подключение."
 
 #: input/pagecontent/concepts_onboarding.md:21
 msgid "An eligible GDHCN Participant should complete the <a0>Onboarding Checklist</a0> which contains guiding videos through the onboarding process."
-msgstr "Правомочный участник GDHCN должен выполнить <a0>Контрольный перечень подключения</a0>, который содержит обучающие видео по процессу подключения."
+msgstr "Правомочному участнику GDHCN следует выполнить <a0>Контрольный перечень подключения</a0>, который содержит обучающие видео по процессу подключения."
 
 #: input/pagecontent/concepts_onboarding.md:86
 msgid "attestation to comply with the Terms of Participation."
