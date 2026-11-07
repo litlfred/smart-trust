@@ -92,7 +92,7 @@ msgstr "Clés et dépôt prêts"
 #: input/business-processes/GDHCN.ONB.PrepareKeys.bpmn:21
 #. Diagram element documentation
 msgid "Manages the Participant's Public Key Infrastructure and holds the GPG key named in the Letter (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
-msgstr "Gère l’Infrastructure à clé publique du Participant et détient la clé GPG indiquée dans la Lettre (Cadre IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
+msgstr "Gère l’Infrastructure à clés publiques du Participant et détient la clé GPG indiquée dans la Lettre (Cadre IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
 
 #: input/business-processes/GDHCN.ONB.PrepareKeys.bpmn:17
 #. Diagram label

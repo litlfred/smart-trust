@@ -147,7 +147,7 @@ msgstr "Agence de sécurité sanitaire publique"
 #: glossary/gdhcn.glossary.json:112
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/public-key-infrastructure
 msgid "Public Key Infrastructure"
-msgstr "Infrastructure à clé publique"
+msgstr "Infrastructure à clés publiques (ICP)"
 
 #: glossary/gdhcn.glossary.json:120
 #. Glossary term label: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/technical-representative
@@ -177,17 +177,17 @@ msgstr "Personne identifiée par un Participant au GDHCN comme ayant la responsa
 #: glossary/gdhcn.glossary.json:69
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/key-master-representative
 msgid "The individual identified by a GDHCN Participant as having the primary responsibility for the management of the Public Key Infrastructure, including the generation of any needed public-private key pairs, and the configuration and management of the connections between the GDHCN Participant’s Public Key Infrastructure and the GDHCN Trust Network Gateway."
-msgstr "Personne identifiée par un Participant au GDHCN comme ayant la responsabilité principale de la gestion de l’Infrastructure à clé publique, y compris la génération de toute paire de clés publique-privée nécessaire, ainsi que la configuration et la gestion des connexions entre l’Infrastructure à clé publique du Participant au GDHCN et la Passerelle du réseau de confiance du GDHCN."
+msgstr "Personne identifiée par un Participant au GDHCN comme ayant la responsabilité principale de la gestion de l’Infrastructure à clés publiques, y compris la génération de toute paire de clés publique-privée nécessaire, ainsi que la configuration et la gestion des connexions entre l’Infrastructure à clés publiques du Participant au GDHCN et la Passerelle du réseau de confiance du GDHCN."
 
 #: glossary/gdhcn.glossary.json:141
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/trust-network-gateway
 msgid "The open-source software and its IT operational infrastructure, utilizing open standards, for a Public Key Infrastructure and metadata management services which is used to operationalize one or more Trust Domains."
-msgstr "Logiciel libre et son infrastructure informatique d’exploitation, fondés sur des normes ouvertes, assurant une Infrastructure à clé publique et des services de gestion des métadonnées, et utilisés pour rendre opérationnels un ou plusieurs Domaines de confiance."
+msgstr "Logiciel libre et son infrastructure informatique d’exploitation, fondés sur des normes ouvertes, assurant une Infrastructure à clés publiques et des services de gestion des métadonnées, et utilisés pour rendre opérationnels un ou plusieurs Domaines de confiance."
 
 #: glossary/gdhcn.glossary.json:26
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/encryption-key-certificate-governance
 msgid "The process and technical specifications regarding the management and use of encryption keys for Verifiable Digital Health Certificates, Public Key Infrastructure, and for securing connections with Trusted Services and the Trust Network Gateway."
-msgstr "Processus et spécifications techniques relatifs à la gestion et à l’utilisation des clés de chiffrement pour les Certificats numériques de santé vérifiables, l’Infrastructure à clé publique et la sécurisation des connexions avec les Services de confiance et la Passerelle du réseau de confiance."
+msgstr "Processus et spécifications techniques relatifs à la gestion et à l’utilisation des clés de chiffrement pour les Certificats numériques de santé vérifiables, l’Infrastructure à clés publiques et la sécurisation des connexions avec les Services de confiance et la Passerelle du réseau de confiance."
 
 #: glossary/gdhcn.glossary.json:90
 #. Glossary term definition: https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process

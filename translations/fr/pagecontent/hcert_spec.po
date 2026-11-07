@@ -491,7 +491,7 @@ msgstr "La charge utile est structurée et encodée en CBOR avec une signature n
 
 #: input/pagecontent/hcert_spec.md:16
 msgid "The Public Key Infrastructure (PKI) that underpins the trust model consists of a Signing Certificate Authority (SCA) certificate which is used to issue (i.e. sign) the Document Signing Certificate (DSC). The DSC is then used to sign the DCC. The acronyms \"PKI\", \"SCA\" and \"DSC\" are used in the context of the document to refer to the aforementioned concepts."
-msgstr "L'infrastructure à clé publique (PKI) qui sous-tend le modèle de confiance se compose d'un certificat d'autorité de certification de signature (SCA), utilisé pour émettre (c'est-à-dire signer) le certificat de signataire de documents (DSC). Le DSC est ensuite utilisé pour signer le DCC. Les acronymes « PKI », « SCA » et « DSC » sont utilisés dans le présent document pour désigner les concepts susmentionnés."
+msgstr "L'infrastructure à clés publiques (ICP, en anglais PKI) qui sous-tend le modèle de confiance se compose d'un certificat d'autorité de certification de signature (SCA), utilisé pour émettre (c'est-à-dire signer) le certificat de signataire de documents (DSC). Le DSC est ensuite utilisé pour signer le DCC. Les acronymes « PKI », « SCA » et « DSC » sont utilisés dans le présent document pour désigner les concepts susmentionnés."
 
 #: input/pagecontent/hcert_spec.md:141
 msgid "The QR format as defined in (ISO/IEC 18004:2015) SHALL be used for 2D barcode generation. An error correction rate of ‘Q’ (around 25%) is RECOMMENDED.  The Alphanumeric (Mode 2/QR Code symbols 0010) MUST be used in conjunction with Base45."

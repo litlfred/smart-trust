@@ -102,7 +102,7 @@ msgstr "Lettre vérifiée"
 #: input/business-processes/GDHCN.ONB.Apply.bpmn:24
 #. Diagram element documentation
 msgid "Manages the Participant's Public Key Infrastructure and holds the GPG key named in the Letter (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
-msgstr "Gère l’infrastructure à clé publique du Participant et détient la clé GPG indiquée dans la lettre (Cadre IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
+msgstr "Gère l’infrastructure à clés publiques du Participant et détient la clé GPG indiquée dans la lettre (Cadre IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/KeyMasterRepresentative."
 
 #: input/business-processes/GDHCN.ONB.Apply.bpmn:61
 #. Diagram label
