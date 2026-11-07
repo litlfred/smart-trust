@@ -218,7 +218,7 @@ msgstr "Убедитесь, что все инструменты (наприме
 
 #: input/pagecontent/concepts_onboarding_checklist.md:317
 msgid "Copy the generated certificates to the respective folders and change the file names to match the naming convention. For the case of self-signed TLS certificates, the CA.pem is just a copy of the TLS.pem (check to have keyCertSign in the keyUsage). The CA.pem should exist, since it is used to verify the TLS client certificate when connecting to the TNG application. Files to be copied in respective folders are as follows:"
-msgstr "Скопируйте сгенерированные сертификаты в соответствующие папки и измените имена файлов в соответствии с соглашением об именовании. В случае самоподписанных сертификатов TLS файл CA.pem — это просто копия TLS.pem (проверьте наличие keyCertSign в keyUsage). Файл CA.pem должен существовать, поскольку он используется для проверки клиентского сертификата TLS при подключении к приложению TNG. В соответствующие папки копируются следующие файлы:"
+msgstr "Скопируйте сгенерированные сертификаты в соответствующие папки и измените имена файлов в соответствии с соглашением об именовании. В случае самоподписанных сертификатов TLS файл CA.pem — это просто копия TLS.pem (проверьте наличие keyCertSign в keyUsage). Следует обеспечить наличие файла CA.pem, поскольку он используется для проверки клиентского сертификата TLS при подключении к приложению TNG. В соответствующие папки копируются следующие файлы:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:223
 msgid "Copy your GPG key, beginning with -----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----."
@@ -648,7 +648,7 @@ msgstr "Доступ к сети: убедитесь, что сетевые на
 
 #: input/pagecontent/concepts_onboarding_checklist.md:484
 msgid "Note :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified."
-msgstr "Примечание: учтите, что самоподписанные сертификаты также должны содержать назначение ключа «подписание сертификатов» (keyCertSign), чтобы можно было проверить (само)подпись сертификата."
+msgstr "Примечание: учтите, что в самоподписанные сертификаты также следует включать назначение ключа «подписание сертификатов» (keyCertSign), чтобы можно было проверить (само)подпись сертификата."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:315
 msgid "Note: keep your private keys safe and secure. Do not share them with anyone."
@@ -661,7 +661,7 @@ msgstr "Примечание: в средах DEV и UAT, если файлы с
 #: input/pagecontent/concepts_onboarding_checklist.md:265
 #: input/pagecontent/concepts_onboarding_checklist.md:285
 msgid "Note: OSSL_COUNTRY_NAME should be ISO 2 letter name of the country mapped to the name used in repository."
-msgstr "Примечание: OSSL_COUNTRY_NAME должно быть 2-буквенным кодом страны ISO, соответствующим имени, используемому в репозитории."
+msgstr "Примечание: в качестве OSSL_COUNTRY_NAME следует указывать 2-буквенный код страны ISO, соответствующий имени, используемому в репозитории."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:682
 msgid "Note: Replace domain, group, and EndpointURL with the appropriate values for your onboarding environment."
@@ -1062,7 +1062,7 @@ msgstr "Только для пользователей платформы Window
 
 #: input/pagecontent/concepts_onboarding_checklist.md:620
 msgid "Windows ships with cURL that uses Schannel, which does not support PKI/KEY certificates. To avoid validation errors, use a cURL build with OpenSSL. Users should check their current version with curl --version and download an OpenSSL-based build if necessary. <a0>DownloadLink</a0> After extracting, go to the bin folder and verify with ./curl.exe --version (it should show LibreSSL or OpenSSL)."
-msgstr "В комплект Windows входит cURL, использующий Schannel, который не поддерживает сертификаты PKI/KEY. Чтобы избежать ошибок проверки, используйте сборку cURL с OpenSSL. Пользователям следует проверить текущую версию с помощью curl --version и при необходимости загрузить сборку на основе OpenSSL. <a0>DownloadLink</a0> После распаковки перейдите в папку bin и выполните проверку с помощью ./curl.exe --version (должно отображаться LibreSSL или OpenSSL)."
+msgstr "В комплект Windows входит cURL, использующий Schannel, который не поддерживает сертификаты PKI/KEY. Чтобы избежать ошибок проверки, используйте сборку cURL с OpenSSL. Пользователям следует проверить текущую версию с помощью curl --version и при необходимости загрузить сборку на основе OpenSSL. <a0>DownloadLink</a0> После распаковки перейдите в папку bin и выполните проверку с помощью ./curl.exe --version (отобразится LibreSSL или OpenSSL)."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:618
 msgid "Windows Users – cURL Certificate Validation Note:"
@@ -1078,4 +1078,4 @@ msgstr "С командой git merge можно также использова
 
 #: input/pagecontent/concepts_onboarding_checklist.md:633
 msgid "You should see a output like:"
-msgstr "Вы должны увидеть примерно такой вывод:"
+msgstr "Вы увидите примерно такой вывод:"

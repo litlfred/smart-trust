@@ -931,4 +931,4 @@ msgstr "ВОЗ как якорь доверия для инфраструкту�
 
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
-msgstr "Вы должны увидеть примерно следующий вывод:"
+msgstr "Вы увидите примерно следующий вывод:"

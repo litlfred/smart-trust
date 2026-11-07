@@ -300,7 +300,7 @@ msgstr "соответствие имени/личности в сертифик
 
 #: input/pagecontent/transactions.md:41
 msgid "The output should be a valid signed <a0>HCERT</a0>"
-msgstr "Результатом должен быть действительный подписанный <a0>HCERT</a0>"
+msgstr "Результатом будет действительный подписанный <a0>HCERT</a0>"
 
 #: input/pagecontent/transactions.md:7
 msgid "The Trust Anchor will validate the submitted key material and distribute it to other Trust Network Participants"
