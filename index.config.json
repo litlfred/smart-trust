@@ -90,7 +90,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "65362ed839cd62bb2fac729d8dabad267ecad6ca",
+          "ref": "29c20f1371d2defa00da52cfbad48fea491f9bbc",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-07",
-              "ref": "65362ed839cd62bb2fac729d8dabad267ecad6ca",
-              "evidence": "litlfred 2026-11-07 05:25Z, session https://claude.ai/code/session_01VQDpPfeH29k3n4iKC2D5wg: \"repin + merge open 12 hrs\"; fhir-harness to 65362ed8 (#302, the generic translation-supplements check the owner asked for)."
+              "ref": "29c20f1371d2defa00da52cfbad48fea491f9bbc",
+              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f), at the harness coordinator's request: re-pinned fhir-harness to 29c20f1 (#309, the IG FHIR-package lock that ig-ast-refresh seeds the cache from) for trust-phw 0.2.0-litlfred."
             }
           }
         }
