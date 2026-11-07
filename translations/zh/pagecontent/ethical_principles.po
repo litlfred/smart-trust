@@ -77,7 +77,7 @@ msgstr "为应用数字解决方案而处理的个人数据，其任何保留都
 
 #: input/pagecontent/ethical_principles.md:148
 msgid "CONFIDENTIALITY AND SECURITY  Personal data processed in the interest of the application of the digital solution should be kept confidential and not disclosed to unauthorized parties; personal data should only be accessible to the data subject or to other explicitly authorized parties."
-msgstr "保密与安全  为应用数字解决方案而处理的个人数据应予以保密，不得向未经授权的各方披露；个人数据应仅供数据主体或其他经明确授权的各方访问。"
+msgstr "保密与安全  为应用数字解决方案而处理的个人数据应予以保密，不应向未经授权的各方披露；个人数据应仅供数据主体或其他经明确授权的各方访问。"
 
 #: input/pagecontent/ethical_principles.md:105
 msgid "Data protection principles for a Digital Solution"
