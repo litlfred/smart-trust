@@ -379,7 +379,7 @@ msgstr "أدخل اسم المستودع متبعًا الاصطلاح، إذ ي
 
 #: input/pagecontent/concepts_onboarding_checklist.md:189
 msgid "Enter the length of time the key should be valid. Press Enter to specify the default selection, indicating that the key doesn't expire. Unless you require an expiration date, we recommend accepting this default."
-msgstr "أدخل المدة التي يجب أن يظل فيها المفتاح صالحًا. اضغط Enter لتحديد الخيار الافتراضي، الذي يشير إلى أن المفتاح لا تنتهي صلاحيته. وما لم تكن بحاجة إلى تاريخ انتهاء صلاحية، فإننا نوصي بقبول هذا الخيار الافتراضي."
+msgstr "أدخل المدة التي ينبغي أن يظل فيها المفتاح صالحًا. اضغط Enter لتحديد الخيار الافتراضي، الذي يشير إلى أن المفتاح لا تنتهي صلاحيته. وما لم تكن بحاجة إلى تاريخ انتهاء صلاحية، فإننا نوصي بقبول هذا الخيار الافتراضي."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:191
 msgid "Enter your user ID information."
