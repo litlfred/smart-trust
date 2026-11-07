@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "3c13890e8ce4f5d08dcd3cb03992c3289a7b89a4",
+          "ref": "1c7506fabbd4cdad8cb2b332f93f6f5dc2ece9a0",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-02",
-              "ref": "3c13890e8ce4f5d08dcd3cb03992c3289a7b89a4",
-              "evidence": "Owner litlfred, 2026-11-01 (20:41Z, MVP thread): 'i want to get all functional stuff done, the full repin on harnesses done and stablized as MVP goal.' and 21:41Z card Q-PIN-4 'B. All, including smart-ra' (re-pin every smart-* site)."
+              "on": "2026-11-07",
+              "ref": "1c7506fabbd4cdad8cb2b332f93f6f5dc2ece9a0",
+              "evidence": "Owner litlfred, 2026-11-07, relayed by the coordinating session (session_01VQDpPg6DUZuufuAVwk6MqZ): 'do it in the schema..... do the repin' and 'repin + merge open 12 hrs'. folio-assistant-core moves to main 1c7506fa, the merge of folio-assistant-core#663 (the glossary subject area), which this PR's glossary changes need."
             }
           }
         }
