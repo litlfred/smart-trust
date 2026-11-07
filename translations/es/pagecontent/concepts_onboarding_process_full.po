@@ -188,7 +188,7 @@ msgstr "[68 - 69] El equipo de incorporación informa al TNP de que debe estar p
 
 #: input/pagecontent/concepts_onboarding_process_full.md:83
 msgid "[7] If the WHO’s technical team gives a positive opinion, the eligible Trust Network Participant will be invited to start the onboarding process. The following information is included:"
-msgstr "[7] Si el equipo técnico de la OMS emite una opinión favorable, se invitará al Participante cualificado de la red de confianza a iniciar el proceso de incorporación. Se incluye la siguiente información:"
+msgstr "[7] Si el equipo técnico de la OMS emite una opinión favorable, se invitará al Participante cualificado de la red de confianza a iniciar el proceso de integración. Se incluye la siguiente información:"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:326
 msgid "[70] The participant is allowed and enabled to connect to TNG PROD environment (for detailed information see [60])."
@@ -216,7 +216,7 @@ msgstr "[76] y, en caso de problemas, se acuerdan medidas correctivas adicionale
 
 #: input/pagecontent/concepts_onboarding_process_full.md:264
 msgid "[77 - 80] After passing the Production Readiness Test, the participant is allowed to use the TNG PROD environment. A confirmation email is sent to the participant and to WHO with the confirmation about the successfully passed test and the completion of the onboarding process."
-msgstr "[77 - 80] Tras superar la prueba de preparación para producción, el participante queda autorizado a utilizar el entorno PROD de la TNG. Se envía al participante y a la OMS un correo electrónico de confirmación de que la prueba se ha superado satisfactoriamente y de que el proceso de incorporación ha concluido."
+msgstr "[77 - 80] Tras superar la prueba de preparación para producción, el participante queda autorizado a utilizar el entorno PROD de la TNG. Se envía al participante y a la OMS un correo electrónico de confirmación de que la prueba se ha superado satisfactoriamente y de que el proceso de integración ha concluido."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:89
 msgid "[8] The TNP receives the confirmation and necessary technical information to connect to the TNG and register the certificates."
@@ -549,7 +549,7 @@ msgstr "Delegado en la Asamblea Mundial de la Salud o en otra reunión de un ór
 
 #: input/pagecontent/concepts_onboarding_process_full.md:1
 msgid "Details of the Onboarding Process"
-msgstr "Detalles del Proceso de incorporación"
+msgstr "Detalles del Proceso de integración"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:385
 msgid "e) Delete at least one DSC again (Revocation)"
@@ -741,7 +741,7 @@ msgstr "openssl x509 -outform der -in cert.pem -out cert.der"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:7
 msgid "Overview of the onboarding processes"
-msgstr "Resumen de los procesos de incorporación"
+msgstr "Resumen de los procesos de integración"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:59
 msgid "Phase 1: apply and be verified"
@@ -876,7 +876,7 @@ msgstr "las URL de los repositorios privados de GitHub del solicitante"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:3
 msgid "This page describes the onboarding process of the GDHCN (the so called Future Onboarding Process, FOP), drawn in BPMN 2.0. Under each drawing is the text of the steps it shows. That text is kept in a Markdown file beside each BPMN file, with one section per task, and each task of the drawing links to its section, so the page and the drawings come from one source. The numbers [n] are the step numbers of <a0>the original drawing</a0>."
-msgstr "Esta página describe el proceso de incorporación de la Red Mundial (el denominado Future Onboarding Process, FOP), dibujado en BPMN 2.0. Debajo de cada dibujo figura el texto de los pasos que muestra. Ese texto se guarda en un archivo Markdown junto a cada archivo BPMN, con una sección por tarea, y cada tarea del dibujo enlaza con su sección, de modo que la página y los dibujos proceden de una sola fuente. Los números [n] son los números de paso de <a0>el dibujo original</a0>."
+msgstr "Esta página describe el proceso de integración de la Red Mundial (el denominado Future Onboarding Process, FOP), dibujado en BPMN 2.0. Debajo de cada dibujo figura el texto de los pasos que muestra. Ese texto se guarda en un archivo Markdown junto a cada archivo BPMN, con una sección por tarea, y cada tarea del dibujo enlaza con su sección, de modo que la página y los dibujos proceden de una sola fuente. Los números [n] son los números de paso de <a0>el dibujo original</a0>."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:334
 #: input/pagecontent/concepts_onboarding_process_full.md:350

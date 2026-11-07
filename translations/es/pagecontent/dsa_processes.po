@@ -28,7 +28,7 @@ msgstr "<a0>DID Core 1.0</a0>, did:web, prueba JsonWebSignature2020 (<a1>DID Tru
 
 #: input/pagecontent/dsa_processes.md:50
 msgid "<a0>Onboarding Process</a0>"
-msgstr "<a0>Proceso de incorporación</a0>"
+msgstr "<a0>Proceso de integración</a0>"
 
 #: input/pagecontent/dsa_processes.md:37
 msgid "<a0>Receiver</a0>; any system that checks a party's signature or TLS certificate"
@@ -277,7 +277,7 @@ msgstr "GDHCN: <a0>Recuperar claves de verificación - DID</a0>. La prueba de la
 
 #: input/pagecontent/dsa_processes.md:78
 msgid "GDHCN: Letter of Application, Terms of Participation, technical evaluation, acceptance testing, go-live (<a0>Onboarding Process</a0>)."
-msgstr "GDHCN: Carta de solicitud, Términos de participación, evaluación técnica, pruebas de aceptación, puesta en producción (<a0>Proceso de incorporación</a0>)."
+msgstr "GDHCN: Carta de solicitud, Términos de participación, evaluación técnica, pruebas de aceptación, puesta en producción (<a0>Proceso de integración</a0>)."
 
 #: input/pagecontent/dsa_processes.md:84
 msgid "GDHCN: the usages in the <a0>KeyUsage</a0> value set (for example SCA, DSC, UP, TLS). See <a1>Certificate Governance</a1>."

@@ -156,7 +156,7 @@ msgstr "¿Cuál es la política actual sobre la renovación de los certificados 
 
 #: input/pagecontent/faq.md:44
 msgid "What is the onboarding process for new applications not previously connected to EU DCC?"
-msgstr "¿Cuál es el proceso de incorporación de nuevas solicitudes que no estaban conectadas previamente al EU DCC?"
+msgstr "¿Cuál es el proceso de integración de nuevas solicitudes que no estaban conectadas previamente al EU DCC?"
 
 #: input/pagecontent/faq.md:63
 msgid "What is the process for proposing alternatives to the current TLS certificate policy?"
