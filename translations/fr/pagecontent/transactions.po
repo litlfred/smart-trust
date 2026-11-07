@@ -74,11 +74,11 @@ msgstr "disposer d'un moyen de récupérer les annuaires de clés publiques loca
 
 #: input/pagecontent/transactions.md:21
 msgid "Have an existing public key infrastructure used for issuing trusted health documents (e.g. COVID credentials)"
-msgstr "disposer d'une infrastructure à clé publique existante servant à émettre des documents de santé de confiance (p. ex. justificatifs COVID) ;"
+msgstr "disposer d'une infrastructure à clés publiques existante servant à émettre des documents de santé de confiance (p. ex. justificatifs COVID) ;"
 
 #: input/pagecontent/transactions.md:31
 msgid "Have an existing public key infrastructure used for signing list of keys my node members"
-msgstr "disposer d'une infrastructure à clé publique existante servant à signer la liste des clés des membres de leur nœud ;"
+msgstr "disposer d'une infrastructure à clés publiques existante servant à signer la liste des clés des membres de leur nœud ;"
 
 #: input/pagecontent/transactions.md:22
 msgid "Have permissions/policies in place that allow sharing the public keys"
