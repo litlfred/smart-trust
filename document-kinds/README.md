@@ -11,7 +11,6 @@ How this IG realises the document kinds of the layers it needs: `dak.coverage.sm
 
 Part of [WHO SMART Trust](../README.md) 0.1.0, declared as `smart-trust-document-kinds`, holding `document-kinds`.
 
-| file | what it is | used by |
-|---|---|---|
+_This directory holds no files yet._
 
 <!-- kg:subgraph:end -->

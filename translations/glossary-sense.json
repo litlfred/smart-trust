@@ -1,0 +1,85 @@
+{
+  "$schema": "glossary-sense/v1",
+  "verdicts": [
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/gdhcn-trust-network",
+      "label": "GDHCN Trust Network",
+      "msgidSha256": "fa243b24eed7e941305800f9b42122af2a96a561be05c628a7694635a8096aaa",
+      "msgid": "provide the necessary technical specifications and configuration information to connect to their back-end systems to the WHO GDHCN Trust Network Gateway (TNG)",
+      "verdict": "exception",
+      "reason": "WHO's own Spanish (Letter of Application, C.L.38.2023) says «puerta de enlace a la red de confianza» and «Red Mundial de Certificación Digital de Salud de la OMS»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process",
+      "label": "Onboarding Process",
+      "msgidSha256": "128b3dc9f645fa2abb7a82b037ef62f0c7bf8de01e44c6e1c901790900ea6fbc",
+      "msgid": "Letter of Application for DDCC by the Full Onboarding Process - Chinese Version",
+      "verdict": "exception",
+      "reason": "The title names WHO's own Spanish letter (Letter_of_Application_DDCC-Spanish.docx), which says «proceso de integración plena»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process",
+      "label": "Onboarding Process",
+      "msgidSha256": "2a90769ccd3dd98e72bf975e064cce8ea18c84ea19577f62f6c45c1f7ee80fac",
+      "msgid": "Letter of Application for DDCC by the Full Onboarding Process - Russian Version",
+      "verdict": "exception",
+      "reason": "The title names WHO's own Spanish letter (Letter_of_Application_DDCC-Spanish.docx), which says «proceso de integración plena»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process",
+      "label": "Onboarding Process",
+      "msgidSha256": "3e9f79f935f07e6a5e7199e7f6e2098772bd3a0391b27f49404d494ca623467b",
+      "msgid": "Letter of Application for DDCC by the Full Onboarding Process - Arabic Version",
+      "verdict": "exception",
+      "reason": "The title names WHO's own Spanish letter (Letter_of_Application_DDCC-Spanish.docx), which says «proceso de integración plena»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process",
+      "label": "Onboarding Process",
+      "msgidSha256": "6c2991b0a9559890b209c5fc01bd2c648cc9f4b5ca0ad6b9aeb14bb64a6d615a",
+      "msgid": "Letter of Application for DDCC by the Full Onboarding Process",
+      "verdict": "exception",
+      "reason": "The title names WHO's own Spanish letter (Letter_of_Application_DDCC-Spanish.docx), which says «proceso de integración plena»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process",
+      "label": "Onboarding Process",
+      "msgidSha256": "893529f45f9caa305219c3917580190aaae6a2635beba347a22286b98d6c839a",
+      "msgid": "Letter of Application for DDCC by the Full Onboarding Process - French Version",
+      "verdict": "exception",
+      "reason": "The title names WHO's own Spanish letter (Letter_of_Application_DDCC-Spanish.docx), which says «proceso de integración plena»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/onboarding-process",
+      "label": "Onboarding Process",
+      "msgidSha256": "994382093160609b1ba1ef667bdbfd75c63dd94267ead4e0a204831422c99ee2",
+      "msgid": "Letter of Application for DDCC by the Full Onboarding Process - Spanish Version",
+      "verdict": "exception",
+      "reason": "The title names WHO's own Spanish letter (Letter_of_Application_DDCC-Spanish.docx), which says «proceso de integración plena»; normative WHO wording is kept.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    },
+    {
+      "term": "https://litlfred.github.io/smart-trust/v0/ns/glossary/gdhcn/verifiable-digital-health-certificate",
+      "label": "Verifiable Digital Health Certificate",
+      "msgidSha256": "37eea488fdab5103655052225f0c463907c9a2768824dc131bdfd83dabeb3966",
+      "msgid": "The core functionality is the secure and trusted exchange of signature keys for GDHCN Trust Network Gateway (TNG) which acts as a central repository for the public keys. GDHCN Participants are empowered to publish the public keys that they use to sign Verifiable Digital Health Certificate. Relying GDHCN Participants can use the TNG to fetch up-to-date public key material on a timely basis.",
+      "verdict": "exception",
+      "reason": "The sentence uses the plural; Arabic renders it الشهادات الصحية الرقمية القابلة للتحقق, the fixed term's broken plural, which the stem matcher cannot see.",
+      "decidedBy": "en-lead-adjudicator",
+      "decidedAt": "2026-11-07"
+    }
+  ]
+}
