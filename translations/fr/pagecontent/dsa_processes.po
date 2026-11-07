@@ -261,7 +261,7 @@ msgstr "Le GDHCN regroupe les clés par <a0>Domaine de confiance</a0>, par exemp
 
 #: input/pagecontent/dsa_processes.md:23
 msgid "GDHCN is one possible trust anchor, not the only one. A DSA may name a national PKI, a party's own did:web, or a local list instead. Nothing on this page requires GDHCN."
-msgstr "Le GDHCN est une ancre de confiance possible, mais pas la seule. Un DSA peut désigner à la place une PKI nationale, le did:web propre d’une partie ou une liste locale. Rien sur cette page n’exige le GDHCN."
+msgstr "Le GDHCN est une ancre de confiance possible, mais pas la seule. Un DSA peut désigner à la place une ICP (en anglais PKI) nationale, le did:web propre d’une partie ou une liste locale. Rien sur cette page n’exige le GDHCN."
 
 #: input/pagecontent/dsa_processes.md:124
 msgid "GDHCN joining is itself governed by documents (Terms of Participation, the Administrative and Operational Framework). It is a working example of a document-only agreement with technical processes on top. See <a0>Concepts</a0>."
@@ -298,7 +298,7 @@ msgstr "empreinte, catalogue"
 
 #: input/pagecontent/dsa_processes.md:175
 msgid "I's server certificate is issued by the national PKI, or I publishes a did:web"
-msgstr "Le certificat de serveur de I est émis par la PKI nationale, ou I publie un did:web"
+msgstr "Le certificat de serveur de I est émis par l’ICP nationale, ou I publie un did:web"
 
 #: input/pagecontent/dsa_processes.md:177
 msgid "I's server gets tokens by client credentials over mutual TLS (<a0>RFC 8705</a0>) and calls the API"
@@ -368,11 +368,11 @@ msgstr "mécanisme"
 
 #: input/pagecontent/dsa_processes.md:51
 msgid "National PKI"
-msgstr "PKI nationale"
+msgstr "ICP nationale"
 
 #: input/pagecontent/dsa_processes.md:81
 msgid "National PKI: national rules."
-msgstr "PKI nationale : règles nationales."
+msgstr "ICP nationale : règles nationales."
 
 #: input/pagecontent/dsa_processes.md:51
 msgid "National rules"
