@@ -160,7 +160,7 @@ Verify one Letter of Application, and have it corrected if needed.
 
 - The contact details (including email address) of the people authorized to provide the certificates of the TNPThe TNP exchanges the Letter of Application to WHO.
 
-**[15]** The Letter of Application is received and processed by WHO. The TNP .
+**[15]** The Letter of Application is received and processed by WHO.
 
 **[16 - 17]** The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:
 

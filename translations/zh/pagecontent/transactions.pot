@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.510Z\n"
+"POT-Creation-Date: 2026-11-08T15:52:50.621Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -20,7 +20,8 @@ msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN speci
 msgstr ""
 
 #: input/pagecontent/transactions.md:49
-msgid "A Trust Network Partcipiant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
 msgstr ""
 
 #: input/pagecontent/transactions.md:32

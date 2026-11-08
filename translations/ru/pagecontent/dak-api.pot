@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.462Z\n"
+"POT-Creation-Date: 2026-11-08T15:52:50.591Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -23,5 +23,5 @@ msgid "Table of Contents"
 msgstr ""
 
 #: input/pagecontent/dak-api.md:3
-msgid "This page provides access to Data Access Kit (DAK) API documentation and schemas."
+msgid "This page provides access to Digital Adaptation Kit (DAK) API documentation and schemas."
 msgstr ""
