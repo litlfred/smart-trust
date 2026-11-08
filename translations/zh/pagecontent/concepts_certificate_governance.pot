@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.433Z\n"
+"POT-Creation-Date: 2026-11-08T10:29:26.596Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -152,7 +152,7 @@ msgid "digital signature (at minimum)"
 msgstr ""
 
 #: input/pagecontent/concepts_certificate_governance.md:25
-msgid "Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021) and [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021). It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. Legal and administrative procedures are not in the scope of this document, they must be defined separately."
+msgid "Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) and [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/). It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. Legal and administrative procedures are not in the scope of this document, they must be defined separately."
 msgstr ""
 
 #: input/pagecontent/concepts_certificate_governance.md:203
@@ -518,7 +518,7 @@ msgid "The requirements on the technical TNG architecture can be summarized as f
 msgstr ""
 
 #: input/pagecontent/concepts_certificate_governance.md:70
-msgid "The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -> SCA -> DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will ignore anything above the SCA -- and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021) only allows for exactly two levels - a 'root' SCA and a single 'leaf' DSC signed by just that SCA. In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment."
+msgid "The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -> SCA -> DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will ignore anything above the SCA -- and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) only allows for exactly two levels - a 'root' SCA and a single 'leaf' DSC signed by just that SCA. In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment."
 msgstr ""
 
 #: input/pagecontent/concepts_certificate_governance.md:74
@@ -578,7 +578,7 @@ msgid "The Trust Network Participant's upload certificate TNPUP"
 msgstr ""
 
 #: input/pagecontent/concepts_certificate_governance.md:73
-msgid "The verification model in the Trust Network PKI is the shell model (for example, defined in [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016)), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:"
+msgid "The verification model in the Trust Network PKI is the shell model (for example, defined in [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/)), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:"
 msgstr ""
 
 #: input/pagecontent/concepts_certificate_governance.md:158

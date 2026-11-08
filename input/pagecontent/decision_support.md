@@ -171,7 +171,7 @@ define "Completed Immunizations":
 
 #### CQL authoring resources
 
-See [CQL Introduction](en/folio-assistant-core/bibliography/#ref-hl7-cql-introduction), [CQL Authoring Guide](en/folio-assistant-core/bibliography/#ref-hl7-cql-authors-guide), [CRMI IG CQL Guidelines](en/folio-assistant-core/bibliography/#ref-hl7-crmi-using-cql) and [CRMI IG Packaging Guidelines](en/folio-assistant-core/bibliography/#ref-hl7-crmi-packaging).
+See [CQL Introduction](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-cql-introduction/), [CQL Authoring Guide](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-cql-authors-guide/), [CRMI IG CQL Guidelines](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-crmi-using-cql/) and [CRMI IG Packaging Guidelines](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-crmi-packaging/).
 
 ### CQL Execution
 

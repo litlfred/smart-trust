@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "6086f86b80d5d3cde4f98fd95a15e47641d6ce0f",
+          "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "6086f86b80d5d3cde4f98fd95a15e47641d6ce0f",
-              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back'; window extended to 05:27Z; 'follow smart-base main (>= af46ec5) rather than 520cd52; 520cd52 diverged from main'. smart-base at main af46ec5; who-iris and core forward to the commits smart-base pins; every other pin kept at main's newer commit."
+              "on": "2026-11-08",
+              "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
+              "evidence": "Owner litlfred, 2026-11-08 10:36Z, project thread 'Expand bibliography entries into detail panels', card 'OK to re-pin core to 62fe7e7 in smart-trust, smart-ips-pilgrimage, smart-hiv?': chose 'A Re-pin core in the 3 PRs'."
             }
           }
         }
