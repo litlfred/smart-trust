@@ -18,7 +18,7 @@ The text of the tasks of `GDHCN.ONB.VerifyLetter.bpmn`. Each section belongs to 
 <a name="V.S.Receive"></a>
 ## Receive the Letter
 
-**[15]** The Letter of Application is received and processed by WHO. The TNP .
+**[15]** The Letter of Application is received and processed by WHO.
 
 **[16 - 17]** The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:
 

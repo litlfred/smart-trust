@@ -41,7 +41,7 @@ followed through the lifecycle of the rules:
 
 1. **Conceptualizing the rules:** First, the rules themselves need to be decided at a governance
 level. In this example the health ministry may decide to require a negative COVID-19 test within 72
-hours to allow entry into a county
+hours to allow entry into a country
 
 1. **Authoring the rules:** The rules can be written in CQL by clinical domain experts. For this
 example, the CQL would express the 72 hour timeframe and indicate which COVID-19 tests are
