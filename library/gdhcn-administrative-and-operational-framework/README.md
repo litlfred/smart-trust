@@ -3,7 +3,7 @@
 
 ingested source material — attributed to its document, not folio content
 
-Held in the library [`smart-trust/library/`](../) as `gdhcn-administrative-and-operational-framework`.
+Held in the library [`smart-trust/library/`](../README.md) as `gdhcn-administrative-and-operational-framework`.
 
 | | |
 |---|---|

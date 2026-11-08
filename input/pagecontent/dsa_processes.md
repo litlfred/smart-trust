@@ -189,9 +189,11 @@ turning clauses into scopes (step 4); checking the purpose of each request
 **What is the same in both kinds of DSA:** keys, transport, tokens, logs and
 revocation. That is why these processes are worth documenting for every DSA.
 
-FHIR R4 `Consent` is shown because IHE PCF uses it. This guide is FHIR R5.
-Which Consent version applies is decided in smart-trust-phw (**needs
-approval**).
+FHIR R4 `Consent` is shown because IHE PCF uses it. This guide is FHIR R4
+4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the
+Consent is the guide's own version. smart-trust-phw's
+[Consent](http://smart.who.int/trust-phw/consent.html) page describes
+explicit and implied consent.
 
 #### Where the other processes are {#elsewhere}
 
