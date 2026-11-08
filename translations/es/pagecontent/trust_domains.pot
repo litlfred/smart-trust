@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.511Z\n"
+"POT-Creation-Date: 2026-11-08T10:29:26.771Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: es\n"
@@ -79,7 +79,7 @@ msgid "Elements are defined by JSON-LD. As of 2023-02-12, the most current <a0>J
 msgstr ""
 
 #: input/pagecontent/trust_domains.md:50
-msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
+msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
 msgstr ""
 
 #: input/pagecontent/trust_domains.md:41
@@ -91,7 +91,7 @@ msgid "Framework, Annex I"
 msgstr ""
 
 #: input/pagecontent/trust_domains.md:55
-msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
+msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
 msgstr ""
 
 #: input/pagecontent/trust_domains.md:43
@@ -119,7 +119,7 @@ msgid "Smart Health Cards (SHC) - Immunization (optional)"
 msgstr ""
 
 #: input/pagecontent/trust_domains.md:56
-msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
+msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"
 msgstr ""
 
 #: input/pagecontent/trust_domains.md:46

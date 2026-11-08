@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.514Z\n"
+"POT-Creation-Date: 2026-11-08T10:29:26.774Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: ar\n"
@@ -431,7 +431,7 @@ msgid "In the combined sources exchange use case, the gateway will download data
 msgstr ""
 
 #: input/pagecontent/trust_network_gateway_architecture.md:326
-msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
+msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
 msgstr ""
 
 #: input/pagecontent/trust_network_gateway_architecture.md:52
