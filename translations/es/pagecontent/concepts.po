@@ -52,7 +52,7 @@ msgstr "Un receptor es un sistema autorizado por un Participante en la red de co
 
 #: input/pagecontent/concepts.md:144
 msgid "A service (digital or otherwise) related to the issuance, management, verification, exchange, or other relevant processes, of Verifiable Digital Health Certificates which is defined using open, interoperable digital health standards."
-msgstr "Servicio (digital o de otro tipo) relacionado con la emisión, la gestión, la verificación, el intercambio u otros procesos pertinentes de los certificados digitales de salud verificables, que se define mediante estándares de salud digital abiertos e interoperables."
+msgstr "Servicio (digital o de otro tipo) relacionado con la emisión, la gestión, la verificación, el intercambio u otros procesos pertinentes de los certificados digitales de salud verificables, que se define mediante normas de salud digital abiertas e interoperables."
 
 #: input/pagecontent/concepts.md:94
 msgid "a set of policy and regulatory standards describing expected behavior of GDHCN Participants in relation to operation of the Trusted Services and utilization of Verifiable Digital Health Certificates (e.g. data minimization, privacy, scope of use)."
@@ -288,7 +288,7 @@ msgstr "El proceso y las especificaciones técnicas relativos a la gestión y el
 
 #: input/pagecontent/concepts.md:52
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
-msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se adhiera a la red de confianza de la Red Mundial. Tras la conclusión satisfactoria del Proceso de integración, el Participante cualificado para la Red Mundial deberá considerarse Participante en la Red Mundial. A veces se denomina simplemente “incorporación”."
+msgstr "Procesos necesarios para que un Participante cualificado para la Red Mundial se adhiera a la red de confianza de la Red Mundial. Tras la conclusión satisfactoria del Proceso de integración, el Participante cualificado para la Red Mundial deberá considerarse Participante en la Red Mundial. A veces se denomina simplemente “integración”."
 
 #: input/pagecontent/concepts.md:137
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
@@ -316,7 +316,7 @@ msgstr "Certificado de clave pública del ancla de confianza de la TNG. La clave
 
 #: input/pagecontent/concepts.md:110
 msgid "The Trust Network Gateway (TNG) is the open-source software and its IT operational infrastructure, utilizing open standards, for a Public Key Infrastructure and metadata management services which is used to operationalize one or more Trust Domains.  The Trust Network Gateway can be interacted with using the <a0>API</a0> once a mTLS connection has been established."
-msgstr "La puerta de enlace a la red de confianza (TNG) es el software de código abierto y su infraestructura operativa de TI, basados en estándares abiertos, para una infraestructura de clave pública y servicios de gestión de metadatos, que se utiliza para hacer operativos uno o varios Ámbitos de confianza.  Se puede interactuar con la puerta de enlace a la red de confianza mediante la <a0>API</a0> una vez establecida una conexión mTLS."
+msgstr "La puerta de enlace a la red de confianza (TNG) es el software de código abierto y su infraestructura operativa de TI, basados en normas abiertas, para una infraestructura de clave pública y servicios de gestión de metadatos, que se utiliza para hacer operativos uno o varios Ámbitos de confianza.  Se puede interactuar con la puerta de enlace a la red de confianza mediante la <a0>API</a0> una vez establecida una conexión mTLS."
 
 #: input/pagecontent/concepts.md:18
 msgid "the United Nations (UN) and other intergovernmental organizations in effective relations with WHO;"
@@ -412,7 +412,7 @@ msgstr "Certificado digital de salud verificable"
 
 #: input/pagecontent/concepts.md:149
 msgid "Verifiable Digital Health Certificate: A digital representation of a data set comprising a certificate or document, designed for a set of specific clinical or public health use cases which is defined using open, interoperable digital health standards; that contains within, or is associated to, a digital signature which can be verified by the public key of a public-private encryption key pair, and which is issued by a GDHCN Participant."
-msgstr "Certificado digital de salud verificable: representación digital de un conjunto de datos que constituye un certificado o documento, diseñada para un conjunto de casos de uso clínicos o de salud pública específicos y definida mediante estándares de salud digital abiertos e interoperables; que contiene, o lleva asociada, una firma digital que puede verificarse con la clave pública de un par de claves de cifrado pública-privada, y que es emitida por un Participante en la Red Mundial."
+msgstr "Certificado digital de salud verificable: representación digital de un conjunto de datos que constituye un certificado o documento, diseñada para un conjunto de casos de uso clínicos o de salud pública específicos y definida mediante normas de salud digital abiertas e interoperables; que contiene, o lleva asociada, una firma digital que puede verificarse con la clave pública de un par de claves de cifrado pública-privada, y que es emitida por un Participante en la Red Mundial."
 
 #: input/pagecontent/concepts.md:99
 msgid "While some variability is expected in an approach that preserves sovereignty, there are opportunities for alignment in key format and distribution for the sake of fostering interoperability. With that goal, we provide a unifying trust list format to assemble and share public key infrastructure for all credential specifications used by existing trust networks. Importantly, this format does not enforce a particular policy framework for participants of the trust network."

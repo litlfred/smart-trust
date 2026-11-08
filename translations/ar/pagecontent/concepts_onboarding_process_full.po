@@ -80,10 +80,6 @@ msgstr "[13] يجب أن تقبل منظمة الصحة العالمية (WHO) �
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] يكون TNP جاهزًا للانضمام وفقًا لمتطلبات منظمة الصحة العالمية (WHO) وحوكمتها، وقد جمع المعلومات التالية في خطاب الطلب [المستند 16]:"
 
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] تتلقى منظمة الصحة العالمية (WHO) خطاب الطلب وتعالجه. TNP ."
-
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
 msgstr "[16 - 17] يجري التحقق من الأشخاص المسمَّين المخوَّلين بتقديم مواد المفاتيح الخاصة بـ TNP وتأكيد هويتهم عبر إحدى القنوات المختلفة التالية:"
@@ -390,7 +386,7 @@ msgstr "1) تحقّق من الاتصال باستخدام الأمر التال
 
 #: input/pagecontent/concepts_onboarding_process_full.md:117
 msgid "2) Prepare public keys in PEM format in your private GitHub repository (see [11]) dedicated to the used environment keys."
-msgstr "2) أعِدّ المفاتيح العمومية بتنسيق PEM في مستودع GitHub الخاص بك (انظر [11]) المخصَّص لمفاتيح البيئة المستخدَمة."
+msgstr "2) أعِدّ المفاتيح العمومية بتنسيق PEM في مستودع GitHub الخاص التابع لك (انظر [11]) المخصَّص لمفاتيح البيئة المستخدَمة."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:324
 msgid "2) Test the other Trustlist Routes in the same style (e. g. with DSC/SCA/Upload/Authentication…)"
@@ -398,11 +394,11 @@ msgstr "2) اختبر مسارات قائمة الثقة الأخرى بالطر
 
 #: input/pagecontent/concepts_onboarding_process_full.md:159
 msgid "3-digit ISO Participant code"
-msgstr "رمز المشارك وفق ISO المكوَّن من 3 أحرف"
+msgstr "رمز المشارك وفق ISO المكوَّن من 3 خانات"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:194
 msgid "3-digit ISO participant code of the TNP"
-msgstr "رمز المشارك وفق ISO المكوَّن من 3 أحرف الخاص بـ TNP"
+msgstr "رمز المشارك وفق ISO المكوَّن من 3 خانات الخاص بـ TNP"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:119
 msgid "3) The prepared public keys must be tagged by the generated GPG keys:"
@@ -886,7 +882,7 @@ msgstr "عنوان URL لمستودعات GitHub الخاصة لكل بيئة (U
 
 #: input/pagecontent/concepts_onboarding_process_full.md:192
 msgid "the URL's of the applicant private GitHub repositories"
-msgstr "عناوين URL لمستودعات GitHub الخاصة بمقدِّم الطلب"
+msgstr "عناوين URL لمستودعات GitHub الخاصة التابعة لمقدِّم الطلب"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:3
 msgid "This page describes the onboarding process of the GDHCN (the so called Future Onboarding Process, FOP), drawn in BPMN 2.0. Under each drawing is the text of the steps it shows. That text is kept in a Markdown file beside each BPMN file, with one section per task, and each task of the drawing links to its section, so the page and the drawings come from one source. The numbers [n] are the step numbers of <a0>the original drawing</a0>."
@@ -945,3 +941,7 @@ msgstr "منظمة الصحة العالمية (WHO) بوصفها مرسى ال�
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "ينبغي أن ترى مُخرَجًا مثل:"
+
+#: input/pagecontent/concepts_onboarding_process_full.md:163
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr "[15] تتلقى منظمة الصحة العالمية (WHO) خطاب الطلب وتعالجه."

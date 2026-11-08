@@ -682,7 +682,3 @@ msgstr "X.509: la CA emite el certificado."
 #, python-brace-format
 msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
 msgstr "Se muestra {code0} de FHIR R4 porque IHE PCF lo utiliza. Esta guía es FHIR R4 4.0.1, al igual que smart-base y smart-trust-phw (decisión del propietario, 2026-11-07), por lo que el recurso Consent es el de la propia versión de la guía. La página <a0>Consent</a0> de smart-trust-phw describe el consentimiento explícito y el implícito."
-
-#~ #, python-brace-format
-#~ msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R5. Which Consent version applies is decided in smart-trust-phw (needs approval)."
-#~ msgstr "Se muestra {code0} de FHIR R4 porque IHE PCF lo utiliza. Esta guía es FHIR R5. Qué versión de Consent se aplica se decide en smart-trust-phw (requiere aprobación)."

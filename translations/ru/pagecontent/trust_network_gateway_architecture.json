@@ -17,9 +17,10 @@
     "generator": "agent translation (ru team session)"
   },
   "coverage": {
-    "translated": 248,
-    "total": 248,
-    "pct": 100.0
+    "translated": 247,
+    "total": 247,
+    "pct": 100
   },
-  "description": "Unofficial Russian translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it."
+  "description": "Unofficial Russian translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it.",
+  "sourceHash": "954c8009359f"
 }

@@ -19,7 +19,8 @@
   "coverage": {
     "translated": 159,
     "total": 159,
-    "pct": 100.0
+    "pct": 100
   },
-  "description": "Unofficial Simplified Chinese translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it."
+  "description": "Unofficial Simplified Chinese translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it.",
+  "sourceHash": "8b8315f4d239"
 }

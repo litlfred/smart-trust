@@ -311,10 +311,6 @@ msgstr "FEDERATION 或 GATEWAYONLY"
 msgid "Federator Architecture"
 msgstr "联邦器架构"
 
-#: input/pagecontent/trust_network_gateway_architecture.md:10
-msgid "ffline SCA certificates.                                                                                                                                            |"
-msgstr "离线 SCA 证书。                                                                                                                                            |"
-
 #: input/pagecontent/trust_network_gateway_architecture.md:284
 msgid "FHIR"
 msgstr "FHIR"
@@ -430,10 +426,6 @@ msgstr "在双边入网用例中，<a0>连接器库</a0>作为可信方连接到
 #: input/pagecontent/trust_network_gateway_architecture.md:62
 msgid "In the combined sources exchange use case, the gateway will download data from multiple gateways and append it to its own data set. This results in a combined collection."
 msgstr "在组合来源交换用例中，网关将从多个网关下载数据并将其追加到自身数据集中，从而形成一个组合集合。"
-
-#: input/pagecontent/trust_network_gateway_architecture.md:326
-msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
-msgstr "在 TNG[^1] 架构的最新版本中，对可信签发方和可信证书进行了更改，以允许在信任验证中使用不同类型的技术。这可以是 X509，也可以是符合 DID 核心规范 [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core) 的 DIDs。在规范和对齐的最近几轮迭代中，曾有一些关键点必须在网关中额外予以支持："
 
 #: input/pagecontent/trust_network_gateway_architecture.md:52
 msgid "In the peer-to-peer exchange use case, two or more gateways are able to exchange their data in a bi-directional manner. The source and the target gateway enable each other to download the data. All exchanged data will be appended to the existing data within the gateway. This can include the data of third-party gateways, if permitted by the data exchange agreement between two gateways."
@@ -1082,3 +1074,7 @@ msgstr "在当前的 DCC 系统中，集中式网关在所有已连接的信任�
 #: input/pagecontent/trust_network_gateway_architecture.md:307
 msgid "Yes"
 msgstr "是"
+
+#: input/pagecontent/trust_network_gateway_architecture.md:325
+msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
+msgstr "在 TNG[^1] 架构的最新版本中，对可信签发方和可信证书进行了更改，以允许在信任验证中使用不同类型的技术。这可以是 X509，也可以是符合 DID 核心规范 [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/) 的 DIDs。在规范和对齐的最近几轮迭代中，曾有一些关键点必须在网关中额外予以支持："

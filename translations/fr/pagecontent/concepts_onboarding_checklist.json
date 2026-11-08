@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/concepts_onboarding_checklist",
   "locale": "fr",
   "sourceFile": "input/pagecontent/concepts_onboarding_checklist.md",
-  "sourceHash": "381061c193af",
+  "sourceHash": "0ce429395f2d",
   "potFile": "translations/fr/pagecontent/concepts_onboarding_checklist.pot",
   "poFile": "translations/fr/pagecontent/concepts_onboarding_checklist.po",
   "poIncludes": [

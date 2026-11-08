@@ -16,4 +16,4 @@ msgstr ""
 
 #: input/pagecontent/security_privacy.md:2
 msgid "Security and Privacy Considerations"
-msgstr "Considérations relatives à la sécurité et à la confidentialité"
+msgstr "Considérations relatives à la sécurité et à la protection de la vie privée"

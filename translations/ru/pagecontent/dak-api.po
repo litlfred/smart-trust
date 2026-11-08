@@ -24,5 +24,5 @@ msgid "Table of Contents"
 msgstr "Содержание"
 
 #: input/pagecontent/dak-api.md:3
-msgid "This page provides access to Data Access Kit (DAK) API documentation and schemas."
-msgstr "На этой странице представлен доступ к документации и схемам API набора доступа к данным (Data Access Kit, DAK)."
+msgid "This page provides access to Digital Adaptation Kit (DAK) API documentation and schemas."
+msgstr "На этой странице представлен доступ к документации и схемам API набора цифровой адаптации (Digital Adaptation Kit, DAK)."

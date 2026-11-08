@@ -54,10 +54,6 @@ msgstr "######## 3.2.7.1.5 رابط صحي قابل للتحقق (VHL) يتيح 
 msgid "<a0>DDCC FHIR Implementation Guide</a0>"
 msgstr "<a0>دليل تنفيذ DDCC FHIR</a0>"
 
-#: input/pagecontent/hcert_spec.md:115
-msgid "<a0>DDCC Vaccination Status (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
-msgstr "<a0>DDCC حالة التطعيم (DDCC:TR)</a0> يوثّق حالات الاستخدام ومتطلبات البيانات والمواصفات التقنية وإرشادات التنفيذ لشهادات التطعيم."
-
 #: input/pagecontent/hcert_spec.md:110
 msgid "<a0>DDCC Vaccination Status (DDCC:VS)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
 msgstr "<a0>DDCC حالة التطعيم (DDCC:VS)</a0> يوثّق حالات الاستخدام ومتطلبات البيانات والمواصفات التقنية وإرشادات التنفيذ لشهادات التطعيم."
@@ -261,7 +257,7 @@ msgstr "في HCERT، يحمل مفتاح المطالبة 5 حمولة VHL عل�
 
 #: input/pagecontent/hcert_spec.md:143
 msgid "In order for Verifiers to be able to detect the type of data encoded and to select the proper decoding and processing scheme, the base45 encoded data (as per this specification) SHALL be prefixed by the Context Identifier string \"HC1:\". Future versions of this specification that impact backwards-compatibility SHALL define a new Context Identifier, whereas the character following \"HC\" SHALL be taken from the character set [1-9A-Z]. The order of increments is defined to be in that order, i.e., first [1-9] and then [A-Z]."
-msgstr "لكي تتمكن الجهات المُتحقِّقة من اكتشاف نوع البيانات المرمَّزة واختيار مخطط فك الترميز والمعالجة المناسب، يتعيّن (SHALL) أن تُسبَق البيانات المرمَّزة بترميز base45 (وفقًا لهذه المواصفة) بسلسلة معرِّف السياق \"HC1:\". ويتعيّن (SHALL) على الإصدارات المستقبلية من هذه المواصفة التي تؤثر في التوافق مع الإصدارات السابقة أن تحدد معرِّف سياق جديدًا، على أن يُؤخذ الحرف التالي لـ \"HC\" من مجموعة الأحرف [1-9A-Z]. ويُحدَّد ترتيب الزيادات بهذا الترتيب، أي [1-9] أولًا ثم [A-Z]."
+msgstr "لكي تتمكن الجهات المُتحقِّقة من اكتشاف نوع البيانات المرمَّزة واختيار مخطط فك الترميز والمعالجة المناسب، يتعيّن (SHALL) أن تُسبَق البيانات المرمَّزة بترميز base45 (وفقًا لهذه المواصفة) بسلسلة معرِّف السياق \"HC1:\". ويتعيّن (SHALL) على الإصدارات المستقبلية من هذه المواصفة التي تؤثر في التوافق مع الإصدارات السابقة أن تحدد معرِّف سياق جديدًا، ويتعيّن (SHALL) أن يُؤخذ الحرف التالي لـ \"HC\" من مجموعة الأحرف [1-9A-Z]. ويُحدَّد ترتيب الزيادات بهذا الترتيب، أي [1-9] أولًا ثم [A-Z]."
 
 #: input/pagecontent/hcert_spec.md:139
 msgid "In order to better handle legacy equipment designed to operate on ASCII payloads, the compressed CWT is encoded as ASCII using <a0>Base45</a0> before being encoded into a 2D barcode."
@@ -582,3 +578,7 @@ msgstr "عند تصميم مخطط يستخدم هذه المواصفة، يجب
 #: input/pagecontent/hcert_spec.md:103
 msgid "While the <a0>logical model</a0> enlists assigned sub claims, the ones listed in this specification are considered authoritative"
 msgstr "رغم أن <a0>النموذج المنطقي</a0> يسرد المطالبات الفرعية المخصصة، فإن المطالبات المدرجة في هذه المواصفة تُعدّ هي المرجعية"
+
+#: input/pagecontent/hcert_spec.md:115
+msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
+msgstr "<a0>DDCC نتيجة الاختبار (DDCC:TR)</a0> يوثّق حالات الاستخدام ومتطلبات البيانات والمواصفات التقنية وإرشادات التنفيذ لشهادات نتائج الاختبار."

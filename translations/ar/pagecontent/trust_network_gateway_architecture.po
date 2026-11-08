@@ -86,7 +86,7 @@ msgstr "يجب مواءمة جميع المكوّنات الأخرى، مثل ا
 
 #: input/pagecontent/trust_network_gateway_architecture.md:23
 msgid "allowing for (optional) support of online verification and validation workflows."
-msgstr "مما يتيح الدعم (الاختياري) لسير عمل التحقق والمصادقة عبر الإنترنت."
+msgstr "مما يتيح الدعم (الاختياري) لسير عمل التحقق والتحقق من الصحة عبر الإنترنت."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:20
 msgid "allowing for federation and peer exchange of information between gateways;"
@@ -289,7 +289,7 @@ msgstr "التحسين"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:205
 msgid "Enum for the download mode. APPEND or OVERRIDE.The append mode adds the downloaded data to the existing data set (existing federation data will be replaced). Override deletes the existing datasets (excepting the own TNPTLS, Trust anchors and federation configurations)"
-msgstr "تعداد لوضع التنزيل: APPEND أو OVERRIDE. يُضيف وضع الإلحاق البيانات المُنزَّلة إلى مجموعة البيانات القائمة (وتُستبدل بيانات الاتحاد القائمة). ويحذف وضع التجاوز مجموعات البيانات القائمة (باستثناء شهادات TNPTLS الخاصة ومراسي الثقة وتهيئات الاتحاد)"
+msgstr "تعداد لوضع التنزيل: APPEND أو OVERRIDE. يُضيف وضع الإلحاق البيانات المُنزَّلة إلى مجموعة البيانات القائمة (وتُستبدل بيانات الاتحاد القائمة). ويحذف وضع التجاوز مجموعات البيانات القائمة (باستثناء شهادات TNPTLS الخاصة بها ومراسي الثقة وتهيئات الاتحاد)"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:252
 msgid "EU DCC Gateway Modifications (<a0>Spec</a0>)"
@@ -323,10 +323,6 @@ msgstr "FEDERATION أو GATEWAYONLY"
 #: input/pagecontent/trust_network_gateway_architecture.md:178
 msgid "Federator Architecture"
 msgstr "بنية مُنسِّق الاتحاد"
-
-#: input/pagecontent/trust_network_gateway_architecture.md:10
-msgid "ffline SCA certificates.                                                                                                                                            |"
-msgstr "شهادات SCA غير المتصلة بالإنترنت.                                                                                                                                            |"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:284
 msgid "FHIR"
@@ -418,7 +414,7 @@ msgstr "موارد Library في HL7 FHIR لتبادل مكتبات قواعد ا
 
 #: input/pagecontent/trust_network_gateway_architecture.md:87
 msgid "HL7 FHIR PlanDefinition resources to indicate which business rule should be executed based on the relevant validation or continuity of care use cases."
-msgstr "موارد PlanDefinition في HL7 FHIR للإشارة إلى قاعدة العمل التي ينبغي تنفيذها بناءً على حالات الاستخدام ذات الصلة بالتحقق أو باستمرارية الرعاية."
+msgstr "موارد PlanDefinition في HL7 FHIR للإشارة إلى قاعدة العمل التي ينبغي تنفيذها بناءً على حالات الاستخدام ذات الصلة بالتحقق من الصحة أو باستمرارية الرعاية."
 
 #: input/pagecontent/trust_network_gateway_architecture.md:84
 msgid "HL7 FHIR ValueSet resources to share codings and terminologies referenced by the various digital COVID certificate specifications (e.g. allowed vaccines or tests).   - HL7 FHIR ConceptMaps may be used to provide mappings between jurisdictionally defined coding DDCC specification coding."
@@ -443,10 +439,6 @@ msgstr "في حالة استخدام الانضمام الثنائي، تتصل 
 #: input/pagecontent/trust_network_gateway_architecture.md:62
 msgid "In the combined sources exchange use case, the gateway will download data from multiple gateways and append it to its own data set. This results in a combined collection."
 msgstr "في حالة استخدام تبادل المصادر المدمجة، تُنزِّل بوابة الربط البيانات من بوابات متعددة وتُلحقها بمجموعة بياناتها الخاصة. وينتج عن ذلك مجموعة مدمجة."
-
-#: input/pagecontent/trust_network_gateway_architecture.md:326
-msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
-msgstr "في الإصدار الأخير من بنية TNG[^1]، أُجريت التغييرات الخاصة بالجهات المُصدِرة الموثوقة والشهادات الموثوقة لإتاحة أنواع مختلفة من التقنيات في التحقق من الثقة. وقد يكون ذلك إما X509 أو معرِّفات DID وفقًا لمواصفة DID الأساسية [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). وخلال الجولات الأخيرة من إعداد المواصفة ومواءمتها، برزت بعض النقاط الرئيسية التي يجب دعمها إضافيًا في بوابة الربط:"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:52
 msgid "In the peer-to-peer exchange use case, two or more gateways are able to exchange their data in a bi-directional manner. The source and the target gateway enable each other to download the data. All exchanged data will be appended to the existing data within the gateway. This can include the data of third-party gateways, if permitted by the data exchange agreement between two gateways."
@@ -1095,3 +1087,7 @@ msgstr "ضمن نظام DCC الحالي، تؤدي بوابة الربط الم
 #: input/pagecontent/trust_network_gateway_architecture.md:307
 msgid "Yes"
 msgstr "نعم"
+
+#: input/pagecontent/trust_network_gateway_architecture.md:325
+msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
+msgstr "في الإصدار الأخير من بنية TNG[^1]، أُجريت التغييرات الخاصة بالجهات المُصدِرة الموثوقة والشهادات الموثوقة لإتاحة أنواع مختلفة من التقنيات في التحقق من الثقة. وقد يكون ذلك إما X509 أو معرِّفات DID وفقًا لمواصفة DID الأساسية [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). وخلال الجولات الأخيرة من إعداد المواصفة ومواءمتها، برزت بعض النقاط الرئيسية التي يجب دعمها إضافيًا في بوابة الربط:"

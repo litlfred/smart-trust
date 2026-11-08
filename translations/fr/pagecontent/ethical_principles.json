@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/ethical_principles",
   "locale": "fr",
   "sourceFile": "input/pagecontent/ethical_principles.md",
-  "sourceHash": "5f89fea1e322",
+  "sourceHash": "7cb1d2ba5cb9",
   "potFile": "translations/fr/pagecontent/ethical_principles.pot",
   "poFile": "translations/fr/pagecontent/ethical_principles.po",
   "poIncludes": [

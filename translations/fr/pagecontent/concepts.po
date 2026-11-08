@@ -204,7 +204,7 @@ msgstr "Une fois admis au GDHCN, à l’issue concluante du Processus d’intég
 
 #: input/pagecontent/concepts.md:28
 msgid "Participation in the GDHCN is subject to the Onboarding Process set forth by the GDHCN Secretariat in its sole and absolute discretion, and in accordance with WHO rules, regulations, policies and practices, as may be amended from time to time. The requirements for the GDHCN Terms of Participation are comprised of the following components:"
-msgstr "La participation au GDHCN est soumise au Processus d’intégration établi par le Secrétariat du GDHCN à sa seule et entière discrétion, et conformément aux règles, règlements, politiques et pratiques de l’OMS, tels qu’ils peuvent être modifiés à tout moment. Les exigences des Conditions de participation au GDHCN comprennent les éléments suivants :"
+msgstr "La participation au GDHCN est soumise au Processus d’intégration établi par le Secrétariat du GDHCN à sa seule et entière discrétion, et conformément aux règles, règlements, politiques et pratiques de l’OMS, tels qu’ils peuvent être modifiés de temps à autre. Les exigences des Conditions de participation au GDHCN comprennent les éléments suivants :"
 
 #: input/pagecontent/concepts.md:60
 msgid "Public Health Agency"
@@ -344,7 +344,7 @@ msgstr "TOP3 Conformité aux normes politiques et réglementaires des Participan
 
 #: input/pagecontent/concepts.md:34
 msgid "TOP4 Provision of supporting documentation (e.g. mandate, legal framework) demonstrating that it is an Eligible GDHCN Participant, as may be requested by WHO, at its sole discretion, from time to time."
-msgstr "TOP4 Fourniture de pièces justificatives (p. ex. mandat, cadre juridique) démontrant qu’il s’agit d’un Participant admissible au GDHCN, selon ce que l’OMS peut demander, à sa seule discrétion, à tout moment."
+msgstr "TOP4 Fourniture de pièces justificatives (p. ex. mandat, cadre juridique) démontrant qu’il s’agit d’un Participant admissible au GDHCN, selon ce que l’OMS peut demander, à sa seule discrétion, de temps à autre."
 
 #: input/pagecontent/concepts.md:90
 msgid "Trust Domain"

@@ -61,7 +61,7 @@ msgstr "一套政策和监管标准，描述 GDHCN 参与方在运营可信服�
 
 #: input/pagecontent/concepts.md:17
 msgid "a State Party recognized by the International Health Regulations, or sub-national unit thereof;"
-msgstr "《国际卫生条例（2005）》承认的缔约国，或其次国家级单位；"
+msgstr "《国际卫生条例》承认的缔约国，或其次国家级单位；"
 
 #: input/pagecontent/concepts.md:140
 msgid "A system utilized by a GDHCN Participant to verify the digital signature of a Verifiable Digital Health Certificate."

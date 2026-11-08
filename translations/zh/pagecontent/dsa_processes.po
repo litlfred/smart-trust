@@ -98,7 +98,7 @@ msgstr "DSA 信任域将由 WHO 决定。本指南不提议设立此类信任域
 
 #: input/pagecontent/dsa_processes.md:44
 msgid "A DSA, or the policy of the system that enforces it, says which anchors it accepts. The accepted list is either a DID document or a set of X.509 roots. No new format is needed."
-msgstr "DSA 或执行它的系统的策略会说明其接受哪些锚。所接受的列表要么是一个 DID 文档，要么是一组 X.509 根。无需新的格式。"
+msgstr "DSA（或执行它的系统的策略）会说明其接受哪些锚。所接受的列表要么是一个 DID 文档，要么是一组 X.509 根。无需新的格式。"
 
 #: input/pagecontent/dsa_processes.md:52
 msgid "A ministry or institute publishes its own DID document"
@@ -227,7 +227,7 @@ msgstr "起草和协商协议"
 
 #: input/pagecontent/dsa_processes.md:8
 msgid "Draft. This page is in the litlfred fork. It is not WHO guidance. The process list (P1 to P15) is our own structure; no standard defines \"the DSA processes\". Items marked unverified were not checked against the source specification."
-msgstr "草稿。本页位于 litlfred 分支中，并非 WHO 指导文件。流程列表（P1 至 P15）是我们自己的结构；没有任何标准定义“DSA 流程”。标为“未经核实”的条目未对照源规范进行检查。"
+msgstr "草稿。本页位于 litlfred 复刻（fork）中，并非 WHO 指导文件。流程列表（P1 至 P15）是我们自己的结构；没有任何标准定义“DSA 流程”。标为“未经核实”的条目未对照源规范进行检查。"
 
 #: input/pagecontent/dsa_processes.md:180
 msgid "Every call is logged with the PDF URL and hash. A person reviews the log against the PDF's clauses. At the end, I sends a signed deletion letter; M keeps it with its hash"
@@ -683,7 +683,3 @@ msgstr "X.509：由 CA 签发证书。"
 #, python-brace-format
 msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
 msgstr "此处展示 FHIR R4 {code0}，是因为 IHE PCF 使用它。本指南采用 FHIR R4 4.0.1，与 smart-base 和 smart-trust-phw 相同（所有者，2026-11-07），因此 Consent 采用本指南自身的版本。smart-trust-phw 的 <a0>Consent</a0> 页面描述了明示同意和默示同意。"
-
-#~ #, python-brace-format
-#~ msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R5. Which Consent version applies is decided in smart-trust-phw (needs approval)."
-#~ msgstr "此处展示 FHIR R4 {code0}，是因为 IHE PCF 使用它。本指南采用 FHIR R5。适用哪个 Consent 版本由 smart-trust-phw 决定（需要批准）。"

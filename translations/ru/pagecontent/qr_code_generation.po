@@ -158,7 +158,7 @@ msgstr "Полезная нагрузка идентифицируется по�
 #: input/pagecontent/qr_code_generation.md:205
 #, python-brace-format
 msgid "Alphanumeric (Mode 2, symbols {code0}) — MUST, in conjunction with Base45"
-msgstr "Буквенно-цифровой (режим 2, символы {code0}) — ОБЯЗАТЕЛЬНО в сочетании с Base45"
+msgstr "Буквенно-цифровой (режим 2, символы {code0}) — ОБЯЗАТЕЛЬНО (MUST), в сочетании с Base45"
 
 #: input/pagecontent/qr_code_generation.md:94
 #, python-brace-format
@@ -328,7 +328,7 @@ msgstr "Свойство"
 
 #: input/pagecontent/qr_code_generation.md:204
 msgid "QR Code, ISO/IEC 18004:2015 — SHALL"
-msgstr "QR Code, ISO/IEC 18004:2015 — ОБЯЗАТЕЛЬНО"
+msgstr "QR Code, ISO/IEC 18004:2015 — ОБЯЗАТЕЛЬНО (SHALL)"
 
 #: input/pagecontent/qr_code_generation.md:346
 msgid "QR symbol"

@@ -67,10 +67,6 @@ msgstr "[13] GitHub 机器人用户的邀请必须由 WHO 在邀请发出后 7 �
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] TNP 已按照 WHO 的要求和治理准备好入网，并已在申请函 [文件 16] 中汇集以下信息："
 
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] 申请函由 WHO 接收并处理。TNP 。"
-
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
 msgstr "[16 - 17] 对获准为 TNP 提供密钥材料的指定人员的验证和确认，通过以下不同渠道之一进行："
@@ -397,7 +393,7 @@ msgstr "3) 准备好的公钥必须用生成的 GPG 密钥打标签："
 
 #: input/pagecontent/concepts_onboarding_process_full.md:353
 msgid "a) Create a Document Signer Certificate (DSC) and sign it by the SCA"
-msgstr "a) 创建文档签名证书（DSC），并由 SCA 对其签名"
+msgstr "a) 创建文档签名者证书（DSC），并由 SCA 对其签名"
 
 #: input/pagecontent/concepts_onboarding_process_full.md:336
 msgid "a) Upload one or more DSCs to the TNG"
@@ -709,7 +705,7 @@ msgstr "注意：在嵌入的图片中适用以下重新标注："
 
 #: input/pagecontent/concepts_onboarding_process_full.md:380
 msgid "Note: Some versions of curl don’t attach the client certificates automatically. This can be checked via curl –version. Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/):"
-msgstr "注意：某些版本的 curl 不会自动附加客户端证书。可通过 curl –version 检查。确保所用版本链接到 OpenSSL。尤其是在 Windows 下（https://curl.se/windows/）："
+msgstr "注意：某些版本的 curl 不会自动附加客户端证书。可通过 curl –version 检查。确保所用版本链接到 OpenSSL。尤其是在 Windows 下（https://curl.se/windows/ ）："
 
 #: input/pagecontent/concepts_onboarding_process_full.md:45
 #: input/pagecontent/concepts_onboarding_process_full.md:50
@@ -932,3 +928,7 @@ msgstr "WHO 作为公钥基础设施的信任锚（《框架》第 VI.6 部分�
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "您应看到类似以下的输出："
+
+#: input/pagecontent/concepts_onboarding_process_full.md:163
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr "[15] 申请函由 WHO 接收并处理。"

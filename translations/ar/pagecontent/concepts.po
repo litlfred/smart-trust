@@ -314,7 +314,7 @@ msgstr "البنية التحتية للمفاتيح العمومية (PKI) هي
 
 #: input/pagecontent/concepts.md:151
 msgid "The specific Verifiable Digital Health Certificates are defined in the <a0>Content Profiles</a0>"
-msgstr "تُعرَّف الشهادات الصحية الرقمية القابلة للتحقق المحددة في <a0>ملفات تعريف المحتوى</a0>"
+msgstr "الشهادات الصحية الرقمية القابلة للتحقق المحددة مُعرَّفة في <a0>ملفات تعريف المحتوى</a0>"
 
 #: input/pagecontent/concepts.md:134
 msgid "The TLS client authentication public key certificate of a GDHCN Participant's Backend System."

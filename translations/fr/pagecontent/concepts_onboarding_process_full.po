@@ -66,10 +66,6 @@ msgstr "[13] L’invitation destinée à l’utilisateur bot GitHub doit être a
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] Le TNP est prêt pour l’intégration conformément aux exigences et à la gouvernance de l’OMS et a rassemblé les informations suivantes dans la lettre de candidature [Document 16] :"
 
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] La lettre de candidature est reçue et traitée par l’OMS. Le TNP ."
-
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
 msgstr "[16 - 17] La vérification et la confirmation des personnes nommément désignées qui sont autorisées à fournir le matériel cryptographique du TNP s’effectuent par l’un des différents canaux suivants :"
@@ -931,3 +927,7 @@ msgstr "L’OMS en tant qu’ancre de confiance de l’infrastructure à clés p
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "Vous devriez obtenir une sortie semblable à :"
+
+#: input/pagecontent/concepts_onboarding_process_full.md:163
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr "[15] La lettre de candidature est reçue et traitée par l’OMS."

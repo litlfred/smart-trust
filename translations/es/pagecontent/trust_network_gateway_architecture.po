@@ -310,10 +310,6 @@ msgstr "FEDERATION o GATEWAYONLY"
 msgid "Federator Architecture"
 msgstr "Arquitectura del federador"
 
-#: input/pagecontent/trust_network_gateway_architecture.md:10
-msgid "ffline SCA certificates.                                                                                                                                            |"
-msgstr "certificados SCA fuera de línea.                                                                                                                                            |"
-
 #: input/pagecontent/trust_network_gateway_architecture.md:284
 msgid "FHIR"
 msgstr "FHIR"
@@ -429,10 +425,6 @@ msgstr "En el caso de uso de incorporación bilateral, la <a0>biblioteca conecto
 #: input/pagecontent/trust_network_gateway_architecture.md:62
 msgid "In the combined sources exchange use case, the gateway will download data from multiple gateways and append it to its own data set. This results in a combined collection."
 msgstr "En el caso de uso de intercambio de fuentes combinadas, la puerta de enlace descargará datos de varias puertas de enlace y los añadirá a su propio conjunto de datos. El resultado es una colección combinada."
-
-#: input/pagecontent/trust_network_gateway_architecture.md:326
-msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
-msgstr "En la última versión de la arquitectura de la TNG[^1], se introdujeron los cambios relativos a los emisores de confianza y los certificados de confianza para permitir distintos tipos de tecnologías en la verificación de la confianza. Puede tratarse de X509 o de DID conforme a la especificación DID Core [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). Durante las últimas iteraciones de especificación y alineación, surgieron algunos puntos clave que la puerta de enlace debe admitir adicionalmente:"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:52
 msgid "In the peer-to-peer exchange use case, two or more gateways are able to exchange their data in a bi-directional manner. The source and the target gateway enable each other to download the data. All exchanged data will be appended to the existing data within the gateway. This can include the data of third-party gateways, if permitted by the data exchange agreement between two gateways."
@@ -1081,3 +1073,7 @@ msgstr "En el sistema DCC actual, la puerta de enlace centralizada desempeña la
 #: input/pagecontent/trust_network_gateway_architecture.md:307
 msgid "Yes"
 msgstr "Sí"
+
+#: input/pagecontent/trust_network_gateway_architecture.md:325
+msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
+msgstr "En la última versión de la arquitectura de la TNG[^1], se introdujeron los cambios relativos a los emisores de confianza y los certificados de confianza para permitir distintos tipos de tecnologías en la verificación de la confianza. Puede tratarse de X509 o de DID conforme a la especificación DID Core [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). Durante las últimas iteraciones de especificación y alineación, surgieron algunos puntos clave que la puerta de enlace debe admitir adicionalmente:"

@@ -79,10 +79,6 @@ msgstr "<a0>Документация</a0> DIVOC находится здесь, �
 msgid "Elements are defined by JSON-LD. As of 2023-02-12, the most current <a0>JSON-LD context for vaccines</a0> and for <a1>test results</a1> is here . Note that the URIs for the DIVOC-specific JSON-LD contexts embedded in the certificates do not resolve."
 msgstr "Элементы определены с помощью JSON-LD. По состоянию на 2023-02-12 наиболее актуальный <a0>контекст JSON-LD для вакцин</a0> и для <a1>результатов тестов</a1> находится здесь. Обратите внимание, что URI контекстов JSON-LD, специфичных для DIVOC и встроенных в сертификаты, не разрешаются."
 
-#: input/pagecontent/trust_domains.md:50
-msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
-msgstr "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
-
 #: input/pagecontent/trust_domains.md:41
 msgid "European Union's <a0>Digital Covid Certificates (DCC)</a0> (required)"
 msgstr "<a0>Цифровые сертификаты COVID (DCC)</a0> Европейского союза (обязательно)"
@@ -90,10 +86,6 @@ msgstr "<a0>Цифровые сертификаты COVID (DCC)</a0> Европ�
 #: input/pagecontent/trust_domains.md:21
 msgid "Framework, Annex I"
 msgstr "Рамочный документ, приложение I"
-
-#: input/pagecontent/trust_domains.md:55
-msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
-msgstr "ИКАО: [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
 
 #: input/pagecontent/trust_domains.md:43
 msgid "International Civil Aviation Organisation (ICAO) Visible Digital Seals - Non-Constrained (VDS-NC) (optional)"
@@ -119,10 +111,6 @@ msgstr "PH4H"
 msgid "Smart Health Cards (SHC) - Immunization (optional)"
 msgstr "Smart Health Cards (SHC) — иммунизация (необязательно)"
 
-#: input/pagecontent/trust_domains.md:56
-msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
-msgstr "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
-
 #: input/pagecontent/trust_domains.md:46
 msgid "Source specifications"
 msgstr "Исходные спецификации"
@@ -146,7 +134,7 @@ msgstr "<a0>Цифровая документация сертификатов C
 
 #: input/pagecontent/trust_domains.md:13
 msgid "The <a0>GDHCN Administrative and Operational Framework</a0> is the legal source for Trust Domains. The <a1>Trust Domain</a1> logical model follows its three-part definition: use cases (modelled by DAK components), technical specifications, and policy and regulatory standards. A Trust Domain also names its terms of use, which is a ValueSet of the policies a participant may say it acts under."
-msgstr "<a0>Административно-операционный рамочный документ GDHCN</a0> является правовым источником для Доменов доверия. Логическая модель <a1>Домена доверия</a1> следует его определению, состоящему из трёх частей: варианты использования (моделируемые компонентами DAK), технические спецификации, а также политические и нормативные стандарты. Домен доверия также указывает свои условия использования — ValueSet политик, в рамках которых, по заявлению участника, он может действовать."
+msgstr "<a0>Административно-операционный рамочный документ GDHCN</a0> является правовым источником для Доменов доверия. Логическая модель <a1>Домена доверия</a1> следует его определению, состоящему из трёх частей: варианты использования (моделируемые компонентами DAK), технические спецификации, а также политические и нормативные стандарты. Домен доверия также указывает свои условия использования — ValueSet политик, о действии в соответствии с которыми может заявить участник."
 
 #: input/pagecontent/trust_domains.md:61
 msgid "The <a0>Pan-American Highway for Digital Health (PH4H)</a0> implementation guide describes the usage of the GDHCN for the Americas region."
@@ -175,3 +163,15 @@ msgstr "Модель Домена доверия"
 #: input/pagecontent/trust_domains.md:1
 msgid "Trust Domains"
 msgstr "Домены доверия"
+
+#: input/pagecontent/trust_domains.md:50
+msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
+msgstr "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
+
+#: input/pagecontent/trust_domains.md:55
+msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
+msgstr "ИКАО: [[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
+
+#: input/pagecontent/trust_domains.md:56
+msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"
+msgstr "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"

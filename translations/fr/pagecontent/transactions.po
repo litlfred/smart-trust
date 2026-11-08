@@ -19,10 +19,6 @@ msgstr ""
 msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN specification</a1> specification."
 msgstr "<a0>Identifiants décentralisés</a0> (DID) conformément à la <a1>spécification du GDHCN</a1>."
 
-#: input/pagecontent/transactions.md:49
-msgid "A Trust Network Partcipiant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
-msgstr "Un participant au réseau de confiance publie des clés sur la passerelle du réseau de confiance à l'usage des applications de vérification. Les clés peuvent être codées pour divers usages, notamment conformément à la <a0>gouvernance des certificats</a0>, selon leur <a1>$usage**](ValueSet-KeyUsage.html) et leur domaine de confiance [**$domain</a1>"
-
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"
 msgstr "Peut partager une liste de clés publiques dans le format suivant :"
@@ -336,3 +332,8 @@ msgstr "Vérifie l'authenticité de la règle métier"
 #: input/pagecontent/transactions.md:92
 msgid "Verifying"
 msgstr "Vérification :"
+
+#: input/pagecontent/transactions.md:49
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
+msgstr "Un participant au réseau de confiance publie des clés sur la passerelle du réseau de confiance à l'usage des applications de vérification. Les clés peuvent être codées pour divers usages, notamment conformément à la <a0>gouvernance des certificats</a0>, selon leur <a1>{code0}</a1> et leur <a2>{code1}</a2> de confiance"
