@@ -323,7 +323,7 @@ All other components like proxies, must be aligned in the configured settings to
 
 ##### WHO Trust Network Gateway Modifications
 
-In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:
+In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:
 
 * Native DID Support for the Gateway's Trustlists (DID Document Format) (optional)
 * Decentralized Exchange of DID Documents to provide it to verifiers
