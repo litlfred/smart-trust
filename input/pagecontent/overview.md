@@ -19,7 +19,10 @@
 
 
 <div style="display:block">
-{% include img.html img="trust_network.png" caption="Trust Network" width="70%" %} 
+<figure>
+{% include trust_network.svg %}
+<figcaption>Trust Network</figcaption>
+</figure> 
 </div>
     
 #### Background &amp; Purpose
