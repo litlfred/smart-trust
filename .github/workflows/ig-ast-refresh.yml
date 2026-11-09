@@ -48,3 +48,4 @@ jobs:
       # FHIR/ig-registry's templates.json does not list, so the seeder needs its repository: the CI
       # build server's copy 404s (as in smart-trust-demo, 2026-10-30 and 2026-11-07).
       template-repos: who.template.root=litlfred/smart-ig-template
+      pre-export: bash .github/test-template-fork.sh
