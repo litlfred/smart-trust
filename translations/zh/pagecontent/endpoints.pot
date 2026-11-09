@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.475Z\n"
+"POT-Creation-Date: 2026-11-08T15:52:50.600Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -134,15 +134,15 @@ msgid "Status Monitoring Dashboards"
 msgstr ""
 
 #: input/pagecontent/endpoints.md:24
-msgid "THe following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
+msgid "The following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
 msgstr ""
 
 #: input/pagecontent/endpoints.md:40
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
 msgstr ""
 
 #: input/pagecontent/endpoints.md:53
-msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
+msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
 msgstr ""
 
 #: input/pagecontent/endpoints.md:3

@@ -603,7 +603,7 @@ Signing tags and commits is great, but if you decide to use this in your normal 
 
 
 
-THe following are the endpoints for the [Trust Network Gateway](concepts.html#trust-network-gateway-tng) for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:
+The following are the endpoints for the [Trust Network Gateway](concepts.html#trust-network-gateway-tng) for each of development (DEV), user-acceptance testing (UAT) and production (PROD) **environments**:
 
 | Environment | EndpointURL |
 |-------------|-----|

@@ -46,7 +46,7 @@ The output should be a valid signed [HCERT](hcert_spec.html)
 ### Publish Verification Keys - API {#put_keys_api}
 #### Trigger Events
 
-A Trust Network Partcipiant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the [certificate governance](concepts_certificate_governance.html) according to their [**$usage**](ValueSet-KeyUsage.html) and trust [**$domain**](ValueSet-Domains.html) 
+A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the [certificate governance](concepts_certificate_governance.html) according to their [`$usage`](ValueSet-KeyUsage.html) and trust [`$domain`](ValueSet-Domains.html) 
 
 
 #### Message Semantics

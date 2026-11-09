@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.450Z\n"
+"POT-Creation-Date: 2026-11-08T15:52:50.583Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -912,7 +912,7 @@ msgid "The extendedKeyUsage field is optional, for Covid certificates the below 
 msgstr ""
 
 #: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
 msgstr ""
 
 #: input/pagecontent/concepts_onboarding_checklist.md:787
