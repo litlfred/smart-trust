@@ -97,12 +97,12 @@ msgstr "Un certificado digital de fiebre amarilla que cualquier frontera puede v
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "data.ts:icvp.summary"
 msgid "Mary lives in Nordavia and is travelling to Coralia, which asks for proof of yellow fever vaccination. At the travel clinic she is vaccinated and the nurse records it as usual. Behind the screen, Nordavia turns that record into a standard digital vaccination certificate (the International Certificate of Vaccination or Prophylaxis, ICVP), signs it with a key that never leaves the country, and gives Mary a QR code on her phone and on her paper yellow card. At the border in Coralia, the port health officer scans it and the check passes in seconds. A forged card, signed with a key no trusted country published, fails."
-msgstr "Mary vive en Nordavia y va a viajar a Coralia, que exige un comprobante de vacunación contra la fiebre amarilla. En la clínica del viajero la vacunan y la enfermera lo registra como siempre. Detrás de la pantalla, Nordavia convierte ese registro en un certificado de vacunación digital estándar (el Certificado Internacional de Vacunación o Profilaxis, CIVP), lo firma con una clave que nunca sale del país y le da a Mary un código QR en su teléfono y en su cartilla amarilla en papel. En la frontera de Coralia, el agente de sanidad portuaria lo escanea y la verificación se supera en segundos. Una cartilla falsificada, firmada con una clave que ningún país de confianza ha publicado, no la supera."
+msgstr "Mary vive en Nordavia y va a viajar a Coralia, que exige un comprobante de vacunación contra la fiebre amarilla. En la clínica del viajero la vacunan y la enfermera lo registra como siempre. Detrás de la pantalla, Nordavia convierte ese registro en un certificado de vacunación digital estándar (el Certificado Internacional de Vacunación o Profilaxis, ICVP), lo firma con una clave que nunca sale del país y le da a Mary un código QR en su teléfono y en su cartilla amarilla en papel. En la frontera de Coralia, el agente de sanidad portuaria lo escanea y la verificación se supera en segundos. Una cartilla falsificada, firmada con una clave que ningún país de confianza ha publicado, no la supera."
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "data.ts:icvp.tag"
 msgid "Digital ICVP · vaccination certificate"
-msgstr "CIVP digital · certificado de vacunación"
+msgstr "ICVP digital · certificado de vacunación"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "data.ts:icvp.title"
