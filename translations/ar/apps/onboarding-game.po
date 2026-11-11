@@ -832,7 +832,7 @@ msgstr "مرسى الثقة الخاص ببلدك. يوقّع مفتاحه ال�
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "glossary:sca.term"
 msgid "SCA · Signing Certificate Authority"
-msgstr "SCA · سلطة شهادات التوقيع"
+msgstr "SCA · سلطة التصديق للتوقيع"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "glossary:tls.def"
