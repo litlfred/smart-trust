@@ -97,7 +97,7 @@ higgsfield generate create seed_audio --prompt "<caption text>" --voice_type pre
 
 then convert it with `ffmpeg -i take.wav -ac 1 -b:a 64k beat-NN.mp3`.
 
-**To regenerate (2026-11-11):** `beat-04` in English and French. Its caption now says a country may also send one Letter for joining with no trust domain; the recorded clips still say only "for each trust domain". In the spoken prompt, write tng-bot as "T N G bot" so it is read out letter by letter.
+`beat-04` (English and French) was regenerated on 2026-11-11 with **Chatterbox Multilingual** (Resemble AI, MIT licence, runs offline on CPU), because its caption now also allows one Letter for joining with no trust domain. It uses Chatterbox's built-in voice, so it sounds different from Naomi and Hélène in the other beats. To make a clip this way, see `scripts/narrate-chatterbox.py`. Chatterbox covers all six UN languages with one voice, so it can also voice the languages that have no narration yet.
 
 ## Reviewer feedback
 
