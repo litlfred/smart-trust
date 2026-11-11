@@ -118,7 +118,10 @@ existing trust networks or potential verifiers who may participate in the federa
 
 
 <div style="display:block">
-  {% include img.html img="Participant_Onboarding_Status.png" caption="Trust Network Participants" width="85%" %} 
+<figure>
+{% include participant_engagement.svg %}
+<figcaption>Trust Network Participants</figcaption>
+</figure>
 </div>
 
   
