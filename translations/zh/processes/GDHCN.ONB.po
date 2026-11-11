@@ -37,8 +37,8 @@ msgstr "核查申请和申请函"
 
 #: input/business-processes/GDHCN.ONB.bpmn:47
 #. Diagram label
-msgid "Connect and test"
-msgstr "连接并测试"
+msgid "Go live"
+msgstr "上线"
 
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation

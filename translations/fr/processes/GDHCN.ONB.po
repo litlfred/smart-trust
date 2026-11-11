@@ -36,8 +36,8 @@ msgstr "Examiner la candidature et la lettre"
 
 #: input/business-processes/GDHCN.ONB.bpmn:47
 #. Diagram label
-msgid "Connect and test"
-msgstr "Se connecter et tester"
+msgid "Go live"
+msgstr "Passer en production"
 
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation

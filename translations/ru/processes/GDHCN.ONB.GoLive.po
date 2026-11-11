@@ -37,8 +37,8 @@ msgstr "Подключиться и провести тест готовност
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
 #. Diagram label
-msgid "Connect and test"
-msgstr "Подключиться и пройти тестирование"
+msgid "Go live"
+msgstr "Ввести в эксплуатацию"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation

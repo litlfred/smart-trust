@@ -16,7 +16,7 @@
     <bpmn:messageFlow id="G.M.PROD" name="Connection information and test results" sourceRef="G.O.PROD" targetRef="G.P.PROD" />
     <bpmn:messageFlow id="G.M.Done" name="Production Readiness confirmed" sourceRef="G.O.Confirm" targetRef="G.P.Done" />
   </bpmn:collaboration>
-  <bpmn:process id="GDHCN.ONB.GoLive.Participant" name="Connect and test" isExecutable="false">
+  <bpmn:process id="GDHCN.ONB.GoLive.Participant" name="Go live" isExecutable="false">
     <bpmn:documentation>Steps [60]-[63] (UAT) and [70]-[73] (PROD).</bpmn:documentation>
     <bpmn:laneSet id="GDHCN.ONB.GoLive.Participant.LaneSet">
       <bpmn:lane id="GDHCN.ONB.GoLive.Participant.Lane.TechnicalRepresentative" name="Technical Representative" partitionElementRef="TechnicalRepresentative">

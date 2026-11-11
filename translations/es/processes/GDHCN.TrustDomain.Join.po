@@ -51,8 +51,8 @@ msgstr "Representante del responsable (Business Owner)"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
 #. Diagram label
-msgid "Connect and test"
-msgstr "Conectar y probar"
+msgid "Go live"
+msgstr "Puesta en producción"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
 #. Diagram element documentation

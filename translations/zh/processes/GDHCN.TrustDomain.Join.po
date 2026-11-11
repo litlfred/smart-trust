@@ -52,8 +52,8 @@ msgstr "业务负责人代表"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
 #. Diagram label
-msgid "Connect and test"
-msgstr "连接并测试"
+msgid "Go live"
+msgstr "上线"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
 #. Diagram element documentation

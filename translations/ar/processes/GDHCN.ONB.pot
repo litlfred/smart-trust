@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GDHCN.ONB\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.543Z\n"
+"POT-Creation-Date: 2026-11-11T09:22:39.722Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: ar\n"
@@ -32,11 +32,6 @@ msgstr ""
 #: input/business-processes/GDHCN.ONB.bpmn:115
 #. Diagram label
 msgid "Check the application and the Letter"
-msgstr ""
-
-#: input/business-processes/GDHCN.ONB.bpmn:47
-#. Diagram label
-msgid "Connect and test"
 msgstr ""
 
 #: input/business-processes/GDHCN.ONB.bpmn:33
@@ -72,6 +67,11 @@ msgstr ""
 #: input/business-processes/GDHCN.ONB.bpmn:16
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
+msgstr ""
+
+#: input/business-processes/GDHCN.ONB.bpmn:47
+#. Diagram label
+msgid "Go live"
 msgstr ""
 
 #: input/business-processes/GDHCN.ONB.bpmn:24

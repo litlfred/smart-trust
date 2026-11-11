@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GDHCN.ONB.GoLive\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.535Z\n"
+"POT-Creation-Date: 2026-11-11T09:21:13.339Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -34,11 +34,6 @@ msgstr ""
 msgid "Connect and run the readiness test in PROD"
 msgstr ""
 
-#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
-#. Diagram label
-msgid "Connect and test"
-msgstr ""
-
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
 msgid "Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]."
@@ -57,6 +52,11 @@ msgstr ""
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:9
 #. Diagram label
 msgid "GDHCN Participant"
+msgstr ""
+
+#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
+#. Diagram label
+msgid "Go live"
 msgstr ""
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:34
