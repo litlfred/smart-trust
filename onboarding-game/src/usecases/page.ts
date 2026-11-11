@@ -65,7 +65,7 @@ export class UseCasesPage {
       const v = sessionStorage.getItem('uc-lang');
       if (v === 'fr' || v === 'en') return v;
     } catch { /* fall through to the site language */ }
-    return lang();
+    return lang() === 'fr' ? 'fr' : 'en'; // films exist in English and French only
   }
 
   /** Switch the film language: swap src and poster, pause, back to the start. */
@@ -113,7 +113,7 @@ export class UseCasesPage {
       <h1>${u.title}</h1>
       <p class="uc-sub big">${u.subtitle}</p>
       ${langSwitch}
-      <video class="uc-video" controls playsinline preload="metadata" poster="${asset(film === 'fr' ? u.posterFr ?? u.poster : u.poster)}" src="${asset(src)}"></video>
+      <video class="uc-video" controls playsinline preload="none" poster="${asset(film === 'fr' ? u.posterFr ?? u.poster : u.poster)}" src="${asset(src)}"></video>
       <blockquote class="uc-idea">${u.idea}</blockquote>
       <h3>${P('detail.whatFilm')}</h3>
       <p>${u.summary}</p>

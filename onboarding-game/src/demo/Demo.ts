@@ -119,6 +119,8 @@ const BEATS: Beat[] = [
 ];
 
 const VOICE_KEY = 'gdhcn-demo-voice';
+/** Languages with recorded narration (public/audio/demo/[<lang>/]beat-NN.mp3). The others run on captions. */
+const NARRATED: string[] = ['en', 'fr'];
 const SPEED_KEY = 'gdhcn-demo-speed';
 const SPEEDS = [1, 1.25, 1.5, 2];
 
@@ -143,10 +145,12 @@ const ICON = {
 };
 // Cue times per language: the French narration (public/audio/demo/fr/) will need its own once recorded.
 // Until then the French set is a copy of the English one.
-const CUES = {
+// A language with no narration keeps the English timing for its captions.
+const CUE_TIMES: Record<string, { roles: number[]; certs: number; vault: number }> = {
   en: { roles: [3.1, 4.3, 6.8, 8.7], certs: 13.8, vault: 20.7 },
   fr: { roles: [2.5, 4.1, 5.8, 7.4], certs: 10.5, vault: 19.4 }, // from the pauses in Hélène's take of beat-02
-}[lang()];
+};
+const CUES = CUE_TIMES[lang()] ?? CUE_TIMES.en;
 const CAST = (['business', 'legal', 'technical', 'keymaster'] as const).map((k, n) => (
   { k, role: M(`cast.${k}.role`), duty: M(`cast.${k}.duty`), at: CUES.roles[n] }));
 const CAST_CERTS_AT = CUES.certs;  // "The Key Master creates a Signing CA, a TLS and an Upload certificate..."
@@ -179,7 +183,7 @@ export class Demo {
         <button data-a="next" title="${M('bar.next')}">⏭</button>
         <div class="demo-dots">${BEATS.map((_, i) => `<button data-i="${i}" title="${BEATS[i].title}"></button>`).join('')}</div>
         <select class="demo-speed" aria-label="${M('bar.speed')}" title="${M('bar.speed')}">${SPEEDS.map(v => `<option value="${v}">${v}×</option>`).join('')}</select>
-        <button data-a="voice" title="${M('bar.voice')}" class="demo-voice"></button>
+        <button data-a="voice" title="${NARRATED.includes(lang()) ? M('bar.voice') : M('bar.captionsOnly')}" class="demo-voice"></button>
         <button data-a="exit" title="${M('bar.exit')}">✕</button>
       </div>
       <button class="demo-tap glass" hidden>${M('tapForSound')}</button>`;
@@ -320,9 +324,9 @@ export class Demo {
   /** Play this beat's recorded narration (Higgsfield voice Naomi). */
   private narrate(i: number) {
     this.audio.pause();
-    const file = `audio/demo/${lang() === 'fr' ? 'fr/' : ''}beat-${String(i + 1).padStart(2, '0')}.mp3`;
-    if (lang() === 'fr') {
-      // play the French clip only if the file is there, otherwise the beat runs silent
+    const file = `audio/demo/${lang() === 'en' ? '' : `${lang()}/`}beat-${String(i + 1).padStart(2, '0')}.mp3`;
+    if (lang() !== 'en') {
+      // play the locale's clip only if the file is there, otherwise the beat runs silent (captions only)
       this.audio.removeAttribute('src'); this.audio.load();
       this.speaking = false;
       const gen = this.gen;

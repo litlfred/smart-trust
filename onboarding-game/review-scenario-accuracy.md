@@ -2,6 +2,8 @@
 
 Reviewed 2026-10-17 against the local clone at `~/Workspace/GitHub/smart-trust/input/pagecontent/`.
 
+> **Historical.** This review used the single numbered onboarding process ([1]–[80]). Since 2026-11-11 the game refers to smart-trust's smaller business processes (GDHCN.ONB and its sub-processes, GDHCN.TrustDomain.Join) by task id, checked at build time (`src/game/process-refs.json`), and a country chooses zero, one or more trust domains. The step numbers below are the old ones; the findings about content still hold unless a moment changed.
+
 Source keys used in citations (file:line):
 
 - **PF** `concepts_onboarding_process_full.md` (the numbered steps)

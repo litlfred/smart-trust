@@ -5,10 +5,12 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/smart-trust-content.mjs && vite",
-    "build": "node scripts/smart-trust-content.mjs && tsc --noEmit && vite build",
+    "dev": "node scripts/smart-trust-content.mjs && node scripts/catalog.mjs && node scripts/strings.mjs && vite",
+    "build": "node scripts/smart-trust-content.mjs && node scripts/catalog.mjs --check && node scripts/strings.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
-    "content": "node scripts/smart-trust-content.mjs"
+    "content": "node scripts/smart-trust-content.mjs",
+    "catalog": "node scripts/catalog.mjs",
+    "strings": "node scripts/strings.mjs"
   },
   "dependencies": {
     "three": "^0.170.0"

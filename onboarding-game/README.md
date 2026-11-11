@@ -4,12 +4,30 @@ A browser game that teaches how a country onboards to the WHO Global Digital Hea
 
 Built for the GDHCN onboarding workshop (Kigali) and for ministry teams to replay and demonstrate afterwards.
 
-## Live
+## Where it lives
 
-- **Game:** https://gdhcn-join-the-network.netlify.app (Netlify project `gdhcn-join-the-network`, team carlsbox)
-- **Receiver:** Apps Script project "GDHCN game feedback receiver" (standalone), web app deployment "Game feedback v1"
+This copy is part of smart-trust and is published with its site by the harness's `apps` visualiser (cat-harness skill `web-apps`): `web-app.json` declares it, and the site build runs `npm ci && npm run build` and serves `dist/` at `<locale>/<harness>/apps/onboarding-game/`, with no site chrome. Nothing else on the site loads it: IG pages and journeys link to that route. It came from `carlsbox/gdhcn-onboarding-game` at commit `bd4c34c` (see `NOTICE`); the Netlify site there (https://gdhcn-join-the-network.netlify.app) is the upstream copy.
 
-**Deploys are automatic:** the Netlify project is linked to `carlsbox/gdhcn-onboarding-game`, so every push to `main` builds (`npm run build`, see `netlify.toml`) and publishes. The feedback URL is in `.env.production`.
+## Content from smart-trust
+
+The game reads smart-trust at build time rather than copying it, so it cannot drift (`scripts/smart-trust-content.mjs`, run by `dev` and `build`):
+
+- the onboarding business processes, `input/business-processes/GDHCN.ONB*.bpmn` and `GDHCN.TrustDomain.*.bpmn`, with their names in each language from `translations/<locale>/processes/`. Each moment's WHO step references are task ids in `src/game/process-refs.json` (`<process>#<task>`); the build fails if one is not in the BPMN. The chips link to the process on the IG page.
+- the trust domains a country can join, from `input/fsh/instances/TrustDomain-*.fsh`. A country chooses zero, one or more; with none it joins the Trust Network Gateway with the Letter for no trust domain and joins trust domains later.
+- the GDHCN glossary, `glossary/gdhcn.glossary.json`.
+
+## Languages
+
+The six UN languages: Arabic, Chinese, English, French, Russian and Spanish (`web-app.json` `locales`). English is the source; Arabic is shown right to left. The other five are translated through smart-trust's translation process, as the pages and BPMN are (AGENTS.md §Translations):
+
+| step | how |
+|---|---|
+| catalog | `npm run catalog` gathers every English string from `src/i18n/en.ts`, `src/game/scenario.ts` and `src/game/glossary.ts` into `src/i18n/en.json`. The build fails if it is stale. |
+| templates | `bun run cat web-apps:build --extract` (harness) writes `translations/<locale>/apps/onboarding-game.pot` in smart-trust. |
+| translation | translators fill `translations/<locale>/apps/onboarding-game.po`, one PR per locale. The key is the `msgctxt`. Keep every `{placeholder}`; translate inside `{n:one|other}` and keep `[[term|text]]` marks. |
+| strings | `npm run strings` (and the harness at publish) writes `public/i18n/<locale>.json` from the `.po`. A string with no translation, or whose placeholders differ, shows in English. |
+
+The game loads its language's strings before anything else (`src/main.ts`), then loads the game itself as a separate chunk. The French came from the facilitator-reviewed transcripts (October 2026) and is now kept in the `.po`. Narration exists in English and French; the demo in the other languages runs on captions and says so. Films are in English and French.
 
 ## Run it
 
@@ -103,6 +121,8 @@ Without the URL the tab still opens but says feedback is not connected.
 | `src/world/World.ts` | The three.js world: territories, roads, parcels, camera. |
 | `src/world/models.ts` | Buildings and shared materials (soft-glow look). |
 | `src/world/Bot.ts` | tng-bot, an original character. |
+| `src/game/process-refs.json`, `src/game/refs.ts` | Which smart-trust process tasks each moment plays, and the chips that link to them. |
+| `src/i18n/` | Strings: `en.ts` (UI English), `en.json` (the catalog), `strings.ts` (loads a language), `overlay.ts` (translates the scenario). |
 | `src/ui/ui.ts`, `src/style.css` | Top bar, HUD, desk panel, progress strip, debrief, completion splash. |
 | `src/ui/dev.ts` | Dev mode unlock and jumps. |
 | `src/ui/explore.ts` | Explore-the-world mode: place cards, chips, reset view. |
@@ -123,14 +143,14 @@ Four wrong choices look fine at the time and fail later, at the point WHO's proc
 
 | Choice | Caught at |
 |---|---|
-| Windows' built-in cURL (Schannel) | UAT connectivity test (step 61) |
-| One certificate set for UAT and PROD | WHO verification of the PROD request (steps 39–42) |
-| Personal email in the GPG key | GPG email check against the Letter (steps 21–22) |
+| Windows' built-in cURL (Schannel) | UAT connectivity test (Connect and test) |
+| One certificate set for UAT and PROD | WHO verification of the PROD keys (Verify and sign PROD keys) |
+| Personal email in the GPG key | GPG email check against the Letter (Convey and correct the Letter) |
 | Tag created on the GitHub website | tng-bot signature check |
 
 ## Source and accuracy
 
-Content follows the WHO SMART Trust Implementation Guide (https://smart.who.int/trust; checked against v1.7.5 of the source repository, October 2026), mainly the onboarding process ([1]–[80]), the onboarding checklist and certificate governance. In any discrepancy the IG, and the GDHCN Administrative and Operational Framework for definitions, are the authority.
+Content follows the WHO SMART Trust Implementation Guide (https://smart.who.int/trust; checked against v1.7.5 of the source repository, October 2026), mainly the onboarding business processes (GDHCN.ONB and its sub-processes, GDHCN.TrustDomain.Join), the onboarding checklist and certificate governance. In any discrepancy the IG, and the GDHCN Administrative and Operational Framework for definitions, are the authority.
 
 Simplifications to know about:
 

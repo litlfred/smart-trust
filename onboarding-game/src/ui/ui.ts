@@ -5,7 +5,7 @@ import { devOn, devUnlocked, jumpTo, setDevOn } from './dev';
 import { catLine, catMood, catShows, catsFound, catSvg, mrrp } from './cat';
 import { USE_CASES } from '../usecases/data';
 import { renderTips as T, stripTips } from '../game/glossary';
-import { lang, num, setLang, t } from '../i18n';
+import { isLang, lang, LOCALES, NATIVE, num, SHORT, setLang, t } from '../i18n';
 import { refsChips } from '../game/refs';
 
 /** "⌂ Home" -> glyph, then the word in a span (the span is hidden on phones). */
@@ -66,8 +66,7 @@ export class UI {
         <button class="nav-btn" data-go="usecases">${U('navUseCases')}</button>
         <button class="nav-btn" id="settings-btn" aria-haspopup="true">${U('navSettings')}</button>
         <div class="lang-switch" role="group" aria-label="${U('navLang')}">
-          <button type="button" data-lang="en" lang="en" aria-pressed="${lang() === 'en'}">EN</button>
-          <button type="button" data-lang="fr" lang="fr" aria-pressed="${lang() === 'fr'}">FR</button>
+          ${LOCALES.map(l => `<button type="button" data-lang="${l}" lang="${l}" title="${NATIVE[l]}" aria-label="${NATIVE[l]}" aria-pressed="${lang() === l}">${SHORT[l]}</button>`).join('')}
         </div>
       </div></nav>`);
     this.menuEl = this.mount(`<div id="menu" class="glass">
@@ -92,7 +91,7 @@ export class UI {
     this.menuEl.addEventListener('click', e => { const t = (e.target as HTMLElement).dataset.go; if (t) go(t); });
     document.getElementById('topnav')!.addEventListener('click', e => {
       const l = (e.target as HTMLElement).closest<HTMLElement>('[data-lang]')?.dataset.lang;
-      if (l) { if (l !== lang()) setLang(l === 'fr' ? 'fr' : 'en'); return; }
+      if (l) { if (l !== lang() && isLang(l)) setLang(l); return; }
       const g = (e.target as HTMLElement).closest<HTMLElement>('[data-go]')?.dataset.go;
       if (g) { e.preventDefault(); go(g); }
     });

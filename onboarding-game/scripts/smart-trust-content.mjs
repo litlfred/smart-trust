@@ -74,7 +74,7 @@ for (const f of readdirSync(join(LAYER, BP)).filter((f) => f.endsWith('.bpmn')).
     const name = /\bname="([^"]*)"/.exec(m[2])?.[1];
     if (id && name) tasks[id] = localised(oneLine(name), locPo);
   }
-  const title = oneLine((participant ?? proc)?.[1] ?? stem);
+  const title = oneLine((proc ?? participant)?.[1] ?? stem);
   processes[stem] = { title: localised(title, locPo), anchor: stem.toLowerCase().replace(/\./g, '-'), tasks };
 }
 
