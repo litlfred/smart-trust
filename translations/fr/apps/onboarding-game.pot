@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Join the Network (onboarding-game)\n"
-"POT-Creation-Date: 2026-11-11T09:12:22.621Z\n"
+"POT-Creation-Date: 2026-11-11T09:18:38.948Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -241,7 +241,7 @@ msgstr ""
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "Demo.ts:beat4.body"
-msgid "Before production, the Legal representative sends a Letter of Application for each trust domain the Country joins. It names the four contacts, the GPG key fingerprints and the production repository. The certificates themselves stay in the repository for tng-bot to collect."
+msgid "Before production, the Legal representative sends a Letter of Application for each trust domain the Country joins, or one Letter for joining with no trust domain yet. It names the four contacts, the GPG key fingerprints and the production repository. The certificates themselves stay in the repository for tng-bot to collect."
 msgstr ""
 
 #: onboarding-game/src/i18n/en.json:1
@@ -2031,7 +2031,7 @@ msgstr ""
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:letter.checklist.items.8.why"
-msgid "Identity is checked face to face or through the diplomatic channel (steps 16–17)."
+msgid "Identity is checked face to face or through the diplomatic channel (Convey the Letter)."
 msgstr ""
 
 #: onboarding-game/src/i18n/en.json:1
@@ -2196,7 +2196,7 @@ msgstr ""
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:prod.docs.0.lines.6"
-msgid "Then: email the results to the service provider (steps 73–74)"
+msgid "Then: email the results to the service provider"
 msgstr ""
 
 #: onboarding-game/src/i18n/en.json:1

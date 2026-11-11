@@ -95,7 +95,9 @@ The narration clips live in `public/audio/demo/beat-01.mp3` to `beat-09.mp3`. If
 higgsfield generate create seed_audio --prompt "<caption text>" --voice_type preset --voice_id caeba733-3c17-43db-863e-69c7025512cd --speech_rate 15 --format wav --wait --json
 ```
 
-then convert it with `ffmpeg -i take.wav -ac 1 -b:a 64k beat-NN.mp3`. In the spoken prompt, write tng-bot as "T N G bot" so it is read out letter by letter.
+then convert it with `ffmpeg -i take.wav -ac 1 -b:a 64k beat-NN.mp3`.
+
+**To regenerate (2026-11-11):** `beat-04` in English and French. Its caption now says a country may also send one Letter for joining with no trust domain; the recorded clips still say only "for each trust domain". In the spoken prompt, write tng-bot as "T N G bot" so it is read out letter by letter.
 
 ## Reviewer feedback
 

@@ -241,8 +241,8 @@ msgstr "Les clés publiques vers GitHub"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "Demo.ts:beat4.body"
-msgid "Before production, the Legal representative sends a Letter of Application for each trust domain the Country joins. It names the four contacts, the GPG key fingerprints and the production repository. The certificates themselves stay in the repository for tng-bot to collect."
-msgstr "Avant la production, le responsable juridique envoie une lettre de candidature pour chaque domaine de confiance auquel le pays adhère. Elle désigne les quatre interlocuteurs, les empreintes des clés GPG et le dépôt de production. Les certificats eux-mêmes restent dans le dépôt, où tng-bot les collecte."
+msgid "Before production, the Legal representative sends a Letter of Application for each trust domain the Country joins, or one Letter for joining with no trust domain yet. It names the four contacts, the GPG key fingerprints and the production repository. The certificates themselves stay in the repository for tng-bot to collect."
+msgstr "Avant la production, le responsable juridique envoie une lettre de candidature pour chaque domaine de confiance auquel le pays adhère, ou une seule lettre pour adhérer sans domaine de confiance pour l'instant. Elle désigne les quatre interlocuteurs, les empreintes des clés GPG et le dépôt de production. Les certificats eux-mêmes restent dans le dépôt, où tng-bot les collecte."
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "Demo.ts:beat4.title"
@@ -2031,8 +2031,8 @@ msgstr "Copies numérisées des passeports de l'équipe"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:letter.checklist.items.8.why"
-msgid "Identity is checked face to face or through the diplomatic channel (steps 16–17)."
-msgstr "L'identité est vérifiée en personne ou par la voie diplomatique (étapes 16–17)."
+msgid "Identity is checked face to face or through the diplomatic channel (Convey the Letter)."
+msgstr "L'identité est vérifiée en personne ou par la voie diplomatique (Transmettre la Lettre)."
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:letter.checklist.items.9.text"
@@ -2196,8 +2196,8 @@ msgstr "f) Le téléverser de nouveau si le DSC est nécessaire"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:prod.docs.0.lines.6"
-msgid "Then: email the results to the service provider (steps 73–74)"
-msgstr "Ensuite : envoyer les résultats par e-mail au prestataire de services (étapes 73–74)"
+msgid "Then: email the results to the service provider"
+msgstr "Ensuite : envoyer les résultats par e-mail au prestataire de services"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:prod.docs.0.title"

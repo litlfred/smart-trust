@@ -326,7 +326,7 @@ export const en: Record<string, string> = {
   "Demo.ts:beat3.title": "Public keys to GitHub",
   "Demo.ts:beat3.body": "Each authorised person creates a GPG key with their official email address. The Technical lead puts the public keys, never the private ones, in private GitHub repositories, and invites WHO's bots: tng-bot-dev for testing, and tng-bot for production. The Key Master signs the release tag from the terminal.",
   "Demo.ts:beat4.title": "Send the Letter of Application",
-  "Demo.ts:beat4.body": "Before production, the Legal representative sends a Letter of Application for each trust domain the Country joins. It names the four contacts, the GPG key fingerprints and the production repository. The certificates themselves stay in the repository for tng-bot to collect.",
+  "Demo.ts:beat4.body": "Before production, the Legal representative sends a Letter of Application for each trust domain the Country joins, or one Letter for joining with no trust domain yet. It names the four contacts, the GPG key fingerprints and the production repository. The certificates themselves stay in the repository for tng-bot to collect.",
   "Demo.ts:beat5.title": "WHO verifies the people",
   "Demo.ts:beat5.body": "WHO confirms the named people face to face, or through the diplomatic channel, and checks that the email inside every GPG key matches the Letter.",
   "Demo.ts:beat6.title": "tng-bot collects the keys",

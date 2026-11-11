@@ -388,7 +388,7 @@ export const MOMENTS: Moment[] = [
         { text: "{country}'s ISO participant code", required: false, why: 'WHO generates the ISO participant codes and matches them itself.' },
         { text: 'The SCA private key', required: false, why: 'Private keys never leave {country}.' },
         { text: 'The GitHub access token, so WHO can log in', required: false, why: 'WHO never needs your GitHub login. The bot is invited instead.' },
-        { text: 'Scanned passports of the team', required: false, why: 'Identity is checked face to face or through the diplomatic channel (steps 16–17).' },
+        { text: 'Scanned passports of the team', required: false, why: 'Identity is checked face to face or through the diplomatic channel (Convey the Letter).' },
         { text: "A statement accepting other participants' keys in the gateway lists", required: false, why: 'Not part of the WHO Letter templates.' },
       ],
       consequence: {
@@ -566,7 +566,7 @@ export const MOMENTS: Moment[] = [
       kind: 'note', title: 'Production Readiness Test', lines: [
         'a) Create a DSC, signed by the SCA', 'b) Wrap it in a CMS package', 'c) Upload the package to the PROD gateway',
         'd) Download the trust list and check your DSC is there', 'e) Delete (revoke) at least one DSC', 'f) Upload it again if the DSC is needed',
-        'Then: email the results to the service provider (steps 73–74)',
+        'Then: email the results to the service provider',
       ],
     }, { kind: 'terminal', title: 'Build the CMS package', lines: ['> openssl cms -sign -nodetach -in cert.der \\', '    -signer ????.crt -inkey ????.key -out signed.der'], mark: [1] }],
     prompt: 'Which certificate signs the CMS package?',
