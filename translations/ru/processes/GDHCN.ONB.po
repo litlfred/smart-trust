@@ -37,8 +37,8 @@ msgstr "Проверить заявку и Письмо-заявку"
 
 #: input/business-processes/GDHCN.ONB.bpmn:47
 #. Diagram label
-msgid "Connect and test"
-msgstr "Подключиться и пройти тестирование"
+msgid "Go live"
+msgstr "Ввести в эксплуатацию"
 
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation

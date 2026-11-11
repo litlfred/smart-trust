@@ -37,8 +37,8 @@ msgstr "在 PROD 中连接并运行就绪测试"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
 #. Diagram label
-msgid "Connect and test"
-msgstr "连接并测试"
+msgid "Go live"
+msgstr "上线"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation

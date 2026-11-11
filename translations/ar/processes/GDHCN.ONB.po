@@ -50,8 +50,8 @@ msgstr "فحص الطلب والخطاب"
 
 #: input/business-processes/GDHCN.ONB.bpmn:47
 #. Diagram label
-msgid "Connect and test"
-msgstr "الربط والاختبار"
+msgid "Go live"
+msgstr "بدء التشغيل الفعلي"
 
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation

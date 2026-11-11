@@ -50,8 +50,8 @@ msgstr "الربط وإجراء اختبار الجاهزية في PROD"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
 #. Diagram label
-msgid "Connect and test"
-msgstr "الربط والاختبار"
+msgid "Go live"
+msgstr "بدء التشغيل الفعلي"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation

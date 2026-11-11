@@ -44,7 +44,7 @@
       <bpmn:incoming>Flow_1</bpmn:incoming>
       <bpmn:outgoing>Flow_2</bpmn:outgoing>
     </bpmn:callActivity>
-    <bpmn:callActivity id="T.P.Live" name="Connect and test" calledElement="GDHCN.ONB.GoLive.Participant">
+    <bpmn:callActivity id="T.P.Live" name="Go live" calledElement="GDHCN.ONB.GoLive.Participant">
       <bpmn:documentation>Phase 3, steps [60]-[78], for UAT and then PROD.</bpmn:documentation>
       <bpmn:incoming>Flow_2</bpmn:incoming>
       <bpmn:outgoing>Flow_3</bpmn:outgoing>

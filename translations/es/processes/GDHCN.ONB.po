@@ -36,8 +36,8 @@ msgstr "Comprobar la solicitud y la Carta"
 
 #: input/business-processes/GDHCN.ONB.bpmn:47
 #. Diagram label
-msgid "Connect and test"
-msgstr "Conectar y probar"
+msgid "Go live"
+msgstr "Puesta en producción"
 
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation
