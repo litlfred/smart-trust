@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
+          "ref": "bdbf3b5a83c39091d2046396bb3b0caecbbd2e3c",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -30,9 +30,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "33ebe87f691e9a72e308bec8390e2882b5b7ff73",
-              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back'; window extended to 05:27Z; 'follow smart-base main (>= af46ec5) rather than 520cd52; 520cd52 diverged from main'. smart-base at main af46ec5; who-iris and core forward to the commits smart-base pins; every other pin kept at main's newer commit."
+              "on": "2026-11-11",
+              "ref": "bdbf3b5a83c39091d2046396bb3b0caecbbd2e3c",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -43,7 +43,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "af46ec5d53946f31fff35f8ec2dd1c4cfbe76a97",
+          "ref": "41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -77,9 +77,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "af46ec5d53946f31fff35f8ec2dd1c4cfbe76a97",
-              "evidence": "litlfred, 2026-11-07, via the merge manager (session_01VQDpPffYARDQ8juksAZScf): card 'Pin target' 'A. Never move back'; window extended to 05:27Z; 'follow smart-base main (>= af46ec5) rather than 520cd52; 520cd52 diverged from main'. smart-base at main af46ec5; who-iris and core forward to the commits smart-base pins; every other pin kept at main's newer commit."
+              "on": "2026-11-11",
+              "ref": "41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -90,7 +90,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "29c20f1371d2defa00da52cfbad48fea491f9bbc",
+          "ref": "94b649add2d4202b6a3dbe6b6d14f4b7b28fbfa2",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -99,9 +99,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "29c20f1371d2defa00da52cfbad48fea491f9bbc",
-              "evidence": "Owner (litlfred), 2026-11-07 17:30Z: \"merge what green. window +12hrs. cooridnate merge manager\". This session (https://claude.ai/code/session_01VQDpPfnNBcEn8FqLCVMb6f), at the harness coordinator's request: re-pinned fhir-harness to 29c20f1 (#309, the IG FHIR-package lock that ig-ast-refresh seeds the cache from) for trust-phw 0.2.0-litlfred."
+              "on": "2026-11-11",
+              "ref": "94b649add2d4202b6a3dbe6b6d14f4b7b28fbfa2",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -112,7 +112,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
+          "ref": "1035ced2fd526cfc3ddcc78c1bd2b58ebed206f0",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-08",
-              "ref": "62fe7e771c39686f206b95e04e2590eadd2915ce",
-              "evidence": "Owner litlfred, 2026-11-08 10:36Z, project thread 'Expand bibliography entries into detail panels', card 'OK to re-pin core to 62fe7e7 in smart-trust, smart-ips-pilgrimage, smart-hiv?': chose 'A Re-pin core in the 3 PRs'."
+              "on": "2026-11-11",
+              "ref": "1035ced2fd526cfc3ddcc78c1bd2b58ebed206f0",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "8eefb1f2ced5777f80c30891280fcfd8158ec372",
+          "ref": "be6f9dde8ae354c09eb7e1c06ea1b44e54529fce",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -156,8 +156,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "8eefb1f2ced5777f80c30891280fcfd8158ec372",
-              "evidence": "Re-pin requested 2026-11-11 through the coordinating session (https://claude.ai/code/session_01Qmmkt6te9q7bF3KBT2Qq11) so onboarding-game (#178) can declare the web-app kind: cat-harness-tools main bdeef82a (cat-harness-tools#1864 merged), cat-harness 8eefb1f2 (cat-harness#1237). Code-only pin bump, opened as a draft PR for the owner's review."
+              "ref": "be6f9dde8ae354c09eb7e1c06ea1b44e54529fce",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "bdeef82afff0e8e14f5daf9609672ea25272cb78",
+          "ref": "b9a8d2023725155a4dd2d6babe0fafed0b940aab",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -181,8 +181,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-11",
-              "ref": "bdeef82afff0e8e14f5daf9609672ea25272cb78",
-              "evidence": "Re-pin requested 2026-11-11 through the coordinating session (https://claude.ai/code/session_01Qmmkt6te9q7bF3KBT2Qq11) so onboarding-game (#178) can declare the web-app kind: cat-harness-tools main bdeef82a (cat-harness-tools#1864 merged), cat-harness 8eefb1f2 (cat-harness#1237). Code-only pin bump, opened as a draft PR for the owner's review."
+              "ref": "b9a8d2023725155a4dd2d6babe0fafed0b940aab",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -193,7 +193,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
+          "ref": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -202,9 +202,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "12fa6d57dfad06ae73e234f116145dfc8d77ad50",
-              "evidence": "litlfred 2026-11-07 05:25Z, session https://claude.ai/code/session_01VQDpPfeH29k3n4iKC2D5wg: \"repin + merge open 12 hrs\" (merge window to 17:25Z); the coordinator assigned smart-trust's re-pin to this session."
+              "on": "2026-11-11",
+              "ref": "fdc84b22c30ace4b9476e56fa1cac2117e5aaf0a",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
@@ -215,7 +215,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "1dc08c906f3a9377534b753fed493b811e040ad7",
+          "ref": "0dea4fa94b6a66706c537d4586fefdaf5e768eef",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -227,9 +227,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-07",
-              "ref": "1dc08c906f3a9377534b753fed493b811e040ad7",
-              "evidence": "litlfred 2026-11-07 05:25Z, session https://claude.ai/code/session_01VQDpPfeH29k3n4iKC2D5wg: \"repin + merge open 12 hrs\" (merge window to 17:25Z); re-pin refreshed at 08:40Z for cat-harness-tools e3f62f5b (#1620)."
+              "on": "2026-11-11",
+              "ref": "0dea4fa94b6a66706c537d4586fefdaf5e768eef",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             }
           }
         }
