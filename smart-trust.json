@@ -128,6 +128,14 @@
       "graphTypologies": [
         "translation-sources"
       ]
+    },
+    {
+      "id": "onboarding-game",
+      "path": "onboarding-game/",
+      "graphTypologies": [
+        "code"
+      ],
+      "description": "The GDHCN onboarding game, \"Join the Network\" (Vite, TypeScript, three.js; Apache-2.0, from carlsbox/gdhcn-onboarding-game, see NOTICE). A chrome-less app published on gh-pages and loaded only when a reader opens its route. Declared as code until the shared web-app kind exists (smart-trust#176, Q-GAME-5)."
     }
   ],
   "avatar": {

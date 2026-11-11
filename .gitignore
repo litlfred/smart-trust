@@ -85,3 +85,6 @@ node_modules/
 /fhir-artifact-index/package.tgz
 /document-kinds/dak.coverage.smart-trust.json
 # END built at publish
+
+# onboarding game build output (published to gh-pages, never committed)
+onboarding-game/dist/
