@@ -502,7 +502,7 @@ msgstr "关闭"
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "explore.ts:card.here"
 msgid "In the game, this is where you"
-msgstr "在游戏中，你在这里"
+msgstr "在游戏中，你会在这里："
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "explore.ts:card.holds"
@@ -2697,7 +2697,7 @@ msgstr "意向声明"
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:soi.choices.github.consequence.what"
 msgid "No one at WHO watches a repository it hasn't been told about. tng-bot only reads repositories it is invited to, much later in onboarding."
-msgstr "世卫组织不会关注一个没人告诉过它的存储库。tng-bot 只读取受邀访问的存储库，而且那是入网很久以后的事。"
+msgstr "世卫组织不会关注一个没人告诉过它的存储库。tng-bot 只读取受邀访问的存储库，而这要到入网流程的很后期才会发生。"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:soi.choices.github.consequence.why"
@@ -3302,7 +3302,7 @@ msgstr "世卫组织"
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "ui.ts:desk.whoSub"
 msgid "Watch what WHO does"
-msgstr "看看世卫组织做了什么"
+msgstr "看看世卫组织在做什么"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "ui.ts:dev.chip"
