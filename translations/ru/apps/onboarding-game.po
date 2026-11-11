@@ -562,7 +562,7 @@ msgstr "Закрытые ключи: ключи TLS, загрузки и под�
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "explore.ts:HOLDS.dashboard"
 msgid "The expiry dates of every participant's certificates, per environment."
-msgstr "Сроки действия сертификатов каждого участника по средам."
+msgstr "Даты истечения срока действия сертификатов каждого участника по средам."
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "explore.ts:HOLDS.github"
@@ -2597,7 +2597,7 @@ msgstr "Храните SCA офлайн так, чтобы для его исп�
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:sca.choices.server.text"
 msgid "On the backend server, so signing is quick"
-msgstr "На сервере, чтобы подписывать быстро"
+msgstr "На бэкенд-сервере, чтобы подписывать быстро"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "scenario:sca.choices.vault.text"
@@ -3007,7 +3007,7 @@ msgstr "Письмо-заявка для присоединения без до�
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "ui.ts:about.builtBy"
 msgid "Built by"
-msgstr "Создано"
+msgstr "Разработчик"
 
 #: onboarding-game/src/i18n/en.json:1
 msgctxt "ui.ts:about.cats"
