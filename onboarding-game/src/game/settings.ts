@@ -19,11 +19,15 @@ export const DEFAULTS: Settings = {
   names: { business: 'Dr Zawadi Nkosi', keymaster: 'Kwame Mensah', legal: 'Sara Diallo', technical: 'Tendai Banda' },
 };
 
-/** Trust domains the player applies for this run. DDCC until chosen (dev jumps, the demo). */
+/**
+ * Trust domains the player applies for this run: zero, one or more (owner, 2026-11-11). DDCC until
+ * chosen (dev jumps, the demo). Zero is a real choice: the country joins the Gateway with the Letter
+ * for no trust domain and joins trust domains later ("Join a further Trust Domain").
+ */
 const DEFAULT_DOMAINS = ['DDCC'];
 let domains: string[] = [...DEFAULT_DOMAINS];
 export const getDomains = () => domains;
-export const setDomains = (d: string[]) => { domains = d.length ? [...d] : [...DEFAULT_DOMAINS]; };
+export const setDomains = (d: string[]) => { domains = [...d]; };
 export const resetDomains = () => { domains = [...DEFAULT_DOMAINS]; };
 export const joinList = (d: string[]) => d.length < 2 ? d.join('') : `${d.slice(0, -1).join(', ')}${t('settings.ts:domains.and')}${d[d.length - 1]}`;
 /** Tokens that change during a run: left alone when the scenario is built, filled as each moment plays. */
@@ -145,7 +149,8 @@ export function tokens(s: Settings): Record<string, string> {
     business: s.names.business, keymaster: s.names.keymaster, legal: s.names.legal, technical: s.names.technical,
     keymasterFirst: first(s.names.keymaster), legalFirst: first(s.names.legal), technicalFirst: first(s.names.technical),
     keymasterEmail: `${kmLocal}@${domain}`, keymasterPersonal: `${kmLocal}@gmail.com`,
-    domains: joinList(domains), domainCount: String(domains.length), domainLetters: t(domains.length === 1 ? 'settings.ts:letter.one' : 'settings.ts:letter.other', { n: domains.length }),
+    domains: domains.length ? joinList(domains) : t('settings.ts:domains.none'), domainCount: String(domains.length),
+    domainLetters: t(domains.length === 0 ? 'settings.ts:letter.zero' : domains.length === 1 ? 'settings.ts:letter.one' : 'settings.ts:letter.other', { n: domains.length }),
   };
 }
 

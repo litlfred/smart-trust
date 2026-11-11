@@ -5,9 +5,10 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "dev": "node scripts/smart-trust-content.mjs && vite",
+    "build": "node scripts/smart-trust-content.mjs && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "content": "node scripts/smart-trust-content.mjs"
   },
   "dependencies": {
     "three": "^0.170.0"

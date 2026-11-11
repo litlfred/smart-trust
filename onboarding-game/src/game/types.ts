@@ -22,7 +22,7 @@ export interface Travel {
 export interface Consequence {
   title: string;
   by: string;        // who sends it back, e.g. "WHO Secretariat"
-  steps: string;     // WHO SMART Trust step reference
+  steps: string[];   // smart-trust business-process task refs, `<stem>#<task id>` or `page:<IG page>` (see refs.ts)
   what: string;      // what happened
   why: string;       // the rule behind it
   days: number;      // illustrative game days lost
@@ -56,7 +56,7 @@ export interface Moment {
   id: string;
   phase: Phase;
   title: string;
-  steps: string;
+  steps: string[];   // see Consequence.steps
   place: Exclude<PlaceId, never>;
   role: Role;
   brief: string;

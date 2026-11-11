@@ -3,6 +3,7 @@ import { MOMENTS } from '../game/scenario';
 import { fill } from '../game/settings';
 import { renderTips } from '../game/glossary';
 import { t } from '../i18n';
+import { refsChips } from '../game/refs';
 
 const X = (k: string) => t(`explore.ts:${k}`);
 
@@ -52,7 +53,7 @@ export function explore(world: World, root: HTMLElement): Promise<'start' | 'bac
       <div class="eyebrow">${p.name}</div>
       <p>${fill(p.blurb)}</p>
       <h4>${X('card.holds')}</h4><p>${renderTips(HOLDS[id])}</p>
-      ${here.length ? `<h4>${X('card.here')}</h4><ul>${here.map(m => `<li>${m.title} <span class="chip steps">${t('ui.ts:hud.chipSteps', { steps: m.steps })}</span></li>`).join('')}</ul>` : ''}`;
+      ${here.length ? `<h4>${X('card.here')}</h4><ul>${here.map(m => `<li>${m.title} ${refsChips(m.steps)}</li>`).join('')}</ul>` : ''}`;
     card.hidden = false;
     el.querySelectorAll('.ex-chip').forEach(c => c.classList.toggle('on', (c as HTMLElement).dataset.p === id));
     world.mark(id);

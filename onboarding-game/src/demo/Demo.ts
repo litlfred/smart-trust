@@ -1,6 +1,10 @@
 import type { PlaceId, World } from '../world/World';
 import { setFeedbackContext } from '../ui/feedback';
 import { lang, t } from '../i18n';
+import { refsChips, refsText } from '../game/refs';
+import REFS_JSON from '../game/process-refs.json';
+
+const REFS = REFS_JSON as unknown as Record<string, string[]>;
 
 const M = (k: string, v?: Record<string, string | number>) => t(`Demo.ts:${k}`, v);
 
@@ -19,7 +23,7 @@ const wait = (ms: number) => new Promise<void>(r => {
 
 interface Beat {
   title: string;
-  steps: string;
+  steps: string[];
   body: string;
   place: PlaceId | 'home';
   prodOpen?: boolean;
@@ -37,7 +41,7 @@ interface Beat {
  */
 const BEATS: Beat[] = [
   {
-    title: M('beat1.title'), steps: M('beat1.steps'), place: 'home',
+    title: M('beat1.title'), steps: REFS['demo:beat1'], place: 'home',
     body: M('beat1.body'),
     run: async (w, dead) => {
       await w.travel([['paper', 1]], M('parcel.1a'), 'paper'); if (dead()) return;
@@ -45,22 +49,22 @@ const BEATS: Beat[] = [
     },
   },
   {
-    title: M('beat2.title'), steps: M('beat2.steps'), place: 'backend', cast: true,
+    title: M('beat2.title'), steps: REFS['demo:beat2'], place: 'backend', cast: true,
     body: M('beat2.body'),
     run: async w => { await w.travel([['ministry-backend', 1]], M('parcel.2'), 'key'); },
   },
   {
-    title: M('beat3.title'), steps: M('beat3.steps'), place: 'home',
+    title: M('beat3.title'), steps: REFS['demo:beat3'], place: 'home',
     body: M('beat3.body'),
     run: async w => { await w.travel([['backend-github', 1]], M('parcel.3'), 'key'); },
   },
   {
-    title: M('beat4.title'), steps: M('beat4.steps'), place: 'home',
+    title: M('beat4.title'), steps: REFS['demo:beat4'], place: 'home',
     body: M('beat4.body'),
     run: async w => { await w.travel([['paper', 1]], M('parcel.4'), 'paper'); },
   },
   {
-    title: M('beat5.title'), steps: M('beat5.steps'), place: 'secretariat',
+    title: M('beat5.title'), steps: REFS['demo:beat5'], place: 'secretariat',
     body: M('beat5.body'),
     run: async (w, dead) => {
       await wait(1800); if (dead()) return;
@@ -69,7 +73,7 @@ const BEATS: Beat[] = [
     },
   },
   {
-    title: M('beat6.title'), steps: M('beat6.steps'), place: 'github',
+    title: M('beat6.title'), steps: REFS['demo:beat6'], place: 'github',
     body: M('beat6.body'),
     run: async (w, dead) => {
       await w.botTo('github'); if (dead()) return;
@@ -82,7 +86,7 @@ const BEATS: Beat[] = [
     },
   },
   {
-    title: M('beat7.title'), steps: M('beat7.steps'), place: 'ops',
+    title: M('beat7.title'), steps: REFS['demo:beat7'], place: 'ops',
     body: M('beat7.body'),
     run: async (w, dead) => {
       w.pulseAnchor(); await wait(2200); if (dead()) return;
@@ -91,7 +95,7 @@ const BEATS: Beat[] = [
     },
   },
   {
-    title: M('beat8.title'), steps: M('beat8.steps'), place: 'home',
+    title: M('beat8.title'), steps: REFS['demo:beat8'], place: 'home',
     body: M('beat8.body'),
     run: async (w, dead) => {
       await w.travel([['backend-uat', 1]], M('parcel.8a'), 'data'); if (dead()) return;
@@ -100,7 +104,7 @@ const BEATS: Beat[] = [
     },
   },
   {
-    title: M('beat9.title'), steps: M('beat9.steps'), place: 'home', prodOpen: true,
+    title: M('beat9.title'), steps: REFS['demo:beat9'], place: 'home', prodOpen: true,
     body: M('beat9.body'),
     run: async (w, dead) => {
       await w.travel([['backend-prod', 1]], M('parcel.9a'), 'data'); if (dead()) return;
@@ -233,7 +237,7 @@ export class Demo {
     this.world.setProdOpen(!!b.prodOpen);
     this.world.mark(b.place === 'home' ? null : b.place);
     const body = b.body;
-    setFeedbackContext({ mode: 'demo', where: M('feedbackContext', { i: i + 1, title: b.title }), moment: `beat ${i + 1} · ${b.title}`, steps: b.steps });
+    setFeedbackContext({ mode: 'demo', where: M('feedbackContext', { i: i + 1, title: b.title }), moment: `beat ${i + 1} · ${b.title}`, steps: refsText(b.steps) });
     this.caption(i, b, body);
     this.narrate(i);
     const started = performance.now();
@@ -284,7 +288,7 @@ export class Demo {
   private caption(i: number, b: Beat, body: string) {
     const c = this.el.querySelector('.demo-caption')!;
     c.classList.remove('in'); void (c as HTMLElement).offsetWidth; c.classList.add('in');
-    c.querySelector('.demo-meta')!.innerHTML = `<span>${M('meta', { i: i + 1, total: BEATS.length })}</span><span class="chip steps">${M('chipSteps', { steps: b.steps })}</span>`;
+    c.querySelector('.demo-meta')!.innerHTML = `<span>${M('meta', { i: i + 1, total: BEATS.length })}</span>${refsChips(b.steps)}`;
     c.querySelector('h2')!.textContent = b.title;
     c.querySelector('p')!.textContent = body;
     this.el.querySelectorAll<HTMLElement>('.demo-dots button').forEach((d, k) => {

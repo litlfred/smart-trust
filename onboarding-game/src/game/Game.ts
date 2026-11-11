@@ -7,6 +7,7 @@ import { t } from '../i18n';
 import type { Consequence, Moment, Travel } from './types';
 import type { World } from '../world/World';
 import { splash, type ChecklistMarks, type Detour, type UI } from '../ui/ui';
+import { refsText } from './refs';
 
 const wait = (ms: number) => new Promise(r => setTimeout(r, ms));
 const SHOULD_NOT = t('ui.ts:desk.extraWrong');
@@ -63,7 +64,7 @@ export class Game {
   private refresh(m: Moment) {
     setFeedbackContext({
       mode: 'game', where: t('feedback.ts:ctx.game', { phase: m.phase, title: m.title }), phase: `${m.phase} · ${PHASES[m.phase]}`,
-      moment: `${m.id} · ${m.title}`, steps: m.steps, days: this.days, detours: this.detours.length,
+      moment: `${m.id} · ${m.title}`, steps: refsText(m.steps), days: this.days, detours: this.detours.length,
     });
     this.ui.hud(m);
     this.ui.stats(this.days, this.detours.length);
@@ -90,7 +91,7 @@ export class Game {
         const chosen = items.flatMap((it, i) => it.domain && picked.has(i) ? [it.domain] : []);
         const noDomains = chosen.length < (cl.minDomains ?? 0);
         if (!missingIdx.length && !wrongIdx.length && !noDomains) {
-          if (cl.minDomains) setDomains(chosen);
+          if (cl.minDomains !== undefined) setDomains(chosen);
           break;
         }
         const extra = [

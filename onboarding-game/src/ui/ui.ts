@@ -6,6 +6,7 @@ import { catLine, catMood, catShows, catsFound, catSvg, mrrp } from './cat';
 import { USE_CASES } from '../usecases/data';
 import { renderTips as T, stripTips } from '../game/glossary';
 import { lang, num, setLang, t } from '../i18n';
+import { refsChips } from '../game/refs';
 
 /** "⌂ Home" -> glyph, then the word in a span (the span is hidden on phones). */
 const glyphLabel = (s: string) => { const [g, ...w] = s.split(' '); return w.length ? `${g} <span>${w.join(' ')}</span>` : `<span>${s}</span>`; };
@@ -18,7 +19,7 @@ const h = (html: string) => {
   return t.content.firstElementChild as HTMLElement;
 };
 
-export interface Detour { index: number; title: string; steps: string; why: string; days: number; origin?: string }
+export interface Detour { index: number; title: string; steps: string[]; why: string; days: number; origin?: string }
 /** What a failed checklist submit tells the retry: the ticks to keep and the items to flag. */
 export interface ChecklistMarks { picked: number[]; wrong: number[]; missing: number[]; noDomains: boolean }
 
@@ -205,7 +206,7 @@ export class UI {
   hud(m: Moment) {
     const r = ROLES[m.role];
     this.hudEl.innerHTML = `
-      <div class="hud-top"><span class="chip phase-${m.phase}">${m.phase} · ${PHASES[m.phase]}</span><span class="chip steps">${U('hud.chipSteps', { steps: m.steps })}</span></div>
+      <div class="hud-top"><span class="chip phase-${m.phase}">${m.phase} · ${PHASES[m.phase]}</span>${refsChips(m.steps)}</div>
       <div class="hud-title">${m.title}</div>
       <div class="hud-role"><span class="avatar r-${m.role}">${r.initials}</span>${m.role === 'who' ? r.title : U('hud.role', { name: r.name, title: r.title })}</div>`;
   }
@@ -259,7 +260,7 @@ export class UI {
     const r = ROLES[m.role];
     return `<div class="desk-head"><span class="avatar r-${m.role}">${r.initials}</span>
       <div><div class="desk-who">${m.role === 'who' ? U('desk.whoName') : r.name}</div><div class="desk-sub">${m.role === 'who' ? U('desk.whoSub') : r.title}</div></div>
-      <span class="chip steps">${U('hud.chipSteps', { steps: m.steps })}</span></div>
+      ${refsChips(m.steps)}</div>
       <h2>${m.title}</h2><p class="brief">${T(m.brief)}</p>
       ${m.docs ? `<div class="docs">${m.docs.map(docHtml).join('')}</div>` : ''}`;
   }
@@ -342,7 +343,7 @@ export class UI {
   preview(c: Consequence, opts: { fix?: string; origin?: string } = {}) {
     const el = this.mount(`<div class="overlay"><div class="title-card glass preview-card">
       <div class="eyebrow">${U('dev.previewEyebrow')}</div>
-      <div class="ret-head"><span class="ret-icon">!</span><div><div class="ret-by">${U('returned.by', { by: c.by })}</div><div class="desk-sub">${U('hud.chipSteps', { steps: c.steps })}</div></div><span class="chip bad">${U('returned.days', { days: c.days })}</span></div>
+      <div class="ret-head"><span class="ret-icon">!</span><div><div class="ret-by">${U('returned.by', { by: c.by })}</div><div class="desk-sub">${refsChips(c.steps)}</div></div><span class="chip bad">${U('returned.days', { days: c.days })}</span></div>
       <h2>${c.title}</h2>
       ${opts.origin ? `<p class="origin">${U('dev.previewOrigin', { origin: `<b>${opts.origin}</b>` })}</p>` : ''}
       <p><b>${U('returned.what')}</b> ${T(c.what)}</p>${c.why ? `<p><b>${U('returned.why')}</b> ${T(c.why)}</p>` : ''}${opts.fix ? `<p class="fix"><b>${U('returned.fix')}</b> ${T(opts.fix)}</p>` : ''}
@@ -353,7 +354,7 @@ export class UI {
   }
 
   returned(c: Consequence, opts: { fix?: string; extra?: string[]; origin?: string } = {}): Promise<'go' | 'back'> {
-    this.openDesk(`<div class="ret-head"><span class="ret-icon">!</span><div><div class="ret-by">${U('returned.by', { by: c.by })}</div><div class="desk-sub">${U('hud.chipSteps', { steps: c.steps })}</div></div><span class="chip bad">${U('returned.days', { days: c.days })}</span></div>
+    this.openDesk(`<div class="ret-head"><span class="ret-icon">!</span><div><div class="ret-by">${U('returned.by', { by: c.by })}</div><div class="desk-sub">${refsChips(c.steps)}</div></div><span class="chip bad">${U('returned.days', { days: c.days })}</span></div>
       <h2>${c.title}</h2>
       ${opts.origin ? `<p class="origin">${U('returned.origin', { origin: `<b>${opts.origin}</b>` })}</p>` : ''}
       <p><b>${U('returned.what')}</b> ${T(c.what)}</p>
@@ -391,7 +392,7 @@ export class UI {
       <h3>${U('debrief.yourRoute')}</h3>
       <div class="route">${routeSvg(MOMENTS.length, d.detours, true)}</div>
       ${d.detours.length ? `<h3>${U('debrief.sentBack')}</h3><ol class="detours">${d.detours.map(x =>
-        `<li><b>${x.title}</b> <span class="chip steps">${U('hud.chipSteps', { steps: x.steps })}</span> <span class="chip bad">+${x.days}</span><br>${T(x.why)}${x.origin ? `<br><span class="origin-l">${U('debrief.origin', { origin: stripTips(x.origin) })}</span>` : ''}</li>`).join('')}</ol>` : ''}
+        `<li><b>${x.title}</b> ${refsChips(x.steps)} <span class="chip bad">+${x.days}</span><br>${T(x.why)}${x.origin ? `<br><span class="origin-l">${U('debrief.origin', { origin: stripTips(x.origin) })}</span>` : ''}</li>`).join('')}</ol>` : ''}
       <h3>${U('debrief.keysTitle')}</h3>
       <div class="keys">
         <div class="k-col c-country"><b>${U('debrief.countryKeeps', { country: settings().country })}</b><ul><li>${U('debrief.keep1')}</li><li>${U('debrief.keep2')}</li><li>${U('debrief.keep3')}</li></ul></div>
@@ -433,7 +434,7 @@ export function splash(root: HTMLElement, detours = 1, domains: string[] = ['DDC
     <div class="splash-badge-wrap"><div class="splash-badge" aria-hidden="true">✓</div>${detours === 0 ? `<span class="splash-cat" title="${U('splash.perfect')}">${catSvg('crown')}</span>` : ''}</div>
     <div class="eyebrow">${U('splash.eyebrow')}</div>
     <h1>${U('splash.h1', { country: settings().country })}</h1>
-    <p class="lede">${U('splash.liveIn', { domains: joinList(domains) })}</p>
+    <p class="lede">${domains.length ? U('splash.liveIn', { domains: joinList(domains) }) : U('splash.liveNone')}</p>
     <p class="lede">${U('splash.lede', { country: settings().country })}</p>
     <h3>${U('splash.takeFurther')}</h3>
     <div class="splash-links">${LINK_ORDER.map(k => LINKS.find(l => l.k === k)!).map(l => `<a href="${l.href}" target="_blank" rel="noopener"><b>${U(`splash.link${l.k}.title`)}</b><span>${U(`splash.link${l.k}.sub`)}</span></a>`).join('')}</div>
