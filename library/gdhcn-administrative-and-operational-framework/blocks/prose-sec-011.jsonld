@@ -16,7 +16,7 @@
   "pageStart": 10,
   "pageEnd": 11,
   "text": "../sections/sec-011-ix-gdhcn-letter-of-application.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
   "provenance": "ingested"
 }

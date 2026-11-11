@@ -16,7 +16,7 @@
   "pageStart": 13,
   "pageEnd": 13,
   "text": "../sections/sec-016-xv-termination-of-participation.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
   "provenance": "ingested"
 }

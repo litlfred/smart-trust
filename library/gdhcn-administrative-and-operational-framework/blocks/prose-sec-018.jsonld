@@ -16,7 +16,7 @@
   "pageStart": 13,
   "pageEnd": 14,
   "text": "../sections/sec-018-xvii-settlement-of-disputes.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
   "provenance": "ingested"
 }
