@@ -24,6 +24,15 @@ GITHUB_RAW_BASE = "https://raw.githubusercontent.com"
 GITHUB_ORG = "WorldHealthOrganization"
 DEFAULT_BRANCH = "main"
 
+# Test participants that play a fictional country in the SMART Trust
+# demonstrator journeys (litlfred/smart-trust-demo#113). Their display
+# replaces the certificate's locality name, so the DEV value set names the
+# country the journeys use. Both are ISO 3166-1 user-assigned codes.
+FICTIONAL_COUNTRIES = {
+    "XXK": "Onesa",      # the family's home country (certificate locality: Rengo)
+    "XXR": "Taifafeki",  # the country visited (certificate locality: Mumbai)
+}
+
 
 def get_github_headers():
     """Build request headers for GitHub, authenticating with GITHUB_TOKEN when available.
@@ -494,6 +503,9 @@ def main():
             if not participants_with_localities:
                 print("GitHub API failed, falling back to static data")
                 participants_with_localities = fetch_participants_with_localities_from_static_data(environment)
+            for code, name in FICTIONAL_COUNTRIES.items():
+                if code in participants_with_localities:
+                    participants_with_localities[code] = name
             extract_countries_from_api_with_localities(refmart_country_list, config, participants_filename, endpoints_filename, refmart_filename, participants_valueset, participants_with_localities)
         else:
             # For PROD, use the original approach
