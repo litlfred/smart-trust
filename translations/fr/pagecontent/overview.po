@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.497Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, no human sign-off)\n"
-"Language: fr\n"
 "Language-Team: French (unofficial)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -141,3 +141,7 @@ msgstr "Ce guide décrit les flux de travail attendus pour les acteurs potentiel
 #: input/pagecontent/overview.md:10
 msgid "This guide describes the specifications and on-boarding procedures for WHO's Global Digital Health Certification Network (GDHCN).  The GDHCN is a mechanism to support verification of health documents and certifications that are exchanged between participants of the GDHCN.  These health certifications may include COVID-19 certificates, routine immunization cards, and home-based records consistent with International Patient Summary standards. This mechanism provides means of harmonizing global health protocol standards and establishing a system for recognition of digital certificates for continuity of care and at point of entry.  The GDHCN is designed to leverage existing investments by jurisdictions that were made under the COVID-19 response and provide the digital health infrastructure needed for resiliency in future epidemic and pandemic responses."
 msgstr "Ce guide décrit les spécifications et les procédures d’intégration du Réseau mondial de certification de la santé numérique (GDHCN) de l’OMS.  Le GDHCN est un mécanisme destiné à soutenir la vérification des documents et certifications de santé échangés entre les participants du GDHCN.  Ces certifications de santé peuvent comprendre des certificats COVID-19, des carnets de vaccination systématique et des dossiers tenus à domicile conformes aux normes de l’International Patient Summary. Ce mécanisme fournit des moyens d’harmoniser les normes des protocoles de santé mondiaux et d’établir un système de reconnaissance des certificats numériques pour la continuité des soins et aux points d’entrée.  Le GDHCN est conçu pour tirer parti des investissements existants réalisés par les juridictions dans le cadre de la riposte à la COVID-19 et fournir l’infrastructure de santé numérique nécessaire à la résilience lors des futures ripostes aux épidémies et aux pandémies."
+
+#: input/pagecontent/overview.md:24
+msgid "Trust Network"
+msgstr "Réseau de confiance"

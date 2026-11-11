@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.465Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial)\n"
-"Language: ru\n"
 "Language-Team: ru\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -244,10 +244,6 @@ msgstr "Определить правильную StructureMap для преоб
 msgid "In addition to mapping the overall structure, clinical concepts need to be correctly mapped. For example, one format may use LOINC to represent the type of a medical test while another format may use SNOMED CT. Mapping the clinical concepts from one format to another is accomplished using <a0>FHIR ConceptMaps</a0>. A ConceptMap defines a mapping from a set of concepts in one code system to concepts in another code system."
 msgstr "Помимо сопоставления общей структуры, необходимо правильно сопоставить клинические концепты. Например, в одном формате для представления типа медицинского теста может использоваться LOINC, а в другом — SNOMED CT. Сопоставление клинических концептов одного формата с другим выполняется с помощью <a0>FHIR ConceptMaps</a0>. ConceptMap определяет сопоставление набора концептов одной системы кодов с концептами другой системы кодов."
 
-#: input/pagecontent/decision_support.md:43
-msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a county"
-msgstr "управления. В данном примере министерство здравоохранения может принять решение требовать отрицательный тест на COVID-19, сделанный в течение 72 часов, для разрешения въезда в страну"
-
 #: input/pagecontent/decision_support.md:221
 msgid "Mapping the structure requires pulling data from the source format and expressing it in the destination format. For example, the name of the credential holder has different representations in each of the formats and needs to be correctly mapped to the destination format. Mapping the structure of the credential is accomplished using <a0>FHIR StructureMaps</a0>. StructureMaps define rules that describe how two different structures are related to each other and provides the logic that defines how instances can be converted from one structure to the other in an automated fashion."
 msgstr "Сопоставление структуры требует извлечения данных из исходного формата и их выражения в целевом формате. Например, имя владельца удостоверения имеет разное представление в каждом из форматов и должно быть правильно сопоставлено с целевым форматом. Сопоставление структуры удостоверения выполняется с помощью <a0>FHIR StructureMaps</a0>. StructureMap определяют правила, описывающие, как две различные структуры связаны друг с другом, и содержат логику, определяющую, как экземпляры могут автоматически преобразовываться из одной структуры в другую."
@@ -433,3 +429,7 @@ msgstr "в онлайновой доверенной службе здравоо
 #, python-brace-format
 msgid "You can place this example in a file called {code0} and modify it as desired before proceeding."
 msgstr "Вы можете поместить этот пример в файл с именем {code0} и изменить его по своему усмотрению, прежде чем продолжить."
+
+#: input/pagecontent/decision_support.md:43
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
+msgstr "управления. В данном примере министерство здравоохранения может принять решение требовать отрицательный тест на COVID-19, сделанный в течение 72 часов, для разрешения въезда в страну"

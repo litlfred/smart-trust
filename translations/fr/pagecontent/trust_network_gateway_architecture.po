@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.519Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, no human sign-off)\n"
-"Language: fr\n"
 "Language-Team: French (unofficial)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -310,10 +310,6 @@ msgstr "FEDERATION ou GATEWAYONLY"
 msgid "Federator Architecture"
 msgstr "Architecture du fédérateur"
 
-#: input/pagecontent/trust_network_gateway_architecture.md:10
-msgid "ffline SCA certificates.                                                                                                                                            |"
-msgstr "ertificats SCA hors ligne.                                                                                                                                            |"
-
 #: input/pagecontent/trust_network_gateway_architecture.md:284
 msgid "FHIR"
 msgstr "FHIR"
@@ -429,10 +425,6 @@ msgstr "Dans le cas d’utilisation de l’intégration bilatérale, la <a0>bibl
 #: input/pagecontent/trust_network_gateway_architecture.md:62
 msgid "In the combined sources exchange use case, the gateway will download data from multiple gateways and append it to its own data set. This results in a combined collection."
 msgstr "Dans le cas d’utilisation de l’échange de sources combinées, la passerelle télécharge les données de plusieurs passerelles et les ajoute à son propre ensemble de données. Il en résulte une collection combinée."
-
-#: input/pagecontent/trust_network_gateway_architecture.md:326
-msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
-msgstr "Dans la dernière version de l’architecture de la TNG[^1], les modifications concernant les émetteurs de confiance et les certificats de confiance ont été apportées afin de permettre différents types de technologies dans la vérification de la confiance. Il peut s’agir soit de X509, soit de DID conformément à la spécification DID Core [[w3c-did-core]](en/folio-assistant-core/bibliography/#ref-w3c-did-core). Au cours des dernières itérations de spécification et d’alignement, certains points clés sont apparus, qui doivent en outre être pris en charge dans la passerelle :"
 
 #: input/pagecontent/trust_network_gateway_architecture.md:52
 msgid "In the peer-to-peer exchange use case, two or more gateways are able to exchange their data in a bi-directional manner. The source and the target gateway enable each other to download the data. All exchanged data will be appended to the existing data within the gateway. This can include the data of third-party gateways, if permitted by the data exchange agreement between two gateways."
@@ -1081,3 +1073,10 @@ msgstr "Dans le système DCC actuel, la passerelle centralisée joue le rôle cl
 #: input/pagecontent/trust_network_gateway_architecture.md:307
 msgid "Yes"
 msgstr "Oui"
+
+#: input/pagecontent/trust_network_gateway_architecture.md:325
+msgid "In the last version of the TNG[^1] architecture, the changes for trusted issuers and trusted certificates were made to allow different types of technologies in trust verification. This could be either X509 or DIDs according to the DID Core Specification [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). During the last iterations of specification and alignment, there were some key points which must be additionally supported in the gateway:"
+msgstr "Dans la dernière version de l’architecture de la TNG[^1], les modifications concernant les émetteurs de confiance et les certificats de confiance ont été apportées afin de permettre différents types de technologies dans la vérification de la confiance. Il peut s’agir soit de X509, soit de DID conformément à la spécification DID Core [[w3c-did-core]](en/folio-assistant-core/bibliography/smart-trust-catalogue/w3c-did-core/). Au cours des dernières itérations de spécification et d’alignement, certains points clés sont apparus, qui doivent en outre être pris en charge dans la passerelle :"
+
+#~ msgid "ffline SCA certificates.                                                                                                                                            |"
+#~ msgstr "ertificats SCA hors ligne.                                                                                                                                            |"

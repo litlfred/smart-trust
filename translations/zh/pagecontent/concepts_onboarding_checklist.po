@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.453Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: agent (drafted, unofficial)\n"
-"Language: zh\n"
 "Language-Team: Chinese\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -912,10 +912,6 @@ msgstr "DSC 的生成以及向 TNG 网关上传 CMS 包可通过下述脚本完�
 msgid "The extendedKeyUsage field is optional, for Covid certificates the below values are recommend to be used to further restrict the DSC certificate as follows:"
 msgstr "extendedKeyUsage 字段为可选字段；对于 Covid 证书，建议使用以下值进一步限制 DSC 证书："
 
-#: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "以下是<a0>信任网络网关</a0>在开发（DEV）、用户验收测试（UAT）和生产（PROD）各 **环境*中的端点："
-
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
 msgstr "以下配置文件是在就<a0>证书治理</a0>进行协调期间提供的。这些配置文件包含信任网络参与方可能希望纳入和使用的附加字段。这些配置文件尚未使用上面提供的 OpenSSL 命令进行测试。"
@@ -1079,3 +1075,7 @@ msgstr "您还可以在 git merge 命令中使用 -S 选项，对生成的合并
 #: input/pagecontent/concepts_onboarding_checklist.md:633
 msgid "You should see a output like:"
 msgstr "您应看到类似如下的输出："
+
+#: input/pagecontent/concepts_onboarding_checklist.md:606
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "以下是<a0>信任网络网关</a0>在开发（DEV）、用户验收测试（UAT）和生产（PROD）各 环境中的端点："

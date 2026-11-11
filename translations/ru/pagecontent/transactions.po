@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.509Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial)\n"
-"Language: ru\n"
 "Language-Team: ru\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,10 +19,6 @@ msgstr ""
 #: input/pagecontent/transactions.md:33
 msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN specification</a1> specification."
 msgstr "<a0>Децентрализованные идентификаторы</a0> (DID) в соответствии со <a1>спецификацией GDHCN</a1>."
-
-#: input/pagecontent/transactions.md:49
-msgid "A Trust Network Partcipiant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
-msgstr "Участник сети доверия публикует ключи в Шлюзе сети доверия для использования приложениями проверки. Ключи могут быть закодированы для различных целей, в том числе в соответствии с <a0>управлением сертификатами</a0> согласно их <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
 
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"
@@ -337,3 +333,8 @@ msgstr "Проверяет подлинность бизнес-правила"
 #: input/pagecontent/transactions.md:92
 msgid "Verifying"
 msgstr "Проверка"
+
+#: input/pagecontent/transactions.md:49
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
+msgstr "Участник сети доверия публикует ключи в Шлюзе сети доверия для использования приложениями проверки. Ключи могут быть закодированы для различных целей, в том числе в соответствии с <a0>управлением сертификатами</a0> согласно их <a1>{code0}</a1> and trust <a2>{code1}</a2>"

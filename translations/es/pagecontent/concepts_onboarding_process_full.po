@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.458Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, unreviewed)\n"
-"Language: es\n"
 "Language-Team: es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,10 +65,6 @@ msgstr "[13] La OMS debe aceptar la invitación para el usuario bot de GitHub en
 #: input/pagecontent/concepts_onboarding_process_full.md:153
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] El TNP está preparado para la incorporación conforme a los requisitos y la gobernanza de la OMS y ha reunido la siguiente información en la Carta de solicitud [Documento 16]:"
-
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] La OMS recibe y tramita la Carta de solicitud. El TNP ."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
@@ -931,3 +927,7 @@ msgstr "La OMS como ancla de confianza de la infraestructura de clave pública (
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "Debería ver un resultado como el siguiente:"
+
+#: input/pagecontent/concepts_onboarding_process_full.md:163
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr "[15] La OMS recibe y tramita la Carta de solicitud."

@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.498Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: agent (drafted, unofficial)\n"
-"Language: zh\n"
 "Language-Team: Chinese\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,3 +142,7 @@ msgstr "本指南描述了信任生态系统中潜在参与者的预期工作流
 #: input/pagecontent/overview.md:10
 msgid "This guide describes the specifications and on-boarding procedures for WHO's Global Digital Health Certification Network (GDHCN).  The GDHCN is a mechanism to support verification of health documents and certifications that are exchanged between participants of the GDHCN.  These health certifications may include COVID-19 certificates, routine immunization cards, and home-based records consistent with International Patient Summary standards. This mechanism provides means of harmonizing global health protocol standards and establishing a system for recognition of digital certificates for continuity of care and at point of entry.  The GDHCN is designed to leverage existing investments by jurisdictions that were made under the COVID-19 response and provide the digital health infrastructure needed for resiliency in future epidemic and pandemic responses."
 msgstr "本指南描述了世卫组织（WHO）全球数字健康认证网络（GDHCN）的规范和入网程序。GDHCN 是一种机制，用于支持对 GDHCN 参与方之间交换的健康文档和证明进行验证。这些健康证明可以包括 COVID-19 证书、常规免疫接种卡，以及符合国际患者摘要标准的家庭保存记录。该机制提供了协调全球卫生协议标准的手段，并为连续性医疗和入境口岸建立数字证书认可体系。GDHCN 旨在利用各管辖区在 COVID-19 应对中已有的投资，并提供未来流行病和大流行应对韧性所需的数字健康基础设施。"
+
+#: input/pagecontent/overview.md:24
+msgid "Trust Network"
+msgstr "信任网络"

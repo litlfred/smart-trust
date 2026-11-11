@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.450Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, no human sign-off)\n"
-"Language: fr\n"
 "Language-Team: French (unofficial)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -911,10 +911,6 @@ msgstr "La génération du DSC et le téléversement du paquet CMS vers la passe
 msgid "The extendedKeyUsage field is optional, for Covid certificates the below values are recommend to be used to further restrict the DSC certificate as follows:"
 msgstr "Le champ extendedKeyUsage est facultatif ; pour les certificats COVID, il est recommandé d’utiliser les valeurs ci-dessous afin de restreindre davantage le certificat DSC, comme suit :"
 
-#: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "Voici les points de terminaison de la <a0>passerelle du réseau de confiance</a0> pour chacun des **environnements* de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
-
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
 msgstr "Les fichiers de configuration suivants ont été fournis lors de l’alignement sur la <a0>gouvernance des certificats</a0>. Ils contiennent des champs supplémentaires qu’un participant au réseau de confiance pourrait souhaiter inclure et utiliser. Ces fichiers de configuration n’ont pas été testés avec les commandes OpenSSL fournies ci-dessus."
@@ -1078,3 +1074,7 @@ msgstr "Vous pouvez également utiliser l’option -S avec la commande git merge
 #: input/pagecontent/concepts_onboarding_checklist.md:633
 msgid "You should see a output like:"
 msgstr "Vous devriez obtenir une sortie semblable à celle-ci :"
+
+#: input/pagecontent/concepts_onboarding_checklist.md:606
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Voici les points de terminaison de la <a0>passerelle du réseau de confiance</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"

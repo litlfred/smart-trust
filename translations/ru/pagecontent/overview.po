@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.497Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial)\n"
-"Language: ru\n"
 "Language-Team: ru\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -142,3 +142,7 @@ msgstr "В настоящем руководстве описаны ожидае
 #: input/pagecontent/overview.md:10
 msgid "This guide describes the specifications and on-boarding procedures for WHO's Global Digital Health Certification Network (GDHCN).  The GDHCN is a mechanism to support verification of health documents and certifications that are exchanged between participants of the GDHCN.  These health certifications may include COVID-19 certificates, routine immunization cards, and home-based records consistent with International Patient Summary standards. This mechanism provides means of harmonizing global health protocol standards and establishing a system for recognition of digital certificates for continuity of care and at point of entry.  The GDHCN is designed to leverage existing investments by jurisdictions that were made under the COVID-19 response and provide the digital health infrastructure needed for resiliency in future epidemic and pandemic responses."
 msgstr "В настоящем руководстве описаны спецификации и процедуры подключения к Глобальной сети сертификации в области цифрового здравоохранения ВОЗ (GDHCN).  GDHCN — это механизм поддержки проверки медицинских документов и сертификатов, которыми обмениваются участники GDHCN.  К таким медицинским сертификатам могут относиться сертификаты COVID-19, карты плановой иммунизации и домашние медицинские записи, соответствующие стандартам Международной сводки о пациенте (IPS). Этот механизм предоставляет средства гармонизации глобальных стандартов протоколов здравоохранения и создания системы признания цифровых сертификатов для обеспечения непрерывности медицинской помощи и в пунктах въезда.  GDHCN призвана использовать существующие инвестиции юрисдикций, сделанные в рамках мер реагирования на COVID-19, и обеспечить инфраструктуру цифрового здравоохранения, необходимую для устойчивости при реагировании на будущие эпидемии и пандемии."
+
+#: input/pagecontent/overview.md:24
+msgid "Trust Network"
+msgstr "Сеть доверия"

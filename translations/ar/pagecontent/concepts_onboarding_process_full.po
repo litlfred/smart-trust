@@ -21,8 +21,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.457Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: smart-trust agent (drafted, unofficial)\n"
-"Language: ar\n"
 "Language-Team: Arabic\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,10 +79,6 @@ msgstr "[13] يجب أن تقبل منظمة الصحة العالمية (WHO) �
 #: input/pagecontent/concepts_onboarding_process_full.md:153
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] يكون TNP جاهزًا للانضمام وفقًا لمتطلبات منظمة الصحة العالمية (WHO) وحوكمتها، وقد جمع المعلومات التالية في خطاب الطلب [المستند 16]:"
-
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] تتلقى منظمة الصحة العالمية (WHO) خطاب الطلب وتعالجه. TNP ."
 
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
@@ -945,3 +941,7 @@ msgstr "منظمة الصحة العالمية (WHO) بوصفها مرسى ال�
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "ينبغي أن ترى مُخرَجًا مثل:"
+
+#: input/pagecontent/concepts_onboarding_process_full.md:163
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr "[15] تتلقى منظمة الصحة العالمية (WHO) خطاب الطلب وتعالجه."
