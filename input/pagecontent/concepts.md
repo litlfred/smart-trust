@@ -105,7 +105,7 @@ The GDHCN currently supports two means for key distribution of keys using trust 
 #### Trust Network
 A Trust Network is a means to authenticate the encryption public keys used by participants within a network to perform encryption services, verify digital signatures, establish secure connections between systems, and otherwise make use of encryption public keys. 
 <figure>
-{% include trust_network.svg %}
+{% include trust-network-figure.html %}
 <figcaption>Trust Network</figcaption>
 </figure>
 
