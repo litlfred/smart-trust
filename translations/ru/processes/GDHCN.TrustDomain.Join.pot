@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GDHCN.TrustDomain.Join\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.545Z\n"
+"POT-Creation-Date: 2026-11-11T09:22:39.724Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -47,11 +47,6 @@ msgstr ""
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:26
 #. Diagram label
 msgid "Business Owner Representative"
-msgstr ""
-
-#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
-#. Diagram label
-msgid "Connect and test"
 msgstr ""
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
@@ -117,6 +112,11 @@ msgstr ""
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:16
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
+msgstr ""
+
+#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
+#. Diagram label
+msgid "Go live"
 msgstr ""
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:122

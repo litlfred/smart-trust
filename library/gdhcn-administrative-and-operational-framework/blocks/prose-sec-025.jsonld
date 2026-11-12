@@ -16,7 +16,7 @@
   "pageStart": 16,
   "pageEnd": 16,
   "text": "../sections/sec-025-transitive-trust---eu-dcc.md",
-  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
-  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/gdhcn-administrative-and-operational-framework/manifest.jsonld",
+  "derivedFrom": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
+  "sourceDocument": "https://litlfred.github.io/folio-assistant/assets/library/jsonld/smart-trust/source/gdhcn-administrative-and-operational-framework",
   "provenance": "ingested"
 }

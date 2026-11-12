@@ -29,15 +29,15 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 
 #: input/pagecontent/concepts_certificate_governance.md:199
-msgid "|Basic Constraints|\tCA = true, path length constraints = 0"
+msgid "|Basic Constraints|	CA = true, path length constraints = 0"
 msgstr "|القيود الأساسية|\tCA = true، قيود طول المسار = 0"
 
 #: input/pagecontent/concepts_certificate_governance.md:36
-msgid "|Certificate|\tOr public key certificate. An X.509 v3 certificate that contains the public key of an entity |EC-DSA|\tElliptic Curve Digital Signature Algorithm. A cryptographic signature algorithm based on elliptic curves |mTLS|\tMutual TLS. The Transport Layer Security Protocol with mutual authentication |RSA|\tAsymmetric cryptographic algorithm based on integer factorization used for digital signatures or asymmetric encryption"
+msgid "|Certificate|	Or public key certificate. An X.509 v3 certificate that contains the public key of an entity |EC-DSA|	Elliptic Curve Digital Signature Algorithm. A cryptographic signature algorithm based on elliptic curves |mTLS|	Mutual TLS. The Transport Layer Security Protocol with mutual authentication |RSA|	Asymmetric cryptographic algorithm based on integer factorization used for digital signatures or asymmetric encryption"
 msgstr "|الشهادة|\tأو شهادة المفتاح العمومي. شهادة X.509 v3 تتضمن المفتاح العمومي لكيان ما |EC-DSA|\tخوارزمية التوقيع الرقمي بالمنحنيات الإهليلجية. خوارزمية توقيع تشفيري قائمة على المنحنيات الإهليلجية |mTLS|\tبروتوكول TLS المتبادل. بروتوكول أمن طبقة النقل مع المصادقة المتبادلة |RSA|\tخوارزمية تشفير غير متماثل قائمة على تحليل الأعداد الصحيحة إلى عواملها، تُستخدم للتوقيعات الرقمية أو للتشفير غير المتماثل"
 
 #: input/pagecontent/concepts_certificate_governance.md:174
-msgid "|EC-DSA| Min. 250 Bit| \tSHA-2 with an output length  ≥ 256 Bit |RSA-PSS (recommended padding) RSA-PKCS#1 v1.5 (legacy padding) |\tMin. 3000 Bit RSA Modulus (N) with a public exponent e > 2^16\t| SHA-2 with an output length  ≥ 256 Bit"
+msgid "|EC-DSA| Min. 250 Bit| 	SHA-2 with an output length  ≥ 256 Bit |RSA-PSS (recommended padding) RSA-PKCS#1 v1.5 (legacy padding) |	Min. 3000 Bit RSA Modulus (N) with a public exponent e > 2^16	| SHA-2 with an output length  ≥ 256 Bit"
 msgstr "|EC-DSA| 250 بت كحد أدنى| \tSHA-2 بطول مُخرَج ≥ 256 بت |RSA-PSS (الحشو الموصى به) RSA-PKCS#1 v1.5 (الحشو القديم) |\tمعامل RSA (N) بطول 3000 بت كحد أدنى مع أُسّ عمومي e > 2^16\t| SHA-2 بطول مُخرَج ≥ 256 بت"
 
 #: input/pagecontent/concepts_certificate_governance.md:225
@@ -45,19 +45,19 @@ msgid "|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.1 for Test Issuers |extende
 msgstr "|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.1 للجهات المُصدِرة لشهادات الاختبار |extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.2 للجهات المُصدِرة لشهادات التطعيم |extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.3 للجهات المُصدِرة لشهادات التعافي"
 
 #: input/pagecontent/concepts_certificate_governance.md:236
-msgid "|Subject|\tcn= \\, o=\\ ,c=\\ |Key Usage |digital signature (at minimum)"
+msgid "|Subject|	cn= \\, o=\\ ,c=\\ |Key Usage |digital signature (at minimum)"
 msgstr "|الموضوع|\tcn= \\, o=\\ ,c=\\ |استخدام المفتاح|التوقيع الرقمي (كحد أدنى)"
 
 #: input/pagecontent/concepts_certificate_governance.md:257
-msgid "|Subject|\tcn= Digital COVID Certificate Gateway, o=\\ , c=\\ |Key Usage |digital signature (at minimum)"
+msgid "|Subject|	cn= Digital COVID Certificate Gateway, o=\\ , c=\\ |Key Usage |digital signature (at minimum)"
 msgstr "|الموضوع|\tcn= Digital COVID Certificate Gateway, o=\\ , c=\\ |استخدام المفتاح|التوقيع الرقمي (كحد أدنى)"
 
 #: input/pagecontent/concepts_certificate_governance.md:265
-msgid "|Subject|\tcn=\\, o=\\ ,c= \\ |SubjectAltName| dnsName: \\ or iPAddress: \\ |Key Usage |\tdigital signature (at minimum) |Extended Key Usage|\tserver authentication (1.3.6.1.5.5.7.3.1)"
+msgid "|Subject|	cn=\\, o=\\ ,c= \\ |SubjectAltName| dnsName: \\ or iPAddress: \\ |Key Usage |	digital signature (at minimum) |Extended Key Usage|	server authentication (1.3.6.1.5.5.7.3.1)"
 msgstr "|الموضوع|\tcn=\\, o=\\ ,c= \\ |SubjectAltName| dnsName: \\ أو iPAddress: \\ |استخدام المفتاح|\tالتوقيع الرقمي (كحد أدنى) |الاستخدام الموسَّع للمفتاح|\tمصادقة الخادم (1.3.6.1.5.5.7.3.1)"
 
 #: input/pagecontent/concepts_certificate_governance.md:244
-msgid "|Subject|\tcn=\\, o=\\, c= \\ |Key Usage| digital signature (at minimum) |Extended Key Usage|\tclient authentication (1.3.6.1.5.5.7.3.2)"
+msgid "|Subject|	cn=\\, o=\\, c= \\ |Key Usage| digital signature (at minimum) |Extended Key Usage|	client authentication (1.3.6.1.5.5.7.3.2)"
 msgstr "|الموضوع|\tcn=\\, o=\\, c= \\ |استخدام المفتاح| التوقيع الرقمي (كحد أدنى) |الاستخدام الموسَّع للمفتاح|\tمصادقة العميل (1.3.6.1.5.5.7.3.2)"
 
 #: input/pagecontent/concepts_certificate_governance.md:145
@@ -164,6 +164,10 @@ msgstr "تتضمن الشهادات الرقمية فترة صلاحية تفر�
 #: input/pagecontent/concepts_certificate_governance.md:211
 msgid "digital signature (at minimum)"
 msgstr "التوقيع الرقمي (كحد أدنى)"
+
+#: input/pagecontent/concepts_certificate_governance.md:25
+msgid "Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) and [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/). It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. Legal and administrative procedures are not in the scope of this document, they must be defined separately."
+msgstr "يمكن استخدام التوقيعات الرقمية لتحقيق سلامة البيانات وأصالتها. وتُرسي البنى التحتية للمفاتيح العمومية الثقة عبر ربط المفاتيح العمومية بهويات (أو جهات مُصدِرة) جرى التحقق منها. وهذا ضروري لتمكين المشاركين الآخرين من التحقق من مصدر البيانات ومن هوية الطرف المُتصَل به، واتخاذ قرار بشأن الثقة. وفي TNG، تُستخدم شهادات متعددة للمفاتيح العمومية لضمان الأصالة. وتُحدِّد هذه الوثيقة شهادات المفاتيح العمومية المستخدمة وكيف ينبغي تصميمها لإتاحة قابلية تشغيل بيني واسعة بين مختلف المشاركين في GDHCN. وتستند هذه الوثيقة إلى [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) و[[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/). وهي تقدِّم مزيدًا من التفاصيل عن شهادات المفاتيح العمومية اللازمة، وإرشادات بشأن قوالب الشهادات وفترات صلاحيتها للبلدان التي ترغب في تشغيل SCA خاصة بها. ولما كان يجب أن تكون شهادات DSC قابلة للتحقق خلال إطار زمني محدَّد (يبدأ من الإصدار وينتهي بعد مدة معيَّنة)، فمن الضروري تحديد نموذج تحقق لجميع التوقيعات المطبَّقة على شهادات المفاتيح العمومية وعلى الشهادة الصحية الرقمية. ولا تدخل الإجراءات القانونية والإدارية في نطاق هذه الوثيقة، ويجب تحديدها بشكل منفصل."
 
 #: input/pagecontent/concepts_certificate_governance.md:203
 msgid "Document Signer (DSC)"
@@ -527,6 +531,10 @@ msgstr "تنطبق المتطلبات الواردة في [2، القسم 3.3.2]
 msgid "The requirements on the technical TNG architecture can be summarized as follows:"
 msgstr "يمكن تلخيص المتطلبات الخاصة بالبنية التقنية لـ TNG على النحو التالي:"
 
+#: input/pagecontent/concepts_certificate_governance.md:70
+msgid "The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -> SCA -> DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will ignore anything above the SCA -- and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) only allows for exactly two levels - a 'root' SCA and a single 'leaf' DSC signed by just that SCA. In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment."
+msgstr "تُعرَّف SCA بأنها سلطة التصديق التي تُصدِر شهادات DSC، ومن ثَمَّ يجب (MUST) على المشاركين في GDHCN الذين يستخدمون تسلسلًا هرميًا متعدد المستويات لسلطات التصديق (مثل Root CA -> SCA -> DSCs) تقديم سلطة التصديق الفرعية التي تُصدِر شهادات DSC.  ففي هذه الحالة، إذا استخدم مشارك في GDHCN سلطة تصديق قائمة، فسيتجاهل نظام GDHCN كل ما يعلو SCA، ولن يُدرِج في القائمة البيضاء إلا SCA بوصفها مرسى الثقة (حتى وإن كانت سلطة تصديق فرعية). ويرجع ذلك إلى أن نموذج ICAO [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) لا يسمح إلا بمستويين بالضبط: SCA «جذرية» وشهادة DSC «طرفية» واحدة موقَّعة من تلك SCA وحدها. وإذا كان المشارك في GDHCN يشغِّل SCA خاصة به، فإنه يكون مسؤولًا عن التشغيل الآمن لسلطة التصديق تلك وعن إدارة مفاتيحها. وتجدر الإشارة إلى أن SCA تعمل بوصفها مرسى الثقة لشهادات DSC، ولذلك فإن حماية المفتاح الخاص لسلطة SCA أمر أساسي لسلامة بيئة شبكة الثقة."
+
 #: input/pagecontent/concepts_certificate_governance.md:74
 msgid "The SCA SHALL NOT issue certificates that are valid longer than the CA certificate itself (see [2, Section 5])."
 msgstr "لا يجوز (SHALL NOT) لسلطة SCA أن تُصدِر شهادات تمتد صلاحيتها لأطول من صلاحية شهادة CA نفسها (انظر [2، القسم 5])."
@@ -582,6 +590,10 @@ msgstr "شهادة TLS للمشارك في شبكة الثقة TNPTLS"
 #: input/pagecontent/concepts_certificate_governance.md:103
 msgid "The Trust Network Participant's upload certificate TNPUP"
 msgstr "شهادة الرفع للمشارك في شبكة الثقة TNPUP"
+
+#: input/pagecontent/concepts_certificate_governance.md:73
+msgid "The verification model in the Trust Network PKI is the shell model (for example, defined in [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/)), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:"
+msgstr "نموذج التحقق في البنية التحتية للمفاتيح العمومية (PKI) لشبكة الثقة هو نموذج القشرة (المعرَّف مثلًا في [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/))، الذي ينص على أن جميع الشهادات في عملية التحقق من مسار الشهادات يجب أن تكون صالحة في وقت معيَّن (أي وقت التحقق من التوقيع). ولذلك تنطبق القيود التالية:"
 
 #: input/pagecontent/concepts_certificate_governance.md:158
 msgid "There are multiple reasons why certificates should not be reused across different environments. One reason is that the corresponding private keys must be copied from one system to the other and typically non-production environments do not enjoy the same level of protection as production environments. This puts the security of the private keys at risk. In the scope of the Trust Network system there is an additional risk that DSCs issued for testing purpose are published on the production TNG and these DSCs could be used to issue valid health certificates."
@@ -648,15 +660,3 @@ msgstr "فترات الصلاحية"
 #: input/pagecontent/concepts_certificate_governance.md:263
 msgid "Value"
 msgstr "القيمة"
-
-#: input/pagecontent/concepts_certificate_governance.md:25
-msgid "Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) and [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/). It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. Legal and administrative procedures are not in the scope of this document, they must be defined separately."
-msgstr "يمكن استخدام التوقيعات الرقمية لتحقيق سلامة البيانات وأصالتها. وتُرسي البنى التحتية للمفاتيح العمومية الثقة عبر ربط المفاتيح العمومية بهويات (أو جهات مُصدِرة) جرى التحقق منها. وهذا ضروري لتمكين المشاركين الآخرين من التحقق من مصدر البيانات ومن هوية الطرف المُتصَل به، واتخاذ قرار بشأن الثقة. وفي TNG، تُستخدم شهادات متعددة للمفاتيح العمومية لضمان الأصالة. وتُحدِّد هذه الوثيقة شهادات المفاتيح العمومية المستخدمة وكيف ينبغي تصميمها لإتاحة قابلية تشغيل بيني واسعة بين مختلف المشاركين في GDHCN. وتستند هذه الوثيقة إلى [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) و[[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/). وهي تقدِّم مزيدًا من التفاصيل عن شهادات المفاتيح العمومية اللازمة، وإرشادات بشأن قوالب الشهادات وفترات صلاحيتها للبلدان التي ترغب في تشغيل SCA خاصة بها. ولما كان يجب أن تكون شهادات DSC قابلة للتحقق خلال إطار زمني محدَّد (يبدأ من الإصدار وينتهي بعد مدة معيَّنة)، فمن الضروري تحديد نموذج تحقق لجميع التوقيعات المطبَّقة على شهادات المفاتيح العمومية وعلى الشهادة الصحية الرقمية. ولا تدخل الإجراءات القانونية والإدارية في نطاق هذه الوثيقة، ويجب تحديدها بشكل منفصل."
-
-#: input/pagecontent/concepts_certificate_governance.md:70
-msgid "The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -> SCA -> DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will ignore anything above the SCA -- and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) only allows for exactly two levels - a 'root' SCA and a single 'leaf' DSC signed by just that SCA. In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment."
-msgstr "تُعرَّف SCA بأنها سلطة التصديق التي تُصدِر شهادات DSC، ومن ثَمَّ يجب (MUST) على المشاركين في GDHCN الذين يستخدمون تسلسلًا هرميًا متعدد المستويات لسلطات التصديق (مثل Root CA -> SCA -> DSCs) تقديم سلطة التصديق الفرعية التي تُصدِر شهادات DSC.  ففي هذه الحالة، إذا استخدم مشارك في GDHCN سلطة تصديق قائمة، فسيتجاهل نظام GDHCN كل ما يعلو SCA، ولن يُدرِج في القائمة البيضاء إلا SCA بوصفها مرسى الثقة (حتى وإن كانت سلطة تصديق فرعية). ويرجع ذلك إلى أن نموذج ICAO [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) لا يسمح إلا بمستويين بالضبط: SCA «جذرية» وشهادة DSC «طرفية» واحدة موقَّعة من تلك SCA وحدها. وإذا كان المشارك في GDHCN يشغِّل SCA خاصة به، فإنه يكون مسؤولًا عن التشغيل الآمن لسلطة التصديق تلك وعن إدارة مفاتيحها. وتجدر الإشارة إلى أن SCA تعمل بوصفها مرسى الثقة لشهادات DSC، ولذلك فإن حماية المفتاح الخاص لسلطة SCA أمر أساسي لسلامة بيئة شبكة الثقة."
-
-#: input/pagecontent/concepts_certificate_governance.md:73
-msgid "The verification model in the Trust Network PKI is the shell model (for example, defined in [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/)), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:"
-msgstr "نموذج التحقق في البنية التحتية للمفاتيح العمومية (PKI) لشبكة الثقة هو نموذج القشرة (المعرَّف مثلًا في [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/))، الذي ينص على أن جميع الشهادات في عملية التحقق من مسار الشهادات يجب أن تكون صالحة في وقت معيَّن (أي وقت التحقق من التوقيع). ولذلك تنطبق القيود التالية:"

@@ -33,6 +33,11 @@ msgstr ""
 msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN specification</a1> specification."
 msgstr "<a0>المعرِّفات اللامركزية</a0> (DID) وفقًا لمواصفة <a1>مواصفة GDHCN</a1>."
 
+#: input/pagecontent/transactions.md:49
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
+msgstr "ينشر المشارك في شبكة الثقة المفاتيح إلى بوابة شبكة الثقة لكي تستخدمها تطبيقات التحقق. ويمكن ترميز المفاتيح لأغراض متنوعة، بما في ذلك اتباع <a0>حوكمة الشهادات</a0> وفقًا لـ <a1>{code0}</a1> و<a2>{code1}</a2> الثقة الخاصين بها"
+
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"
 msgstr "يمكنه مشاركة قائمة بالمفاتيح العمومية بالصيغة التالية:"
@@ -346,8 +351,3 @@ msgstr "يتحقق من أصالة قاعدة العمل"
 #: input/pagecontent/transactions.md:92
 msgid "Verifying"
 msgstr "التحقق"
-
-#: input/pagecontent/transactions.md:49
-#, python-brace-format
-msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
-msgstr "ينشر المشارك في شبكة الثقة المفاتيح إلى بوابة شبكة الثقة لكي تستخدمها تطبيقات التحقق. ويمكن ترميز المفاتيح لأغراض متنوعة، بما في ذلك اتباع <a0>حوكمة الشهادات</a0> وفقًا لـ <a1>{code0}</a1> و<a2>{code1}</a2> الثقة الخاصين بها"

@@ -4,7 +4,7 @@
   "label": "trans:fr/processes/GDHCN.ONB",
   "locale": "fr",
   "sourceFile": "input/business-processes/GDHCN.ONB.bpmn",
-  "sourceHash": "63ffe537e653",
+  "sourceHash": "cfdaf3f894da",
   "potFile": "translations/fr/processes/GDHCN.ONB.pot",
   "poFile": "translations/fr/processes/GDHCN.ONB.po",
   "poIncludes": [

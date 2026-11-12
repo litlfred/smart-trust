@@ -243,6 +243,10 @@ msgstr "Identificar el StructureMap correcto para convertir la credencial de vac
 msgid "In addition to mapping the overall structure, clinical concepts need to be correctly mapped. For example, one format may use LOINC to represent the type of a medical test while another format may use SNOMED CT. Mapping the clinical concepts from one format to another is accomplished using <a0>FHIR ConceptMaps</a0>. A ConceptMap defines a mapping from a set of concepts in one code system to concepts in another code system."
 msgstr "Además de mapear la estructura general, es necesario mapear correctamente los conceptos clínicos. Por ejemplo, un formato puede utilizar LOINC para representar el tipo de una prueba médica, mientras que otro puede utilizar SNOMED CT. El mapeo de los conceptos clínicos de un formato a otro se realiza mediante <a0>ConceptMaps de FHIR</a0>. Un ConceptMap define una correspondencia entre un conjunto de conceptos de un sistema de códigos y conceptos de otro sistema de códigos."
 
+#: input/pagecontent/decision_support.md:43
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
+msgstr "de gobernanza. En este ejemplo, el ministerio de salud podría decidir exigir una prueba negativa de COVID-19 realizada en las 72 horas anteriores para permitir la entrada en un país"
+
 #: input/pagecontent/decision_support.md:221
 msgid "Mapping the structure requires pulling data from the source format and expressing it in the destination format. For example, the name of the credential holder has different representations in each of the formats and needs to be correctly mapped to the destination format. Mapping the structure of the credential is accomplished using <a0>FHIR StructureMaps</a0>. StructureMaps define rules that describe how two different structures are related to each other and provides the logic that defines how instances can be converted from one structure to the other in an automated fashion."
 msgstr "Mapear la estructura requiere extraer los datos del formato de origen y expresarlos en el formato de destino. Por ejemplo, el nombre del titular de la credencial tiene una representación distinta en cada formato y debe mapearse correctamente al formato de destino. El mapeo de la estructura de la credencial se realiza mediante <a0>StructureMaps de FHIR</a0>. Los StructureMaps definen reglas que describen cómo se relacionan dos estructuras distintas y proporcionan la lógica que define cómo convertir automáticamente instancias de una estructura a la otra."
@@ -428,7 +432,3 @@ msgstr "en un servicio sanitario de confianza en línea. En este ejemplo, la pub
 #, python-brace-format
 msgid "You can place this example in a file called {code0} and modify it as desired before proceeding."
 msgstr "Puede guardar este ejemplo en un archivo llamado {code0} y modificarlo como desee antes de continuar."
-
-#: input/pagecontent/decision_support.md:43
-msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
-msgstr "de gobernanza. En este ejemplo, el ministerio de salud podría decidir exigir una prueba negativa de COVID-19 realizada en las 72 horas anteriores para permitir la entrada en un país"

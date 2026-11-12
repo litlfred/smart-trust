@@ -39,36 +39,36 @@ msgstr "<a0>Получатель (Receiver)</a0>; любая система, п�
 msgid "<a0>RFC 5914</a0> (Trust Anchor Format) states \"this root is trusted\" in ASN.1 only. It has no JSON form. A local list of X.509 roots is therefore kept as PEM files plus RFC 5280 checks."
 msgstr "<a0>RFC 5914</a0> (Trust Anchor Format) выражает утверждение «этот корень является доверенным» только в нотации ASN.1. Формы JSON у него нет. Поэтому локальный список корневых сертификатов X.509 хранится в виде файлов PEM с проверками по RFC 5280."
 
-#: input/pagecontent/dsa_processes.md:205
+#: input/pagecontent/dsa_processes.md:207
 msgid "<a0>smart-trust-phw, process D</a0>"
 msgstr "<a0>smart-trust-phw, процесс D</a0>"
 
-#: input/pagecontent/dsa_processes.md:206
+#: input/pagecontent/dsa_processes.md:208
 msgid "<a0>smart-trust-phw, process E</a0>"
 msgstr "<a0>smart-trust-phw, процесс E</a0>"
 
-#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:214
 msgid "<a0>smart-trust-phw, process F</a0>"
 msgstr "<a0>smart-trust-phw, процесс F</a0>"
 
-#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:215
 msgid "<a0>smart-trust-phw, process G</a0>"
 msgstr "<a0>smart-trust-phw, процесс G</a0>"
 
-#: input/pagecontent/dsa_processes.md:214
+#: input/pagecontent/dsa_processes.md:216
 msgid "<a0>smart-trust-phw, process H</a0>"
 msgstr "<a0>smart-trust-phw, процесс H</a0>"
 
-#: input/pagecontent/dsa_processes.md:207
-#: input/pagecontent/dsa_processes.md:208
 #: input/pagecontent/dsa_processes.md:209
 #: input/pagecontent/dsa_processes.md:210
 #: input/pagecontent/dsa_processes.md:211
+#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:213
 msgid "<a0>smart-trust-phw</a0>"
 msgstr "<a0>smart-trust-phw</a0>"
 
-#: input/pagecontent/dsa_processes.md:204
-#: input/pagecontent/dsa_processes.md:216
+#: input/pagecontent/dsa_processes.md:206
+#: input/pagecontent/dsa_processes.md:218
 msgid "<a0>this page</a0>"
 msgstr "<a0>эта страница</a0>"
 
@@ -108,11 +108,11 @@ msgstr "Министерство или институт публикует со
 msgid "A worked example. The names are fictional. Ministry M shares a dataset with Institute I under a signed PDF. There is no ODRL."
 msgstr "Рабочий пример. Названия вымышлены. Министерство M передаёт набор данных Институту I на основании подписанного PDF. ODRL не используется."
 
-#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:214
 msgid "Access decision"
 msgstr "Решение о доступе"
 
-#: input/pagecontent/dsa_processes.md:211
+#: input/pagecontent/dsa_processes.md:213
 msgid "Agent delegation"
 msgstr "Делегирование агентам"
 
@@ -120,7 +120,7 @@ msgstr "Делегирование агентам"
 msgid "all transport"
 msgstr "весь транспорт"
 
-#: input/pagecontent/dsa_processes.md:215
+#: input/pagecontent/dsa_processes.md:217
 msgid "Amendment, renewal, termination, expiry"
 msgstr "Внесение изменений, продление, прекращение, истечение срока действия"
 
@@ -128,7 +128,7 @@ msgstr "Внесение изменений, продление, прекращ�
 msgid "Anchor"
 msgstr "Якорь"
 
-#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:215
 msgid "Audit, provenance and duty checks"
 msgstr "Аудит, происхождение данных и проверка выполнения обязанностей"
 
@@ -165,7 +165,7 @@ msgstr "Получатель данных"
 msgid "Data Sharing Agreement Processes"
 msgstr "Процессы соглашений об обмене данными"
 
-#: input/pagecontent/dsa_processes.md:224
+#: input/pagecontent/dsa_processes.md:226
 msgid "DID Core 1.0 section number for verification methods (§5.2)."
 msgstr "Номер раздела DID Core 1.0 для методов верификации (§5.2)."
 
@@ -187,7 +187,7 @@ msgstr "did:web: добавьте запись {code0} в документ DID �
 msgid "did:web: resolve the DID document over HTTPS."
 msgstr "did:web: разрешите (получите) документ DID по HTTPS."
 
-#: input/pagecontent/dsa_processes.md:216
+#: input/pagecontent/dsa_processes.md:218
 msgid "Dispute and breach handling"
 msgstr "Урегулирование споров и нарушений"
 
@@ -211,17 +211,17 @@ msgstr "DSA только в виде документа. То же самое. �
 msgid "Done by a program"
 msgstr "Выполняется программой"
 
-#: input/pagecontent/dsa_processes.md:204
-#: input/pagecontent/dsa_processes.md:205
 #: input/pagecontent/dsa_processes.md:206
-#: input/pagecontent/dsa_processes.md:212
-#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:207
+#: input/pagecontent/dsa_processes.md:208
 #: input/pagecontent/dsa_processes.md:214
+#: input/pagecontent/dsa_processes.md:215
 #: input/pagecontent/dsa_processes.md:216
+#: input/pagecontent/dsa_processes.md:218
 msgid "draft"
 msgstr "черновик"
 
-#: input/pagecontent/dsa_processes.md:202
+#: input/pagecontent/dsa_processes.md:204
 msgid "Draft and negotiate the agreement"
 msgstr "Подготовка и согласование соглашения"
 
@@ -233,9 +233,14 @@ msgstr "Черновик. Эта страница находится в форк
 msgid "Every call is logged with the PDF URL and hash. A person reviews the log against the PDF's clauses. At the end, I sends a signed deletion letter; M keeps it with its hash"
 msgstr "Каждый вызов регистрируется в журнале с URL-адресом и хешем PDF. Человек сверяет журнал с положениями PDF. По завершении I направляет подписанное письмо об удалении; M хранит его вместе с его хешем"
 
-#: input/pagecontent/dsa_processes.md:202
-#: input/pagecontent/dsa_processes.md:203
-#: input/pagecontent/dsa_processes.md:215
+#: input/pagecontent/dsa_processes.md:192
+#, python-brace-format
+msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
+msgstr "{code0} FHIR R4 показан потому, что его использует IHE PCF. Настоящее руководство основано на FHIR R4 4.0.1, как и smart-base и smart-trust-phw (решение владельца, 2026-11-07), поэтому Consent соответствует собственной версии руководства. Явное и подразумеваемое согласие описаны на странице <a0>Consent</a0> smart-trust-phw."
+
+#: input/pagecontent/dsa_processes.md:204
+#: input/pagecontent/dsa_processes.md:205
+#: input/pagecontent/dsa_processes.md:217
 msgid "folio-assistant-core (document life cycle)"
 msgstr "folio-assistant-core (жизненный цикл документа)"
 
@@ -308,7 +313,7 @@ msgstr "Если I нарушает условия PDF, администрато
 msgid "If the anchor is GDHCN {#p3-gdhcn}"
 msgstr "Если якорем является GDHCN {#p3-gdhcn}"
 
-#: input/pagecontent/dsa_processes.md:225
+#: input/pagecontent/dsa_processes.md:227
 msgid "IHE VHL transaction numbers and names (ITI-YY1, ITI-YY2), taken from an analysis and not re-checked."
 msgstr "Номера и названия транзакций IHE VHL (ITI-YY1, ITI-YY2), взятые из анализа и повторно не проверенные."
 
@@ -316,7 +321,7 @@ msgstr "Номера и названия транзакций IHE VHL (ITI-YY1, 
 msgid "In. Key pairs; for GDHCN, application letters."
 msgstr "Вход. Пары ключей; для GDHCN — письма-заявки."
 
-#: input/pagecontent/dsa_processes.md:210
+#: input/pagecontent/dsa_processes.md:212
 msgid "Individual consent, linked to the agreement"
 msgstr "Индивидуальное согласие, связанное с соглашением"
 
@@ -378,7 +383,7 @@ msgstr "Национальные правила"
 msgid "None. Trust comes from the domain and its TLS certificate"
 msgstr "Нет. Доверие основано на домене и его сертификате TLS"
 
-#: input/pagecontent/dsa_processes.md:222
+#: input/pagecontent/dsa_processes.md:224
 msgid "Not verified {#unverified}"
 msgstr "Не проверено {#unverified}"
 
@@ -444,19 +449,19 @@ msgstr "Формальности для присоединения"
 msgid "Party with keys"
 msgstr "Сторона с ключами"
 
-#: input/pagecontent/dsa_processes.md:202
-#: input/pagecontent/dsa_processes.md:203
-#: input/pagecontent/dsa_processes.md:207
-#: input/pagecontent/dsa_processes.md:208
+#: input/pagecontent/dsa_processes.md:204
+#: input/pagecontent/dsa_processes.md:205
 #: input/pagecontent/dsa_processes.md:209
 #: input/pagecontent/dsa_processes.md:210
 #: input/pagecontent/dsa_processes.md:211
-#: input/pagecontent/dsa_processes.md:215
+#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:217
 msgid "planned"
 msgstr "запланировано"
 
 #: input/pagecontent/dsa_processes.md:171
-#: input/pagecontent/dsa_processes.md:200
+#: input/pagecontent/dsa_processes.md:202
 msgid "Process"
 msgstr "Процесс"
 
@@ -464,11 +469,11 @@ msgstr "Процесс"
 msgid "Publish the public keys."
 msgstr "Опубликуйте открытые ключи."
 
-#: input/pagecontent/dsa_processes.md:203
+#: input/pagecontent/dsa_processes.md:205
 msgid "Publish: version, hash, catalogue"
 msgstr "Публикация: версия, хеш, каталог"
 
-#: input/pagecontent/dsa_processes.md:209
+#: input/pagecontent/dsa_processes.md:211
 msgid "QR and paper"
 msgstr "QR и бумага"
 
@@ -476,11 +481,11 @@ msgstr "QR и бумага"
 msgid "records"
 msgstr "записи"
 
-#: input/pagecontent/dsa_processes.md:205
+#: input/pagecontent/dsa_processes.md:207
 msgid "Register a server client"
 msgstr "Регистрация серверного клиента"
 
-#: input/pagecontent/dsa_processes.md:204
+#: input/pagecontent/dsa_processes.md:206
 msgid "Register parties and keys with a trust anchor"
 msgstr "Регистрация сторон и ключей у якоря доверия"
 
@@ -492,11 +497,11 @@ msgstr "регистрация"
 msgid "Resolve. Reinstate (lift the suspension), amend (P14) or terminate (P14, then revoke by P13)."
 msgstr "Урегулирование. Восстановите действие (отмените приостановку), внесите изменения (P14) или прекратите действие (P14, затем отзыв по P13)."
 
-#: input/pagecontent/dsa_processes.md:214
+#: input/pagecontent/dsa_processes.md:216
 msgid "Revocation and suspension"
 msgstr "Отзыв и приостановка"
 
-#: input/pagecontent/dsa_processes.md:227
+#: input/pagecontent/dsa_processes.md:229
 msgid "RFC 5280 and RFC 8705 section numbers are cited from standing knowledge."
 msgstr "Номера разделов RFC 5280 и RFC 8705 приведены по общеизвестным сведениям."
 
@@ -520,7 +525,7 @@ msgstr "Роли. Обе стороны; регулирующие органы; 
 msgid "Roles. Each party; the trust anchor operator."
 msgstr "Роли. Каждая сторона; оператор якоря доверия."
 
-#: input/pagecontent/dsa_processes.md:206
+#: input/pagecontent/dsa_processes.md:208
 msgid "Server-to-server access"
 msgstr "Межсерверный доступ"
 
@@ -537,7 +542,7 @@ msgstr "Стандарты. DID Core 1.0 (Рекомендация W3C). did:web
 msgid "Standards. None for the process itself. In a computable DSA, ODRL 2.2 {code0} (§2.6.6) and {code1} (§2.6.7) can state what follows when a duty is not met. The dispute itself is a legal matter."
 msgstr "Стандарты. Для самого процесса — нет. В вычислимом DSA {code0} (§2.6.6) и {code1} (§2.6.7) ODRL 2.2 могут указывать, что следует при невыполнении обязанности. Сам спор является юридическим вопросом."
 
-#: input/pagecontent/dsa_processes.md:200
+#: input/pagecontent/dsa_processes.md:202
 msgid "Status"
 msgstr "Статус"
 
@@ -562,11 +567,11 @@ msgstr "проверка (правило задаётся вручную)"
 msgid "The deploying system's own list of accepted keys or roots"
 msgstr "Собственный список принимаемых ключей или корневых сертификатов развёртывающей системы"
 
-#: input/pagecontent/dsa_processes.md:198
+#: input/pagecontent/dsa_processes.md:200
 msgid "The DSA processes are split by layer. Only P3 and P15 are on this page."
 msgstr "Процессы DSA разделены по уровням. На этой странице представлены только P3 и P15."
 
-#: input/pagecontent/dsa_processes.md:218
+#: input/pagecontent/dsa_processes.md:220
 msgid "The server-to-server processes (P4, P5, P11, P12, P13) are BPMN processes D to H in smart-trust-phw. Tracked in <a0>litlfred/folio-assistant#2702</a0>."
 msgstr "Межсерверные процессы (P4, P5, P11, P12, P13) — это процессы BPMN от D до H в smart-trust-phw. Отслеживается в <a0>litlfred/folio-assistant#2702</a0>."
 
@@ -618,11 +623,11 @@ msgstr "Использование ключа из другого домена �
 msgid "Verifier"
 msgstr "Проверяющая сторона"
 
-#: input/pagecontent/dsa_processes.md:207
+#: input/pagecontent/dsa_processes.md:209
 msgid "Wallet issuance"
 msgstr "Выдача в кошелёк"
 
-#: input/pagecontent/dsa_processes.md:208
+#: input/pagecontent/dsa_processes.md:210
 msgid "Wallet presentation"
 msgstr "Предъявление из кошелька"
 
@@ -650,7 +655,7 @@ msgstr "Всё, что решит владелец системы"
 msgid "When the agreement is only a signed PDF {#signed-pdf}"
 msgstr "Если соглашение — это только подписанный PDF {#signed-pdf}"
 
-#: input/pagecontent/dsa_processes.md:200
+#: input/pagecontent/dsa_processes.md:202
 msgid "Where"
 msgstr "Где"
 
@@ -659,7 +664,7 @@ msgstr "Где"
 msgid "Where consent is needed, consents are paper forms, scanned into FHIR {code0}, with {code1} set to the PDF URL (<a0>FHIR R4 Consent</a0>)"
 msgstr "Если требуется согласие, оно оформляется на бумажных бланках, которые сканируются в FHIR {code0}, а в {code1} указывается URL-адрес PDF (<a0>FHIR R4 Consent</a0>)"
 
-#: input/pagecontent/dsa_processes.md:196
+#: input/pagecontent/dsa_processes.md:198
 msgid "Where the other processes are {#elsewhere}"
 msgstr "Где описаны другие процессы {#elsewhere}"
 
@@ -678,8 +683,3 @@ msgstr "X.509: проверка пути по RFC 5280 до принятого �
 #: input/pagecontent/dsa_processes.md:94
 msgid "X.509: the CA issues the certificate."
 msgstr "X.509: CA выдаёт сертификат."
-
-#: input/pagecontent/dsa_processes.md:192
-#, python-brace-format
-msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
-msgstr "{code0} FHIR R4 показан потому, что его использует IHE PCF. Настоящее руководство основано на FHIR R4 4.0.1, как и smart-base и smart-trust-phw (решение владельца, 2026-11-07), поэтому Consent соответствует собственной версии руководства. Явное и подразумеваемое согласие описаны на странице <a0>Consent</a0> smart-trust-phw."

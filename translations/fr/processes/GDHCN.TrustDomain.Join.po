@@ -49,11 +49,6 @@ msgstr "Personnel autorisé de l’OMS au sein du Secrétariat du GDHCN (Cadre V
 msgid "Business Owner Representative"
 msgstr "Représentant du responsable métier"
 
-#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
-#. Diagram label
-msgid "Connect and test"
-msgstr "Connecter et tester"
-
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
 #. Diagram element documentation
 msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/TechnicalRepresentative."
@@ -118,6 +113,11 @@ msgstr "Secrétariat du GDHCN"
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
 msgstr "Secrétariat du GDHCN (OMS)"
+
+#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
+#. Diagram label
+msgid "Go live"
+msgstr "Passer en production"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:122
 #. Diagram label

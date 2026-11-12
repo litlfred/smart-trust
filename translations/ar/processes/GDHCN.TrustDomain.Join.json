@@ -19,5 +19,5 @@
     "pct": 100
   },
   "description": "Unofficial Arabic (Modern Standard Arabic, right-to-left) translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it; the untainted round-trip verdict for this locale is recorded in the PO header.",
-  "sourceHash": "0d1971c26904"
+  "sourceHash": "07afb7f8e984"
 }

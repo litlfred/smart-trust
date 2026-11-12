@@ -20,6 +20,11 @@ msgstr ""
 msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN specification</a1> specification."
 msgstr "符合 <a1>GDHCN 规范</a1> 的 <a0>去中心化标识符</a0>（DID）。"
 
+#: input/pagecontent/transactions.md:49
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
+msgstr "信任网络参与方向信任网络网关发布密钥，供验证应用程序使用。密钥可以按多种用途进行编码，包括遵循<a0>证书治理</a0>，依据其 <a1>{code0}</a1> 和信任 <a2>{code1}</a2>"
+
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"
 msgstr "可以按以下格式共享公钥列表："
@@ -333,8 +338,3 @@ msgstr "验证业务规则的真实性"
 #: input/pagecontent/transactions.md:92
 msgid "Verifying"
 msgstr "验证"
-
-#: input/pagecontent/transactions.md:49
-#, python-brace-format
-msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
-msgstr "信任网络参与方向信任网络网关发布密钥，供验证应用程序使用。密钥可以按多种用途进行编码，包括遵循<a0>证书治理</a0>，依据其 <a1>{code0}</a1> 和信任 <a2>{code1}</a2>"

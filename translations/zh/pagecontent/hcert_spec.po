@@ -41,6 +41,10 @@ msgstr "######## 3.2.7.1.5 可验证健康链接（VHL） 可验证健康链接�
 msgid "<a0>DDCC FHIR Implementation Guide</a0>"
 msgstr "<a0>DDCC FHIR 实施指南</a0>"
 
+#: input/pagecontent/hcert_spec.md:115
+msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
+msgstr "<a0>DDCC 检测结果（DDCC:TR）</a0>记录了检测结果证书的用例、数据需求、技术规范和实施指导。"
+
 #: input/pagecontent/hcert_spec.md:110
 msgid "<a0>DDCC Vaccination Status (DDCC:VS)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
 msgstr "<a0>DDCC 疫苗接种状态（DDCC:VS）</a0>记录了疫苗接种证书的用例、数据需求、技术规范和实施指导。"
@@ -565,7 +569,3 @@ msgstr "在设计使用本规范的方案时，必须考虑若干重要的安全
 #: input/pagecontent/hcert_spec.md:103
 msgid "While the <a0>logical model</a0> enlists assigned sub claims, the ones listed in this specification are considered authoritative"
 msgstr "虽然<a0>逻辑模型</a0>列出了已分配的子声明，但本规范中列出的子声明被视为具有权威性"
-
-#: input/pagecontent/hcert_spec.md:115
-msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
-msgstr "<a0>DDCC 检测结果（DDCC:TR）</a0>记录了检测结果证书的用例、数据需求、技术规范和实施指导。"

@@ -1,6 +1,6 @@
 {
   "$schema": "translation-node/v1",
-  "$comment": "Simplified Chinese translation of input/pagecontent/trust_network_gateway_architecture.md. UNOFFICIAL: agent translation, not signed off by a person. Coverage: 248/248 strings.",
+  "$comment": "Simplified Chinese translation of input/pagecontent/trust_network_gateway_architecture.md. UNOFFICIAL: agent translation, not signed off by a person. Coverage: 247/247 strings.",
   "label": "trans:zh/pagecontent/trust_network_gateway_architecture",
   "locale": "zh",
   "sourceFile": "input/pagecontent/trust_network_gateway_architecture.md",

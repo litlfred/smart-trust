@@ -57,6 +57,7 @@ main.
 |---|---|
 | templates | `bun input/scripts/translation-pot.ts` (`--check` in CI): `input/pagecontent/` and the BPMN of `input/business-processes/` into `translations/<locale>/{pagecontent,processes}/` |
 | new and obsolete strings | `bun input/scripts/po-status.ts --merge` appends new msgids empty and keeps obsolete ones as `#~`; without `--merge` it reports |
+| app strings | the onboarding game (`onboarding-game/`, kind `web-app`): `bun run cat web-apps:build --extract` writes `translations/<locale>/apps/onboarding-game.pot` from its catalog `onboarding-game/src/i18n/en.json` (refresh that first with `npm run catalog` in the game); translators fill `translations/<locale>/apps/onboarding-game.po`, one PR per locale; `web-apps:build --check` fails on a stale template, a dropped `{placeholder}` or a translation for a string that is gone. Cat-harness skill `web-apps` |
 | FHIR terms | one CodeSystem supplement per locale, `input/fsh/translations/<locale>.fsh`; never edit a resource's own text |
 
 `.github/workflows/translations.yml` runs the template check, the officiality

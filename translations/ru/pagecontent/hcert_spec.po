@@ -41,6 +41,10 @@ msgstr "######## 3.2.7.1.5 Проверяемая ссылка на медици
 msgid "<a0>DDCC FHIR Implementation Guide</a0>"
 msgstr "<a0>Руководство по внедрению DDCC FHIR (DDCC FHIR Implementation Guide)</a0>"
 
+#: input/pagecontent/hcert_spec.md:115
+msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
+msgstr "<a0>DDCC Test Result (DDCC:TR)</a0> описывает варианты использования, требования к данным, технические спецификации и руководство по внедрению для сертификатов о результатах тестирования."
+
 #: input/pagecontent/hcert_spec.md:110
 msgid "<a0>DDCC Vaccination Status (DDCC:VS)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
 msgstr "<a0>DDCC Vaccination Status (DDCC:VS)</a0> описывает варианты использования, требования к данным, технические спецификации и руководство по внедрению для сертификатов о вакцинации."
@@ -565,7 +569,3 @@ msgstr "При разработке схемы с использованием �
 #: input/pagecontent/hcert_spec.md:103
 msgid "While the <a0>logical model</a0> enlists assigned sub claims, the ones listed in this specification are considered authoritative"
 msgstr "Хотя в <a0>логической модели</a0> перечислены назначенные подутверждения, авторитетными считаются те, которые перечислены в данной спецификации"
-
-#: input/pagecontent/hcert_spec.md:115
-msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
-msgstr "<a0>DDCC Test Result (DDCC:TR)</a0> описывает варианты использования, требования к данным, технические спецификации и руководство по внедрению для сертификатов о результатах тестирования."

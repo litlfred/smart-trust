@@ -39,7 +39,7 @@ msgstr "фонд, программа, специализированное уч�
 msgid "A GDHCN Participant is participant of the Trust Network that adheres to the Terms of Participation and manages the necessary technical infrastructure and governance processes. GDHCN Participants are responsible for making bilateral determinations related to the utilization of Trusted Services."
 msgstr "Участник GDHCN — это участник сети доверия, который соблюдает Условия участия и управляет необходимой технической инфраструктурой и процессами управления. Участники GDHCN отвечают за принятие двусторонних решений, связанных с использованием Доверенных услуг."
 
-#: input/pagecontent/concepts.md:122
+#: input/pagecontent/concepts.md:125
 msgid "A GDHCN Participant's Backend System for managing the local part of information. The implementation of GDHCN Participant's Backend System is not in the scope of this document. A national backend can be also understood as a trusted party on-boarded in the Trust Network Gateway (can be a script, a proxy or a web server as well)."
 msgstr "Серверная система Участника GDHCN для управления локальной частью информации. Реализация серверной системы Участника GDHCN не входит в сферу охвата настоящего документа. Национальная серверная система может также пониматься как доверенная сторона, подключённая к Шлюзу сети доверия (это может быть также скрипт, прокси-сервер или веб-сервер)."
 
@@ -51,7 +51,7 @@ msgstr "Владелец — это физическое лицо, у котор
 msgid "A Reciever is a system authorized by a Trust Network Participant to receive from a Holder a Veritifable verify, and utilize the content within."
 msgstr "Получатель — это система, уполномоченная Участником сети доверия получать от владельца проверяемый цифровой сертификат о состоянии здоровья, проверять его и использовать его содержимое."
 
-#: input/pagecontent/concepts.md:144
+#: input/pagecontent/concepts.md:147
 msgid "A service (digital or otherwise) related to the issuance, management, verification, exchange, or other relevant processes, of Verifiable Digital Health Certificates which is defined using open, interoperable digital health standards."
 msgstr "Услуга (цифровая или иная), связанная с выдачей, управлением, проверкой, обменом или другими соответствующими процессами в отношении проверяемых цифровых сертификатов о состоянии здоровья, которая определена с использованием открытых совместимых стандартов цифрового здравоохранения."
 
@@ -63,7 +63,7 @@ msgstr "совокупность политических и нормативн�
 msgid "a State Party recognized by the International Health Regulations, or sub-national unit thereof;"
 msgstr "государство — участник, признанное Международными медико-санитарными правилами, или его субнациональная единица;"
 
-#: input/pagecontent/concepts.md:140
+#: input/pagecontent/concepts.md:143
 msgid "A system utilized by a GDHCN Participant to verify the digital signature of a Verifiable Digital Health Certificate."
 msgstr "Система, используемая Участником GDHCN для проверки цифровой подписи проверяемого цифрового сертификата о состоянии здоровья."
 
@@ -147,7 +147,7 @@ msgstr "Управление сертификатами ключей шифро�
 msgid "GDHCN Participant"
 msgstr "Участник GDHCN"
 
-#: input/pagecontent/concepts.md:121
+#: input/pagecontent/concepts.md:124
 msgid "GDHCN Participant Backend System"
 msgstr "Серверная система Участника GDHCN"
 
@@ -243,15 +243,15 @@ msgstr "Технический представитель"
 msgid "Terms of Participation (TOP)"
 msgstr "Условия участия (TOP)"
 
-#: input/pagecontent/concepts.md:127
+#: input/pagecontent/concepts.md:130
 msgid "The DECA public key certificate of a GDHCN Participants (could be more than one). The DECA is a certificate which acts a trust anchor in the verification of the certificate chain for the DESCs issued by a Trust Network Participant\""
 msgstr "Сертификат открытого ключа DECA Участника GDHCN (их может быть несколько). DECA — это сертификат, который выступает в роли якоря доверия при проверке цепочки сертификатов для DESC, выпущенных Участником сети доверия"
 
-#: input/pagecontent/concepts.md:125
+#: input/pagecontent/concepts.md:128
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one)."
 msgstr "Сертификат открытого ключа DSCA Участника GDHCN (их может быть несколько)."
 
-#: input/pagecontent/concepts.md:131
+#: input/pagecontent/concepts.md:134
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one). The DSCA is a certificate which acts a trust anchor in the verification of the certificate chain for the DSCs issued by a Trust Network Participant\""
 msgstr "Сертификат открытого ключа DSCA Участника GDHCN (их может быть несколько). DSCA — это сертификат, который выступает в роли якоря доверия при проверке цепочки сертификатов для DSC, выпущенных Участником сети доверия"
 
@@ -291,7 +291,7 @@ msgstr "Процесс и технические спецификации, ка�
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
 msgstr "Процессы, необходимые для присоединения Правомочного участника GDHCN к сети доверия GDHCN. По успешном завершении Процесса подключения Правомочный участник GDHCN считается Участником GDHCN. Иногда называется просто «подключением»."
 
-#: input/pagecontent/concepts.md:137
+#: input/pagecontent/concepts.md:140
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
 msgstr "Сертификат открытого ключа, который Участник GDHCN использует для подписания пакетов данных, загружаемых в TNG."
 
@@ -299,23 +299,23 @@ msgstr "Сертификат открытого ключа, который Уч�
 msgid "The Public Key Infrastructure (PKI) is the trust model based on public key certificates and certificate authorities.  It is the means for publishing and distributing Trust Lists comprising the public keys that can be used to digitally verify the issuer of a Verifiable Digital Health Certificates."
 msgstr "Инфраструктура открытых ключей (PKI) — это модель доверия, основанная на сертификатах открытых ключей и удостоверяющих центрах. Она служит средством публикации и распространения списков доверия, содержащих открытые ключи, которые могут использоваться для цифровой проверки эмитента проверяемых цифровых сертификатов о состоянии здоровья."
 
-#: input/pagecontent/concepts.md:151
+#: input/pagecontent/concepts.md:154
 msgid "The specific Verifiable Digital Health Certificates are defined in the <a0>Content Profiles</a0>"
 msgstr "Конкретные проверяемые цифровые сертификаты о состоянии здоровья определены в <a0>профилях содержимого</a0>"
 
-#: input/pagecontent/concepts.md:134
+#: input/pagecontent/concepts.md:137
 msgid "The TLS client authentication public key certificate of a GDHCN Participant's Backend System."
 msgstr "Сертификат открытого ключа для аутентификации клиента TLS серверной системы Участника GDHCN."
 
-#: input/pagecontent/concepts.md:116
+#: input/pagecontent/concepts.md:119
 msgid "The TLS server public key certificate of the TNG."
 msgstr "Сертификат открытого ключа сервера TLS для TNG."
 
-#: input/pagecontent/concepts.md:113
+#: input/pagecontent/concepts.md:116
 msgid "The Trust Anchor public key certificate of the TNG. The corresponding private key is used to sign the list of all SCA certificates offline."
 msgstr "Сертификат открытого ключа якоря доверия TNG. Соответствующий закрытый ключ используется для подписания списка всех сертификатов SCA в автономном режиме."
 
-#: input/pagecontent/concepts.md:110
+#: input/pagecontent/concepts.md:113
 msgid "The Trust Network Gateway (TNG) is the open-source software and its IT operational infrastructure, utilizing open standards, for a Public Key Infrastructure and metadata management services which is used to operationalize one or more Trust Domains.  The Trust Network Gateway can be interacted with using the <a0>API</a0> once a mTLS connection has been established."
 msgstr "Шлюз сети доверия (TNG) — это программное обеспечение с открытым исходным кодом и его операционная ИТ-инфраструктура, использующие открытые стандарты, для инфраструктуры открытых ключей и услуг управления метаданными, которые применяются для обеспечения функционирования одного или нескольких Доменов доверия. После установления соединения mTLS со Шлюзом сети доверия можно взаимодействовать с помощью <a0>API</a0>."
 
@@ -356,50 +356,51 @@ msgid "Trust Lists"
 msgstr "Списки доверия"
 
 #: input/pagecontent/concepts.md:105
+#: input/pagecontent/concepts.md:109
 msgid "Trust Network"
 msgstr "Сеть доверия"
 
-#: input/pagecontent/concepts.md:115
+#: input/pagecontent/concepts.md:118
 msgid "Trust Network Gateway - Transport Layer Security  (TNGTLS)"
 msgstr "Шлюз сети доверия — защита транспортного уровня (TNGTLS)"
 
-#: input/pagecontent/concepts.md:112
+#: input/pagecontent/concepts.md:115
 msgid "Trust Network Gateway - Trust Anchor  (TNGTA)"
 msgstr "Шлюз сети доверия — якорь доверия (TNGTA)"
 
-#: input/pagecontent/concepts.md:109
+#: input/pagecontent/concepts.md:112
 msgid "Trust Network Gateway (TNG)"
 msgstr "Шлюз сети доверия (TNG)"
 
-#: input/pagecontent/concepts.md:124
+#: input/pagecontent/concepts.md:127
 msgid "Trust Network Participant - Data Exchange Certificate Authority  (TNPDECA)"
 msgstr "Участник сети доверия — удостоверяющий центр обмена данными (TNPDECA)"
 
-#: input/pagecontent/concepts.md:130
+#: input/pagecontent/concepts.md:133
 msgid "Trust Network Participant - Document Signing Certificate Authority  (TNPDSCA)"
 msgstr "Участник сети доверия — удостоверяющий центр подписания документов (TNPDSCA)"
 
-#: input/pagecontent/concepts.md:133
+#: input/pagecontent/concepts.md:136
 msgid "Trust Network Participant - Transport Layer Security (TNPTLS)"
 msgstr "Участник сети доверия — защита транспортного уровня (TNPTLS)"
 
-#: input/pagecontent/concepts.md:136
+#: input/pagecontent/concepts.md:139
 msgid "Trust Network Participant - Transport Layer Security (TNPUP)"
 msgstr "Участник сети доверия — защита транспортного уровня (TNPUP)"
 
-#: input/pagecontent/concepts.md:118
+#: input/pagecontent/concepts.md:121
 msgid "Trust Network Participant (TNP)"
 msgstr "Участник сети доверия (TNP)"
 
-#: input/pagecontent/concepts.md:119
+#: input/pagecontent/concepts.md:122
 msgid "Trust Network Participant (TNP) is an acronym used to label certificates, infrastructure, or technical artifacts made available by GDHCN Participants under the GDHCN Trust Network."
 msgstr "Участник сети доверия (TNP) — это сокращение, используемое для обозначения сертификатов, инфраструктуры или технических артефактов, предоставляемых Участниками GDHCN в рамках сети доверия GDHCN."
 
-#: input/pagecontent/concepts.md:139
+#: input/pagecontent/concepts.md:142
 msgid "Trust Network Participant Verifier"
 msgstr "Проверяющая сторона Участника сети доверия"
 
-#: input/pagecontent/concepts.md:143
+#: input/pagecontent/concepts.md:146
 msgid "Trusted Service"
 msgstr "Доверенная услуга"
 
@@ -407,11 +408,11 @@ msgstr "Доверенная услуга"
 msgid "Universal verifier applications that support different credential standards are complicated by wide variability in format of the credential payloads, signatures, key formats, and key distribution methods. Public keys formats include x509 certificates, JSON Web Key Sets (JWKS), and DID documents. Signing key distribution methods include API gateways, hosted by issuer at a pre-defined URL, embedded in certificates, and by block-chain based resolution. Establishing root of trust by trust anchor or distributing trust list has been accomplished by API gateway, hosted URL, private dissemination and other bilateral sharing agreements."
 msgstr "Создание универсальных приложений проверки, поддерживающих различные стандарты удостоверений, затрудняется значительными различиями в формате полезной нагрузки удостоверений, подписей, форматах ключей и методах распространения ключей. Форматы открытых ключей включают сертификаты x509, наборы веб-ключей JSON (JWKS) и документы DID. Методы распространения ключей подписи включают шлюзы API, размещение эмитентом по заранее определённому URL-адресу, встраивание в сертификаты и разрешение на основе блокчейна. Установление корня доверия посредством якоря доверия или распространения списка доверия осуществлялось через шлюз API, размещённый URL-адрес, закрытое распространение и другие двусторонние соглашения об обмене."
 
-#: input/pagecontent/concepts.md:148
+#: input/pagecontent/concepts.md:151
 msgid "Verifiable Digital Health Certificate"
 msgstr "Проверяемый цифровой сертификат о состоянии здоровья"
 
-#: input/pagecontent/concepts.md:149
+#: input/pagecontent/concepts.md:152
 msgid "Verifiable Digital Health Certificate: A digital representation of a data set comprising a certificate or document, designed for a set of specific clinical or public health use cases which is defined using open, interoperable digital health standards; that contains within, or is associated to, a digital signature which can be verified by the public key of a public-private encryption key pair, and which is issued by a GDHCN Participant."
 msgstr "Проверяемый цифровой сертификат о состоянии здоровья: цифровое представление набора данных, составляющего сертификат или документ, предназначенное для набора конкретных клинических вариантов использования или вариантов использования в сфере общественного здравоохранения, которое определено с использованием открытых совместимых стандартов цифрового здравоохранения; которое содержит цифровую подпись или связано с цифровой подписью, которая может быть проверена с помощью открытого ключа из пары открытого и закрытого ключей шифрования, и которое выпускается Участником GDHCN."
 

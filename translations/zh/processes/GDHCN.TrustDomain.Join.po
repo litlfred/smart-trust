@@ -50,11 +50,6 @@ msgstr "GDHCN 秘书处经授权的 WHO 工作人员（《框架》第 V、VI �
 msgid "Business Owner Representative"
 msgstr "业务负责人代表"
 
-#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
-#. Diagram label
-msgid "Connect and test"
-msgstr "连接并测试"
-
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
 #. Diagram element documentation
 msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/TechnicalRepresentative."
@@ -119,6 +114,11 @@ msgstr "GDHCN 秘书处"
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
 msgstr "GDHCN 秘书处（WHO）"
+
+#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
+#. Diagram label
+msgid "Go live"
+msgstr "上线"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:122
 #. Diagram label

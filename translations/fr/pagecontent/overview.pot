@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-08T07:24:09.442Z\n"
+"POT-Creation-Date: 2026-11-11T13:16:06.903Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: fr\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Achieving global interoperability of health certificates does not require that all jurisdictions use the same standard. Interoperability can also be achieved when there are pre-arranged mechanisms in place so that certificates issued by one jurisdiction are accepted in another. A number of services and technical artifacts have been developed to address particular criteria for establishing interoperability and a system of trust including:"
 msgstr ""
 
-#: input/pagecontent/overview.md:138
+#: input/pagecontent/overview.md:141
 msgid "As with any digital solution, there are ethical considerations, such as potential impacts on equity and on equitable access, and data protection principles that need to inform the design of the technical specifications, as well as provide guidance on how resulting solutions can be ethically implemented. The following page discusses some key ethical considerations and data protection principles that Member States are encouraged to – and, where they have legal obligations, must – include in their respective deployments of digital solutions. These ethical considerations and data protection principles have also informed the design criteria for WHO’s SMART Guidelines and for the utilization of the WHO’s Global Digital Health Certification Network."
 msgstr ""
 
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Audience"
 msgstr ""
 
-#: input/pagecontent/overview.md:128
+#: input/pagecontent/overview.md:131
 msgid "Available Trust Domains"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Circular letter to Member States"
 msgstr ""
 
-#: input/pagecontent/overview.md:149
+#: input/pagecontent/overview.md:152
 msgid "Community"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgstr ""
 msgid "Establish trust of digitally signed clinical algorithms published by WHO through the SMART Guidelines work. Allow for a global product catalogue of trusted medical products and devices. Ensure information about a patient can be accessed and trusted regardless of one is in the world. Support health systems resiliency to address future outbreaks in a world. Empower individuals to manage their own health and well-being."
 msgstr ""
 
-#: input/pagecontent/overview.md:135
+#: input/pagecontent/overview.md:138
 msgid "Ethical Considerations and Data Protection Principles"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Participants"
 msgstr ""
 
-#: input/pagecontent/overview.md:154
+#: input/pagecontent/overview.md:157
 msgid "Sign up on chat.fhir.org community and follow the stream who-smart-guidelines for questions, queries and chats related to WHO SMART Guidelines chat.fhir.org WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines where participation is welcome. Please send an email at gdhcn-support@who.int in order to get invited. gdhcn-support@who.int"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgstr ""
 msgid "The audience for this guide includes decision makers, analysts and technical assets at potential individual issuers, existing trust networks or potential verifiers who may participate in the federated trust network. Stakeholders include Member States, regional networks, and standards development organizations."
 msgstr ""
 
-#: input/pagecontent/overview.md:131
+#: input/pagecontent/overview.md:134
 msgid "The codes for the GDHCN Trust Domains are contained in the GDHCN Trust Domain Value Set and are described in more detail here."
 msgstr ""
 
@@ -144,4 +144,8 @@ msgstr ""
 
 #: input/pagecontent/overview.md:24
 msgid "Trust Network"
+msgstr ""
+
+#: input/pagecontent/overview.md:123
+msgid "Trust Network Participants"
 msgstr ""

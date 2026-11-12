@@ -35,11 +35,6 @@ msgstr "Подключиться и провести пробный прогон
 msgid "Connect and run the readiness test in PROD"
 msgstr "Подключиться и провести тест готовности в PROD"
 
-#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
-#. Diagram label
-msgid "Connect and test"
-msgstr "Подключиться и пройти тестирование"
-
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
 msgid "Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]."
@@ -59,6 +54,11 @@ msgstr "Оператор шлюза"
 #. Diagram label
 msgid "GDHCN Participant"
 msgstr "Участник GDHCN"
+
+#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
+#. Diagram label
+msgid "Go live"
+msgstr "Ввести в эксплуатацию"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:34
 #. Diagram label

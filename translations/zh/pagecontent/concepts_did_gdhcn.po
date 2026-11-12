@@ -105,6 +105,21 @@ msgstr "以下示例概述了引用型信任列表的预期行为："
 msgid "Canonical N-Quads sort lines by Unicode code point. Java's string order (UTF-16 code units) differs only for characters above U+FFFF, and no trust list document contains any. A verifier MAY refuse a document with such characters rather than guess the order."
 msgstr "规范 N-Quads 按 Unicode 码位对行进行排序。Java 的字符串顺序（UTF-16 代码单元）仅在 U+FFFF 以上的字符上有所不同，而任何信任列表文档都不包含此类字符。验证方可以（MAY）拒绝包含此类字符的文档，而不是猜测其顺序。"
 
+#: input/pagecontent/concepts_did_gdhcn.md:48
+#, python-brace-format
+msgid "Contains trusted key material or DID references of a supported key usage type.   {code0} type is one of the key usages codes in the <a0>GDHCN Key Usage Value Set</a0>."
+msgstr "包含某一受支持密钥用途类型的可信密钥材料或 DID 引用。   {code0} 类型是<a0>GDHCN 密钥用途值集</a0>中的密钥用途代码之一。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:46
+#, python-brace-format
+msgid "Contains trusted key material or DID references of GDHCN for a supported trust domain.   {code0} should be one of the codes in the <a0>GDHCN Trust Domain Value Set</a0>."
+msgstr "包含 GDHCN 针对某一受支持信任域的可信密钥材料或 DID 引用。   {code0} 应为<a0>GDHCN 信任域值集</a0>中的代码之一。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:47
+#, python-brace-format
+msgid "Contains trusted key material or DID references of GDHCN for a trusted participant.  {code0} should be one of the codes in the  <a0>GDHCN Participant Value Set</a0>."
+msgstr "包含 GDHCN 针对某一可信参与方的可信密钥材料或 DID 引用。  {code0} 应为<a0>GDHCN 参与方值集</a0>中的代码之一。"
+
 #: input/pagecontent/concepts_did_gdhcn.md:165
 msgid "Content used by the signer"
 msgstr "签名方使用的内容"
@@ -142,6 +157,11 @@ msgstr "草案"
 msgid "Embedded"
 msgstr "嵌入型"
 
+#: input/pagecontent/concepts_did_gdhcn.md:106
+#, python-brace-format
+msgid "Embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC with key matrial:"
+msgstr "{code0}: DCC、{code1}: XXA 且密钥 {code2} 类型: DSC 的嵌入型信任列表，其密钥材料如下："
+
 #: input/pagecontent/concepts_did_gdhcn.md:22
 #: input/pagecontent/concepts_did_gdhcn.md:155
 #: input/pagecontent/concepts_did_gdhcn.md:192
@@ -160,6 +180,10 @@ msgstr "每个信任列表 DID 文档，无论是嵌入型还是引用型，都�
 #: input/pagecontent/concepts_did_gdhcn.md:80
 msgid "Example DID documents"
 msgstr "DID 文档示例"
+
+#: input/pagecontent/concepts_did_gdhcn.md:20
+msgid "For each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments there is a trust list according to the following table:"
+msgstr "开发（DEV）、用户验收测试（UAT）和生产（PROD）环境各有一个信任列表，如下表所示："
 
 #: input/pagecontent/concepts_did_gdhcn.md:1
 msgid "GDHCN Trustlists"
@@ -206,6 +230,11 @@ msgstr "生产"
 #: input/pagecontent/concepts_did_gdhcn.md:29
 msgid "Reference"
 msgstr "引用型"
+
+#: input/pagecontent/concepts_did_gdhcn.md:82
+#, python-brace-format
+msgid "Reference type DID document linking the embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC."
+msgstr "链接到 {code0}: DCC、{code1}: XXA 且密钥 {code2} 类型: DSC 的嵌入型信任列表的引用型 DID 文档。"
 
 #: input/pagecontent/concepts_did_gdhcn.md:12
 msgid "Released"
@@ -312,9 +341,64 @@ msgstr "信任列表使用 GitHub 维护，并通过 GitHub Pages 发布。"
 msgid "This specification describes the publication of Global Digital Health Certification Network (GDHCN) key material as Decentralized Identifier (DID) documents. DIDs are specified by the <a0>W3C DID Core Specification</a0>. The <a1>DID concept</a1> summarizes the core drivers and usage of the DID format in scope of GDHCN."
 msgstr "本规范描述了将全球数字健康认证网络（GDHCN）密钥材料作为去中心化标识符（DID）文档进行发布的方式。DIDs 由 <a0>W3C DID 核心规范</a0>定义。<a1>DID 概念</a1>概述了 GDHCN 范围内采用 DID 格式的核心驱动因素和用法。"
 
+#: input/pagecontent/concepts_did_gdhcn.md:64
+#, python-brace-format
+msgid "tng-cdn-who.int/v2/trustlist/-/- matches key material for all {code0}s and all {code1}s without filtering a specific {code2} type so the did.json may contain SCA and DSC keys."
+msgstr "tng-cdn-who.int/v2/trustlist/-/- 匹配所有 {code0} 和所有 {code1} 的密钥材料，不过滤特定的 {code2} 类型，因此 did.json 可能同时包含 SCA 和 DSC 密钥。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:71
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json contains a reference to a DID the embedded trustlist that correlates to the selected {code3}, {code4} and key {code5} type and that contains the key material."
+msgstr "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json 包含一个指向嵌入型信任列表 DID 的引用，该信任列表对应所选的 {code3}、{code4} 和密钥 {code5} 类型，并包含密钥材料。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:70
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json contains all key {code2} type level DID document references as DID id for the selected {code3} and {code4}."
+msgstr "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json 包含所有密钥 {code2} 类型层级的 DID 文档引用（以 DID id 表示），针对所选的 {code3} 和 {code4}。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:69
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json contains all {code1} level DID document references as DID id for the given {code2}."
+msgstr "tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json 包含给定 {code2} 的所有 {code1} 层级 DID 文档引用（以 DID id 表示）。"
+
 #: input/pagecontent/concepts_did_gdhcn.md:68
 msgid "tng-cdn.who.int/v2/trustlist-ref/did.json contains all DID document references of the next sub-level as DID id."
 msgstr "tng-cdn.who.int/v2/trustlist-ref/did.json 包含下一子层级的所有 DID 文档引用（以 DID id 表示）。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:62
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json matches keys or references in all {code2}s for a specific {code3} and specific key {code4} type."
+msgstr "tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json 匹配所有 {code2} 中针对特定 {code3} 和特定密钥 {code4} 类型的密钥或引用。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:59
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches all key {code1} types across all {code2}s for a specific {code3}."
+msgstr "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json 匹配特定 {code3} 在所有 {code2} 中的所有密钥 {code1} 类型。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:61
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches key material or references for all {code1}s for a specific {code2} without filtering the key usage types."
+msgstr "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json 匹配特定 {code2} 在所有 {code1} 中的密钥材料或引用，不过滤密钥用途类型。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:63
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json matches keys for all {code2}s of a specific {code3} filtered by there key {code4} type."
+msgstr "tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json 匹配特定 {code3} 的所有 {code2} 的密钥，并按其密钥 {code4} 类型进行过滤。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:60
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json matches all keys for a specific key {code3} type for a given {code4} AND {code5}."
+msgstr "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json 匹配给定 {code4} AND {code5} 下特定密钥 {code3} 类型的所有密钥。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:58
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json matches all key {code2} types for a specific {code3} AND {code4}."
+msgstr "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json 匹配特定 {code3} AND {code4} 的所有密钥 {code2} 类型。"
+
+#: input/pagecontent/concepts_did_gdhcn.md:57
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/did.json matches all keys for all {code0}s, {code1}s and key {code2} types."
+msgstr "tng-cdn.who.int/v2/trustlist/did.json 匹配所有 {code0}、{code1} 以及密钥 {code2} 类型的全部密钥。"
 
 #: input/pagecontent/concepts_did_gdhcn.md:158
 #: input/pagecontent/concepts_did_gdhcn.md:159
@@ -364,87 +448,3 @@ msgstr "2.0.0 版引入了信任列表的两种变体：嵌入型和引用型。
 #, python-brace-format
 msgid "W3C DID v1 context, sha256 {code0}"
 msgstr "W3C DID v1 上下文，sha256 {code0}"
-
-#: input/pagecontent/concepts_did_gdhcn.md:48
-#, python-brace-format
-msgid "Contains trusted key material or DID references of a supported key usage type.   {code0} type is one of the key usages codes in the <a0>GDHCN Key Usage Value Set</a0>."
-msgstr "包含某一受支持密钥用途类型的可信密钥材料或 DID 引用。   {code0} 类型是<a0>GDHCN 密钥用途值集</a0>中的密钥用途代码之一。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:46
-#, python-brace-format
-msgid "Contains trusted key material or DID references of GDHCN for a supported trust domain.   {code0} should be one of the codes in the <a0>GDHCN Trust Domain Value Set</a0>."
-msgstr "包含 GDHCN 针对某一受支持信任域的可信密钥材料或 DID 引用。   {code0} 应为<a0>GDHCN 信任域值集</a0>中的代码之一。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:47
-#, python-brace-format
-msgid "Contains trusted key material or DID references of GDHCN for a trusted participant.  {code0} should be one of the codes in the  <a0>GDHCN Participant Value Set</a0>."
-msgstr "包含 GDHCN 针对某一可信参与方的可信密钥材料或 DID 引用。  {code0} 应为<a0>GDHCN 参与方值集</a0>中的代码之一。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:106
-#, python-brace-format
-msgid "Embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC with key matrial:"
-msgstr "{code0}: DCC、{code1}: XXA 且密钥 {code2} 类型: DSC 的嵌入型信任列表，其密钥材料如下："
-
-#: input/pagecontent/concepts_did_gdhcn.md:20
-msgid "For each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments there is a trust list according to the following table:"
-msgstr "开发（DEV）、用户验收测试（UAT）和生产（PROD）环境各有一个信任列表，如下表所示："
-
-#: input/pagecontent/concepts_did_gdhcn.md:82
-#, python-brace-format
-msgid "Reference type DID document linking the embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC."
-msgstr "链接到 {code0}: DCC、{code1}: XXA 且密钥 {code2} 类型: DSC 的嵌入型信任列表的引用型 DID 文档。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:64
-#, python-brace-format
-msgid "tng-cdn-who.int/v2/trustlist/-/- matches key material for all {code0}s and all {code1}s without filtering a specific {code2} type so the did.json may contain SCA and DSC keys."
-msgstr "tng-cdn-who.int/v2/trustlist/-/- 匹配所有 {code0} 和所有 {code1} 的密钥材料，不过滤特定的 {code2} 类型，因此 did.json 可能同时包含 SCA 和 DSC 密钥。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:71
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json contains a reference to a DID the embedded trustlist that correlates to the selected {code3}, {code4} and key {code5} type and that contains the key material."
-msgstr "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json 包含一个指向嵌入型信任列表 DID 的引用，该信任列表对应所选的 {code3}、{code4} 和密钥 {code5} 类型，并包含密钥材料。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:70
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json contains all key {code2} type level DID document references as DID id for the selected {code3} and {code4}."
-msgstr "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json 包含所有密钥 {code2} 类型层级的 DID 文档引用（以 DID id 表示），针对所选的 {code3} 和 {code4}。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:69
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json contains all {code1} level DID document references as DID id for the given {code2}."
-msgstr "tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json 包含给定 {code2} 的所有 {code1} 层级 DID 文档引用（以 DID id 表示）。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:62
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json matches keys or references in all {code2}s for a specific {code3} and specific key {code4} type."
-msgstr "tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json 匹配所有 {code2} 中针对特定 {code3} 和特定密钥 {code4} 类型的密钥或引用。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:59
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches all key {code1} types across all {code2}s for a specific {code3}."
-msgstr "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json 匹配特定 {code3} 在所有 {code2} 中的所有密钥 {code1} 类型。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:61
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches key material or references for all {code1}s for a specific {code2} without filtering the key usage types."
-msgstr "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json 匹配特定 {code2} 在所有 {code1} 中的密钥材料或引用，不过滤密钥用途类型。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:63
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json matches keys for all {code2}s of a specific {code3} filtered by there key {code4} type."
-msgstr "tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json 匹配特定 {code3} 的所有 {code2} 的密钥，并按其密钥 {code4} 类型进行过滤。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:60
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json matches all keys for a specific key {code3} type for a given {code4} AND {code5}."
-msgstr "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json 匹配给定 {code4} AND {code5} 下特定密钥 {code3} 类型的所有密钥。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:58
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json matches all key {code2} types for a specific {code3} AND {code4}."
-msgstr "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json 匹配特定 {code3} AND {code4} 的所有密钥 {code2} 类型。"
-
-#: input/pagecontent/concepts_did_gdhcn.md:57
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/did.json matches all keys for all {code0}s, {code1}s and key {code2} types."
-msgstr "tng-cdn.who.int/v2/trustlist/did.json 匹配所有 {code0}、{code1} 以及密钥 {code2} 类型的全部密钥。"

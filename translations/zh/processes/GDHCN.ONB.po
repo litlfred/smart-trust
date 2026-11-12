@@ -35,11 +35,6 @@ msgstr "业务负责人代表"
 msgid "Check the application and the Letter"
 msgstr "核查申请和申请函"
 
-#: input/business-processes/GDHCN.ONB.bpmn:47
-#. Diagram label
-msgid "Connect and test"
-msgstr "连接并测试"
-
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation
 msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/TechnicalRepresentative."
@@ -74,6 +69,11 @@ msgstr "GDHCN 秘书处"
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
 msgstr "GDHCN 秘书处（WHO）"
+
+#: input/business-processes/GDHCN.ONB.bpmn:47
+#. Diagram label
+msgid "Go live"
+msgstr "上线"
 
 #: input/business-processes/GDHCN.ONB.bpmn:24
 #. Diagram label

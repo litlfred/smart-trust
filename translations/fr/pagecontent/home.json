@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/home",
   "locale": "fr",
   "sourceFile": "input/pagecontent/home.md",
-  "sourceHash": "9dfa8606a539",
+  "sourceHash": "1d79c6148735",
   "potFile": "translations/fr/pagecontent/home.pot",
   "poFile": "translations/fr/pagecontent/home.po",
   "poIncludes": [
@@ -18,8 +18,8 @@
     "generator": "agent translation (smart-trust fr session)"
   },
   "coverage": {
-    "translated": 1,
-    "total": 1,
+    "translated": 2,
+    "total": 2,
     "pct": 100
   }
 }

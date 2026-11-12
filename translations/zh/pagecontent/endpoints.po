@@ -134,6 +134,18 @@ msgstr "引用型"
 msgid "Status Monitoring Dashboards"
 msgstr "状态监控仪表板"
 
+#: input/pagecontent/endpoints.md:24
+msgid "The following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "以下是开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境的 <a0>GDHCN DID 信任列表</a0>端点："
+
+#: input/pagecontent/endpoints.md:40
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "以下是开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境的<a0>信任网络网关</a0>端点："
+
+#: input/pagecontent/endpoints.md:53
+msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "以下仪表板反映开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境中密钥材料的实时状态："
+
 #: input/pagecontent/endpoints.md:3
 msgid "The following describes the active services and endpoints for the GDHCN Trust Network Gateway."
 msgstr "以下描述 GDHCN 信任网络网关的现行服务和端点。"
@@ -179,15 +191,3 @@ msgstr "URL"
 #: input/pagecontent/endpoints.md:26
 msgid "Variant"
 msgstr "变体"
-
-#: input/pagecontent/endpoints.md:24
-msgid "The following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "以下是开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境的 <a0>GDHCN DID 信任列表</a0>端点："
-
-#: input/pagecontent/endpoints.md:40
-msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "以下是开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境的<a0>信任网络网关</a0>端点："
-
-#: input/pagecontent/endpoints.md:53
-msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "以下仪表板反映开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境中密钥材料的实时状态："

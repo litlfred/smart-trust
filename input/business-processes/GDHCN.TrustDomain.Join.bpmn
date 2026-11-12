@@ -43,7 +43,7 @@
       <bpmn:incoming>Flow_113</bpmn:incoming>
       <bpmn:outgoing>Flow_114</bpmn:outgoing>
     </bpmn:callActivity>
-    <bpmn:callActivity id="J.P.Live" name="Connect and test" calledElement="GDHCN.ONB.GoLive.Participant">
+    <bpmn:callActivity id="J.P.Live" name="Go live" calledElement="GDHCN.ONB.GoLive.Participant">
       <bpmn:documentation>Framework V.4.b-c and IX (user acceptance testing).</bpmn:documentation>
       <bpmn:incoming>Flow_114</bpmn:incoming>
       <bpmn:outgoing>Flow_115</bpmn:outgoing>

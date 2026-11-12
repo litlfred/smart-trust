@@ -34,11 +34,6 @@ msgstr "Se connecter et effectuer l'essai à blanc en UAT"
 msgid "Connect and run the readiness test in PROD"
 msgstr "Se connecter et effectuer le test de préparation en PROD"
 
-#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
-#. Diagram label
-msgid "Connect and test"
-msgstr "Se connecter et tester"
-
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
 msgid "Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]."
@@ -58,6 +53,11 @@ msgstr "Opérateur de la passerelle"
 #. Diagram label
 msgid "GDHCN Participant"
 msgstr "Participant au GDHCN"
+
+#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
+#. Diagram label
+msgid "Go live"
+msgstr "Passer en production"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:34
 #. Diagram label

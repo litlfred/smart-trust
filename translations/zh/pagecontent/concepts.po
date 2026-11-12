@@ -39,7 +39,7 @@ msgstr "联合国（UN）系统内的基金、规划署、专门机构或相关�
 msgid "A GDHCN Participant is participant of the Trust Network that adheres to the Terms of Participation and manages the necessary technical infrastructure and governance processes. GDHCN Participants are responsible for making bilateral determinations related to the utilization of Trusted Services."
 msgstr "GDHCN 参与方是遵守《参与条款》并管理必要技术基础设施和治理流程的信任网络参与方。GDHCN 参与方负责就可信服务的使用作出双边决定。"
 
-#: input/pagecontent/concepts.md:122
+#: input/pagecontent/concepts.md:125
 msgid "A GDHCN Participant's Backend System for managing the local part of information. The implementation of GDHCN Participant's Backend System is not in the scope of this document. A national backend can be also understood as a trusted party on-boarded in the Trust Network Gateway (can be a script, a proxy or a web server as well)."
 msgstr "GDHCN 参与方用于管理本地部分信息的后端系统。GDHCN 参与方后端系统的实现不在本文件范围之内。国家后端也可以理解为已入网信任网络网关的受信任方（也可以是脚本、代理或 Web 服务器）。"
 
@@ -51,7 +51,7 @@ msgstr "持有人是持有从签发方处获得的可验证数字健康证书的
 msgid "A Reciever is a system authorized by a Trust Network Participant to receive from a Holder a Veritifable verify, and utilize the content within."
 msgstr "接收方是经信任网络参与方授权的系统，用于从持有人处接收可验证（数字健康证书），对其进行验证并使用其中的内容。"
 
-#: input/pagecontent/concepts.md:144
+#: input/pagecontent/concepts.md:147
 msgid "A service (digital or otherwise) related to the issuance, management, verification, exchange, or other relevant processes, of Verifiable Digital Health Certificates which is defined using open, interoperable digital health standards."
 msgstr "与可验证数字健康证书的签发、管理、验证、交换或其他相关流程有关的服务（数字形式或其他形式），采用开放、可互操作的数字健康标准加以定义。"
 
@@ -63,7 +63,7 @@ msgstr "一套政策和监管标准，描述 GDHCN 参与方在运营可信服�
 msgid "a State Party recognized by the International Health Regulations, or sub-national unit thereof;"
 msgstr "《国际卫生条例》承认的缔约国，或其次国家级单位；"
 
-#: input/pagecontent/concepts.md:140
+#: input/pagecontent/concepts.md:143
 msgid "A system utilized by a GDHCN Participant to verify the digital signature of a Verifiable Digital Health Certificate."
 msgstr "GDHCN 参与方用于验证可验证数字健康证书数字签名的系统。"
 
@@ -147,7 +147,7 @@ msgstr "加密密钥证书治理"
 msgid "GDHCN Participant"
 msgstr "GDHCN 参与方"
 
-#: input/pagecontent/concepts.md:121
+#: input/pagecontent/concepts.md:124
 msgid "GDHCN Participant Backend System"
 msgstr "GDHCN 参与方后端系统"
 
@@ -243,15 +243,15 @@ msgstr "技术代表"
 msgid "Terms of Participation (TOP)"
 msgstr "参与条款（TOP）"
 
-#: input/pagecontent/concepts.md:127
+#: input/pagecontent/concepts.md:130
 msgid "The DECA public key certificate of a GDHCN Participants (could be more than one). The DECA is a certificate which acts a trust anchor in the verification of the certificate chain for the DESCs issued by a Trust Network Participant\""
 msgstr "GDHCN 参与方的 DECA 公钥证书（可以不止一个）。DECA 是一种证书，在验证由信任网络参与方签发的 DESCs 的证书链时充当信任锚\""
 
-#: input/pagecontent/concepts.md:125
+#: input/pagecontent/concepts.md:128
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one)."
 msgstr "GDHCN 参与方的 DSCA 公钥证书（可以不止一个）。"
 
-#: input/pagecontent/concepts.md:131
+#: input/pagecontent/concepts.md:134
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one). The DSCA is a certificate which acts a trust anchor in the verification of the certificate chain for the DSCs issued by a Trust Network Participant\""
 msgstr "GDHCN 参与方的 DSCA 公钥证书（可以不止一个）。DSCA 是一种证书，在验证由信任网络参与方签发的 DSCs 的证书链时充当信任锚\""
 
@@ -291,7 +291,7 @@ msgstr "有关加密密钥管理和使用的流程与技术规范，涉及可验
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
 msgstr "合格 GDHCN 参与方加入 GDHCN 信任网络所需的各项流程。入网流程顺利完成后，该合格 GDHCN 参与方应被视为 GDHCN 参与方。有时简称为“入网”。"
 
-#: input/pagecontent/concepts.md:137
+#: input/pagecontent/concepts.md:140
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
 msgstr "GDHCN 参与方用于对上传至 TNG 的数据包进行签名的公钥证书。"
 
@@ -299,23 +299,23 @@ msgstr "GDHCN 参与方用于对上传至 TNG 的数据包进行签名的公钥�
 msgid "The Public Key Infrastructure (PKI) is the trust model based on public key certificates and certificate authorities.  It is the means for publishing and distributing Trust Lists comprising the public keys that can be used to digitally verify the issuer of a Verifiable Digital Health Certificates."
 msgstr "公钥基础设施（PKI）是基于公钥证书和证书颁发机构的信任模型。它是发布和分发信任列表的手段，信任列表由可用于以数字方式验证可验证数字健康证书签发方的公钥组成。"
 
-#: input/pagecontent/concepts.md:151
+#: input/pagecontent/concepts.md:154
 msgid "The specific Verifiable Digital Health Certificates are defined in the <a0>Content Profiles</a0>"
 msgstr "具体的可验证数字健康证书在<a0>内容规范（Content Profiles）</a0>中定义"
 
-#: input/pagecontent/concepts.md:134
+#: input/pagecontent/concepts.md:137
 msgid "The TLS client authentication public key certificate of a GDHCN Participant's Backend System."
 msgstr "GDHCN 参与方后端系统的 TLS 客户端认证公钥证书。"
 
-#: input/pagecontent/concepts.md:116
+#: input/pagecontent/concepts.md:119
 msgid "The TLS server public key certificate of the TNG."
 msgstr "TNG 的 TLS 服务器公钥证书。"
 
-#: input/pagecontent/concepts.md:113
+#: input/pagecontent/concepts.md:116
 msgid "The Trust Anchor public key certificate of the TNG. The corresponding private key is used to sign the list of all SCA certificates offline."
 msgstr "TNG 的信任锚公钥证书。相应的私钥用于离线签署所有 SCA 证书的列表。"
 
-#: input/pagecontent/concepts.md:110
+#: input/pagecontent/concepts.md:113
 msgid "The Trust Network Gateway (TNG) is the open-source software and its IT operational infrastructure, utilizing open standards, for a Public Key Infrastructure and metadata management services which is used to operationalize one or more Trust Domains.  The Trust Network Gateway can be interacted with using the <a0>API</a0> once a mTLS connection has been established."
 msgstr "信任网络网关（TNG）是采用开放标准、用于公钥基础设施和元数据管理服务的开源软件及其 IT 运营基础设施，用于使一个或多个信任域投入运行。建立 mTLS 连接后，即可使用 <a0>API</a0> 与信任网络网关交互。"
 
@@ -356,50 +356,51 @@ msgid "Trust Lists"
 msgstr "信任列表"
 
 #: input/pagecontent/concepts.md:105
+#: input/pagecontent/concepts.md:109
 msgid "Trust Network"
 msgstr "信任网络"
 
-#: input/pagecontent/concepts.md:115
+#: input/pagecontent/concepts.md:118
 msgid "Trust Network Gateway - Transport Layer Security  (TNGTLS)"
 msgstr "信任网络网关 - 传输层安全  （TNGTLS）"
 
-#: input/pagecontent/concepts.md:112
+#: input/pagecontent/concepts.md:115
 msgid "Trust Network Gateway - Trust Anchor  (TNGTA)"
 msgstr "信任网络网关 - 信任锚  （TNGTA）"
 
-#: input/pagecontent/concepts.md:109
+#: input/pagecontent/concepts.md:112
 msgid "Trust Network Gateway (TNG)"
 msgstr "信任网络网关（TNG）"
 
-#: input/pagecontent/concepts.md:124
+#: input/pagecontent/concepts.md:127
 msgid "Trust Network Participant - Data Exchange Certificate Authority  (TNPDECA)"
 msgstr "信任网络参与方 - 数据交换证书颁发机构  （TNPDECA）"
 
-#: input/pagecontent/concepts.md:130
+#: input/pagecontent/concepts.md:133
 msgid "Trust Network Participant - Document Signing Certificate Authority  (TNPDSCA)"
 msgstr "信任网络参与方 - 文档签名证书颁发机构  （TNPDSCA）"
 
-#: input/pagecontent/concepts.md:133
+#: input/pagecontent/concepts.md:136
 msgid "Trust Network Participant - Transport Layer Security (TNPTLS)"
 msgstr "信任网络参与方 - 传输层安全（TNPTLS）"
 
-#: input/pagecontent/concepts.md:136
+#: input/pagecontent/concepts.md:139
 msgid "Trust Network Participant - Transport Layer Security (TNPUP)"
 msgstr "信任网络参与方 - 传输层安全（TNPUP）"
 
-#: input/pagecontent/concepts.md:118
+#: input/pagecontent/concepts.md:121
 msgid "Trust Network Participant (TNP)"
 msgstr "信任网络参与方（TNP）"
 
-#: input/pagecontent/concepts.md:119
+#: input/pagecontent/concepts.md:122
 msgid "Trust Network Participant (TNP) is an acronym used to label certificates, infrastructure, or technical artifacts made available by GDHCN Participants under the GDHCN Trust Network."
 msgstr "信任网络参与方（TNP）是一个缩写，用于标记 GDHCN 参与方在 GDHCN 信任网络下提供的证书、基础设施或技术制品。"
 
-#: input/pagecontent/concepts.md:139
+#: input/pagecontent/concepts.md:142
 msgid "Trust Network Participant Verifier"
 msgstr "信任网络参与方验证方"
 
-#: input/pagecontent/concepts.md:143
+#: input/pagecontent/concepts.md:146
 msgid "Trusted Service"
 msgstr "可信服务"
 
@@ -407,11 +408,11 @@ msgstr "可信服务"
 msgid "Universal verifier applications that support different credential standards are complicated by wide variability in format of the credential payloads, signatures, key formats, and key distribution methods. Public keys formats include x509 certificates, JSON Web Key Sets (JWKS), and DID documents. Signing key distribution methods include API gateways, hosted by issuer at a pre-defined URL, embedded in certificates, and by block-chain based resolution. Establishing root of trust by trust anchor or distributing trust list has been accomplished by API gateway, hosted URL, private dissemination and other bilateral sharing agreements."
 msgstr "支持不同凭证标准的通用验证方应用程序，因凭证载荷格式、签名、密钥格式和密钥分发方法差异很大而变得复杂。公钥格式包括 x509 证书、JSON Web 密钥集（JWKS）和 DID 文档。签名密钥分发方法包括 API 网关、由签发方托管于预定义 URL、嵌入证书中，以及基于区块链的解析。通过信任锚建立信任根或分发信任列表，已通过 API 网关、托管 URL、私下传播及其他双边共享协议得以实现。"
 
-#: input/pagecontent/concepts.md:148
+#: input/pagecontent/concepts.md:151
 msgid "Verifiable Digital Health Certificate"
 msgstr "可验证数字健康证书"
 
-#: input/pagecontent/concepts.md:149
+#: input/pagecontent/concepts.md:152
 msgid "Verifiable Digital Health Certificate: A digital representation of a data set comprising a certificate or document, designed for a set of specific clinical or public health use cases which is defined using open, interoperable digital health standards; that contains within, or is associated to, a digital signature which can be verified by the public key of a public-private encryption key pair, and which is issued by a GDHCN Participant."
 msgstr "可验证数字健康证书：由证书或文件构成的数据集的数字表示形式，面向一组特定的临床或公共卫生用例而设计，并采用开放、可互操作的数字健康标准加以定义；其内部包含或关联一个数字签名，该签名可通过一对公私加密密钥中的公钥进行验证，并由 GDHCN 参与方签发。"
 

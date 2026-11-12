@@ -128,6 +128,14 @@
       "graphTypologies": [
         "translation-sources"
       ]
+    },
+    {
+      "id": "onboarding-game",
+      "path": "onboarding-game/",
+      "graphTypologies": [
+        "web-app"
+      ],
+      "description": "The GDHCN onboarding game, \"Join the Network\" (Vite, TypeScript, three.js; Apache-2.0, from carlsbox/gdhcn-onboarding-game, see NOTICE). Declared by web-app.json and built and published by the harness's `apps` visualiser (Tool web-app-build) at <locale>/<harness>/apps/onboarding-game/, with no site chrome; nothing else on the site loads it. Its UI strings are translated through translations/<locale>/apps/ (smart-trust#176, Q-GAME-5)."
     }
   ],
   "avatar": {

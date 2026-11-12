@@ -35,11 +35,6 @@ msgstr "在 UAT 中连接并进行试运行"
 msgid "Connect and run the readiness test in PROD"
 msgstr "在 PROD 中连接并运行就绪测试"
 
-#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
-#. Diagram label
-msgid "Connect and test"
-msgstr "连接并测试"
-
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
 msgid "Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]."
@@ -59,6 +54,11 @@ msgstr "网关运营方"
 #. Diagram label
 msgid "GDHCN Participant"
 msgstr "GDHCN 参与方"
+
+#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
+#. Diagram label
+msgid "Go live"
+msgstr "上线"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:34
 #. Diagram label

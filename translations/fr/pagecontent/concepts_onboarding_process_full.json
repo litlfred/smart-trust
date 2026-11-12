@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/concepts_onboarding_process_full",
   "locale": "fr",
   "sourceFile": "input/pagecontent/concepts_onboarding_process_full.md",
-  "sourceHash": "f5d91444bdab",
+  "sourceHash": "68bd2bb16126",
   "potFile": "translations/fr/pagecontent/concepts_onboarding_process_full.pot",
   "poFile": "translations/fr/pagecontent/concepts_onboarding_process_full.po",
   "poIncludes": [
@@ -18,8 +18,8 @@
     "generator": "agent translation (smart-trust fr session)"
   },
   "coverage": {
-    "translated": 221,
-    "total": 221,
+    "translated": 222,
+    "total": 222,
     "pct": 100
   }
 }

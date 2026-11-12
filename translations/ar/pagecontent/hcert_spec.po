@@ -54,6 +54,10 @@ msgstr "######## 3.2.7.1.5 رابط صحي قابل للتحقق (VHL) يتيح 
 msgid "<a0>DDCC FHIR Implementation Guide</a0>"
 msgstr "<a0>دليل تنفيذ DDCC FHIR</a0>"
 
+#: input/pagecontent/hcert_spec.md:115
+msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
+msgstr "<a0>DDCC نتيجة الاختبار (DDCC:TR)</a0> يوثّق حالات الاستخدام ومتطلبات البيانات والمواصفات التقنية وإرشادات التنفيذ لشهادات نتائج الاختبار."
+
 #: input/pagecontent/hcert_spec.md:110
 msgid "<a0>DDCC Vaccination Status (DDCC:VS)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
 msgstr "<a0>DDCC حالة التطعيم (DDCC:VS)</a0> يوثّق حالات الاستخدام ومتطلبات البيانات والمواصفات التقنية وإرشادات التنفيذ لشهادات التطعيم."
@@ -578,7 +582,3 @@ msgstr "عند تصميم مخطط يستخدم هذه المواصفة، يجب
 #: input/pagecontent/hcert_spec.md:103
 msgid "While the <a0>logical model</a0> enlists assigned sub claims, the ones listed in this specification are considered authoritative"
 msgstr "رغم أن <a0>النموذج المنطقي</a0> يسرد المطالبات الفرعية المخصصة، فإن المطالبات المدرجة في هذه المواصفة تُعدّ هي المرجعية"
-
-#: input/pagecontent/hcert_spec.md:115
-msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
-msgstr "<a0>DDCC نتيجة الاختبار (DDCC:TR)</a0> يوثّق حالات الاستخدام ومتطلبات البيانات والمواصفات التقنية وإرشادات التنفيذ لشهادات نتائج الاختبار."

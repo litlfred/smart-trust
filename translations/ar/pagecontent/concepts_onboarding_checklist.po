@@ -925,6 +925,10 @@ msgstr "يمكن توليد شهادة DSC ورفع حزمة CMS إلى بواب
 msgid "The extendedKeyUsage field is optional, for Covid certificates the below values are recommend to be used to further restrict the DSC certificate as follows:"
 msgstr "الحقل extendedKeyUsage اختياري، ويُوصى في شهادات كوفيد باستخدام القيم أدناه لتقييد شهادة DSC بشكل أكبر على النحو التالي:"
 
+#: input/pagecontent/concepts_onboarding_checklist.md:606
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "فيما يلي نقاط النهاية الخاصة بـ <a0>بوابة شبكة الثقة</a0> لكلٍّ من بيئات التطوير (DEV) واختبار قبول المستخدم (UAT) والإنتاج (PROD):"
+
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
 msgstr "قُدِّمت ملفات الإعداد التالية أثناء المواءمة بشأن <a0>حوكمة الشهادات</a0>. وتحتوي ملفات الإعداد على حقول إضافية قد يرغب المشارك في شبكة الثقة في تضمينها واستخدامها. ولم تُختبر ملفات الإعداد هذه مع أوامر OpenSSL المقدَّمة أعلاه."
@@ -994,7 +998,7 @@ msgid "UAT"
 msgstr "UAT"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:244
-msgid "Unix/Linux:\tUse the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
+msgid "Unix/Linux:	Use the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
 msgstr "Unix/Linux:\tاستخدم البرنامج النصي <a0>gen_all_certs.sh</a0> الخاص بـ bash على نظام التشغيل <a1>Linux/Unix/Mac</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:320
@@ -1078,7 +1082,7 @@ msgid "Windows Users – cURL Certificate Validation Note:"
 msgstr "مستخدمو Windows – ملاحظة بشأن التحقق من الشهادات في cURL:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:246
-msgid "Windows:\t\tUse the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
+msgid "Windows:		Use the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
 msgstr "Windows:\t\tاستخدم البرنامج النصي <a0>gen_all_certs.ps1</a0> الخاص بـ PowerShell على نظام التشغيل <a1>Windows</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1049
@@ -1088,7 +1092,3 @@ msgstr "يمكنك أيضًا استخدام الخيار -S مع الأمر git
 #: input/pagecontent/concepts_onboarding_checklist.md:633
 msgid "You should see a output like:"
 msgstr "ينبغي أن ترى مخرجات مثل:"
-
-#: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "فيما يلي نقاط النهاية الخاصة بـ <a0>بوابة شبكة الثقة</a0> لكلٍّ من بيئات التطوير (DEV) واختبار قبول المستخدم (UAT) والإنتاج (PROD):"

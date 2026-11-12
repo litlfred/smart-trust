@@ -118,6 +118,21 @@ msgstr "وتوضح الأمثلة التالية السلوك المتوقَّع
 msgid "Canonical N-Quads sort lines by Unicode code point. Java's string order (UTF-16 code units) differs only for characters above U+FFFF, and no trust list document contains any. A verifier MAY refuse a document with such characters rather than guess the order."
 msgstr "ترتّب N-Quads القانونية الأسطرَ حسب نقطة الترميز في Unicode. ولا يختلف ترتيب السلاسل النصية في Java (وحدات ترميز UTF-16) إلا في المحارف التي تتجاوز U+FFFF، ولا تحتوي أي وثيقة من وثائق قوائم الثقة على أيٍّ منها. ويجوز (MAY) للجهة المُتحقِّقة رفض وثيقة تحتوي على مثل هذه المحارف بدلًا من تخمين الترتيب."
 
+#: input/pagecontent/concepts_did_gdhcn.md:48
+#, python-brace-format
+msgid "Contains trusted key material or DID references of a supported key usage type.   {code0} type is one of the key usages codes in the <a0>GDHCN Key Usage Value Set</a0>."
+msgstr "يحتوي على مواد المفاتيح الموثوقة أو مراجع DID لنوع مدعوم من أنواع استخدام المفاتيح.   نوع {code0} هو أحد رموز استخدام المفاتيح الواردة في <a0>مجموعة قيم استخدام المفاتيح في GDHCN</a0>."
+
+#: input/pagecontent/concepts_did_gdhcn.md:46
+#, python-brace-format
+msgid "Contains trusted key material or DID references of GDHCN for a supported trust domain.   {code0} should be one of the codes in the <a0>GDHCN Trust Domain Value Set</a0>."
+msgstr "يحتوي على مواد المفاتيح الموثوقة أو مراجع DID الخاصة بـ GDHCN لنطاق ثقة مدعوم.   ينبغي أن يكون {code0} أحد الرموز الواردة في <a0>مجموعة قيم نطاقات الثقة في GDHCN</a0>."
+
+#: input/pagecontent/concepts_did_gdhcn.md:47
+#, python-brace-format
+msgid "Contains trusted key material or DID references of GDHCN for a trusted participant.  {code0} should be one of the codes in the  <a0>GDHCN Participant Value Set</a0>."
+msgstr "يحتوي على مواد المفاتيح الموثوقة أو مراجع DID الخاصة بـ GDHCN لمشارك موثوق.  ينبغي أن يكون {code0} أحد الرموز الواردة في  <a0>مجموعة قيم المشاركين في GDHCN</a0>."
+
 #: input/pagecontent/concepts_did_gdhcn.md:165
 msgid "Content used by the signer"
 msgstr "المحتوى الذي يستخدمه الموقِّع"
@@ -155,6 +170,11 @@ msgstr "مسودة"
 msgid "Embedded"
 msgstr "مُضمَّنة"
 
+#: input/pagecontent/concepts_did_gdhcn.md:106
+#, python-brace-format
+msgid "Embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC with key matrial:"
+msgstr "قائمة الثقة المُضمَّنة لـ {code0}: DCC، و{code1}: XXA ونوع {code2} للمفتاح: DSC مع مواد المفاتيح:"
+
 #: input/pagecontent/concepts_did_gdhcn.md:22
 #: input/pagecontent/concepts_did_gdhcn.md:155
 #: input/pagecontent/concepts_did_gdhcn.md:192
@@ -173,6 +193,10 @@ msgstr "تحمل كل وثيقة DID لقائمة ثقة، مُضمَّنة كا
 #: input/pagecontent/concepts_did_gdhcn.md:80
 msgid "Example DID documents"
 msgstr "أمثلة على وثائق DID"
+
+#: input/pagecontent/concepts_did_gdhcn.md:20
+msgid "For each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments there is a trust list according to the following table:"
+msgstr "لكلٍّ من بيئات التطوير (DEV) واختبار قبول المستخدم (UAT) والإنتاج (PROD) قائمة ثقة وفقًا للجدول التالي:"
 
 #: input/pagecontent/concepts_did_gdhcn.md:1
 msgid "GDHCN Trustlists"
@@ -219,6 +243,11 @@ msgstr "الإنتاج"
 #: input/pagecontent/concepts_did_gdhcn.md:29
 msgid "Reference"
 msgstr "مرجعية"
+
+#: input/pagecontent/concepts_did_gdhcn.md:82
+#, python-brace-format
+msgid "Reference type DID document linking the embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC."
+msgstr "وثيقة DID من النوع المرجعي تربط بقائمة الثقة المُضمَّنة لـ {code0}: DCC، و{code1}: XXA ونوع {code2} للمفتاح: DSC."
 
 #: input/pagecontent/concepts_did_gdhcn.md:12
 msgid "Released"
@@ -325,9 +354,64 @@ msgstr "تُدار قوائم الثقة باستخدام GitHub وتُنشَر 
 msgid "This specification describes the publication of Global Digital Health Certification Network (GDHCN) key material as Decentralized Identifier (DID) documents. DIDs are specified by the <a0>W3C DID Core Specification</a0>. The <a1>DID concept</a1> summarizes the core drivers and usage of the DID format in scope of GDHCN."
 msgstr "تصف هذه المواصفة نشر مواد المفاتيح الخاصة بالشبكة العالمية لإصدار الشهادات الصحية الرقمية (GDHCN) في صورة وثائق المعرِّف اللامركزي (DID). ومعرِّفات DID محددة في <a0>مواصفة W3C الأساسية لمعرِّفات DID</a0>. ويلخّص <a1>مفهوم DID</a1> الدوافع الأساسية لصيغة DID واستخدامها ضمن نطاق GDHCN."
 
+#: input/pagecontent/concepts_did_gdhcn.md:64
+#, python-brace-format
+msgid "tng-cdn-who.int/v2/trustlist/-/- matches key material for all {code0}s and all {code1}s without filtering a specific {code2} type so the did.json may contain SCA and DSC keys."
+msgstr "يطابق tng-cdn-who.int/v2/trustlist/-/- مواد المفاتيح لجميع قيم {code0} وجميع قيم {code1} دون تصفية نوع {code2} معيّن، ولذلك قد يحتوي did.json على مفاتيح SCA وDSC."
+
+#: input/pagecontent/concepts_did_gdhcn.md:71
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json contains a reference to a DID the embedded trustlist that correlates to the selected {code3}, {code4} and key {code5} type and that contains the key material."
+msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json على مرجع إلى DID لقائمة الثقة المُضمَّنة المقابلة لقيم {code3} و{code4} ونوع {code5} للمفتاح المختارة، والتي تحتوي على مواد المفاتيح."
+
+#: input/pagecontent/concepts_did_gdhcn.md:70
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json contains all key {code2} type level DID document references as DID id for the selected {code3} and {code4}."
+msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json على جميع مراجع وثائق DID على مستوى نوع {code2} للمفتاح في صورة معرِّفات DID لقيمتَي {code3} و{code4} المختارتين."
+
+#: input/pagecontent/concepts_did_gdhcn.md:69
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json contains all {code1} level DID document references as DID id for the given {code2}."
+msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json على جميع مراجع وثائق DID على مستوى {code1} في صورة معرِّفات DID لقيمة {code2} المعطاة."
+
 #: input/pagecontent/concepts_did_gdhcn.md:68
 msgid "tng-cdn.who.int/v2/trustlist-ref/did.json contains all DID document references of the next sub-level as DID id."
 msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/did.json على جميع مراجع وثائق DID للمستوى الفرعي التالي في صورة معرِّفات DID."
+
+#: input/pagecontent/concepts_did_gdhcn.md:62
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json matches keys or references in all {code2}s for a specific {code3} and specific key {code4} type."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json المفاتيح أو المراجع في جميع قيم {code2} لقيمة {code3} محددة ونوع {code4} محدد للمفتاح."
+
+#: input/pagecontent/concepts_did_gdhcn.md:59
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches all key {code1} types across all {code2}s for a specific {code3}."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/-/{code0}/did.json جميع أنواع {code1} للمفاتيح عبر جميع قيم {code2} لقيمة {code3} محددة."
+
+#: input/pagecontent/concepts_did_gdhcn.md:61
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches key material or references for all {code1}s for a specific {code2} without filtering the key usage types."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/-/{code0}/did.json مواد المفاتيح أو المراجع لجميع قيم {code1} لقيمة {code2} محددة دون تصفية أنواع استخدام المفاتيح."
+
+#: input/pagecontent/concepts_did_gdhcn.md:63
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json matches keys for all {code2}s of a specific {code3} filtered by there key {code4} type."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json المفاتيح لجميع قيم {code2} لقيمة {code3} محددة مُصفّاةً حسب نوع {code4} للمفتاح."
+
+#: input/pagecontent/concepts_did_gdhcn.md:60
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json matches all keys for a specific key {code3} type for a given {code4} AND {code5}."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json جميع المفاتيح لنوع {code3} محدد للمفتاح لقيمة {code4} AND {code5} معطاة."
+
+#: input/pagecontent/concepts_did_gdhcn.md:58
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json matches all key {code2} types for a specific {code3} AND {code4}."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json جميع أنواع {code2} للمفاتيح لقيمة {code3} AND {code4} محددة."
+
+#: input/pagecontent/concepts_did_gdhcn.md:57
+#, python-brace-format
+msgid "tng-cdn.who.int/v2/trustlist/did.json matches all keys for all {code0}s, {code1}s and key {code2} types."
+msgstr "يطابق tng-cdn.who.int/v2/trustlist/did.json جميع المفاتيح لجميع قيم {code0} و{code1} وأنواع {code2} للمفاتيح."
 
 #: input/pagecontent/concepts_did_gdhcn.md:158
 #: input/pagecontent/concepts_did_gdhcn.md:159
@@ -377,87 +461,3 @@ msgstr "يقدّم الإصدار 2.0.0 متغيِّرين من قوائم ال�
 #, python-brace-format
 msgid "W3C DID v1 context, sha256 {code0}"
 msgstr "سياق W3C DID v1، بقيمة sha256 {code0}"
-
-#: input/pagecontent/concepts_did_gdhcn.md:48
-#, python-brace-format
-msgid "Contains trusted key material or DID references of a supported key usage type.   {code0} type is one of the key usages codes in the <a0>GDHCN Key Usage Value Set</a0>."
-msgstr "يحتوي على مواد المفاتيح الموثوقة أو مراجع DID لنوع مدعوم من أنواع استخدام المفاتيح.   نوع {code0} هو أحد رموز استخدام المفاتيح الواردة في <a0>مجموعة قيم استخدام المفاتيح في GDHCN</a0>."
-
-#: input/pagecontent/concepts_did_gdhcn.md:46
-#, python-brace-format
-msgid "Contains trusted key material or DID references of GDHCN for a supported trust domain.   {code0} should be one of the codes in the <a0>GDHCN Trust Domain Value Set</a0>."
-msgstr "يحتوي على مواد المفاتيح الموثوقة أو مراجع DID الخاصة بـ GDHCN لنطاق ثقة مدعوم.   ينبغي أن يكون {code0} أحد الرموز الواردة في <a0>مجموعة قيم نطاقات الثقة في GDHCN</a0>."
-
-#: input/pagecontent/concepts_did_gdhcn.md:47
-#, python-brace-format
-msgid "Contains trusted key material or DID references of GDHCN for a trusted participant.  {code0} should be one of the codes in the  <a0>GDHCN Participant Value Set</a0>."
-msgstr "يحتوي على مواد المفاتيح الموثوقة أو مراجع DID الخاصة بـ GDHCN لمشارك موثوق.  ينبغي أن يكون {code0} أحد الرموز الواردة في  <a0>مجموعة قيم المشاركين في GDHCN</a0>."
-
-#: input/pagecontent/concepts_did_gdhcn.md:106
-#, python-brace-format
-msgid "Embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC with key matrial:"
-msgstr "قائمة الثقة المُضمَّنة لـ {code0}: DCC، و{code1}: XXA ونوع {code2} للمفتاح: DSC مع مواد المفاتيح:"
-
-#: input/pagecontent/concepts_did_gdhcn.md:20
-msgid "For each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments there is a trust list according to the following table:"
-msgstr "لكلٍّ من بيئات التطوير (DEV) واختبار قبول المستخدم (UAT) والإنتاج (PROD) قائمة ثقة وفقًا للجدول التالي:"
-
-#: input/pagecontent/concepts_did_gdhcn.md:82
-#, python-brace-format
-msgid "Reference type DID document linking the embedded trustlist for {code0}: DCC, {code1}: XXA and key {code2} type: DSC."
-msgstr "وثيقة DID من النوع المرجعي تربط بقائمة الثقة المُضمَّنة لـ {code0}: DCC، و{code1}: XXA ونوع {code2} للمفتاح: DSC."
-
-#: input/pagecontent/concepts_did_gdhcn.md:64
-#, python-brace-format
-msgid "tng-cdn-who.int/v2/trustlist/-/- matches key material for all {code0}s and all {code1}s without filtering a specific {code2} type so the did.json may contain SCA and DSC keys."
-msgstr "يطابق tng-cdn-who.int/v2/trustlist/-/- مواد المفاتيح لجميع قيم {code0} وجميع قيم {code1} دون تصفية نوع {code2} معيّن، ولذلك قد يحتوي did.json على مفاتيح SCA وDSC."
-
-#: input/pagecontent/concepts_did_gdhcn.md:71
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json contains a reference to a DID the embedded trustlist that correlates to the selected {code3}, {code4} and key {code5} type and that contains the key material."
-msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/{code2}/did.json على مرجع إلى DID لقائمة الثقة المُضمَّنة المقابلة لقيم {code3} و{code4} ونوع {code5} للمفتاح المختارة، والتي تحتوي على مواد المفاتيح."
-
-#: input/pagecontent/concepts_did_gdhcn.md:70
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json contains all key {code2} type level DID document references as DID id for the selected {code3} and {code4}."
-msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/{code0}/{code1}/did.json على جميع مراجع وثائق DID على مستوى نوع {code2} للمفتاح في صورة معرِّفات DID لقيمتَي {code3} و{code4} المختارتين."
-
-#: input/pagecontent/concepts_did_gdhcn.md:69
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json contains all {code1} level DID document references as DID id for the given {code2}."
-msgstr "يحتوي tng-cdn.who.int/v2/trustlist-ref/{code0}/did.json على جميع مراجع وثائق DID على مستوى {code1} في صورة معرِّفات DID لقيمة {code2} المعطاة."
-
-#: input/pagecontent/concepts_did_gdhcn.md:62
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json matches keys or references in all {code2}s for a specific {code3} and specific key {code4} type."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/-/{code0}/{code1}/did.json المفاتيح أو المراجع في جميع قيم {code2} لقيمة {code3} محددة ونوع {code4} محدد للمفتاح."
-
-#: input/pagecontent/concepts_did_gdhcn.md:59
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches all key {code1} types across all {code2}s for a specific {code3}."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/-/{code0}/did.json جميع أنواع {code1} للمفاتيح عبر جميع قيم {code2} لقيمة {code3} محددة."
-
-#: input/pagecontent/concepts_did_gdhcn.md:61
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/-/{code0}/did.json matches key material or references for all {code1}s for a specific {code2} without filtering the key usage types."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/-/{code0}/did.json مواد المفاتيح أو المراجع لجميع قيم {code1} لقيمة {code2} محددة دون تصفية أنواع استخدام المفاتيح."
-
-#: input/pagecontent/concepts_did_gdhcn.md:63
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json matches keys for all {code2}s of a specific {code3} filtered by there key {code4} type."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/{code0}/-/{code1}/did.json المفاتيح لجميع قيم {code2} لقيمة {code3} محددة مُصفّاةً حسب نوع {code4} للمفتاح."
-
-#: input/pagecontent/concepts_did_gdhcn.md:60
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json matches all keys for a specific key {code3} type for a given {code4} AND {code5}."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/{code0}/{code1}/{code2}/did.json جميع المفاتيح لنوع {code3} محدد للمفتاح لقيمة {code4} AND {code5} معطاة."
-
-#: input/pagecontent/concepts_did_gdhcn.md:58
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json matches all key {code2} types for a specific {code3} AND {code4}."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/{code0}/{code1}/did.json جميع أنواع {code2} للمفاتيح لقيمة {code3} AND {code4} محددة."
-
-#: input/pagecontent/concepts_did_gdhcn.md:57
-#, python-brace-format
-msgid "tng-cdn.who.int/v2/trustlist/did.json matches all keys for all {code0}s, {code1}s and key {code2} types."
-msgstr "يطابق tng-cdn.who.int/v2/trustlist/did.json جميع المفاتيح لجميع قيم {code0} و{code1} وأنواع {code2} للمفاتيح."
