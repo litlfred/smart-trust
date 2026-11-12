@@ -67,10 +67,6 @@ msgstr "[13] GitHub 机器人用户的邀请必须由 WHO 在邀请发出后 7 �
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] TNP 已按照 WHO 的要求和治理准备好入网，并已在申请函 [文件 16] 中汇集以下信息："
 
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] 申请函由 WHO 接收并处理。TNP 。"
-
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
 msgstr "[16 - 17] 对获准为 TNP 提供密钥材料的指定人员的验证和确认，通过以下不同渠道之一进行："
@@ -932,3 +928,14 @@ msgstr "WHO 作为公钥基础设施的信任锚（《框架》第 VI.6 部分�
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "您应看到类似以下的输出："
+
+#: input/pagecontent/concepts_onboarding_process_full.md:165
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr ""
+
+#: input/pagecontent/concepts_onboarding_process_full.md:21
+msgid "To try onboarding hands-on, play <a0>Join the Network</a0>, a simulation in which a sample country onboards to the GDHCN one choice at a time. Its steps are the processes on this page."
+msgstr "如需亲身体验加入过程，请玩<a0>Join the Network</a0>：这是一个模拟游戏，一个示例国家一步一个选择地加入 GDHCN。游戏中的步骤就是本页所述的流程。"
+
+#~ msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
+#~ msgstr "[15] 申请函由 WHO 接收并处理。TNP 。"

@@ -80,10 +80,6 @@ msgstr "[13] يجب أن تقبل منظمة الصحة العالمية (WHO) �
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] يكون TNP جاهزًا للانضمام وفقًا لمتطلبات منظمة الصحة العالمية (WHO) وحوكمتها، وقد جمع المعلومات التالية في خطاب الطلب [المستند 16]:"
 
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] تتلقى منظمة الصحة العالمية (WHO) خطاب الطلب وتعالجه. TNP ."
-
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
 msgstr "[16 - 17] يجري التحقق من الأشخاص المسمَّين المخوَّلين بتقديم مواد المفاتيح الخاصة بـ TNP وتأكيد هويتهم عبر إحدى القنوات المختلفة التالية:"
@@ -945,3 +941,14 @@ msgstr "منظمة الصحة العالمية (WHO) بوصفها مرسى ال�
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "ينبغي أن ترى مُخرَجًا مثل:"
+
+#: input/pagecontent/concepts_onboarding_process_full.md:165
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr ""
+
+#: input/pagecontent/concepts_onboarding_process_full.md:21
+msgid "To try onboarding hands-on, play <a0>Join the Network</a0>, a simulation in which a sample country onboards to the GDHCN one choice at a time. Its steps are the processes on this page."
+msgstr "لتجربة الانضمام عمليًا، العب <a0>Join the Network</a0>، وهي محاكاة ينضم فيها بلد نموذجي إلى GDHCN خيارًا تلو الآخر. خطواتها هي العمليات الواردة في هذه الصفحة."
+
+#~ msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
+#~ msgstr "[15] تتلقى منظمة الصحة العالمية (WHO) خطاب الطلب وتعالجه. TNP ."
