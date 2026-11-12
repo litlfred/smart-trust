@@ -298,7 +298,7 @@
       "trustedScripts": [
         "hcert-demo/hcert-demo.js"
       ],
-      "trustedObjects": [
+      "trustedSvgs": [
         "GDHCN.ONB.svg",
         "GDHCN.ONB.Apply.svg",
         "GDHCN.ONB.PrepareKeys.svg",
