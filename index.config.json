@@ -50,7 +50,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "8602c8b53e0fbe04536c99731f5fe1fe2c38c746",
+          "ref": "419a8743eddc988fc079f54be3f371219b69d808",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -85,7 +85,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "8602c8b53e0fbe04536c99731f5fe1fe2c38c746",
+              "ref": "419a8743eddc988fc079f54be3f371219b69d808",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             },
             "standing": {
@@ -104,7 +104,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "9c39de71cdf7fcb173d73121f97ffddbe4f1973c",
+          "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -114,8 +114,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "9c39de71cdf7fcb173d73121f97ffddbe4f1973c",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881); fhir-harness re-pinned to d14158f (fhir-harness#394, trustedSvgs) on the owner's ask, 2026-11-12: \"merge 394 when green\" (session_01EucfRogoVaMWCJtobp379B)"
             },
             "standing": {
               "follows": "main",
@@ -133,7 +133,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "2d16e8697f2c07cf0dd28818f9b054bf9458f7a6",
+          "ref": "19208f3f878ce4debc05c33d20f8019844002df4",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -149,7 +149,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "2d16e8697f2c07cf0dd28818f9b054bf9458f7a6",
+              "ref": "19208f3f878ce4debc05c33d20f8019844002df4",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             },
             "standing": {
@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "5244c319cd2f7e2fb19a1f5fe9942cc70a15fd38",
+          "ref": "fbe255e126f4d4e0ce25812e3e5b133cf393a7cc",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -184,7 +184,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "5244c319cd2f7e2fb19a1f5fe9942cc70a15fd38",
+              "ref": "fbe255e126f4d4e0ce25812e3e5b133cf393a7cc",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             },
             "standing": {
@@ -203,7 +203,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "371dd58542434209c287fe6f06905175170a6d7e",
+          "ref": "d30c2f5ff324dc90a1c6862942d56413a76ae925",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -216,7 +216,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "371dd58542434209c287fe6f06905175170a6d7e",
+              "ref": "d30c2f5ff324dc90a1c6862942d56413a76ae925",
               "evidence": "litlfred, 2026-11-12 09:08Z project chat: 'ASAP even if breaks'; card Q-GAME-MRG A (tools#1947 merged 371dd585): pin smart-trust tools to the web-app mount fix"
             },
             "standing": {
@@ -235,7 +235,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "f5c124f1a8067ce16b42fd251380c6d67e426374",
+          "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -245,7 +245,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "f5c124f1a8067ce16b42fd251380c6d67e426374",
+              "ref": "531a96d2adddec62c2363e125c19d6648a07fc11",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             },
             "standing": {
