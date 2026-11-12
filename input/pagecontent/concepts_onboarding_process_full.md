@@ -18,6 +18,8 @@ It is highly recommended:
 
 The processes are listed by phase: [Top level](#top-level), [Phase 1: apply and be verified](#phase-1), [Phase 2: register the keys](#phase-2), [Phase 3: go live](#phase-3), [After onboarding](#after-onboarding). A process that is reused later is listed under the phase where it first runs.
 
+To try onboarding hands-on, play [*Join the Network*](en/cat-harness/apps/onboarding-game/), a simulation in which a sample country onboards to the GDHCN one choice at a time. Its steps are the processes on this page.
+
 ##### Actors
 
 Each lane is one actor, defined as an ActorDefinition of this guide.

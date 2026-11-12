@@ -67,10 +67,6 @@ msgstr "[13] Приглашение для пользователя-бота Git
 msgid "[14] TNP is ready for onboarding according to WHO requirements and governance and has collected the following information in the Letter of Application [Document 16]:"
 msgstr "[14] TNP готов к подключению в соответствии с требованиями и правилами управления ВОЗ и собрал в Письме-заявке [Документ 16] следующую информацию:"
 
-#: input/pagecontent/concepts_onboarding_process_full.md:163
-msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
-msgstr "[15] Письмо-заявка получено и обработано ВОЗ. TNP ."
-
 #: input/pagecontent/concepts_onboarding_process_full.md:165
 msgid "[16 - 17] The verification and confirmation of the named people that are allowed to provide the key material for the TNP takes place through either of different channels:"
 msgstr "[16 - 17] Проверка и подтверждение указанных лиц, которым разрешено предоставлять ключевой материал от имени TNP, осуществляются по одному из следующих каналов:"
@@ -932,3 +928,14 @@ msgstr "ВОЗ как якорь доверия для инфраструкту�
 #: input/pagecontent/concepts_onboarding_process_full.md:294
 msgid "You should see an output like:"
 msgstr "Вы увидите примерно следующий вывод:"
+
+#: input/pagecontent/concepts_onboarding_process_full.md:165
+msgid "[15] The Letter of Application is received and processed by WHO."
+msgstr ""
+
+#: input/pagecontent/concepts_onboarding_process_full.md:21
+msgid "To try onboarding hands-on, play <a0>Join the Network</a0>, a simulation in which a sample country onboards to the GDHCN one choice at a time. Its steps are the processes on this page."
+msgstr "Чтобы попробовать подключение на практике, сыграйте в <a0>Join the Network</a0> — симуляцию, в которой условная страна шаг за шагом присоединяется к GDHCN. Её шаги — это процессы, описанные на этой странице."
+
+#~ msgid "[15] The Letter of Application is received and processed by WHO. The TNP ."
+#~ msgstr "[15] Письмо-заявка получено и обработано ВОЗ. TNP ."
