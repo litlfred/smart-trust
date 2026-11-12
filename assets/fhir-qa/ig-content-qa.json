@@ -1,0 +1,16 @@
+{
+  "$schema": "ig-content-qa-verdict/v1",
+  "items": 1841,
+  "contentDigest": "sha256:e49307c770b5ebf991f693649ec21e75a77a51d6b00411e239391a7166c52f5b",
+  "patternHits": [],
+  "reviewedDigest": "sha256:e49307c770b5ebf991f693649ec21e75a77a51d6b00411e239391a7166c52f5b",
+  "reviewer": {
+    "kind": "agent",
+    "name": "claude"
+  },
+  "reviewedAt": "2026-11-12T11:21:09.320Z",
+  "ok": true,
+  "state": "reviewed",
+  "openFindings": [],
+  "said": "1841 text(s) reviewed by agent claude at 2026-11-12T11:21:09.320Z; no pattern hit, no open finding"
+}

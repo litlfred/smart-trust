@@ -78,7 +78,7 @@
       "en": "DEV Participant XXJ"
     },
     "XXK": {
-      "en": "Rengo"
+      "en": "Onesa"
     },
     "XXN": {
       "en": "DEV Participant XXN"
@@ -93,7 +93,7 @@
       "en": "Test Locality"
     },
     "XXR": {
-      "en": "Mumbai"
+      "en": "Taifafeki"
     },
     "XXT": {
       "en": "Geneva"
@@ -221,5 +221,5 @@
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants-DEV",
   "fhir:version": "1.7.5",
-  "fhir:expansionTimestamp": "2026-11-01T20:48:20+00:00"
+  "fhir:expansionTimestamp": "2026-11-12T12:59:55+00:00"
 }

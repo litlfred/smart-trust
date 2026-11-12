@@ -6,9 +6,9 @@
   "source": {
     "kind": "sushi-config",
     "of": "https://github.com/litlfred/smart-trust",
-    "ref": "1400e509b7a7130c6e237ad7d7535d605fb8b83f",
+    "ref": "204aa7b963675a2852dc15ef15cdc5c4630a48fc",
     "path": "sushi-config.yaml",
-    "readAt": "2026-11-01"
+    "readAt": "2026-11-12"
   },
   "groups": [
     {
@@ -148,8 +148,8 @@
           "href": "artifacts.html"
         },
         {
-          "label": "References",
-          "href": "references.html"
+          "label": "Bibliography",
+          "href": "en/folio-assistant-core/bibliography/"
         },
         {
           "label": "Mappings",

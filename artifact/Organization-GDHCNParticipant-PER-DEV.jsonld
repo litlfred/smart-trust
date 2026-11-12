@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "$schema": "folio-ig-artifact-jsonld/v1",
-  "@id": "Organization-GDHCNParticipant-PER-DEV.jsonld",
+  "@id": "Organization-GDHCNParticipant-PER-DEV",
   "@type": "fhir:Organization",
   "dcterms:identifier": "Organization/GDHCNParticipant-PER-DEV",
   "dcterms:title": "GDHCNParticipant-PER-DEV",
@@ -17,16 +17,24 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "../ast-data/resources/Organization/GDHCNParticipant-PER-DEV--3f376efa.json"
+        "@id": "../Organization-GDHCNParticipant-PER-DEV.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust/9f29356e85541e4e64195199857e42e98cb76670/resources/Organization/GDHCNParticipant-PER-DEV.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
     }
   ],
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "3736afc6dd0ef0a6614f5c061289bb838aa727f9"
+    "prov:used": "e700aa53f97663696dcc7a2fffaa10e7ab37633b"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",

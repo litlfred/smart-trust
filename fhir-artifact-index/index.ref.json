@@ -1,0 +1,7 @@
+{
+  "$schema": "fhir-artifact-index-ref/v1",
+  "index": "https://raw.githubusercontent.com/litlfred/smart-trust/9f29356e85541e4e64195199857e42e98cb76670/fhir-artifact-index/index.json",
+  "base": "https://raw.githubusercontent.com/litlfred/smart-trust/9f29356e85541e4e64195199857e42e98cb76670/",
+  "repository": "litlfred/smart-trust",
+  "commit": "9f29356e85541e4e64195199857e42e98cb76670"
+}
