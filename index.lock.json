@@ -29,7 +29,7 @@
     {
       "harness": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "ref": "d152164ce504cccb5567c4141a29be236c23f369"
+      "ref": "371dd58542434209c287fe6f06905175170a6d7e"
     },
     {
       "harness": "bootstrap",
@@ -145,7 +145,7 @@
     {
       "instance": "cat-harness-tools",
       "repository": "litlfred/cat-harness-tools",
-      "sha": "d152164ce504cccb5567c4141a29be236c23f369",
+      "sha": "371dd58542434209c287fe6f06905175170a6d7e",
       "upstreamRoot": "",
       "path": "cat-harness-tools",
       "via": "cat-harness-tools",
@@ -159,7 +159,7 @@
           "id": "*",
           "path": "cat-harness-tools",
           "upstreamPath": ".",
-          "treeDigest": "0f22c08aa9008559907e61be0454382d906cd1373368b28669038e932e0f2a68",
+          "treeDigest": "3c7dc190af88ad052be163616872f206d092d5eb24ec6e36c654a5b45a9efac0",
           "files": 3693
         }
       ],
@@ -167,7 +167,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-12",
-        "ref": "d152164ce504cccb5567c4141a29be236c23f369",
+        "ref": "371dd58542434209c287fe6f06905175170a6d7e",
         "approver": "unverified"
       }
     },
@@ -217,13 +217,12 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "91c9408a3dbe00e263b4ba076aa452f399af3c0863aeb9a30ac8a1b670a3388e",
-          "files": 1588,
+          "treeDigest": "517c214734b927e09b24b345be8c7006343057d2aeae682b637d1f7b4bd0e8c7",
+          "files": 6408,
           "except": [
             "board",
             "dsa",
-            "library-extras",
-            "library/corpus"
+            "library-extras"
           ]
         }
       ],
