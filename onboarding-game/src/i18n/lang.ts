@@ -1,5 +1,6 @@
 /**
- * Site language. Source order: ?lang=<code> in the URL (then remembered), else the remembered choice in
+ * Site language. Source order: ?lang=<code> in the URL (then remembered), else the /<locale>/ of the
+ * site page that opened the game (then remembered; see fromReferrer), else the remembered choice in
  * localStorage, else the browser's first supported language, else English. Changing it stores the
  * choice and reloads the page, because the scenario text is filled in once at start-up.
  *
@@ -18,6 +19,29 @@ const KEY = 'gdhcn-lang';
 
 export const isLang = (v: unknown): v is Lang => typeof v === 'string' && (LOCALES as readonly string[]).includes(v);
 
+const REF_KEY = 'gdhcn-lang-referrer';
+
+/**
+ * The language of the site page that opened the game, once per arrival. smart-trust's translated
+ * pages live under /<locale>/ and link to the one English route of the game with no ?lang, so a
+ * reader coming from /fr/home.html should land in French whatever their browser says. Same-origin
+ * only. A reload keeps document.referrer, so the referrer is applied once per tab (sessionStorage):
+ * a switch made in the game after arriving is not undone by the next reload. Without
+ * sessionStorage it is not applied at all, rather than applied on every reload.
+ */
+function fromReferrer(): Lang | null {
+  try {
+    const r = document.referrer;
+    if (!r) return null;
+    const u = new URL(r);
+    if (u.origin !== location.origin || u.pathname === location.pathname) return null;
+    if (sessionStorage.getItem(REF_KEY) === r) return null;
+    sessionStorage.setItem(REF_KEY, r);
+    const seg = u.pathname.split('/').find((s) => isLang(s));
+    return isLang(seg) ? seg : null;
+  } catch { return null; /* no document, bad URL or blocked storage */ }
+}
+
 function detect(): Lang {
   try {
     const q = new URLSearchParams(location.search).get('lang');
@@ -26,6 +50,11 @@ function detect(): Lang {
       return q;
     }
   } catch { /* no location (build tooling) */ }
+  const page = fromReferrer();
+  if (page) {
+    try { localStorage.setItem(KEY, page); } catch { /* blocked storage: it still wins for this load */ }
+    return page;
+  }
   try {
     const s = localStorage.getItem(KEY);
     if (isLang(s)) return s;
