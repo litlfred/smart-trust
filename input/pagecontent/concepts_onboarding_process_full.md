@@ -18,6 +18,8 @@ It is highly recommended:
 
 The processes are listed by phase: [Top level](#top-level), [Phase 1: apply and be verified](#phase-1), [Phase 2: register the keys](#phase-2), [Phase 3: go live](#phase-3), [After onboarding](#after-onboarding). A process that is reused later is listed under the phase where it first runs.
 
+To try onboarding hands-on, play [*Join the Network*](en/cat-harness/apps/onboarding-game/), a simulation in which a sample country onboards to the GDHCN one choice at a time. Its steps are the processes on this page.
+
 ##### Actors
 
 Each lane is one actor, defined as an ActorDefinition of this guide.
@@ -52,7 +54,7 @@ Onboard a GDHCN Participant to a Trust Domain, in three phases: apply and verify
 Framework V.4, VI.5 and IX. Calls: [Apply and be verified](#gdhcn-onb-apply), [Go live](#gdhcn-onb-golive), [Register the keys](#gdhcn-onb-registerkeys). Called by: no other process. BPMN file: [GDHCN.ONB.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.svg" alt="Onboard a Participant (top level)" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Onboard a Participant (top level)"><img src="GDHCN.ONB.svg" alt="Onboard a Participant (top level)" style="width:100%;"/></object>
 </figure>
 
 <a name="phase-1"></a>
@@ -93,7 +95,7 @@ For a successful connection to the Trust Network Gateway there are the following
 Framework V.4 and IX. Calls: [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Verify the Letter of Application](#gdhcn-onb-verifyletter). Called by: [Onboard a Participant (top level)](#gdhcn-onb). BPMN file: [GDHCN.ONB.Apply.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.Apply.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.Apply.svg" alt="Apply and be verified" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.Apply.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Apply and be verified"><img src="GDHCN.ONB.Apply.svg" alt="Apply and be verified" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-preparekeys"></a>
@@ -142,7 +144,7 @@ The key must meet the [GPG key requirements](concepts_certificate_governance.htm
 Framework V.4.c, VII.4-5 and IX. Calls: no other process. Called by: [Apply and be verified](#gdhcn-onb-apply), [Change the keys or the representatives](#gdhcn-onb-changekeys). BPMN file: [GDHCN.ONB.PrepareKeys.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.PrepareKeys.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.PrepareKeys.svg" alt="Prepare the keys and the repository" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.PrepareKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Prepare the keys and the repository"><img src="GDHCN.ONB.PrepareKeys.svg" alt="Prepare the keys and the repository" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-verifyletter"></a>
@@ -198,7 +200,7 @@ When the Letter of Application is received, identification of individuals take p
 Framework V.4.a-b and IX. Calls: [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter). Called by: [Apply and be verified](#gdhcn-onb-apply), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys). BPMN file: [GDHCN.ONB.VerifyLetter.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.VerifyLetter.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.VerifyLetter.svg" alt="Verify the Letter of Application" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.VerifyLetter.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Verify the Letter of Application"><img src="GDHCN.ONB.VerifyLetter.svg" alt="Verify the Letter of Application" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-conveyletter"></a>
@@ -209,7 +211,7 @@ Convey a Letter of Application through a secure channel.
 Framework IX. Calls: no other process. Called by: [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Change the keys or the representatives](#gdhcn-onb-changekeys). BPMN file: [GDHCN.ONB.ConveyLetter.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.ConveyLetter.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.ConveyLetter.svg" alt="Convey the Letter through a secure channel" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.ConveyLetter.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Convey the Letter through a secure channel"><img src="GDHCN.ONB.ConveyLetter.svg" alt="Convey the Letter through a secure channel" style="width:100%;"/></object>
 </figure>
 
 <a name="phase-2"></a>
@@ -245,7 +247,7 @@ Register a Participant's keys for one environment.
 Calls: no other process. Called by: [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join), [Change the keys or the representatives](#gdhcn-onb-changekeys). BPMN file: [GDHCN.ONB.RegisterKeys.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.RegisterKeys.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.RegisterKeys.svg" alt="Register the keys" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.RegisterKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Register the keys"><img src="GDHCN.ONB.RegisterKeys.svg" alt="Register the keys" style="width:100%;"/></object>
 </figure>
 
 <a name="phase-3"></a>
@@ -266,7 +268,7 @@ Connect to the gateway and pass the tests, in UAT and then PROD.
 Calls: [Connect and test](#gdhcn-onb-connecttest). Called by: [Onboard a Participant (top level)](#gdhcn-onb), [Join a further Trust Domain](#gdhcn-trustdomain-join). BPMN file: [GDHCN.ONB.GoLive.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.GoLive.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.GoLive.svg" alt="Go live" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.GoLive.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Go live"><img src="GDHCN.ONB.GoLive.svg" alt="Go live" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-connecttest"></a>
@@ -403,7 +405,7 @@ f) Upload it again in case the DSC is required
 Calls: no other process. Called by: [Go live](#gdhcn-onb-golive). BPMN file: [GDHCN.ONB.ConnectTest.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.ConnectTest.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.ConnectTest.svg" alt="Connect and test" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.ConnectTest.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Connect and test"><img src="GDHCN.ONB.ConnectTest.svg" alt="Connect and test" style="width:100%;"/></object>
 </figure>
 
 <a name="after-onboarding"></a>
@@ -424,7 +426,7 @@ Join a further Trust Domain once onboarded.
 Framework V.4 and IX. Calls: [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Go live](#gdhcn-onb-golive), [Register the keys](#gdhcn-onb-registerkeys). Called by: no other process. BPMN file: [GDHCN.TrustDomain.Join.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.TrustDomain.Join.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.TrustDomain.Join.svg" alt="Join a further Trust Domain" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.TrustDomain.Join.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Join a further Trust Domain"><img src="GDHCN.TrustDomain.Join.svg" alt="Join a further Trust Domain" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-changekeys"></a>
@@ -435,7 +437,7 @@ Change the keys or the representatives after onboarding.
 Framework IX. Calls: [Prepare the keys and the repository](#gdhcn-onb-preparekeys), [Convey the Letter through a secure channel](#gdhcn-onb-conveyletter), [Verify the Letter of Application](#gdhcn-onb-verifyletter), [Register the keys](#gdhcn-onb-registerkeys). Called by: no other process. BPMN file: [GDHCN.ONB.ChangeKeys.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.ChangeKeys.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.ChangeKeys.svg" alt="Change the keys or the representatives" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.ChangeKeys.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Change the keys or the representatives"><img src="GDHCN.ONB.ChangeKeys.svg" alt="Change the keys or the representatives" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-trustdomain-propose"></a>
@@ -446,7 +448,7 @@ Propose a new Trust Domain and have it approved.
 Framework V.3, VI.2-3 and XI. Calls: no other process. Called by: no other process. BPMN file: [GDHCN.TrustDomain.Propose.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.TrustDomain.Propose.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.TrustDomain.Propose.svg" alt="Propose a new Trust Domain" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.TrustDomain.Propose.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="Propose a new Trust Domain"><img src="GDHCN.TrustDomain.Propose.svg" alt="Propose a new Trust Domain" style="width:100%;"/></object>
 </figure>
 
 <a name="gdhcn-onb-terminate"></a>
@@ -457,7 +459,7 @@ End participation in one or more Trust Domains.
 Framework XV.1-3. Calls: no other process. Called by: no other process. BPMN file: [GDHCN.ONB.Terminate.bpmn](https://github.com/litlfred/smart-trust/blob/main/input/business-processes/GDHCN.ONB.Terminate.bpmn).
 
 <figure style="width:100%">
-  <img src="GDHCN.ONB.Terminate.svg" alt="End participation" style="width:100%; max-width:1400px;"/>
+  <object data="GDHCN.ONB.Terminate.svg" type="image/svg+xml" style="width:100%; max-width:1400px;" aria-label="End participation"><img src="GDHCN.ONB.Terminate.svg" alt="End participation" style="width:100%;"/></object>
 </figure>
 
 <a name="original-drawing"></a>

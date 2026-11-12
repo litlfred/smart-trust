@@ -20,7 +20,7 @@ msgstr "Validation dynamique des règles métier"
 
 #: input/pagecontent/sequence-diagrams.md:20
 msgid "Federated PKD Aggregation"
-msgstr "Agrégation fédérée des PKD"
+msgstr "Agrégation du PKD fédéré"
 
 #: input/pagecontent/sequence-diagrams.md:24
 msgid "Federated Verification"

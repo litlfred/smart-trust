@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/hcert_spec",
   "locale": "fr",
   "sourceFile": "input/pagecontent/hcert_spec.md",
-  "sourceHash": "79ee15846eb1",
+  "sourceHash": "b07504ed345b",
   "potFile": "translations/fr/pagecontent/hcert_spec.pot",
   "poFile": "translations/fr/pagecontent/hcert_spec.po",
   "poIncludes": [

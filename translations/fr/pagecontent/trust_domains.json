@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/trust_domains",
   "locale": "fr",
   "sourceFile": "input/pagecontent/trust_domains.md",
-  "sourceHash": "e00b2a9a58da",
+  "sourceHash": "d1cac96c89f9",
   "potFile": "translations/fr/pagecontent/trust_domains.pot",
   "poFile": "translations/fr/pagecontent/trust_domains.po",
   "poIncludes": [

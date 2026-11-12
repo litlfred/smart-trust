@@ -38,7 +38,7 @@ msgstr "un fonds, un programme, une institution spécialisée ou une organisatio
 msgid "A GDHCN Participant is participant of the Trust Network that adheres to the Terms of Participation and manages the necessary technical infrastructure and governance processes. GDHCN Participants are responsible for making bilateral determinations related to the utilization of Trusted Services."
 msgstr "Un Participant au GDHCN est un participant au Réseau de confiance qui respecte les Conditions de participation et gère l’infrastructure technique et les processus de gouvernance nécessaires. Les Participants au GDHCN sont chargés de prendre des décisions bilatérales concernant l’utilisation des Services de confiance."
 
-#: input/pagecontent/concepts.md:122
+#: input/pagecontent/concepts.md:125
 msgid "A GDHCN Participant's Backend System for managing the local part of information. The implementation of GDHCN Participant's Backend System is not in the scope of this document. A national backend can be also understood as a trusted party on-boarded in the Trust Network Gateway (can be a script, a proxy or a web server as well)."
 msgstr "Système dorsal d’un Participant au GDHCN servant à gérer la partie locale des informations. La mise en œuvre du Système dorsal du Participant au GDHCN n’entre pas dans le champ du présent document. Un système dorsal national peut également être compris comme une partie de confiance intégrée à la Passerelle du réseau de confiance (il peut aussi s’agir d’un script, d’un proxy ou d’un serveur web)."
 
@@ -50,7 +50,7 @@ msgstr "Un Titulaire est une personne qui a en sa possession un Certificat numé
 msgid "A Reciever is a system authorized by a Trust Network Participant to receive from a Holder a Veritifable verify, and utilize the content within."
 msgstr "Un Destinataire est un système autorisé par un Participant au réseau de confiance à recevoir d’un Titulaire un Certificat numérique de santé vérifiable, à le vérifier et à en utiliser le contenu."
 
-#: input/pagecontent/concepts.md:144
+#: input/pagecontent/concepts.md:147
 msgid "A service (digital or otherwise) related to the issuance, management, verification, exchange, or other relevant processes, of Verifiable Digital Health Certificates which is defined using open, interoperable digital health standards."
 msgstr "Service (numérique ou autre) lié à l’émission, à la gestion, à la vérification, à l’échange ou à d’autres processus pertinents concernant les Certificats numériques de santé vérifiables, et défini à l’aide de normes de santé numérique ouvertes et interopérables."
 
@@ -62,7 +62,7 @@ msgstr "un ensemble de normes politiques et réglementaires décrivant le compor
 msgid "a State Party recognized by the International Health Regulations, or sub-national unit thereof;"
 msgstr "un État Partie reconnu par le Règlement sanitaire international, ou une de ses entités infranationales ;"
 
-#: input/pagecontent/concepts.md:140
+#: input/pagecontent/concepts.md:143
 msgid "A system utilized by a GDHCN Participant to verify the digital signature of a Verifiable Digital Health Certificate."
 msgstr "Système utilisé par un Participant au GDHCN pour vérifier la signature numérique d’un Certificat numérique de santé vérifiable."
 
@@ -146,7 +146,7 @@ msgstr "Gouvernance des certificats de clés de chiffrement"
 msgid "GDHCN Participant"
 msgstr "Participant au GDHCN"
 
-#: input/pagecontent/concepts.md:121
+#: input/pagecontent/concepts.md:124
 msgid "GDHCN Participant Backend System"
 msgstr "Système dorsal du Participant au GDHCN"
 
@@ -204,7 +204,7 @@ msgstr "Une fois admis au GDHCN, à l’issue concluante du Processus d’intég
 
 #: input/pagecontent/concepts.md:28
 msgid "Participation in the GDHCN is subject to the Onboarding Process set forth by the GDHCN Secretariat in its sole and absolute discretion, and in accordance with WHO rules, regulations, policies and practices, as may be amended from time to time. The requirements for the GDHCN Terms of Participation are comprised of the following components:"
-msgstr "La participation au GDHCN est soumise au Processus d’intégration établi par le Secrétariat du GDHCN à sa seule et entière discrétion, et conformément aux règles, règlements, politiques et pratiques de l’OMS, tels qu’ils peuvent être modifiés à tout moment. Les exigences des Conditions de participation au GDHCN comprennent les éléments suivants :"
+msgstr "La participation au GDHCN est soumise au Processus d’intégration établi par le Secrétariat du GDHCN à sa seule et entière discrétion, et conformément aux règles, règlements, politiques et pratiques de l’OMS, tels qu’ils peuvent être modifiés de temps à autre. Les exigences des Conditions de participation au GDHCN comprennent les éléments suivants :"
 
 #: input/pagecontent/concepts.md:60
 msgid "Public Health Agency"
@@ -242,15 +242,15 @@ msgstr "Représentant technique"
 msgid "Terms of Participation (TOP)"
 msgstr "Conditions de participation (TOP)"
 
-#: input/pagecontent/concepts.md:127
+#: input/pagecontent/concepts.md:130
 msgid "The DECA public key certificate of a GDHCN Participants (could be more than one). The DECA is a certificate which acts a trust anchor in the verification of the certificate chain for the DESCs issued by a Trust Network Participant\""
 msgstr "Le certificat de clé publique DECA d’un Participant au GDHCN (il peut y en avoir plusieurs). Le DECA est un certificat qui joue le rôle d’ancre de confiance dans la vérification de la chaîne de certificats des DESC émis par un Participant au réseau de confiance\""
 
-#: input/pagecontent/concepts.md:125
+#: input/pagecontent/concepts.md:128
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one)."
 msgstr "Le certificat de clé publique DSCA d’un Participant au GDHCN (il peut y en avoir plusieurs)."
 
-#: input/pagecontent/concepts.md:131
+#: input/pagecontent/concepts.md:134
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one). The DSCA is a certificate which acts a trust anchor in the verification of the certificate chain for the DSCs issued by a Trust Network Participant\""
 msgstr "Le certificat de clé publique DSCA d’un Participant au GDHCN (il peut y en avoir plusieurs). Le DSCA est un certificat qui joue le rôle d’ancre de confiance dans la vérification de la chaîne de certificats des DSC émis par un Participant au réseau de confiance\""
 
@@ -290,7 +290,7 @@ msgstr "Processus et spécifications techniques relatifs à la gestion et à l�
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
 msgstr "Processus requis pour qu’un Participant admissible au GDHCN rejoigne le Réseau de confiance du GDHCN. À l’issue concluante du Processus d’intégration, le Participant admissible au GDHCN est considéré comme un Participant au GDHCN. Parfois appelé simplement « Intégration »."
 
-#: input/pagecontent/concepts.md:137
+#: input/pagecontent/concepts.md:140
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
 msgstr "Le certificat de clé publique qu’un Participant au GDHCN utilise pour signer les paquets de données téléversés vers la TNG."
 
@@ -298,23 +298,23 @@ msgstr "Le certificat de clé publique qu’un Participant au GDHCN utilise pour
 msgid "The Public Key Infrastructure (PKI) is the trust model based on public key certificates and certificate authorities.  It is the means for publishing and distributing Trust Lists comprising the public keys that can be used to digitally verify the issuer of a Verifiable Digital Health Certificates."
 msgstr "L’Infrastructure à clés publiques (ICP) est le modèle de confiance fondé sur les certificats de clé publique et les autorités de certification. C’est le moyen de publier et de distribuer les Listes de confiance comprenant les clés publiques qui peuvent être utilisées pour vérifier numériquement l’émetteur d’un Certificat numérique de santé vérifiable."
 
-#: input/pagecontent/concepts.md:151
+#: input/pagecontent/concepts.md:154
 msgid "The specific Verifiable Digital Health Certificates are defined in the <a0>Content Profiles</a0>"
 msgstr "Les Certificats numériques de santé vérifiables spécifiques sont définis dans les <a0>Profils de contenu</a0>"
 
-#: input/pagecontent/concepts.md:134
+#: input/pagecontent/concepts.md:137
 msgid "The TLS client authentication public key certificate of a GDHCN Participant's Backend System."
 msgstr "Le certificat de clé publique d’authentification client TLS du Système dorsal d’un Participant au GDHCN."
 
-#: input/pagecontent/concepts.md:116
+#: input/pagecontent/concepts.md:119
 msgid "The TLS server public key certificate of the TNG."
 msgstr "Le certificat de clé publique de serveur TLS de la TNG."
 
-#: input/pagecontent/concepts.md:113
+#: input/pagecontent/concepts.md:116
 msgid "The Trust Anchor public key certificate of the TNG. The corresponding private key is used to sign the list of all SCA certificates offline."
 msgstr "Le certificat de clé publique d’ancre de confiance de la TNG. La clé privée correspondante sert à signer hors ligne la liste de tous les certificats SCA."
 
-#: input/pagecontent/concepts.md:110
+#: input/pagecontent/concepts.md:113
 msgid "The Trust Network Gateway (TNG) is the open-source software and its IT operational infrastructure, utilizing open standards, for a Public Key Infrastructure and metadata management services which is used to operationalize one or more Trust Domains.  The Trust Network Gateway can be interacted with using the <a0>API</a0> once a mTLS connection has been established."
 msgstr "La Passerelle du réseau de confiance (TNG) est le logiciel libre et son infrastructure informatique d’exploitation, fondés sur des normes ouvertes, assurant une Infrastructure à clés publiques et des services de gestion des métadonnées, et utilisés pour rendre opérationnels un ou plusieurs Domaines de confiance. Il est possible d’interagir avec la Passerelle du réseau de confiance au moyen de l’<a0>API</a0> une fois qu’une connexion mTLS a été établie."
 
@@ -344,7 +344,7 @@ msgstr "TOP3 Conformité aux normes politiques et réglementaires des Participan
 
 #: input/pagecontent/concepts.md:34
 msgid "TOP4 Provision of supporting documentation (e.g. mandate, legal framework) demonstrating that it is an Eligible GDHCN Participant, as may be requested by WHO, at its sole discretion, from time to time."
-msgstr "TOP4 Fourniture de pièces justificatives (p. ex. mandat, cadre juridique) démontrant qu’il s’agit d’un Participant admissible au GDHCN, selon ce que l’OMS peut demander, à sa seule discrétion, à tout moment."
+msgstr "TOP4 Fourniture de pièces justificatives (p. ex. mandat, cadre juridique) démontrant qu’il s’agit d’un Participant admissible au GDHCN, selon ce que l’OMS peut demander, à sa seule discrétion, de temps à autre."
 
 #: input/pagecontent/concepts.md:90
 msgid "Trust Domain"
@@ -355,50 +355,51 @@ msgid "Trust Lists"
 msgstr "Listes de confiance"
 
 #: input/pagecontent/concepts.md:105
+#: input/pagecontent/concepts.md:109
 msgid "Trust Network"
 msgstr "Réseau de confiance"
 
-#: input/pagecontent/concepts.md:115
+#: input/pagecontent/concepts.md:118
 msgid "Trust Network Gateway - Transport Layer Security  (TNGTLS)"
 msgstr "Passerelle du réseau de confiance - Sécurité de la couche de transport  (TNGTLS)"
 
-#: input/pagecontent/concepts.md:112
+#: input/pagecontent/concepts.md:115
 msgid "Trust Network Gateway - Trust Anchor  (TNGTA)"
 msgstr "Passerelle du réseau de confiance - Ancre de confiance  (TNGTA)"
 
-#: input/pagecontent/concepts.md:109
+#: input/pagecontent/concepts.md:112
 msgid "Trust Network Gateway (TNG)"
 msgstr "Passerelle du réseau de confiance (TNG)"
 
-#: input/pagecontent/concepts.md:124
+#: input/pagecontent/concepts.md:127
 msgid "Trust Network Participant - Data Exchange Certificate Authority  (TNPDECA)"
 msgstr "Participant au réseau de confiance - Autorité de certification d’échange de données  (TNPDECA)"
 
-#: input/pagecontent/concepts.md:130
+#: input/pagecontent/concepts.md:133
 msgid "Trust Network Participant - Document Signing Certificate Authority  (TNPDSCA)"
 msgstr "Participant au réseau de confiance - Autorité de certification de signature de documents  (TNPDSCA)"
 
-#: input/pagecontent/concepts.md:133
+#: input/pagecontent/concepts.md:136
 msgid "Trust Network Participant - Transport Layer Security (TNPTLS)"
 msgstr "Participant au réseau de confiance - Sécurité de la couche de transport (TNPTLS)"
 
-#: input/pagecontent/concepts.md:136
+#: input/pagecontent/concepts.md:139
 msgid "Trust Network Participant - Transport Layer Security (TNPUP)"
 msgstr "Participant au réseau de confiance - Sécurité de la couche de transport (TNPUP)"
 
-#: input/pagecontent/concepts.md:118
+#: input/pagecontent/concepts.md:121
 msgid "Trust Network Participant (TNP)"
 msgstr "Participant au réseau de confiance (TNP)"
 
-#: input/pagecontent/concepts.md:119
+#: input/pagecontent/concepts.md:122
 msgid "Trust Network Participant (TNP) is an acronym used to label certificates, infrastructure, or technical artifacts made available by GDHCN Participants under the GDHCN Trust Network."
 msgstr "Participant au réseau de confiance (TNP) est un acronyme utilisé pour désigner les certificats, l’infrastructure ou les artefacts techniques mis à disposition par les Participants au GDHCN dans le cadre du Réseau de confiance du GDHCN."
 
-#: input/pagecontent/concepts.md:139
+#: input/pagecontent/concepts.md:142
 msgid "Trust Network Participant Verifier"
 msgstr "Vérificateur du Participant au réseau de confiance"
 
-#: input/pagecontent/concepts.md:143
+#: input/pagecontent/concepts.md:146
 msgid "Trusted Service"
 msgstr "Service de confiance"
 
@@ -406,11 +407,11 @@ msgstr "Service de confiance"
 msgid "Universal verifier applications that support different credential standards are complicated by wide variability in format of the credential payloads, signatures, key formats, and key distribution methods. Public keys formats include x509 certificates, JSON Web Key Sets (JWKS), and DID documents. Signing key distribution methods include API gateways, hosted by issuer at a pre-defined URL, embedded in certificates, and by block-chain based resolution. Establishing root of trust by trust anchor or distributing trust list has been accomplished by API gateway, hosted URL, private dissemination and other bilateral sharing agreements."
 msgstr "Les applications de vérification universelles qui prennent en charge différentes normes de justificatifs sont compliquées par la grande variabilité du format des charges utiles des justificatifs, des signatures, des formats de clés et des méthodes de distribution des clés. Les formats de clés publiques comprennent les certificats x509, les ensembles de clés web JSON (JWKS) et les documents DID. Les méthodes de distribution des clés de signature comprennent les passerelles API, l’hébergement par l’émetteur à une URL prédéfinie, l’intégration dans des certificats et la résolution fondée sur la chaîne de blocs. L’établissement de la racine de confiance par une ancre de confiance ou par la distribution d’une liste de confiance a été réalisé au moyen de passerelles API, d’URL hébergées, de diffusion privée et d’autres accords de partage bilatéraux."
 
-#: input/pagecontent/concepts.md:148
+#: input/pagecontent/concepts.md:151
 msgid "Verifiable Digital Health Certificate"
 msgstr "Certificat numérique de santé vérifiable"
 
-#: input/pagecontent/concepts.md:149
+#: input/pagecontent/concepts.md:152
 msgid "Verifiable Digital Health Certificate: A digital representation of a data set comprising a certificate or document, designed for a set of specific clinical or public health use cases which is defined using open, interoperable digital health standards; that contains within, or is associated to, a digital signature which can be verified by the public key of a public-private encryption key pair, and which is issued by a GDHCN Participant."
 msgstr "Certificat numérique de santé vérifiable : représentation numérique d’un ensemble de données constituant un certificat ou un document, conçue pour un ensemble de cas d’usage cliniques ou de santé publique précis et définie à l’aide de normes de santé numérique ouvertes et interopérables ; qui contient, ou à laquelle est associée, une signature numérique pouvant être vérifiée au moyen de la clé publique d’une paire de clés de chiffrement publique-privée, et qui est émise par un Participant au GDHCN."
 

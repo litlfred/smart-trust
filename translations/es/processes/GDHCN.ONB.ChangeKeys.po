@@ -17,27 +17,27 @@ msgstr ""
 #: input/business-processes/GDHCN.ONB.ChangeKeys.bpmn:129
 #. Diagram element documentation
 msgid "As phase 2 of onboarding."
-msgstr "Como fase 2 de la incorporación."
+msgstr "Como en la fase 2 de la incorporación."
 
 #: input/business-processes/GDHCN.ONB.ChangeKeys.bpmn:144
 #. Diagram element documentation
 msgid "As phase 2, for each changed environment."
-msgstr "Como fase 2, para cada entorno modificado."
+msgstr "Como en la fase 2, para cada entorno modificado."
 
 #: input/business-processes/GDHCN.ONB.ChangeKeys.bpmn:114
 #. Diagram element documentation
 msgid "As step [30]."
-msgstr "Como paso [30]."
+msgstr "Como en el paso [30]."
 
 #: input/business-processes/GDHCN.ONB.ChangeKeys.bpmn:109
 #. Diagram element documentation
 msgid "As steps [15]-[23]."
-msgstr "Como pasos [15]-[23]."
+msgstr "Como en los pasos [15]-[23]."
 
 #: input/business-processes/GDHCN.ONB.ChangeKeys.bpmn:57
 #. Diagram element documentation
 msgid "As steps [9]-[13]."
-msgstr "Como pasos [9]-[13]."
+msgstr "Como en los pasos [9]-[13]."
 
 #: input/business-processes/GDHCN.ONB.ChangeKeys.bpmn:80
 #. Diagram element documentation

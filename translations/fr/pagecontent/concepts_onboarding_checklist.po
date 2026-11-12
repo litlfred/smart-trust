@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.450Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, no human sign-off)\n"
-"Language-Team: French (unofficial)\n"
 "Language: fr\n"
+"Language-Team: French (unofficial)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -426,7 +426,7 @@ msgstr "Pour PROD, il est recommandé d’utiliser uniquement un <a0>certificat 
 
 #: input/pagecontent/concepts_onboarding_checklist.md:331
 msgid "For production, It is strongly recommended to use certificates signed by a trusted Certificate Authority (CA). This is just an example reference on how to use a Trusted CA certificate in a production environment. You should refer to the specific procedures provided by the public Trusted Certificate Authority (CA) of your choice for accurate and detailed instructions <a0>Reference- Recommendation to use Trusted Public CA Certificate in Prod</a0>"
-msgstr "Pour la production, il est vivement recommandé d’utiliser des certificats signés par une autorité de certification (CA) de confiance. Il ne s’agit ici que d’un exemple de référence sur la manière d’utiliser un certificat d’une CA de confiance dans un environnement de production. Vous devez vous reporter aux procédures spécifiques fournies par l’autorité de certification (CA) publique de confiance de votre choix pour obtenir des instructions exactes et détaillées <a0>Référence – Recommandation d’utiliser un certificat d’une CA publique de confiance en PROD</a0>"
+msgstr "Pour la production, il est vivement recommandé d’utiliser des certificats signés par une autorité de certification (CA) de confiance. Il ne s’agit ici que d’un exemple de référence sur la manière d’utiliser un certificat d’une CA de confiance dans un environnement de production. Vous devriez vous reporter aux procédures spécifiques fournies par l’autorité de certification (CA) publique de confiance de votre choix pour obtenir des instructions exactes et détaillées <a0>Référence – Recommandation d’utiliser un certificat d’une CA publique de confiance en PROD</a0>"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:270
 msgid "For Windows, use the <a0>gen_all_certs.ps1</a0> PowerShell script. You can modify the environment variables directly within the script or set them in your current PowerShell session:"
@@ -911,6 +911,10 @@ msgstr "La génération du DSC et le téléversement du paquet CMS vers la passe
 msgid "The extendedKeyUsage field is optional, for Covid certificates the below values are recommend to be used to further restrict the DSC certificate as follows:"
 msgstr "Le champ extendedKeyUsage est facultatif ; pour les certificats COVID, il est recommandé d’utiliser les valeurs ci-dessous afin de restreindre davantage le certificat DSC, comme suit :"
 
+#: input/pagecontent/concepts_onboarding_checklist.md:606
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Voici les points de terminaison de la <a0>passerelle du réseau de confiance</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
+
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
 msgstr "Les fichiers de configuration suivants ont été fournis lors de l’alignement sur la <a0>gouvernance des certificats</a0>. Ils contiennent des champs supplémentaires qu’un participant au réseau de confiance pourrait souhaiter inclure et utiliser. Ces fichiers de configuration n’ont pas été testés avec les commandes OpenSSL fournies ci-dessus."
@@ -980,7 +984,7 @@ msgid "UAT"
 msgstr "UAT"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:244
-msgid "Unix/Linux:\tUse the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
+msgid "Unix/Linux:	Use the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
 msgstr "Unix/Linux :\tutilisez le script bash <a0>gen_all_certs.sh</a0> sur un système d’exploitation <a1>Linux/Unix/Mac</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:320
@@ -1064,7 +1068,7 @@ msgid "Windows Users – cURL Certificate Validation Note:"
 msgstr "Utilisateurs de Windows – remarque sur la validation des certificats avec cURL :"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:246
-msgid "Windows:\t\tUse the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
+msgid "Windows:		Use the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
 msgstr "Windows :\t\tutilisez le script PowerShell <a0>gen_all_certs.ps1</a0> sur un système d’exploitation <a1>Windows</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1049
@@ -1074,7 +1078,3 @@ msgstr "Vous pouvez également utiliser l’option -S avec la commande git merge
 #: input/pagecontent/concepts_onboarding_checklist.md:633
 msgid "You should see a output like:"
 msgstr "Vous devriez obtenir une sortie semblable à celle-ci :"
-
-#: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "Voici les points de terminaison de la <a0>passerelle du réseau de confiance</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"

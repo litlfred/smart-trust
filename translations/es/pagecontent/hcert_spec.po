@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.488Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, unreviewed)\n"
-"Language-Team: es\n"
 "Language: es\n"
+"Language-Team: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,6 +39,10 @@ msgstr "######## 3.2.7.1.5 Enlace sanitario verificable (VHL) Un enlace sanitari
 #: input/pagecontent/hcert_spec.md:116
 msgid "<a0>DDCC FHIR Implementation Guide</a0>"
 msgstr "<a0>Guía de implementación FHIR de la DDCC</a0>"
+
+#: input/pagecontent/hcert_spec.md:115
+msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
+msgstr "<a0>DDCC Test Result (DDCC:TR)</a0> documenta los casos de uso, los requisitos de datos, las especificaciones técnicas y las orientaciones de implementación para los certificados de resultados de pruebas."
 
 #: input/pagecontent/hcert_spec.md:110
 msgid "<a0>DDCC Vaccination Status (DDCC:VS)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
@@ -564,7 +568,3 @@ msgstr "Al diseñar un esquema basado en esta especificación, deben tenerse en 
 #: input/pagecontent/hcert_spec.md:103
 msgid "While the <a0>logical model</a0> enlists assigned sub claims, the ones listed in this specification are considered authoritative"
 msgstr "Aunque el <a0>modelo lógico</a0> enumera las subdeclaraciones asignadas, las que figuran en esta especificación se consideran autoritativas"
-
-#: input/pagecontent/hcert_spec.md:115
-msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
-msgstr "<a0>DDCC Resultado de prueba (DDCC:TR)</a0> documenta los casos de uso, los requisitos de datos, las especificaciones técnicas y las orientaciones de implementación para los certificados de resultados de pruebas."

@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/disclaimer",
   "locale": "fr",
   "sourceFile": "input/pagecontent/disclaimer.md",
-  "sourceHash": "7f78e7763308",
+  "sourceHash": "06480e758544",
   "potFile": "translations/fr/pagecontent/disclaimer.pot",
   "poFile": "translations/fr/pagecontent/disclaimer.po",
   "poIncludes": [

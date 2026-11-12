@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.474Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, no human sign-off)\n"
-"Language-Team: French (unofficial)\n"
 "Language: fr\n"
+"Language-Team: French (unofficial)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,6 +133,18 @@ msgstr "Référence"
 msgid "Status Monitoring Dashboards"
 msgstr "Tableaux de bord de suivi de l’état"
 
+#: input/pagecontent/endpoints.md:24
+msgid "The following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Voici les points de terminaison de la <a0>liste de confiance DID du GDHCN</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
+
+#: input/pagecontent/endpoints.md:40
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Voici les points de terminaison de la <a0>passerelle du réseau de confiance</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
+
+#: input/pagecontent/endpoints.md:53
+msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Les tableaux de bord suivants reflètent en temps réel l’état des éléments de clé pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
+
 #: input/pagecontent/endpoints.md:3
 msgid "The following describes the active services and endpoints for the GDHCN Trust Network Gateway."
 msgstr "Ce qui suit décrit les services et points de terminaison actifs de la passerelle du réseau de confiance du GDHCN."
@@ -178,15 +190,3 @@ msgstr "URL"
 #: input/pagecontent/endpoints.md:26
 msgid "Variant"
 msgstr "Variante"
-
-#: input/pagecontent/endpoints.md:24
-msgid "The following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "Voici les points de terminaison de la <a0>liste de confiance DID du GDHCN</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
-
-#: input/pagecontent/endpoints.md:40
-msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "Voici les points de terminaison de la <a0>passerelle du réseau de confiance</a0> pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"
-
-#: input/pagecontent/endpoints.md:53
-msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
-msgstr "Les tableaux de bord suivants reflètent en temps réel l’état des éléments clés pour chacun des environnements de développement (DEV), de test d’acceptation par les utilisateurs (UAT) et de production (PROD) :"

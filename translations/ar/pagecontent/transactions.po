@@ -21,8 +21,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.508Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: smart-trust agent (drafted, unofficial)\n"
-"Language-Team: Arabic\n"
 "Language: ar\n"
+"Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,6 +32,11 @@ msgstr ""
 #: input/pagecontent/transactions.md:33
 msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN specification</a1> specification."
 msgstr "<a0>المعرِّفات اللامركزية</a0> (DID) وفقًا لمواصفة <a1>مواصفة GDHCN</a1>."
+
+#: input/pagecontent/transactions.md:49
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
+msgstr "ينشر المشارك في شبكة الثقة المفاتيح إلى بوابة شبكة الثقة لكي تستخدمها تطبيقات التحقق. ويمكن ترميز المفاتيح لأغراض متنوعة، بما في ذلك اتباع <a0>حوكمة الشهادات</a0> وفقًا لـ <a1>{code0}</a1> و<a2>{code1}</a2> الثقة الخاصين بها"
 
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"
@@ -113,7 +118,7 @@ msgstr "ينبغي استرجاع المفاتيح باستخدام مواصفة
 
 #: input/pagecontent/transactions.md:15
 msgid "Local PKD onboarding (one-time). Onboarding may include evaluating Local PKD format, providing the Federated PKD access, and signing of business agreements."
-msgstr "انضمام دليل PKD المحلي (لمرة واحدة). وقد يشمل الانضمام تقييم صيغة دليل PKD المحلي، ومنح دليل PKD الاتحادي صلاحية الوصول، وتوقيع اتفاقات العمل."
+msgstr "انضمام دليل PKD المحلي (لمرة واحدة). وقد يشمل الانضمام تقييم صيغة دليل PKD المحلي، ومنح دليل PKD الاتحادي صلاحية الوصول، وتوقيع اتفاقات الأعمال."
 
 #: input/pagecontent/transactions.md:16
 msgid "Local PKD public keys are mirrored (periodic)"
@@ -346,8 +351,3 @@ msgstr "يتحقق من أصالة قاعدة العمل"
 #: input/pagecontent/transactions.md:92
 msgid "Verifying"
 msgstr "التحقق"
-
-#: input/pagecontent/transactions.md:49
-#, python-brace-format
-msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
-msgstr "ينشر المشارك في شبكة الثقة المفاتيح إلى بوابة شبكة الثقة لكي تستخدمها تطبيقات التحقق. ويمكن ترميز المفاتيح لأغراض متنوعة، بما في ذلك اتباع <a0>حوكمة الشهادات</a0> وفقًا لـ <a1>{code0}</a1> و<a2>{code1}</a2> الثقة الخاصين بها"

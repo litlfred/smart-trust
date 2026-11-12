@@ -37,23 +37,23 @@ msgstr "В <a0>версии 2.0 спецификации публикации DI
 
 #: input/pagecontent/concepts_did.md:9
 msgid "SHALL be cacheable"
-msgstr "ДОЛЖЕН поддерживать кэширование"
+msgstr "ДОЛЖЕН (SHALL) поддерживать кэширование"
 
 #: input/pagecontent/concepts_did.md:7
 msgid "SHALL be convertible from each existing trust network's formats"
-msgstr "ДОЛЖЕН допускать преобразование из форматов каждой существующей сети доверия"
+msgstr "ДОЛЖЕН (SHALL) допускать преобразование из форматов каждой существующей сети доверия"
 
 #: input/pagecontent/concepts_did.md:10
 msgid "SHALL be mergeable (trust list operators can integrate each other's entries)"
-msgstr "ДОЛЖЕН допускать объединение (операторы списков доверия могут включать записи друг друга)"
+msgstr "ДОЛЖЕН (SHALL) допускать объединение (операторы списков доверия могут включать записи друг друга)"
 
 #: input/pagecontent/concepts_did.md:11
 msgid "SHALL be usable by all stakeholders required to verify health credentials in their operations"
-msgstr "ДОЛЖЕН быть пригоден для использования всеми заинтересованными сторонами, которым в ходе своей деятельности необходимо проверять медицинские удостоверения"
+msgstr "ДОЛЖЕН (SHALL) быть пригоден для использования всеми заинтересованными сторонами, которым в ходе своей деятельности необходимо проверять медицинские удостоверения"
 
 #: input/pagecontent/concepts_did.md:8
 msgid "SHALL describe a key-to-trust-anchor path for all specifications"
-msgstr "ДОЛЖЕН описывать путь от ключа к якорю доверия для всех спецификаций"
+msgstr "ДОЛЖЕН (SHALL) описывать путь от ключа к якорю доверия для всех спецификаций"
 
 #: input/pagecontent/concepts_did.md:6
 msgid "The common trust list specification defines the lowest common denominator format that can interoperate between all included specifications and can support the minimal required features from each specification. This includes considering the minimum security requirements that satisfy each of the specifications. It was designed taking into account the following tenets:"

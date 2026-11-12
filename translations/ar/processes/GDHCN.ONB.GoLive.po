@@ -48,11 +48,6 @@ msgstr "الربط وإجراء التشغيل التجريبي في UAT"
 msgid "Connect and run the readiness test in PROD"
 msgstr "الربط وإجراء اختبار الجاهزية في PROD"
 
-#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
-#. Diagram label
-msgid "Go live"
-msgstr "بدء التشغيل الفعلي"
-
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
 msgid "Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]."
@@ -72,6 +67,11 @@ msgstr "مشغّل بوابة الربط"
 #. Diagram label
 msgid "GDHCN Participant"
 msgstr "مشارك في GDHCN"
+
+#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
+#. Diagram label
+msgid "Go live"
+msgstr "بدء التشغيل الفعلي"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:34
 #. Diagram label

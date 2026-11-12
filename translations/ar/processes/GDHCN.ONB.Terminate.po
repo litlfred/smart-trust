@@ -91,7 +91,7 @@ msgstr "الإطار XV.2."
 #: input/business-processes/GDHCN.ONB.Terminate.bpmn:76
 #. Diagram element documentation
 msgid "Framework XV.3: at its sole discretion."
-msgstr "الإطار XV.3: وفق تقديرها المطلق."
+msgstr "الإطار XV.3: وفق تقديرها المنفرد."
 
 #: input/business-processes/GDHCN.ONB.Terminate.bpmn:80
 #. Diagram element documentation

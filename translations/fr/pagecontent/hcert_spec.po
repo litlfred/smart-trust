@@ -8,8 +8,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.489Z\n"
 "PO-Revision-Date: 2026-11-06\n"
 "Last-Translator: agent (unofficial, no human sign-off)\n"
-"Language-Team: French (unofficial)\n"
 "Language: fr\n"
+"Language-Team: French (unofficial)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,6 +39,10 @@ msgstr "######## 3.2.7.1.5 Lien de santé vérifiable (VHL) Un lien de santé v�
 #: input/pagecontent/hcert_spec.md:116
 msgid "<a0>DDCC FHIR Implementation Guide</a0>"
 msgstr "<a0>Guide d'implémentation FHIR DDCC</a0>"
+
+#: input/pagecontent/hcert_spec.md:115
+msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
+msgstr "<a0>DDCC Résultat de test (DDCC:TR)</a0> documente les cas d'utilisation, les exigences en matière de données, les spécifications techniques et les orientations de mise en œuvre pour les certificats de résultat de test."
 
 #: input/pagecontent/hcert_spec.md:110
 msgid "<a0>DDCC Vaccination Status (DDCC:VS)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for vaccination certificates."
@@ -564,7 +568,3 @@ msgstr "Lors de la conception d'un dispositif fondé sur la présente spécifica
 #: input/pagecontent/hcert_spec.md:103
 msgid "While the <a0>logical model</a0> enlists assigned sub claims, the ones listed in this specification are considered authoritative"
 msgstr "Bien que le <a0>modèle logique</a0> recense les sous-revendications attribuées, celles énumérées dans la présente spécification font foi"
-
-#: input/pagecontent/hcert_spec.md:115
-msgid "<a0>DDCC Test Result (DDCC:TR)</a0> documents the use cases, data requirements, technical specifications and implementation guidance for test result certificates."
-msgstr "<a0>DDCC Résultat de test (DDCC:TR)</a0> documente les cas d'utilisation, les exigences en matière de données, les spécifications techniques et les orientations de mise en œuvre pour les certificats de résultat de test."

@@ -58,7 +58,7 @@ It can be difficult to find the "source of truth" specifications for the certifi
 
 #### PH4H 
 
-The [Pan-American Highway for Digital Health (PH4H)](http://worldhealthorganization.github.iont/smart-ph4h) implementation guide describes the usage of the GDHCN for the Americas region.
+The [Pan-American Highway for Digital Health (PH4H)](https://worldhealthorganization.github.io/smart-ph4h) implementation guide describes the usage of the GDHCN for the Americas region.
 
 #### IPS Pilgrimage (IPS-Pilgrimage)
 

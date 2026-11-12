@@ -19,7 +19,8 @@
   "coverage": {
     "translated": 46,
     "total": 46,
-    "pct": 100.0
+    "pct": 100
   },
-  "description": "Unofficial Russian translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it."
+  "description": "Unofficial Russian translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it.",
+  "sourceHash": "f7c3f82818c2"
 }

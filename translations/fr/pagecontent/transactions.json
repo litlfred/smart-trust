@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/transactions",
   "locale": "fr",
   "sourceFile": "input/pagecontent/transactions.md",
-  "sourceHash": "8bd140eaa85e",
+  "sourceHash": "e17f6ce41644",
   "potFile": "translations/fr/pagecontent/transactions.pot",
   "poFile": "translations/fr/pagecontent/transactions.po",
   "poIncludes": [

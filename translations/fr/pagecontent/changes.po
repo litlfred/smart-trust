@@ -84,7 +84,7 @@ msgstr "Autres mises à jour :"
 
 #: input/pagecontent/changes.md:52
 msgid "C.L.38.2023 (Global Digital Health Certification Network) circular letter references added to Overview (Arabic, Chinese, English, French, Russian)"
-msgstr "Ajout de références à la lettre circulaire C.L.38.2023 (Réseau mondial de certification de la santé numérique) dans la Vue d’ensemble (anglais, arabe, chinois, espagnol, français, russe)"
+msgstr "Ajout de références à la lettre circulaire C.L.38.2023 (Réseau mondial de certification de la santé numérique) dans la Vue d’ensemble (arabe, chinois, anglais, français, russe)"
 
 #: input/pagecontent/changes.md:2
 msgid "Changes"

@@ -36,7 +36,7 @@ msgstr "L’authentification de l’identité et la liaison d’identité sont h
 
 #: input/pagecontent/functional.md:17
 msgid "Is the certificate issuer trusted by the verifier?​"
-msgstr "L’émetteur du certificat est-il digne de la confiance du vérificateur ?​"
+msgstr "Le vérificateur fait-il confiance à l’émetteur du certificat ?​"
 
 #: input/pagecontent/functional.md:7
 msgid "Is the correct content included in the certificate/credential or health document?​"

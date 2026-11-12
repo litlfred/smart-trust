@@ -34,11 +34,6 @@ msgstr "Conectarse y realizar el ensayo en UAT"
 msgid "Connect and run the readiness test in PROD"
 msgstr "Conectarse y realizar la prueba de preparación en PROD"
 
-#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
-#. Diagram label
-msgid "Go live"
-msgstr "Puesta en producción"
-
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:8
 #. Diagram element documentation
 msgid "Connect to the gateway and pass the tests, in UAT and then PROD. Phase 3, steps [43]-[46] and [60]-[78]."
@@ -58,6 +53,11 @@ msgstr "Operador de la puerta de enlace"
 #. Diagram label
 msgid "GDHCN Participant"
 msgstr "Participante en la Red Mundial"
+
+#: input/business-processes/GDHCN.ONB.GoLive.bpmn:19
+#. Diagram label
+msgid "Go live"
+msgstr "Puesta en producción"
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:34
 #. Diagram label
@@ -87,7 +87,7 @@ msgstr "Recibir la confirmación de incorporación"
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:29
 #. Diagram element documentation
 msgid "Sends the Statement of Interest and the Letter of Application; may meet WHO in person (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/BusinessOwnerRepresentative."
-msgstr "Envía la declaración de interés y la Carta de solicitud; puede reunirse en persona con la OMS (Marco IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/BusinessOwnerRepresentative."
+msgstr "Envía la Declaración de interés y la Carta de solicitud; puede reunirse en persona con la OMS (Marco IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/BusinessOwnerRepresentative."
 
 #: input/business-processes/GDHCN.ONB.GoLive.bpmn:35
 #. Diagram element documentation

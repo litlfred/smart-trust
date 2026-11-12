@@ -4,7 +4,7 @@
   "label": "trans:es/glossary/smart-trust--gdhcn",
   "locale": "es",
   "sourceFile": "glossary/gdhcn.glossary.json",
-  "sourceHash": "53e107caddf7",
+  "sourceHash": "29f2b09bf433",
   "potFile": "translations/es/glossary/smart-trust--gdhcn.pot",
   "poFile": "translations/es/glossary/smart-trust--gdhcn.po",
   "poIncludes": [

@@ -13,5 +13,10 @@
     "generatedAt": "2026-11-06T10:00:00Z",
     "generator": "agent translation (smart-trust fr session)"
   },
-  "coverage": { "translated": 42, "total": 42, "pct": 100 }
+  "coverage": {
+    "translated": 42,
+    "total": 42,
+    "pct": 100
+  },
+  "sourceHash": "29f2b09bf433"
 }

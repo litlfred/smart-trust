@@ -9,8 +9,8 @@ msgstr ""
 "POT-Creation-Date: 2026-11-06T09:38:56.466Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: agent (drafted, unofficial)\n"
-"Language-Team: Chinese\n"
 "Language: zh\n"
+"Language-Team: Chinese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -244,6 +244,10 @@ msgstr "确定将疫苗接种凭证转换为 DDCC CoreDataSet 逻辑模型所需
 msgid "In addition to mapping the overall structure, clinical concepts need to be correctly mapped. For example, one format may use LOINC to represent the type of a medical test while another format may use SNOMED CT. Mapping the clinical concepts from one format to another is accomplished using <a0>FHIR ConceptMaps</a0>. A ConceptMap defines a mapping from a set of concepts in one code system to concepts in another code system."
 msgstr "除映射整体结构外，还需要正确映射临床概念。例如，一种格式可能使用 LOINC 表示医学检测的类型，而另一种格式可能使用 SNOMED CT。将临床概念从一种格式映射到另一种格式是通过 <a0>FHIR ConceptMap</a0> 实现的。ConceptMap 定义了从一个代码系统中的一组概念到另一个代码系统中概念的映射。"
 
+#: input/pagecontent/decision_support.md:43
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
+msgstr "层面确定。在本示例中，卫生部可能决定要求提供 72 小时内的 COVID-19 阴性检测结果方可入境某个国家"
+
 #: input/pagecontent/decision_support.md:221
 msgid "Mapping the structure requires pulling data from the source format and expressing it in the destination format. For example, the name of the credential holder has different representations in each of the formats and needs to be correctly mapped to the destination format. Mapping the structure of the credential is accomplished using <a0>FHIR StructureMaps</a0>. StructureMaps define rules that describe how two different structures are related to each other and provides the logic that defines how instances can be converted from one structure to the other in an automated fashion."
 msgstr "映射结构需要从源格式中提取数据，并以目标格式加以表达。例如，凭证持有人的姓名在各格式中的表示方式各不相同，需要正确映射到目标格式。凭证结构的映射是通过 <a0>FHIR StructureMap</a0> 实现的。StructureMap 定义了描述两种不同结构之间关系的规则，并提供用于定义如何以自动化方式将实例从一种结构转换为另一种结构的逻辑。"
@@ -429,7 +433,3 @@ msgstr "到在线可信卫生服务中。在本示例中，发布规则后，旅
 #, python-brace-format
 msgid "You can place this example in a file called {code0} and modify it as desired before proceeding."
 msgstr "您可以将此示例放入名为 {code0} 的文件中，并在继续之前根据需要进行修改。"
-
-#: input/pagecontent/decision_support.md:43
-msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
-msgstr "层面确定。在本示例中，卫生部可能决定要求提供 72 小时内的 COVID-19 阴性检测结果方可入境某个国家"

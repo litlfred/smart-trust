@@ -34,11 +34,6 @@ msgstr "Representante del responsable (Business Owner)"
 msgid "Check the application and the Letter"
 msgstr "Comprobar la solicitud y la Carta"
 
-#: input/business-processes/GDHCN.ONB.bpmn:47
-#. Diagram label
-msgid "Go live"
-msgstr "Puesta en producción"
-
 #: input/business-processes/GDHCN.ONB.bpmn:33
 #. Diagram element documentation
 msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/TechnicalRepresentative."
@@ -73,6 +68,11 @@ msgstr "Secretaría de la Red Mundial"
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
 msgstr "Secretaría de la Red Mundial (OMS)"
+
+#: input/business-processes/GDHCN.ONB.bpmn:47
+#. Diagram label
+msgid "Go live"
+msgstr "Puesta en producción"
 
 #: input/business-processes/GDHCN.ONB.bpmn:24
 #. Diagram label
