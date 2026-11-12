@@ -90,7 +90,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "9c39de71cdf7fcb173d73121f97ffddbe4f1973c",
+          "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -100,8 +100,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "9c39de71cdf7fcb173d73121f97ffddbe4f1973c",
-              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+              "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
+              "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881); fhir-harness re-pinned to d14158f (fhir-harness#394, trustedSvgs) on the owner's ask, 2026-11-12: \"merge 394 when green\" (session_01EucfRogoVaMWCJtobp379B)"
             }
           }
         }
