@@ -34,6 +34,6 @@ permissions:
 
 jobs:
   publish:
-    uses: litlfred/cat-harness-tools/.github/workflows/folio-site-publish.yml@bdeef82afff0e8e14f5daf9609672ea25272cb78 # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/folio-site-publish.yml@d152164ce504cccb5567c4141a29be236c23f369 # staging preview only: carries the Chromium fix (tools #1920)
     with:
       plan: ${{ inputs.plan == true }}
