@@ -240,7 +240,7 @@ def figure_problem():
     """The home page's figure must name the current model's view: it links the archimate-pages SVG by version and view id."""
     root = ET.fromstring(zipfile.ZipFile(ROOT / "archimate" / version() / "smart-trust.archimate").read("model.xml"))
     vid = next(e.get("id") for e in root.iter("element") if e.get(XSI) == "archimate:ArchimateDiagramModel" and e.get("name") == VIEW)
-    want = f"archimate/{version()}/views/{vid}.svg"
+    want = f"archimate/{version()}/view/{vid}.svg"
     text = FIGURE.read_text(encoding="utf-8")
     return None if want in text else f"{FIGURE.relative_to(ROOT)} does not link {want}: update it to the current model"
 
