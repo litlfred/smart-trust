@@ -19,12 +19,12 @@
 
 #### Federated PKD Aggregation
 
-<img src="aggregation.svg" alt="aggregation sequence diagram" style="max-width:100%;"/>
+<object data="aggregation.svg" type="image/svg+xml"></object>
 
 #### Federated Verification
 
-<img src="verification.svg" alt="verification sequence diagram" style="max-width:100%;"/>
+<object data="verification.svg" type="image/svg+xml"></object>
 
 #### Dynamic Business Rule Validation
 
-<img src="business_rule_validation.svg" alt="business rule validation sequence diagram" style="max-width:100%;"/>
+<object data="business_rule_validation.svg" type="image/svg+xml"></object>

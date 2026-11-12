@@ -292,10 +292,28 @@
         "input/resources/",
         "input/scripts/",
         "input/tests/",
-        "fsh-generated/"
+        "fsh-generated/",
+        "qa/ig-content-qa.json"
       ],
       "trustedScripts": [
         "hcert-demo/hcert-demo.js"
+      ],
+      "trustedObjects": [
+        "GDHCN.ONB.svg",
+        "GDHCN.ONB.Apply.svg",
+        "GDHCN.ONB.PrepareKeys.svg",
+        "GDHCN.ONB.VerifyLetter.svg",
+        "GDHCN.ONB.ConveyLetter.svg",
+        "GDHCN.ONB.RegisterKeys.svg",
+        "GDHCN.ONB.GoLive.svg",
+        "GDHCN.ONB.ConnectTest.svg",
+        "GDHCN.TrustDomain.Join.svg",
+        "GDHCN.ONB.ChangeKeys.svg",
+        "GDHCN.TrustDomain.Propose.svg",
+        "GDHCN.ONB.Terminate.svg",
+        "aggregation.svg",
+        "verification.svg",
+        "business_rule_validation.svg"
       ]
     }
   }
