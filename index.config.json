@@ -168,7 +168,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "974e376e08f164d1d5bc3f9c6e23077e9faef5a3",
+          "ref": "fbe255e126f4d4e0ce25812e3e5b133cf393a7cc",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -184,7 +184,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "974e376e08f164d1d5bc3f9c6e23077e9faef5a3",
+              "ref": "fbe255e126f4d4e0ce25812e3e5b133cf393a7cc",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
             },
             "standing": {
@@ -203,7 +203,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "46ec2840532f7715bbfe56bce8dde97dd6b727ff",
+          "ref": "fe72e745cf83aa31e6f82d14cc0cc9826e166cf6",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -216,7 +216,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "46ec2840532f7715bbfe56bce8dde97dd6b727ff",
+              "ref": "fe72e745cf83aa31e6f82d14cc0cc9826e166cf6",
               "evidence": "litlfred, 2026-11-12 09:08Z project chat: 'ASAP even if breaks'; card Q-GAME-MRG A (tools#1947 merged 371dd585): pin smart-trust tools to the web-app mount fix"
             },
             "standing": {
