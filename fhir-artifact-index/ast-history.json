@@ -3,6 +3,11 @@
   "repository": "litlfred/smart-trust",
   "versions": [
     {
+      "commit": "cb2dadbcb844387314554f04e12f670c81388136",
+      "date": "2026-11-12T18:23:01Z",
+      "src": "0aafb4b0a"
+    },
+    {
       "commit": "9f29356e85541e4e64195199857e42e98cb76670",
       "date": "2026-11-12T13:01:25Z",
       "src": "e700aa53f"

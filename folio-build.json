@@ -7,11 +7,11 @@
   "source": {
     "repo": "litlfred/smart-trust",
     "ref": "main",
-    "commit": "28e0757f547e93b626f92e925b08f12b0275d67d"
+    "commit": "9f4ddafb5dcabcea1bfa435bbbfeb86eae038658"
   },
-  "builtAt": "2026-11-12T15:31:02.842Z",
+  "builtAt": "2026-11-12T18:54:46.524Z",
   "ast": {
-    "commit": "e700aa53f97663696dcc7a2fffaa10e7ab37633b",
+    "commit": "0aafb4b0afd7fbf6064ecf65ae6b348150474d3d",
     "verdict": "valid",
     "kind": "full"
   }

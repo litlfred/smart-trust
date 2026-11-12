@@ -1,6 +1,6 @@
 {
  "$schema": "site-link-report/v1",
- "pages": 1912,
+ "pages": 2048,
  "unresolved": [],
  "selfAddress": [],
  "content": [
@@ -17,6 +17,30 @@
    "href": "ValidityTimes.PNG"
   },
   {
+   "page": "ar/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/business_requirements.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "ar/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/concepts.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ar/concepts_certificate_governance.html",
    "href": "Overview.PNG"
   },
@@ -253,6 +277,30 @@
    "href": "WorkingSetup.png"
   },
   {
+   "page": "ar/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "ar/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ar/home.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -417,6 +465,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "ar/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/home.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ar/index.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -581,6 +641,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "ar/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/index.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ar/overview.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -743,6 +815,34 @@
   {
    "page": "ar/overview.html",
    "href": "Organization-GDHCNParticipant-TUR.html"
+  },
+  {
+   "page": "ar/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ar/overview.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
   },
   {
    "page": "es/business_requirements.html",
@@ -755,6 +855,30 @@
   {
    "page": "es/business_requirements.html",
    "href": "ValidityTimes.PNG"
+  },
+  {
+   "page": "es/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/business_requirements.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "es/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/concepts.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   },
   {
    "page": "es/concepts_certificate_governance.html",
@@ -993,6 +1117,30 @@
    "href": "WorkingSetup.png"
   },
   {
+   "page": "es/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "es/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "es/home.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -1157,6 +1305,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "es/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/home.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "es/index.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -1321,6 +1481,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "es/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/index.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "es/overview.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -1483,6 +1655,18 @@
   {
    "page": "es/overview.html",
    "href": "Organization-GDHCNParticipant-TUR.html"
+  },
+  {
+   "page": "es/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "es/overview.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   },
   {
    "page": "fr/business_requirements.html",
@@ -1495,6 +1679,30 @@
   {
    "page": "fr/business_requirements.html",
    "href": "ValidityTimes.PNG"
+  },
+  {
+   "page": "fr/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/business_requirements.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "fr/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/concepts.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   },
   {
    "page": "fr/concepts_certificate_governance.html",
@@ -1733,6 +1941,30 @@
    "href": "WorkingSetup.png"
   },
   {
+   "page": "fr/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "fr/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "fr/home.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -1897,6 +2129,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "fr/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/home.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "fr/index.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -2061,6 +2305,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "fr/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/index.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "fr/overview.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -2225,6 +2481,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "fr/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "fr/overview.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "full_contents.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -2389,6 +2657,22 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
    "page": "home.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -2553,6 +2837,14 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
    "page": "index.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -2717,6 +3009,14 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
    "page": "overview.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -2879,6 +3179,14 @@
   {
    "page": "overview.html",
    "href": "Organization-GDHCNParticipant-TUR.html"
+  },
+  {
+   "page": "overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
   },
   {
    "page": "ru/business_requirements.html",
@@ -2891,6 +3199,30 @@
   {
    "page": "ru/business_requirements.html",
    "href": "ValidityTimes.PNG"
+  },
+  {
+   "page": "ru/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/business_requirements.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "ru/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/concepts.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   },
   {
    "page": "ru/concepts_certificate_governance.html",
@@ -3129,6 +3461,30 @@
    "href": "WorkingSetup.png"
   },
   {
+   "page": "ru/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "ru/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ru/home.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -3293,6 +3649,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "ru/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/home.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ru/index.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -3457,6 +3825,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "ru/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/index.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "ru/overview.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -3619,6 +3999,18 @@
   {
    "page": "ru/overview.html",
    "href": "Organization-GDHCNParticipant-TUR.html"
+  },
+  {
+   "page": "ru/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "ru/overview.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   },
   {
    "page": "zh/business_requirements.html",
@@ -3631,6 +4023,30 @@
   {
    "page": "zh/business_requirements.html",
    "href": "ValidityTimes.PNG"
+  },
+  {
+   "page": "zh/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/business_requirements.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/business_requirements.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "zh/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/concepts.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/concepts.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   },
   {
    "page": "zh/concepts_certificate_governance.html",
@@ -3869,6 +4285,30 @@
    "href": "WorkingSetup.png"
   },
   {
+   "page": "zh/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/full_contents.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
+   "page": "zh/full_contents.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "zh/home.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -4033,6 +4473,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "zh/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/home.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/home.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "zh/index.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -4197,6 +4649,18 @@
    "href": "Organization-GDHCNParticipant-TUR.html"
   },
   {
+   "page": "zh/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/index.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/index.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
+  },
+  {
    "page": "zh/overview.html",
    "href": "CodeSystem-WHORegionalOffices.html#WHORegionalOffices-AFRO"
   },
@@ -4359,8 +4823,20 @@
   {
    "page": "zh/overview.html",
    "href": "Organization-GDHCNParticipant-TUR.html"
+  },
+  {
+   "page": "zh/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/overview.html",
+   "href": "archimate/1.7.5/views/id-5298d99ad0315566893ee45bb581560e.svg"
+  },
+  {
+   "page": "zh/overview.html",
+   "href": "en/smart-trust/archimate/1.7.5/views/the-gdhcn-trust-network/"
   }
  ],
- "diagrams": 18,
+ "diagrams": 22,
  "inDiagrams": []
 }
