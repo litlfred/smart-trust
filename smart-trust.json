@@ -136,6 +136,34 @@
         "web-app"
       ],
       "description": "The GDHCN onboarding game, \"Join the Network\" (Vite, TypeScript, three.js; Apache-2.0, from carlsbox/gdhcn-onboarding-game, see NOTICE). Declared by web-app.json and built and published by the harness's `apps` visualiser (Tool web-app-build) at <locale>/<harness>/apps/onboarding-game/, with no site chrome; nothing else on the site loads it. Its UI strings are translated through translations/<locale>/apps/ (smart-trust#176, Q-GAME-5)."
+    },
+    {
+      "id": "archimate",
+      "path": "archimate/",
+      "graphTypologies": [
+        "archimate"
+      ],
+      "description": "The GDHCN trust network as ArchiMate (cat-harness's archimate subgraph): this guide's actors (input/fsh/actors/actors.fsh), the public keys and the trust list, and the three steps onboard, distribute and verify, as the home page's figure (input/images/trust_network.png) in a view with every box where the figure draws it. Built by archimate/build.py (`check:archimate` fails when the committed model is stale); the archimate-pages visualiser draws the view as SVG, and archimate/pretty.py draws it again in the original figure's style (input/includes/trust-network-pretty.svg). The home page and the Concepts page toggle between the two (input/includes/trust-network-figure.html).",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/smart-trust/archimate/index.html",
+            "title": "ArchiMate views",
+            "writer": [
+              "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "visualisers": [
+    {
+      "id": "archimate",
+      "renderedBy": "archimate-pages",
+      "covers": [
+        "archimate"
+      ]
     }
   ],
   "avatar": {

@@ -20,7 +20,7 @@
 
 <div style="display:block">
 <figure>
-{% include trust_network.svg %}
+{% include trust-network-figure.html %}
 <figcaption>Trust Network</figcaption>
 </figure> 
 </div>
