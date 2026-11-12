@@ -43560,7 +43560,7 @@
   "package": {
     "url": "https://litlfred.github.io/smart-trust/package.tgz",
     "localPath": "fhir-artifact-index/package.tgz",
-    "bytes": 157567
+    "bytes": 241017
   },
   "fhirVersion": [
     "4.0.1"
