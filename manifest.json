@@ -7,7 +7,7 @@
     "versions"
   ],
   "provisionalUntil": "a full IG Publisher run",
-  "generatedAt": "2026-11-12T13:01:08.648800674Z",
+  "generatedAt": "2026-11-12T18:22:54.015205710Z",
   "ig": {
     "root": ".",
     "version": "4.0.1"
@@ -17,8 +17,8 @@
   },
   "inputs": {
     "toolchain": "ig-publisher 3.0.0 / core 7.0.1",
-    "sourceRevision": "e700aa53f97663696dcc7a2fffaa10e7ab37633b",
-    "inputDigest": "1429dbd59c3b9279c71602088beeaaf665febd75336b6ea7da785a754dc27929"
+    "sourceRevision": "0aafb4b0afd7fbf6064ecf65ae6b348150474d3d",
+    "inputDigest": "c13415472be19076065569be1bfca3e195d713498abda385f4c5d25eae248413"
   },
   "packages": [
     {
