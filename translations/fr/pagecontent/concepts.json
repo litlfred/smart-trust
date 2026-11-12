@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/concepts",
   "locale": "fr",
   "sourceFile": "input/pagecontent/concepts.md",
-  "sourceHash": "db5c07d11fd3",
+  "sourceHash": "cd0012b8f09c",
   "potFile": "translations/fr/pagecontent/concepts.pot",
   "poFile": "translations/fr/pagecontent/concepts.po",
   "poIncludes": [

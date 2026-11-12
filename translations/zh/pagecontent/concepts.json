@@ -22,5 +22,5 @@
     "pct": 100
   },
   "description": "Unofficial Simplified Chinese translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it.",
-  "sourceHash": "db5c07d11fd3"
+  "sourceHash": "cd0012b8f09c"
 }
