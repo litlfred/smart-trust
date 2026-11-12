@@ -26,4 +26,4 @@ jobs:
     # tools pin in index.lock.json predates cat-harness-tools#1314, whose
     # site-publisher could not read a uses: line with a trailing comment
     # (smart-trust#124).
-    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@41b3ac486d9fce87ea16aa1ab8e0a5bad9140b41 # index.lock.json
+    uses: litlfred/smart-base/.github/workflows/fhirbuild.yml@8602c8b53e0fbe04536c99731f5fe1fe2c38c746 # index.lock.json
