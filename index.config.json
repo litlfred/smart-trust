@@ -203,7 +203,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "fe72e745cf83aa31e6f82d14cc0cc9826e166cf6",
+          "ref": "d30c2f5ff324dc90a1c6862942d56413a76ae925",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -216,7 +216,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-12",
-              "ref": "fe72e745cf83aa31e6f82d14cc0cc9826e166cf6",
+              "ref": "d30c2f5ff324dc90a1c6862942d56413a76ae925",
               "evidence": "litlfred, 2026-11-12 09:08Z project chat: 'ASAP even if breaks'; card Q-GAME-MRG A (tools#1947 merged 371dd585): pin smart-trust tools to the web-app mount fix"
             },
             "standing": {
