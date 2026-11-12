@@ -155,6 +155,14 @@
           }
         ]
       }
+    },
+    {
+      "id": "smart-trust-findings",
+      "path": "findings/",
+      "description": "Authored findings about this instance's own pages, kept for the owner rather than built: `wireframes/` holds the as-is wireframes of the visualisers smart-trust declares (today `archimate`), each with its `intent.md`, its candidate HTML and the `checks/report.json` that `wireframe:check` writes at web and mobile sizes. `check:wireframes` reads the `wireframes/` of every declared `docs` directory; it is here, the shape of smart-base's `findings/`, because `docs/` is built at publish and commits nothing.",
+      "graphTypologies": [
+        "docs"
+      ]
     }
   ],
   "visualisers": [
