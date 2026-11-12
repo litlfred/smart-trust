@@ -1,12 +1,11 @@
 {
   "$schema": "ig-content-qa/v1",
-  "contentDigest": "sha256:5ea21e320128a2d4eca041c9e23f50630dd72bc97c9308327e6118146763592c",
-  "items": 1636,
-  "reviewedAt": "2026-11-12T10:49:30.068Z",
+  "contentDigest": "sha256:e49307c770b5ebf991f693649ec21e75a77a51d6b00411e239391a7166c52f5b",
+  "items": 1841,
+  "reviewedAt": "2026-11-12T11:21:09.320Z",
   "reviewer": {
     "kind": "agent",
-    "name": "claude",
-    "session": "https://claude.ai/code/session_01EucfRogoVaMWCJtobp379B"
+    "name": "claude"
   },
   "findings": []
 }

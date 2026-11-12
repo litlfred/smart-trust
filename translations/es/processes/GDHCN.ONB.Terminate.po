@@ -32,7 +32,7 @@ msgstr "Representante del responsable (Business Owner)"
 #: input/business-processes/GDHCN.ONB.Terminate.bpmn:25
 #. Diagram label
 msgid "Decided to leave"
-msgstr "Decide retirarse"
+msgstr "Decidió retirarse"
 
 #: input/business-processes/GDHCN.ONB.Terminate.bpmn:41
 #. Diagram label

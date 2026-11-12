@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/concepts_certificate_governance",
   "locale": "fr",
   "sourceFile": "input/pagecontent/concepts_certificate_governance.md",
-  "sourceHash": "763bb17929b4",
+  "sourceHash": "cc51218a9e44",
   "potFile": "translations/fr/pagecontent/concepts_certificate_governance.pot",
   "poFile": "translations/fr/pagecontent/concepts_certificate_governance.po",
   "poIncludes": [

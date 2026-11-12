@@ -4,7 +4,7 @@
   "label": "trans:fr/processes/GDHCN.ONB.GoLive",
   "locale": "fr",
   "sourceFile": "input/business-processes/GDHCN.ONB.GoLive.bpmn",
-  "sourceHash": "c07f01d91eba",
+  "sourceHash": "5b42b99aeadc",
   "potFile": "translations/fr/processes/GDHCN.ONB.GoLive.pot",
   "poFile": "translations/fr/processes/GDHCN.ONB.GoLive.po",
   "poIncludes": [

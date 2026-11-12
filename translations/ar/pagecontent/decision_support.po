@@ -258,8 +258,8 @@ msgid "In addition to mapping the overall structure, clinical concepts need to b
 msgstr "إلى جانب ربط البنية العامة، يجب ربط المفاهيم السريرية على النحو الصحيح. فعلى سبيل المثال، قد تستخدم إحدى الصيغ LOINC لتمثيل نوع الاختبار الطبي بينما تستخدم صيغة أخرى SNOMED CT. ويتم ربط المفاهيم السريرية من صيغة إلى أخرى باستخدام <a0>FHIR ConceptMaps</a0>. وتعرّف ConceptMap ربطًا من مجموعة مفاهيم في نظام ترميز إلى مفاهيم في نظام ترميز آخر."
 
 #: input/pagecontent/decision_support.md:43
-msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a county"
-msgstr "معيّن. وفي هذا المثال، قد تقرر وزارة الصحة اشتراط نتيجة سلبية لاختبار COVID-19 خلال 72 ساعة للسماح بالدخول إلى بلد ما"
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
+msgstr "الحوكمة. وفي هذا المثال، قد تقرر وزارة الصحة اشتراط نتيجة سلبية لاختبار COVID-19 خلال 72 ساعة للسماح بالدخول إلى بلد ما"
 
 #: input/pagecontent/decision_support.md:221
 msgid "Mapping the structure requires pulling data from the source format and expressing it in the destination format. For example, the name of the credential holder has different representations in each of the formats and needs to be correctly mapped to the destination format. Mapping the structure of the credential is accomplished using <a0>FHIR StructureMaps</a0>. StructureMaps define rules that describe how two different structures are related to each other and provides the logic that defines how instances can be converted from one structure to the other in an automated fashion."
@@ -396,7 +396,7 @@ msgstr "تستخدم جهود DDCC لدى منظمة الصحة العالمية
 
 #: input/pagecontent/decision_support.md:127
 msgid "The WHO DDCC IG specifies health credentials using the FHIR standard, and the CQL for expressing business rules against credentials operates on the FHIR resources that make up a credential. The DDCC health credential document Bundle contains a minimal <a0>Patient</a0> resource along with appropriate linked <a1>Immunization</a1> resources representing information on vaccines administered and <a2>Observation</a2> resources representing test results."
-msgstr "يحدد DDCC IG الصادر عن منظمة الصحة العالمية (WHO) بيانات الاعتماد الصحية باستخدام معيار FHIR، وتعمل CQL المستخدمة للتعبير عن قواعد العمل على بيانات الاعتماد على موارد FHIR التي تتكوّن منها بيانات الاعتماد. وتحتوي حزمة Bundle لوثيقة بيانات الاعتماد الصحية DDCC على مورد <a0>Patient</a0> بالحد الأدنى إلى جانب موارد <a1>Immunization</a1> المرتبطة المناسبة التي تمثّل معلومات اللقاحات المُعطاة، وموارد <a2>Observation</a2> التي تمثّل نتائج الاختبارات."
+msgstr "يحدد DDCC IG الصادر عن منظمة الصحة العالمية (WHO) بيانات الاعتماد الصحية باستخدام معيار FHIR، وتعمل CQL المستخدمة للتعبير عن قواعد العمل على بيانات الاعتماد على موارد FHIR التي تتكوّن منها بيانات الاعتماد. وتحتوي حزمة Bundle لوثيقة بيانات الاعتماد الصحية DDCC على مورد <a0>Patient</a0> يتضمن الحد الأدنى من البيانات إلى جانب موارد <a1>Immunization</a1> المرتبطة المناسبة التي تمثّل معلومات اللقاحات المُعطاة، وموارد <a2>Observation</a2> التي تمثّل نتائج الاختبارات."
 
 #: input/pagecontent/decision_support.md:192
 msgid "There is also a <a0>CQL Evaluator</a0>, which combines the CQL-to-ELM Translator with the Java CQL Evaluation Engine."

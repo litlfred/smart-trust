@@ -157,7 +157,7 @@ msgstr "9. الخطوة 8 — إضافة بادئة معرّف السياق"
 
 #: input/pagecontent/qr_code_generation.md:259
 msgid "A DVC rather than an ICVP. Hepatitis B and BCG are routine schedule vaccines, not International Health Regulations entry requirements."
-msgstr "شهادة DVC لا شهادة ICVP. فلقاحا التهاب الكبد B وBCG من لقاحات الجدول الروتيني، وليسا من اشتراطات الدخول بموجب اللوائح الصحية الدولية (2005)."
+msgstr "شهادة DVC لا شهادة ICVP. فلقاحا التهاب الكبد B وBCG من لقاحات الجدول الروتيني، وليسا من اشتراطات الدخول بموجب اللوائح الصحية الدولية."
 
 #: input/pagecontent/qr_code_generation.md:250
 msgid "A family from the Lao People's Democratic Republic is visiting relatives abroad when the mother delivers. The newborn receives the routine birth-dose vaccinations of the host country's national childhood immunization schedule before discharge. The clinic records the doses and issues a signed certificate; the family has one shared phone between them, so the clinic prints a paper card with the QR code and offers digital delivery as an option."

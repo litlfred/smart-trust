@@ -278,7 +278,7 @@ msgstr "Unix/Mac 上的 Curl 版本：我们强烈建议将 curl 和 nss 更新�
 
 #: input/pagecontent/concepts_onboarding_checklist.md:684
 msgid "DCC for domain, DSC for group, and https://tng-dev.who.int for DEV environment endpoint."
-msgstr "domain 使用 DCC，group 使用 DSC，DEV 环境端点使用 https://tng-dev.who.int。"
+msgstr "domain 使用 DCC，group 使用 DSC，DEV 环境端点使用 https://tng-dev.who.int 。"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:742
 msgid "DCC: The domain name to be used. If omitted, the script will default to DCC."
@@ -669,7 +669,7 @@ msgstr "注意：请将 domain、group 和 EndpointURL 替换为适用于您入�
 
 #: input/pagecontent/concepts_onboarding_checklist.md:758
 msgid "Note: Some versions of curl don’t attach the client certificates automatically. This can be checked via curl --version Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/):"
-msgstr "注意：某些版本的 curl 不会自动附加客户端证书。可通过 curl --version 进行检查。请确保所用版本链接的是 OpenSSL，尤其是在 Windows 下（https://curl.se/windows/）："
+msgstr "注意：某些版本的 curl 不会自动附加客户端证书。可通过 curl --version 进行检查。请确保所用版本链接的是 OpenSSL，尤其是在 Windows 下（https://curl.se/windows/ ）："
 
 #: input/pagecontent/concepts_onboarding_checklist.md:535
 msgid "Note: The PUB ID in above output is CD822874C7862BA4BB6B950E40CC62009D9A00B0 , In your case you need to replace with > with your actual GPG public key ID to configure Git to use a GPG key for signing commits or tags in next command."
@@ -913,8 +913,8 @@ msgid "The extendedKeyUsage field is optional, for Covid certificates the below 
 msgstr "extendedKeyUsage 字段为可选字段；对于 Covid 证书，建议使用以下值进一步限制 DSC 证书："
 
 #: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "以下是<a0>信任网络网关</a0>在开发（DEV）、用户验收测试（UAT）和生产（PROD）各 **环境*中的端点："
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "以下是<a0>信任网络网关</a0>在开发（DEV）、用户验收测试（UAT）和生产（PROD）各环境中的端点："
 
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
@@ -985,7 +985,7 @@ msgid "UAT"
 msgstr "UAT"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:244
-msgid "Unix/Linux:\tUse the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
+msgid "Unix/Linux:	Use the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
 msgstr "Unix/Linux：\t在 <a1>Linux/Unix/Mac</a1> 操作系统上使用 <a0>gen_all_certs.sh</a0> bash 脚本。"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:320
@@ -1069,7 +1069,7 @@ msgid "Windows Users – cURL Certificate Validation Note:"
 msgstr "Windows 用户——cURL 证书验证说明："
 
 #: input/pagecontent/concepts_onboarding_checklist.md:246
-msgid "Windows:\t\tUse the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
+msgid "Windows:		Use the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
 msgstr "Windows：\t\t在 <a1>Windows</a1> 操作系统上使用 <a0>gen_all_certs.ps1</a0> PowerShell 脚本。"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1049

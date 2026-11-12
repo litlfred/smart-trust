@@ -4,7 +4,7 @@
   "label": "trans:es/processes/GDHCN.TrustDomain.Join",
   "locale": "es",
   "sourceFile": "input/business-processes/GDHCN.TrustDomain.Join.bpmn",
-  "sourceHash": "0d1971c26904",
+  "sourceHash": "07afb7f8e984",
   "potFile": "translations/es/processes/GDHCN.TrustDomain.Join.pot",
   "poFile": "translations/es/processes/GDHCN.TrustDomain.Join.po",
   "poIncludes": [

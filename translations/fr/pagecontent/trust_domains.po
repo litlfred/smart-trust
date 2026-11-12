@@ -79,8 +79,8 @@ msgid "Elements are defined by JSON-LD. As of 2023-02-12, the most current <a0>J
 msgstr "Les éléments sont définis en JSON-LD. Au 2023-02-12, le <a0>contexte JSON-LD pour les vaccins</a0> le plus récent et celui pour les <a1>résultats de tests</a1> se trouvent ici. Notez que les URI des contextes JSON-LD propres à DIVOC intégrés dans les certificats ne sont pas résolubles."
 
 #: input/pagecontent/trust_domains.md:50
-msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
-msgstr "EU DCC : [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
+msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
+msgstr "EU DCC : [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
 
 #: input/pagecontent/trust_domains.md:41
 msgid "European Union's <a0>Digital Covid Certificates (DCC)</a0> (required)"
@@ -91,8 +91,8 @@ msgid "Framework, Annex I"
 msgstr "Cadre, annexe I"
 
 #: input/pagecontent/trust_domains.md:55
-msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
-msgstr "OACI : [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
+msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
+msgstr "OACI : [[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
 
 #: input/pagecontent/trust_domains.md:43
 msgid "International Civil Aviation Organisation (ICAO) Visible Digital Seals - Non-Constrained (VDS-NC) (optional)"
@@ -119,8 +119,8 @@ msgid "Smart Health Cards (SHC) - Immunization (optional)"
 msgstr "Smart Health Cards (SHC) - Vaccination (facultatif)"
 
 #: input/pagecontent/trust_domains.md:56
-msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
-msgstr "SMART Health Cards : [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
+msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"
+msgstr "SMART Health Cards : [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"
 
 #: input/pagecontent/trust_domains.md:46
 msgid "Source specifications"

@@ -16,15 +16,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: input/pagecontent/concepts_certificate_governance.md:199
-msgid "|Basic Constraints|\tCA = true, path length constraints = 0"
+msgid "|Basic Constraints|	CA = true, path length constraints = 0"
 msgstr "|基本约束（Basic Constraints）|\tCA = true，路径长度约束 = 0"
 
 #: input/pagecontent/concepts_certificate_governance.md:36
-msgid "|Certificate|\tOr public key certificate. An X.509 v3 certificate that contains the public key of an entity |EC-DSA|\tElliptic Curve Digital Signature Algorithm. A cryptographic signature algorithm based on elliptic curves |mTLS|\tMutual TLS. The Transport Layer Security Protocol with mutual authentication |RSA|\tAsymmetric cryptographic algorithm based on integer factorization used for digital signatures or asymmetric encryption"
+msgid "|Certificate|	Or public key certificate. An X.509 v3 certificate that contains the public key of an entity |EC-DSA|	Elliptic Curve Digital Signature Algorithm. A cryptographic signature algorithm based on elliptic curves |mTLS|	Mutual TLS. The Transport Layer Security Protocol with mutual authentication |RSA|	Asymmetric cryptographic algorithm based on integer factorization used for digital signatures or asymmetric encryption"
 msgstr "|证书（Certificate）|\t即公钥证书。包含某一实体公钥的 X.509 v3 证书 |EC-DSA|\t椭圆曲线数字签名算法。一种基于椭圆曲线的密码签名算法 |mTLS|\t双向 TLS。带双向认证的传输层安全协议 |RSA|\t一种基于整数分解的非对称密码算法，用于数字签名或非对称加密"
 
 #: input/pagecontent/concepts_certificate_governance.md:174
-msgid "|EC-DSA| Min. 250 Bit| \tSHA-2 with an output length  ≥ 256 Bit |RSA-PSS (recommended padding) RSA-PKCS#1 v1.5 (legacy padding) |\tMin. 3000 Bit RSA Modulus (N) with a public exponent e > 2^16\t| SHA-2 with an output length  ≥ 256 Bit"
+msgid "|EC-DSA| Min. 250 Bit| 	SHA-2 with an output length  ≥ 256 Bit |RSA-PSS (recommended padding) RSA-PKCS#1 v1.5 (legacy padding) |	Min. 3000 Bit RSA Modulus (N) with a public exponent e > 2^16	| SHA-2 with an output length  ≥ 256 Bit"
 msgstr "|EC-DSA| 最少 250 Bit| \t输出长度 ≥ 256 Bit 的 SHA-2 |RSA-PSS（推荐填充）RSA-PKCS#1 v1.5（旧式填充） |\t最少 3000 Bit 的 RSA 模数（N），公开指数 e > 2^16\t| 输出长度 ≥ 256 Bit 的 SHA-2"
 
 #: input/pagecontent/concepts_certificate_governance.md:225
@@ -32,19 +32,19 @@ msgid "|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.1 for Test Issuers |extende
 msgstr "|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.1 用于检测签发方 |extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.2 用于疫苗接种签发方 |extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.3 用于康复签发方"
 
 #: input/pagecontent/concepts_certificate_governance.md:236
-msgid "|Subject|\tcn= \\, o=\\ ,c=\\ |Key Usage |digital signature (at minimum)"
+msgid "|Subject|	cn= \\, o=\\ ,c=\\ |Key Usage |digital signature (at minimum)"
 msgstr "|主体（Subject）|\tcn= \\, o=\\ ,c=\\ |密钥用途（Key Usage） |数字签名（至少）"
 
 #: input/pagecontent/concepts_certificate_governance.md:257
-msgid "|Subject|\tcn= Digital COVID Certificate Gateway, o=\\ , c=\\ |Key Usage |digital signature (at minimum)"
+msgid "|Subject|	cn= Digital COVID Certificate Gateway, o=\\ , c=\\ |Key Usage |digital signature (at minimum)"
 msgstr "|主体（Subject）|\tcn= Digital COVID Certificate Gateway, o=\\ , c=\\ |密钥用途（Key Usage） |数字签名（至少）"
 
 #: input/pagecontent/concepts_certificate_governance.md:265
-msgid "|Subject|\tcn=\\, o=\\ ,c= \\ |SubjectAltName| dnsName: \\ or iPAddress: \\ |Key Usage |\tdigital signature (at minimum) |Extended Key Usage|\tserver authentication (1.3.6.1.5.5.7.3.1)"
+msgid "|Subject|	cn=\\, o=\\ ,c= \\ |SubjectAltName| dnsName: \\ or iPAddress: \\ |Key Usage |	digital signature (at minimum) |Extended Key Usage|	server authentication (1.3.6.1.5.5.7.3.1)"
 msgstr "|主体（Subject）|\tcn=\\, o=\\ ,c= \\ |SubjectAltName| dnsName: \\ 或 iPAddress: \\ |密钥用途（Key Usage） |\t数字签名（至少） |扩展密钥用途（Extended Key Usage）|\t服务器认证（1.3.6.1.5.5.7.3.1）"
 
 #: input/pagecontent/concepts_certificate_governance.md:244
-msgid "|Subject|\tcn=\\, o=\\, c= \\ |Key Usage| digital signature (at minimum) |Extended Key Usage|\tclient authentication (1.3.6.1.5.5.7.3.2)"
+msgid "|Subject|	cn=\\, o=\\, c= \\ |Key Usage| digital signature (at minimum) |Extended Key Usage|	client authentication (1.3.6.1.5.5.7.3.2)"
 msgstr "|主体（Subject）|\tcn=\\, o=\\, c= \\ |密钥用途（Key Usage）| 数字签名（至少） |扩展密钥用途（Extended Key Usage）|\t客户端认证（1.3.6.1.5.5.7.3.2）"
 
 #: input/pagecontent/concepts_certificate_governance.md:145
@@ -153,8 +153,8 @@ msgid "digital signature (at minimum)"
 msgstr "数字签名（至少）"
 
 #: input/pagecontent/concepts_certificate_governance.md:25
-msgid "Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021) and [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021). It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. Legal and administrative procedures are not in the scope of this document, they must be defined separately."
-msgstr "数字签名可用于实现数据完整性和真实性。公钥基础设施通过将公钥与经过验证的身份（或签发方）绑定来建立信任。这是必要的，以便其他参与方能够验证数据来源和通信伙伴的身份，并就信任作出决定。在 TNG 中，使用多种公钥证书来保证真实性。本文档定义了使用哪些公钥证书，以及应如何设计这些证书，以实现不同 GDHCN 参与方之间的广泛互操作性。本文档基于 [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021) 和 [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021)。它进一步详述了所需的公钥证书，并为希望运营自己 SCA 的国家提供了关于证书模板和有效期的指导。由于 DSC 应当在规定的时间范围内（自签发起，在给定时间后过期）可被验证，因此有必要为公钥证书和数字健康证书上施加的所有签名定义一个验证模型。法律和行政程序不在本文档范围内，必须另行定义。"
+msgid "Digital signatures can be used to achieve data integrity and authenticity. Public Key Infrastructures establish trust by binding public keys to verified identities (or issuers). This is necessary to allow other participants to verify the data origin and the identity of the communication partner and decide about trust. In the TNG, multiple public key certificates are used for authenticity. This document defines which public key certificates are used and how they should be designed in order to allow broad interoperability between the different GDHCN Participants. This document is based on [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) and [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/). It provides more details on the necessary public key certificates and it gives guidance on certificate templates and validity periods for countries that want to operate their own SCA. Since DSCs shall be verifiable for a defined time-frame (starting from the issuing, expire after a given time), it is necessary to define a verification model for all signatures applied on the public key certificates and the digital health certificate. Legal and administrative procedures are not in the scope of this document, they must be defined separately."
+msgstr "数字签名可用于实现数据完整性和真实性。公钥基础设施通过将公钥与经过验证的身份（或签发方）绑定来建立信任。这是必要的，以便其他参与方能够验证数据来源和通信伙伴的身份，并就信任作出决定。在 TNG 中，使用多种公钥证书来保证真实性。本文档定义了使用哪些公钥证书，以及应如何设计这些证书，以实现不同 GDHCN 参与方之间的广泛互操作性。本文档基于 [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/) 和 [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/)。它进一步详述了所需的公钥证书，并为希望运营自己 SCA 的国家提供了关于证书模板和有效期的指导。由于 DSC 应当在规定的时间范围内（自签发起，在给定时间后过期）可被验证，因此有必要为公钥证书和数字健康证书上施加的所有签名定义一个验证模型。法律和行政程序不在本文档范围内，必须另行定义。"
 
 #: input/pagecontent/concepts_certificate_governance.md:203
 msgid "Document Signer (DSC)"
@@ -519,8 +519,8 @@ msgid "The requirements on the technical TNG architecture can be summarized as f
 msgstr "对 TNG 技术架构的要求可概括如下："
 
 #: input/pagecontent/concepts_certificate_governance.md:70
-msgid "The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -> SCA -> DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will ignore anything above the SCA -- and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021) only allows for exactly two levels - a 'root' SCA and a single 'leaf' DSC signed by just that SCA. In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment."
-msgstr "SCA 定义为签发 DSC 的证书颁发机构，因此使用多层 CA 层级结构（例如 Root CA -> SCA -> DSCs）的 GDHCN 参与方必须（MUST）提供签发 DSC 的下级证书颁发机构。因此在这种情况下，如果 GDHCN 参与方使用现有的证书颁发机构，GDHCN 系统将忽略 SCA 之上的所有层级，仅将 SCA 作为信任锚列入白名单（即使它是下级 CA）。这是因为 ICAO 模型 [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021) 只允许恰好两个层级：一个“根”SCA 和一个仅由该 SCA 签名的单一“叶”DSC。如果 GDHCN 参与方运营自己的 SCA，则该 GDHCN 参与方负责该 CA 的安全运营和密钥管理。必须注意，SCA 充当 DSC 的信任锚，因此保护 SCA 的私钥对信任网络环境的完整性至关重要。"
+msgid "The SCA is defined as the certificate authority that issues DSCs, hence GDHCN Participants that use a multi-tier CA hierarchy (e.g. Root CA -> SCA -> DSCs) MUST provide the subordinate certificate authority that issues the DSCs.  So in that case - if a GDHCN Participant uses an existing certificate authority - the GDHCN system will ignore anything above the SCA -- and whitelist only the SCA as the trust anchor (even though it is a sub-ordinate CA). This is as the ICAO model [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) only allows for exactly two levels - a 'root' SCA and a single 'leaf' DSC signed by just that SCA. In case a GDHCN Participant operates its own SCA, the GDHCN Participant is responsible for the secure operation and key management of that CA. It must be noted that the SCA acts as the trust anchor for DSCs and therefore, protecting the private key of the SCA is essential for the integrity of the Trust Network environment."
+msgstr "SCA 定义为签发 DSC 的证书颁发机构，因此使用多层 CA 层级结构（例如 Root CA -> SCA -> DSCs）的 GDHCN 参与方必须（MUST）提供签发 DSC 的下级证书颁发机构。因此在这种情况下，如果 GDHCN 参与方使用现有的证书颁发机构，GDHCN 系统将忽略 SCA 之上的所有层级，仅将 SCA 作为信任锚列入白名单（即使它是下级 CA）。这是因为 ICAO 模型 [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/) 只允许恰好两个层级：一个“根”SCA 和一个仅由该 SCA 签名的单一“叶”DSC。如果 GDHCN 参与方运营自己的 SCA，则该 GDHCN 参与方负责该 CA 的安全运营和密钥管理。必须注意，SCA 充当 DSC 的信任锚，因此保护 SCA 的私钥对信任网络环境的完整性至关重要。"
 
 #: input/pagecontent/concepts_certificate_governance.md:74
 msgid "The SCA SHALL NOT issue certificates that are valid longer than the CA certificate itself (see [2, Section 5])."
@@ -579,8 +579,8 @@ msgid "The Trust Network Participant's upload certificate TNPUP"
 msgstr "信任网络参与方的上传证书 TNPUP"
 
 #: input/pagecontent/concepts_certificate_governance.md:73
-msgid "The verification model in the Trust Network PKI is the shell model (for example, defined in [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016)), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:"
-msgstr "信任网络 PKI 中的验证模型是壳模型（例如在 [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016) 中定义），该模型规定证书路径验证中的所有证书在给定时间（即签名验证的时间）都必须有效。因此，适用以下限制："
+msgid "The verification model in the Trust Network PKI is the shell model (for example, defined in [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/)), which states that all certificates in the certificate path validation must be valid at a given time (i.e. the time of signature validation). Therefore, the following restrictions apply:"
+msgstr "信任网络 PKI 中的验证模型是壳模型（例如在 [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/) 中定义），该模型规定证书路径验证中的所有证书在给定时间（即签名验证的时间）都必须有效。因此，适用以下限制："
 
 #: input/pagecontent/concepts_certificate_governance.md:158
 msgid "There are multiple reasons why certificates should not be reused across different environments. One reason is that the corresponding private keys must be copied from one system to the other and typically non-production environments do not enjoy the same level of protection as production environments. This puts the security of the private keys at risk. In the scope of the Trust Network system there is an additional risk that DSCs issued for testing purpose are published on the production TNG and these DSCs could be used to issue valid health certificates."

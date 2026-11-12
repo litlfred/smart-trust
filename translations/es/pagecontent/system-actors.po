@@ -44,4 +44,4 @@ msgstr "Se utiliza para gestionar y publicar las correspondencias entre los dist
 
 #: input/pagecontent/system-actors.md:23
 msgid "Used to manage and publish product master data for health products, devices and commodities that may be referenced in a Verifiable Digital Health Certificates."
-msgstr "Se utiliza para gestionar y publicar los datos maestros de productos sanitarios, dispositivos y suministros a los que puede hacer referencia un certificado digital de salud verificable."
+msgstr "Se utiliza para gestionar y publicar los datos maestros de productos de salud, dispositivos y suministros a los que puede hacer referencia un certificado digital de salud verificable."

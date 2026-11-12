@@ -52,7 +52,7 @@ msgstr "صندوق أو برنامج أو وكالة متخصصة أو منظم�
 msgid "A GDHCN Participant is participant of the Trust Network that adheres to the Terms of Participation and manages the necessary technical infrastructure and governance processes. GDHCN Participants are responsible for making bilateral determinations related to the utilization of Trusted Services."
 msgstr "المشارك في GDHCN هو مشارك في شبكة الثقة يلتزم بشروط المشاركة ويدير البنية التحتية التقنية وعمليات الحوكمة اللازمة. ويتولى المشاركون في GDHCN مسؤولية اتخاذ القرارات الثنائية المتعلقة باستخدام الخدمات الموثوقة."
 
-#: input/pagecontent/concepts.md:122
+#: input/pagecontent/concepts.md:125
 msgid "A GDHCN Participant's Backend System for managing the local part of information. The implementation of GDHCN Participant's Backend System is not in the scope of this document. A national backend can be also understood as a trusted party on-boarded in the Trust Network Gateway (can be a script, a proxy or a web server as well)."
 msgstr "النظام الخلفي لمشارك في GDHCN المُستخدَم لإدارة الجزء المحلي من المعلومات. ويقع تنفيذ النظام الخلفي للمشارك في GDHCN خارج نطاق هذه الوثيقة. ويمكن أيضًا فهم النظام الخلفي الوطني على أنه طرف موثوق تم ضمّه إلى بوابة شبكة الثقة (ويمكن أن يكون كذلك نصًا برمجيًا أو خادمًا وكيلًا أو خادم ويب)."
 
@@ -64,7 +64,7 @@ msgstr "الحامل هو فرد يحوز شهادة صحية رقمية قاب�
 msgid "A Reciever is a system authorized by a Trust Network Participant to receive from a Holder a Veritifable verify, and utilize the content within."
 msgstr "الجهة المُستقبِلة هي نظام مأذون له من مشارك في شبكة الثقة بأن يتلقى من الحامل شهادة قابلة للتحقق، وأن يتحقق منها ويستخدم محتواها."
 
-#: input/pagecontent/concepts.md:144
+#: input/pagecontent/concepts.md:147
 msgid "A service (digital or otherwise) related to the issuance, management, verification, exchange, or other relevant processes, of Verifiable Digital Health Certificates which is defined using open, interoperable digital health standards."
 msgstr "خدمة (رقمية أو غير ذلك) تتعلق بإصدار الشهادات الصحية الرقمية القابلة للتحقق أو إدارتها أو التحقق منها أو تبادلها أو غير ذلك من العمليات ذات الصلة، وتُعرَّف باستخدام معايير صحية رقمية مفتوحة وقابلة للتشغيل البيني."
 
@@ -76,7 +76,7 @@ msgstr "مجموعة من المعايير السياساتية والتنظيم
 msgid "a State Party recognized by the International Health Regulations, or sub-national unit thereof;"
 msgstr "دولة طرف معترف بها بموجب اللوائح الصحية الدولية، أو وحدة دون وطنية تابعة لها؛"
 
-#: input/pagecontent/concepts.md:140
+#: input/pagecontent/concepts.md:143
 msgid "A system utilized by a GDHCN Participant to verify the digital signature of a Verifiable Digital Health Certificate."
 msgstr "نظام يستخدمه مشارك في GDHCN للتحقق من التوقيع الرقمي لشهادة صحية رقمية قابلة للتحقق."
 
@@ -160,7 +160,7 @@ msgstr "حوكمة شهادات مفاتيح التشفير"
 msgid "GDHCN Participant"
 msgstr "مشارك في GDHCN"
 
-#: input/pagecontent/concepts.md:121
+#: input/pagecontent/concepts.md:124
 msgid "GDHCN Participant Backend System"
 msgstr "النظام الخلفي للمشارك في GDHCN"
 
@@ -256,15 +256,15 @@ msgstr "الممثل التقني"
 msgid "Terms of Participation (TOP)"
 msgstr "شروط المشاركة (TOP)"
 
-#: input/pagecontent/concepts.md:127
+#: input/pagecontent/concepts.md:130
 msgid "The DECA public key certificate of a GDHCN Participants (could be more than one). The DECA is a certificate which acts a trust anchor in the verification of the certificate chain for the DESCs issued by a Trust Network Participant\""
 msgstr "شهادة المفتاح العمومي DECA لمشارك في GDHCN (قد تكون أكثر من شهادة واحدة). وDECA شهادة تؤدي دور مرسى الثقة في التحقق من سلسلة الشهادات لشهادات DESC الصادرة عن مشارك في شبكة الثقة"
 
-#: input/pagecontent/concepts.md:125
+#: input/pagecontent/concepts.md:128
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one)."
 msgstr "شهادة المفتاح العمومي DSCA لمشارك في GDHCN (قد تكون أكثر من شهادة واحدة)."
 
-#: input/pagecontent/concepts.md:131
+#: input/pagecontent/concepts.md:134
 msgid "The DSCA public key certificate of a GDHCN Participants (could be more than one). The DSCA is a certificate which acts a trust anchor in the verification of the certificate chain for the DSCs issued by a Trust Network Participant\""
 msgstr "شهادة المفتاح العمومي DSCA لمشارك في GDHCN (قد تكون أكثر من شهادة واحدة). وDSCA شهادة تؤدي دور مرسى الثقة في التحقق من سلسلة الشهادات لشهادات DSC الصادرة عن مشارك في شبكة الثقة"
 
@@ -304,7 +304,7 @@ msgstr "العملية والمواصفات التقنية المتعلقة بإ
 msgid "The processes required for an Eligible GDHCN Participant to join the GDHCN Trust Network. At the successful conclusion of the Onboarding Process, the Eligible GDHCN Participant shall be considered a GDHCN Participant. Sometimes simply referred to as “Onboarding”."
 msgstr "العمليات المطلوبة لانضمام مشارك مؤهَّل في GDHCN إلى شبكة الثقة التابعة لـ GDHCN. وعند الإتمام الناجح لعملية الانضمام، يُعَدّ المشارك المؤهَّل في GDHCN مشاركًا في GDHCN. ويُشار إليها أحيانًا ببساطة بـ«الانضمام»."
 
-#: input/pagecontent/concepts.md:137
+#: input/pagecontent/concepts.md:140
 msgid "The public key certificate that a GDHCN Participant uses to sign data packages that are uploaded to the TNG."
 msgstr "شهادة المفتاح العمومي التي يستخدمها المشارك في GDHCN لتوقيع حزم البيانات التي تُرفَع إلى TNG."
 
@@ -312,23 +312,23 @@ msgstr "شهادة المفتاح العمومي التي يستخدمها ال�
 msgid "The Public Key Infrastructure (PKI) is the trust model based on public key certificates and certificate authorities.  It is the means for publishing and distributing Trust Lists comprising the public keys that can be used to digitally verify the issuer of a Verifiable Digital Health Certificates."
 msgstr "البنية التحتية للمفاتيح العمومية (PKI) هي نموذج الثقة القائم على شهادات المفاتيح العمومية وسلطات التصديق. وهي الوسيلة لنشر قوائم الثقة وتوزيعها، وهي القوائم التي تضم المفاتيح العمومية التي يمكن استخدامها للتحقق رقميًا من الجهة المُصدِرة للشهادات الصحية الرقمية القابلة للتحقق."
 
-#: input/pagecontent/concepts.md:151
+#: input/pagecontent/concepts.md:154
 msgid "The specific Verifiable Digital Health Certificates are defined in the <a0>Content Profiles</a0>"
-msgstr "تُعرَّف الشهادات الصحية الرقمية القابلة للتحقق المحددة في <a0>ملفات تعريف المحتوى</a0>"
+msgstr "الشهادات الصحية الرقمية القابلة للتحقق المحددة مُعرَّفة في <a0>ملفات تعريف المحتوى</a0>"
 
-#: input/pagecontent/concepts.md:134
+#: input/pagecontent/concepts.md:137
 msgid "The TLS client authentication public key certificate of a GDHCN Participant's Backend System."
 msgstr "شهادة المفتاح العمومي لمصادقة العميل عبر TLS الخاصة بالنظام الخلفي لمشارك في GDHCN."
 
-#: input/pagecontent/concepts.md:116
+#: input/pagecontent/concepts.md:119
 msgid "The TLS server public key certificate of the TNG."
 msgstr "شهادة المفتاح العمومي لخادم TLS الخاصة بـ TNG."
 
-#: input/pagecontent/concepts.md:113
+#: input/pagecontent/concepts.md:116
 msgid "The Trust Anchor public key certificate of the TNG. The corresponding private key is used to sign the list of all SCA certificates offline."
 msgstr "شهادة المفتاح العمومي لمرسى الثقة الخاصة بـ TNG. ويُستخدَم المفتاح الخاص المقابل لها لتوقيع قائمة جميع شهادات SCA دون اتصال بالشبكة."
 
-#: input/pagecontent/concepts.md:110
+#: input/pagecontent/concepts.md:113
 msgid "The Trust Network Gateway (TNG) is the open-source software and its IT operational infrastructure, utilizing open standards, for a Public Key Infrastructure and metadata management services which is used to operationalize one or more Trust Domains.  The Trust Network Gateway can be interacted with using the <a0>API</a0> once a mTLS connection has been established."
 msgstr "بوابة شبكة الثقة (TNG) هي البرمجيات مفتوحة المصدر وبنيتها التحتية التشغيلية لتقنية المعلومات (IT)، القائمة على معايير مفتوحة، والمخصَّصة لبنية تحتية للمفاتيح العمومية ولخدمات إدارة البيانات الوصفية، وتُستخدَم لتفعيل نطاق ثقة واحد أو أكثر عمليًا. ويمكن التفاعل مع بوابة شبكة الثقة باستخدام <a0>API</a0> بمجرد إنشاء اتصال mTLS."
 
@@ -369,50 +369,51 @@ msgid "Trust Lists"
 msgstr "قوائم الثقة"
 
 #: input/pagecontent/concepts.md:105
+#: input/pagecontent/concepts.md:109
 msgid "Trust Network"
 msgstr "شبكة الثقة"
 
-#: input/pagecontent/concepts.md:115
+#: input/pagecontent/concepts.md:118
 msgid "Trust Network Gateway - Transport Layer Security  (TNGTLS)"
 msgstr "بوابة شبكة الثقة - أمن طبقة النقل  (TNGTLS)"
 
-#: input/pagecontent/concepts.md:112
+#: input/pagecontent/concepts.md:115
 msgid "Trust Network Gateway - Trust Anchor  (TNGTA)"
 msgstr "بوابة شبكة الثقة - مرسى الثقة  (TNGTA)"
 
-#: input/pagecontent/concepts.md:109
+#: input/pagecontent/concepts.md:112
 msgid "Trust Network Gateway (TNG)"
 msgstr "بوابة شبكة الثقة (TNG)"
 
-#: input/pagecontent/concepts.md:124
+#: input/pagecontent/concepts.md:127
 msgid "Trust Network Participant - Data Exchange Certificate Authority  (TNPDECA)"
 msgstr "مشارك في شبكة الثقة - سلطة التصديق لتبادل البيانات  (TNPDECA)"
 
-#: input/pagecontent/concepts.md:130
+#: input/pagecontent/concepts.md:133
 msgid "Trust Network Participant - Document Signing Certificate Authority  (TNPDSCA)"
 msgstr "مشارك في شبكة الثقة - سلطة التصديق لتوقيع المستندات  (TNPDSCA)"
 
-#: input/pagecontent/concepts.md:133
+#: input/pagecontent/concepts.md:136
 msgid "Trust Network Participant - Transport Layer Security (TNPTLS)"
 msgstr "مشارك في شبكة الثقة - أمن طبقة النقل (TNPTLS)"
 
-#: input/pagecontent/concepts.md:136
+#: input/pagecontent/concepts.md:139
 msgid "Trust Network Participant - Transport Layer Security (TNPUP)"
 msgstr "مشارك في شبكة الثقة - أمن طبقة النقل (TNPUP)"
 
-#: input/pagecontent/concepts.md:118
+#: input/pagecontent/concepts.md:121
 msgid "Trust Network Participant (TNP)"
 msgstr "مشارك في شبكة الثقة (TNP)"
 
-#: input/pagecontent/concepts.md:119
+#: input/pagecontent/concepts.md:122
 msgid "Trust Network Participant (TNP) is an acronym used to label certificates, infrastructure, or technical artifacts made available by GDHCN Participants under the GDHCN Trust Network."
 msgstr "مشارك في شبكة الثقة (TNP) اختصار يُستخدَم لتسمية الشهادات أو البنى التحتية أو المنتجات التقنية التي يتيحها المشاركون في GDHCN ضمن شبكة الثقة التابعة لـ GDHCN."
 
-#: input/pagecontent/concepts.md:139
+#: input/pagecontent/concepts.md:142
 msgid "Trust Network Participant Verifier"
 msgstr "الجهة المُتحقِّقة التابعة لمشارك في شبكة الثقة"
 
-#: input/pagecontent/concepts.md:143
+#: input/pagecontent/concepts.md:146
 msgid "Trusted Service"
 msgstr "خدمة موثوقة"
 
@@ -420,11 +421,11 @@ msgstr "خدمة موثوقة"
 msgid "Universal verifier applications that support different credential standards are complicated by wide variability in format of the credential payloads, signatures, key formats, and key distribution methods. Public keys formats include x509 certificates, JSON Web Key Sets (JWKS), and DID documents. Signing key distribution methods include API gateways, hosted by issuer at a pre-defined URL, embedded in certificates, and by block-chain based resolution. Establishing root of trust by trust anchor or distributing trust list has been accomplished by API gateway, hosted URL, private dissemination and other bilateral sharing agreements."
 msgstr "تتعقّد تطبيقات التحقق الشاملة التي تدعم معايير مختلفة لبيانات الاعتماد بسبب التباين الكبير في صيغ حمولات بيانات الاعتماد، والتوقيعات، وصيغ المفاتيح، وطرق توزيع المفاتيح. وتشمل صيغ المفاتيح العمومية شهادات x509، ومجموعات مفاتيح الويب بصيغة JSON (JWKS)، ووثائق DID. وتشمل طرق توزيع مفاتيح التوقيع بوابات API، والاستضافة لدى الجهة المُصدِرة على URL محدد مسبقًا، والتضمين في الشهادات، والحلّ القائم على سلاسل الكتل. وقد تحقق إرساء جذر الثقة عبر مرسى الثقة أو توزيع قائمة الثقة من خلال بوابات API، وعناوين URL المستضافة، والنشر الخاص، وغير ذلك من اتفاقات المشاركة الثنائية."
 
-#: input/pagecontent/concepts.md:148
+#: input/pagecontent/concepts.md:151
 msgid "Verifiable Digital Health Certificate"
 msgstr "شهادة صحية رقمية قابلة للتحقق"
 
-#: input/pagecontent/concepts.md:149
+#: input/pagecontent/concepts.md:152
 msgid "Verifiable Digital Health Certificate: A digital representation of a data set comprising a certificate or document, designed for a set of specific clinical or public health use cases which is defined using open, interoperable digital health standards; that contains within, or is associated to, a digital signature which can be verified by the public key of a public-private encryption key pair, and which is issued by a GDHCN Participant."
 msgstr "الشهادة الصحية الرقمية القابلة للتحقق: تمثيل رقمي لمجموعة بيانات تشكّل شهادة أو مستندًا، مصمَّم لمجموعة من حالات الاستخدام السريرية أو الخاصة بالصحة العامة المحددة، ويُعرَّف باستخدام معايير صحية رقمية مفتوحة وقابلة للتشغيل البيني؛ ويحتوي على توقيع رقمي أو يرتبط به، يمكن التحقق منه بالمفتاح العمومي لزوج مفاتيح تشفير عمومي وخاص، ويصدره مشارك في GDHCN."
 

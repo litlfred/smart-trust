@@ -16,7 +16,8 @@
   "coverage": {
     "translated": 13,
     "total": 13,
-    "pct": 100.0
+    "pct": 100
   },
-  "description": "Unofficial Arabic (Modern Standard Arabic, right-to-left) translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it; the untainted round-trip verdict for this locale is recorded in the PO header."
+  "description": "Unofficial Arabic (Modern Standard Arabic, right-to-left) translation. Semantic verification is per block, in the translation-qa sidecars, where a verdict names the agent or person who reached it; the untainted round-trip verdict for this locale is recorded in the PO header.",
+  "sourceHash": "f0701bff17e1"
 }

@@ -753,7 +753,7 @@ msgstr "Для справки посмотрите видео <a0>Создани
 
 #: input/pagecontent/concepts_onboarding_checklist.md:616
 msgid "Please ensure you replace with your actual environment's endpoint URL wherever indicated."
-msgstr "Во всех указанных местах замените URL-адрес конечной точкой вашей фактической среды."
+msgstr "Во всех указанных местах подставьте URL конечной точки вашей фактической среды."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:288
 msgid "Please note that you need to have  <a0>OpenSSL installed</a0>  (e.g. Win64 OpenSSL v3.3.0 Light) and added to your PATH environment variable. Also you may need allow the execution by setting an execution policy."
@@ -913,8 +913,8 @@ msgid "The extendedKeyUsage field is optional, for Covid certificates the below 
 msgstr "Поле extendedKeyUsage необязательно; для сертификатов COVID рекомендуется использовать приведённые ниже значения для дополнительного ограничения сертификата DSC следующим образом:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "Ниже приведены конечные точки <a0>Шлюза сети доверия</a0> для каждой из **сред**: разработки (DEV), пользовательского приёмочного тестирования (UAT) и производственной (PROD):"
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Ниже приведены конечные точки <a0>Шлюза сети доверия</a0> для каждой из сред: разработки (DEV), пользовательского приёмочного тестирования (UAT) и производственной (PROD):"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
@@ -986,7 +986,7 @@ msgstr "UAT"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:244
 msgid "Unix/Linux:	Use the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
-msgstr "Unix/Linux:	используйте bash-скрипт <a0>gen_all_certs.sh</a0> в операционной системе <a1>Linux/Unix/Mac</a1>."
+msgstr "Unix/Linux:\tиспользуйте bash-скрипт <a0>gen_all_certs.sh</a0> в операционной системе <a1>Linux/Unix/Mac</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:320
 msgid "UP.pem -> onboarding/DCC/UP"
@@ -1070,7 +1070,7 @@ msgstr "Пользователям Windows — примечание о пров�
 
 #: input/pagecontent/concepts_onboarding_checklist.md:246
 msgid "Windows:		Use the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
-msgstr "Windows:		используйте скрипт PowerShell <a0>gen_all_certs.ps1</a0> в операционной системе <a1>Windows</a1>."
+msgstr "Windows:\t\tиспользуйте скрипт PowerShell <a0>gen_all_certs.ps1</a0> в операционной системе <a1>Windows</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1049
 msgid "You can also use the -S option with the git merge command to sign the resulting merge commit itself. The following example both verifies that every commit in the branch to be merged is signed and furthermore signs the resulting merge commit."

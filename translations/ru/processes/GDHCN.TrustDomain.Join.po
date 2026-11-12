@@ -50,11 +50,6 @@ msgstr "Уполномоченные сотрудники ВОЗ в состав
 msgid "Business Owner Representative"
 msgstr "Представитель владельца бизнес-процессов"
 
-#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
-#. Diagram label
-msgid "Go live"
-msgstr "Ввести в эксплуатацию"
-
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
 #. Diagram element documentation
 msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/TechnicalRepresentative."
@@ -119,6 +114,11 @@ msgstr "Секретариат GDHCN"
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
 msgstr "Секретариат GDHCN (ВОЗ)"
+
+#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
+#. Diagram label
+msgid "Go live"
+msgstr "Ввести в эксплуатацию"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:122
 #. Diagram label

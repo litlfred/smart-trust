@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/dak-api",
   "locale": "fr",
   "sourceFile": "input/pagecontent/dak-api.md",
-  "sourceHash": "5128c7fbaed9",
+  "sourceHash": "a6d5a9605884",
   "potFile": "translations/fr/pagecontent/dak-api.pot",
   "poFile": "translations/fr/pagecontent/dak-api.po",
   "poIncludes": [

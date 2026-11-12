@@ -63,11 +63,6 @@ msgstr "موظفو منظمة الصحة العالمية (WHO) المفوَّض
 msgid "Business Owner Representative"
 msgstr "ممثل مالك الأعمال"
 
-#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
-#. Diagram label
-msgid "Go live"
-msgstr "بدء التشغيل الفعلي"
-
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:32
 #. Diagram element documentation
 msgid "Connects the Participant's systems to the Trust Network Gateway and runs the tests (Framework IX). ActorDefinition http://smart.who.int/trust/ActorDefinition/TechnicalRepresentative."
@@ -132,6 +127,11 @@ msgstr "أمانة GDHCN"
 #. Diagram label
 msgid "GDHCN Secretariat (WHO)"
 msgstr "أمانة GDHCN (WHO)"
+
+#: input/business-processes/GDHCN.TrustDomain.Join.bpmn:46
+#. Diagram label
+msgid "Go live"
+msgstr "بدء التشغيل الفعلي"
 
 #: input/business-processes/GDHCN.TrustDomain.Join.bpmn:122
 #. Diagram label

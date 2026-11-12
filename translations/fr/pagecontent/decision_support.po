@@ -244,7 +244,7 @@ msgid "In addition to mapping the overall structure, clinical concepts need to b
 msgstr "Outre le mappage de la structure globale, les concepts cliniques doivent être correctement mappés. Par exemple, un format peut utiliser LOINC pour représenter le type d’un test médical, tandis qu’un autre peut utiliser SNOMED CT. Le mappage des concepts cliniques d’un format à un autre s’effectue à l’aide de <a0>ConceptMaps FHIR</a0>. Une ConceptMap définit un mappage entre un ensemble de concepts d’un système de codes et des concepts d’un autre système de codes."
 
 #: input/pagecontent/decision_support.md:43
-msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a county"
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
 msgstr "gouvernance. Dans cet exemple, le ministère de la santé peut décider d’exiger un test de COVID-19 négatif datant de moins de 72 heures pour autoriser l’entrée dans un pays"
 
 #: input/pagecontent/decision_support.md:221

@@ -1,10 +1,10 @@
 {
   "$schema": "translation-node/v1",
-  "$comment": "Spanish translation of input/pagecontent/overview.md. Agent translation, unofficial: no human has adjudicated it. Coverage 32/32.",
+  "$comment": "Spanish translation of input/pagecontent/overview.md. Agent translation, unofficial: no human has adjudicated it. Coverage 33/33.",
   "label": "trans:es/pagecontent/overview",
   "locale": "es",
   "sourceFile": "input/pagecontent/overview.md",
-  "sourceHash": "eb4e8993042a",
+  "sourceHash": "15a5dee58d07",
   "potFile": "translations/es/pagecontent/overview.pot",
   "poFile": "translations/es/pagecontent/overview.po",
   "poIncludes": [
@@ -18,8 +18,8 @@
     "generator": "agent translation (smart-trust es session)"
   },
   "coverage": {
-    "translated": 32,
-    "total": 32,
+    "translated": 34,
+    "total": 34,
     "pct": 100
   }
 }

@@ -134,16 +134,16 @@ msgid "Status Monitoring Dashboards"
 msgstr "Paneles de seguimiento del estado"
 
 #: input/pagecontent/endpoints.md:24
-msgid "THe following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "A continuación figuran los puntos de conexión de la <a0>lista de confianza DID de la GDHCN</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
+msgid "The following are the endpoints for the <a0>GDHCN DID Trust List</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "A continuación figuran los puntos de conexión de la <a0>lista de confianza DID de la GDHCN</a0> para cada uno de los entornos de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/endpoints.md:40
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "A continuación figuran los puntos de conexión de la <a0>puerta de enlace a la red de confianza</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "A continuación figuran los puntos de conexión de la <a0>puerta de enlace a la red de confianza</a0> para cada uno de los entornos de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/endpoints.md:53
-msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "Los siguientes paneles reflejan el estado en tiempo real del material de claves para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
+msgid "The following dashboards reflect the realtime status of key materials for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "Los siguientes paneles reflejan el estado en tiempo real del material de claves para cada uno de los entornos de desarrollo (DEV), pruebas de aceptación por el usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/endpoints.md:3
 msgid "The following describes the active services and endpoints for the GDHCN Trust Network Gateway."

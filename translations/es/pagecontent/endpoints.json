@@ -4,7 +4,7 @@
   "label": "trans:es/pagecontent/endpoints",
   "locale": "es",
   "sourceFile": "input/pagecontent/endpoints.md",
-  "sourceHash": "4f66b5e81e8e",
+  "sourceHash": "5257ae90d39a",
   "potFile": "translations/es/pagecontent/endpoints.pot",
   "poFile": "translations/es/pagecontent/endpoints.po",
   "poIncludes": [

@@ -52,7 +52,7 @@ msgstr "declaración de que se cumplirán los Términos de participación."
 
 #: input/pagecontent/concepts_onboarding.md:92
 msgid "Contact Persons - Technical, Legal, Business Owner."
-msgstr "Personas de contacto: Contacto técnico, Contacto legal, Responsable de contacto (Business Owner)."
+msgstr "Personas de contacto: Contacto técnico, Contacto legal, Contacto del responsable (Business Owner)."
 
 #: input/pagecontent/concepts_onboarding.md:129
 msgid "creation and Securing a Key Pair (Trust Anchor)  to sign/confirm on-boarding requests for the gateway;"

@@ -245,7 +245,7 @@ msgid "In addition to mapping the overall structure, clinical concepts need to b
 msgstr "Помимо сопоставления общей структуры, необходимо правильно сопоставить клинические концепты. Например, в одном формате для представления типа медицинского теста может использоваться LOINC, а в другом — SNOMED CT. Сопоставление клинических концептов одного формата с другим выполняется с помощью <a0>FHIR ConceptMaps</a0>. ConceptMap определяет сопоставление набора концептов одной системы кодов с концептами другой системы кодов."
 
 #: input/pagecontent/decision_support.md:43
-msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a county"
+msgid "level. In this example the health ministry may decide to require a negative COVID-19 test within 72 hours to allow entry into a country"
 msgstr "управления. В данном примере министерство здравоохранения может принять решение требовать отрицательный тест на COVID-19, сделанный в течение 72 часов, для разрешения въезда в страну"
 
 #: input/pagecontent/decision_support.md:221
@@ -347,7 +347,7 @@ msgstr "Общим представлением, в которое необхо�
 
 #: input/pagecontent/decision_support.md:437
 msgid "The ELM translation of the CQL can be run against the vaccination record using the <a0>JavaScript CQL Execution Framework library</a0> along with the <a1>JavaScript CQL Execution FHIR Data Source</a1>. This document describes how to set this up in a simple Node.js project. Node.js will first need to be installed if it is not already available. A new Node.js project with the needed CQL libraries can be set up using npm:"
-msgstr "Трансляцию CQL в ELM можно выполнить в отношении записи о вакцинации с помощью <a0>библиотеки JavaScript CQL Execution Framework</a0> вместе с <a1>JavaScript CQL Execution FHIR Data Source</a1>. В настоящем документе описано, как настроить это в простом проекте Node.js. Если Node.js ещё не установлен, его необходимо сначала установить. Новый проект Node.js с необходимыми библиотеками CQL можно создать с помощью npm:"
+msgstr "Результат трансляции CQL в ELM можно выполнить в отношении записи о вакцинации с помощью <a0>библиотеки JavaScript CQL Execution Framework</a0> вместе с <a1>JavaScript CQL Execution FHIR Data Source</a1>. В настоящем документе описано, как настроить это в простом проекте Node.js. Если Node.js ещё не установлен, его необходимо сначала установить. Новый проект Node.js с необходимыми библиотеками CQL можно создать с помощью npm:"
 
 #: input/pagecontent/decision_support.md:150
 msgid "The following example CQL shows a simple example of business rules applied to immunizations:"

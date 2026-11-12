@@ -1,10 +1,10 @@
 {
   "$schema": "translation-node/v1",
-  "$comment": "Spanish translation of input/pagecontent/trust_network_gateway_architecture.md. Agent translation, unofficial: no human has adjudicated it. Coverage 248/248.",
+  "$comment": "Spanish translation of input/pagecontent/trust_network_gateway_architecture.md. Agent translation, unofficial: no human has adjudicated it. Coverage 247/247.",
   "label": "trans:es/pagecontent/trust_network_gateway_architecture",
   "locale": "es",
   "sourceFile": "input/pagecontent/trust_network_gateway_architecture.md",
-  "sourceHash": "c8295468ee1e",
+  "sourceHash": "954c8009359f",
   "potFile": "translations/es/pagecontent/trust_network_gateway_architecture.pot",
   "poFile": "translations/es/pagecontent/trust_network_gateway_architecture.po",
   "poIncludes": [
@@ -18,8 +18,8 @@
     "generator": "agent translation (smart-trust es session)"
   },
   "coverage": {
-    "translated": 248,
-    "total": 248,
+    "translated": 247,
+    "total": 247,
     "pct": 100
   }
 }

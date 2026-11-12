@@ -142,7 +142,7 @@ msgstr "Rencontrer le représentant et vérifier son passeport"
 #: input/business-processes/GDHCN.ONB.ConveyLetter.bpmn:49
 #. Diagram label
 msgid "Meet WHO at a governing body with passport"
-msgstr "Rencontrer l’OMS lors d’un organe directeur, muni de son passeport"
+msgstr "Rencontrer l’OMS lors d’une réunion d’un organe directeur, muni de son passeport"
 
 #: input/business-processes/GDHCN.ONB.ConveyLetter.bpmn:44
 #. Diagram label

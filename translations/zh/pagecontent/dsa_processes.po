@@ -39,36 +39,36 @@ msgstr "<a0>Receiver</a0>；任何检查某一方签名或 TLS 证书的系统"
 msgid "<a0>RFC 5914</a0> (Trust Anchor Format) states \"this root is trusted\" in ASN.1 only. It has no JSON form. A local list of X.509 roots is therefore kept as PEM files plus RFC 5280 checks."
 msgstr "<a0>RFC 5914</a0>（信任锚格式）仅以 ASN.1 表述“此根受信任”，没有 JSON 形式。因此，X.509 根的本地列表以 PEM 文件加 RFC 5280 检查的方式保存。"
 
-#: input/pagecontent/dsa_processes.md:205
+#: input/pagecontent/dsa_processes.md:207
 msgid "<a0>smart-trust-phw, process D</a0>"
 msgstr "<a0>smart-trust-phw，流程 D</a0>"
 
-#: input/pagecontent/dsa_processes.md:206
+#: input/pagecontent/dsa_processes.md:208
 msgid "<a0>smart-trust-phw, process E</a0>"
 msgstr "<a0>smart-trust-phw，流程 E</a0>"
 
-#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:214
 msgid "<a0>smart-trust-phw, process F</a0>"
 msgstr "<a0>smart-trust-phw，流程 F</a0>"
 
-#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:215
 msgid "<a0>smart-trust-phw, process G</a0>"
 msgstr "<a0>smart-trust-phw，流程 G</a0>"
 
-#: input/pagecontent/dsa_processes.md:214
+#: input/pagecontent/dsa_processes.md:216
 msgid "<a0>smart-trust-phw, process H</a0>"
 msgstr "<a0>smart-trust-phw，流程 H</a0>"
 
-#: input/pagecontent/dsa_processes.md:207
-#: input/pagecontent/dsa_processes.md:208
 #: input/pagecontent/dsa_processes.md:209
 #: input/pagecontent/dsa_processes.md:210
 #: input/pagecontent/dsa_processes.md:211
+#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:213
 msgid "<a0>smart-trust-phw</a0>"
 msgstr "<a0>smart-trust-phw</a0>"
 
-#: input/pagecontent/dsa_processes.md:204
-#: input/pagecontent/dsa_processes.md:216
+#: input/pagecontent/dsa_processes.md:206
+#: input/pagecontent/dsa_processes.md:218
 msgid "<a0>this page</a0>"
 msgstr "<a0>本页</a0>"
 
@@ -98,7 +98,7 @@ msgstr "DSA 信任域将由 WHO 决定。本指南不提议设立此类信任域
 
 #: input/pagecontent/dsa_processes.md:44
 msgid "A DSA, or the policy of the system that enforces it, says which anchors it accepts. The accepted list is either a DID document or a set of X.509 roots. No new format is needed."
-msgstr "DSA 或执行它的系统的策略会说明其接受哪些锚。所接受的列表要么是一个 DID 文档，要么是一组 X.509 根。无需新的格式。"
+msgstr "DSA（或执行它的系统的策略）会说明其接受哪些锚。所接受的列表要么是一个 DID 文档，要么是一组 X.509 根。无需新的格式。"
 
 #: input/pagecontent/dsa_processes.md:52
 msgid "A ministry or institute publishes its own DID document"
@@ -108,11 +108,11 @@ msgstr "由某个部委或研究机构发布其自己的 DID 文档"
 msgid "A worked example. The names are fictional. Ministry M shares a dataset with Institute I under a signed PDF. There is no ODRL."
 msgstr "一个实例。其中的名称均为虚构。部委 M 依据一份已签署的 PDF 与研究机构 I 共享一个数据集。不使用 ODRL。"
 
-#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:214
 msgid "Access decision"
 msgstr "访问决定"
 
-#: input/pagecontent/dsa_processes.md:211
+#: input/pagecontent/dsa_processes.md:213
 msgid "Agent delegation"
 msgstr "代理委托"
 
@@ -120,7 +120,7 @@ msgstr "代理委托"
 msgid "all transport"
 msgstr "全部传输"
 
-#: input/pagecontent/dsa_processes.md:215
+#: input/pagecontent/dsa_processes.md:217
 msgid "Amendment, renewal, termination, expiry"
 msgstr "修订、续期、终止、到期"
 
@@ -128,7 +128,7 @@ msgstr "修订、续期、终止、到期"
 msgid "Anchor"
 msgstr "锚"
 
-#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:215
 msgid "Audit, provenance and duty checks"
 msgstr "审计、来源追溯和义务检查"
 
@@ -165,7 +165,7 @@ msgstr "数据接收方"
 msgid "Data Sharing Agreement Processes"
 msgstr "数据共享协议流程"
 
-#: input/pagecontent/dsa_processes.md:224
+#: input/pagecontent/dsa_processes.md:226
 msgid "DID Core 1.0 section number for verification methods (§5.2)."
 msgstr "DID Core 1.0 中验证方法的章节号（§5.2）。"
 
@@ -187,7 +187,7 @@ msgstr "did:web：在该方的 DID 文档中添加一个 {code0} 条目（DID Co
 msgid "did:web: resolve the DID document over HTTPS."
 msgstr "did:web：通过 HTTPS 解析 DID 文档。"
 
-#: input/pagecontent/dsa_processes.md:216
+#: input/pagecontent/dsa_processes.md:218
 msgid "Dispute and breach handling"
 msgstr "争议和违约处理"
 
@@ -211,31 +211,36 @@ msgstr "仅文档的 DSA。相同。证据为日志加哈希值。"
 msgid "Done by a program"
 msgstr "由程序完成"
 
-#: input/pagecontent/dsa_processes.md:204
-#: input/pagecontent/dsa_processes.md:205
 #: input/pagecontent/dsa_processes.md:206
-#: input/pagecontent/dsa_processes.md:212
-#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:207
+#: input/pagecontent/dsa_processes.md:208
 #: input/pagecontent/dsa_processes.md:214
+#: input/pagecontent/dsa_processes.md:215
 #: input/pagecontent/dsa_processes.md:216
+#: input/pagecontent/dsa_processes.md:218
 msgid "draft"
 msgstr "草稿"
 
-#: input/pagecontent/dsa_processes.md:202
+#: input/pagecontent/dsa_processes.md:204
 msgid "Draft and negotiate the agreement"
 msgstr "起草和协商协议"
 
 #: input/pagecontent/dsa_processes.md:8
 msgid "Draft. This page is in the litlfred fork. It is not WHO guidance. The process list (P1 to P15) is our own structure; no standard defines \"the DSA processes\". Items marked unverified were not checked against the source specification."
-msgstr "草稿。本页位于 litlfred 分支中，并非 WHO 指导文件。流程列表（P1 至 P15）是我们自己的结构；没有任何标准定义“DSA 流程”。标为“未经核实”的条目未对照源规范进行检查。"
+msgstr "草稿。本页位于 litlfred 复刻（fork）中，并非 WHO 指导文件。流程列表（P1 至 P15）是我们自己的结构；没有任何标准定义“DSA 流程”。标为“未经核实”的条目未对照源规范进行检查。"
 
 #: input/pagecontent/dsa_processes.md:180
 msgid "Every call is logged with the PDF URL and hash. A person reviews the log against the PDF's clauses. At the end, I sends a signed deletion letter; M keeps it with its hash"
 msgstr "每次调用都连同 PDF 的 URL 和哈希值一起记录。由人对照 PDF 的条款审阅日志。结束时，I 发送一封已签名的删除函；M 将其连同哈希值一并保存"
 
-#: input/pagecontent/dsa_processes.md:202
-#: input/pagecontent/dsa_processes.md:203
-#: input/pagecontent/dsa_processes.md:215
+#: input/pagecontent/dsa_processes.md:192
+#, python-brace-format
+msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
+msgstr "此处展示 FHIR R4 {code0}，是因为 IHE PCF 使用它。本指南采用 FHIR R4 4.0.1，与 smart-base 和 smart-trust-phw 相同（所有者，2026-11-07），因此 Consent 采用本指南自身的版本。smart-trust-phw 的 <a0>Consent</a0> 页面描述了明示同意和默示同意。"
+
+#: input/pagecontent/dsa_processes.md:204
+#: input/pagecontent/dsa_processes.md:205
+#: input/pagecontent/dsa_processes.md:217
 msgid "folio-assistant-core (document life cycle)"
 msgstr "folio-assistant-core（文档生命周期）"
 
@@ -308,7 +313,7 @@ msgstr "如 I 违反该 PDF，M 的管理员停用该客户端并撤销证书"
 msgid "If the anchor is GDHCN {#p3-gdhcn}"
 msgstr "如果锚是 GDHCN {#p3-gdhcn}"
 
-#: input/pagecontent/dsa_processes.md:225
+#: input/pagecontent/dsa_processes.md:227
 msgid "IHE VHL transaction numbers and names (ITI-YY1, ITI-YY2), taken from an analysis and not re-checked."
 msgstr "IHE VHL 事务编号和名称（ITI-YY1、ITI-YY2），取自一项分析，未经复核。"
 
@@ -316,7 +321,7 @@ msgstr "IHE VHL 事务编号和名称（ITI-YY1、ITI-YY2），取自一项分�
 msgid "In. Key pairs; for GDHCN, application letters."
 msgstr "输入。密钥对；对于 GDHCN，还有申请函。"
 
-#: input/pagecontent/dsa_processes.md:210
+#: input/pagecontent/dsa_processes.md:212
 msgid "Individual consent, linked to the agreement"
 msgstr "个人同意，与协议关联"
 
@@ -378,7 +383,7 @@ msgstr "国家规定"
 msgid "None. Trust comes from the domain and its TLS certificate"
 msgstr "无。信任来自域名及其 TLS 证书"
 
-#: input/pagecontent/dsa_processes.md:222
+#: input/pagecontent/dsa_processes.md:224
 msgid "Not verified {#unverified}"
 msgstr "未经核实 {#unverified}"
 
@@ -444,19 +449,19 @@ msgstr "加入所需的书面手续"
 msgid "Party with keys"
 msgstr "持有密钥的一方"
 
-#: input/pagecontent/dsa_processes.md:202
-#: input/pagecontent/dsa_processes.md:203
-#: input/pagecontent/dsa_processes.md:207
-#: input/pagecontent/dsa_processes.md:208
+#: input/pagecontent/dsa_processes.md:204
+#: input/pagecontent/dsa_processes.md:205
 #: input/pagecontent/dsa_processes.md:209
 #: input/pagecontent/dsa_processes.md:210
 #: input/pagecontent/dsa_processes.md:211
-#: input/pagecontent/dsa_processes.md:215
+#: input/pagecontent/dsa_processes.md:212
+#: input/pagecontent/dsa_processes.md:213
+#: input/pagecontent/dsa_processes.md:217
 msgid "planned"
 msgstr "已计划"
 
 #: input/pagecontent/dsa_processes.md:171
-#: input/pagecontent/dsa_processes.md:200
+#: input/pagecontent/dsa_processes.md:202
 msgid "Process"
 msgstr "流程"
 
@@ -464,11 +469,11 @@ msgstr "流程"
 msgid "Publish the public keys."
 msgstr "发布公钥。"
 
-#: input/pagecontent/dsa_processes.md:203
+#: input/pagecontent/dsa_processes.md:205
 msgid "Publish: version, hash, catalogue"
 msgstr "发布：版本、哈希值、目录"
 
-#: input/pagecontent/dsa_processes.md:209
+#: input/pagecontent/dsa_processes.md:211
 msgid "QR and paper"
 msgstr "QR 码和纸质"
 
@@ -476,11 +481,11 @@ msgstr "QR 码和纸质"
 msgid "records"
 msgstr "记录"
 
-#: input/pagecontent/dsa_processes.md:205
+#: input/pagecontent/dsa_processes.md:207
 msgid "Register a server client"
 msgstr "注册服务器客户端"
 
-#: input/pagecontent/dsa_processes.md:204
+#: input/pagecontent/dsa_processes.md:206
 msgid "Register parties and keys with a trust anchor"
 msgstr "向信任锚注册各方及其密钥"
 
@@ -492,11 +497,11 @@ msgstr "注册"
 msgid "Resolve. Reinstate (lift the suspension), amend (P14) or terminate (P14, then revoke by P13)."
 msgstr "解决。恢复（解除暂停）、修订（P14）或终止（P14，然后通过 P13 撤销）。"
 
-#: input/pagecontent/dsa_processes.md:214
+#: input/pagecontent/dsa_processes.md:216
 msgid "Revocation and suspension"
 msgstr "撤销和暂停"
 
-#: input/pagecontent/dsa_processes.md:227
+#: input/pagecontent/dsa_processes.md:229
 msgid "RFC 5280 and RFC 8705 section numbers are cited from standing knowledge."
 msgstr "RFC 5280 和 RFC 8705 的章节号依据既有知识引用。"
 
@@ -520,7 +525,7 @@ msgstr "角色。双方；监管机构；法律文本所指定的法院或仲裁
 msgid "Roles. Each party; the trust anchor operator."
 msgstr "角色。各方；信任锚运营方。"
 
-#: input/pagecontent/dsa_processes.md:206
+#: input/pagecontent/dsa_processes.md:208
 msgid "Server-to-server access"
 msgstr "服务器到服务器访问"
 
@@ -537,7 +542,7 @@ msgstr "标准。DID Core 1.0（W3C 推荐标准）。did:web 和 JsonWebSignatu
 msgid "Standards. None for the process itself. In a computable DSA, ODRL 2.2 {code0} (§2.6.6) and {code1} (§2.6.7) can state what follows when a duty is not met. The dispute itself is a legal matter."
 msgstr "标准。流程本身没有标准。在可计算 DSA 中，ODRL 2.2 的 {code0}（§2.6.6）和 {code1}（§2.6.7）可以说明义务未履行时的后果。争议本身属于法律事项。"
 
-#: input/pagecontent/dsa_processes.md:200
+#: input/pagecontent/dsa_processes.md:202
 msgid "Status"
 msgstr "状态"
 
@@ -562,11 +567,11 @@ msgstr "检查（规则由人手动设定）"
 msgid "The deploying system's own list of accepted keys or roots"
 msgstr "部署系统自己的已接受密钥或根的列表"
 
-#: input/pagecontent/dsa_processes.md:198
+#: input/pagecontent/dsa_processes.md:200
 msgid "The DSA processes are split by layer. Only P3 and P15 are on this page."
 msgstr "DSA 流程按层划分。本页仅包含 P3 和 P15。"
 
-#: input/pagecontent/dsa_processes.md:218
+#: input/pagecontent/dsa_processes.md:220
 msgid "The server-to-server processes (P4, P5, P11, P12, P13) are BPMN processes D to H in smart-trust-phw. Tracked in <a0>litlfred/folio-assistant#2702</a0>."
 msgstr "服务器到服务器的流程（P4、P5、P11、P12、P13）是 smart-trust-phw 中的 BPMN 流程 D 至 H。在 <a0>litlfred/folio-assistant#2702</a0> 中跟踪。"
 
@@ -618,11 +623,11 @@ msgstr "使用来自另一个域的密钥签署 DSA 材料在技术上可行，�
 msgid "Verifier"
 msgstr "验证方"
 
-#: input/pagecontent/dsa_processes.md:207
+#: input/pagecontent/dsa_processes.md:209
 msgid "Wallet issuance"
 msgstr "钱包签发"
 
-#: input/pagecontent/dsa_processes.md:208
+#: input/pagecontent/dsa_processes.md:210
 msgid "Wallet presentation"
 msgstr "钱包出示"
 
@@ -650,7 +655,7 @@ msgstr "由系统所有者自行决定"
 msgid "When the agreement is only a signed PDF {#signed-pdf}"
 msgstr "当协议仅为一份已签署的 PDF 时 {#signed-pdf}"
 
-#: input/pagecontent/dsa_processes.md:200
+#: input/pagecontent/dsa_processes.md:202
 msgid "Where"
 msgstr "所在位置"
 
@@ -659,7 +664,7 @@ msgstr "所在位置"
 msgid "Where consent is needed, consents are paper forms, scanned into FHIR {code0}, with {code1} set to the PDF URL (<a0>FHIR R4 Consent</a0>)"
 msgstr "需要同意时，同意书为纸质表格，扫描后存入 FHIR {code0}，并将 {code1} 设为该 PDF 的 URL（<a0>FHIR R4 Consent</a0>）"
 
-#: input/pagecontent/dsa_processes.md:196
+#: input/pagecontent/dsa_processes.md:198
 msgid "Where the other processes are {#elsewhere}"
 msgstr "其他流程在哪里 {#elsewhere}"
 
@@ -678,12 +683,3 @@ msgstr "X.509：按 RFC 5280 进行到所接受根的路径验证。"
 #: input/pagecontent/dsa_processes.md:94
 msgid "X.509: the CA issues the certificate."
 msgstr "X.509：由 CA 签发证书。"
-
-#: input/pagecontent/dsa_processes.md:192
-#, python-brace-format
-msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R4 4.0.1, as smart-base and smart-trust-phw are (owner, 2026-11-07), so the Consent is the guide's own version. smart-trust-phw's <a0>Consent</a0> page describes explicit and implied consent."
-msgstr "此处展示 FHIR R4 {code0}，是因为 IHE PCF 使用它。本指南采用 FHIR R4 4.0.1，与 smart-base 和 smart-trust-phw 相同（所有者，2026-11-07），因此 Consent 采用本指南自身的版本。smart-trust-phw 的 <a0>Consent</a0> 页面描述了明示同意和默示同意。"
-
-#~ #, python-brace-format
-#~ msgid "FHIR R4 {code0} is shown because IHE PCF uses it. This guide is FHIR R5. Which Consent version applies is decided in smart-trust-phw (needs approval)."
-#~ msgstr "此处展示 FHIR R4 {code0}，是因为 IHE PCF 使用它。本指南采用 FHIR R5。适用哪个 Consent 版本由 smart-trust-phw 决定（需要批准）。"

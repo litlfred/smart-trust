@@ -156,7 +156,7 @@ msgstr "¿Cuál es la política actual sobre la renovación de los certificados 
 
 #: input/pagecontent/faq.md:44
 msgid "What is the onboarding process for new applications not previously connected to EU DCC?"
-msgstr "¿Cuál es el proceso de integración de nuevas solicitudes que no estaban conectadas previamente al EU DCC?"
+msgstr "¿Cuál es el proceso de integración de nuevas aplicaciones que no estaban conectadas previamente al EU DCC?"
 
 #: input/pagecontent/faq.md:63
 msgid "What is the process for proposing alternatives to the current TLS certificate policy?"
@@ -164,7 +164,7 @@ msgstr "¿Cuál es el proceso para proponer alternativas a la política actual d
 
 #: input/pagecontent/faq.md:8
 msgid "What is the role of the Business Owner Contact?"
-msgstr "¿Cuál es la función del Responsable de contacto (Business Owner)?"
+msgstr "¿Cuál es la función del Contacto del responsable (Business Owner)?"
 
 #: input/pagecontent/faq.md:5
 msgid "Who can serve as the Application Form Representative for GDHCN participation?"

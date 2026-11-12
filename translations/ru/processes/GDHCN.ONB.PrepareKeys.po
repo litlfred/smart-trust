@@ -133,7 +133,7 @@ msgstr "Шаг [11]."
 #: input/business-processes/GDHCN.ONB.PrepareKeys.bpmn:89
 #. Diagram element documentation
 msgid "Step [12]: the invitation loses validity after the period the page gives."
-msgstr "Шаг [12]: приглашение теряет силу по истечении срока, указанного на этой странице."
+msgstr "Шаг [12]: приглашение теряет силу по истечении срока, указанного на соответствующей странице."
 
 #: input/business-processes/GDHCN.ONB.PrepareKeys.bpmn:121
 #. Diagram element documentation

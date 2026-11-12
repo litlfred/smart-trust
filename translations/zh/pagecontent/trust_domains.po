@@ -80,8 +80,8 @@ msgid "Elements are defined by JSON-LD. As of 2023-02-12, the most current <a0>J
 msgstr "元素由 JSON-LD 定义。截至 2023-02-12，最新的<a0>疫苗 JSON-LD 上下文</a0>和<a1>检测结果</a1> JSON-LD 上下文见此处。请注意，证书中嵌入的 DIVOC 专用 JSON-LD 上下文的 URI 无法解析。"
 
 #: input/pagecontent/trust_domains.md:50
-msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
-msgstr "EU DCC：[[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/#ref-ehn-trust-framework-2021), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/#ref-ehn-dcc-techspec-vol1-2021), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/#ref-etsi-en-319-102-1-2016), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/#ref-ec-dcc-techspec-vol1-5), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/#ref-ec-dcc-vol1-2022), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/#ref-eu-implementing-decision-2021-1073)"
+msgid "EU DCC: [[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
+msgstr "EU DCC：[[ehn-trust-framework-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-trust-framework-2021/), [[ehn-dcc-techspec-vol1-2021]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ehn-dcc-techspec-vol1-2021/), [[etsi-en-319-102-1-2016]](en/folio-assistant-core/bibliography/smart-trust-catalogue/etsi-en-319-102-1-2016/), [[ec-dcc-techspec-vol1-5]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-techspec-vol1-5/), [[ec-dcc-vol1-2022]](en/folio-assistant-core/bibliography/smart-trust-catalogue/ec-dcc-vol1-2022/), [[eu-implementing-decision-2021-1073]](en/folio-assistant-core/bibliography/smart-trust-catalogue/eu-implementing-decision-2021-1073/)"
 
 #: input/pagecontent/trust_domains.md:41
 msgid "European Union's <a0>Digital Covid Certificates (DCC)</a0> (required)"
@@ -92,8 +92,8 @@ msgid "Framework, Annex I"
 msgstr "框架，附件一"
 
 #: input/pagecontent/trust_domains.md:55
-msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
-msgstr "ICAO：[[icao-vds-nc]](en/folio-assistant-core/bibliography/#ref-icao-vds-nc)"
+msgid "ICAO: [[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
+msgstr "ICAO：[[icao-vds-nc]](en/folio-assistant-core/bibliography/smart-trust-catalogue/icao-vds-nc/)"
 
 #: input/pagecontent/trust_domains.md:43
 msgid "International Civil Aviation Organisation (ICAO) Visible Digital Seals - Non-Constrained (VDS-NC) (optional)"
@@ -120,8 +120,8 @@ msgid "Smart Health Cards (SHC) - Immunization (optional)"
 msgstr "Smart Health Cards（SHC）- 免疫接种（可选）"
 
 #: input/pagecontent/trust_domains.md:56
-msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
-msgstr "SMART Health Cards：[[smart-health-cards-spec]](en/folio-assistant-core/bibliography/#ref-smart-health-cards-spec), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/#ref-hl7-shc-vaccination-ig)"
+msgid "SMART Health Cards: [[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"
+msgstr "SMART Health Cards：[[smart-health-cards-spec]](en/folio-assistant-core/bibliography/smart-trust-catalogue/smart-health-cards-spec/), [[hl7-shc-vaccination-ig]](en/folio-assistant-core/bibliography/smart-trust-catalogue/hl7-shc-vaccination-ig/)"
 
 #: input/pagecontent/trust_domains.md:46
 msgid "Source specifications"
@@ -142,7 +142,7 @@ msgstr "<a0>IPS 朝觐</a0>实施指南包含世卫组织（WHO）关于朝觐�
 
 #: input/pagecontent/trust_domains.md:29
 msgid "The <a0>Digital Documentation of COVID-19 Certificates (DDCC)</a0> published in August 2021 and similar guidance for test results (https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1) published in March 2022 serve as the reference for the associated <a1>FHIR Implementation Guide</a1>. This Implementation Guide (IG) acts as the computable representation of the core data elements in the published guidance, mapped to standard terminologies. These data models, in the form of FHIR logical models, and terminologies, in the form of FHIR value sets, are the basis for interoperability between the various credential formats. The IG provides FHIR Structure Maps and Concept Maps to define transformations between supported credential formats and the core data set, which allows business rules to execute against a common set of data elements."
-msgstr "2021 年 8 月发布的<a0>COVID-19 证书数字文档（DDCC）</a0>以及 2022 年 3 月发布的针对检测结果的类似指导（https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1）是相关 <a1>FHIR 实施指南</a1>的参考依据。本实施指南（IG）是已发布指导中核心数据元素的可计算表示，并映射到标准术语。这些以 FHIR 逻辑模型形式表示的数据模型和以 FHIR 值集形式表示的术语，是各种凭证格式之间互操作性的基础。该 IG 提供 FHIR Structure Map 和 Concept Map，用于定义所支持的凭证格式与核心数据集之间的转换，从而使业务规则能够针对一组通用数据元素执行。"
+msgstr "2021 年 8 月发布的<a0>COVID-19 证书数字文档（DDCC）</a0>以及 2022 年 3 月发布的针对检测结果的类似指导（https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1 ）是相关 <a1>FHIR 实施指南</a1>的参考依据。本实施指南（IG）是已发布指导中核心数据元素的可计算表示，并映射到标准术语。这些以 FHIR 逻辑模型形式表示的数据模型和以 FHIR 值集形式表示的术语，是各种凭证格式之间互操作性的基础。该 IG 提供 FHIR Structure Map 和 Concept Map，用于定义所支持的凭证格式与核心数据集之间的转换，从而使业务规则能够针对一组通用数据元素执行。"
 
 #: input/pagecontent/trust_domains.md:13
 msgid "The <a0>GDHCN Administrative and Operational Framework</a0> is the legal source for Trust Domains. The <a1>Trust Domain</a1> logical model follows its three-part definition: use cases (modelled by DAK components), technical specifications, and policy and regulatory standards. A Trust Domain also names its terms of use, which is a ValueSet of the policies a participant may say it acts under."

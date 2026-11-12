@@ -53,7 +53,7 @@ msgstr "подтверждение соблюдения Условий учас�
 
 #: input/pagecontent/concepts_onboarding.md:92
 msgid "Contact Persons - Technical, Legal, Business Owner."
-msgstr "Контактные лица — технический специалист, юрист, бизнес-владелец."
+msgstr "Контактные лица — технический представитель, представитель по правовым вопросам, представитель владельца бизнес-процессов."
 
 #: input/pagecontent/concepts_onboarding.md:129
 msgid "creation and Securing a Key Pair (Trust Anchor)  to sign/confirm on-boarding requests for the gateway;"

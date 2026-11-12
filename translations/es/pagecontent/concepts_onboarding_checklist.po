@@ -257,7 +257,7 @@ msgstr "Crear un paquete CMS:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:651
 msgid "Create an Document Signer Certificate and sign it by the SCA <a0>Refer</a0> and <a1>DSC generation example</a1>"
-msgstr "Cree un certificado del firmante de documentos y fírmelo con la SCA. <a0>Consulte</a0> el <a1>ejemplo de generación de DSC</a1>"
+msgstr "Cree un certificado del firmante de documentos y fírmelo con la SCA. <a0>Consulte</a0> también el <a1>ejemplo de generación de DSC</a1>"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:238
 msgid "Create Certificates"
@@ -912,8 +912,8 @@ msgid "The extendedKeyUsage field is optional, for Covid certificates the below 
 msgstr "El campo extendedKeyUsage es opcional; para los certificados de COVID se recomienda utilizar los valores siguientes para restringir aún más el certificado DSC, de la siguiente manera:"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:606
-msgid "THe following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) **environment*s:"
-msgstr "A continuación se indican los puntos de conexión de la <a0>puerta de enlace a la red de confianza (Trust Network Gateway)</a0> para cada uno de los **entornos* de desarrollo (DEV), pruebas de aceptación de usuario (UAT) y producción (PROD):"
+msgid "The following are the endpoints for the <a0>Trust Network Gateway</a0> for each of development (DEV), user-acceptance testing (UAT) and production (PROD) environments:"
+msgstr "A continuación se indican los puntos de conexión de la <a0>puerta de enlace a la red de confianza (Trust Network Gateway)</a0> para cada uno de los entornos de desarrollo (DEV), pruebas de aceptación de usuario (UAT) y producción (PROD):"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:787
 msgid "The following configuration files have been provided during the alignment on the <a0>certificate governance</a0>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above."
@@ -985,7 +985,7 @@ msgstr "UAT"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:244
 msgid "Unix/Linux:	Use the <a0>gen_all_certs.sh</a0> bash script on <a1>Linux/Unix/Mac</a1> operating system."
-msgstr "Unix/Linux:	Utilice el script bash <a0>gen_all_certs.sh</a0> en el sistema operativo <a1>Linux/Unix/Mac</a1>."
+msgstr "Unix/Linux:\tUtilice el script bash <a0>gen_all_certs.sh</a0> en el sistema operativo <a1>Linux/Unix/Mac</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:320
 msgid "UP.pem -> onboarding/DCC/UP"
@@ -1069,7 +1069,7 @@ msgstr "Usuarios de Windows: nota sobre la validación de certificados con cURL:
 
 #: input/pagecontent/concepts_onboarding_checklist.md:246
 msgid "Windows:		Use the <a0>gen_all_certs.ps1</a0> PowerShell script on <a1>Windows</a1> operating system."
-msgstr "Windows:		Utilice el script de PowerShell <a0>gen_all_certs.ps1</a0> en el sistema operativo <a1>Windows</a1>."
+msgstr "Windows:\t\tUtilice el script de PowerShell <a0>gen_all_certs.ps1</a0> en el sistema operativo <a1>Windows</a1>."
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1049
 msgid "You can also use the -S option with the git merge command to sign the resulting merge commit itself. The following example both verifies that every commit in the branch to be merged is signed and furthermore signs the resulting merge commit."

@@ -20,8 +20,9 @@ msgid "<a0>Decentralized Identifiers</a0> (DID) according to the <a1>GDHCN speci
 msgstr "<a0>Identificadores descentralizados</a0> (DID) conforme a la <a1>especificación de la GDHCN</a1>."
 
 #: input/pagecontent/transactions.md:49
-msgid "A Trust Network Partcipiant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
-msgstr "Un Participante en la red de confianza publica claves en la puerta de enlace a la red de confianza (TNG) para su uso por las aplicaciones de verificación.  Las claves pueden codificarse para diversos usos, entre ellos conforme a la <a0>gobernanza de certificados</a0>, según su <a1>$usage**](ValueSet-KeyUsage.html) and trust [**$domain</a1>"
+#, python-brace-format
+msgid "A Trust Network Participant publish keys to the Trust Network Gateway for use by Verification Applications.  Keys may be coded for a variety of uses including following the <a0>certificate governance</a0> according to their <a1>{code0}</a1> and trust <a2>{code1}</a2>"
+msgstr "Un Participante en la red de confianza publica claves en la puerta de enlace a la red de confianza (TNG) para su uso por las aplicaciones de verificación.  Las claves pueden codificarse para diversos usos, entre ellos conforme a la <a0>gobernanza de certificados</a0>, según su <a1>{code0}</a1> y su <a2>{code1}</a2> de confianza"
 
 #: input/pagecontent/transactions.md:32
 msgid "Can share list of public keys in the following format:"

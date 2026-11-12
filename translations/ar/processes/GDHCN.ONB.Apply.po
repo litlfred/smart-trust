@@ -36,7 +36,7 @@ msgstr "رُفض الطلب"
 #: input/business-processes/GDHCN.ONB.Apply.bpmn:20
 #. Diagram label
 msgid "Apply and be verified"
-msgstr "تقديم الطلب والتحقق منه"
+msgstr "تقديم الطلب والخضوع للتحقق"
 
 #: input/business-processes/GDHCN.ONB.Apply.bpmn:8
 #. Diagram element documentation
