@@ -33,6 +33,13 @@
               "on": "2026-11-12",
               "ref": "2868ff44a3a2d28fa7c88f40668986c01df90f0f",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -80,6 +87,13 @@
               "on": "2026-11-12",
               "ref": "8602c8b53e0fbe04536c99731f5fe1fe2c38c746",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -102,6 +116,13 @@
               "on": "2026-11-12",
               "ref": "d14158f0d5f8b020cc51f02f150ef26c42e911a5",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881); fhir-harness re-pinned to d14158f (fhir-harness#394, trustedSvgs) on the owner's ask, 2026-11-12: \"merge 394 when green\" (session_01EucfRogoVaMWCJtobp379B)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -130,6 +151,13 @@
               "on": "2026-11-12",
               "ref": "2d16e8697f2c07cf0dd28818f9b054bf9458f7a6",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -158,6 +186,13 @@
               "on": "2026-11-12",
               "ref": "5244c319cd2f7e2fb19a1f5fe9942cc70a15fd38",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -183,6 +218,13 @@
               "on": "2026-11-12",
               "ref": "371dd58542434209c287fe6f06905175170a6d7e",
               "evidence": "litlfred, 2026-11-12 09:08Z project chat: 'ASAP even if breaks'; card Q-GAME-MRG A (tools#1947 merged 371dd585): pin smart-trust tools to the web-app mount fix"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -205,6 +247,13 @@
               "on": "2026-11-12",
               "ref": "f5c124f1a8067ce16b42fd251380c6d67e426374",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
@@ -230,6 +279,13 @@
               "on": "2026-11-12",
               "ref": "b31c5346b0b2803354423511b6d18b599b7bdc41",
               "evidence": "litlfred, 2026-11-11 16:05:30Z, thread 'Merge manager' (cmsg_017WNUkNK8kdDziPK58Pv6G9A4gqquu7bha27LfmNqarmL): \"+12ht repin+merge window\", extended 2026-11-12 06:04:48Z (cmsg_017WNUkNK8kdDziPK58Pv6G9NGjshFZ8oRGEiZGHLNssq2): \"+12hrs window\"; re-pin every harness to its main HEAD under the owner's freshness rule (cat-harness-tools#1881)"
+            },
+            "standing": {
+              "follows": "main",
+              "consentBy": "litlfred",
+              "consentAt": "2026-11-12",
+              "require": "green",
+              "evidence": "litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml)."
             }
           }
         }
