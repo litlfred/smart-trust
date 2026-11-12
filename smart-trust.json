@@ -249,5 +249,8 @@
       "directory": "smart-trust-docs",
       "reason": "the artefact pages gen-ig-pages renders from this instance's artefact index with the IG-page templates and the smart-base themes and chrome, all read at the checkout's pins"
     }
+  ],
+  "mountApprovers": [
+    "litlfred"
   ]
 }
