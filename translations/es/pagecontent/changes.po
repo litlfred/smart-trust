@@ -187,11 +187,11 @@ msgstr "Correcciones de la generación nocturna de participantes:"
 #: input/pagecontent/changes.md:24
 #: input/pagecontent/changes.md:29
 msgid "Onboarding Checklist updated"
-msgstr "Se actualizó la lista de verificación de incorporación"
+msgstr "Se actualizó la lista de verificación de la integración"
 
 #: input/pagecontent/changes.md:46
 msgid "Onboarding Checklist updated with detailed curl command validation instructions"
-msgstr "Se actualizó la lista de verificación de incorporación con instrucciones detalladas de validación mediante comandos curl"
+msgstr "Se actualizó la lista de verificación de la integración con instrucciones detalladas de validación mediante comandos curl"
 
 #: input/pagecontent/changes.md:25
 msgid "Onboarding process revised to remove Transitive processes"
