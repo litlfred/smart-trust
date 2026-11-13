@@ -6,7 +6,7 @@
   "source": {
     "kind": "sushi-config",
     "of": "https://github.com/litlfred/smart-trust",
-    "ref": "cb4b2833ff8666d04ebc963da7b8906586353ab1",
+    "ref": "1977157d9b0a484b950406dbf6071b987f16c66d",
     "path": "sushi-config.yaml",
     "readAt": "2026-11-13"
   },
