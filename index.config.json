@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "ef03802d63519a11b1fa59cc3c192f4152494f47",
+          "ref": "5ee67091fcfc45f05cf53e7de1262988e5ae394e",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -164,7 +164,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "ef03802d63519a11b1fa59cc3c192f4152494f47",
+              "ref": "5ee67091fcfc45f05cf53e7de1262988e5ae394e",
               "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
               "standing": {
                 "follows": "main",
@@ -188,7 +188,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "8be3dca5012764cafc0967b3befe2f2a29a34984",
+          "ref": "a8abd44cf3166ad4a6da0a822e26c62e4cb2ef6a",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -204,7 +204,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "8be3dca5012764cafc0967b3befe2f2a29a34984",
+              "ref": "a8abd44cf3166ad4a6da0a822e26c62e4cb2ef6a",
               "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
               "standing": {
                 "follows": "main",
@@ -228,7 +228,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "0b6f97cfdd7edf452371196a3a5ed31f6a01822a",
+          "ref": "82c1276718f20cef5fdeac1479542bc01b7a27ff",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -241,7 +241,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "0b6f97cfdd7edf452371196a3a5ed31f6a01822a",
+              "ref": "82c1276718f20cef5fdeac1479542bc01b7a27ff",
               "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
               "standing": {
                 "follows": "main",
@@ -294,7 +294,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "814ad01035431dc322d08b6726824fc9c233d5a1",
+          "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -307,7 +307,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "814ad01035431dc322d08b6726824fc9c233d5a1",
+              "ref": "c51ad489aa42e1f6ce9cd18208eef1b5e286f502",
               "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
               "standing": {
                 "follows": "main",
