@@ -253,5 +253,10 @@
   ],
   "mountApprovers": [
     "litlfred"
+  ],
+  "enableSubgraphs": [
+    "folio-assistant-core.collab",
+    "smart-base.collab",
+    "fhir-harness.collab"
   ]
 }
