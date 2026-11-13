@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: input/pagecontent/downloads.md:13
+#: input/pagecontent/downloads.md:16
 msgid "Artifact Definitions"
 msgstr "Définitions des artefacts"
 
@@ -26,7 +26,7 @@ msgstr "Téléchargez l'intégralité du guide d'implémentation ici"
 msgid "Downloads"
 msgstr "Téléchargements"
 
-#: input/pagecontent/downloads.md:32
+#: input/pagecontent/downloads.md:34
 msgid "Examples"
 msgstr "Exemples"
 

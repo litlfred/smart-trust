@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: smart-trust\n"
-"POT-Creation-Date: 2026-11-06T09:38:56.468Z\n"
+"POT-Creation-Date: 2026-11-13T15:18:14.618Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: input/pagecontent/downloads.md:13
+#: input/pagecontent/downloads.md:16
 msgid "Artifact Definitions"
 msgstr ""
 
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Downloads"
 msgstr ""
 
-#: input/pagecontent/downloads.md:32
+#: input/pagecontent/downloads.md:34
 msgid "Examples"
 msgstr ""
 

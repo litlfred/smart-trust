@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: input/pagecontent/downloads.md:13
+#: input/pagecontent/downloads.md:16
 msgid "Artifact Definitions"
 msgstr "工件定义"
 
@@ -27,7 +27,7 @@ msgstr "在此下载完整的实施指南"
 msgid "Downloads"
 msgstr "下载"
 
-#: input/pagecontent/downloads.md:32
+#: input/pagecontent/downloads.md:34
 msgid "Examples"
 msgstr "示例"
 
