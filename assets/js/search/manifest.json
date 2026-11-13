@@ -1,0 +1,88 @@
+{
+  "$schema": "folio-search-manifest/v1",
+  "source": {
+    "path": "assets/js/search-data.json",
+    "sha256": "049381e15dbd80cb89255f0a740bd20a21f9b13501a92573c040e34f0b6b058e",
+    "entries": 353,
+    "bytes": 7380468
+  },
+  "scopes": [
+    {
+      "id": "_platform",
+      "kind": "platform",
+      "path": "assets/js/search/_platform.json",
+      "entries": 69,
+      "bytes": 998029,
+      "index": {
+        "path": "assets/js/search/_platform.idx.json",
+        "bytes": 2154719
+      }
+    },
+    {
+      "id": "cat-harness",
+      "kind": "instance",
+      "path": "assets/js/search/cat-harness.json",
+      "entries": 9,
+      "bytes": 2767
+    },
+    {
+      "id": "locale-ar",
+      "kind": "locale",
+      "path": "assets/js/search/locale-ar.json",
+      "entries": 55,
+      "bytes": 1408925,
+      "index": {
+        "path": "assets/js/search/locale-ar.idx.json",
+        "bytes": 1789065
+      }
+    },
+    {
+      "id": "locale-es",
+      "kind": "locale",
+      "path": "assets/js/search/locale-es.json",
+      "entries": 55,
+      "bytes": 1140883,
+      "index": {
+        "path": "assets/js/search/locale-es.idx.json",
+        "bytes": 3267540
+      }
+    },
+    {
+      "id": "locale-fr",
+      "kind": "locale",
+      "path": "assets/js/search/locale-fr.json",
+      "entries": 55,
+      "bytes": 1193186,
+      "index": {
+        "path": "assets/js/search/locale-fr.idx.json",
+        "bytes": 3237609
+      }
+    },
+    {
+      "id": "locale-ru",
+      "kind": "locale",
+      "path": "assets/js/search/locale-ru.json",
+      "entries": 55,
+      "bytes": 1760430,
+      "index": {
+        "path": "assets/js/search/locale-ru.idx.json",
+        "bytes": 1857875
+      }
+    },
+    {
+      "id": "locale-zh",
+      "kind": "locale",
+      "path": "assets/js/search/locale-zh.json",
+      "entries": 55,
+      "bytes": 865780
+    }
+  ],
+  "remote": [
+    {
+      "id": "who-iris",
+      "kind": "id-lookup",
+      "href": "id-lookup/?index=who-iris/",
+      "entries": 53
+    }
+  ]
+}

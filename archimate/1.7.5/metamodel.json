@@ -83,6 +83,20 @@
       ]
     },
     {
+      "source": "ApplicationComponent",
+      "relationship": "Access",
+      "target": "DataObject",
+      "count": 5,
+      "allowed": true,
+      "relationships": [
+        "id-85f573f7141c58e2a0baf12e0f1393fc",
+        "id-1cd89bea2ccb51f1b0356656e8c9cdeb",
+        "id-d8948a3a22bc50d99f07b74736e529c7",
+        "id-b880efe00fed59678afd57ba39d98a46",
+        "id-c828c461960454f2a4902634bd02c8ac"
+      ]
+    },
+    {
       "source": "Grouping",
       "relationship": "Aggregation",
       "target": "BusinessProcess",
@@ -126,16 +140,6 @@
       "relationships": [
         "id-04e070b883a25dfab017a498a0d19fda",
         "id-f3e11cd2025e559bb9b99defd53bbe6d"
-      ]
-    },
-    {
-      "source": "ApplicationComponent",
-      "relationship": "Access",
-      "target": "DataObject",
-      "count": 1,
-      "allowed": true,
-      "relationships": [
-        "id-85f573f7141c58e2a0baf12e0f1393fc"
       ]
     },
     {

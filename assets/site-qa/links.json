@@ -1,6 +1,6 @@
 {
  "$schema": "site-link-report/v1",
- "pages": 2048,
+ "pages": 2781,
  "unresolved": [],
  "selfAddress": [],
  "content": [
@@ -4781,6 +4781,6 @@
    "href": "en/smart-trust/archimate/1.7.5/view/the-gdhcn-trust-network/"
   }
  ],
- "diagrams": 22,
+ "diagrams": 25,
  "inDiagrams": []
 }
