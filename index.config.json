@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
+          "ref": "e81b4f0947f232c7be330a3d652335ec43f9ca30",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -31,8 +31,13 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "cf722fb3f8623aa92872129a1788aa992a887e3f",
-              "evidence": "Owner litlfred, 2026-11-13: 'merge all three and rebuild the sites' (cat-harness#1282, cat-harness-tools#1973, fhir-harness#396 system-font consolidation; cat-harness#1280 BPMN 80% text). Re-pin every layer to current main so the site build picks them up."
+              "ref": "e81b4f0947f232c7be330a3d652335ec43f9ca30",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -50,7 +55,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "ec3d1cf7993b499e3362297f7fcbad2c79b66f80",
+          "ref": "d207c24f8183f09bee9c9d815efd4f5d757af5cb",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -85,8 +90,13 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "ec3d1cf7993b499e3362297f7fcbad2c79b66f80",
-              "evidence": "Owner litlfred, 2026-11-13: 'merge all three and rebuild the sites' (cat-harness#1282, cat-harness-tools#1973, fhir-harness#396 system-font consolidation; cat-harness#1280 BPMN 80% text). Re-pin every layer to current main so the site build picks them up."
+              "ref": "d207c24f8183f09bee9c9d815efd4f5d757af5cb",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -104,7 +114,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "d983238a48b267985b42c55dfc94b2a16a3109cf",
+          "ref": "be94913dedca3884963885cb80c18e809eff6c36",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -114,8 +124,13 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "d983238a48b267985b42c55dfc94b2a16a3109cf",
-              "evidence": "Owner litlfred, 2026-11-13: 'merge all three and rebuild the sites' (cat-harness#1282, cat-harness-tools#1973, fhir-harness#396 system-font consolidation; cat-harness#1280 BPMN 80% text). Re-pin every layer to current main so the site build picks them up."
+              "ref": "be94913dedca3884963885cb80c18e809eff6c36",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -133,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "437eee5e87bd8f87334b06a4682d3e25c5953943",
+          "ref": "e2eddc2ff6b86063436b697fe27f0a4ed35d336f",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -149,8 +164,13 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "437eee5e87bd8f87334b06a4682d3e25c5953943",
-              "evidence": "Owner litlfred, 2026-11-13: 'merge all three and rebuild the sites' (cat-harness#1282, cat-harness-tools#1973, fhir-harness#396 system-font consolidation; cat-harness#1280 BPMN 80% text). Re-pin every layer to current main so the site build picks them up."
+              "ref": "e2eddc2ff6b86063436b697fe27f0a4ed35d336f",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -168,7 +188,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "ef62dad93bc47d3c7e33064e5493c4be37b65445",
+          "ref": "026a6d919add39221387dd0fba0faccf998be9ac",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -184,8 +204,13 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "ef62dad93bc47d3c7e33064e5493c4be37b65445",
-              "evidence": "Owner litlfred, 2026-11-13: 'merge all three and rebuild the sites' (cat-harness#1282, cat-harness-tools#1973, fhir-harness#396 system-font consolidation; cat-harness#1280 BPMN 80% text). Re-pin every layer to current main so the site build picks them up."
+              "ref": "026a6d919add39221387dd0fba0faccf998be9ac",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
@@ -203,7 +228,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "fb81d3f21f88e870f503160ff99cacf9187f236b",
+          "ref": "61bc08839398edb1aedb9e51b8338c976c46f167",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -216,8 +241,13 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-13",
-              "ref": "fb81d3f21f88e870f503160ff99cacf9187f236b",
-              "evidence": "Owner litlfred, 2026-11-13: 'merge all three and rebuild the sites' (cat-harness#1282, cat-harness-tools#1973, fhir-harness#396 system-font consolidation; cat-harness#1280 BPMN 80% text). Re-pin every layer to current main so the site build picks them up."
+              "ref": "61bc08839398edb1aedb9e51b8338c976c46f167",
+              "evidence": "standing consent by litlfred given 2026-11-12: follow `main` (green commits only) — litlfred, 2026-11-12 09:07Z, project thread 'Nest bibliography entries under Bibliography' (Q-BIBNAV-2): 'B' = re-pin now and switch on standing re-pin so platform fixes reach the site by themselves (cat-harness-tools standing-repin.yml).",
+              "standing": {
+                "follows": "main",
+                "consentAt": "2026-11-12",
+                "require": "green"
+              }
             },
             "standing": {
               "follows": "main",
