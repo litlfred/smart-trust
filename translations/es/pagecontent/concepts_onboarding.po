@@ -24,7 +24,7 @@ msgstr "<a0>Conceptos</a0> en los que se basa la descripción de estos procesos 
 
 #: input/pagecontent/concepts_onboarding.md:18
 msgid "<a0>Onboarding Overview</a0> describing the overview of the onboarding process;"
-msgstr "<a0>Resumen de la incorporación</a0>, que describe a grandes rasgos el proceso de integración;"
+msgstr "<a0>Resumen de la integración</a0>, que describe a grandes rasgos el proceso;"
 
 #: input/pagecontent/concepts_onboarding.md:55
 msgid "A <a0>Diagram</a0> that gives and overview about the steps in order to start the Full Onboarding."
@@ -44,7 +44,7 @@ msgstr "Después de que nos pongamos en contacto con el participante para comuni
 
 #: input/pagecontent/concepts_onboarding.md:21
 msgid "An eligible GDHCN Participant should complete the <a0>Onboarding Checklist</a0> which contains guiding videos through the onboarding process."
-msgstr "Un Participante cualificado para la Red Mundial debería completar la <a0>Lista de verificación de la incorporación</a0>, que contiene vídeos que sirven de guía a lo largo del proceso de integración."
+msgstr "Un Participante cualificado para la Red Mundial debería completar la <a0>Lista de verificación de la integración</a0>, que contiene vídeos que sirven de guía a lo largo del proceso de integración."
 
 #: input/pagecontent/concepts_onboarding.md:86
 msgid "attestation to comply with the Terms of Participation."
