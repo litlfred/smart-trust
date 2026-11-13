@@ -17,8 +17,10 @@ Nothing is typed here except how a kind of thing looks:
   element's `page` property: its ActorDefinition or its concept);
 - every arrow is a Flow of the view, labelled with its name where it has one;
   a Flow named "both ways", or two Flows each way between the same boxes, is
-  drawn as one double arrow; the verified keys' arrows start at the anchor's
-  trust list, as the figure draws them.
+  drawn as one double arrow;
+- a system that reads a data object (an Access of type read) gets an arrow from
+  that object: the members reading the trust list are the figure's arrows from
+  the key box to each country.
 
 The archimate-pages visualiser draws the same view in ArchiMate notation; the
 home page offers both, with a toggle. Standard library only.
@@ -57,9 +59,10 @@ def read_view():
         props = {p.get("key"): p.get("value") for p in e.findall("property")}
         doc = e.findtext("documentation") or ""
         els[e.get("id")] = {"type": e.get(XSI, "").split(":")[-1], "name": e.get("name", ""), "doc": doc,
-                            "page": props.get("page", ""), "source": e.get("source"), "target": e.get("target")}
+                            "page": props.get("page", ""), "source": e.get("source"), "target": e.get("target"),
+                            "access": e.get("accessType")}
     view = next(e for e in root.iter("element") if e.get(XSI) == "archimate:ArchimateDiagramModel" and e.get("name") == VIEW)
-    boxes, conns = {}, []
+    boxes, conns, reads = {}, [], []
 
     def walk(node, ox, oy, parent):
         for c in node.findall("child"):
@@ -71,9 +74,15 @@ def read_view():
                 rel = els[s.get("archimateRelationship")]
                 if rel["type"] == "FlowRelationship":
                     conns.append((s.get("source"), s.get("target"), rel["name"]))
+                elif rel["type"] == "AccessRelationship" and rel["access"] == "1":
+                    reads.append((s.get("source"), s.get("target")))
             walk(c, x, y, c.get("id"))
 
     walk(view, 0, 0, None)
+    # A system that reads a data object it is drawn beside receives it: the figure's arrow from the object.
+    for reader, obj in reads:
+        if boxes[reader]["el"]["type"] == "ApplicationComponent":
+            conns.append((obj, reader, ""))
     return boxes, conns
 
 
@@ -189,13 +198,10 @@ def draw():
         both = (b, a) in {(x, y) for x, y, _ in conns} or name.endswith("both ways")
         seen |= {(a, b), (b, a)}
         A, B = boxes[a], boxes[b]
-        # The verified keys leave the anchor as its trust list: start the arrow at the list, as the figure does.
-        if name == "verified public keys":
-            A = next((x for x in boxes.values() if x["parent"] == A["parent"] and x["el"]["name"].startswith("Verified public keys")), A)
         x1, y1 = edge_point(A, B["x"] + B["w"] / 2, B["y"] + B["h"] / 2, 14)
         x2, y2 = edge_point(B, A["x"] + A["w"] / 2, A["y"] + A["h"] / 2, 14)
         parts.append(arrow(x1, y1, x2, y2, both))
-        if name and name != "verified public keys" and not name.startswith("signed document"):
+        if name and not name.startswith("signed document"):
             parts.append(label((x1 + x2) / 2, min(y1, y2) - 30, name, size=17, bold=True, italic=True, width=30))
     # Everything else.
     for bid, b in boxes.items():

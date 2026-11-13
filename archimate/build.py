@@ -109,7 +109,17 @@ RELATIONS = [
     ("flow-3bc", "Flow", "country-b", "country-c", "signed document, both ways"),
     ("flow-3ca", "Flow", "country-c", "country-a", "signed document, both ways"),
     ("verify>document", "Access", "verify", "document", ""),
+    # The trust list: the anchor writes it, every member reads it (step 2).
+    ("anchor>trust-list", "Access", "anchor", "trust-list", ""),
+    ("country-a>trust-list", "Access", "country-a", "trust-list", ""),
+    ("country-b>trust-list", "Access", "country-b", "trust-list", ""),
+    ("country-c>trust-list", "Access", "country-c", "trust-list", ""),
 ]
+# How each Access accesses its object (Archi's accessType): 0 write, 1 read.
+ACCESS = {
+    "ca-a>key-a": 0, "distribute>trust-list": 0, "anchor>trust-list": 0, "verify>document": 1,
+    "country-a>trust-list": 1, "country-b>trust-list": 1, "country-c>trust-list": 1,
+}
 # Each panel aggregates what it shows.
 PANELS = {
     "panel-1": ["ca-a", "key-a", "anchor", "onboard"],
@@ -129,9 +139,9 @@ BOXES = [
     ("key-a", "key-a", "panel-1", 135, 60, 80, 30),
     ("anchor@1", "anchor", "panel-1", 255, 80, 60, 70),
     ("onboard", "onboard", "panel-1", 300, 28, 135, 40),
-    ("distribute", "distribute", "panel-2", 468, 85, 130, 45),
-    ("anchor@2", "anchor", "panel-2", 615, 85, 60, 70),
-    ("trust-list", "trust-list", "panel-2", 700, 45, 70, 110),
+    ("distribute", "distribute", "panel-2", 468, 40, 140, 45),
+    ("anchor@2", "anchor", "panel-2", 600, 95, 60, 70),
+    ("trust-list", "trust-list", "panel-2", 695, 75, 80, 110),
     ("country-a@2", "country-a", "panel-2", 815, 30, 70, 40),
     ("country-b@2", "country-b", "panel-2", 815, 88, 70, 40),
     ("country-c@2", "country-c", "panel-2", 815, 146, 70, 40),
@@ -139,7 +149,7 @@ BOXES = [
     ("country-a@3", "country-a", "panel-3", 425, 255, 70, 45),
     ("country-b@3", "country-b", "panel-3", 565, 375, 70, 45),
     ("country-c@3", "country-c", "panel-3", 290, 375, 70, 45),
-    ("document", "document", "panel-3", 425, 380, 50, 40),
+    ("document", "document", "panel-3", 425, 325, 50, 40),
 ]
 # The lines the view draws: (relationship key, source box, target box).
 LINES = [
@@ -147,10 +157,13 @@ LINES = [
     ("ca-a>key-a", "ca-a", "key-a"),
     ("anchor>onboard", "anchor@1", "onboard"),
     ("anchor>distribute", "anchor@2", "distribute"),
-    ("distribute>trust-list", "distribute", "trust-list"),
-    ("flow-2a", "anchor@2", "country-a@2"),
-    ("flow-2b", "anchor@2", "country-b@2"),
-    ("flow-2c", "anchor@2", "country-c@2"),
+    # Step 2 as the view draws it: the anchor writes the trust list and each
+    # member reads it, so no line crosses a box. The Flows anchor -> member
+    # stay in the model; archimate/pretty.py draws the reads as the figure's arrows.
+    ("anchor>trust-list", "anchor@2", "trust-list"),
+    ("country-a>trust-list", "country-a@2", "trust-list"),
+    ("country-b>trust-list", "country-b@2", "trust-list"),
+    ("country-c>trust-list", "country-c@2", "trust-list"),
     ("flow-3ab", "country-a@3", "country-b@3"),
     ("flow-3bc", "country-b@3", "country-c@3"),
     ("flow-3ca", "country-c@3", "country-a@3"),
@@ -189,7 +202,7 @@ def element_xml(key, t, name, doc, page):
 
 def rel_xml(key, t, a, b, name):
     attrs = f' name="{esc(name)}"' if name else ""
-    extra = ' accessType="1"' if t == "Access" else ""  # write: the accessor produces or holds it
+    extra = f' accessType="{ACCESS[key]}"' if t == "Access" else ""
     return (f'\n    <element xsi:type="archimate:{t}Relationship" id="{oid("rel", key)}"{attrs}{extra}'
             f' source="{oid("element", a)}" target="{oid("element", b)}"/>')
 
