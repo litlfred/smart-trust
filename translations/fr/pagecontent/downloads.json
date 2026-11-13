@@ -4,7 +4,7 @@
   "label": "trans:fr/pagecontent/downloads",
   "locale": "fr",
   "sourceFile": "input/pagecontent/downloads.md",
-  "sourceHash": "7236ea979517",
+  "sourceHash": "da8a0a589d12",
   "potFile": "translations/fr/pagecontent/downloads.pot",
   "poFile": "translations/fr/pagecontent/downloads.po",
   "poIncludes": [

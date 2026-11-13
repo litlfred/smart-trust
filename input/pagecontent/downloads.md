@@ -47,6 +47,6 @@
 					<a href="examples.ttl.zip">Turtle</a>
 				</td>
 {% endunless %}
-			</tr>
-		</tbody>
-	</table>
+</tr>
+</tbody>
+</table>
