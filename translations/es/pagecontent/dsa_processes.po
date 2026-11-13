@@ -269,7 +269,7 @@ msgstr "La adhesión a la GDHCN se rige a su vez por documentos (los Términos d
 
 #: input/pagecontent/dsa_processes.md:141
 msgid "GDHCN key: remove the DSC from the trust list (see \"DSC generation and deletion\" in the <a0>Onboarding Checklist</a0>)."
-msgstr "Clave de la GDHCN: eliminar el DSC de la lista de confianza (véase \"Generación y eliminación de DSC\" en la <a0>Lista de verificación de la incorporación</a0>)."
+msgstr "Clave de la GDHCN: eliminar el DSC de la lista de confianza (véase \"Generación y eliminación de DSC\" en la <a0>Lista de verificación de la integración</a0>)."
 
 #: input/pagecontent/dsa_processes.md:90
 msgid "GDHCN: <a0>Publish Keys</a0> through the Trust Network Gateway."

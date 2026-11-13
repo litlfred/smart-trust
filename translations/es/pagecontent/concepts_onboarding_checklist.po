@@ -688,7 +688,7 @@ msgstr "Ahora Git utilizará su clave de forma predeterminada para firmar etique
 
 #: input/pagecontent/concepts_onboarding_checklist.md:1
 msgid "Onboarding Checklist"
-msgstr "Lista de comprobación de la incorporación"
+msgstr "Lista de verificación de la integración"
 
 #: input/pagecontent/concepts_onboarding_checklist.md:602
 msgid "Once the confirmation of successful onboarding is received from the TNG Support Team ( gdhcn-support@who.int), please do the following."
