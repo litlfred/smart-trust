@@ -1,0 +1,26 @@
+{
+  "$schema": "ig-ast-history/v1",
+  "repository": "litlfred/smart-trust",
+  "versions": [
+    {
+      "commit": "1b705bfc8f11bba99e18beb9f3bae809ea68f321",
+      "date": "2026-11-13T08:21:31+00:00",
+      "src": "1977157d9"
+    },
+    {
+      "commit": "cb2dadbcb844387314554f04e12f670c81388136",
+      "date": "2026-11-12T18:23:01+00:00",
+      "src": "0aafb4b0a"
+    },
+    {
+      "commit": "9f29356e85541e4e64195199857e42e98cb76670",
+      "date": "2026-11-12T13:01:25+00:00",
+      "src": "e700aa53f"
+    },
+    {
+      "commit": "41566a738585033dc9d67525ffdee10f9d431491",
+      "date": "2026-11-12T09:18:32+00:00",
+      "src": "005454966"
+    }
+  ]
+}

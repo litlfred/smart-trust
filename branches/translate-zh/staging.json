@@ -1,0 +1,17 @@
+{
+  "branch": "claude/translate-zh",
+  "sha": "e495725",
+  "built": "2026-11-13T18:31:28Z",
+  "pr": "n/a",
+  "prUrl": "https://github.com/litlfred/smart-trust/pulls?q=head%3Aclaude%2Ftranslate-zh",
+  "branchUrl": "https://github.com/litlfred/smart-trust/tree/claude/translate-zh",
+  "issue": null,
+  "issueUrl": null,
+  "runUrl": "https://github.com/litlfred/smart-trust/commit/e495725b8612a761d46c179465cef982180657e5",
+  "mainSite": "https://litlfred.github.io/smart-trust/",
+  "beforeRef": "main",
+  "mainPagesKnown": true,
+  "newPages": [
+    "review/index.html"
+  ]
+}

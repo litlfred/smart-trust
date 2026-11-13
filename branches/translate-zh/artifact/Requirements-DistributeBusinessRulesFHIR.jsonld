@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Requirements-DistributeBusinessRulesFHIR",
+  "@type": "fhir:Requirements",
+  "dcterms:identifier": "Requirements/DistributeBusinessRulesFHIR",
+  "schema:name": "Distribute FHIR Business Rules",
+  "dcterms:title": "Distribute FHIR business rules",
+  "dcterms:description": "Make received business rules available through a distrubution point to a Receiver through HL7 FHIR standards",
+  "schema:version": "1.7.5",
+  "dcterms:type": "Requirements: Formal Requirements",
+  "schema:sameAs": {
+    "@id": "http://smart.who.int/trust/Requirements/DistributeBusinessRulesFHIR"
+  },
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../Requirements-DistributeBusinessRulesFHIR.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust/1b705bfc8f11bba99e18beb9f3bae809ea68f321/resources/Requirements/DistributeBusinessRulesFHIR.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "1977157d9b0a484b950406dbf6071b987f16c66d"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.trust",
+    "schema:version": "1.7.5",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/trust"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "fhir": "http://hl7.org/fhir/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "$schema": "folio-ig-artifact-jsonld/v1",
+  "@id": "Organization-GDHCNParticipant-THA",
+  "@type": "fhir:Organization",
+  "dcterms:identifier": "Organization/GDHCNParticipant-THA",
+  "dcterms:title": "GDHCNParticipant-THA",
+  "dcterms:description": "Thailand",
+  "dcterms:type": "Other",
+  "schema:creativeWorkStatus": "materialized",
+  "schema:encoding": [
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "../Organization-GDHCNParticipant-THA.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "local"
+    },
+    {
+      "@type": "schema:MediaObject",
+      "schema:contentUrl": {
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust/1b705bfc8f11bba99e18beb9f3bae809ea68f321/resources/Organization/GDHCNParticipant-THA.json"
+      },
+      "schema:encodingFormat": "application/fhir+json",
+      "dcterms:source": "mirror"
+    }
+  ],
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
+    "prov:used": "1977157d9b0a484b950406dbf6071b987f16c66d"
+  },
+  "dcterms:isPartOf": {
+    "@type": "fhir:ImplementationGuide",
+    "dcterms:identifier": "smart.who.int.trust",
+    "schema:version": "1.7.5",
+    "schema:sameAs": {
+      "@id": "http://smart.who.int/trust"
+    }
+  },
+  "dcterms:conformsTo": [
+    {
+      "@id": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"
+    }
+  ]
+}

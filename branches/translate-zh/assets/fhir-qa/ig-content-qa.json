@@ -1,0 +1,17 @@
+{
+  "$schema": "ig-content-qa-verdict/v1",
+  "items": 1842,
+  "contentDigest": "sha256:967fdb28e4001037e4c292cabf096bffe753de6f04e7c7735de7aa5810ff4316",
+  "patternHits": [],
+  "reviewedDigest": "sha256:967fdb28e4001037e4c292cabf096bffe753de6f04e7c7735de7aa5810ff4316",
+  "reviewer": {
+    "kind": "agent",
+    "name": "claude-zh-translator",
+    "session": "https://claude.ai/code/session_01VQDpPfUjHWydLzHga4WUVV"
+  },
+  "reviewedAt": "2026-11-13T17:56:47.608Z",
+  "ok": true,
+  "state": "reviewed",
+  "openFindings": [],
+  "said": "1842 text(s) reviewed by agent claude-zh-translator at 2026-11-13T17:56:47.608Z; no pattern hit, no open finding"
+}
