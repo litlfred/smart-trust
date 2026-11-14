@@ -1,0 +1,92 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "t4-care-given",
+  "title": "4 · The clinician reads the IPS and gives care",
+  "description": "Dr Mele reads the verified summary: asthma, the inhaler Sefa uses, and an allergy to sulfonamides. Dr Mele treats the attack with a medicine Sefa is not allergic to. Optionally, the clinic gives Sefa an encounter summary to take home.",
+  "personas": [
+    "dr-mele",
+    "sefa",
+    "lumara-clinic-emr"
+  ],
+  "partOf": "the-travellers-journey",
+  "follows": "t3-signature-verified",
+  "when": "During the trip",
+  "where": "A walk-in clinic in Lumara, Taifafeki",
+  "country": "Taifafeki",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Technology shown as simple oversized icons: a phone with a QR code, a shield with a check mark, a key. No readable text, no logos, no real brands. Flags only of the fictional countries: Onesa (indigo over orange, white star) and Taifafeki (teal, gold sun and gold bar). All people are fictional.",
+    "notes": [
+      "The picture carries no text: the step title, the caption and the ArchiMate strip are page text.",
+      "Drawn by the owner (storyboard, 2026-11-14); text cropped from the panels."
+    ]
+  },
+  "steps": [
+    {
+      "id": "T4",
+      "title": "The clinician reads the IPS and gives care",
+      "headline": "Dr Mele reads Sefa's asthma, inhaler and allergy from the verified summary and treats them.",
+      "when": "During the trip",
+      "where": "A walk-in clinic in Lumara, Taifafeki",
+      "narrative": "Dr Mele reads the verified summary: asthma, the inhaler Sefa uses, and an allergy to sulfonamides. Dr Mele treats the attack with a medicine Sefa is not allergic to. Optionally, the clinic gives Sefa an encounter summary to take home.",
+      "lead": "dr-mele",
+      "experiences": [
+        {
+          "actor": "dr-mele",
+          "doing": "Reads the problems, medicines and allergies, and treats.",
+          "feeling": "“I can rely on this.”",
+          "emotion": 1
+        },
+        {
+          "actor": "sefa",
+          "doing": "Is treated without having to explain their history.",
+          "feeling": "“They knew about my allergy.”",
+          "emotion": 1
+        },
+        {
+          "actor": "lumara-clinic-emr",
+          "doing": "Shows the summary in the clinician's language and layout."
+        }
+      ],
+      "painPoint": "Treating a foreign patient blind risks a dangerous medicine.",
+      "enabler": "A verified IPS gives the clinician a history they can trust, in a standard structure.",
+      "handoff": {
+        "summary": "Dr Mele reads Sefa's asthma, inhaler and allergy from the verified summary and treats them.",
+        "from": "lumara-clinic-emr",
+        "to": "dr-mele",
+        "carrier": "Clinic system",
+        "payload": "Sefa's verified IPS",
+        "offline": false
+      },
+      "references": [
+        {
+          "label": "Use cases",
+          "href": "https://litlfred.github.io/smart-trust/use_cases.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Functional requirements",
+          "href": "https://litlfred.github.io/smart-trust/functional.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/journey-traveller/04-clinician-gives-care.png",
+        "alt": "Under Taifafeki's flag, a clinician with a stethoscope shows the traveller a tablet with a heart, a pill and a checklist."
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "paper",
+      "label": "IPS read"
+    },
+    {
+      "icon": "stethoscope",
+      "label": "Care given"
+    },
+    {
+      "icon": "clinician",
+      "label": "Treated safely"
+    }
+  ]
+}

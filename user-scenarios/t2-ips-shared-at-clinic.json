@@ -1,0 +1,97 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "t2-ips-shared-at-clinic",
+  "title": "2 · They need care in Taifafeki and share the IPS",
+  "description": "In Lumara, Sefa has an asthma attack and goes to a walk-in clinic. At the front desk they open their wallet and show the QR code; Kito scans it into the clinic's system. Sefa chooses to share; nothing is sent from Onesa.",
+  "personas": [
+    "sefa",
+    "kito",
+    "sefa-wallet",
+    "lumara-clinic-emr"
+  ],
+  "partOf": "the-travellers-journey",
+  "follows": "t1-signed-ips-carried",
+  "when": "During the trip",
+  "where": "A walk-in clinic in Lumara, Taifafeki",
+  "country": "Taifafeki",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Technology shown as simple oversized icons: a phone with a QR code, a shield with a check mark, a key. No readable text, no logos, no real brands. Flags only of the fictional countries: Onesa (indigo over orange, white star) and Taifafeki (teal, gold sun and gold bar). All people are fictional.",
+    "notes": [
+      "The picture carries no text: the step title, the caption and the ArchiMate strip are page text.",
+      "Drawn by the owner (storyboard, 2026-11-14); text cropped from the panels."
+    ]
+  },
+  "steps": [
+    {
+      "id": "T2",
+      "title": "They need care in Taifafeki and share the IPS",
+      "headline": "Taken ill in Lumara, Sefa shows the QR code at the clinic's front desk, and Kito scans it.",
+      "when": "During the trip",
+      "where": "A walk-in clinic in Lumara, Taifafeki",
+      "narrative": "In Lumara, Sefa has an asthma attack and goes to a walk-in clinic. At the front desk they open their wallet and show the QR code; Kito scans it into the clinic's system. Sefa chooses to share; nothing is sent from Onesa.",
+      "lead": "sefa",
+      "experiences": [
+        {
+          "actor": "sefa",
+          "doing": "Opens the wallet and shows the QR code.",
+          "feeling": "“I hope they can read it.”",
+          "emotion": -1
+        },
+        {
+          "actor": "kito",
+          "doing": "Scans the QR code into the clinic's system.",
+          "feeling": "“That was quick.”",
+          "emotion": 0
+        },
+        {
+          "actor": "sefa-wallet",
+          "doing": "Shows the signed summary as a QR code."
+        },
+        {
+          "actor": "lumara-clinic-emr",
+          "doing": "Reads the QR code and receives the signed summary."
+        }
+      ],
+      "painPoint": "A visitor taken ill abroad often arrives with no record the clinic can use.",
+      "enabler": "The QR code carries the signed summary, or a link to it, from the traveller's own phone.",
+      "handoff": {
+        "summary": "Taken ill in Lumara, Sefa shows the QR code at the clinic's front desk, and Kito scans it.",
+        "from": "sefa-wallet",
+        "to": "lumara-clinic-emr",
+        "carrier": "QR code",
+        "payload": "Sefa's signed IPS",
+        "offline": false
+      },
+      "references": [
+        {
+          "label": "Use cases",
+          "href": "https://litlfred.github.io/smart-trust/use_cases.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Data exchange",
+          "href": "https://litlfred.github.io/smart-trust/data_exchange.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/journey-traveller/02-share-ips-at-clinic.png",
+        "alt": "At a clinic reception with a green cross and Taifafeki's flag, the traveller shows the QR code on their phone to the receptionist."
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "phone",
+      "label": "QR shown"
+    },
+    {
+      "icon": "qr",
+      "label": "Scanned"
+    },
+    {
+      "icon": "clinic",
+      "label": "At the clinic"
+    }
+  ]
+}

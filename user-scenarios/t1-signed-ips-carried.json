@@ -1,0 +1,95 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "t1-signed-ips-carried",
+  "title": "1 · Onesa traveller carries a signed IPS",
+  "description": "Before Sefa leaves, Onesa's issuer assembles their International Patient Summary (problems, medicines, allergies) and signs it with a Document Signer Certificate, as a Verifiable Health Link (HCERT) or SMART Health Link. Sefa's health wallet holds it and can show it as a QR code.",
+  "personas": [
+    "sefa",
+    "onesa-issuer",
+    "sefa-wallet"
+  ],
+  "partOf": "the-travellers-journey",
+  "follows": "t0-trust-established",
+  "when": "Before departure",
+  "where": "Lomaru, Onesa",
+  "country": "Onesa",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Technology shown as simple oversized icons: a phone with a QR code, a shield with a check mark, a key. No readable text, no logos, no real brands. Flags only of the fictional countries: Onesa (indigo over orange, white star) and Taifafeki (teal, gold sun and gold bar). All people are fictional.",
+    "notes": [
+      "The picture carries no text: the step title, the caption and the ArchiMate strip are page text.",
+      "Drawn by the owner (storyboard, 2026-11-14); text cropped from the panels."
+    ]
+  },
+  "steps": [
+    {
+      "id": "T1",
+      "title": "Onesa traveller carries a signed IPS",
+      "headline": "Onesa's issuer signs Sefa's International Patient Summary, and Sefa carries it in their wallet as a QR code.",
+      "when": "Before departure",
+      "where": "Lomaru, Onesa",
+      "narrative": "Before Sefa leaves, Onesa's issuer assembles their International Patient Summary (problems, medicines, allergies) and signs it with a Document Signer Certificate, as a Verifiable Health Link (HCERT) or SMART Health Link. Sefa's health wallet holds it and can show it as a QR code.",
+      "lead": "sefa",
+      "experiences": [
+        {
+          "actor": "sefa",
+          "doing": "Receives the signed summary in their wallet and checks it is there.",
+          "feeling": "“My health record is coming with me.”",
+          "emotion": 1
+        },
+        {
+          "actor": "onesa-issuer",
+          "doing": "Assembles the IPS and signs it with a Document Signer Certificate."
+        },
+        {
+          "actor": "sefa-wallet",
+          "doing": "Stores the signed summary and renders it as a QR code."
+        }
+      ],
+      "painPoint": "A paper summary can be lost, and cannot be checked as genuine abroad.",
+      "enabler": "The summary is signed with a key that the GDHCN trust list already carries.",
+      "handoff": {
+        "summary": "Onesa's issuer signs Sefa's International Patient Summary, and Sefa carries it in their wallet as a QR code.",
+        "from": "onesa-issuer",
+        "to": "sefa-wallet",
+        "carrier": "Verifiable Health Link",
+        "payload": "Sefa's signed IPS",
+        "offline": false
+      },
+      "references": [
+        {
+          "label": "HCERT specification",
+          "href": "https://litlfred.github.io/smart-trust/hcert_spec.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "QR code generation",
+          "href": "https://litlfred.github.io/smart-trust/qr_code_generation.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Use cases",
+          "href": "https://litlfred.github.io/smart-trust/use_cases.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/journey-traveller/01-traveller-signed-ips.png",
+        "alt": "A young traveller with a backpack and an Onesa flag patch at an airport holds up a phone showing a QR code and a shield."
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "paper",
+      "label": "IPS assembled"
+    },
+    {
+      "icon": "key",
+      "label": "Signed in Onesa"
+    },
+    {
+      "icon": "phone",
+      "label": "In the wallet"
+    }
+  ]
+}

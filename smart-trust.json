@@ -146,6 +146,22 @@
       "description": "The GDHCN trust network as ArchiMate (cat-harness's archimate subgraph): this guide's actors (input/fsh/actors/actors.fsh), the public keys and the trust list, and the three steps onboard, distribute and verify, as the home page's figure (input/images/trust_network.png) in a view with every box where the figure draws it. Built by archimate/build.py (`check:archimate` fails when the committed model is stale); the archimate-pages visualiser draws the view as SVG, and archimate/pretty.py draws it again in the original figure's style (input/includes/trust-network-pretty.svg). The home page and the Concepts page toggle between the two (input/includes/trust-network-figure.html)."
     },
     {
+      "id": "scenarios",
+      "path": "scenarios/",
+      "graphTypologies": [
+        "scenarios"
+      ],
+      "description": "The people and systems of the traveller's journey (actors/, each person with a meta.persona) and the roles they play (roles.json), named after this guide's actors (input/fsh/actors/actors.fsh). The six system roles are the boxes of each moment's ArchiMate strip. Every person is fictional; Onesa and Taifafeki are fictional countries."
+    },
+    {
+      "id": "user-scenarios",
+      "path": "user-scenarios/",
+      "graphTypologies": [
+        "user-scenario"
+      ],
+      "description": "The traveller's journey (the home page, input/pagecontent/index.md) as user scenarios: the parent journey the-travellers-journey and one sub-journey per moment, the prologue t0 and steps t1 to t4, partOf the parent and following each other in order. Each step's picture is input/images/journey-traveller/, from the owner's storyboard (2026-11-14)."
+    },
+    {
       "id": "smart-trust-findings",
       "path": "findings/",
       "description": "Authored findings about this instance's own pages, kept for the owner rather than built: `wireframes/` holds the as-is wireframes of the visualisers smart-trust declares (today `archimate`), each with its `intent.md`, its candidate HTML and the `checks/report.json` that `wireframe:check` writes at web and mobile sizes. `check:wireframes` reads the `wireframes/` of every declared `docs` directory; it is here, the shape of smart-base's `findings/`, because `docs/` is built at publish and commits nothing.",
@@ -165,6 +181,14 @@
       "writer": [
         "cat-harness-tools/archimate/scripts/gen-archimate-pages.ts"
       ]
+    },
+    {
+      "id": "journeys",
+      "renderedBy": "journeys-viewer",
+      "coversKinds": [
+        "user-scenario"
+      ],
+      "subgraphs": "instance"
     }
   ],
   "avatar": {

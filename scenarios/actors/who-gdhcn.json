@@ -1,0 +1,15 @@
+{
+  "id": "who-gdhcn",
+  "title": "GDHCN Trust List",
+  "kind": "system",
+  "description": "WHO's Trust Network Gateway and the trust list it distributes. Plays the guide's Trust Network Anchor.",
+  "roles": [
+    "trust-list"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://litlfred.github.io/smart-trust/artifact/ActorDefinition-TrustNetworkAnchor.html"
+    ]
+  }
+}

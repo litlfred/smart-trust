@@ -1,0 +1,15 @@
+{
+  "id": "onesa-issuer",
+  "title": "Onesa Issuer (IPS)",
+  "kind": "system",
+  "description": "Onesa's service that assembles and signs International Patient Summaries. Plays the guide's Issuer.",
+  "roles": [
+    "issuer"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://litlfred.github.io/smart-trust/artifact/ActorDefinition-Issuer.html"
+    ]
+  }
+}

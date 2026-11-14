@@ -1,0 +1,40 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "the-travellers-journey",
+  "title": "The traveller's journey",
+  "description": "Sefa, from Onesa, falls ill in Taifafeki, and a Taifafeki clinician treats them from their Onesan health summary, checked as genuine through WHO GDHCN.",
+  "personas": [
+    "sefa",
+    "kito",
+    "dr-mele",
+    "officer-noa",
+    "officer-lio",
+    "onesa-pki",
+    "who-gdhcn",
+    "taifafeki-pki",
+    "onesa-issuer",
+    "sefa-wallet",
+    "lumara-clinic-emr"
+  ],
+  "when": "Before and during one trip",
+  "where": "Onesa and Taifafeki",
+  "country": "Cross-Border",
+  "references": [
+    {
+      "label": "The traveller's journey (guide home page)",
+      "href": "https://litlfred.github.io/smart-trust/index.html",
+      "rel": "told on"
+    },
+    {
+      "label": "Concepts",
+      "href": "https://litlfred.github.io/smart-trust/concepts.html",
+      "rel": "specified by"
+    },
+    {
+      "label": "On-boarding",
+      "href": "https://litlfred.github.io/smart-trust/concepts_onboarding.html",
+      "rel": "specified by"
+    }
+  ],
+  "steps": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "onesa-pki",
+  "title": "Onesa PKI (signing)",
+  "kind": "system",
+  "description": "Onesa's Country Signing Certificate Authority and its Document Signer Certificates. Plays the guide's Trust Network Participant on the signing side.",
+  "roles": [
+    "signing-pki"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://litlfred.github.io/smart-trust/artifact/ActorDefinition-TrustNetworkParticipant.html"
+    ]
+  }
+}

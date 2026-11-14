@@ -1,0 +1,24 @@
+{
+  "id": "officer-lio",
+  "title": "Officer Lio (key master, Taifafeki)",
+  "kind": "person",
+  "description": "Persona: Taifafeki's key master representative to the GDHCN. Fictional.",
+  "roles": [
+    "key-master"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Officer Lio",
+      "role": "Key master representative · Taifafeki",
+      "country": "Taifafeki",
+      "goal": "Let Taifafeki's clinics verify documents from every GDHCN participant.",
+      "needs": [
+        "One trust list instead of a key from every country"
+      ],
+      "frustrations": [
+        "Keeping many countries' keys current by hand"
+      ]
+    }
+  }
+}

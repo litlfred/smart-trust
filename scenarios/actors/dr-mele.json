@@ -1,0 +1,25 @@
+{
+  "id": "dr-mele",
+  "title": "Dr Mele (clinician, Lumara clinic, Taifafeki)",
+  "kind": "person",
+  "description": "Persona: a general practitioner at the same Lumara clinic. Fictional.",
+  "roles": [
+    "clinician"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Dr Mele",
+      "role": "Clinician · general practice",
+      "country": "Taifafeki",
+      "goal": "Treat a visitor as safely as a long-known patient.",
+      "needs": [
+        "Medicines, allergies and problems she can rely on",
+        "To know the record is genuine and unchanged"
+      ],
+      "frustrations": [
+        "Guessing at a foreign patient's history"
+      ]
+    }
+  }
+}

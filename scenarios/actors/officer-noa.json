@@ -1,0 +1,25 @@
+{
+  "id": "officer-noa",
+  "title": "Officer Noa (key master, Onesa)",
+  "kind": "person",
+  "description": "Persona: Onesa's key master representative to the GDHCN, at its ministry of health. Fictional.",
+  "roles": [
+    "key-master"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Officer Noa",
+      "role": "Key master representative · Onesa",
+      "country": "Onesa",
+      "goal": "Get Onesa's public keys onto the GDHCN trust list so its signed documents are trusted abroad.",
+      "needs": [
+        "A clear onboarding process",
+        "Keys that other countries can verify without calling Onesa"
+      ],
+      "frustrations": [
+        "Two-country agreements, one at a time"
+      ]
+    }
+  }
+}

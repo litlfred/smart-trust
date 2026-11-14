@@ -1,0 +1,120 @@
+{
+  "_comment": "Roles the people and systems of the traveller's journey (user-scenarios/) play, named after this guide's actors (input/fsh/actors/actors.fsh). Schema: cat-harness-tools/schemas/process/role-graph.ts. Every person is fictional; Onesa and Taifafeki are fictional countries (codes XXK and XXR, shared with litlfred/smart-trust-demo scenarios/countries/). The six system roles are the six boxes of each moment's ArchiMate strip.",
+  "name": "smart-trust",
+  "roles": [
+    {
+      "id": "traveller",
+      "title": "Traveller",
+      "description": "A person from one country who travels to another and carries a verifiable copy of their International Patient Summary. This guide's Holder.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Holder (IG actor Holder)"
+      ]
+    },
+    {
+      "id": "front-desk",
+      "title": "Clinic front desk",
+      "description": "The person at a clinic's reception who registers the patient and receives the verifiable health document they share.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": []
+    },
+    {
+      "id": "clinician",
+      "title": "Clinician",
+      "description": "The health worker who reads the verified summary and gives care.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": []
+    },
+    {
+      "id": "key-master",
+      "title": "Key master representative",
+      "description": "The person a Trust Network Participant names to submit and manage its public key material on the GDHCN.",
+      "actorKinds": [
+        "person"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Key master representative (IG actor KeyMasterRepresentative)"
+      ]
+    },
+    {
+      "id": "signing-pki",
+      "title": "Onesa PKI (signing)",
+      "description": "Onesa's Public Key Infrastructure on the signing side: its Country Signing Certificate Authority and the Document Signer Certificates it issues, with the public keys Onesa submits to the GDHCN.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Trust Network Participant (IG actor TrustNetworkParticipant)"
+      ]
+    },
+    {
+      "id": "trust-list",
+      "title": "GDHCN Trust List",
+      "description": "The WHO GDHCN Trust Network Gateway and the trust list it distributes: every participant's verified public keys.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Trust Network Anchor (IG actor TrustNetworkAnchor)"
+      ]
+    },
+    {
+      "id": "verifying-pki",
+      "title": "Taifafeki PKI (verification)",
+      "description": "Taifafeki's Public Key Infrastructure on the verifying side: the copy of the GDHCN trust list it downloads and keeps for its health systems to verify with.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Trust Network Participant (IG actor TrustNetworkParticipant)"
+      ]
+    },
+    {
+      "id": "issuer",
+      "title": "Onesa Issuer (IPS)",
+      "description": "The Onesan system that assembles the traveller's International Patient Summary and signs it with a Document Signer Certificate, as a Verifiable Health Link (HCERT) or SMART Health Link. This guide's Issuer.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Issuer (IG actor Issuer)"
+      ]
+    },
+    {
+      "id": "wallet",
+      "title": "Wallet (Traveller)",
+      "description": "The traveller's health wallet on their phone: it holds the signed summary and shows it as a QR code.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Holder (IG actor Holder)"
+      ]
+    },
+    {
+      "id": "verifier",
+      "title": "Verifier (Clinic)",
+      "description": "The Taifafeki clinic's system: it scans the QR code, verifies the signature with Onesa's public key from the GDHCN trust list, and shows the summary to the clinician. This guide's Receiver.",
+      "actorKinds": [
+        "system"
+      ],
+      "skills": [],
+      "otherNames": [
+        "Receiver (IG actor Receiver)"
+      ]
+    }
+  ]
+}

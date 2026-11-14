@@ -1,0 +1,95 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "t3-signature-verified",
+  "title": "3 · The clinic checks the signature using GDHCN",
+  "description": "The clinic's system finds the key the signature names in the GDHCN trust list, as Taifafeki holds it, and verifies the signature: the summary really comes from Onesa's issuer and has not been changed. No call to Onesa is needed.",
+  "personas": [
+    "kito",
+    "lumara-clinic-emr",
+    "who-gdhcn"
+  ],
+  "partOf": "the-travellers-journey",
+  "follows": "t2-ips-shared-at-clinic",
+  "when": "During the trip",
+  "where": "A walk-in clinic in Lumara, Taifafeki",
+  "country": "Taifafeki",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Technology shown as simple oversized icons: a phone with a QR code, a shield with a check mark, a key. No readable text, no logos, no real brands. Flags only of the fictional countries: Onesa (indigo over orange, white star) and Taifafeki (teal, gold sun and gold bar). All people are fictional.",
+    "notes": [
+      "The picture carries no text: the step title, the caption and the ArchiMate strip are page text.",
+      "Drawn by the owner (storyboard, 2026-11-14); text cropped from the panels."
+    ]
+  },
+  "steps": [
+    {
+      "id": "T3",
+      "title": "The clinic checks the signature using GDHCN",
+      "headline": "The clinic's system verifies the signature with Onesa's public key from the GDHCN trust list.",
+      "when": "During the trip",
+      "where": "A walk-in clinic in Lumara, Taifafeki",
+      "narrative": "The clinic's system finds the key the signature names in the GDHCN trust list, as Taifafeki holds it, and verifies the signature: the summary really comes from Onesa's issuer and has not been changed. No call to Onesa is needed.",
+      "lead": "lumara-clinic-emr",
+      "experiences": [
+        {
+          "actor": "kito",
+          "doing": "Sees a green shield: verified.",
+          "feeling": "“Verified: it really comes from Onesa.”",
+          "emotion": 1
+        },
+        {
+          "actor": "lumara-clinic-emr",
+          "doing": "Looks up Onesa's Document Signer key in the trust list and verifies the signature."
+        },
+        {
+          "actor": "who-gdhcn",
+          "doing": "Supplies Onesa's public key, through the trust list."
+        }
+      ],
+      "painPoint": "Without a signature check, the clinic cannot tell a genuine record from a forged or altered one.",
+      "enabler": "The key comes from a trust list the clinic already holds, verified by WHO as Trust Network Anchor.",
+      "handoff": {
+        "summary": "The clinic's system verifies the signature with Onesa's public key from the GDHCN trust list.",
+        "from": "who-gdhcn",
+        "to": "lumara-clinic-emr",
+        "carrier": "GDHCN trust list",
+        "payload": "Onesa's public key",
+        "offline": false
+      },
+      "references": [
+        {
+          "label": "Trust domains",
+          "href": "https://litlfred.github.io/smart-trust/trust_domains.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Trust Network Gateway architecture",
+          "href": "https://litlfred.github.io/smart-trust/trust_network_gateway_architecture.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Concepts: trust lists",
+          "href": "https://litlfred.github.io/smart-trust/concepts.html#trust-lists",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/journey-traveller/03-verify-via-gdhcn.png",
+        "alt": "A clinic monitor shows a green shield and a checklist; Onesa's flag and a key are linked to a trust-list cloud, with an arrow to the screen."
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "globe",
+      "label": "Key from GDHCN"
+    },
+    {
+      "icon": "key",
+      "label": "Signature checked"
+    },
+    {
+      "icon": "shield-check",
+      "label": "Verified"
+    }
+  ]
+}

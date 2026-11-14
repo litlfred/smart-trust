@@ -1,0 +1,15 @@
+{
+  "id": "sefa-wallet",
+  "title": "Sefa's health wallet",
+  "kind": "system",
+  "description": "The health wallet on Sefa's phone: holds the signed summary and shows its QR code. Plays the guide's Holder's wallet.",
+  "roles": [
+    "wallet"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://litlfred.github.io/smart-trust/artifact/ActorDefinition-Holder.html"
+    ]
+  }
+}

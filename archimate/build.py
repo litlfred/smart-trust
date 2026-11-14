@@ -26,12 +26,26 @@ The archimate-pages visualiser draws the view in ArchiMate notation;
 archimate/pretty.py draws it again in the original figure's style
 (input/includes/trust-network-pretty.svg). The home page offers both.
 
+The traveller's journey on the home page (input/includes/journey-cards.html)
+is modelled here too, read from its sources as data:
+
+- the people and systems are the roles of scenarios/roles.json: a person's
+  role is a BusinessRole, a system's an ApplicationComponent, the six boxes of
+  each moment's strip; each system is tied to the figure's box it is a case
+  of (Onesa is the figure's Country A, Taifafeki its Country B);
+- the moments are the user scenarios in user-scenarios/ (the prologue and
+  steps 1 to 4), each a BusinessProcess triggering the next, with the people
+  assigned to it, the systems that serve it, and the Flows of JOURNEY_FLOWS;
+- one view draws the journey, and one view per moment draws only what is
+  active in it.
+
 The version is the IG's (sushi-config.yaml `version:`), as cat-harness's
 archimate-models skill asks. The archive is written with fixed timestamps so
 that --check can compare bytes. Standard library only.
 """
 
 import html
+import json
 import io
 import re
 import sys
@@ -50,6 +64,8 @@ PARTICIPANT = IG + "artifact/ActorDefinition-TrustNetworkParticipant.html"
 
 VIEW = "The GDHCN trust network"
 VIEW_SLUG = "the-gdhcn-trust-network"
+JOURNEY_VIEW = "The traveller's journey"
+JOURNEYS = IG + "en/smart-trust/journeys/smart-trust/"
 
 # --- The figure, transcribed (input/images/trust_network.png) ---------------
 #
@@ -171,6 +187,93 @@ LINES = [
 ]
 
 
+# --- The traveller's journey (scenarios/, user-scenarios/) -------------------
+#
+# Each system role is a case of one of the figure's boxes: (relationship type,
+# figure element). Onesa is the figure's Country A, Taifafeki its Country B.
+JOURNEY_TIES = {
+    "signing-pki": ("Specialization", "ca-a"),
+    "trust-list": ("Specialization", "anchor"),
+    "verifying-pki": ("Specialization", "country-b"),
+    "issuer": ("Composition", "country-a"),
+    "verifier": ("Composition", "country-b"),
+}
+# What passes between the systems in each moment: (moment, source role, target role, name).
+JOURNEY_FLOWS = [
+    ("t0-trust-established", "signing-pki", "trust-list", "Onesa's public keys"),
+    ("t0-trust-established", "trust-list", "verifying-pki", "trust list"),
+    ("t1-signed-ips-carried", "issuer", "wallet", "signed IPS"),
+    ("t2-ips-shared-at-clinic", "wallet", "verifier", "QR code"),
+    ("t3-signature-verified", "trust-list", "verifier", "Onesa's public key"),
+]
+
+
+def journey():
+    """The journey's elements {key: (type, name, doc, page)} and relationships [(key, type, a, b, name)], and its moments."""
+    roles = json.loads((ROOT / "scenarios/roles.json").read_text(encoding="utf-8"))["roles"]
+    actors = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "scenarios/actors").glob("*.json"))}
+    moments = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "user-scenarios").glob("*.json"))]
+    els, rels = {}, []
+    J = lambda k: "journey:" + k  # the figure's keys are bare; a journey key never meets one
+    for r in roles:
+        person = "person" in r["actorKinds"]
+        page = next((a["meta"].get("definedIn", [""])[0] for a in actors.values() if r["id"] in a["roles"] and not person), IG + "index.html")
+        els[J(r["id"])] = ("BusinessRole" if person else "ApplicationComponent", r["title"], r["description"], page)
+        if r["id"] in JOURNEY_TIES:
+            t, fig = JOURNEY_TIES[r["id"]]
+            a, b = (fig, J(r["id"])) if t == "Composition" else (J(r["id"]), fig)
+            rels.append((f"{a}>{b}", t, a, b, ""))
+    parent = next(m for m in moments if not m.get("partOf"))
+    parts = [m for m in moments if m.get("partOf") == parent["id"]]
+    els[J(parent["id"])] = ("BusinessProcess", parent["title"], parent["description"], JOURNEYS + parent["id"] + "/")
+    for m in parts:
+        els[J(m["id"])] = ("BusinessProcess", m["title"], m["description"], JOURNEYS + m["id"] + "/")
+        rels.append((J(f"{parent['id']}>{m['id']}"), "Composition", J(parent["id"]), J(m["id"]), ""))
+        if m.get("follows"):
+            rels.append((J(f"{m['follows']}>{m['id']}"), "Triggering", J(m["follows"]), J(m["id"]), ""))
+        seen = []
+        for p in m["personas"]:
+            for role in actors[p]["roles"]:
+                if role not in seen:
+                    seen.append(role)
+                    t = "Assignment" if els[J(role)][0] == "BusinessRole" else "Serving"
+                    rels.append((J(f"{role}>{m['id']}"), t, J(role), J(m["id"]), ""))
+    for moment, a, b, name in JOURNEY_FLOWS:
+        rels.append((J(f"{moment}:{a}>{b}"), "Flow", J(a), J(b), name))
+    return els, rels, parts
+
+
+def journey_views(els, rels, parts):
+    """[(name, slug, doc, boxes, lines)]: the journey, then one view per moment of only what is active in it."""
+    W, H, GAP = 170, 60, 20
+    n = len(parts)
+    ids = ["journey:" + m["id"] for m in parts]
+    parent = next(k for k, v in els.items() if v[0] == "BusinessProcess" and k.startswith("journey:") and k not in ids)
+    boxes = [(parent, parent, None, 10, 10, n * (W + GAP) + GAP, H + 70)]
+    boxes += [("journey:" + m["id"], "journey:" + m["id"], parent, 10 + GAP + i * (W + GAP), 50, W, H) for i, m in enumerate(parts)]
+    lines = [(r[0], r[2], r[3]) for r in rels if r[1] == "Triggering"]
+    out = [(JOURNEY_VIEW, "the-travellers-journey",
+            "The traveller's journey on the home page, moment by moment (the prologue and steps 1 to 4, user-scenarios/), each moment "
+            "triggering the next. Each moment has a view of its own with only the people and systems active in it.", boxes, lines)]
+    for m in parts:
+        mid = "journey:" + m["id"]
+        mine = [r for r in rels if r[1] in ("Assignment", "Serving") and r[3] == mid]
+        people = [r[2] for r in mine if r[1] == "Assignment"]
+        systems = [r[2] for r in mine if r[1] == "Serving"]
+        flows = [r for r in rels if r[1] == "Flow" and r[0].startswith(mid + ":")]
+        G = 110  # room for a Flow's name between two systems
+        width = max(len(people), len(systems), 1) * (W + G) + G
+        bx = []
+        for row, keys in ((10, people), (300, systems)):
+            span = len(keys) * (W + G) - G
+            bx += [(k, k, None, int((width - span) / 2) + i * (W + G), row, W, H) for i, k in enumerate(keys)]
+        bx.append((mid, mid, None, int((width - W - 40) / 2), 150, W + 40, H + 10))
+        ln = [(r[0], r[2], r[3]) for r in mine] + [(r[0], r[2], r[3]) for r in flows]
+        out.append((els[mid][1], m["id"], f"{els[mid][1]}: {m.get('when', '')}, {m.get('where', '')}. Only what is active in this moment: "
+                    f"the people assigned to it, the systems that serve it and what passes between them (user-scenarios/{m['id']}.json).", bx, ln))
+    return out
+
+
 def esc(s):
     return html.escape(str(s), quote=True)
 
@@ -207,7 +310,7 @@ def rel_xml(key, t, a, b, name):
             f' source="{oid("element", a)}" target="{oid("element", b)}"/>')
 
 
-def view_xml():
+def view_xml(VIEW=VIEW, VIEW_SLUG=VIEW_SLUG, doc=None, BOXES=BOXES, LINES=LINES, S=S):
     did = lambda b: oid("view", VIEW, "obj", b)
     cid = lambda r, a, b: oid("view", VIEW, "conn", r, a, b)
     boxes = {b[0]: b for b in BOXES}
@@ -232,7 +335,7 @@ def view_xml():
         return out + f"\n{ind}</child>"
 
     body = "".join(child(b[0], 4) for b in BOXES if b[2] is None)
-    doc = ("The GDHCN trust network, the home page's figure (input/images/trust_network.png) with every box where the figure draws it: "
+    doc = doc or ("The GDHCN trust network, the home page's figure (input/images/trust_network.png) with every box where the figure draws it: "
            "1. Onboard (a country's certificate authority submits its public key to the trust anchor), "
            "2. Distribute (the anchor distributes the verified public keys to every member) and "
            "3. Verify (any member verifies the provenance of a document signed by any other). "
@@ -247,16 +350,19 @@ FOLDERS = [("Strategy", "strategy"), ("Business", "business"), ("Application", "
            ("Technology &amp; Physical", "technology"), ("Motivation", "motivation"),
            ("Implementation &amp; Migration", "implementation_migration"), ("Other", "other"),
            ("Relations", "relations"), ("Views", "diagrams")]
-FOLDER_OF = {"BusinessProcess": "business", "ApplicationComponent": "application", "DataObject": "application", "Grouping": "other"}
+FOLDER_OF = {"BusinessRole": "business", "BusinessProcess": "business", "ApplicationComponent": "application", "DataObject": "application", "Grouping": "other"}
 
 
 def model_xml():
     content = {f: "" for _, f in FOLDERS}
-    for k, (t, name, doc, page) in ELEMENTS.items():
+    jels, jrels, parts = journey()
+    for k, (t, name, doc, page) in {**ELEMENTS, **jels}.items():
         content[FOLDER_OF[t]] += element_xml(k, t, name, doc, page)
-    for r in relations():
+    for r in relations() + jrels:
         content["relations"] += rel_xml(*r)
     content["diagrams"] += view_xml()
+    for name, slug, doc, boxes, lines in journey_views(jels, jrels, parts):
+        content["diagrams"] += view_xml(name, slug, doc, boxes, lines, 1)
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            f'<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="{esc(MODEL_NAME)}" id="{oid("model")}" version="5.0.0">']
     for name, f in FOLDERS:

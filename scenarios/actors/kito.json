@@ -1,0 +1,24 @@
+{
+  "id": "kito",
+  "title": "Kito (front desk, Lumara clinic, Taifafeki)",
+  "kind": "person",
+  "description": "Persona: the receptionist at a walk-in clinic in Lumara, Taifafeki's capital. Fictional.",
+  "roles": [
+    "front-desk"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Kito",
+      "role": "Front desk · walk-in clinic",
+      "country": "Taifafeki",
+      "goal": "Register a visitor quickly and hand the clinician what they need.",
+      "needs": [
+        "A record from abroad that the clinic's system can check by itself"
+      ],
+      "frustrations": [
+        "Visitors who arrive with nothing on paper"
+      ]
+    }
+  }
+}

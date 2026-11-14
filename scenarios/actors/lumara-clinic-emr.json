@@ -1,0 +1,15 @@
+{
+  "id": "lumara-clinic-emr",
+  "title": "Lumara clinic's system",
+  "kind": "system",
+  "description": "The Lumara clinic's records system with a QR scanner: verifies and shows the summary. Plays the guide's Receiver.",
+  "roles": [
+    "verifier"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://litlfred.github.io/smart-trust/artifact/ActorDefinition-Receiver.html"
+    ]
+  }
+}

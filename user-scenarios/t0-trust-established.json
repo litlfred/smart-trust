@@ -1,0 +1,106 @@
+{
+  "$schema": "user-scenario/0.2.0",
+  "id": "t0-trust-established",
+  "title": "Prologue · Onesa and Taifafeki join GDHCN and establish trust",
+  "description": "Onesa and Taifafeki each join the WHO Global Digital Health Certification Network. Each onboards its Public Key Infrastructure: a Country Signing Certificate Authority and the Document Signer Certificates it issues. Officer Noa submits Onesa's public keys to the GDHCN; WHO, as Trust Network Anchor, verifies them and adds them to the trust list. Officer Lio's Taifafeki downloads that trust list, so it now trusts Onesa's keys, and Onesa trusts Taifafeki's.",
+  "personas": [
+    "officer-noa",
+    "officer-lio",
+    "onesa-pki",
+    "who-gdhcn",
+    "taifafeki-pki"
+  ],
+  "partOf": "the-travellers-journey",
+  "when": "Before anyone travels",
+  "where": "Onesa, Taifafeki and WHO GDHCN",
+  "country": "Cross-Border",
+  "illustrationStyle": {
+    "prompt": "Warm, flat digital illustration with soft shading and clean outlines, friendly and respectful, in the style of a public-health storybook. Technology shown as simple oversized icons: a phone with a QR code, a shield with a check mark, a key. No readable text, no logos, no real brands. Flags only of the fictional countries: Onesa (indigo over orange, white star) and Taifafeki (teal, gold sun and gold bar). All people are fictional.",
+    "notes": [
+      "The picture carries no text: the step title, the caption and the ArchiMate strip are page text.",
+      "Drawn by the owner (storyboard, 2026-11-14); text cropped from the panels."
+    ]
+  },
+  "steps": [
+    {
+      "id": "T0",
+      "title": "Onesa and Taifafeki join GDHCN and establish trust",
+      "headline": "Both countries join the GDHCN: Onesa's public keys reach the trust list, and Taifafeki downloads it.",
+      "when": "Before anyone travels",
+      "where": "Onesa, Taifafeki and WHO GDHCN",
+      "narrative": "Onesa and Taifafeki each join the WHO Global Digital Health Certification Network. Each onboards its Public Key Infrastructure: a Country Signing Certificate Authority and the Document Signer Certificates it issues. Officer Noa submits Onesa's public keys to the GDHCN; WHO, as Trust Network Anchor, verifies them and adds them to the trust list. Officer Lio's Taifafeki downloads that trust list, so it now trusts Onesa's keys, and Onesa trusts Taifafeki's.",
+      "lead": "officer-noa",
+      "experiences": [
+        {
+          "actor": "officer-noa",
+          "doing": "Submits Onesa's public key certificates to the GDHCN through the Trust Network Gateway.",
+          "feeling": "“Our signatures will be recognised abroad.”",
+          "emotion": 1
+        },
+        {
+          "actor": "officer-lio",
+          "doing": "Downloads the GDHCN trust list into Taifafeki's verification PKI.",
+          "feeling": "“One list, every participant.”",
+          "emotion": 1
+        },
+        {
+          "actor": "onesa-pki",
+          "doing": "Issues Document Signer Certificates under Onesa's Country Signing CA."
+        },
+        {
+          "actor": "who-gdhcn",
+          "doing": "Verifies the submitted keys and distributes them in the trust list."
+        },
+        {
+          "actor": "taifafeki-pki",
+          "doing": "Keeps a current copy of the trust list for Taifafeki's health systems."
+        }
+      ],
+      "painPoint": "Without a shared trust list, every pair of countries would have to exchange and maintain each other's keys.",
+      "enabler": "One onboarding to the GDHCN makes a country's keys verifiable by every participant.",
+      "handoff": {
+        "summary": "Both countries join the GDHCN: Onesa's public keys reach the trust list, and Taifafeki downloads it.",
+        "from": "onesa-pki",
+        "to": "taifafeki-pki",
+        "carrier": "GDHCN trust list",
+        "payload": "Onesa's public keys",
+        "offline": false
+      },
+      "references": [
+        {
+          "label": "On-boarding to the GDHCN",
+          "href": "https://litlfred.github.io/smart-trust/concepts_onboarding.html",
+          "rel": "specified by"
+        },
+        {
+          "label": "Public Key Infrastructure and trust lists",
+          "href": "https://litlfred.github.io/smart-trust/concepts.html#trust-lists",
+          "rel": "specified by"
+        },
+        {
+          "label": "Trust Network Gateway architecture",
+          "href": "https://litlfred.github.io/smart-trust/trust_network_gateway_architecture.html",
+          "rel": "specified by"
+        }
+      ],
+      "illustration": {
+        "src": "input/images/journey-traveller/00-prologue-trust.png",
+        "alt": "Two officials at laptops, Onesa's flag on the left and Taifafeki's on the right, exchange keys through a trust-list cloud between them, with a green check."
+      }
+    }
+  ],
+  "scene": [
+    {
+      "icon": "key",
+      "label": "Keys onboarded"
+    },
+    {
+      "icon": "globe",
+      "label": "Trust list"
+    },
+    {
+      "icon": "shield-check",
+      "label": "Keys trusted"
+    }
+  ]
+}

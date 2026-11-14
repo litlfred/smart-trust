@@ -1,0 +1,27 @@
+{
+  "id": "sefa",
+  "title": "Sefa (traveller, Lomaru, Onesa)",
+  "kind": "person",
+  "description": "Persona: a 29-year-old from Lomaru, Onesa's capital, travelling in Taifafeki with a backpack and one phone. Has asthma and uses an inhaler; allergic to sulfonamides. Fictional.",
+  "roles": [
+    "traveller"
+  ],
+  "capabilities": [],
+  "meta": {
+    "persona": {
+      "name": "Sefa",
+      "role": "Traveller · first trip abroad",
+      "country": "Onesa",
+      "goal": "Travel safely, and be treated properly if taken ill far from home.",
+      "needs": [
+        "A clinic abroad that can trust and read their health summary",
+        "To decide who sees it",
+        "Something that works from the phone they carry"
+      ],
+      "frustrations": [
+        "Explaining their asthma and allergy in a language the clinic does not speak",
+        "Paper records that get lost"
+      ]
+    }
+  }
+}

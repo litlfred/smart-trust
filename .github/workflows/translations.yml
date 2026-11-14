@@ -36,6 +36,10 @@ jobs:
           bun install --frozen-lockfile
       - name: The templates are current with their English sources
         run: bun input/scripts/translation-pot.ts --check
+      - name: The home page's journey cards and story, in each language, are current with the scenarios and their catalogues
+        run: bun input/scripts/journey-cards.ts --check
+      - name: The user-scenario templates are current with the scenarios
+        run: bun cat-harness-tools/scripts/run-script.ts translate-user-scenarios:check --instance .
       - name: No translation is marked official
         run: bun cat-harness-tools/scripts/run-script.ts check:translation-officiality
       - name: How far each translation is behind its template (warns, never fails)

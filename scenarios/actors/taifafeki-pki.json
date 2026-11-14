@@ -1,0 +1,15 @@
+{
+  "id": "taifafeki-pki",
+  "title": "Taifafeki PKI (verification)",
+  "kind": "system",
+  "description": "Taifafeki's copy of the GDHCN trust list, kept current for its health systems. Plays the guide's Trust Network Participant on the verifying side.",
+  "roles": [
+    "verifying-pki"
+  ],
+  "capabilities": [],
+  "meta": {
+    "definedIn": [
+      "https://litlfred.github.io/smart-trust/artifact/ActorDefinition-TrustNetworkParticipant.html"
+    ]
+  }
+}
