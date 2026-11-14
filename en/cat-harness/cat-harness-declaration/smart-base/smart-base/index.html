@@ -132,6 +132,8 @@
 <dt>_title_comment</dt><dd>The HUMAN display name, for the LHS navbar&#39;s harness tabs. `name` stays the machine identifier that filenames, `needs` edges and `declaredBy` resolve against; `title` is what a reader sees and nothing resolves against it. Bean `t3n8`.</dd>
 <dt>title</dt><dd>SMART Base</dd>
 <dt>description</dt><dd>The WHO SMART Guidelines base layer — the ingested WHO digital-health corpus, the methodologies read out of it, and the editorial voices derived from it.</dd>
+<dt>_skillPrefix_comment</dt><dd>Skills from this layer install as smartbase-&lt;name&gt; (cat-harness-tools&#39; install-skills, bean x4mt; owner ruling 2026-10-11: each harness has its own prefix, e.g. cat, fa). Without one, `install-skills --root smart-base` skipped every smart-base skill and installed only cat- and fa- ones (bean folio-assistant-dtda). Lowercase letters and digits only: the schema refuses a hyphen.</dd>
+<dt>skillPrefix</dt><dd>smartbase</dd>
 <dt>avatar</dt><dd><pre>{
   &quot;glyph&quot;: &quot;M3 18h18M6 14h12M9 10h6M11 6h2&quot;,
   &quot;tone&quot;: 199,
@@ -345,12 +347,15 @@
     &quot;graphTypologies&quot;: [
       &quot;cat-harness&quot;
     ],
-    &quot;description&quot;: &quot;Knowledge-graph layer L1 as a NAMED SUBGRAPH of this layer (owner, 2026-11-13: &#39;L1..L3 as named subgraphs&#39;, after smart-kg&#39;s deprecation, issue #359). OPT-IN like cat-harness&#39;s `sdlc/`, so that each layer&#39;s `tools/` is a tools graph of its own: off in a downstream layer unless it lists `smart-base.smart-base-L1` in its `enableSubgraphs`; this layer enables all six. `L1/graph.json` names what it holds FROM WITHIN: `schemas/` (L1 3.0 and the `l1-library` extension as Zod, the engine every layer uses, and their generated JSON and contexts), and the L1 `skills/`, `processes/` and `tools/`. The layers above, `L2/`, `L2-bpmn/`, `L2-dmn/`, `L3/` and `L4/`, are its siblings and import from it; nothing in L1 imports from them.&quot;
+    &quot;description&quot;: &quot;Knowledge-graph layer L1 as a NAMED SUBGRAPH of this layer (owner, 2026-11-13: &#39;L1..L3 as named subgraphs&#39;, after smart-kg&#39;s deprecation, issue #359). OPT-IN like cat-harness&#39;s `sdlc/`, so that each layer&#39;s `tools/` is a tools graph of its own: off in a downstream layer unless it lists `smart-base.smart-base-L1` in its `enableSubgraphs`; this layer enables all six. `L1/graph.json` names what it holds FROM WITHIN: `schemas/` (L1 3.0 and the `l1-library` extension as Zod, the engine every layer uses, and their generated JSON and contexts), and the L1 `skills/`, `processes/`, `tools/` and the `scripts/` those tools run. The layers above, `L2/`, `L2-bpmn/`, `L2-dmn/`, `L3/` and `L4/`, are its siblings and import from it; nothing in L1 imports from them.&quot;
   },
   {
     &quot;id&quot;: &quot;smart-base-L2&quot;,
     &quot;path&quot;: &quot;L2/&quot;,
     &quot;optIn&quot;: true,
+    &quot;requires&quot;: [
+      &quot;smart-base.smart-base-L1&quot;
+    ],
     &quot;title&quot;: &quot;L2 — what a DAK declares&quot;,
     &quot;graphTypologies&quot;: [
       &quot;cat-harness&quot;
@@ -381,6 +386,9 @@
     &quot;id&quot;: &quot;smart-base-L3&quot;,
     &quot;path&quot;: &quot;L3/&quot;,
     &quot;optIn&quot;: true,
+    &quot;requires&quot;: [
+      &quot;smart-base.smart-base-L2&quot;
+    ],
     &quot;title&quot;: &quot;L3 — the FHIR artefacts&quot;,
     &quot;graphTypologies&quot;: [
       &quot;cat-harness&quot;
@@ -404,7 +412,7 @@
       &quot;code&quot;,
       &quot;schemas&quot;
     ],
-    &quot;description&quot;: &quot;The dak vocabulary in code: `dak-blocks.ts` (the block builders `content-adapters/dak.json` names), `dak-kinds.ts` and `dak-jsonld.ts` (read off `block-kinds/`), `dak-content-type.ts`, `dak.ts`, and the l2-dak-authoring skill&#39;s input/output JSON Schemas. The mounted adapter and QA checkers name these modules. Also the `schemas` graph, declared so the schema reader never falls back to `&lt;instance&gt;/schemas/` by convention, which stops once any instance stacked on smart-base has a `schemas` directory.&quot;
+    &quot;description&quot;: &quot;The dak vocabulary in code: `dak-blocks.ts` (the block builders `content-adapters/dak.json` names), `dak-kinds.ts` and `dak-jsonld.ts` (read off `block-kinds/`), `dak-content-type.ts`, `dak.ts`, and `skills/`: the input/output JSON Schemas of the two skills that span L1-L4 (guideline-use-case, smart-guideline-end-to-end). Every other skill&#39;s contracts sit in its subgraph, `L&lt;n&gt;/schemas/skills/` (bean folio-assistant-kjea). The mounted adapter and QA checkers name these modules. Also the `schemas` graph, declared so the schema reader never falls back to `&lt;instance&gt;/schemas/` by convention, which stops once any instance stacked on smart-base has a `schemas` directory.&quot;
   },
   {
     &quot;id&quot;: &quot;smart-base-pipeline&quot;,
@@ -420,7 +428,7 @@
     &quot;graphTypologies&quot;: [
       &quot;code&quot;
     ],
-    &quot;description&quot;: &quot;This layer&#39;s own scripts and their tests: document kinds, the DAK components figure, the DTH term findings, the smart-kg L1 extraction, the fhir-harness exclusions check, the L1 recommendation scenario candidates with the vocabulary reader they resolve against (fixtures and the measles run under `scripts/fixtures/`), and `dth-init.ts`, which writes a new DTH repository&#39;s wiring. Declared so a remote mount brings them.&quot;
+    &quot;description&quot;: &quot;This layer&#39;s own scripts and their tests: document kinds, the DAK components figure, the DTH term findings, the `l1-extraction` viewer&#39;s pages (`gen-l1-extraction-pages.ts`) and the statement lists they read, the fhir-harness exclusions check, the L1 recommendation scenario candidates with the vocabulary reader they resolve against (fixtures and the measles run under `scripts/fixtures/`), and `dth-init.ts`, which writes a new DTH repository&#39;s wiring. The L1 extraction code (the smart-kg L1 extractor, the recommendation candidates, the L1 IRIs) is in the opt-in `L1/scripts/`. The L2-only scripts (the data dictionary and its diff, the L2 DTH check) are in `L2/scripts/`. Declared so a remote mount brings them.&quot;
   },
   {
     &quot;id&quot;: &quot;smart-base-templates&quot;,

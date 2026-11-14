@@ -2,9 +2,9 @@
   "$schema": "folio-search-manifest/v1",
   "source": {
     "path": "assets/js/search-data.json",
-    "sha256": "049381e15dbd80cb89255f0a740bd20a21f9b13501a92573c040e34f0b6b058e",
-    "entries": 353,
-    "bytes": 7380468
+    "sha256": "4c61d672991be2614974afc1e46141e69ffef9ffb4e2af9d459c897373f391b1",
+    "entries": 403,
+    "bytes": 7801953
   },
   "scopes": [
     {
@@ -22,59 +22,59 @@
       "id": "cat-harness",
       "kind": "instance",
       "path": "assets/js/search/cat-harness.json",
-      "entries": 9,
-      "bytes": 2767
+      "entries": 39,
+      "bytes": 397108
     },
     {
       "id": "locale-ar",
       "kind": "locale",
       "path": "assets/js/search/locale-ar.json",
-      "entries": 55,
-      "bytes": 1408925,
+      "entries": 59,
+      "bytes": 1414194,
       "index": {
         "path": "assets/js/search/locale-ar.idx.json",
-        "bytes": 1789065
+        "bytes": 1803202
       }
     },
     {
       "id": "locale-es",
       "kind": "locale",
       "path": "assets/js/search/locale-es.json",
-      "entries": 55,
-      "bytes": 1140883,
+      "entries": 59,
+      "bytes": 1145657,
       "index": {
         "path": "assets/js/search/locale-es.idx.json",
-        "bytes": 3267540
+        "bytes": 3290939
       }
     },
     {
       "id": "locale-fr",
       "kind": "locale",
       "path": "assets/js/search/locale-fr.json",
-      "entries": 55,
-      "bytes": 1193186,
+      "entries": 59,
+      "bytes": 1198036,
       "index": {
         "path": "assets/js/search/locale-fr.idx.json",
-        "bytes": 3237609
+        "bytes": 3260359
       }
     },
     {
       "id": "locale-ru",
       "kind": "locale",
       "path": "assets/js/search/locale-ru.json",
-      "entries": 55,
-      "bytes": 1760430,
+      "entries": 59,
+      "bytes": 1766762,
       "index": {
         "path": "assets/js/search/locale-ru.idx.json",
-        "bytes": 1857875
+        "bytes": 1871738
       }
     },
     {
       "id": "locale-zh",
       "kind": "locale",
       "path": "assets/js/search/locale-zh.json",
-      "entries": 55,
-      "bytes": 865780
+      "entries": 59,
+      "bytes": 870219
     }
   ],
   "remote": [

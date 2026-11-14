@@ -2562,6 +2562,17 @@ ca&amp;at-harness
     &quot;reason&quot;: &quot;a page per diagram of every instance, 32 of 100 of them other instances&#39; (measured: a foreign task name rewrote public-comment.md); listed after the render:bpmn drawings, because its Findings section reports which diagrams have one. It also reads the bean stores&#39; workflow instances (beans/workflows/, kept on the beans branch and mounted by state:mount before this runs) to link each diagram&#39;s running instances (bean v49e, cat-harness-tools#684), so a state:push moves it as well as a re-pin&quot;
   },
   {
+    &quot;path&quot;: &quot;docs/en/cat-harness/fsh-guts/&quot;,
+    &quot;writer&quot;: [
+      &quot;fsh-guts:viz&quot;
+    ],
+    &quot;because&quot;: &quot;state&quot;,
+    &quot;from&quot;: [
+      &quot;fsh-guts&quot;
+    ],
+    &quot;reason&quot;: &quot;the fsh-guts viewer page, drawn from the cat/cat-harness/fsh-guts state branch, so no commit of this layer can hold it current; committing it made every re-render (a test, qa:refresh) rewrite it (bean cat-tools-sm8r, item 4, step 6)&quot;
+  },
+  {
     &quot;path&quot;: &quot;docs/assets/processes/index.json&quot;,
     &quot;writer&quot;: [
       &quot;processes:viz&quot;
