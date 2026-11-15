@@ -25,7 +25,7 @@
     {
       "@type": "schema:MediaObject",
       "schema:contentUrl": {
-        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust/f6a0c0c90f1ca270b33598e37f8ef9fe3c777e0c/resources/Endpoint/GDHCNParticipantDID-AND-DEV-DSC.json"
+        "@id": "https://raw.githubusercontent.com/litlfred/smart-trust/d01b991a1468aab21979c1c1f04a324c138618b1/resources/Endpoint/GDHCNParticipantDID-AND-DEV-DSC.json"
       },
       "schema:encodingFormat": "application/fhir+json",
       "dcterms:source": "mirror"
@@ -34,7 +34,7 @@
   "prov:wasGeneratedBy": {
     "@type": "prov:Activity",
     "schema:instrument": "ig-publisher 3.0.0 / core 7.0.1",
-    "prov:used": "aca0a96444356acd2918c9e679d41d8de279b4b0"
+    "prov:used": "260e3b59ec468fe2dfe321a3a0180de90933da0d"
   },
   "dcterms:isPartOf": {
     "@type": "fhir:ImplementationGuide",

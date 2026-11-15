@@ -2,7 +2,7 @@
   "$schema": "folio-search-manifest/v1",
   "source": {
     "path": "assets/js/search-data.json",
-    "sha256": "4c61d672991be2614974afc1e46141e69ffef9ffb4e2af9d459c897373f391b1",
+    "sha256": "7943d0d71f37ec212cc17b6ee1fa5c7de539ccd83816600c421578f29ba0be0c",
     "entries": 403,
     "bytes": 7801953
   },
@@ -15,7 +15,7 @@
       "bytes": 998029,
       "index": {
         "path": "assets/js/search/_platform.idx.json",
-        "bytes": 2154719
+        "bytes": 2154721
       }
     },
     {
@@ -33,7 +33,7 @@
       "bytes": 1414194,
       "index": {
         "path": "assets/js/search/locale-ar.idx.json",
-        "bytes": 1803202
+        "bytes": 1803203
       }
     },
     {
@@ -44,7 +44,7 @@
       "bytes": 1145657,
       "index": {
         "path": "assets/js/search/locale-es.idx.json",
-        "bytes": 3290939
+        "bytes": 3290944
       }
     },
     {
@@ -55,7 +55,7 @@
       "bytes": 1198036,
       "index": {
         "path": "assets/js/search/locale-fr.idx.json",
-        "bytes": 3260359
+        "bytes": 3260355
       }
     },
     {
