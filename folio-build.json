@@ -2,14 +2,14 @@
   "$schema": "folio-site-build/v1",
   "instance": "smart-trust",
   "platform": {
-    "commit": "8a57032594362aa1185f9197a43023e2f0ff9c94"
+    "commit": "c440c081af352febe48fde5f11971367c3a46752"
   },
   "source": {
     "repo": "litlfred/smart-trust",
     "ref": "main",
-    "commit": "05e9d55dc08dd8b12a5c239248baa606b2bbabc4"
+    "commit": "034397a74ad4b6933764ece57a2e4fabdd3b3a9b"
   },
-  "builtAt": "2026-11-14T23:03:55.387Z",
+  "builtAt": "2026-11-15T02:08:46.773Z",
   "ast": {
     "commit": "aca0a96444356acd2918c9e679d41d8de279b4b0",
     "verdict": "valid",

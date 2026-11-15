@@ -148,12 +148,10 @@ ca&amp;at-harness
 <dt>icon</dt><dd>mark</dd>
 <dt>navbarIcons</dt><dd><pre>[
   &quot;close&quot;,
-  &quot;todos&quot;,
-  &quot;beans&quot;,
-  &quot;fsh-guts&quot;,
   &quot;qr&quot;,
   &quot;launcher&quot;
 ]</pre></dd>
+<dt>_navbarIcons_comment</dt><dd>todos, beans and fsh-guts left the row on 2026-11-13 (owner: &quot;remove the fsh-guts, beans and todos&quot;); they are still reached from the glass strip, the Folders list and Page settings. The row is now at the foot of the rail, and the rail and docs-ui.js add the Folio and Harnesses icons to it, which are not declared slots: each is drawn where its panel exists.</dd>
 <dt>glassStrip</dt><dd><pre>[
   {
     &quot;chrome&quot;: &quot;todos&quot;
@@ -1867,6 +1865,15 @@ ca&amp;at-harness
     ],
     &quot;because&quot;: &quot;checkout&quot;,
     &quot;reason&quot;: &quot;the qa-script kind&#39;s pages: a kind declared without a version, which got pages from 2026-11-13 (every declared kind does; the schemas page links it). Its nodes are QA sidecars under test/results/, a working copy published to qa-reports, never committed&quot;,
+    &quot;index&quot;: true
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness-tools/qa-attestations/&quot;,
+    &quot;writer&quot;: [
+      &quot;node-kind:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the qa-attestations kind&#39;s pages, one per attestation file (owner, 2026-11-13, node-kind audit: every listed node kind gets per-node pages). The kind is cat-harness-tools&#39; (its validators/qa-attestations-kind.json); its nodes are this layer&#39;s test/attestations/, which every QA run and reviewer judgement changes, so the pages are built at publish rather than committed&quot;,
     &quot;index&quot;: true
   },
   {
