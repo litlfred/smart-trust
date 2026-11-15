@@ -2,9 +2,9 @@
   "$schema": "folio-search-manifest/v1",
   "source": {
     "path": "assets/js/search-data.json",
-    "sha256": "7943d0d71f37ec212cc17b6ee1fa5c7de539ccd83816600c421578f29ba0be0c",
-    "entries": 403,
-    "bytes": 7801953
+    "sha256": "b92f34a73c165815a76dd97e71d62c21a777108a25c87dda1fb88d4c73b6316b",
+    "entries": 566,
+    "bytes": 7958812
   },
   "scopes": [
     {
@@ -26,55 +26,62 @@
       "bytes": 397108
     },
     {
+      "id": "folio-assistant-core",
+      "kind": "instance",
+      "path": "assets/js/search/folio-assistant-core.json",
+      "entries": 133,
+      "bytes": 81413
+    },
+    {
       "id": "locale-ar",
       "kind": "locale",
       "path": "assets/js/search/locale-ar.json",
-      "entries": 59,
-      "bytes": 1414194,
+      "entries": 65,
+      "bytes": 1429797,
       "index": {
         "path": "assets/js/search/locale-ar.idx.json",
-        "bytes": 1803203
+        "bytes": 1822815
       }
     },
     {
       "id": "locale-es",
       "kind": "locale",
       "path": "assets/js/search/locale-es.json",
-      "entries": 59,
-      "bytes": 1145657,
+      "entries": 65,
+      "bytes": 1158512,
       "index": {
         "path": "assets/js/search/locale-es.idx.json",
-        "bytes": 3290944
+        "bytes": 3332215
       }
     },
     {
       "id": "locale-fr",
       "kind": "locale",
       "path": "assets/js/search/locale-fr.json",
-      "entries": 59,
-      "bytes": 1198036,
+      "entries": 65,
+      "bytes": 1210777,
       "index": {
         "path": "assets/js/search/locale-fr.idx.json",
-        "bytes": 3260355
+        "bytes": 3300403
       }
     },
     {
       "id": "locale-ru",
       "kind": "locale",
       "path": "assets/js/search/locale-ru.json",
-      "entries": 59,
-      "bytes": 1766762,
+      "entries": 65,
+      "bytes": 1787386,
       "index": {
         "path": "assets/js/search/locale-ru.idx.json",
-        "bytes": 1871738
+        "bytes": 1891753
       }
     },
     {
       "id": "locale-zh",
       "kind": "locale",
       "path": "assets/js/search/locale-zh.json",
-      "entries": 59,
-      "bytes": 870219
+      "entries": 65,
+      "bytes": 879037
     }
   ],
   "remote": [
