@@ -4,13 +4,13 @@
  "shortfall": [],
  "droppedByRuling": [],
  "current": {
-  "pages": 10121,
+  "pages": 3159,
   "counts": {
    "siteNav": 0,
-   "search": 9187,
-   "navbarRow": 1151,
-   "rail": 9186,
-   "translationMeta": 9187
+   "search": 2157,
+   "navbarRow": 1224,
+   "rail": 2156,
+   "translationMeta": 2157
   },
   "dirs": [
    "ar",
@@ -21,6 +21,7 @@
    "en",
    "es",
    "fhir-artifact-index",
+   "folio-assistant-core",
    "fr",
    "hcert-demo",
    "id-lookup",
@@ -120,6 +121,6 @@
     "present": true
    }
   },
-  "from": "a58cdbe376d4"
+  "from": "0ae9d178a139"
  }
 }
