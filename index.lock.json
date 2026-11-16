@@ -9,7 +9,7 @@
     {
       "harness": "smart-base",
       "repository": "litlfred/smart-base",
-      "ref": "fc704c41e4329f6eeafcc5a2fa89747b486f4cb5"
+      "ref": "66248b89b14b7e4ab4e13ccb978ab1de21d4f1c5"
     },
     {
       "harness": "fhir-harness",
@@ -19,7 +19,7 @@
     {
       "harness": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "ref": "c17d92bba438d8b501a9fd51d6252802602d70c5"
+      "ref": "6e996c79aa9e36991cd46106383a237ca68b75d8"
     },
     {
       "harness": "cat-harness",
@@ -210,7 +210,7 @@
     {
       "instance": "folio-assistant-core",
       "repository": "litlfred/folio-assistant-core",
-      "sha": "c17d92bba438d8b501a9fd51d6252802602d70c5",
+      "sha": "6e996c79aa9e36991cd46106383a237ca68b75d8",
       "upstreamRoot": "",
       "path": "folio-assistant-core",
       "via": "folio-assistant-core",
@@ -224,7 +224,7 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "987440e0ebf30b5640c7f0d10bcce1186f18965280281fde0b1e80e8ffc59798",
+          "treeDigest": "0b31eddecae08a1be4def08591f2aae75e4f2ed2304994925c95106da305588e",
           "files": 1608,
           "except": [
             "board",
@@ -238,14 +238,19 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-16",
-        "ref": "c17d92bba438d8b501a9fd51d6252802602d70c5",
-        "approver": "declared"
+        "ref": "6e996c79aa9e36991cd46106383a237ca68b75d8",
+        "approver": "declared",
+        "standing": {
+          "follows": "main",
+          "consentAt": "2026-11-12",
+          "require": "green"
+        }
       }
     },
     {
       "instance": "smart-base",
       "repository": "litlfred/smart-base",
-      "sha": "fc704c41e4329f6eeafcc5a2fa89747b486f4cb5",
+      "sha": "66248b89b14b7e4ab4e13ccb978ab1de21d4f1c5",
       "upstreamRoot": "smart-base",
       "path": "smart-base",
       "via": "smart-base",
@@ -271,8 +276,13 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-16",
-        "ref": "fc704c41e4329f6eeafcc5a2fa89747b486f4cb5",
-        "approver": "declared"
+        "ref": "66248b89b14b7e4ab4e13ccb978ab1de21d4f1c5",
+        "approver": "declared",
+        "standing": {
+          "follows": "main",
+          "consentAt": "2026-11-12",
+          "require": "green"
+        }
       }
     },
     {
