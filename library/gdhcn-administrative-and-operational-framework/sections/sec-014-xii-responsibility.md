@@ -45,7 +45,7 @@ cybersecurity requirements and technological systems and processes for the GDHCN
 the foregoing as may be amended from time to time, and/or any other requirement or obligation 
  
 13 See https://smart.who.int/trust/ethical_principles.html  
-14 See https://worldhealthorganization.github.io/smart-trust/index.html 
+14 See https://litlfred.github.io/smart-trust/index.html 
  
  
 Page 13 of 16 
