@@ -132,7 +132,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "419d59505a971a36d7e2e0162705be1828296188",
+          "ref": "80138a086f866a7093d0a1a8600a85ceea15b5bb",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -148,8 +148,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-19",
-              "ref": "419d59505a971a36d7e2e0162705be1828296188",
-              "evidence": "litlfred 2026-11-19, card in session session_01EucfRmzKPcz1H5JT8s8ee2: \"Yes, re-pin all\" — re-pin every mount to its current main on smart-trust#253 (WHO→litlfred sync), window to ~2026-11-19T13:48Z"
+              "ref": "80138a086f866a7093d0a1a8600a85ceea15b5bb",
+              "evidence": "litlfred 2026-11-19, card in session session_01EucfRmzKPcz1H5JT8s8ee2: \"Yes, re-pin all\" — re-pin every mount to its current main on smart-trust#253 (WHO→litlfred sync), window to ~2026-11-19T13:48Z; second pass onto cat-harness-tools#2468 (declared-path marker)"
             },
             "standing": {
               "follows": "main",
@@ -202,7 +202,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b",
+          "ref": "526465939306b152df2fc2be942f622017f176f9",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -215,8 +215,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-19",
-              "ref": "6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b",
-              "evidence": "litlfred 2026-11-19, card in session session_01EucfRmzKPcz1H5JT8s8ee2: \"Yes, re-pin all\" — re-pin every mount to its current main on smart-trust#253 (WHO→litlfred sync), window to ~2026-11-19T13:48Z"
+              "ref": "526465939306b152df2fc2be942f622017f176f9",
+              "evidence": "litlfred 2026-11-19, card in session session_01EucfRmzKPcz1H5JT8s8ee2: \"Yes, re-pin all\" — re-pin every mount to its current main on smart-trust#253 (WHO→litlfred sync), window to ~2026-11-19T13:48Z; second pass onto cat-harness-tools#2468 (declared-path marker)"
             },
             "standing": {
               "follows": "main",

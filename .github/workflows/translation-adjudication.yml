@@ -19,6 +19,6 @@ permissions:
 
 jobs:
   adjudicate:
-    uses: litlfred/cat-harness-tools/.github/workflows/layer-translation-adjudication.yml@6dd108f5cdb33eae9482a4b55f1f88b3f98ecb4b # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-translation-adjudication.yml@526465939306b152df2fc2be942f622017f176f9 # index.lock.json
     with:
       path-in-repo: .
