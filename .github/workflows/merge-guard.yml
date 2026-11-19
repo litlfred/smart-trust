@@ -4,12 +4,11 @@
 # own runs as evidence about the head. It never merges.
 name: Merge guard
 on:
-  pull_request_target: { types: [opened, synchronize, reopened, ready_for_review, converted_to_draft, labeled, unlabeled, edited] }
   issue_comment: { types: [created, edited] }
-  workflow_run: { workflows: ["Harness PR checks"], types: [completed] }
+  workflow_run: { workflows: ["Harness PR checks", "Merge guard trigger"], types: [completed] }
   workflow_dispatch: { inputs: { pr: { type: string, required: false, description: "PR number; empty: every open PR" } } }
 permissions: { contents: read, pull-requests: read, issues: read, actions: read, checks: read, statuses: write }
 jobs:
   guard:
-    uses: litlfred/cat-harness-tools/.github/workflows/layer-merge-guard.yml@418672b09492c6c742a4f9bd09038288a29edfab # index.lock.json
+    uses: litlfred/cat-harness-tools/.github/workflows/layer-merge-guard.yml@ba9ccb1418e7b1388e32550db9c94423443f5c01 # index.lock.json
     with: { pr: "${{ inputs.pr || '' }}" }
